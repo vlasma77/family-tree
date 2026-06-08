@@ -317,7 +317,9 @@
         ],
         links: { parents: null, spouse: "person_002", siblings: null, children: "person_003" }
       },
-      "person_002": {
+     "person_002": {
+        spouses: ["person_001"],
+        children: ["person_003"],
         isDeceased: true,
         role: { ru: "Хранительница очага", en: "Homemaker", he: "עקרת בית" },
         name: { ru: "Блюма Бейла Самуилова Смагаринская", en: "Blyuma Beyla Samuilova Smagarinsky", he: "בלומה ביילה סמואילובה סמגרינסקי" },
@@ -327,7 +329,7 @@
         photoCaption: { ru: "фото середины ХХ века", en: "photo from the mid-20th century", he: "תצלום מאמצע המאה ה-20" },
         milestones: {
           birthPlace: { ru: "Не установлено", en: "Not established", he: "לא נקבע" },
-          marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בן זוג — וולף סמגרינסקי" },
+          marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקι, פלך פולטבה, בן זוג — וולף סמגרינסקי" },
           occupation: { ru: "Домохозяйка", en: "Homemaker", he: "עקרת בית" },
           burial: { ru: "г. Биробиджан", en: "Birobidzhan", he: "בירוביג'אן" }
         },
@@ -393,6 +395,7 @@
         ],
       }, // <-- ВОТ ЭТА СКОБКА С ЗАПЯТОЙ БЫЛА ПОТЕРЯНА! ОНА ЗАКРЫВАЕТ КАРТОЧКУ БЛЮМЫ ("person_002")
       "person_003": {
+        parents: ["person_001", "person_002"],
         isDeceased: true,
         role: { ru: "Сын", en: "Son", he: "בן" },
         name: { ru: "Фима Вулфович Смагаринский", en: "Fima Vulfovich Smagarinsky", he: "פימה וולפוביץ' סמגרינסקי" },
