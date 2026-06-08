@@ -317,19 +317,20 @@
         ],
         links: { parents: null, spouse: "person_002", siblings: null, children: "person_003" }
       },
-     "person_002": {
-        spouses: ["person_001"],
-        children: ["person_003"],
+     "person_blyuma_1895": {
+        spouse: "person_vulf_1898",
+        spouses: ["person_vulf_1898"],
+        children: ["person_fima_1919"],
         isDeceased: true,
         role: { ru: "Хранительница очага", en: "Homemaker", he: "עקרת בית" },
-        name: { ru: "Блюма Бейла Самуилова Смагаринская", en: "Blyuma Beyla Samuilova Smagarinsky", he: "בלומה ביילה סמואילובה סמגרינסקי" },
-        birthName: { ru: "Девичья фамилия: Энтин (Мстиславская мещанка)", en: "Maiden name: Entin (Burgher of Mstislavl)", he: "שם נעורים: אנטין (אזרחית מסטסלב)" },
+        name: { ru: "Блюма Бейла Самуилова Смагаринская", en: "Blyuma Beyla Samuilova Smagarinsky", he: "בלומה ביילה סมואילובה סמגриנסקי" },
+        birthName: { ru: "Девичья фамилия: Энтин (Мстиславская мещанка)", en: "Maiden name: Entin (Burgher of Mstislavl)", he: "שם נעורים: אנטיн (אזרחית מסטסלב)" },
         years: "1895 — 1975",
         photo: "photos/blyuma1895.jpg",
         photoCaption: { ru: "фото середины ХХ века", en: "photo from the mid-20th century", he: "תצלום מאמצע המאה ה-20" },
         milestones: {
           birthPlace: { ru: "Не установлено", en: "Not established", he: "לא נקבע" },
-          marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקι, פלך פולטבה, בן זוג — וולף סמגרינסקי" },
+          marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בן זוג — וולף סמгרינסקי" },
           occupation: { ru: "Домохозяйка", en: "Homemaker", he: "עקרת בית" },
           burial: { ru: "г. Биробиджан", en: "Birobidzhan", he: "בירוביג'אן" }
         },
@@ -394,8 +395,10 @@
           }
         ],
       }, // <-- ВОТ ЭТА СКОБКА С ЗАПЯТОЙ БЫЛА ПОТЕРЯНА! ОНА ЗАКРЫВАЕТ КАРТОЧКУ БЛЮМЫ ("person_002")
-      "person_003": {
-        parents: ["person_001", "person_002"],
+      "person_fima_1919": {
+        parents: ["person_vulf_1898", "person_blyuma_1895"],
+        father: "person_vulf_1898",
+        mother: "person_blyuma_1895",
         isDeceased: true,
         role: { ru: "Сын", en: "Son", he: "בן" },
         name: { ru: "Фима Вулфович Смагаринский", en: "Fima Vulfovich Smagarinsky", he: "פימה וולפוביץ' סמגרינסקי" },
