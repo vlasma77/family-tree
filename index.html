@@ -318,22 +318,21 @@
         links: { parents: null, spouse: "person_002", siblings: null, children: "person_003" }
       },
      "person_blyuma_1895": {
-        spouse: "person_vulf_1898",
-        spouses: ["person_vulf_1898"],
-        children: ["person_fima_1919"],
         isDeceased: true,
         role: { ru: "Хранительница очага", en: "Homemaker", he: "עקרת בית" },
-        name: { ru: "Блюма Бейла Самуилова Смагаринская", en: "Blyuma Beyla Samuilova Smagarinsky", he: "בלומה ביילה סมואילובה סמגриנסקי" },
-        birthName: { ru: "Девичья фамилия: Энтин (Мстиславская мещанка)", en: "Maiden name: Entin (Burgher of Mstislavl)", he: "שם נעורים: אנטיн (אזרחית מסטסלב)" },
+        name: { ru: "Блюма Бейла Самуилова Смагаринская", en: "Blyuma Beyla Samuilova Smagarinsky", he: "בלומה ביילה סמואילובה סמגриנסקי" },
+        birthName: { ru: "Девичья фамилия: Энтин (Мстиславская мещанка)", en: "Maiden name: Entin (Burgher of Mstislavl)", he: "שם נעורים: אנטין (אזרחית מסטסלב)" },
         years: "1895 — 1975",
         photo: "photos/blyuma1895.jpg",
         photoCaption: { ru: "фото середины ХХ века", en: "photo from the mid-20th century", he: "תצלום מאמצע המאה ה-20" },
         milestones: {
           birthPlace: { ru: "Не установлено", en: "Not established", he: "לא נקבע" },
-          marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בן זוג — וולף סמгרינסקי" },
+          marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בן זוג — וולף סמגרינסקי" },
           occupation: { ru: "Домохозяйка", en: "Homemaker", he: "עקרת בית" },
           burial: { ru: "г. Биробиджан", en: "Birobidzhan", he: "בירוביג'אן" }
         },
+        links: { parents: null, spouse: "person_vulf_1898", siblings: null, children: "person_003" }
+      },
         bio: {
           ru: `<p>Блюма Бейла происходила из мещанского сословия города Мстиславля. Она получила хорошее для своего времени образование и очень любила читать, пронеся страсть к книгам через всю жизнь.</p>
                <p>Умудренная жизненным опытом женщина, она посвятила себя заботе о близких. В памяти потомков осталась как удивительно чуткая, заботливая мать и бабушка, согревавшая теплом всю семью.</p>`,
@@ -395,13 +394,10 @@
           }
         ],
       }, // <-- ВОТ ЭТА СКОБКА С ЗАПЯТОЙ БЫЛА ПОТЕРЯНА! ОНА ЗАКРЫВАЕТ КАРТОЧКУ БЛЮМЫ ("person_002")
-      "person_fima_1919": {
-        parents: ["person_vulf_1898", "person_blyuma_1895"],
-        father: "person_vulf_1898",
-        mother: "person_blyuma_1895",
+      "person_003": {
         isDeceased: true,
         role: { ru: "Сын", en: "Son", he: "בן" },
-        name: { ru: "Фима Вулфович Смагаринский", en: "Fima Vulfovich Smagarinsky", he: "פימה וולפוביץ' סמגרינסקי" },
+        name: { ru: "Фима Вулфович Смагаринский", en: "Fima Vulfovich Smagarinsky", he: "פימה וולפוביץ' סמгרינסקי" },
         birthName: { ru: "", en: "", he: "" },
         years: "1919 — 1998",
         photo: "photos/fima1919.jpg",
@@ -413,19 +409,18 @@
           burial: { ru: "г. Астрахань", en: "Astrakhan", he: "אסטרחן" }
         },
         bio: {
-          ru: "<p>Продолжатель семейного дела, выросший в атмосфере уважения к труду. Оставил глубокий след в памяти детей и внуков.</p>",
-          en: "<p>Successor of the family business, raised in an atmosphere of respect for labor. Left a deep imprint in the memory of descendants.</p>",
-          he: "<p>ממשיך דרכו של העסק המשפחתי, גדל באווירה של כבוד לעבודה. הותיר חותם עמוק בזיכרונם של צаצאיו.</p>"
+          ru: `<p>Продолжатель семейного дела, выросший в атмосфере...</p>`,
+          en: `<p>Successor of the family business, raised in an...</p>`,
+          he: `<p>המשך העסק המשפחתי, שגדל באווירה...</p>`
         },
         familyText: {
-          ru: ["<strong>Родители:</strong> Вульф и Блюма Смагаринские"],
-          en: ["<strong>Parents:</strong> Vulf and Blyuma Smagarinsky"],
-          he: ["<strong>הורים:</strong> וולף ובלומה סמגриנסקי"]
+          ru: [ "<strong>Родители:</strong> Вульф и Блюма Смагаринские" ],
+          en: [ "<strong>Parents:</strong> Vulf and Blyuma Smagarinsky" ],
+          he: [ "<strong>הורים:</strong> וולף ובלומה סמגרינסקי" ]
         },
-        documents: [],
-      links: { parents: "person_vulf_1898", spouse: null, siblings: null, children: null }
-       }
-     };
+        documents: [ ... ],
+        links: { parents: null, spouse: "person_vulf_1898", siblings: null, children: ["person_003"] }
+      },
   
      let currentId = "person_vulf_1898";
      let currentLang = "ru";
