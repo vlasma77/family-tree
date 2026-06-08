@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Семейный Архив Смагаринских</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Google Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght=0,400;0,600;1,400&family=Playfair+Display:ital,wght=0,600;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Cormorant Garamond', Georgia, serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    
+    /* ФОН ДРЕВНЕГО СВИТКА */
+    .bg-vintage-paper {
+      background-color: #e8dcbf;
+      background-image: 
+        radial-gradient(circle at 50% 50%, transparent 60%, rgba(184, 162, 119, 0.3) 100%),
+        linear-gradient(90deg, rgba(219, 203, 167, 0.4) 1px, transparent 1px),
+        linear-gradient(rgba(219, 203, 167, 0.4) 1px, transparent 1px);
+      background-size: auto, 30px 30px, 30px 30px;
+      box-shadow: inset 0 0 40px rgba(133, 111, 73, 0.25), 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+    }
+    
+    .rtl { direction: rtl; text-align: right; }
+    .ltr { direction: ltr; text-align: left; }
+    .rtl-table th, .rtl-table td { text-align: right; }
+
+    /* Черная траурная лента в углу фото */
+    .mourning-ribbon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      z-index: 10;
+    }
+    .mourning-ribbon::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -20px;
+      width: 80px;
+      height: 12px;
+      background-color: #000000;
+      transform: rotate(-45deg);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body class="bg-stone-300 text-stone-900 min-h-screen flex flex-col justify-between p-4 md:p-8 selection:bg-amber-200">
+
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+  <header class="max-w-5xl w-full mx-auto flex flex-col sm:flex-row justify-between items-center border-b border-stone-400 pb-4 mb-6 gap-4">
+    <div class="text-center sm:text-left">
+      <span class="text-xs uppercase tracking-widest text-stone-600 italic">Летопись поколений</span>
+      <h1 class="text-2xl text-stone-800 font-semibold">Цифровой Архив Семьи Смагаринских</h1>
+    </div>
+    <!-- Переключатель языков -->
+    <div class="flex gap-2 text-sm font-medium" id="lang-switcher">
+      <button onclick="setLanguage('ru')" id="btn-ru" class="px-3 py-1 bg-stone-800 text-amber-50 rounded shadow-sm transition">RU</button>
+      <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 transition">EN</button>
+      <button onclick="setLanguage('he')" id="btn-he" class="px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 transition">HE</button>
+    </div>
+  </header>
+
+  <!-- ОСНОВНОЙ БЛОК: Карточка -->
+  <main class="max-w-5xl w-full mx-auto bg-vintage-paper border-2 border-[rgba(133,111,73,0.4)] rounded p-6 md:p-10 flex-grow flex flex-col md:flex-row gap-10 items-start relative overflow-hidden">
+    
+    <!-- Декоративные уголки -->
+    <div class="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-stone-600/50"></div>
+    <div class="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-stone-600/50"></div>
+    <div class="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-stone-600/50"></div>
+    <div class="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-stone-600/50"></div>
+
+    <!-- Левая колонка: Фото и подпись -->
+    <div class="w-full md:w-2/5 flex flex-col items-center sticky top-4">
+      <div class="bg-stone-100/90 p-5 border border-stone-400/60 shadow-lg transform -rotate-1 hover:rotate-0 transition duration-300 w-full max-w-[320px] relative">
+        
+        <!-- Контейнер для ленты -->
+        <div id="photo-ribbon" class=""></div>
+
+        <div class="border border-stone-400 p-1.5 bg-stone-200 overflow-hidden aspect-[3/4] flex items-center justify-center shadow-inner">
+          <img id="person-photo" src="" alt="Портрет" class="w-full h-full object-cover grayscale sepia-[15%]">
+        </div>
+        <!-- Историческая подпись под фото -->
+        <p id="photo-caption" class="text-center text-sm italic text-stone-600 mt-3 font-serif leading-snug px-1"></p>
+      </div>
+    </div>
+
+    <!-- Правая колонка: Вся информация -->
+    <div id="bio-container" class="w-full md:w-3/5 flex flex-col justify-between space-y-6 max-h-[650px] overflow-y-auto pr-2">
+      <div>
+        <span id="person-role" class="text-sm uppercase tracking-wider text-stone-600 font-semibold"></span>
+        <h2 id="person-name" class="text-2xl md:text-3xl text-stone-950 font-bold mt-1 mb-0.5 tracking-wide whitespace-nowrap"></h2>
+        
+        <!-- Линия фамилии при рождении -->
+        <p id="person-birth-name" class="text-base text-stone-700 italic font-sans mb-2"></p>
+        
+        <p id="person-years" class="text-xl italic text-amber-950 font-medium border-b border-stone-400/60 pb-2 mb-4"></p>
+        
+        <!-- ХРОНИКА / ВАЖНЫЕ ВЕХИ -->
+        <div class="bg-stone-900/5 rounded p-3 border border-stone-400/30 text-base mb-5">
+          <h3 id="milestones-title" class="text-sm uppercase tracking-wider font-bold text-stone-700 mb-2 border-b border-stone-400/20 pb-0.5 font-sans"></h3>
+          <table class="w-full text-stone-800 font-sans text-sm border-collapse" id="milestones-table">
+            <!-- Заполняется через JS -->
+          </table>
+        </div>
+
+        <!-- ЖИЗНЕОПИСАНИЕ (БИОГРАФИЯ) -->
+        <div id="person-bio" class="text-lg text-stone-900 leading-relaxed space-y-4 border-b border-stone-400/40 pb-5 mb-5">
+          <!-- Сюда вставляется текст биографии без повторения дат -->
+        </div>
+
+        <!-- ПОДРОБНЫЙ СЕМЕЙНЫЙ КРУГ -->
+        <div id="family-section" class="border-b border-stone-400/40 pb-5 mb-5">
+          <h3 id="family-title" class="text-sm uppercase tracking-wider font-bold text-stone-700 mb-2 font-sans"></h3>
+          <ul id="family-list" class="text-base text-stone-800 font-sans space-y-1.5 list-disc pl-5">
+            <!-- Заполняется через JS -->
+          </ul>
+        </div>
+
+        <!-- ЕДИНАЯ КНОПКА АРХИВНЫХ ДОКУМЕНТОВ -->
+        <div id="documents-section" class="pt-2">
+          <button onclick="openArchiveModal()" id="archive-btn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 bg-amber-950 text-amber-100 hover:bg-amber-900 rounded font-sans font-semibold shadow-md transition cursor-pointer text-base">
+            <span>🗄️</span> <span id="archive-btn-text">Открыть архив документов</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ВСПЛЫВАЮЩЕЕ ОКНО (МОДАЛЬНОЕ ОКНО АРХИВА) -->
+  <div id="archive-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4" onclick="closeArchiveModal(event)">
+    <div class="bg-stone-100 max-w-xl w-full rounded-lg shadow-2xl border border-stone-400 overflow-hidden transform transition-all" onclick="event.stopPropagation()">
+      
+      <!-- Шапка окна -->
+      <div class="bg-stone-900 text-stone-100 px-6 py-4 flex justify-between items-center border-b border-stone-700">
+        <h3 id="modal-title" class="text-lg font-semibold font-serif flex items-center gap-2">
+          <span>🗄️</span> Архивные свидетельства и сканы
+        </h3>
+        <button onclick="closeArchiveModal(null)" class="text-stone-400 hover:text-white text-2xl font-bold transition cursor-pointer">&times;</button>
+      </div>
+      
+      <!-- Содержимое (список документов) -->
+      <div class="p-6 max-h-[400px] overflow-y-auto">
+        <p id="modal-subtitle" class="text-sm text-stone-500 mb-4 font-sans italic">Нажмите на документ, чтобы открыть его оригинальный скан или цифровую копию в новой вкладке:</p>
+        <div id="modal-documents-list" class="space-y-3">
+          <!-- Сюда JS подставит список документов -->
+        </div>
+      </div>
+      
+      <!-- Подвал окна -->
+      <div class="bg-stone-200/60 px-6 py-3 flex justify-end border-t border-stone-300">
+        <button onclick="closeArchiveModal(null)" id="modal-close-btn" class="px-4 py-2 bg-stone-700 hover:bg-stone-800 text-stone-100 font-sans text-sm font-medium rounded transition shadow-sm cursor-pointer">
+          Закрыть
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- НИЖНЯЯ ПАНЕЛЬ -->
+  <footer class="max-w-5xl w-full mx-auto mt-6 border-t border-stone-400 pt-4">
+    <p class="text-center text-xs uppercase tracking-widest text-stone-600 mb-3 font-sans font-semibold">Быстрый переход по древу</p>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="navigation-bttns">
+      <!-- Кнопки быстрых связей -->
+    </div>
+  </footer>
+
+  <!-- ЛОГИКА И БАЗА ДАННЫХ -->
+  <script>
+    const db = {
+      "person_vulf_1898": {
+        isDeceased: true,
+        role: { ru: "Глава семьи", en: "Head of Family", he: "ראש המשפחה" },
+        name: { 
+          ru: "Вульф Шевелев Смагаринский", 
+          en: "Vulf Shevelev Smagarinsky", 
+          he: "וולף שבולב סמגриנסקי" 
+        },
+        birthName: { 
+          ru: "Фамилия при рождении: Смагаринский",
+          en: "Birth name: Smagarinsky",
+          he: "שם משפחה בלידה: סמגриנסקי"
+        },
+        years: "1898 — 1975",
+        photo: "photos/vulf1898.jpg",
+        photoCaption: {
+          ru: "Фото середины XX века",
+          en: "Photo from the mid-20th century",
+          he: "תצלום מאמצע המאה ה-20"
+        },
+        milestones: {
+          birthPlace: { ru: "г. Прилуки, Полтавская губерния", en: "Priluki, Poltava Governorate", he: "פרילוקי, פלך פולטבה" },
+          marriage: { 
+            ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруга — Блюма Бейла Энтин", 
+            en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Blyuma Beyla Entin", 
+            he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בת זוג — בלומה ביילה אנטין" 
+          },
+          occupation: {
+            ru: "Сапожник — единоличный владелец",
+            en: "Shoemaker — sole proprietor",
+            he: "סנדלר — בעל עסק עצמאי"
+          },
+          burial: { ru: "Еврейское кладбище, г. Астрахань", en: "Jewish Cemetery, Astrakhan", he: "בית העלמין היהודי, אסטרחן" }
+        },
+        bio: {
+          ru: `<p>Вульф происходил из мещанского сословия Речицкого уезда Холмечского общества. Он посвятил свою жизнь честному ремесленному труду, обеспечивая благополучие близких.</p>
+               <p>Был человеком исключительно трудолюбивым, принципиальным, бескомпромиссным и волевым. В памяти потомков остался преданным своей семье главой рода, воспитавшим детей в глубоком уважении к труду.</p>`,
+          en: `<p>Vulf came from the burgher estate of the Rechitsa Uyezd, Kholmech Community. He dedicated his life to honest craft labor, ensuring the well-being of his loved ones.</p>
+               <p>He was an exceptionally hardworking, unyielding, and strong-willed man. In the memory of descendants, he remains a devoted patriarch who raised his children with deep respect for labor.</p>`,
+          he: `<p>וולף היה שייך למעמד האזרחים (מישצ'אנין) של מחוז רצ'יצה, קהילת חולמץ'. Он הקדיש את חייו לעבודת כפיים ישרה, תוך דאגה לרווחת יקיריו.</p>
+               <p>היה אדם חרוץ להפליא, עקרוני, בלתי מתפשר ובעל רצון חזק. בזיכרון הצאצאים הוא נותר כראש משפחה מסור שחינך את ילדיו לכבוד עמוק לעבודה.</p>`
+        },
+        familyText: {
+          ru: [
+            "<strong>Отец:</strong> Шевель Смагаринский",
+            "<strong>Супруга:</strong> Блюма Бейла Самуиловна Смагаринская (урожденная Энтин)",
+            "<strong>Дети:</strong> Фима (Хаим) Вулфович Смагаринский",
+            "<strong>Братья и сестры:</strong> Данные исследуются"
+          ],
+          en: [
+            "<strong>Father:</strong> Shevel Smagarinsky",
+            "<strong>Spouse:</strong> Blyuma Beyla Samuilovna Smagarinskaya (née Entin)",
+            "<strong>Children:</strong> Fima (Khaim) Vulfovich Smagarinsky",
+            "<strong>Siblings:</strong> Under historical research"
+          ],
+          he: [
+            "<strong>אב:</strong> שבול סמגриנסקי",
+            "<strong>בת זוג:</strong> בלומה ביילה סמואילובנה סמגרינסקי (לבית אנטין)",
+            "<strong>ילדים:</strong> פימה (חיים) וולפוביץ' סמגרינסקי",
+            "<strong>אחים ואחיות:</strong> הנתונים בבדיקה"
+          ]
+        },
+        // Сюда складываем все документы человека
+        documents: [
+          { 
+            label: { ru: "Артель сапожников в Биробиджане", en: "Shoemakers' Artel in Birobidzhan", he: "ארטל סנדלרים בבירוביג'אן" }, 
+            url: "documents/person_vulf_1898/birobidzhan_shoemakers'_artel.png" 
+          },
+          { 
+            label: { ru: "Ориентировочно 1924 г. Вульф, Блюма, Хаим (Фима) и на руках Самуил", en: "Circa 1924. Vulf, Blyuma, Chaim (Fima) and Samuil", he: "סביבות 1924. וולף, בלומה, חיים (פימה) וסמואל" }, 
+            url: "documents/person_vulf_1898/circa_1924_vulf_blyuma_chaim_(fima)_and_in_her_arms_samuil_(...).jpg" 
+          },
+          { 
+            label: { ru: "Похороны дедушки Вульфа, еврейское кладбище в Астрахани", en: "Grandfather Vulf's funeral, Jewish cemetery in Astrakhan", he: "לווייתו של סבא וולף, בית העלמין היהודי באסטרחן" }, 
+            url: "documents/person_vulf_1898/grandfather_vulf's_funeral_jewish_cemetery_in_astrakhan.jpg" 
+          },
+          { 
+            label: { ru: "Предположительно дом проживания семьи в Прилуках", en: "Presumably the residence of the Smagaryinsky family in Priluki", he: "ככל הנראה בית מגורי משפחת סמגרינסקי בפרילוקי" }, 
+            url: "documents/person_vulf_1898/presumably-the_residence_of_the_smagaryinsky_family_in_priluki.jpg" 
+          },
+          { 
+            label: { ru: "Дом в Биробиджане (справа внучка Люда от дочери Сони)", en: "The house in Birobidzhan (on the right is granddaughter Lyuda)", he: "הבית בבירוביג'אן (מימין הנכדה לודה)" }, 
+            url: "documents/person_vulf_1898/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_sonya.jpg" 
+          },
+          { 
+            label: { ru: "Вульф (справа) предположительно с братьями", en: "Vulf (right) presumably with his brothers", he: "וולף (מימין) ככל הנראה עם אחיו" }, 
+            url: "documents/person_vulf_1898/vulf_(right)_presumably_with_his_brothers.png" 
+          },
+          { 
+            label: { ru: "Документ: Вульф и Блюма (JewishGen)", en: "Vulf and Blyuma Record", he: "מסמך וולף ובלומה" }, 
+            url: "documents/person_vulf_1898/vulf_blyuma.png" 
+          },
+          { 
+            label: { ru: "Вульф, приблизительно 60-ые годы", en: "Vulf, circa 1960s", he: "וולף, סביבות שנות ה-60" }, 
+            url: "documents/person_vulf_1898/vulf_circa_1960s.jpg" 
+          },
+          { 
+            label: { ru: "Вульф во дворе своего дома, Биробиджан", en: "Vulf in the courtyard of his house, Birobidzhan", he: "וולף בחצר ביתו, בירוביג'אן" }, 
+            url: "documents/person_vulf_1898/vulf_in_the_court_yard_of_his_house_birobidzhan.png" 
+          },
+          { 
+            label: { ru: "Свидетельство о браке 1916", en: "Marriage Certificate 1916", he: "תעודת נישואין 1916" }, 
+            url: "documents/person_vulf_1898/vulf_marriage_1916.jpg" 
+          },
+          { 
+            label: { ru: "Вульф, время неизвестно", en: "Vulf, time unknown", he: "וולף, זמן לא ידוע" }, 
+            url: "documents/person_vulf_1898/vulf_time_unknown.jpg" 
+          },
+          { 
+            label: { ru: "Вульф с Блюмой, Биробиджан", en: "Vulf with Blyuma, Birobidzhan", he: "וולף עם בלומה, בירוביג'אן" }, 
+            url: "documents/person_vulf_1898/vulf_with_blyuma_birobidzhan.jpg" 
+          },
+          { 
+            label: { ru: "Вульф с Блюмой, время неизвестно", en: "Vulf with Blyuma, time unknown", he: "וולף ובלומה, זמן לא ידוע" }, 
+            url: "documents/person_vulf_1898/vulf_with_blyuma_time_unknown.jpg" 
+          },
+          { 
+            label: { ru: "Вульф с внуками Светой и Сашей от сына Анатолия", en: "Vulf with grandchildren Sveta and Sasha", he: "וולף עם הנכדים סווטה וסשה" }, 
+            url: "documents/person_vulf_1898/vulf_with_his_grandchildren_sveta_and_sasha_from_his_son_anatoly.jpg" 
+          },
+          { 
+            label: { ru: "Вульф с внучкой Светой", en: "Vulf with granddaughter Sveta", he: "וולף עם הנכדה סווטה" }, 
+            url: "documents/person_vulf_1898/vulf_with_his_granddaughter_sveta.jpg" 
+          },
+          { 
+            label: { ru: "Извещение о смерти Вульфа", en: "Vulf's Death Notice", he: "הודעת פטירה של וולף" }, 
+            url: "documents/person_vulf_1898/vulfe's_death_notice.png" 
+          },
+          { 
+            label: { ru: "Дети Вульфа — Фима, Миша, Катя", en: "Vulf's children — Fima, Misha, Katya", he: "ילדיו של וולף — פימה, מישה, קטיה" }, 
+            url: "documents/person_vulf_1898/vulf's_children_fima_(standing_left)_misha_(back_right)_katya_wit....jpg" 
+          },
+          { 
+            label: { ru: "Похороны Вульфа в Астрахани, Круглова 33, 1975", en: "Vulf's funeral, Astrakhan, 1975", he: "לווייתו של וולף באסטרחן, 1975" }, 
+            url: "documents/person_vulf_1898/vulf's_funeral_astrakhan_krugлова_33_1975.jpg" 
+          }
+        ],
+        links: { parents: null, spouse: "person_002", siblings: null, children: "person_003" }
+      },
+      "person_002": {
+        isDeceased: true,
+        role: { ru: "Хранительница очага", en: "Homemaker", he: "עקרת בית" },
+        name: { ru: "Блюма Бейла Самуилова Смагаринская", en: "Blyuma Beyla Samuilova Smagarinsky", he: "בלומה ביילה סמואילובה סמגרינסקי" },
+        birthName: { ru: "Девичья фамилия: Энтин (Мстиславская мещанка)", en: "Maiden name: Entin (Burgher of Mstislavl)", he: "שם נעורים: אנטין (אזרחית מסטסלב)" },
+        years: "1895 — 1975",
+        photo: "photos/blyuma1895.jpg",
+        photoCaption: { ru: "фото середины ХХ века", en: "photo from the mid-20th century", he: "תצלום מאמצע המאה ה-20" },
+        milestones: {
+          birthPlace: { ru: "Не установлено", en: "Not established", he: "לא נקבע" },
+          marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בן זוג — וולף סמגרינסקי" },
+          occupation: { ru: "Домохозяйка", en: "Homemaker", he: "עקרת בית" },
+          burial: { ru: "г. Биробиджан", en: "Birobidzhan", he: "בירוביג'אן" }
+        },
+        bio: {
+          ru: `<p>Блюма Бейла происходила из мещанского сословия города Мстиславля. Она получила хорошее для своего времени образование и очень любила читать, пронеся страсть к книгам через всю жизнь.</p>
+               <p>Умудренная жизненным опытом женщина, она посвятила себя заботе о близких. В памяти потомков осталась как удивительно чуткая, заботливая мать и бабушка, согревавшая теплом всю семью.</p>`,
+          en: `<p>Blyuma Beyla came from the burgher estate of Mstislavl. She received a good education for her time and loved to read, carrying her passion for books throughout her life.</p>
+               <p>A woman of great life wisdom, she dedicated herself to her family. In the memory of her descendants, she remains an exceptionally tender and caring mother and grandmother who brought warmth to the entire home.</p>`,
+          he: `<p>בלומה ביילה הייתה שייכת למעמד האזרחים (מישצ'אниן) של העיר מסטסלב. היא זכתה להשכלה טובה לתקופתה ואהבה מאוד לקרוа, אהבה שליוותה אותה לאורך כל חייה.</p>
+               <p>אישה למודת ניסיון חיים, שהקדישה את עצמה למשפחתה. בזיכרון הצאצאים היא נותרה כאם וסבתא מסורה ודאגת להפליא, שהעניקה חום ואהבה לכל המשפחה.</p>`
+        },
+        familyText: {
+          ru: ["<strong>Супруг:</strong> Вульф Шевелев Смагаринский", "<strong>Дети:</strong> Фима Вулфович Смагаринский"],
+          en: ["<strong>Spouse:</strong> Vulf Shevelev Smagarinsky", "<strong>Children:</strong> Fima Vulfovich Smagarinsky"],
+          he: ["<strong>בן זוג:</strong> וולף שבולב סמגרינסקי", "<strong>ילדים:</strong> פימה וולפוביץ' סמגרינסקי"]
+        },
+        // Сюда будешь добавлять документы Блюмы, когда они появятся
+        documents: [
+          {
+            label: { ru: "Свидетельство о браке 1916 г. (г. Прилуки)", en: "Marriage certificate 1916 (Priluki)" },
+            url: "documents/person_blyuma_1895/vulf_marriage_1916.jpg"
+          },
+          {
+            label: { ru: "Блюма в возрасте 69 лет", en: "Blyuma, 69 years old" },
+            url: "documents/person_blyuma_1895/blyuma_69_years_old.jpg"
+          },
+          {
+            label: { ru: "Блюма-Бейла", en: "Blyuma-Beyla" },
+            url: "documents/person_blyuma_1895/blyuma_beyla_.jpg"
+          },
+          {
+            label: { ru: "Блюма с дочерьми Соней (слева) и Мирой (справа), Биробиджан, 1950-1960 гг.", en: "Blyuma with daughters Sonya (left) and Mira (right), Birobidzhan, 1950-1960" },
+            url: "documents/person_blyuma_1895/blyuma_with_her_daughters_(sonya_on_the_left_mira_on_the_right)_birobidzhan_1950_1960.jpg"
+          },
+          {
+            label: { ru: "Могила Блюмы на кладбище в Биробиджане", en: "Blyuma's grave at the Birobidzhan cemetery" },
+            url: "documents/person_blyuma_1895/blyuma's_grave_at_the_birobidzhan_cemetery.jpg"
+          },
+          {
+            label: { ru: "Около 1924 г.: Вульф, Блюма, Хаим (Фима) и на руках Самуил (Миша)", en: "Circa 1924: Vulf, Blyuma, Chaim (Fima) and holding Samuil (Misha)" },
+            url: "documents/person_blyuma_1895/circa_1924_vulf_blyuma_chaim_(fima)_and_in_her_arms _samuil_(misha).png"
+          },
+          {
+            label: { ru: "Дом в Биробиджане (справа внучка Люда, дочь Миры)", en: "The house in Birobidzhan (on the right is granddaughter Lyuda, daughter of Mira)" },
+            url: "documents/person_blyuma_1895/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png"
+          },
+          {
+            label: { ru: "Вульф с Блюмой, Биробиджан", en: "Vulf with Blyuma, Birobidzhan" },
+            url: "documents/person_blyuma_1895/vulf_with_blyuma_birobidzhan.jpg"
+          },
+          {
+            label: { ru: "Вульф с Блюмой, время неизвестно", en: "Vulf with Blyuma, time unknown" },
+            url: "documents/person_blyuma_1895/vulf_with_blyuma_time_unknown.jpg"
+          },
+          {
+            label: { ru: "Дети Вульфа: Фима (стоит слева), Миша (сзади справа), Катя с Анатолием на руках, Соня и Мира справа. Вероятно, 1938 г., Биробиджан", en: "Vulf's children: Fima (standing left), Misha (back right), Katya holding Anatoly, Sonya and Mira on the right. Probably 1938, Birobidzhan" },
+            url: "documents/person_blyuma_1895/vulf_s_children_fima_(standing_left)_misha_(back_right)_katya_with_anatoly_in_her_arms_sonya_and_mira_on_the_right_probably_1938_birobidzhan.jpg"
+          },
+          {
+            label: { ru: "Вульф и Блюма", en: "Vulf and Blyuma" },
+            url: "documents/person_blyuma_1895/vulf_blyuma.png"
+          }
+        ],
+      }, // <-- ВОТ ЭТА СКОБКА С ЗАПЯТОЙ БЫЛА ПОТЕРЯНА! ОНА ЗАКРЫВАЕТ КАРТОЧКУ БЛЮМЫ ("person_002")
+      "person_003": {
+        isDeceased: true,
+        role: { ru: "Сын", en: "Son", he: "בן" },
+        name: { ru: "Фима Вулфович Смагаринский", en: "Fima Vulfovich Smagarinsky", he: "פימה וולפוביץ' סמגרינסקי" },
+        birthName: { ru: "", en: "", he: "" },
+        years: "1919 — 1998",
+        photo: "photos/fima1919.jpg",
+        photoCaption: { ru: "Фима Вулфович в молодости", en: "Fima Vulfovich in his youth", he: "פימה וולפוביץ' בצעירותו" },
+        milestones: {
+          birthPlace: { ru: "м. Прилуки", en: "Priluki", he: "פרילוקי" },
+          marriage: { ru: "Данные уточняются", en: "TBD", he: "פרטים יתעדכנו" },
+          occupation: { ru: "Работник торговли", en: "Trade worker", he: "עובד מסחר" },
+          burial: { ru: "г. Астрахань", en: "Astrakhan", he: "אסטרחן" }
+        },
+        bio: {
+          ru: "<p>Продолжатель семейного дела, выросший в атмосфере уважения к труду. Оставил глубокий след в памяти детей и внуков.</p>",
+          en: "<p>Successor of the family business, raised in an atmosphere of respect for labor. Left a deep imprint in the memory of descendants.</p>",
+          he: "<p>ממשיך דרכו של העסק המשפחתי, גדל באווירה של כבוד לעבודה. הותיר חותם עמוק בזיכרונם של צаצאיו.</p>"
+        },
+        familyText: {
+          ru: ["<strong>Родители:</strong> Вульф и Блюма Смагаринские"],
+          en: ["<strong>Parents:</strong> Vulf and Blyuma Smagarinsky"],
+          he: ["<strong>הורים:</strong> וולף ובלומה סמגриנסקי"]
+        },
+        documents: [],
+      links: { parents: "person_vulf_1898", spouse: null, siblings: null, children: null }
+       }
+     };
+  
+     let currentId = "person_vulf_1898";
+     let currentLang = "ru";
+
+    const labels = {
+      ru: { 
+        parents: "Родители", spouse: "Супруг(а)", siblings: "Братья/Сестры", children: "Дети",
+        m_birth: "Место рождения", m_marriage: "Бракосочетание", m_occupation: "Образование и род деятельности", m_burial: "Место упокоения",
+        m_title: "Важные вехи", fam_title: "Семейный круг",
+        archive_btn: "Открыть архив документов", modal_title: "Архивные свидетельства и сканы",
+        modal_subtitle: "Нажмите на документ, чтобы открыть его оригинал в новой вкладке:", modal_close: "Закрыть"
+      },
+      en: { 
+        parents: "Parents", spouse: "Spouse", siblings: "Siblings", children: "Children",
+        m_birth: "Place of Birth", m_marriage: "Marriage", m_occupation: "Education & Career", m_burial: "Resting Place",
+        m_title: "Key Milestones", fam_title: "Family Circle",
+        archive_btn: "Open Document Archive", modal_title: "Archival Records & Scans",
+        modal_subtitle: "Click on a document to open its original scan in a new tab:", modal_close: "Close"
+      },
+      he: { 
+        parents: "הורים", spouse: "בן/בת זוג", siblings: "אחים/אחיות", children: "ילדים",
+        m_birth: "מקום לידה", m_marriage: "נישואין", m_occupation: "השכלה ועיסוק", m_burial: "מקום קבורה",
+        m_title: "ציוני דרך מרכזיים", fam_title: "מעגל משפחתי",
+        archive_btn: "פתח את ארכיון המסמכים", modal_title: "מסמכי ארכיון וסריקות",
+        modal_subtitle: "לחץ על המסמך כדי לפתוח את הסריקה המקורית בלשונית חדשה:", modal_close: "סגור"
+      }
+    };
+
+    function renderProfile() {
+      const person = db[currentId];
+      if (!person) return;
+
+      document.getElementById("person-photo").src = person.photo;
+      document.getElementById("photo-caption").innerText = person.photoCaption ? person.photoCaption[currentLang] : "";
+
+      const ribbonContainer = document.getElementById("photo-ribbon");
+      ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
+
+      document.getElementById("person-role").innerText = person.role[currentLang];
+      document.getElementById("person-name").innerText = person.name[currentLang];
+      
+      const birthNameEl = document.getElementById("person-birth-name");
+      if (person.birthName && person.birthName[currentLang]) {
+        birthNameEl.innerText = person.birthName[currentLang];
+        birthNameEl.style.display = "block";
+      } else {
+        birthNameEl.style.display = "none";
+      }
+
+      document.getElementById("person-years").innerText = person.years;
+
+      // Тексты и заголовки
+      document.getElementById("milestones-title").innerText = labels[currentLang].m_title;
+      document.getElementById("family-title").innerText = labels[currentLang].fam_title;
+      document.getElementById("archive-btn-text").innerText = labels[currentLang].archive_btn;
+
+      // Таблица вех
+      const table = document.getElementById("milestones-table");
+      table.innerHTML = `
+        <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600 w-1/3">${labels[currentLang].m_birth}:</td><td class="py-1.5">${person.milestones.birthPlace[currentLang]}</td></tr>
+        <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_marriage}:</td><td class="py-1.5">${person.milestones.marriage[currentLang]}</td></tr>
+        <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_occupation}:</td><td class="py-1.5 font-medium text-amber-950">${person.milestones.occupation[currentLang]}</td></tr>
+        <tr><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_burial}:</td><td class="py-1.5">${person.milestones.burial[currentLang]}</td></tr>
+      `;
+
+      // Биография
+      document.getElementById("person-bio").innerHTML = person.bio[currentLang];
+
+      // Семейный круг
+      const familyList = document.getElementById("family-list");
+      familyList.innerHTML = "";
+      if (person.familyText && person.familyText[currentLang]) {
+        person.familyText[currentLang].forEach(item => {
+          const li = document.createElement("li");
+          li.innerHTML = item;
+          familyList.appendChild(li);
+        });
+      }
+
+      // Управление кнопкой архива (если документов нет — скрываем кнопку)
+      const docSection = document.getElementById("documents-section");
+      if (person.documents && person.documents.length > 0) {
+        docSection.style.display = "block";
+      } else {
+        docSection.style.display = "none";
+      }
+
+      // Настройка направления текста (RTL/LTR)
+      const bioContainer = document.getElementById("bio-container");
+      const modalBox = document.querySelector("#archive-modal > div");
+      if (currentLang === 'he') {
+        bioContainer.classList.add('rtl'); bioContainer.classList.remove('ltr');
+        modalBox.classList.add('rtl'); modalBox.classList.remove('ltr');
+        table.classList.add('rtl-table');
+        familyList.classList.add('text-right');
+      } else {
+        bioContainer.classList.add('ltr'); bioContainer.classList.remove('rtl');
+        modalBox.classList.add('ltr'); modalBox.classList.remove('rtl');
+        table.classList.remove('rtl-table');
+        familyList.classList.remove('text-right');
+      }
+
+      renderButtons(person.links);
+    }
+
+    // ЛОГИКА МОДАЛЬНОГО ОКНА
+    function openArchiveModal() {
+      const person = db[currentId];
+      if (!person || !person.documents) return;
+
+      // Обновляем тексты в модальном окне под текущий язык
+      document.getElementById("modal-title").innerHTML = `<span>🗄️</span> ${labels[currentLang].modal_title}`;
+      document.getElementById("modal-subtitle").innerText = labels[currentLang].modal_subtitle;
+      document.getElementById("modal-close-btn").innerText = labels[currentLang].modal_close;
+
+      const listContainer = document.getElementById("modal-documents-list");
+      listContainer.innerHTML = "";
+
+      // Генерируем элементы списка документов
+      person.documents.forEach(doc => {
+        const a = document.createElement("a");
+        a.href = doc.url;
+        a.target = "_blank";
+        a.className = "flex items-center justify-between p-3 bg-stone-200/70 hover:bg-amber-900/10 border border-stone-300 rounded-md text-stone-900 font-sans font-medium transition duration-200 group shadow-sm";
+        a.innerHTML = `
+          <div class="flex items-center gap-2.5">
+            <span class="text-xl">📄</span>
+            <span class="group-hover:text-amber-950 group-hover:underline">${doc.label[currentLang]}</span>
+          </div>
+          <span class="text-xs text-stone-400 group-hover:text-amber-900 font-normal">Открыть ↗</span>
+        `;
+        listContainer.appendChild(a);
+      });
+
+      // Показываем окно
+      document.getElementById("archive-modal").classList.remove("hidden");
+    }
+
+    function closeArchiveModal(event) {
+      // Закрываем окно
+      document.getElementById("archive-modal").classList.add("hidden");
+    }
+
+    function renderButtons(links) {
+      const container = document.getElementById("navigation-bttns");
+      container.innerHTML = "";
+      const types = ["parents", "spouse", "siblings", "children"];
+      
+      types.forEach(type => {
+        const targetId = links[type];
+        const button = document.createElement("button");
+        button.className = "flex flex-col items-center justify-center p-2.5 border rounded text-center transition w-full shadow-sm";
+        
+        if (targetId && db[targetId]) {
+          button.className += "bg-stone-100 hover:bg-stone-50 border-stone-400 text-stone-800 cursor-pointer hover:shadow-md";
+          button.onclick = () => {
+            currentId = targetId;
+            document.getElementById("bio-container").scrollTop = 0;
+            renderProfile();
+          };
+          button.innerHTML = `
+            <span class="text-[11px] text-stone-500 uppercase tracking-wider">${labels[currentLang][type]}</span>
+            <span class="text-base font-semibold truncate w-full px-1 mt-0.5">${db[targetId].name[currentLang]}</span>
+          `;
+        } else {
+          button.className += "bg-stone-100/30 border-stone-300 text-stone-400 opacity-40 cursor-not-allowed";
+          button.innerHTML = `
+            <span class="text-[11px] text-stone-400 uppercase tracking-wider">${labels[currentLang][type]}</span>
+            <span class="text-xs italic mt-0.5">—</span>
+          `;
+        }
+        container.appendChild(button);
+      });
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.querySelectorAll("#lang-switcher button").forEach(btn => {
+        btn.className = "px-3 py-1 bg-stone-300 text-stone-700 rounded hover:bg-stone-400 transition";
+      });
+      document.getElementById(`btn-${lang}`).className = "px-3 py-1 bg-stone-800 text-amber-50 rounded shadow-sm transition";
+      renderProfile();
+    }
+
+    // Стартовый запуск
+    renderProfile();
+  </script>
+</body>
+</html>
