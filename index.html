@@ -176,253 +176,96 @@
 
   <!-- ЛОГИКА И БАЗА ДАННЫХ -->
   <script>
-    const db = {
-      "person_vulf_1898": {
-        isDeceased: true,
-        role: { ru: "Глава семьи", en: "Head of Family", he: "ראש המשפחה" },
-        name: { 
-          ru: "Вульф Шевелев Смагаринский", 
-          en: "Vulf Shevelev Smagarinsky", 
-          he: "וולף שבולב סמגриנסקי" 
-        },
-        birthName: { 
-          ru: "Фамилия при рождении: Смагаринский",
-          en: "Birth name: Smagarinsky",
-          he: "שם משפחה בלידה: סמגриנסקי"
-        },
-        years: "1898 — 1975",
-        photo: "photos/vulf1898.jpg",
-        photoCaption: {
-          ru: "Фото середины XX века",
-          en: "Photo from the mid-20th century",
-          he: "תצלום מאמצע המאה ה-20"
-        },
-        milestones: {
-          birthPlace: { ru: "г. Прилуки, Полтавская губерния", en: "Priluki, Poltava Governorate", he: "פרילוקי, פלך פולטבה" },
-          marriage: { 
-            ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруга — Блюма Бейла Энтин", 
-            en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Blyuma Beyla Entin", 
-            he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בת זוג — בלומה ביילה אנטין" 
-          },
-          occupation: {
-            ru: "Сапожник — единоличный владелец",
-            en: "Shoemaker — sole proprietor",
-            he: "סנדלר — בעל עסק עצמאי"
-          },
-          burial: { ru: "Еврейское кладбище, г. Астрахань", en: "Jewish Cemetery, Astrakhan", he: "בית העלמין היהודי, אסטרחן" }
-        },
-        bio: {
-          ru: `<p>Вульф происходил из мещанского сословия Речицкого уезда Холмечского общества. Он посвятил свою жизнь честному ремесленному труду, обеспечивая благополучие близких.</p>
-               <p>Был человеком исключительно трудолюбивым, принципиальным, бескомпромиссным и волевым. В памяти потомков остался преданным своей семье главой рода, воспитавшим детей в глубоком уважении к труду.</p>`,
-          en: `<p>Vulf came from the burgher estate of the Rechitsa Uyezd, Kholmech Community. He dedicated his life to honest craft labor, ensuring the well-being of his loved ones.</p>
-               <p>He was an exceptionally hardworking, unyielding, and strong-willed man. In the memory of descendants, he remains a devoted patriarch who raised his children with deep respect for labor.</p>`,
-          he: `<p>וולף היה שייך למעמד האזרחים (מישצ'אנין) של מחוז רצ'יצה, קהילת חולמץ'. Он הקדיש את חייו לעבודת כפיים ישרה, תוך דאגה לרווחת יקיריו.</p>
-               <p>היה אדם חרוץ להפליא, עקרוני, בלתי מתפשר ובעל רצון חזק. בזיכרון הצאצאים הוא נותר כראש משפחה מסור שחינך את ילדיו לכבוד עמוק לעבודה.</p>`
-        },
-        familyText: {
-          ru: [
-            "<strong>Отец:</strong> Шевель Смагаринский",
-            "<strong>Супруга:</strong> Блюма Бейла Самуиловна Смагаринская (урожденная Энтин)",
-            "<strong>Дети:</strong> Фима (Хаим) Вулфович Смагаринский",
-            "<strong>Братья и сестры:</strong> Данные исследуются"
-          ],
-          en: [
-            "<strong>Father:</strong> Shevel Smagarinsky",
-            "<strong>Spouse:</strong> Blyuma Beyla Samuilovna Smagarinskaya (née Entin)",
-            "<strong>Children:</strong> Fima (Khaim) Vulfovich Smagarinsky",
-            "<strong>Siblings:</strong> Under historical research"
-          ],
-          he: [
-            "<strong>אב:</strong> שבול סמגриנסקי",
-            "<strong>בת זוג:</strong> בלומה ביילה סמואילובנה סמגרינסקי (לבית אנטין)",
-            "<strong>ילדים:</strong> פימה (חיים) וולפוביץ' סמגרינסקי",
-            "<strong>אחים ואחיות:</strong> הנתונים בבדיקה"
-          ]
-        },
-        // Сюда складываем все документы человека
-
-        documents: [
-          { 
-            label: { ru: "Артель сапожников в Биробиджане", en: "Shoemakers' Artel in Birobidzhan", he: "ארטל סנדלרים בבירוביג'אן" }, 
-            url: "documents/person_vulf_1898/birobidzhan_shoemakers'_artel.png" 
-          },
-          { 
-            label: { ru: "Ориентировочно 1924 г. Вульф, Блюма, Хаим (Фима) и на руках Самуил", en: "Circa 1924. Vulf, Blyuma, Chaim (Fima) and Samuil", he: "סביבות 1924. וולף, בלומה, חיים (פימה) וסמואל" }, 
-            url: "documents/person_vulf_1898/vulf_blyuma_fima_misha.jpg",
-          },
-          { 
-            label: { ru: "Похороны дедушки Вульфа, еврейское кладбище в Астрахани", en: "Grandfather Vulf's funeral, Jewish cemetery in Astrakhan", he: "לווייתו של סבא וולף, בית העлמין היהודי באסטרחן" }, 
-            url: "documents/person_vulf_1898/grandfather_vulf's_funeral_jewish_cemetery_in_astrakhan.jpg" 
-          },
-          { 
-            label: { ru: "Предположительно дом проживания семьи в Прилуках", en: "Presumably the residence of the Smagaryinsky family in Priluki", he: "ככל הנראה בית מגורי משפחת סמגרינסקי בפרילוקי" }, 
-            url: "documents/person_vulf_1898/presumably-the_residence_of_the_smagaryinsky_family_in_priluki.jpg" 
-          },
-          { 
-            label: { ru: "Дом в Биробиджане (справа внучка Люда от дочери Сони)", en: "The house in Birobidzhan (on the right is granddaughter Lyuda)", he: "הבית בבירוביג'אן (מימין הנכדה לודה)" }, 
-            url: "documents/person_vulf_1898/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png" 
-          },
-          { 
-            label: { ru: "Вульф (справа) предположительно с братьями", en: "Vulf (right) presumably with his brothers", he: "וולף (מימין) ככל הנראה עם אחיו" }, 
-            url: "documents/person_vulf_1898/vulf_(right)_presumably_with_his_brothers.png" 
-          },
-          { 
-            label: { ru: "Документ: Вульф и Блюма (JewishGen)", en: "Vulf and Blyuma Record", he: "מסמך וולף ובלומה" }, 
-            url: "documents/person_vulf_1898/vulf_blyuma.png" 
-          },
-          { 
-            label: { ru: "Вульф, приблизительно 60-ые годы", en: "Vulf, circa 1960s", he: "וולף, סביבות שנות ה-60" }, 
-            url: "documents/person_vulf_1898/vulf_circa_1960s.jpg" 
-          },
-          { 
-            label: { ru: "Вульф во дворе своего дома, Биробиджан", en: "Vulf in the courtyard of his house, Birobidzhan", he: "וולף בחצר ביתו, בירוביג'אן" }, 
-            url: "documents/person_vulf_1898/vulf_in_the_courtyard_of_his_house_birobidzhan.png" 
-          },
-          { 
-            label: { ru: "Свидетельство о браке 1916", en: "Marriage Certificate 1916", he: "תעודת נישואין 1916" }, 
-            url: "documents/person_vulf_1898/vulf_marriage_1916.jpg" 
-          },
-          { 
-            label: { ru: "Вульф, время неизвестно", en: "Vulf, time unknown", he: "וולף, זמן לא ידוע" }, 
-            url: "documents/person_vulf_1898/vulf_time_unknown.jpg" 
-          },
-          { 
-            label: { ru: "Вульф с Блюмой, Биробиджан", en: "Vulf with Blyuma, Birobidzhan", he: "וולף עם בלומה, בירוביג'אן" }, 
-            url: "documents/person_vulf_1898/vulf_with_blyuma_birobidzhan.jpg" 
-          },
-          { 
-            label: { ru: "Вульф с Блюмой, время неизвестно", en: "Vulf with Blyuma, time unknown", he: "וולף ובלומה, זמן לא ידוע" }, 
-            url: "documents/person_vulf_1898/vulf_with_blyuma_time_unknown.jpg" 
-          },
-          { 
-            label: { ru: "Вульф с внуками Светой и Сашей от сына Анатолия", en: "Vulf with grandchildren Sveta and Sasha", he: "וולף עם הנכדים סווטה וסשה" }, 
-            url: "documents/person_vulf_1898/vulf_with_his_grandchildren_sveta_and_sasha_from_his_son_anatoly.jpg" 
-          },
-          { 
-            label: { ru: "Вульф с внучкой Светой", en: "Vulf with granddaughter Sveta", he: "וולף עם הנכדה סווטה" }, 
-            url: "documents/person_vulf_1898/vulf_with_his_granddaughter_sveta.jpg" 
-          },
-          { 
-            label: { ru: "Извещение о смерти Вульфа", en: "Vulf's Death Notice", he: "הודעת פטירה של וולף" }, 
-            url: "documents/person_vulf_1898/vulfe's_death_notice.png" 
-          },
-          { 
-            label: { ru: "Дети Вульфа — Фима, Миша, Катя", en: "Vulf's children — Fima, Misha, Katya", he: "ילדיו של וולף — פימה, מישה, קטיה" }, 
-            url: "documents/person_vulf_1898/vulf's_children_fima_(standing_left)_misha_(back_right)_katya_with_anatoly_in_her_arms_sonya_and_mira_on_the_right_probably_1938_birobidzhan.jpg" 
-          },
-          { 
-            label: { ru: "Похороны Вульфа в Астрахани, Круглова 33, 1975", en: "Vulf's funeral, Astrakhan, 1975", he: "לווייתו של וולף באסטרחן, 1975" }, 
-            url: "documents/person_vulf_1898/vulf's_funeral_astrakhan_kruglova_33_1975.jpg" 
-          }
-        ],
-        links: { parents: null, spouse: "person_002", siblings: null, children: "person_003" }
-      },
-     "person_blyuma_1895": {
-        isDeceased: true,
-        role: { ru: "Хранительница очага", en: "Homemaker", he: "עקרת בית" },
-        name: { ru: "Блюма Бейла Самуилова Смагаринская", en: "Blyuma Beyla Samuilova Smagarinsky", he: "בלומה ביילה סמואילובה סמגриנסקי" },
-        birthName: { ru: "Девичья фамилия: Энтин (Мстиславская мещанка)", en: "Maiden name: Entin (Burgher of Mstislavl)", he: "שם נעורים: אנטין (אזרחית מסטסלב)" },
-        years: "1895 — 1975",
-        photo: "photos/blyuma1895.jpg",
-        photoCaption: { ru: "фото середины ХХ века", en: "photo from the mid-20th century", he: "תצלום מאמצע המאה ה-20" },
-        milestones: {
-          birthPlace: { ru: "Не установлено", en: "Not established", he: "לא נקבע" },
-          marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בן זוג — וולף סמגרינסקי" },
-          occupation: { ru: "Домохозяйка", en: "Homemaker", he: "עקרת בית" },
-          burial: { ru: "г. Биробиджан", en: "Birobidzhan", he: "בירוביג'אן" }
-        },
-        links: { parents: null, spouse: "person_vulf_1898", siblings: null, children: "person_003" }
-      },
-        bio: {
-          ru: `<p>Блюма Бейла происходила из мещанского сословия города Мстиславля. Она получила хорошее для своего времени образование и очень любила читать, пронеся страсть к книгам через всю жизнь.</p>
-               <p>Умудренная жизненным опытом женщина, она посвятила себя заботе о близких. В памяти потомков осталась как удивительно чуткая, заботливая мать и бабушка, согревавшая теплом всю семью.</p>`,
-          en: `<p>Blyuma Beyla came from the burgher estate of Mstislavl. She received a good education for her time and loved to read, carrying her passion for books throughout her life.</p>
-               <p>A woman of great life wisdom, she dedicated herself to her family. In the memory of her descendants, she remains an exceptionally tender and caring mother and grandmother who brought warmth to the entire home.</p>`,
-          he: `<p>בלומה ביילה הייתה שייכת למעמד האזרחים (מישצ'אниן) של העיר מסטסלב. היא זכתה להשכלה טובה לתקופתה ואהבה מאוד לקרוа, אהבה שליוותה אותה לאורך כל חייה.</p>
-               <p>אישה למודת ניסיון חיים, שהקדישה את עצמה למשפחתה. בזיכרון הצאצאים היא נותרה כאם וסבתא מסורה ודאגת להפליא, שהעניקה חום ואהבה לכל המשפחה.</p>`
-        },
-        familyText: {
-          ru: ["<strong>Супруг:</strong> Вульф Шевелев Смагаринский", "<strong>Дети:</strong> Фима Вулфович Смагаринский"],
-          en: ["<strong>Spouse:</strong> Vulf Shevelev Smagarinsky", "<strong>Children:</strong> Fima Vulfovich Smagarinsky"],
-          he: ["<strong>בן זוג:</strong> וולף שבולב סמגרינסקי", "<strong>ילדים:</strong> פימה וולפוביץ' סמגרינסקי"]
-        },
-        // Сюда будешь добавлять документы Блюмы, когда они появятся
-        documents: [
-          {
-            label: { ru: "Свидетельство о браке 1916 г. (г. Прилуки)", en: "Marriage certificate 1916 (Priluki)" },
-            url: "documents/person_blyuma_1895/vulf_marriage_1916.jpg"
-          },
-          {
-            label: { ru: "Блюма в возрасте 69 лет", en: "Blyuma, 69 years old" },
-            url: "documents/person_blyuma_1895/blyuma_69_years_old.jpg"
-          },
-          {
-            label: { ru: "Блюма-Бейла", en: "Blyuma-Beyla" },
-            url: "documents/person_blyuma_1895/blyuma_beyla_.jpg"
-          },
-          {
-            label: { ru: "Блюма с дочерьми Соней (слева) и Мирой (справа), Биробиджан, 1950-1960 гг.", en: "Blyuma with daughters Sonya (left) and Mira (right), Birobidzhan, 1950-1960" },
-            url: "documents/person_blyuma_1895/blyuma_with_her_daughters_(sonya_on_the_left_mira_on_the_right)_birobidzhan_1950_1960.jpg"
-          },
-          {
-            label: { ru: "Могила Блюмы на кладбище в Биробиджане", en: "Blyuma's grave at the Birobidzhan cemetery" },
-            url: "documents/person_blyuma_1895/blyuma's_grave_at_the_birobidzhan_cemetery.jpg"
-          },
-          {
-            label: { ru: "Около 1924 г.: Вульф, Блюма, Хаим (Фима) и на руках Самуил (Миша)", en: "Circa 1924: Vulf, Blyuma, Chaim (Fima) and holding Samuil (Misha)" },
-           url: "documents/person_vulf_1898/vulf_blyuma_fima_misha.jpg",
-          },
-          {
-            label: { ru: "Дом в Биробиджане (справа внучка Люда, дочь Миры)", en: "The house in Birobidzhan (on the right is granddaughter Lyuda, daughter of Mira)" },
-            url: "documents/person_blyuma_1895/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png"
-          },
-          {
-            label: { ru: "Вульф с Блюмой, Биробиджан", en: "Vulf with Blyuma, Birobidzhan" },
-            url: "documents/person_blyuma_1895/vulf_with_blyuma_birobidzhan.jpg"
-          },
-          {
-            label: { ru: "Вульф с Блюмой, время неизвестно", en: "Vulf with Blyuma, time unknown" },
-            url: "documents/person_blyuma_1895/vulf_with_blyuma_time_unknown.jpg"
-          },
-          {
-            label: { ru: "Дети Вульфа: Фима (стоит слева), Миша (сзади справа), Катя с Анатолием на руках, Соня и Мира справа. Вероятно, 1938 г., Биробиджан", en: "Vulf's children: Fima (standing left), Misha (back right), Katya holding Anatoly, Sonya and Mira on the right. Probably 1938, Birobidzhan" },
-            url: "documents/person_blyuma_1895/vulf_children_1938.jpg",
-          },
-          {
-            label: { ru: "Вульф и Блюма", en: "Vulf and Blyuma" },
-            url: "documents/person_blyuma_1895/vulf_blyuma.png"
-          }
-        ],
-      }, // <-- ВОТ ЭТА СКОБКА С ЗАПЯТОЙ БЫЛА ПОТЕРЯНА! ОНА ЗАКРЫВАЕТ КАРТОЧКУ БЛЮМЫ ("person_002")
-      "person_003": {
-        isDeceased: true,
-        role: { ru: "Сын", en: "Son", he: "בן" },
-        name: { ru: "Фима Вулфович Смагаринский", en: "Fima Vulfovich Smagarinsky", he: "פימה וולפוביץ' סמгרינסקי" },
-        birthName: { ru: "", en: "", he: "" },
-        years: "1919 — 1998",
-        photo: "photos/fima1919.jpg",
-        photoCaption: { ru: "Фима Вулфович в молодости", en: "Fima Vulfovich in his youth", he: "פימה וולפוביץ' בצעירותו" },
-        milestones: {
-          birthPlace: { ru: "м. Прилуки", en: "Priluki", he: "פרילוקי" },
-          marriage: { ru: "Данные уточняются", en: "TBD", he: "פרטים יתעדכנו" },
-          occupation: { ru: "Работник торговли", en: "Trade worker", he: "עובד מסחר" },
-          burial: { ru: "г. Астрахань", en: "Astrakhan", he: "אסטרחן" }
-        },
-        bio: {
-          ru: `<p>Продолжатель семейного дела, выросший в атмосфере...</p>`,
-          en: `<p>Successor of the family business, raised in an...</p>`,
-          he: `<p>המשך העסק המשפחתי, שגדל באווירה...</p>`
-        },
-        familyText: {
-          ru: [ "<strong>Родители:</strong> Вульф и Блюма Смагаринские" ],
-          en: [ "<strong>Parents:</strong> Vulf and Blyuma Smagarinsky" ],
-          he: [ "<strong>הורים:</strong> וולף ובלומה סמגרינסקי" ]
-        },
-        documents: [ ... ],
-        links: { parents: null, spouse: "person_vulf_1898", siblings: null, children: ["person_003"] }
-      },
-  
-     let currentId = "person_vulf_1898";
+   const db = {
+  "person_vulf_1898": {
+    isDeceased: true,
+    role: { ru: "Глава семьи", en: "Head of Family", he: "ראש המשפחה" },
+    name: { ru: "Вульф Шевелев Смагаринский", en: "Vulf Shevelev Smagarinsky", he: "וולף שבולב סמגриנסקי" },
+    birthName: { ru: "Фамилия при рождении: Смагаринский", en: "Birth name: Smagarinsky", he: "שם משפחה בלידה: סמגриנסקי" },
+    years: "1898 — 1975",
+    photo: "photos/vulf1898.jpg",
+    photoCaption: { ru: "Фото середины XX века", en: "Photo from the mid-20th century", he: "תצלום מאמצע המאה ה-20" },
+    milestones: {
+      birthPlace: { ru: "г. Прилуки, Полтавская губерния", en: "Priluki, Poltava Governorate", he: "פרילוקи, פלך פולטבה" },
+      marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруга — Блюма Бейла Энтин", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Blyuma Beyla Entin", he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בת זוג — בלומה ביילה אנטין" },
+      occupation: { ru: "Сапожник — единоличный владелец", en: "Shoemaker — sole proprietor", he: "סנדלר — בעל עסק עצמאי" },
+      burial: { ru: "Еврейское кладбище, г. Астрахань", en: "Jewish Cemetery, Astrakhan", he: "בית העлמין היהודי, אסטרחן" }
+    },
+    bio: {
+      ru: `<p>Вульф происходил из мещанского сословия Речицкого уезда Холмечского общества. Он посвятил свою жизнь честному ремесленному труду, обеспечивая благополучие близких.</p><p>Был человеком исключительно трудолюбивым, принципиальным, бескомпромиссным и волевым. В памяти потомков остался преданным своей семье главой рода, воспитавшим детей в глубоком уважении к труду.</p>`,
+      en: `<p>Vulf came from the burgher estate of the Rechitsa Uyezd, Kholmech Community. He dedicated his life to honest craft labor, ensuring the well-being of his loved ones.</p><p>He was an exceptionally hardworking, unyielding, and strong-willed man. In the memory of descendants, he remains a devoted patriarch who raised his children with deep respect for labor.</p>`,
+      he: `<p>וולף היה שייך למעמד האזרחים (מישצ'אנין) של מחוז רצ'יצה, קהילת חולמץ'. הוא הקדיש את חייו לעבודת כפיים ישרה, תוך דאגה לרווחת יקיריו.</p><p>היה אדם חרוץ להפליא, עקרוני, בלתי מתפשר ובעל רצון חזק. בזיכרון הצאצאים הוא נותר כראש משפחה מסור שחינך את ילדיו לכבוד עמוק לעבודה.</p>`
+    },
+    familyText: {
+      ru: [ "<strong>Отец:</strong> Шевель Смагаринский", "<strong>Супруга:</strong> Блюма Бейла Самуилова Смагаринская (урожденная Энтин)", "<strong>Дети:</strong> Фима (Хаим) Вулфович Смагаринский", "<strong>Братья и сестры:</strong> Данные исследуются" ],
+      en: [ "<strong>Father:</strong> Shevel Smagarinsky", "<strong>Spouse:</strong> Blyuma Beyla Samuilova Smagarinskaya (née Entin)", "<strong>Children:</strong> Fima (Khaim) Vulfovich Smagarinsky", "<strong>Siblings:</strong> Under historical research" ],
+      he: [ "<strong>אב:</strong> שבול סמגרינסקי", "<strong>בת זוג:</strong> בלומה ביילה סמואילובה סמגרינסקי (לבית אנטין)", "<strong>ילדים:</strong> פימה (חיים) וולפוביץ' סמגриנסקי", "<strong>אחים ואחיות:</strong> הנתונים בבדיקה" ]
+    },
+    documents: [
+      { label: { ru: "Артель сапожников в Биробиджане", en: "Shoemakers' Artel in Birobidzhan", he: "ארטל סנדלרים בבירוביג'אן" }, url: "documents/person_vulf_1898/birobidzhan_shoemakers'_artel.png" },
+      { label: { ru: "Ориентировочно 1924 г. Вульф, Блюма, Хаим (Фима) и на руках Самуил", en: "Circa 1924. Vulf, Blyuma, Chaim (Fima) and Samuil", he: "סביבות 1924. וולף, בלומה, חיים (פימה) וסמואל" }, url: "documents/person_vulf_1898/vulf_blyuma_fima_misha.jpg" },
+      { label: { ru: "Похороны дедушки Вульфа, еврейское кладбище в Астрахани", en: "Grandfather Vulf's funeral, Jewish cemetery in Astrakhan", he: "לווייתו של סבא וולף, בית העлמין היהודי באסטרחן" }, url: "documents/person_vulf_1898/grandfather_vulf's_funeral_jewish_cemetery_in_astrakhan.jpg" },
+      { label: { ru: "Предположительно дом проживания семьи в Прилуках", en: "Presumably the residence of the Smagaryinsky family in Priluki", he: "ככל הנראה בית מגורי משפחת סמגרינסקי בפרילוקי" }, url: "documents/person_vulf_1898/presumably-the_residence_of_the_smagaryinsky_family_in_priluki.jpg" }
+    ],
+    links: { parents: null, spouse: "person_blyuma_1895", siblings: null, children: "person_003" }
+  },
+  "person_blyuma_1895": {
+    isDeceased: true,
+    role: { ru: "Хранительница очага", en: "Homemaker", he: "עקרת בית" },
+    name: { ru: "Блюма Бейла Самуилова Смагаринская", en: "Blyuma Beyla Samuilova Smagarinsky", he: "בלומה ביילה סמואילובה סמגרינסקי" },
+    birthName: { ru: "Девичья фамилия: Энтин (Мстиславская мещанка)", en: "Maiden name: Entin (Burgher of Mstislavl)", he: "שם נעורים: אנטין (אזרחית מסטסלב)" },
+    years: "1895 — 1975",
+    photo: "photos/blyuma1895.jpg",
+    photoCaption: { ru: "фото середины ХХ века", en: "photo from the mid-20th century", he: "תצלום מאמצע המאה ה-20" },
+    milestones: {
+      birthPlace: { ru: "Не установлено", en: "Not established", he: "לא נקבע" },
+      marriage: { ru: "15.12.1916 г. в г.Прилуки Полтавской губернии, супруг — Вульф Смагаринский", en: "15.12.1916 in Priluki, Poltava Governorate, spouse — Vulf Smagarinsky", he: "15.12.1916 בעיר פרילוקי, פלך פולטבה, בן זוג — וולף סמגרינסקי" },
+      occupation: { ru: "Домохозяйка", en: "Homemaker", he: "עקרת בית" },
+      burial: { ru: "г. Биробиджан", en: "Birobidzhan", he: "בירוביג'אן" }
+    },
+    bio: {
+      ru: `<p>Блюма посвятила себя семье и воспитанию детей...</p>`,
+      en: `<p>Blyuma dedicated herself to her family and raising children...</p>`,
+      he: `<p>בלומה הקדישה את עצמה למשפחתה ולגידול ילדיה...</p>`
+    },
+    familyText: {
+      ru: [ "<strong>Супруг:</strong> Вульф Смагаринский" ],
+      en: [ "<strong>Spouse:</strong> Vulf Smagarinsky" ],
+      he: [ "<strong>בן זוג:</strong> וולף סמגרינסקי" ]
+    },
+    documents: [
+      { label: { ru: "Вульф и Блюма", en: "Vulf and Blyuma", he: "וולף ובלומה" }, url: "documents/person_blyuma_1895/vulf_blyuma.png" }
+    ],
+    links: { parents: null, spouse: "person_vulf_1898", siblings: null, children: "person_003" }
+  },
+  "person_003": {
+    isDeceased: true,
+    role: { ru: "Сын", en: "Son", he: "בן" },
+    name: { ru: "Фима Вулфович Смагаринский", en: "Fima Vulfovich Smagarinsky", he: "פימה וולפוביץ' סמגриנסקי" },
+    birthName: { ru: "", en: "", he: "" },
+    years: "1919 — 1998",
+    photo: "photos/fima1919.jpg",
+    photoCaption: { ru: "Фима Вулфович в молодости", en: "Fima Vulfovich in his youth", he: "פימה וולפוביץ' בצעירותו" },
+    milestones: {
+      birthPlace: { ru: "м. Прилуки", en: "Priluki", he: "פרילוקי" },
+      marriage: { ru: "Данные уточняются", en: "TBD", he: "פרטים יתעדכנו" },
+      occupation: { ru: "Работник торговли", en: "Trade worker", he: "עובד מסחר" },
+      burial: { ru: "г. Астрахань", en: "Astrakhan", he: "אסטרחן" }
+    },
+    bio: {
+      ru: `<p>Продолжатель семейного дела, выросший в атмосфере семейного тепла и ремесленных традиций.</p>`,
+      en: `<p>Successor of the family business, raised in an atmosphere of family warmth and craft traditions.</p>`,
+      he: `<p>המשך העסק המשפחתי, שגדל באווירה של חום משפחתי ומסורות מלאכה.</p>`
+    },
+    familyText: {
+      ru: [ "<strong>Родители:</strong> Вульф и Блюма Смагаринские" ],
+      en: [ "<strong>Parents:</strong> Vulf and Blyuma Smagarinsky" ],
+      he: [ "<strong>הורים:</strong> וולף ובלומה סמגриנסקי" ]
+    },
+    documents: [],
+    links: { parents: ["person_vulf_1898", "person_blyuma_1895"], spouse: null, siblings: null, children: null }
+  }
+};   let currentId = "person_vulf_1898";
      let currentLang = "ru";
 
     const labels = {
