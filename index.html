@@ -207,7 +207,7 @@
       { label: { ru: "Похороны дедушки Вульфа, еврейское кладбище в Астрахани", en: "Grandfather Vulf's funeral, Jewish cemetery in Astrakhan", he: "לווייתו של סבא וולף, בית העлמין היהודי באסטרחן" }, url: "documents/person_vulf_1898/grandfather_vulf's_funeral_jewish_cemetery_in_astrakhan.jpg" },
       { label: { ru: "Предположительно дом проживания семьи в Прилуках", en: "Presumably the residence of the Smagaryinsky family in Priluki", he: "ככל הנראה בית מגורי משפחת סמגרינסקי בפרילוקי" }, url: "documents/person_vulf_1898/presumably-the_residence_of_the_smagaryinsky_family_in_priluki.jpg" }
     ],
-    links: { parents: null, spouse: "person_blyuma_1895", siblings: null, children: "person_003" }
+links: { parents: null, spouse: "person_blyuma_1895", siblings: null, children: "person_003" }
   },
   "person_blyuma_1895": {
     isDeceased: true,
@@ -258,33 +258,42 @@
       he: `<p>המשך העסק המשפחתי, שגדל באווירה של חום משפחתי ומסורות מלאכה.</p>`
     },
     familyText: {
-      ru: [ "<strong>Родители:</strong> Вульф и Блюма Смагаринские" ],
-      en: [ "<strong>Parents:</strong> Vulf and Blyuma Smagarinsky" ],
-      he: [ "<strong>הורים:</strong> וולף ובלומה סמגриנסקי" ]
+      ru: [ "<strong>Отец:</strong> <a href='#' onclick='renderPerson(\"person_vulf_1898\"); return false;'>Вульф Смагаринский</a>", "<strong>Мать:</strong> <a href='#' onclick='renderPerson(\"person_blyuma_1895\"); return false;'>Блюма Смагаринская</a>" ],
+      en: [ "<strong>Father:</strong> <a href='#' onclick='renderPerson(\"person_vulf_1898\"); return false;'>Vulf Smagarinsky</a>", "<strong>Mother:</strong> <a href='#' onclick='renderPerson(\"person_blyuma_1895\"); return false;'>Blyuma Smagarinskaya</a>" ],
+      he: [ "<strong>אב:</strong> <a href='#' onclick='renderPerson(\"person_vulf_1898\"); return false;'>וולф סמגרינסקי</a>", "<strong>אם:</strong> <a href='#' onclick='renderPerson(\"person_blyuma_1895\"); return false;'>בלומה סמגרינסקי</a>" ]
     },
     documents: [],
-    links: { parents: ["person_vulf_1898", "person_blyuma_1895"], spouse: null, siblings: null, children: null }
+    links: { parents: "person_vulf_1898", spouse: null, siblings: null, children: null }
   }
 };   let currentId = "person_vulf_1898";
      let currentLang = "ru";
 
     const labels = {
-      ru: { 
-        parents: "Родители", spouse: "Супруг(а)", siblings: "Братья/Сестры", children: "Дети",
-        m_birth: "Место рождения", m_marriage: "Бракосочетание", m_occupation: "Образование и род деятельности", m_burial: "Место упокоения",
+  ru: {
+    parents: "Родители",
+    spouse: "Супруг(а)",
+    father: "Отец",
+    mother: "Мать",
+    m_birth: "Место рождения",
         m_title: "Важные вехи", fam_title: "Семейный круг",
         archive_btn: "Открыть архив документов", modal_title: "Архивные свидетельства и сканы",
         modal_subtitle: "Нажмите на документ, чтобы открыть его оригинал в новой вкладке:", modal_close: "Закрыть"
       },
-      en: { 
-        parents: "Parents", spouse: "Spouse", siblings: "Siblings", children: "Children",
-        m_birth: "Place of Birth", m_marriage: "Marriage", m_occupation: "Education & Career", m_burial: "Resting Place",
+      en: {
+    parents: "Parents",
+    spouse: "Spouse",
+    father: "Father",
+    mother: "Mother",
+    m_birth: "Place of Birth",
         m_title: "Key Milestones", fam_title: "Family Circle",
         archive_btn: "Open Document Archive", modal_title: "Archival Records & Scans",
         modal_subtitle: "Click on a document to open its original scan in a new tab:", modal_close: "Close"
       },
-      he: { 
-        parents: "הורים", spouse: "בן/בת זוג", siblings: "אחים/אחיות", children: "ילדים",
+      he: {
+    parents: "הורים",
+    spouse: "בן זוג",
+    father: "אב",
+    mother: "אם",
         m_birth: "מקום לידה", m_marriage: "נישואין", m_occupation: "השכלה ועיסוק", m_burial: "מקום קבורה",
         m_title: "ציוני דרך מרכזיים", fam_title: "מעגל משפחתי",
         archive_btn: "פתח את ארכיון המסמכים", modal_title: "מסמכי ארכיון וסריקות",
