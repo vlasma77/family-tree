@@ -97,45 +97,55 @@
     </div>
 
     <!-- Правая колонка: Вся информация -->
-    <div id="bio-container" class="w-full md:w-3/5 flex flex-col justify-between space-y-6 max-h-[650px] overflow-y-auto pr-2">
-      <div>
-        <span id="person-role" class="text-sm uppercase tracking-wider text-stone-600 font-semibold"></span>
-        <h2 id="person-name" class="text-2xl md:text-3xl text-stone-950 font-bold mt-1 mb-0.5 tracking-wide whitespace-nowrap"></h2>
+    <div id="profile-modal" class="fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    
+    <div id="bio-container" class="bg-[#f4ebe1] border-2 border-[#d9c5b2] rounded-xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative p-6 md:p-8">
         
-        <!-- Линия фамилии при рождении -->
-        <p id="person-birth-name" class="text-base text-stone-700 italic font-sans mb-2"></p>
+        <button onclick="closeProfileModal()" class="absolute top-4 right-4 text-stone-500 hover:text-stone-800 text-2xl font-bold transition-colors">&times;</button>
         
-        <p id="person-years" class="text-xl italic text-amber-950 font-medium border-b border-stone-400/60 pb-2 mb-4"></p>
-        
-        <!-- ХРОНИКА / ВАЖНЫЕ ВЕХИ -->
-        <div class="bg-stone-900/5 rounded p-3 border border-stone-400/30 text-base mb-5">
-          <h3 id="milestones-title" class="text-sm uppercase tracking-wider font-bold text-stone-700 mb-2 border-b border-stone-400/20 pb-0.5 font-sans"></h3>
-          <table class="w-full text-stone-800 font-sans text-sm border-collapse" id="milestones-table">
-            <!-- Заполняется через JS -->
-          </table>
+        <div class="flex flex-col md:flex-row gap-6">
+            
+            <div class="w-full md:w-1/3 flex flex-col items-center">
+                <div class="relative inline-block border-4 border-white shadow-md rounded-sm bg-white p-2">
+                    <div id="photo-ribbon" class=""></div>
+                    <img id="person-photo" src="photos/male.jpg" alt="Портрет" class="w-full max-w-[200px] h-auto object-cover grayscale-[30%]">
+                </div>
+                <p id="photo-caption" class="text-xs text-stone-500 italic mt-2 text-center"></p>
+                
+                <div class="w-full mt-6 bg-stone-100/80 rounded-lg p-3 border border-stone-200">
+                    <h4 class="text-xs font-bold text-stone-500 uppercase tracking-wider mb-2" id="relatives-title">Ближайшие связи</h4>
+                    <div id="modal-relatives-links" class="flex flex-col gap-1.5 text-sm text-amber-900 font-medium">
+                        </div>
+                </div>
+            </div>
+            
+            <div class="w-full md:w-2/3 flex flex-col">
+                <span id="person-role" class="text-xs font-bold uppercase tracking-widest text-amber-700 mb-1"></span>
+                <h2 id="person-name" class="text-2xl md:text-3xl font-serif text-stone-900 font-bold leading-tight"></h2>
+                <h3 id="person-birth-name" class="text-sm italic text-stone-600 mt-1" style="display: none;"></h3>
+                <p id="person-years" class="text-lg font-mono text-stone-700 mt-1 mb-4"></p>
+                
+                <hr class="border-stone-300 my-2">
+                
+                <h4 id="milestones-title" class="text-sm font-bold text-stone-500 uppercase tracking-wider mb-2"></h4>
+                <table id="milestones-table" class="w-full text-sm text-stone-850 mb-4"></table>
+                
+                <hr class="border-stone-300 my-2">
+                
+                <div id="person-bio" class="text-stone-800 text-sm leading-relaxed space-y-3 prose max-w-none my-3"></div>
+                
+                <h4 id="family-title" class="text-sm font-bold text-stone-500 uppercase tracking-wider mt-4 mb-2"></h4>
+                <ul id="family-list" class="list-disc list-inside text-sm text-stone-700 space-y-1 mb-6"></ul>
+                
+                <div id="documents-section" class="mt-auto pt-4 border-t border-stone-200">
+                    <button onclick="openArchiveModal()" id="archive-btn" class="bg-amber-950 text-white px-4 py-2 rounded shadow hover:bg-amber-900 transition text-sm flex items-center gap-2">
+                        <span id="archive-btn-text"></span>
+                    </button>
+                </div>
+            </div>
         </div>
-
-        <!-- ЖИЗНЕОПИСАНИЕ (БИОГРАФИЯ) -->
-        <div id="person-bio" class="text-lg text-stone-900 leading-relaxed space-y-4 border-b border-stone-400/40 pb-5 mb-5">
-          <!-- Сюда вставляется текст биографии без повторения дат -->
-        </div>
-
-        <!-- ПОДРОБНЫЙ СЕМЕЙНЫЙ КРУГ -->
-        <div id="family-section" class="border-b border-stone-400/40 pb-5 mb-5">
-          <h3 id="family-title" class="text-sm uppercase tracking-wider font-bold text-stone-700 mb-2 font-sans"></h3>
-          <ul id="family-list" class="text-base text-stone-800 font-sans space-y-1.5 list-disc pl-5">
-            <!-- Заполняется через JS -->
-          </table>
-        </div>
-
-        <!-- ЕДИНАЯ КНОПКА АРХИВНЫХ ДОКУМЕНТОВ -->
-        <div id="documents-section" class="pt-2">
-          <button onclick="openArchiveModal()" id="archive-btn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 bg-amber-950 text-amber-100 hover:bg-amber-900 rounded font-sans font-semibold shadow-md transition cursor-pointer text-base">
-            <span>🗄️</span> <span id="archive-btn-text">Открыть архив документов</span>
-          </button>
-        </div>
-
-      </div>
+    </div>
+</div>
     </div>
   </main>
 
