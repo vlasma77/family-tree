@@ -562,12 +562,13 @@ currentLang = "ru";
         table.classList.remove('rtl-table');
         familyList.classList.remove('text-right');
       }
-// Показываем наше новое классическое окно
+
+      renderButtons(person.links);
+      // Оживляем окно: убираем класс hidden, чтобы карточка всплыла
       const profileModal = document.getElementById("profile-modal");
       if (profileModal) {
         profileModal.classList.remove("hidden");
       }
-      renderButtons(person.links);
 }
 
 // Функция закрытия окна профиля
@@ -735,20 +736,42 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     
-    let yearsLabel = person.years ? `\n(${person.years})` : "";
+   // 1. Формируем красивую компактную подпись (Имя + Годы на новой строке)
+    let yearsLabel = person.years ? `\n(${person.years})` : '';
+    let shortName = person.name[currentLang] || '';
+    
+    // 2. Логика автоматического подбора фото для круглого узла дерева
+    let nodeImage = "photos/male.jpg"; // Базовая заглушка
+    
+    if (person.role && (person.role.ru.includes("женщина") || person.role.ru.includes("Хранительница"))) {
+      nodeImage = "photos/female.jpg";
+    }
+    
+    if (person.photo && person.photo.trim() !== "") {
+      nodeImage = person.photo.startsWith("photos/") ? person.photo : "photos/" + person.photo;
+    }
 
+    // 3. Добавляем обновленный круглый узел в дерево
     nodesArray.push({
       id: id,
-      label: `${person.name[currentLang]}${yearsLabel}`,
-      shape: 'box',
-      margin: 12,
-      font: { face: 'Cormorant Garamond', size: 16, color: '#1c1917', bold: isCurrent },
+      label: `${shortName}${yearsLabel}`,
+      shape: 'circularImage',
+      image: nodeImage,
+      size: 35, // Размер кружка с фото
+      borderWidth: isCurrent ? 4 : 2,
+      borderWidthSelected: 5,
       color: {
+        border: isCurrent ? '#9a3412' : (person.isDeceased ? '#a8a29e' : '#b45309'),
         background: bgColor,
-        border: isCurrent ? '#9a3412' : (person.isDeceased ? '#a8a29e' : '#78716c'), 
-        highlight: { background: '#fef3c7', border: '#b45309' }
+        highlight: { border: '#b45309', background: '#fef3c7' }
       },
-      borderWidth: isCurrent ? 3 : 1,
+      font: {
+        face: 'Cormorant Garamond',
+        size: 14,
+        color: '#1c1917',
+        bold: isCurrent ? true : false,
+        vadjust: 0 // Центрирование текста под кружком
+      },
       shadow: true
     });
 
