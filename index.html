@@ -836,13 +836,20 @@ function clearSearch() {
     let yearsLabel = person.years ? `\n(${person.years})` : '';
     let shortName = person.name[currentLang] || '';
     
-    // 2. Логика автоматического подбора фото для круглого узла дерева
-    let nodeImage = "photos/male.jpg"; // Базовая заглушка
+   // 2. Сверхбезопасная логика автоматического подбора фото
+    let nodeImage = "photos/male.jpg"; // Базовый вариант
     
-    if (person.role && (person.role.ru.includes("женщина") || person.role.ru.includes("Хранительница"))) {
+    // Проверяем, женщина ли это (по ID или наличию роли)
+    const isWoman = (id.toLowerCase().includes("blyuma") || id.toLowerCase().includes("fira") || id.toLowerCase().includes("fanny") || id.toLowerCase().includes("nela") || id.toLowerCase().includes("frida") || id.toLowerCase().includes("ela") || id.toLowerCase().includes("larisa")) || 
+                    (person.birthName && person.birthName.trim() !== "") ||
+                    (person.role && typeof person.role === 'object' && person.role.ru && (person.role.ru.includes("женщина") || person.role.ru.includes("Хранительница"))) ||
+                    (person.role && typeof person.role === 'string' && (person.role.includes("женщина") || person.role.includes("Хранительница")));
+
+    if (isWoman) {
       nodeImage = "photos/female.jpg";
     }
     
+    // Если в базе прописано конкретное фото — берем его
     if (person.photo && person.photo.trim() !== "") {
       nodeImage = person.photo.startsWith("photos/") ? person.photo : "photos/" + person.photo;
     }
