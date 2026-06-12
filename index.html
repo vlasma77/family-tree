@@ -69,7 +69,15 @@
 
   <section class="max-w-5xl w-full mx-auto mb-6 bg-vintage-paper border-2 border-[rgba(133,111,73,0.4)] rounded p-4 relative shadow-md">
     <h3 class="text-xs uppercase tracking-widest text-stone-600 italic mb-2 font-semibold font-sans text-center">Интерактивное древо рода (Управляйте мышью или касанием)</h3>
-    <div id="family-tree" class="w-full h-[450px] bg-stone-100/50 rounded border border-stone-400/30 shadow-inner"></div>
+    
+   <div class="absolute top-4 left-4 z-40 bg-[#f4ebe1]/95 backdrop-blur border border-[#d9c5b2] p-2 rounded-xl shadow-md max-w-xs w-full flex flex-col gap-1">
+        <div class="relative flex items-center">
+            <input type="text" id="tree-search" placeholder="Поиск предка (например, Вульф)..." 
+                   class="w-full bg-white border border-stone-300 rounded-lg px-3 py-1.5 text-sm text-stone-800 focus:outline-none focus:border-amber-700 font-serif">
+            <button onclick="clearSearch()" id="search-clear-btn" class="absolute right-2 text-stone-400 hover:text-stone-600 hidden text-sm">&times;</button>
+        </div>
+        <div id="search-results" class="bg-white border border-stone-200 rounded-lg shadow-xl max-h-48 overflow-y-auto hidden divide-y divide-stone-100"></div>
+    </div> 
   </section>
 
   <!-- ОСНОВНОЙ БЛОК: Карточка -->
@@ -588,6 +596,94 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// ==========================================
+// СИСТЕМА УМНОГО ПОИСКА ПО ДЕРЕВУ (MyHeritage Style)
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('tree-search');
+  const resultsContainer = document.getElementById('search-results');
+  const clearBtn = document.getElementById('search-clear-btn');
+
+  if (!searchInput || !resultsContainer) return;
+
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    resultsContainer.innerHTML = '';
+
+    if (!query) {
+      resultsContainer.classList.add('hidden');
+      clearBtn.classList.add('hidden');
+      return;
+    }
+
+    clearBtn.classList.remove('hidden');
+    
+    const matches = Object.keys(db).filter(id => {
+      const name = (db[id].name[currentLang] || '').toLowerCase();
+      return name.includes(query) || id.toLowerCase().includes(query);
+    });
+
+    if (matches.length === 0) {
+      resultsContainer.innerHTML = `<div class="p-2 text-xs text-stone-400 italic">Ничего не найдено</div>`;
+      resultsContainer.classList.remove('hidden');
+      return;
+    }
+
+    matches.forEach(id => {
+      const person = db[id];
+      const div = document.createElement('div');
+      div.className = "p-2 text-sm text-stone-700 hover:bg-amber-50 cursor-pointer transition-colors font-serif flex items-center gap-2";
+      
+      const miniPhoto = person.photo ? (person.photo.startsWith('photos/') ? person.photo : 'photos/' + person.photo) : 'photos/male.jpg';
+      
+      div.innerHTML = `
+        <img src="${miniPhoto}" class="w-6 h-6 rounded-full object-cover border border-stone-300">
+        <div>
+          <span class="font-bold">${person.name[currentLang]}</span>
+          <span class="text-xs text-stone-400 ml-1">${person.years ? `(${person.years})` : ''}</span>
+        </div>
+      `;
+      
+      div.addEventListener('click', () => {
+        focusOnPerson(id);
+        searchInput.value = person.name[currentLang];
+        resultsContainer.classList.add('hidden');
+      });
+      resultsContainer.appendChild(div);
+    });
+
+    resultsContainer.classList.remove('hidden');
+  });
+});
+
+function focusOnPerson(id) {
+  if (!network) return;
+  
+  currentId = id;
+  
+  network.focus(id, {
+    scale: 1.1,
+    animation: {
+      duration: 1000,
+      easingFunction: 'easeInOutQuad'
+    }
+  });
+  
+  network.selectNodes([id]);
+  
+  if (typeof renderProfile === 'function') {
+    renderProfile();
+  }
+}
+
+function clearSearch() {
+  const searchInput = document.getElementById('tree-search');
+  const resultsContainer = document.getElementById('search-results');
+  const clearBtn = document.getElementById('search-clear-btn');
+  if (searchInput) searchInput.value = '';
+  if (resultsContainer) resultsContainer.classList.add('hidden');
+  if (clearBtn) clearBtn.classList.add('hidden');
+}
     // ЛОГИКА МОДАЛЬНОГО ОКНА
     function openArchiveModal() {
       const person = db[currentId];
