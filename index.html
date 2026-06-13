@@ -4,13 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Семейный Архив Смагаринских</title>
-  <!-- Tailwind CSS -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- Google Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght=0,400;0,600;1,400&family=Playfair+Display:ital,wght=0,600;1,600&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
   <style>
     body { font-family: 'Cormorant Garamond', Georgia, serif; }
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
@@ -55,12 +52,10 @@
 </head>
 <body class="bg-stone-300 text-stone-900 min-h-screen flex flex-col justify-between p-4 md:p-8 selection:bg-amber-200">
 
-  <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
   <header class="max-w-5xl w-full mx-auto flex flex-col sm:flex-row justify-between items-center border-b border-stone-400 pb-4 mb-6 gap-4">
     <div class="text-center sm:text-left">
-      <h1 class="text-2xl text-stone-800 font-semibold" id="main-title"></h1>
+      <h1 class="text-2xl text-stone-800 font-semibold" id="main-title">Летопись поколений рода Смагаринских</h1>
     </div>
-    <!-- Переключатель языков -->
     <div class="flex gap-2 text-sm font-medium" id="lang-switcher">
       <button onclick="setLanguage('ru')" id="btn-ru" class="px-3 py-1 bg-stone-800 text-amber-50 rounded shadow-sm transition">RU</button>
       <button onclick="setLanguage('en')" id="btn-en" class="px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 transition">EN</button>
@@ -68,100 +63,68 @@
   </header>
 
   <section class="max-w-5xl w-full mx-auto mb-6 bg-vintage-paper border-2 border-[rgba(133,111,73,0.4)] rounded p-4 relative shadow-md">
-    <h3 class="text-xs uppercase tracking-widest text-stone-600 italic mb-2 font-semibold font-sans text-center">Интерактивное древо рода (Управляйте мышью или касанием)</h3>
+    <h3 class="text-xs uppercase tracking-widest text-stone-600 italic mb-4 font-semibold font-sans text-center">Генеалогическое древо рода (Стиль MyHeritage)</h3>
     
-   <div class="absolute top-4 left-4 z-40 bg-[#f4ebe1]/95 backdrop-blur border border-[#d9c5b2] p-2 rounded-xl shadow-md max-w-xs w-full flex flex-col gap-1">
+    <div class="relative max-w-xs mx-auto mb-6 z-40 bg-[#f4ebe1]/95 backdrop-blur border border-[#d9c5b2] p-2 rounded-xl shadow-md">
         <div class="relative flex items-center">
             <input type="text" id="tree-search" placeholder="Поиск предка (например, Вульф)..." 
                    class="w-full bg-white border border-stone-300 rounded-lg px-3 py-1.5 text-sm text-stone-800 focus:outline-none focus:border-amber-700 font-serif">
             <button onclick="clearSearch()" id="search-clear-btn" class="absolute right-2 text-stone-400 hover:text-stone-600 hidden text-sm">&times;</button>
         </div>
-        <div id="search-results" class="bg-white border border-stone-200 rounded-lg shadow-xl max-h-48 overflow-y-auto hidden divide-y divide-stone-100"></div>
+        <div id="search-results" class="bg-white border border-stone-200 rounded-lg shadow-xl max-h-48 overflow-y-auto hidden divide-y divide-stone-100 mt-1"></div>
     </div> 
+
+    <div id="family-tree" class="w-full flex flex-col gap-6 items-center overflow-auto"></div>
   </section>
 
-  <!-- ОСНОВНОЙ БЛОК: Карточка -->
-  <main class="max-w-5xl w-full mx-auto bg-vintage-paper border-2 border-[rgba(133,111,73,0.4)] rounded p-6 md:p-10 flex-grow flex flex-col md:flex-row gap-10 items-start relative overflow-hidden">
+  <main class="max-w-5xl w-full mx-auto bg-vintage-paper border-2 border-[rgba(133,111,73,0.4)] rounded p-6 md:p-10 flex flex-col md:flex-row gap-10 items-start relative overflow-hidden">
     
-    <!-- Декоративные уголки -->
     <div class="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-stone-600/50"></div>
     <div class="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-stone-600/50"></div>
     <div class="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-stone-600/50"></div>
     <div class="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-stone-600/50"></div>
 
-    <!-- Левая колонка: Фото и подпись -->
     <div class="w-full md:w-2/5 flex flex-col items-center sticky top-4">
       <div class="bg-stone-100/90 p-5 border border-stone-400/60 shadow-lg transform -rotate-1 hover:rotate-0 transition duration-300 w-full max-w-[320px] relative">
         
-        <!-- Контейнер для ленты -->
         <div id="photo-ribbon" class=""></div>
 
         <div class="border border-stone-400 p-1.5 bg-stone-200 overflow-hidden aspect-[3/4] flex items-center justify-center shadow-inner">
           <img id="person-photo" src="" alt="Портрет" class="w-full h-full object-cover grayscale sepia-[15%]">
         </div>
-        <!-- Историческая подпись под фото -->
         <p id="photo-caption" class="text-center text-sm italic text-stone-600 mt-3 font-serif leading-snug px-1"></p>
       </div>
     </div>
 
-    <!-- Правая колонка: Вся информация -->
-    <div id="profile-modal" class="fixed inset-0 bg-stone-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    
-    <div id="bio-container" class="bg-[#f4ebe1] border-2 border-[#d9c5b2] rounded-xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto relative p-6 md:p-8">
+    <div id="bio-container" class="w-full md:w-3/5 flex flex-col ltr">
+        <span id="person-role" class="text-xs font-bold uppercase tracking-widest text-amber-700 mb-1"></span>
+        <h2 id="person-name" class="text-2xl md:text-3xl font-serif text-stone-900 font-bold leading-tight"></h2>
+        <h3 id="person-birth-name" class="text-sm italic text-stone-600 mt-1" style="display: none;"></h3>
+        <p id="person-years" class="text-lg font-mono text-stone-700 mt-1 mb-4"></p>
         
-        <button onclick="closeProfileModal()" class="absolute top-4 right-4 text-stone-500 hover:text-stone-800 text-2xl font-bold transition-colors">&times;</button>
+        <hr class="border-stone-300 my-2">
         
-        <div class="flex flex-col md:flex-row gap-6">
-            
-            <div class="w-full md:w-1/3 flex flex-col items-center">
-                <div class="relative inline-block border-4 border-white shadow-md rounded-sm bg-white p-2">
-                    <div id="photo-ribbon" class=""></div>
-                    <img id="person-photo" src="photos/male.jpg" alt="Портрет" class="w-full max-w-[200px] h-auto object-cover grayscale-[30%]">
-                </div>
-                <p id="photo-caption" class="text-xs text-stone-500 italic mt-2 text-center"></p>
-                
-                <div class="w-full mt-6 bg-stone-100/80 rounded-lg p-3 border border-stone-200">
-                    <h4 class="text-xs font-bold text-stone-500 uppercase tracking-wider mb-2" id="relatives-title">Ближайшие связи</h4>
-                    <div id="modal-relatives-links" class="flex flex-col gap-1.5 text-sm text-amber-900 font-medium">
-                        </div>
-                </div>
-            </div>
-            
-            <div class="w-full md:w-2/3 flex flex-col">
-                <span id="person-role" class="text-xs font-bold uppercase tracking-widest text-amber-700 mb-1"></span>
-                <h2 id="person-name" class="text-2xl md:text-3xl font-serif text-stone-900 font-bold leading-tight"></h2>
-                <h3 id="person-birth-name" class="text-sm italic text-stone-600 mt-1" style="display: none;"></h3>
-                <p id="person-years" class="text-lg font-mono text-stone-700 mt-1 mb-4"></p>
-                
-                <hr class="border-stone-300 my-2">
-                
-                <h4 id="milestones-title" class="text-sm font-bold text-stone-500 uppercase tracking-wider mb-2"></h4>
-                <table id="milestones-table" class="w-full text-sm text-stone-850 mb-4"></table>
-                
-                <hr class="border-stone-300 my-2">
-                
-                <div id="person-bio" class="text-stone-800 text-sm leading-relaxed space-y-3 prose max-w-none my-3"></div>
-                
-                <h4 id="family-title" class="text-sm font-bold text-stone-500 uppercase tracking-wider mt-4 mb-2"></h4>
-                <ul id="family-list" class="list-disc list-inside text-sm text-stone-700 space-y-1 mb-6"></ul>
-                
-                <div id="documents-section" class="mt-auto pt-4 border-t border-stone-200">
-                    <button onclick="openArchiveModal()" id="archive-btn" class="bg-amber-950 text-white px-4 py-2 rounded shadow hover:bg-amber-900 transition text-sm flex items-center gap-2">
-                        <span id="archive-btn-text"></span>
-                    </button>
-                </div>
-            </div>
+        <h4 id="milestones-title" class="text-sm font-bold text-stone-500 uppercase tracking-wider mb-2">Важные вехи</h4>
+        <table id="milestones-table" class="w-full text-sm text-stone-850 mb-4"></table>
+        
+        <hr class="border-stone-300 my-2">
+        
+        <div id="person-bio" class="text-stone-800 text-sm leading-relaxed space-y-3 prose max-w-none my-3"></div>
+        
+        <h4 id="family-title" class="text-sm font-bold text-stone-500 uppercase tracking-wider mt-4 mb-2">Семейный круг</h4>
+        <ul id="family-list" class="list-disc list-inside text-sm text-stone-700 space-y-1 mb-6"></ul>
+        
+        <div id="documents-section" class="mt-auto pt-4 border-t border-stone-200" style="display: none;">
+            <button onclick="openArchiveModal()" id="archive-btn" class="bg-amber-950 text-white px-4 py-2 rounded shadow hover:bg-amber-900 transition text-sm flex items-center gap-2 cursor-pointer">
+                <span id="archive-btn-text">Открыть архив документов</span>
+            </button>
         </div>
-    </div>
-</div>
     </div>
   </main>
 
-  <!-- ВСПЛЫВАЮЩЕЕ ОКНО (МОДАЛЬНОЕ ОКНО АРХИВА) -->
   <div id="archive-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4" onclick="closeArchiveModal(event)">
     <div class="bg-stone-100 max-w-4xl w-full rounded-lg shadow-2xl border border-stone-400 overflow-hidden transform transition-all" onclick="event.stopPropagation()">
       
-      <!-- Шапка окна -->
       <div class="bg-stone-900 text-stone-100 px-6 py-4 flex justify-between items-center border-b border-stone-700">
         <h3 id="modal-title" class="text-lg font-semibold font-serif flex items-center gap-2">
           <span>🗄️</span> Архивные свидетельства и сканы
@@ -169,15 +132,11 @@
         <button onclick="closeArchiveModal(null)" class="text-stone-400 hover:text-white text-2xl font-bold transition cursor-pointer">&times;</button>
       </div>
       
-      <!-- Содержимое (список документов) -->
       <div class="p-6 max-h-[60vh] overflow-y-auto">
         <p id="modal-subtitle" class="text-sm text-stone-500 mb-4 font-sans italic">Нажмите на документ, чтобы открыть его оригинальный скан или цифровую копию в новой вкладке:</p>
-        <div id="modal-documents-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <!-- Сюда JS подставит список документов -->
-        </div>
+        <div id="modal-documents-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
       </div>
       
-      <!-- Подвал окна -->
       <div class="bg-stone-200/60 px-6 py-3 flex justify-end border-t border-stone-300">
         <button onclick="closeArchiveModal(null)" id="modal-close-btn" class="px-4 py-2 bg-stone-700 hover:bg-stone-800 text-stone-100 font-sans text-sm font-medium rounded transition shadow-sm cursor-pointer">
           Закрыть
@@ -186,16 +145,12 @@
     </div>
   </div>
 
-  <!-- НИЖНЯЯ ПАНЕЛЬ -->
   <footer class="max-w-5xl w-full mx-auto mt-6 border-t border-stone-400 pt-4">
     <p class="text-center text-xs uppercase tracking-widest text-stone-600 mb-3 font-sans font-semibold">Быстрый переход по древу</p>
-    <div id="navigation-bttns" class="flex flex-wrap gap-2 justify-center">
-      <!-- Кнопки быстрых связей будут создаваться здесь -->
-    </div>
+    <div id="navigation-bttns" class="flex flex-wrap gap-2 justify-center"></div>
   </footer>
 
-  <!-- ЛОГИКА И БАЗА ДАННЫХ -->
- <script>
+  <script>
   // ==========================================
   // 1. ПОЛНАЯ БАЗА ДАННЫХ РОДА СМАГАРИНСКИХ
   // ==========================================
@@ -313,7 +268,7 @@
         "en": [ "<strong>Father:</strong> Shneur Zalmon Smagarinsky", "<strong>Mother:</strong> Slava Smagarinskaya", "<strong>Spouse:</strong> Khaya Israeleva Smagarinskaya (née Gurevich)", "<strong>Children:</strong> Vulf Smagarinsky" ]
       },
       "documents": [],
-      "links": { "parents": ["person_shneur_1821", "person_slava_1822"], "spouse": "person_khaya_1860", "siblings": null, "children": ["person_vulf_1898"] }
+      "links": { "parents": ["person_shneur_1821", "person_slava_1822"], "spouse": "person_khaya_1860", "children": ["person_vulf_1898"] }
     },
 
     "person_khaya_1860": {
@@ -322,7 +277,6 @@
       "name": { "ru": "Хая Исраелева Смагаринская (урожд. Гуревич)", "en": "Khaya Israeleva Smagarinskaya (née Gurevich)" },
       "birthName": { "ru": "Фамилия при рождении: Гуревич", "en": "Birth name: Gurevich" },
       "years": "1860 — ?",
-      "isDeceased": true,
       "photo": "",
       "photoCaption": { "ru": "", "en": "" },
       "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруг — Шевель Залманов Смагаринский", "en": "Spouse — Shevel Zalmanov Smagarinsky" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
@@ -332,7 +286,7 @@
         "en": [ "<strong>Father:</strong> Israel Gurevich", "<strong>Spouse:</strong> Shevel Zalmanov Smagarinsky", "<strong>Children:</strong> Vulf Smagarinsky" ]
       },
       "documents": [],
-      "links": { "parents": null, "spouse": "person_shevel_1848", "siblings": null, "children": ["person_vulf_1898"] }
+      "links": { "spouse": "person_shevel_1848", "children": ["person_vulf_1898"] }
     },
 
     "person_shneur_1821": {
@@ -341,7 +295,6 @@
       "name": { "ru": "Шнеур Залмон Смагаринский", "en": "Shneur Zalmon Smagarinsky" },
       "birthName": { "ru": "", "en": "" },
       "years": "1821 — ?",
-      "isDeceased": true,
       "photo": "",
       "photoCaption": { "ru": "", "en": "" },
       "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруга — Слава", "en": "Spouse — Slava" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
@@ -351,7 +304,7 @@
         "en": [ "<strong>Father:</strong> Volka Iosel Smagarinsky", "<strong>Mother:</strong> Feyga Rokhlya Smagarinskaya", "<strong>Spouse:</strong> Slava Smagarinskaya", "<strong>Children:</strong> Shevel Zalmanov Smagarinsky" ]
       },
       "documents": [],
-      "links": { "parents": ["person_volka_1792", "person_feyga_1794"], "spouse": "person_slava_1822", "siblings": null, "children": ["person_shevel_1848"] }
+      "links": { "parents": ["person_volka_1792", "person_feyga_1794"], "spouse": "person_slava_1822", "children": ["person_shevel_1848"] }
     },
 
     "person_slava_1822": {
@@ -360,7 +313,6 @@
       "name": { "ru": "Слава Смагаринская", "en": "Slava Smagarinskaya" },
       "birthName": { "ru": "", "en": "" },
       "years": "1822 — 1890",
-      "isDeceased": true,
       "photo": "",
       "photoCaption": { "ru": "", "en": "" },
       "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруг — Шнеур Залмон Смагаринский", "en": "Spouse — Shneur Zalmon Smagarinsky" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
@@ -370,7 +322,7 @@
         "en": [ "<strong>Father:</strong> Itsko Leyb", "<strong>Spouse:</strong> Shneur Zalmon Smagarinsky", "<strong>Children:</strong> Shevel Zalmanov Smagarinsky" ]
       },
       "documents": [],
-      "links": { "parents": null, "spouse": "person_shneur_1821", "siblings": null, "children": ["person_shevel_1848"] }
+      "links": { "spouse": "person_shneur_1821", "children": ["person_shevel_1848"] }
     },
 
     "person_volka_1792": {
@@ -379,7 +331,6 @@
       "name": { "ru": "Волька Иосел Смагаринский", "en": "Volka Iosel Smagarinsky" },
       "birthName": { "ru": "", "en": "" },
       "years": "1792 — ?",
-      "isDeceased": true,
       "photo": "",
       "photoCaption": { "ru": "", "en": "" },
       "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруга — Фейга Рохля", "en": "Spouse — Feyga Rokhlya" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
@@ -389,7 +340,7 @@
         "en": [ "<strong>Father:</strong> Iosel Smagarinsky", "<strong>Spouse:</strong> Feyga Rokhlya Smagarinskaya", "<strong>Children:</strong> Shneur Zalmon Smagarinsky" ]
       },
       "documents": [],
-      "links": { "parents": ["person_iosel_1760", null], "spouse": "person_feyga_1794", "siblings": null, "children": ["person_shneur_1821"] }
+      "links": { "parents": ["person_iosel_1760", null], "spouse": "person_feyga_1794", "children": ["person_shneur_1821"] }
     },
 
     "person_feyga_1794": {
@@ -398,7 +349,6 @@
       "name": { "ru": "Фейга Рохля Смагаринская", "en": "Feyga Rokhlya Smagarinskaya" },
       "birthName": { "ru": "", "en": "" },
       "years": "1794 — ?",
-      "isDeceased": true,
       "photo": "",
       "photoCaption": { "ru": "", "en": "" },
       "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруг — Волька Иосел Смагаринский", "en": "Spouse — Volka Iosel Smagarinsky" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
@@ -408,7 +358,7 @@
         "en": [ "<strong>Father:</strong> Itsko", "<strong>Spouse:</strong> Volka Iosel Smagarinsky", "<strong>Children:</strong> Shneur Zalmon Smagarinsky" ]
       },
       "documents": [],
-      "links": { "parents": null, "spouse": "person_volka_1792", "siblings": null, "children": ["person_shneur_1821"] }
+      "links": { "spouse": "person_volka_1792", "children": ["person_shneur_1821"] }
     },
 
     "person_iosel_1760": {
@@ -417,7 +367,6 @@
       "name": { "ru": "Иосел Смагаринский", "en": "Iosel Smagarinsky" },
       "birthName": { "ru": "", "en": "" },
       "years": "до 1792 — ?",
-      "isDeceased": true,
       "photo": "",
       "photoCaption": { "ru": "", "en": "" },
       "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Данные исследуются", "en": "TBD" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
@@ -427,14 +376,15 @@
         "en": [ "<strong>Children:</strong> Volka Iosel Smagarinsky" ]
       },
       "documents": [],
-      "links": { "parents": null, "spouse": null, "siblings": null, "children": ["person_volka_1792"] }
+      "links": { "children": ["person_volka_1792"] }
     }
   };
 
   // ==========================================
   // 2. ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ СОСТОЯНИЯ
- currentId = "person_vulf_1898";
-currentLang = "ru";
+  // ==========================================
+  let currentId = "person_vulf_1898";
+  let currentLang = "ru";
 
   // ==========================================
   // 3. ОБЪЕКТ С ДВУЯЗЫЧНЫМИ ПЕРЕВОДАМИ
@@ -456,7 +406,7 @@ currentLang = "ru";
       fam_title: "Семейный круг",
       archive_btn: "Открыть архив документов",
       modal_title: "Архивные свидетельства и сканы",
-      modal_subtitle: "Нажмите на документ, чтобы открыть его оригинал в новой вкладке или запустить плеер:",
+      modal_subtitle: "Нажмите на документ, чтобы открыть его оригинал в новой вкладке:",
       modal_close: "Закрыть"
     },
     en: {
@@ -475,503 +425,440 @@ currentLang = "ru";
       fam_title: "Family Circle",
       archive_btn: "Open Document Archive",
       modal_title: "Archival Records & Scans",
-      modal_subtitle: "Click on a document to open its original scan or play video clip:",
+      modal_subtitle: "Click on a document to open its original scan:",
       modal_close: "Close"
     }
   }; 
 
+  // ==========================================
+  // 4. ФУНКЦИЯ ОТРИСОВКИ ПРОФИЛЯ ПРЕДКА
+  // ==========================================
   function renderProfile() {
-      const person = db[currentId];
-      if (!person) return;
+    const person = db[currentId];
+    if (!person) return;
 
-      // Проверка фото: если пусто — ставим заглушку, если имя файла — добавляем папку photos/
-     // Автоматический подбор фото или правильной заглушки (male/female)
-      let photoUrl = "photos/male.jpg"; // базовый вариант
-      
-      // Если это женщина, переключаем заглушку на женский силуэт
-      if (person.role && (person.role.ru.includes("Мать") || person.role.ru.includes("Бабушка") || person.role.ru.includes("Хранительница") || person.role.ru.includes("Прабабушка"))) {
-        photoUrl = "photos/female.jpg";
-      }
-
-      // Если реальное фото указано в базе — используем его
-      if (person.photo && person.photo.trim() !== "") {
-        if (person.photo.startsWith("photos/") || person.photo.startsWith("documents/")) {
-          photoUrl = person.photo;
-        } else {
-          photoUrl = "photos/" + person.photo;
-        }
-      }
-      document.getElementById("person-photo").src = photoUrl;
-      document.getElementById("photo-caption").innerText = person.photoCaption ? person.photoCaption[currentLang] : "";
-
-      const ribbonContainer = document.getElementById("photo-ribbon");
-      ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
-
-      document.getElementById("person-role").innerText = person.role[currentLang];
-      document.getElementById("person-name").innerText = person.name[currentLang];
-      
-      const birthNameEl = document.getElementById("person-birth-name");
-      if (person.birthName && person.birthName[currentLang]) {
-        birthNameEl.innerText = person.birthName[currentLang];
-        birthNameEl.style.display = "block";
-      } else {
-        birthNameEl.style.display = "none";
-      }
-
-      document.getElementById("person-years").innerText = person.years;
-
-      // Тексты и заголовки
-      document.getElementById("milestones-title").innerText = labels[currentLang].m_title;
-      document.getElementById("family-title").innerText = labels[currentLang].fam_title;
-      document.getElementById("archive-btn-text").innerText = labels[currentLang].archive_btn;
-
-      // Таблица вех
-      const table = document.getElementById("milestones-table");
-      table.innerHTML = `
-        <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600 w-1/3">${labels[currentLang].m_birth}:</td><td class="py-1.5">${person.milestones.birthPlace[currentLang]}</td></tr>
-        <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_marriage}:</td><td class="py-1.5">${person.milestones.marriage[currentLang]}</td></tr>
-        <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_occupation}:</td><td class="py-1.5 font-medium text-amber-950">${person.milestones.occupation[currentLang]}</td></tr>
-        <tr><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_burial}:</td><td class="py-1.5">${person.milestones.burial[currentLang]}</td></tr>
-      `;
-
-      // Биография
-      document.getElementById("person-bio").innerHTML = person.bio[currentLang];
-
-      // Семейный круг
-      const familyList = document.getElementById("family-list");
-      familyList.innerHTML = "";
-      if (person.familyText && person.familyText[currentLang]) {
-        person.familyText[currentLang].forEach(item => {
-          const li = document.createElement("li");
-          li.innerHTML = item;
-          familyList.appendChild(li);
-        });
-      }
-
-      // Управление кнопкой архива (если документов нет — скрываем кнопку)
-      const docSection = document.getElementById("documents-section");
-      if (person.documents && person.documents.length > 0) {
-        docSection.style.display = "block";
-      } else {
-        docSection.style.display = "none";
-      }
-
-      // Настройка направления текста (RTL/LTR)
-      const bioContainer = document.getElementById("bio-container");
-      const modalBox = document.querySelector("#archive-modal > div");
-      if (currentLang === 'he') {
-        bioContainer.classList.add('rtl'); bioContainer.classList.remove('ltr');
-        if (modalBox) { modalBox.classList.add('rtl'); modalBox.classList.remove('ltr'); }
-        table.classList.add('rtl-table');
-        familyList.classList.add('text-right');
-      } else {
-        bioContainer.classList.add('ltr'); bioContainer.classList.remove('rtl');
-        if (modalBox) { modalBox.classList.add('ltr'); modalBox.classList.remove('rtl'); }
-        table.classList.remove('rtl-table');
-        familyList.classList.remove('text-right');
-      }
-
-      renderButtons(person.links);
-      // Оживляем окно: убираем класс hidden, чтобы карточка всплыла
-      const profileModal = document.getElementById("profile-modal");
-      if (profileModal) {
-        profileModal.classList.remove("hidden");
-      }
-}
-
-// Функция закрытия окна профиля
-function closeProfileModal() {
-  const modal = document.getElementById("profile-modal");
-  if (modal) {
-    modal.classList.add("hidden");
-  }
-}
-
-// Следим за кликом по темному фону вокруг окна
-document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById("profile-modal");
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) closeProfileModal();
-    });
-  }
-});
-// ==========================================
-// СИСТЕМА УМНОГО ПОИСКА ПО ДЕРЕВУ (MyHeritage Style)
-// ==========================================
-document.addEventListener('DOMContentLoaded', () => {
-  const searchInput = document.getElementById('tree-search');
-  const resultsContainer = document.getElementById('search-results');
-  const clearBtn = document.getElementById('search-clear-btn');
-
-  if (!searchInput || !resultsContainer) return;
-
-  searchInput.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase().trim();
-    resultsContainer.innerHTML = '';
-
-    if (!query) {
-      resultsContainer.classList.add('hidden');
-      clearBtn.classList.add('hidden');
-      return;
+    // Автоподбор силуэта-заглушки по полу
+    let photoUrl = "photos/male.jpg";
+    if (idIsFemale(currentId) || (person.role && (person.role.ru.includes("Мать") || person.role.ru.includes("Бабушка") || person.role.ru.includes("Хранительница") || person.role.ru.includes("Прабабушка")))) {
+      photoUrl = "photos/female.jpg";
     }
 
-    clearBtn.classList.remove('hidden');
-    
-    const matches = Object.keys(db).filter(id => {
-      const name = (db[id].name[currentLang] || '').toLowerCase();
-      return name.includes(query) || id.toLowerCase().includes(query);
-    });
-
-    if (matches.length === 0) {
-      resultsContainer.innerHTML = `<div class="p-2 text-xs text-stone-400 italic">Ничего не найдено</div>`;
-      resultsContainer.classList.remove('hidden');
-      return;
-    }
-
-    matches.forEach(id => {
-      const person = db[id];
-      const div = document.createElement('div');
-      div.className = "p-2 text-sm text-stone-700 hover:bg-amber-50 cursor-pointer transition-colors font-serif flex items-center gap-2";
-      
-      const miniPhoto = person.photo ? (person.photo.startsWith('photos/') ? person.photo : 'photos/' + person.photo) : 'photos/male.jpg';
-      
-      div.innerHTML = `
-        <img src="${miniPhoto}" class="w-6 h-6 rounded-full object-cover border border-stone-300">
-        <div>
-          <span class="font-bold">${person.name[currentLang]}</span>
-          <span class="text-xs text-stone-400 ml-1">${person.years ? `(${person.years})` : ''}</span>
-        </div>
-      `;
-      
-      div.addEventListener('click', () => {
-        focusOnPerson(id);
-        searchInput.value = person.name[currentLang];
-        resultsContainer.classList.add('hidden');
-      });
-      resultsContainer.appendChild(div);
-    });
-
-    resultsContainer.classList.remove('hidden');
-  });
-});
-
-function focusOnPerson(id) {
-  if (!network) return;
-  
-  currentId = id;
-  
-  network.focus(id, {
-    scale: 1.1,
-    animation: {
-      duration: 1000,
-      easingFunction: 'easeInOutQuad'
-    }
-  });
-  
-  network.selectNodes([id]);
-  
-  if (typeof renderProfile === 'function') {
-    renderProfile();
-  }
-}
-
-function clearSearch() {
-  const searchInput = document.getElementById('tree-search');
-  const resultsContainer = document.getElementById('search-results');
-  const clearBtn = document.getElementById('search-clear-btn');
-  if (searchInput) searchInput.value = '';
-  if (resultsContainer) resultsContainer.classList.add('hidden');
-  if (clearBtn) clearBtn.classList.add('hidden');
-}
-    // ЛОГИКА МОДАЛЬНОГО ОКНА
-    function openArchiveModal() {
-      const person = db[currentId];
-      if (!person || !person.documents) return;
-
-      document.getElementById("modal-title").innerHTML = `<span>🗄️</span> ${labels[currentLang].modal_title}`;
-      document.getElementById("modal-subtitle").innerText = labels[currentLang].modal_subtitle;
-      document.getElementById("modal-close-btn").innerText = labels[currentLang].modal_close;
-
-      const listContainer = document.getElementById("modal-documents-list");
-      listContainer.innerHTML = "";
-
-      person.documents.forEach(doc => {
-        const labelText = doc.label[currentLang] || doc.label['ru'];
-        const isVideo = doc.url.toLowerCase().endsWith('.mp4');
-
-        const item = document.createElement("div");
-        item.className = "p-4 bg-stone-50 rounded-lg border border-stone-200 shadow-sm flex flex-col items-center justify-between";
-
-        const mediaHtml = isVideo 
-          ? `<video src="${doc.url}" controls class="w-full h-48 object-cover rounded-md border border-stone-300 bg-black mb-3"></video>`
-          : `<img src="${doc.url}" alt="${labelText}" class="w-full h-48 object-cover rounded-md border border-stone-200 mb-3 cursor-pointer hover:opacity-90 transition" onclick="window.open('${doc.url}', '_blank')"/>`;
-
-        item.innerHTML = `
-          ${mediaHtml}
-          <div class="w-full text-center flex flex-col justify-between flex-grow">
-            <p class="text-sm font-medium text-stone-800 line-clamp-2">${labelText}</p>
-            ${isVideo ? '' : `<a href="${doc.url}" target="_blank" class="mt-2 inline-block text-xs text-amber-800 hover:underline font-semibold">${currentLang === 'ru' ? 'Открыть оригинал' : 'Open original'}</a>`}
-          </div>
-        `;
-
-        listContainer.appendChild(item);
-      });
-
-      const modal = document.getElementById("archive-modal");
-      if (modal) modal.classList.remove("hidden");
-    }
-
-    function closeArchiveModal(event) {
-      // Закрываем окно только при клике на подложку или крестик
-      if (!event || event.target === document.getElementById("archive-modal") || event.target.tagName === 'BUTTON') {
-        const modal = document.getElementById("archive-modal");
-        if (modal) {
-          modal.classList.add("hidden");
-          // Останавливаем видео при закрытии
-          const videos = modal.querySelectorAll("video");
-          videos.forEach(v => v.pause());
-        }
-      }
-    }
-
-    // ЛОГИКА НИЖНИХ КНОПОК ПЕРЕХОДА
-    function renderButtons(links) {
-      const container = document.getElementById("navigation-bttns");
-      if (!container) return;
-      container.innerHTML = "";
-
-      if (!links) return;
-
-      const categories = ['parents', 'spouse', 'siblings', 'children'];
-      
-      categories.forEach(category => {
-        if (links[category]) {
-          const targetIds = Array.isArray(links[category]) ? links[category] : [links[category]];
-          
-          targetIds.forEach(tId => {
-            if (db[tId]) {
-              const btn = document.createElement("button");
-              btn.className = "px-3 py-1.5 bg-stone-200 hover:bg-stone-300 text-stone-800 text-xs rounded border border-stone-400/40 transition font-sans font-medium cursor-pointer";
-              
-              let prefix = labels[currentLang][category];
-              if (category === 'parents') {
-                prefix = db[tId].role['ru'] === 'Глава семьи' ? labels[currentLang].father : labels[currentLang].mother;
-              }
-              
-              btn.innerText = `${prefix}: ${db[tId].name[currentLang]}`;
-              btn.onclick = () => {
-                currentId = tId;
-                document.getElementById("bio-container").scrollTop = 0;
-                renderProfile();
-                if (window.selectNodeOnTree) window.selectNodeOnTree(tId);
-              };
-              container.appendChild(btn);
-            }
-          });
-        }
-      });
-    }
-       
-    function setLanguage(lang) {
-      currentLang = lang;
-      
-      const mainTitle = document.getElementById("main-title");
-      if (mainTitle && labels[lang] && labels[lang].site_title) {
-        mainTitle.innerText = labels[lang].site_title;
-      }
-      
-      const btnRu = document.getElementById("btn-ru");
-      const btnEn = document.getElementById("btn-en");
-      
-      if (btnRu) {
-        btnRu.className = lang === 'ru' 
-          ? 'px-3 py-1 bg-stone-800 text-amber-50 rounded shadow-sm transition' 
-          : 'px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 transition';
-      }
-      if (btnEn) {
-        btnEn.className = lang === 'en' 
-          ? 'px-3 py-1 bg-stone-800 text-amber-50 rounded shadow-sm transition' 
-          : 'px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 transition';
-      }
-      
-      renderProfile();
-      
-      if (network !== null) {
-        network.destroy();
-        network = null;
-      }
-      
-      drawTree();
-    }
-    
-// --- ДВИЖОК ИНТЕРАКТИВНОГО ДЕРЕВА (VIS.JS) ---
-    let network = null;
-
- function drawTree() {
-  const container = document.getElementById('family-tree');
-  if (!container) return;
-
-  const nodesArray = [];
-  const edgesArray = [];
-
-  Object.keys(db).forEach(id => {
-    const person = db[id];
-    const isCurrent = (id === currentId);
-    
-    let bgColor = "#f5ebd6"; 
-    
-    if (person.isDeceased) {
-      bgColor = "#e7e5e4"; 
-    } else {
-      // Проверка роли или ID для назначения цвета
-      if (id.includes("blyuma") || (person.role && person.role['ru'] === "Хранительница очага")) {
-        bgColor = "#f3e1ec"; 
-      } else if (id.includes("vulf") || (person.role && person.role['ru'] === "Глава семьи")) {
-        bgColor = "#e3ecf5"; 
-      }
-    }
-    
-   // 1. Формируем красивую компактную подпись (Имя + Годы на новой строке)
-    let yearsLabel = person.years ? `\n(${person.years})` : '';
-    let shortName = person.name[currentLang] || '';
-    
-   // 2. Сверхбезопасная логика автоматического подбора фото
-    let nodeImage = "photos/male.jpg"; // Базовый вариант
-    
-    // Проверяем, женщина ли это (по ID или наличию роли)
-    const isWoman = (id.toLowerCase().includes("blyuma") || id.toLowerCase().includes("fira") || id.toLowerCase().includes("fanny") || id.toLowerCase().includes("nela") || id.toLowerCase().includes("frida") || id.toLowerCase().includes("ela") || id.toLowerCase().includes("larisa")) || 
-                    (person.birthName && person.birthName.trim() !== "") ||
-                    (person.role && typeof person.role === 'object' && person.role.ru && (person.role.ru.includes("женщина") || person.role.ru.includes("Хранительница"))) ||
-                    (person.role && typeof person.role === 'string' && (person.role.includes("женщина") || person.role.includes("Хранительница")));
-
-    if (isWoman) {
-      nodeImage = "photos/female.jpg";
-    }
-    
-    // Если в базе прописано конкретное фото — берем его
     if (person.photo && person.photo.trim() !== "") {
-      nodeImage = person.photo.startsWith("photos/") ? person.photo : "photos/" + person.photo;
-    }
-
-    // 3. Добавляем обновленный круглый узел в дерево
-    nodesArray.push({
-      id: id,
-      label: `${shortName}${yearsLabel}`,
-      shape: 'circularImage',
-      image: nodeImage,
-      size: 35, // Размер кружка с фото
-      borderWidth: isCurrent ? 4 : 2,
-      borderWidthSelected: 5,
-      color: {
-        border: isCurrent ? '#9a3412' : (person.isDeceased ? '#a8a29e' : '#b45309'),
-        background: bgColor,
-        highlight: { border: '#b45309', background: '#fef3c7' }
-      },
-      font: {
-        face: 'Cormorant Garamond',
-        size: 14,
-        color: '#1c1917',
-        bold: isCurrent ? true : false,
-        vadjust: 0 // Центрирование текста под кружком
-      },
-      shadow: true
-    });
-
-    // Отрисовка связей
-    if (person.links) {
-      if (person.links.parents) {
-        const parentsArray = Array.isArray(person.links.parents) ? person.links.parents : [person.links.parents];
-        parentsArray.forEach(pId => {
-          if (db[pId]) {
-            edgesArray.push({ 
-              from: pId, 
-              to: id, 
-              arrows: 'to', 
-              color: { color: '#78716c', opacity: 0.5 } 
-            });
-          }
-        });
-      }
-      if (person.links.spouse && db[person.links.spouse]) {
-        if (id < person.links.spouse) { 
-          edgesArray.push({ 
-            from: id, 
-            to: person.links.spouse, 
-            color: { color: '#b45309', opacity: 0.7 }, 
-            width: 2, 
-            dashes: true 
-          });
-        }
+      if (person.photo.startsWith("photos/") || person.photo.startsWith("documents/")) {
+        photoUrl = person.photo;
+      } else {
+        photoUrl = "photos/" + person.photo;
       }
     }
-  });
+    document.getElementById("person-photo").src = photoUrl;
+    document.getElementById("photo-caption").innerText = person.photoCaption ? person.photoCaption[currentLang] : "";
 
-  const data = { nodes: new vis.DataSet(nodesArray), edges: new vis.DataSet(edgesArray) };
-  
-  const options = {
-    // Включаем автоматическое распределение по уровням (родители выше, дети ниже)
-    layout: {
-      hierarchical: {
-        direction: 'UD', // Up-Down (Сверху вниз)
-        sortMethod: 'directed', // Авто-сортировка на основе направлений стрелок (edges)
-        nodeSpacing: 150,
-        levelSeparation: 150
-      }
-    },
-    physics: {
-      enabled: false // Выключаем постоянную физику, чтобы дерево не "тряслось" после начальной сборки
-    },
-    edges: {
-      smooth: {
-        type: 'cubicBezier', 
-        forceDirection: 'vertical',
-        roundness: 0.5
-      }
-    },
-    interaction: { 
-      hover: true, 
-      dragNodes: true, // Позволяет немного подвинуть узел вручную, если они перекроются
-      zoomView: true, 
-      dragView: true 
+    const ribbonContainer = document.getElementById("photo-ribbon");
+    if (ribbonContainer) ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
+
+    document.getElementById("person-role").innerText = person.role[currentLang] || "";
+    document.getElementById("person-name").innerText = person.name[currentLang] || "";
+    
+    const birthNameEl = document.getElementById("person-birth-name");
+    if (person.birthName && person.birthName[currentLang]) {
+      birthNameEl.innerText = person.birthName[currentLang];
+      birthNameEl.style.display = "block";
+    } else {
+      birthNameEl.style.display = "none";
     }
-  };
 
-  // Инициализируем сеть
-  network = new vis.Network(container, data, options);
+    document.getElementById("person-years").innerText = person.years || "";
 
-  // Плавный фокус на текущем выбранном человеке при загрузке
-  if (currentId) {
-    network.focus(currentId, { scale: 1.0, animation: false });
+    document.getElementById("milestones-title").innerText = labels[currentLang].m_title;
+    document.getElementById("family-title").innerText = labels[currentLang].fam_title;
+    document.getElementById("archive-btn-text").innerText = labels[currentLang].archive_btn;
+
+    // Наполнение таблицы вех
+    const table = document.getElementById("milestones-table");
+    table.innerHTML = `
+      <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600 w-1/3">${labels[currentLang].m_birth}:</td><td class="py-1.5">${person.milestones.birthPlace ? person.milestones.birthPlace[currentLang] : "—"}</td></tr>
+      <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_marriage}:</td><td class="py-1.5">${person.milestones.marriage ? person.milestones.marriage[currentLang] : "—"}</td></tr>
+      <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_occupation}:</td><td class="py-1.5 font-medium text-amber-950">${person.milestones.occupation ? person.milestones.occupation[currentLang] : "—"}</td></tr>
+      <tr><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_burial}:</td><td class="py-1.5">${person.milestones.burial ? person.milestones.burial[currentLang] : "—"}</td></tr>
+    `;
+
+    document.getElementById("person-bio").innerHTML = person.bio[currentLang] || "";
+
+    const familyList = document.getElementById("family-list");
+    familyList.innerHTML = "";
+    if (person.familyText && person.familyText[currentLang]) {
+      person.familyText[currentLang].forEach(item => {
+        const li = document.createElement("li");
+        li.innerHTML = item;
+        familyList.appendChild(li);
+      });
+    }
+
+    const docSection = document.getElementById("documents-section");
+    if (person.documents && person.documents.length > 0) {
+      docSection.style.display = "block";
+    } else {
+      docSection.style.display = "none";
+    }
+
+    // Логика направления RTL/LTR
+    const bioContainer = document.getElementById("bio-container");
+    if (currentLang === 'he') {
+      bioContainer.classList.add('rtl'); bioContainer.classList.remove('ltr');
+      table.classList.add('rtl-table');
+      familyList.classList.add('text-right');
+    } else {
+      bioContainer.classList.add('ltr'); bioContainer.classList.remove('rtl');
+      table.classList.remove('rtl-table');
+      familyList.classList.remove('text-right');
+    }
+
+    renderNavigationButtons();
   }
 
-  network.on("click", function (params) {
-    if (params.nodes.length > 0) {
-      const clickedId = params.nodes[0];
-      currentId = clickedId;
-      
-      const bioContainer = document.getElementById("bio-container");
-      if (bioContainer) bioContainer.scrollTop = 0;
-      
-      renderProfile(); 
-      // Вместо полной пересборки drawTree() (которая сбрасывает зум), 
-      // просто обновляем стили существующей сети, чтобы выделить рамку
-      window.selectNodeOnTree(clickedId);
+  // Вспомогательная проверка пола по ID
+  function idIsFemale(id) {
+    const lower = id.toLowerCase();
+    return lower.includes("blyuma") || lower.includes("fira") || lower.includes("fanny") || lower.includes("nela") || lower.includes("frida") || lower.includes("ela") || lower.includes("larisa") || lower.includes("haya") || lower.includes("feyga") || lower.includes("slava");
+  }
+
+  // ==========================================
+  // 5. ДВИЖОК ДЕРЕВА MYHERITAGE (HTML/CSS LAYOUT)
+  // ==========================================
+  function drawTree() {
+    const container = document.getElementById('family-tree');
+    if (!container) return;
+
+    container.innerHTML = '';
+    container.className = "w-full p-4 flex flex-col gap-6 items-center overflow-auto";
+
+    const person = db[currentId];
+    if (!person) return;
+
+    // Слой родителей
+    const parentsRow = document.createElement('div');
+    parentsRow.className = "flex justify-center gap-8 relative";
+    
+    let hasParents = false;
+    if (person.links && person.links.parents) {
+      const parentsArray = Array.isArray(person.links.parents) ? person.links.parents : [person.links.parents];
+      parentsArray.forEach(pId => {
+        if (db[pId]) {
+          parentsRow.appendChild(createHtmlCard(pId));
+          hasParents = true;
+        }
+      });
+    }
+    if (hasParents) container.appendChild(parentsRow);
+
+    // Центральный слой (Фокус + Супруг)
+    const centerRow = document.createElement('div');
+    centerRow.className = "flex justify-center gap-6 items-center my-1";
+    
+    centerRow.appendChild(createHtmlCard(currentId, true));
+
+    if (person.links && person.links.spouse) {
+      const spouseArray = Array.isArray(person.links.spouse) ? person.links.spouse : [person.links.spouse];
+      spouseArray.forEach(sId => {
+        if (db[sId]) {
+          const line = document.createElement('div');
+          line.className = "w-6 h-[2px] bg-amber-600 border-t border-dashed border-amber-700";
+          centerRow.appendChild(line);
+          centerRow.appendChild(createHtmlCard(sId));
+        }
+      });
+    }
+    container.appendChild(centerRow);
+
+    // Слой детей
+    const childrenRow = document.createElement('div');
+    childrenRow.className = "flex justify-center gap-6 mt-1";
+    
+    let hasChildren = false;
+    Object.keys(db).forEach(id => {
+      const potentialChild = db[id];
+      if (potentialChild.links && potentialChild.links.parents) {
+        const cParents = Array.isArray(potentialChild.links.parents) ? potentialChild.links.parents : [potentialChild.links.parents];
+        if (cParents.includes(currentId)) {
+          childrenRow.appendChild(createHtmlCard(id));
+          hasChildren = true;
+        }
+      }
+    });
+
+    if (hasChildren) container.appendChild(childrenRow);
+  }
+
+  // Создание индивидуальной карточки родственника
+  function createHtmlCard(id, isMain = false) {
+    const person = db[id];
+    const card = document.createElement('div');
+    
+    card.className = `flex items-center gap-3 p-2.5 w-60 bg-white border rounded-lg shadow-sm cursor-pointer transition-all hover:shadow-md hover:-translate-y-0.5 ${
+      isMain ? 'border-amber-600 ring-2 ring-amber-500/20 bg-amber-50/40' : 'border-stone-200'
+    }`;
+    
+    let nodeImage = idIsFemale(id) ? "photos/female.jpg" : "photos/male.jpg";
+    if (person.photo && person.photo.trim() !== "") {
+      let cleanPhoto = person.photo.trim();
+      nodeImage = (cleanPhoto.startsWith("photos/") || cleanPhoto.startsWith("documents/")) ? cleanPhoto : "photos/" + cleanPhoto;
+    }
+
+    let sideColor = idIsFemale(id) ? "bg-pink-400" : "bg-sky-400";
+    if (person.isDeceased) sideColor = "bg-stone-400";
+
+    card.innerHTML = `
+      <div class="w-1 h-10 ${sideColor} rounded-full shrink-0"></div>
+      <img src="${nodeImage}" class="w-10 h-10 rounded-md object-cover border border-stone-100 shrink-0" alt="" onerror="this.src='${idIsFemale(id) ? 'photos/female.jpg' : 'photos/male.jpg'}'">
+      <div class="flex flex-col min-w-0">
+        <span class="font-medium text-stone-900 truncate text-xs font-bold" style="font-family: 'Cormorant Garamond', serif; font-size: 14px;">
+          ${person.name[currentLang] || ''}
+        </span>
+        <span class="text-[11px] text-stone-500 mt-0.5 font-mono">${person.years || ''}</span>
+      </div>
+    `;
+
+    card.addEventListener('click', () => {
+      selectNodeOnTree(id);
+    });
+
+    return card;
+  }
+
+  // Функция переключения фокусного предка
+  function selectNodeOnTree(id) {
+    currentId = id;
+    renderProfile();
+    drawTree();
+  }
+  window.selectNodeOnTree = selectNodeOnTree;
+
+  // ==========================================
+  // 6. СИСТЕМА НИЖНЕЙ НАВИГАЦИИ (БЫСТРЫЕ КНОПКИ)
+  // ==========================================
+  function renderNavigationButtons() {
+    const navContainer = document.getElementById("navigation-bttns");
+    if (!navContainer) return;
+    navContainer.innerHTML = "";
+
+    const person = db[currentId];
+    if (!person) return;
+
+    // Кнопки для родителей
+    if (person.links && person.links.parents) {
+      person.links.parents.forEach(pId => {
+        if (db[pId]) createNavButton(pId, labels[currentLang].father + " / " + labels[currentLang].mother, navContainer);
+      });
+    }
+    // Кнопка супруга
+    if (person.links && person.links.spouse) {
+      const spouses = Array.isArray(person.links.spouse) ? person.links.spouse : [person.links.spouse];
+      spouses.forEach(sId => {
+        if (db[sId]) createNavButton(sId, labels[currentLang].spouse, navContainer);
+      });
+    }
+    // Кнопки детей
+    Object.keys(db).forEach(id => {
+      const potentialChild = db[id];
+      if (potentialChild.links && potentialChild.links.parents) {
+        const cParents = Array.isArray(potentialChild.links.parents) ? potentialChild.links.parents : [potentialChild.links.parents];
+        if (cParents.includes(currentId)) {
+          createNavButton(id, labels[currentLang].children, navContainer);
+        }
+      }
+    });
+  }
+
+  function createNavButton(id, relationLabel, container) {
+    const btn = document.createElement("button");
+    btn.className = "px-3 py-1 bg-stone-100 hover:bg-amber-100 border border-stone-400 text-stone-800 text-xs rounded transition shadow-sm cursor-pointer font-sans font-medium";
+    btn.innerHTML = `<span class="text-stone-400 font-normal mr-1">${relationLabel}:</span> ${db[id].name[currentLang]}`;
+    btn.onclick = () => selectNodeOnTree(id);
+    container.appendChild(btn);
+  }
+
+  // ==========================================
+  // 7. СИСТЕМА УМНОГО ПОИСКА
+  // ==========================================
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("tree-search");
+    if (searchInput) {
+        searchInput.addEventListener("input", (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            const resultsContainer = document.getElementById("search-results");
+            const clearBtn = document.getElementById("search-clear-btn");
+
+            if (query === "") {
+                resultsContainer.classList.add("hidden");
+                clearBtn.classList.add("hidden");
+                return;
+            }
+
+            clearBtn.classList.remove("hidden");
+            resultsContainer.innerHTML = "";
+            let matches = 0;
+
+            Object.keys(db).forEach(id => {
+                const p = db[id];
+                const nameRu = (p.name.ru || "").toLowerCase();
+                const nameEn = (p.name.en || "").toLowerCase();
+
+                if (nameRu.includes(query) || nameEn.includes(query)) {
+                    matches++;
+                    const row = document.createElement("div");
+                    row.className = "px-3 py-2 hover:bg-amber-50 cursor-pointer text-sm text-stone-800 transition font-serif flex justify-between items-center";
+                    row.innerHTML = `<div><strong>${p.name[currentLang]}</strong> <span class="text-xs text-stone-500 font-mono ml-2">${p.years}</span></div><div class="text-[10px] uppercase bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded font-sans font-bold">${p.role[currentLang]}</div>`;
+                    row.onclick = () => {
+                        selectNodeOnTree(id);
+                        resultsContainer.classList.add("hidden");
+                        searchInput.value = "";
+                        clearBtn.classList.add("hidden");
+                    };
+                    resultsContainer.appendChild(row);
+                }
+            });
+
+            if (matches > 0) {
+                resultsContainer.classList.remove("hidden");
+            } else {
+                resultsContainer.innerHTML = `<div class="p-3 text-xs text-stone-400 italic text-center font-sans">Совпадений не найдено</div>`;
+                resultsContainer.classList.remove("hidden");
+            }
+        });
     }
   });
+
+  function clearSearch() {
+    const input = document.getElementById("tree-search");
+    if (input) input.value = "";
+    document.getElementById("search-results").classList.add("hidden");
+    document.getElementById("search-clear-btn").classList.add("hidden");
+  }
+  window.clearSearch = clearSearch;
+
+  // ==========================================
+  // 8. СИСТЕМА УПРАВЛЕНИЯ АРХИВОМ И ЯЗЫКАМИ
+  // ==========================================
+  function setLanguage(lang) {
+    currentLang = lang;
+    document.getElementById("main-title").innerText = labels[lang].site_title;
+    
+    const btnRu = document.getElementById("btn-ru");
+    const btnEn = document.getElementById("btn-en");
+    
+    if (lang === 'ru') {
+      btnRu.className = "px-3 py-1 bg-stone-800 text-amber-50 rounded shadow-sm transition";
+      btnEn.className = "px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 transition";
+      document.getElementById("tree-search").placeholder = "Поиск предка (например, Вульф)...";
+    } else {
+      btnEn.className = "px-3 py-1 bg-stone-800 text-amber-50 rounded shadow-sm transition";
+      btnRu.className = "px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 transition";
+      document.getElementById("tree-search").placeholder = "Search ancestor (e.g., Vulf)...";
+    }
+    
+    renderProfile();
+    drawTree();
+  }
+  window.setLanguage = setLanguage;
+
+  function openArchiveModal() {
+    const person = db[currentId];
+    if (!person || !person.documents || person.documents.length === 0) return;
+
+    document.getElementById("modal-title").innerHTML = `<span>🗄️</span> ${labels[currentLang].modal_title}`;
+    document.getElementById("modal-subtitle").innerText = labels[currentLang].modal_subtitle;
+    document.getElementById("modal-close-btn").innerText = labels[currentLang].modal_close;
+
+    const listContainer = document.getElementById("modal-documents-list");
+    listContainer.innerHTML = "";
+
+    person.documents.forEach(doc => {
+      const card = document.createElement("a");
+      card.href = doc.url;
+      card.target = "_blank";
+      card.className = "flex flex-col bg-white border border-stone-300 rounded p-3 hover:border-amber-700 hover:shadow-md transition text-stone-800 group relative overflow-hidden";
+      
+      let isPdf = doc.url.toLowerCase().endsWith(".pdf");
+      let icon = isPdf ? "📄" : "🖼️";
+      let typeLabel = isPdf ? "Документ PDF" : "Фото / Скан";
+
+      card.innerHTML = `
+        <div class="text-2xl mb-1">${icon}</div>
+        <div class="text-xs font-sans font-bold text-stone-400 uppercase tracking-wider mb-1">${typeLabel}</div>
+        <div class="text-sm font-serif font-medium leading-snug text-stone-900 group-hover:text-amber-900 transition flex-grow">${doc.label[currentLang]}</div>
+        <div class="text-[11px] text-amber-800 font-sans font-semibold underline mt-3 inline-flex items-center gap-1">Открыть оригинал &rarr;</div>
+      `;
+      listContainer.appendChild(card);
+    });
+
+    document.getElementById("archive-modal").classList.remove("hidden");
+  }
+  window.openArchiveModal = openArchiveModal;
+
+  function closeArchiveModal(event) {
+    if (event) event.stopPropagation();
+    document.getElementById("archive-modal").classList.add("hidden");
+  }
+  window.closeArchiveModal = closeArchiveModal;
+
+ // // СТАРТ ПРИЛОЖЕНИЯ
+// --- ИНТЕРАКТИВНОСТЬ ДЛЯ HTML-ХОЛСТА (ЗУМ И ПЕРЕТАСКИВАНИЕ) ---
+const el = document.getElementById('family-tree');
+let scale = 1, isDragging = false, startX, startY, translateX = 0, translateY = 0;
+
+if (el && el.parentElement) {
+    const container = el.parentElement;
+    container.style.overflow = 'hidden';
+    el.style.cursor = 'grab';
+    el.style.transition = 'transform 0.05s ease-out';
+
+    // 1. Масштабирование колесиком мыши
+    container.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const zoomSpeed = 0.05;
+        if (e.deltaY < 0) {
+            scale = Math.min(scale + zoomSpeed, 2); // Максимальное увеличение х2
+        } else {
+            scale = Math.max(scale - zoomSpeed, 0.4); // Минимальное уменьшение
+        }
+        updateTransform();
+    }, { passive: false });
+
+    // 2. Начало перетаскивания мышкой
+    container.addEventListener('mousedown', (e) => {
+        if (e.target.closest('button') || e.target.closest('input')) return; // Не мешаем кнопкам
+        isDragging = true;
+        el.style.cursor = 'grabbing';
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+    });
+
+    // 3. Процесс перетаскивания
+    window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        updateTransform();
+    });
+
+    // 4. Окончание перетаскивания
+    window.addEventListener('mouseup', () => {
+        isDragging = false;
+        if (el) el.style.cursor = 'grab';
+    });
 }
 
-    window.selectNodeOnTree = function(id) {
-      if (network) {
-        network.selectNodes([id]);
-        network.focus(id, { scale: 1.1, animation: true });
-        drawTree();
-      }
-    };
+function updateTransform() {
+    if (el) {
+        el.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        el.style.transformOrigin = 'center center';
+    }
+}
 
-  // Стартовый запуск
-    setLanguage('ru');
-    drawTree();
-  </script>
+// Запускаем приложение при загрузке страницы
+setLanguage('ru');
+
+</script>
 </body>
 </html>
+ 
