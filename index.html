@@ -661,7 +661,6 @@
   }
 
   // Функция переключения фокусного предка
-  // Функция переключения фокусного предка
 function selectNodeTree(id) {
     currentId = id;
     renderProfile();
@@ -671,23 +670,30 @@ function selectNodeTree(id) {
     if (profileModal) {
         profileModal.classList.remove("hidden");
         
-        // СТИЛИ МОДАЛЬНОГО ОКНА: фиксируем по центру экрана поверх дерева
+        // 1. Ограничиваем карточку до аккуратных размеров (как планшет)
         profileModal.style.position = "fixed";
         profileModal.style.top = "50%";
         profileModal.style.left = "50%";
         profileModal.style.transform = "translate(-50%, -50%)";
-        profileModal.style.zindex = "9999";
-        profileModal.style.maxHeight = "90vh";
-        profileModal.style.overflowY = "auto";
-        profileModal.style.backgroundColor = "#f5f5f4"; // Приятный фоновый цвет карточки (stone-100)
-        profileModal.style.boxShadow = "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"; // Тень
-        profileModal.style.borderRadius = "0.75rem"; // Скругление углов
+        profileModal.style.width = "90%";          // На мобильных во весь экран
+        profileModal.style.maxWidth = "650px";     // На компьютере — аккуратная карточка
+        profileModal.style.maxHeight = "85vh";     // Ограничение по высоте экрана
+        profileModal.style.overflowY = "auto";     // Если текста много, появится прокрутка
+        
+        // 2. Красивый внешний вид и ТЕНИ
+        profileModal.style.backgroundColor = "#fafaf9"; // Уютный stone-50 фон
+        profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 100vmax rgba(0,0,0,0.3)"; 
+        // СЕКРЕТНЫЙ ТРЮК: 100vmax rgba(0,0,0,0.3) создает темную вуаль на ВСЁ дерево сзади!
+        
+        profileModal.style.borderRadius = "1rem";
+        profileModal.style.zIndex = "99999";       // Выносим на самый передний план
     }
 
-    // Размываем задний фон приложения
-    const mainContent = document.getElementById("main-layout");
-    if (mainContent) {
-        mainContent.classList.add("blur-sm");
+    // 3. Идеальное размытие фона прямо под карточкой
+    // Вместо main-layout мы размываем сам холст дерева
+    const treeCanvas = document.getElementById("family-tree");
+    if (treeCanvas) {
+        treeCanvas.classList.add("blur-sm");
     }
 }
 
