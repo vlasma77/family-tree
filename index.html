@@ -456,35 +456,41 @@
     const ribbonContainer = document.getElementById("photo-ribbon");
     if (ribbonContainer) ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
 
-    document.getElementById("person-role").innerText = person.role[currentLang] || "";
+   document.getElementById("person-role").innerText = person.role[currentLang] || "";
     document.getElementById("person-name").innerText = person.name[currentLang] || "";
-    
-    // --- НАЧАЛО ВСТАВКИ: АВТОМАТИЧЕСКАЯ КНОПКА ЗАКРЫТИЯ ---
-    // Проверяем, существует ли уже кнопка закрытия, чтобы не создавать дубликаты
+
+    // =================================================================
+    // ВСТАВКА: АВТОМАТИЧЕСКИЙ КРЕСТИК ЗАКРЫТИЯ ДЛЯ МОДАЛЬНОГО ОКНА
     if (!document.getElementById("close-profile-btn")) {
         const bioContainer = document.getElementById("bio-container");
         if (bioContainer) {
-            // Убедимся, что у контейнера есть позиционирование для абсолютного крестика
             bioContainer.classList.add("relative"); 
             
-            // Создаем элемент кнопки
             const closeBtn = document.createElement("button");
             closeBtn.id = "close-profile-btn";
             closeBtn.innerHTML = "×";
             
-            // Задаем стили крестика (красивое расположение в верхнем правом углу)
+            // Стилизуем крестик: крупный, в правом верхнем углу карточки
             closeBtn.className = "absolute top-4 right-6 text-stone-500 hover:text-stone-900 text-3xl font-serif z-50 cursor-pointer transition-colors";
             
-            // Привязываем функцию закрытия, которую мы создали на прошлом шаге
+            // При клике вызываем скрытие окна и снятие размытия
             closeBtn.onclick = function() {
-                closeProfileModal();
+                if (typeof closeProfileModal === "function") {
+                    closeProfileModal();
+                } else {
+                    // Запасной вариант, если функция еще не дошла
+                    bioContainer.classList.add("hidden");
+                    const mainContent = document.getElementById("main-layout");
+                    if (mainContent) mainContent.classList.remove("blur-sm");
+                }
             };
             
-            // Добавляем кнопку внутрь карточки
             bioContainer.appendChild(closeBtn);
         }
     }
-    // --- КОНЕЦ ВСТАВКИ ---
+    // =================================================================
+
+  
 
     const birthNameEl = document.getElementById("person-birth-name");
     if (person.birthName && person.birthName[currentLang]) {
@@ -561,7 +567,7 @@ container.className = "w-full min-h-screen p-4 flex flex-col gap-12 items-center
 
     const person = db[currentId];
     if (!person) return;
-а
+
     // Слой родителей
     const parentsRow = document.createElement('div');
     parentsRow.className = "flex justify-center gap-8 relative";
@@ -659,14 +665,24 @@ function selectNodeTree(id) {
     renderProfile();
     drawTree();
 
-    // Открываем модальное окно профиля (убираем hidden)
     const profileModal = document.getElementById("bio-container"); 
     if (profileModal) {
         profileModal.classList.remove("hidden");
+        
+        // СТИЛИ МОДАЛЬНОГО ОКНА: фиксируем по центру экрана поверх дерева
+        profileModal.style.position = "fixed";
+        profileModal.style.top = "50%";
+        profileModal.style.left = "50%";
+        profileModal.style.transform = "translate(-50%, -50%)";
+        profileModal.style.zindex = "9999";
+        profileModal.style.maxHeight = "90vh";
+        profileModal.style.overflowY = "auto";
+        profileModal.style.backgroundColor = "#f5f5f4"; // Приятный фоновый цвет карточки (stone-100)
+        profileModal.style.boxShadow = "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"; // Тень
+        profileModal.style.borderRadius = "0.75rem"; // Скругление углов
     }
 
-    // Размываем задний фон приложения (добавляем blur-sm)
-    // Внимание: проверьте, чтобы у вашего главного контейнера в HTML был id="main-layout"
+    // Размываем задний фон приложения
     const mainContent = document.getElementById("main-layout");
     if (mainContent) {
         mainContent.classList.add("blur-sm");
