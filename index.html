@@ -675,7 +675,7 @@ function selectNodeTree(id) {
         profileModal.classList.remove("hidden");
         
         // СТИЛИ ОКНА: центрируем аккуратное адаптивное окно
-        profileModal.style.position = "fixed";
+        profileModal.style.position = "fixed";а
         profileModal.style.top = "50%";
         profileModal.style.left = "50%";
         profileModal.style.transform = "translate(-50%, -50%)";
@@ -711,16 +711,15 @@ function closeProfileModal() {
     const profileModal = document.getElementById("bio-container");
     if (profileModal) {
         profileModal.classList.add("hidden");
-        profileModal.style.boxShadow = ""; // Убираем темную вуаль
+        profileModal.style.boxShadow = ""; // Убираем темную вуаль фона
     }
 
-    // Снимаем размытие с холста дерева
+    // Снимаем размытие с дерева
     const treeCanvas = document.getElementById("family-tree");
     if (treeCanvas) {
         treeCanvas.classList.remove("blur-sm");
     }
 }
-window.closeProfileModal = closeProfileModal; // Делаем функцию доступной везде
 // --- КОНЕЦ ВСТАВКИ ---
   // ==========================================
   // 6. СИСТЕМА НИЖНЕЙ НАВИГАЦИИ (БЫСТРЫЕ КНОПКИ)
