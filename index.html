@@ -558,14 +558,16 @@
   // ==========================================
   // 5. ДВИЖОК ДЕРЕВА MYHERITAGE (HTML/CSS LAYOUT)
   // ==========================================
-  function drawTree() {
+ function drawTree() {
     const container = document.getElementById('family-tree');
     if (!container) return;
 
     container.innerHTML = '';
-container.className = "w-full min-h-screen p-8 flex flex-col gap-12 items-center justify-center";
+    container.className = "w-full min-h-screen p-8 flex flex-col gap-12 items-center justify-center grow";
+    if (container.parentElement) container.parentElement.style.maxWidth = "100%"; // Убираем ограничения родителя
 
     const person = db[currentId];
+// ... дальше ваш родной код
     if (!person) return;
 
     // Слой родителей
