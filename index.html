@@ -701,13 +701,17 @@ window.selectNodeOnTree = selectNodeTree;
 
 // --- ВСТАВЛЯЙТЕ СЮДА КНОПКУ ЗАКРЫТИЯ ---
 function closeProfileModal() {
-    // Скрываем карточку обратно
     const profileModal = document.getElementById("bio-container");
-    if (profileModal) profileModal.classList.add("hidden");
+    if (profileModal) {
+        profileModal.classList.add("hidden");
+        profileModal.style.boxShadow = ""; // Убираем темную вуаль
+    }
 
-    // Убираем размытие с фона
-    const mainContent = document.getElementById("main-layout");
-    if (mainContent) mainContent.classList.remove("blur-sm");
+    // Снимаем размытие с холста дерева
+    const treeCanvas = document.getElementById("family-tree");
+    if (treeCanvas) {
+        treeCanvas.classList.remove("blur-sm");
+    }
 }
 window.closeProfileModal = closeProfileModal; // Делаем функцию доступной везде
 // --- КОНЕЦ ВСТАВКИ ---
