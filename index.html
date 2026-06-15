@@ -668,29 +668,36 @@ function selectNodeTree(id) {
 
     const profileModal = document.getElementById("bio-container"); 
     if (profileModal) {
+        // ГЛАВНЫЙ СЕКРЕТ: перемещаем карточку в самый корень HTML (в body), 
+        // чтобы она исчезла из-под дерева и очистилась от старых стилей сжатия!
+        document.body.appendChild(profileModal);
+        
         profileModal.classList.remove("hidden");
         
-        // 1. Ограничиваем карточку до аккуратных размеров (как планшет)
+        // СТИЛИ ОКНА: центрируем аккуратное адаптивное окно
         profileModal.style.position = "fixed";
         profileModal.style.top = "50%";
         profileModal.style.left = "50%";
         profileModal.style.transform = "translate(-50%, -50%)";
-        profileModal.style.width = "90%";          // На мобильных во весь экран
-        profileModal.style.maxWidth = "650px";     // На компьютере — аккуратная карточка
-        profileModal.style.maxHeight = "85vh";     // Ограничение по высоте экрана
-        profileModal.style.overflowY = "auto";     // Если текста много, появится прокрутка
         
-        // 2. Красивый внешний вид и ТЕНИ
-        profileModal.style.backgroundColor = "#fafaf9"; // Уютный stone-50 фон
-        profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 100vmax rgba(0,0,0,0.3)"; 
-        // СЕКРЕТНЫЙ ТРЮК: 100vmax rgba(0,0,0,0.3) создает темную вуаль на ВСЁ дерево сзади!
+        // Размеры (ограничиваем ширину, чтобы текст и фото не разъезжались)
+        profileModal.style.width = "90%";          
+        profileModal.style.maxWidth = "550px";     // Компактный, красивый размер карточки
+        profileModal.style.maxHeight = "85vh";     
+        profileModal.style.overflowY = "auto";     // Включаем внутреннюю прокрутку, если контента много
+        profileModal.style.overflowX = "hidden";   // Запрещаем горизонтальное вылезание фото/текста
         
+        // Внешний вид
+        profileModal.style.backgroundColor = "#fafaf9"; // Чистый stone-50 фон
         profileModal.style.borderRadius = "1rem";
-        profileModal.style.zIndex = "99999";       // Выносим на самый передний план
+        profileModal.style.padding = "24px";            // Добавляем внутренние отступы, чтобы текст не прилипал к краям
+        profileModal.style.zIndex = "999999";           // Выносим на самый верхний слой приложения
+        
+        // Создаем глубокую темную вуаль на весь экран сзади карточки
+        profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 100vmax rgba(0, 0, 0, 0.5)"; 
     }
 
-    // 3. Идеальное размытие фона прямо под карточкой
-    // Вместо main-layout мы размываем сам холст дерева
+    // Размываем холст дерева под карточкой
     const treeCanvas = document.getElementById("family-tree");
     if (treeCanvas) {
         treeCanvas.classList.add("blur-sm");
