@@ -666,41 +666,48 @@ function selectNodeTree(id) {
     renderProfile();
     drawTree();
 
-    const profileModal = document.getElementById("bio-container"); 
-    if (profileModal) {
-        // ГЛАВНЫЙ СЕКРЕТ: перемещаем карточку в самый корень HTML (в body), 
-        // чтобы она исчезла из-под дерева и очистилась от старых стилей сжатия!
-        document.body.appendChild(profileModal);
-        
-        profileModal.classList.remove("hidden");
-        
-        // СТИЛИ ОКНА: центрируем аккуратное адаптивное окно
-        profileModal.style.position = "fixed";а
-        profileModal.style.top = "50%";
-        profileModal.style.left = "50%";
-        profileModal.style.transform = "translate(-50%, -50%)";
-        
-        // Размеры (ограничиваем ширину, чтобы текст и фото не разъезжались)
-        profileModal.style.width = "90%";          
-        profileModal.style.maxWidth = "550px";     // Компактный, красивый размер карточки
-        profileModal.style.maxHeight = "85vh";     
-        profileModal.style.overflowY = "auto";     // Включаем внутреннюю прокрутку, если контента много
-        profileModal.style.overflowX = "hidden";   // Запрещаем горизонтальное вылезание фото/текста
-        
-        // Внешний вид
-        profileModal.style.backgroundColor = "#fafaf9"; // Чистый stone-50 фон
-        profileModal.style.borderRadius = "1rem";
-        profileModal.style.padding = "24px";            // Добавляем внутренние отступы, чтобы текст не прилипал к краям
-        profileModal.style.zIndex = "999999";           // Выносим на самый верхний слой приложения
-        
-        // Создаем глубокую темную вуаль на весь экран сзади карточки
-        profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 100vmax rgba(0, 0, 0, 0.5)"; 
+    // 1. Прячем старый проблемный контейнер, чтобы он больше не маячил внизу страницы
+    const oldContainer = document.getElementById("bio-container");
+    if (oldContainer) {
+        oldContainer.classList.add("hidden");
+        oldContainer.style.display = "none";
     }
 
-    // Размываем холст дерева под карточкой
-    const treeCanvas = document.getElementById("family-tree");
-    if (treeCanvas) {
-        treeCanvas.classList.add("blur-sm");
+    // 2. Проверяем, нет ли уже открытого всплывающего окна (модалки), и удаляем старое
+    const existingModal = document.getElementById("modern-profile-modal");
+    if (existingModal) existingModal.remove();
+
+    // 3. Берем чистый HTML-текст карточки, который только что сгенерировала renderProfile()
+    const profileHtml = oldContainer ? oldContainer.innerHTML : "";
+
+    // 4. Создаем абсолютно новый, независимый оверлей (темный размытый фон)
+    const overlay = document.createElement("div");
+    overlay.id = "modern-profile-modal";
+    // Стилизуем задний фон: фиксированный, на весь экран, полупрозрачный, с эффектом размытия (backdrop-blur)
+    overlay.className = "fixed inset-0 w-screen h-screen bg-stone-900/40 backdrop-blur-md flex items-center justify-center p-4 z-[99999]";
+    
+    // При клике на темный фон мимо карточки — закрываем окно
+    overlay.onclick = function(e) {
+        if (e.target === overlay) closeProfileModal();
+    };
+
+    // 5. Создаем саму карточку внутри оверлея с жесткими красивыми размерами
+    const contentCard = document.createElement("div");
+    contentCard.className = "bg-[#fafaf9] text-stone-900 w-full max-w-[600px] max-h-[85vh] overflow-y-auto rounded-2xl shadow-2xl relative p-6 border border-stone-200";
+    contentCard.innerHTML = profileHtml;
+
+    // Вставляем карточку в оверлей, а оверлей — на страницу
+    overlay.appendChild(contentCard);
+    document.body.appendChild(overlay);
+
+    // 6. Вешаем правильное событие на крестик внутри новой карточки
+    // Ищем кнопку по селекторам (id или по тегу кнопки)
+    const closeBtn = contentCard.querySelector("#close-profile-btn") || contentCard.querySelector("button");
+    if (closeBtn) {
+        closeBtn.onclick = function(e) {
+            e.stopPropagation();
+            closeProfileModal();
+        };
     }
 }
 
@@ -708,13 +715,13 @@ window.selectNodeOnTree = selectNodeTree;
 
 // --- ВСТАВЛЯЙТЕ СЮДА КНОПКУ ЗАКРЫТИЯ ---
 function closeProfileModal() {
-    const profileModal = document.getElementById("bio-container");
-    if (profileModal) {
-        profileModal.classList.add("hidden");
-        profileModal.style.boxShadow = ""; // Убираем темную вуаль фона
+    // Находим наш созданный оверлей с карточкой и полностью удаляем его с экрана
+    const modal = document.getElementById("modern-profile-modal");
+    if (modal) {
+        modal.remove();
     }
 
-    // Снимаем размытие с дерева
+    // На всякий случай убедимся, что старое дерево не осталось заблюренным
     const treeCanvas = document.getElementById("family-tree");
     if (treeCanvas) {
         treeCanvas.classList.remove("blur-sm");
