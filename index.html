@@ -663,51 +663,48 @@
   // Функция переключения фокусного предка
 function selectNodeTree(id) {
     currentId = id;
-    renderProfile();
+    renderProfile(); // Сначала оригинальная функция штатно заполняет `#bio-container` и вставляет фото
     drawTree();
 
-    // 1. Прячем старый проблемный контейнер, чтобы он больше не маячил внизу страницы
-    const oldContainer = document.getElementById("bio-container");
-    if (oldContainer) {
-        oldContainer.classList.add("hidden");
-        oldContainer.style.display = "none";
-    }
+    const profileModal = document.getElementById("bio-container"); 
+    if (profileModal) {
+        // ---- 1. СОЗДАЕМ ТЕМНЫЙ ФОН-ВУАЛЬ (ЕСЛИ ЕГО ЕЩЕ НЕТ) ----
+        let overlay = document.getElementById("modal-backdrop-overlay");
+        if (!overlay) {
+            overlay = document.createElement("div");
+            overlay.id = "modal-backdrop-overlay";
+            document.body.appendChild(overlay);
+        }
+        
+        // Стили вуали: она перекроет нижнюю часть страницы и заблюрит дерево
+        overlay.className = "fixed inset-0 w-full h-full bg-stone-900/50 backdrop-blur-md z-[99998]";
+        overlay.style.display = "block";
+        overlay.onclick = closeProfileModal; // Клик мимо карточки закроет её
 
-    // 2. Проверяем, нет ли уже открытого всплывающего окна (модалки), и удаляем старое
-    const existingModal = document.getElementById("modern-profile-modal");
-    if (existingModal) existingModal.remove();
+        // ---- 2. ПРЕВРАЩАЕМ САМ БИО-КОНТЕЙНЕР В МОДАЛКУ ----
+        // Переносим его в body, чтобы он вырвался из старых ограничений верстки
+        document.body.appendChild(profileModal);
+        profileModal.classList.remove("hidden");
+        profileModal.style.display = "block";
 
-    // 3. Берем чистый HTML-текст карточки, который только что сгенерировала renderProfile()
-    const profileHtml = oldContainer ? oldContainer.innerHTML : "";
-
-    // 4. Создаем абсолютно новый, независимый оверлей (темный размытый фон)
-    const overlay = document.createElement("div");
-    overlay.id = "modern-profile-modal";
-    // Стилизуем задний фон: фиксированный, на весь экран, полупрозрачный, с эффектом размытия (backdrop-blur)
-    overlay.className = "fixed inset-0 w-screen h-screen bg-stone-900/40 backdrop-blur-md flex items-center justify-center p-4 z-[99999]";
-    
-    // При клике на темный фон мимо карточки — закрываем окно
-    overlay.onclick = function(e) {
-        if (e.target === overlay) closeProfileModal();
-    };
-
-    // 5. Создаем саму карточку внутри оверлея с жесткими красивыми размерами
-    const contentCard = document.createElement("div");
-    contentCard.className = "bg-[#fafaf9] text-stone-900 w-full max-w-[600px] max-h-[85vh] overflow-y-auto rounded-2xl shadow-2xl relative p-6 border border-stone-200";
-    contentCard.innerHTML = profileHtml;
-
-    // Вставляем карточку в оверлей, а оверлей — на страницу
-    overlay.appendChild(contentCard);
-    document.body.appendChild(overlay);
-
-    // 6. Вешаем правильное событие на крестик внутри новой карточки
-    // Ищем кнопку по селекторам (id или по тегу кнопки)
-    const closeBtn = contentCard.querySelector("#close-profile-btn") || contentCard.querySelector("button");
-    if (closeBtn) {
-        closeBtn.onclick = function(e) {
-            e.stopPropagation();
-            closeProfileModal();
-        };
+        // СБРАСЫВАЕМ СТАРЫЕ СТИЛИ И ЗАДАЕМ ИДЕАЛЬНЫЕ НОВЫЕ
+        profileModal.style.position = "fixed";
+        profileModal.style.top = "50%";
+        profileModal.style.left = "50%";
+        profileModal.style.transform = "translate(-50%, -50%)";
+        
+        // Размеры карточки (чтобы ничего не вылезало)
+        profileModal.style.width = "90%";          
+        profileModal.style.maxWidth = "550px";     // Идеальная компактная ширина
+        profileModal.style.maxHeight = "85vh";     
+        profileModal.style.overflowY = "auto";     // Внутренний скролл, если текста много
+        profileModal.style.overflowX = "hidden";   // Запрещаем картинкам косить верстку
+        
+        // Дизайн
+        profileModal.style.backgroundColor = "#fafaf9"; 
+        profileModal.style.borderRadius = "1rem";
+        profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.3)";
+        profileModal.style.zIndex = "99999";       // Карточка строго поверх вуали
     }
 }
 
@@ -715,16 +712,17 @@ window.selectNodeOnTree = selectNodeTree;
 
 // --- ВСТАВЛЯЙТЕ СЮДА КНОПКУ ЗАКРЫТИЯ ---
 function closeProfileModal() {
-    // Находим наш созданный оверлей с карточкой и полностью удаляем его с экрана
-    const modal = document.getElementById("modern-profile-modal");
-    if (modal) {
-        modal.remove();
+    // Скрываем саму карточку
+    const profileModal = document.getElementById("bio-container");
+    if (profileModal) {
+        profileModal.classList.add("hidden");
+        profileModal.style.display = "none";
     }
 
-    // На всякий случай убедимся, что старое дерево не осталось заблюренным
-    const treeCanvas = document.getElementById("family-tree");
-    if (treeCanvas) {
-        treeCanvas.classList.remove("blur-sm");
+    // Полностью убираем темную вуаль и размытие
+    const overlay = document.getElementById("modal-backdrop-overlay");
+    if (overlay) {
+        overlay.style.display = "none";
     }
 }
 // --- КОНЕЦ ВСТАВКИ ---
