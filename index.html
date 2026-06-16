@@ -437,54 +437,61 @@
     const person = db[currentId];
     if (!person) return;
 
-    // Автоподбор силуэта-заглушки по полу
+    // 1. Автоподбор силуэта-заглушки по полу
     let photoUrl = "photos/male.jpg";
     if (idIsFemale(currentId) || (person.role && (person.role.ru.includes("Мать") || person.role.ru.includes("Бабушка") || person.role.ru.includes("Хранительница") || person.role.ru.includes("Прабабушка")))) {
-      photoUrl = "photos/female.jpg";
+        photoUrl = "photos/female.jpg";
     }
 
     if (person.photo && person.photo.trim() !== "") {
-      if (person.photo.startsWith("photos/") || person.photo.startsWith("documents/")) {
-        photoUrl = person.photo;
-      } else {
-        photoUrl = "photos/" + person.photo;
-      }
+        if (person.photo.startsWith("photos/") || person.photo.startsWith("documents/")) {
+            photoUrl = person.photo;
+        } else {
+            photoUrl = "photos/" + person.photo;
+        }
     }
-    document.getElementById("person-photo").src = photoUrl;
-    document.getElementById("photo-caption").innerText = person.photoCaption ? person.photoCaption[currentLang] : "";
+
+    // 2. ДИНАМИЧЕСКОЕ СОЗДАНИЕ И ВСТАВКА ФОТО ВНУТРЬ КАРТОЧКИ
+    // Удаляем старое фото внутри карточки, если оно там уже было, чтобы не дублировать
+    const oldImg = document.getElementById("person-photo");
+    if (oldImg) oldImg.remove();
+
+    // Создаем новый элемент изображения
+    const imgEl = document.createElement("img");
+    imgEl.id = "person-photo";
+    imgEl.src = photoUrl;
+    // Задаем идеальные адаптивные размеры: фото будет аккуратным и никогда не вылезет за края
+    imgEl.className = "w-32 h-40 object-cover rounded-lg shadow-md mb-4 mx-auto block";
+
+    // Находим контейнер имени, чтобы вставить фото ровно над ним
+    const nameEl = document.getElementById("person-name");
+    if (nameEl && nameEl.parentElement) {
+        nameEl.parentElement.insertBefore(imgEl, nameEl);
+    }
+
+    // Заполняем текстовые данные
+    const captionEl = document.getElementById("photo-caption");
+    if (captionEl) captionEl.innerText = person.photoCaption ? person.photoCaption[currentLang] : "";
 
     const ribbonContainer = document.getElementById("photo-ribbon");
     if (ribbonContainer) ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
 
-   document.getElementById("person-role").innerText = person.role[currentLang] || "";
-    document.getElementById("person-name").innerText = person.name[currentLang] || "";
+    if (document.getElementById("person-role")) document.getElementById("person-role").innerText = person.role[currentLang] || "";
+    if (nameEl) nameEl.innerText = person.name[currentLang] || "";
 
-    // =================================================================
-    // ВСТАВКА: АВТОМАТИЧЕСКИЙ КРЕСТИК ЗАКРЫТИЯ ДЛЯ МОДАЛЬНОГО ОКНА
+    // АВТОМАТИЧЕСКИЙ КРЕСТИК ЗАКРЫТИЯ В УГЛУ
     if (!document.getElementById("close-profile-btn")) {
         const bioContainer = document.getElementById("bio-container");
         if (bioContainer) {
-            bioContainer.classList.add("relative"); 
-            
+            bioContainer.classList.add("relative");
             const closeBtn = document.createElement("button");
             closeBtn.id = "close-profile-btn";
             closeBtn.innerHTML = "×";
-            
-            // Стилизуем крестик: крупный, в правом верхнем углу карточки
-            closeBtn.className = "absolute top-4 right-6 text-stone-500 hover:text-stone-900 text-3xl font-serif z-50 cursor-pointer transition-colors";
-            
-            // При клике вызываем скрытие окна и снятие размытия
-            closeBtn.onclick = function() {
-                if (typeof closeProfileModal === "function") {
-                    closeProfileModal();
-                } else {
-                    // Запасной вариант, если функция еще не дошла
-                    bioContainer.classList.add("hidden");
-                    const mainContent = document.getElementById("main-layout");
-                    if (mainContent) mainContent.classList.remove("blur-sm");
-                }
+            closeBtn.className = "absolute top-2 right-4 text-stone-400 hover:text-stone-800 text-3xl font-serif z-50 cursor-pointer transition-colors";
+            closeBtn.onclick = function(e) {
+                e.stopPropagation();
+                closeProfileModal();
             };
-            
             bioContainer.appendChild(closeBtn);
         }
     }
