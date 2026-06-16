@@ -738,15 +738,16 @@ function selectNodeTree(id) {
 window.selectNodeOnTree = selectNodeTree;
 
 function closeProfileModal() {
-    const profileModal = document.getElementById("bio-container");
-    if (profileModal) {
-        profileModal.classList.add("hidden");
-        profileModal.style.display = "none";
-    }
-
+    // Полностью скрываем вуаль вместе с карточкой
     const overlay = document.getElementById("modal-backdrop-overlay");
     if (overlay) {
         overlay.style.display = "none";
+    }
+
+    // Снимаем размытие с дерева на всякий случай
+    const treeCanvas = document.getElementById("family-tree");
+    if (treeCanvas) {
+        treeCanvas.classList.remove("blur-sm");
     }
 }
 // --- КОНЕЦ ВСТАВКИ ---
