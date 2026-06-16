@@ -675,7 +675,7 @@ function selectNodeTree(id) {
 
     const profileModal = document.getElementById("bio-container"); 
     if (profileModal) {
-        // 1. Создаем фоновую вуаль, которая перекроет нижний блок с одиноким фото
+        // 1. Создаем или находим независимый темный фон (оверлей)
         let overlay = document.getElementById("modal-backdrop-overlay");
         if (!overlay) {
             overlay = document.createElement("div");
@@ -683,39 +683,60 @@ function selectNodeTree(id) {
             document.body.appendChild(overlay);
         }
         
-        // Вуаль на весь экран, перекрывающая абсолютно всё старое под деревом
-        overlay.className = "fixed inset-0 w-screen h-screen bg-stone-900/60 backdrop-blur-md z-[99998]";
+        // Задаем стили оверлея на чистом CSS, чтобы никакой браузер их не заблокировал
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100vw";
+        overlay.style.height = "100vh";
+        overlay.style.backgroundColor = "rgba(28, 25, 23, 0.6)"; // Темная вуаль
+        overlay.style.backdropFilter = "blur(8px)";               // Размытие фона под карточкой
+        overlay.style.webkitBackdropFilter = "blur(8px)";
+        overlay.style.zIndex = "99998";                           // Перекрывает дерево и нижний мусор
         overlay.style.display = "block";
-        overlay.onclick = closeProfileModal;
+        overlay.onclick = closeProfileModal;                      // Клик мимо карточки закроет окно
 
         // 2. Вырываем карточку из старой верстки и крепим в body поверх вуали
         document.body.appendChild(profileModal);
         profileModal.classList.remove("hidden");
-        profileModal.style.display = "block";
-
-        // 3. СТИЛИ ИДЕАЛЬНЫХ ГРАНИЦ КАРТОЧКИ (чтобы ничего не обрезалось)
+        
+        // 3. Задаем карточке идеальные CSS-размеры (текст, фото и архивные кнопки встанут на места)
         profileModal.style.position = "fixed";
         profileModal.style.top = "50%";
         profileModal.style.left = "50%";
         profileModal.style.transform = "translate(-50%, -50%)";
-        
         profileModal.style.width = "90%";          
-        profileModal.style.maxWidth = "520px";     // Компактный, аккуратный формат
+        profileModal.style.maxWidth = "540px";     // Компактный, аккуратный формат
         profileModal.style.maxHeight = "85vh";     
-        profileModal.style.overflowY = "auto";     // Вертикальный скролл, если текста много
-        profileModal.style.overflowX = "hidden";   // Никакого горизонтального вылезания элементов
+        profileModal.style.overflowY = "auto";     // Появится скролл, если контента много
+        profileModal.style.overflowX = "hidden";   // Фотографии и текст больше не вылезут наружу
         
         profileModal.style.backgroundColor = "#fafaf9"; 
         profileModal.style.borderRadius = "1.25rem";
-        profileModal.style.padding = "24px";       // Внутренние поля анкеты
+        profileModal.style.padding = "24px";       
         profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.4)";
-        profileModal.style.zIndex = "99999";       
+        profileModal.style.zIndex = "99999";       // Карточка строго поверх вуали
+        profileModal.style.display = "block";
+        profileModal.style.boxSizing = "border-box";
+
+        // Предотвращаем закрытие при клике по самой карточке
+        profileModal.onclick = function(e) {
+            e.stopPropagation();
+        };
+
+        // 4. Оживляем крестик внутри карточки
+        const closeBtn = profileModal.querySelector("#close-profile-btn") || profileModal.querySelector("button");
+        if (closeBtn) {
+            closeBtn.onclick = function(e) {
+                e.stopPropagation();
+                closeProfileModal();
+            };
+        }
     }
 }
 
 window.selectNodeOnTree = selectNodeTree;
 
-// --- ВСТАВЛЯЙТЕ СЮДА КНОПКУ ЗАКРЫТИЯ ---
 function closeProfileModal() {
     const profileModal = document.getElementById("bio-container");
     if (profileModal) {
