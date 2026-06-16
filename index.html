@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Семейный Архив Смагаринских</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -451,23 +452,9 @@
         }
     }
 
-    // 2. ДИНАМИЧЕСКОЕ СОЗДАНИЕ И ВСТАВКА ФОТО ВНУТРЬ КАРТОЧКИ
-    // Удаляем старое фото внутри карточки, если оно там уже было, чтобы не дублировать
-    const oldImg = document.getElementById("person-photo");
-    if (oldImg) oldImg.remove();
-
-    // Создаем новый элемент изображения
-    const imgEl = document.createElement("img");
-    imgEl.id = "person-photo";
-    imgEl.src = photoUrl;
-    // Задаем идеальные адаптивные размеры: фото будет аккуратным и никогда не вылезет за края
-    imgEl.className = "w-32 h-40 object-cover rounded-lg shadow-md mb-4 mx-auto block";
-
-    // Находим контейнер имени, чтобы вставить фото ровно над ним
-    const nameEl = document.getElementById("person-name");
-    if (nameEl && nameEl.parentElement) {
-        nameEl.parentElement.insertBefore(imgEl, nameEl);
-    }
+    // Обновляем саму картинку
+    const imgEl = document.getElementById("person-photo");
+    if (imgEl) imgEl.src = photoUrl;
 
     // Заполняем текстовые данные
     const captionEl = document.getElementById("photo-caption");
@@ -477,34 +464,16 @@
     if (ribbonContainer) ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
 
     if (document.getElementById("person-role")) document.getElementById("person-role").innerText = person.role[currentLang] || "";
-    if (nameEl) nameEl.innerText = person.name[currentLang] || "";
+    if (document.getElementById("person-name")) document.getElementById("person-name").innerText = person.name[currentLang] || "";
 
-    // АВТОМАТИЧЕСКИЙ КРЕСТИК ЗАКРЫТИЯ В УГЛУ
-    if (!document.getElementById("close-profile-btn")) {
-        const bioContainer = document.getElementById("bio-container");
-        if (bioContainer) {
-            bioContainer.classList.add("relative");
-            const closeBtn = document.createElement("button");
-            closeBtn.id = "close-profile-btn";
-            closeBtn.innerHTML = "×";
-            closeBtn.className = "absolute top-2 right-4 text-stone-400 hover:text-stone-800 text-3xl font-serif z-50 cursor-pointer transition-colors";
-            closeBtn.onclick = function(e) {
-                e.stopPropagation();
-                closeProfileModal();
-            };
-            bioContainer.appendChild(closeBtn);
+    const birthNameEl = document.getElementById("person-birth-name");
+    if (birthNameEl) {
+        if (person.birthName && person.birthName[currentLang]) {
+          birthNameEl.innerText = person.birthName[currentLang];
+          birthNameEl.style.display = "block";
+        } else {
+          birthNameEl.style.display = "none";
         }
-    }
-    // =================================================================
-
-  
-
-   const birthNameEl = document.getElementById("person-birth-name");
-    if (person.birthName && person.birthName[currentLang]) {
-      birthNameEl.innerText = person.birthName[currentLang];
-      birthNameEl.style.display = "block";
-    } else {
-      birthNameEl.style.display = "none";
     }
 
     document.getElementById("person-years").innerText = person.years || "";
@@ -570,11 +539,10 @@
     if (!container) return;
 
     container.innerHTML = '';
-    container.className = "w-full min-h-screen p-8 flex flex-col gap-12 items-center justify-center grow";
-    if (container.parentElement) container.parentElement.style.maxWidth = "100%"; // Убираем ограничения родителя
+    container.className = "w-full min-h-[400px] p-8 flex flex-col gap-12 items-center justify-center grow";
+    if (container.parentElement) container.parentElement.style.maxWidth = "100%";
 
     const person = db[currentId];
-// ... дальше ваш родной код
     if (!person) return;
 
     // Слой родителей
@@ -593,10 +561,9 @@
     }
     if (hasParents) container.appendChild(parentsRow);
 
-    // Центральный слой (Фокус + Супруг)
+    // Central row
     const centerRow = document.createElement('div');
     centerRow.className = "flex justify-center gap-6 items-center my-1";
-    
     centerRow.appendChild(createHtmlCard(currentId, true));
 
     if (person.links && person.links.spouse) {
@@ -631,7 +598,6 @@
     if (hasChildren) container.appendChild(childrenRow);
   }
 
-  // Создание индивидуальной карточки родственника
   function createHtmlCard(id, isMain = false) {
     const person = db[id];
     const card = document.createElement('div');
@@ -661,39 +627,21 @@
     `;
 
     card.addEventListener('click', () => {
-      selectNodeOnTree(id);
+      selectNodeTree(id);
     });
 
     return card;
   }
 
   // Функция переключения фокусного предка
-function selectNodeTree(id) {
+  function selectNodeTree(id) {
     currentId = id;
-    renderProfile(); // Перерисовывает фото, данные и принудительно обновляет анкету
-    drawTree();      // Перестраивает древо вокруг выбранного предка
-}
+    renderProfile(); 
+    drawTree();
+  }
+  window.selectNodeTree = selectNodeTree;
+  window.selectNodeOnTree = selectNodeTree;
 
-// Связываем обработчики для вызовов из любых мест системы
-window.selectNodeTree = selectNodeTree;
-window.selectNodeOnTree = selectNodeTree;
-
-// --- ФУНКЦИЯ ЗАКРЫТИЯ АНКЕТЫ ---
-function closeProfileModal() {
-    const profileModal = document.getElementById("bio-container");
-    if (profileModal) {
-        profileModal.classList.add("hidden");
-        profileModal.style.display = "none";
-    }
-
-    const overlay = document.getElementById("modal-backdrop-overlay");
-    if (overlay) {
-        overlay.style.display = "none";
-    }
-}
-window.closeProfileModal = closeProfileModal;
-window.closeBioModal = closeProfileModal; // На случай альтернативного имени крестика
-// --- КОНЕЦ ВСТАВКИ ---
   // ==========================================
   // 6. СИСТЕМА НИЖНЕЙ НАВИГАЦИИ (БЫСТРЫЕ КНОПКИ)
   // ==========================================
@@ -705,20 +653,17 @@ window.closeBioModal = closeProfileModal; // На случай альтерна�
     const person = db[currentId];
     if (!person) return;
 
-    // Кнопки для родителей
     if (person.links && person.links.parents) {
       person.links.parents.forEach(pId => {
         if (db[pId]) createNavButton(pId, labels[currentLang].father + " / " + labels[currentLang].mother, navContainer);
       });
     }
-    // Кнопка супруга
     if (person.links && person.links.spouse) {
       const spouses = Array.isArray(person.links.spouse) ? person.links.spouse : [person.links.spouse];
       spouses.forEach(sId => {
         if (db[sId]) createNavButton(sId, labels[currentLang].spouse, navContainer);
       });
     }
-    // Кнопки детей
     Object.keys(db).forEach(id => {
       const potentialChild = db[id];
       if (potentialChild.links && potentialChild.links.parents) {
@@ -734,7 +679,7 @@ window.closeBioModal = closeProfileModal; // На случай альтерна�
     const btn = document.createElement("button");
     btn.className = "px-3 py-1 bg-stone-100 hover:bg-amber-100 border border-stone-400 text-stone-800 text-xs rounded transition shadow-sm cursor-pointer font-sans font-medium";
     btn.innerHTML = `<span class="text-stone-400 font-normal mr-1">${relationLabel}:</span> ${db[id].name[currentLang]}`;
-    btn.onclick = () => selectNodeOnTree(id);
+    btn.onclick = () => selectNodeTree(id);
     container.appendChild(btn);
   }
 
@@ -770,7 +715,7 @@ window.closeBioModal = closeProfileModal; // На случай альтерна�
                     row.className = "px-3 py-2 hover:bg-amber-50 cursor-pointer text-sm text-stone-800 transition font-serif flex justify-between items-center";
                     row.innerHTML = `<div><strong>${p.name[currentLang]}</strong> <span class="text-xs text-stone-500 font-mono ml-2">${p.years}</span></div><div class="text-[10px] uppercase bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded font-sans font-bold">${p.role[currentLang]}</div>`;
                     row.onclick = () => {
-                        selectNodeOnTree(id);
+                        selectNodeTree(id);
                         resultsContainer.classList.add("hidden");
                         searchInput.value = "";
                         clearBtn.classList.add("hidden");
@@ -817,16 +762,33 @@ window.closeBioModal = closeProfileModal; // На случай альтерна�
       document.getElementById("tree-search").placeholder = "Search ancestor (e.g., Vulf)...";
     }
     
-   renderProfile();
-drawTree();
+    renderProfile(); 
+    drawTree();
   }
   window.setLanguage = setLanguage;
 
-function openArchiveModal() {
+  function openArchiveModal() {
     const person = db[currentId];
     if (!person || !person.documents || person.documents.length === 0) return;
 
-    // Находим правильный контейнер списка документов из вашей разметки
+    const modalTitle = document.getElementById("modal-title");
+    if (modalTitle) {
+        modalTitle.innerHTML = currentLang === "ru" ? "<span>🗄️</span> Архивные свидетельства и сканы" : "<span>🗄️</span> Archival Records & Scans";
+    }
+
+    const modalSubtitle = document.getElementById("modal-subtitle");
+    if (modalSubtitle) {
+        modalSubtitle.innerText = currentLang === "ru" 
+            ? "Нажмите на документ, чтобы открыть его оригинальный скан или цифровую копию в новой вкладке:" 
+            : "Click on a document to open its original scan:";
+    }
+
+    const modalCloseBtn = document.getElementById("modal-close-btn");
+    if (modalCloseBtn) {
+        modalCloseBtn.innerText = labels[currentLang].modal_close;
+    }
+
+    // Привязка к ПРАВИЛЬНОМУ идентификатору из вашей верстки
     const listContainer = document.getElementById("modal-documents-list");
     if (!listContainer) return;
     listContainer.innerHTML = "";
@@ -841,7 +803,7 @@ function openArchiveModal() {
         let icon = isPdf ? "📄" : "🖼️";
         let typeLabel = isPdf ? (currentLang === "ru" ? "Документ PDF" : "PDF Document") : (currentLang === "ru" ? "Изображение" : "Image");
         
-        // Берем текст из поля label, которое прописано у вас в базе данных db
+        // Чтение поля doc.label из базы данных
         let docTitle = doc.label && doc.label[currentLang] ? doc.label[currentLang] : "Document";
 
         card.innerHTML = `
@@ -852,20 +814,18 @@ function openArchiveModal() {
         listContainer.appendChild(card);
     });
 
-    // Показываем окно архива (убираем класс hidden)
     const archiveModal = document.getElementById("archive-modal");
     if (archiveModal) archiveModal.classList.remove("hidden");
 }
 window.openArchiveModal = openArchiveModal;
 
-function closeArchiveModal(event) {
+  function closeArchiveModal(event) {
     if (event) event.stopPropagation();
     const archiveModal = document.getElementById("archive-modal");
     if (archiveModal) archiveModal.classList.add("hidden");
-}
-window.closeArchiveModal = closeArchiveModal;
+  }
+  window.closeArchiveModal = closeArchiveModal;
 
- // // СТАРТ ПРИЛОЖЕНИЯ
 // --- ИНТЕРАКТИВНОСТЬ ДЛЯ HTML-ХОЛСТА (ЗУМ И ПЕРЕТАСКИВАНИЕ) ---
 const el = document.getElementById('family-tree');
 let scale = 1, isDragging = false, startX, startY, translateX = 0, translateY = 0;
@@ -876,28 +836,25 @@ if (el && el.parentElement) {
     el.style.cursor = 'grab';
     el.style.transition = 'transform 0.05s ease-out';
 
-    // 1. Масштабирование колесиком мыши
     container.addEventListener('wheel', (e) => {
         e.preventDefault();
         const zoomSpeed = 0.05;
         if (e.deltaY < 0) {
-            scale = Math.min(scale + zoomSpeed, 2); // Максимальное увеличение х2
+            scale = Math.min(scale + zoomSpeed, 2);
         } else {
-            scale = Math.max(scale - zoomSpeed, 0.4); // Минимальное уменьшение
+            scale = Math.max(scale - zoomSpeed, 0.4);
         }
         updateTransform();
     }, { passive: false });
 
-    // 2. Начало перетаскивания мышкой
     container.addEventListener('mousedown', (e) => {
-        if (e.target.closest('button') || e.target.closest('input')) return; // Не мешаем кнопкам
+        if (e.target.closest('button') || e.target.closest('input')) return;
         isDragging = true;
         el.style.cursor = 'grabbing';
         startX = e.clientX - translateX;
         startY = e.clientY - translateY;
     });
 
-    // 3. Процесс перетаскивания
     window.addEventListener('mousemove', (e) => {
         if (!isDragging) return;
         translateX = e.clientX - startX;
@@ -905,7 +862,6 @@ if (el && el.parentElement) {
         updateTransform();
     });
 
-    // 4. Окончание перетаскивания
     window.addEventListener('mouseup', () => {
         isDragging = false;
         if (el) el.style.cursor = 'grab';
@@ -925,4 +881,3 @@ setLanguage('ru');
 </script>
 </body>
 </html>
- 
