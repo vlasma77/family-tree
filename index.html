@@ -670,74 +670,11 @@
   // Функция переключения фокусного предка
 function selectNodeTree(id) {
     currentId = id;
-    renderProfile(); // Полностью генерирует данные, фото и архивные кнопки
-    drawTree();
-
-    const profileModal = document.getElementById("bio-container"); 
-    if (profileModal) {
-        
-        // 1. СОЗДАЕМ ИЛИ НАХОДИМ ТЕМНЫЙ ФОН-ВУАЛЬ
-        let overlay = document.getElementById("modal-backdrop-overlay");
-        if (!overlay) {
-            overlay = document.createElement("div");
-            overlay.id = "modal-backdrop-overlay";
-            document.body.appendChild(overlay);
-        }
-        
-        // Стили вуали на чистом CSS (100% изоляция подвала страницы)
-        overlay.style.position = "fixed";
-        overlay.style.top = "0";
-        overlay.style.left = "0";
-        overlay.style.width = "100vw";
-        overlay.style.height = "100vh";
-        overlay.style.backgroundColor = "rgba(24, 24, 27, 0.8)"; // Глухое затемнение
-        overlay.style.backdropFilter = "blur(8px)";                // Заблюривание дерева
-        overlay.style.webkitBackdropFilter = "blur(8px)";
-        overlay.style.zIndex = "99998";                            // Перекрывает нижний блок
-        overlay.style.display = "block";
-        overlay.onclick = closeProfileModal;
-
-        // 2. ВЫРЫВАЕМ BIO-CONTAINER И ДЕЛАЕМ ИЗ НЕГО МОДАЛКУ
-        document.body.appendChild(profileModal);
-        profileModal.classList.remove("hidden");
-
-        // Применяем жесткое позиционирование строго по центру экрана
-        profileModal.style.position = "fixed";
-        profileModal.style.top = "50%";
-        profileModal.style.left = "50%";
-        profileModal.style.transform = "translate(-50%, -50%)";
-        profileModal.style.width = "90%";          
-        profileModal.style.maxWidth = "540px";     
-        profileModal.style.maxHeight = "85vh";     
-        profileModal.style.overflowY = "auto";     // Скролл, если контента много
-        profileModal.style.overflowX = "hidden";   
-        
-        profileModal.style.backgroundColor = "#fafaf9"; 
-        profileModal.style.borderRadius = "16px";
-        profileModal.style.padding = "24px";       
-        profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.5)";
-        profileModal.style.zIndex = "99999";       // Поверх вуали
-        profileModal.style.display = "block";
-        profileModal.style.boxSizing = "border-box";
-
-        // Защита от закрытия окна при клике по тексту анкеты
-        profileModal.onclick = function(e) {
-            e.stopPropagation();
-        };
-
-        // 3. ОЖИВЛЯЕМ КРЕСТИК ВНУТРИ КАРТОЧКИ
-        const closeBtn = profileModal.querySelector("#close-profile-btn") || profileModal.querySelector("button");
-        if (closeBtn) {
-            closeBtn.onclick = function(e) {
-                e.stopPropagation();
-                closeProfileModal();
-            };
-            closeBtn.style.cursor = "pointer";
-        }
-    }
+    renderProfile(); // Перерисовывает фото, данные и принудительно обновляет анкету
+    drawTree();      // Перестраивает древо вокруг выбранного предка
 }
 
-// 4. ЖЕСТКОЕ ДУБЛИРОВАНИЕ ДЛЯ БРАУЗЕРА (СВЯЗЫВАЕМ ВСЕ ВОЗМОЖНЫЕ ИМЕНА ВЫЗОВА)
+// Связываем обработчики для вызовов из любых мест системы
 window.selectNodeTree = selectNodeTree;
 window.selectNodeOnTree = selectNodeTree;
 
