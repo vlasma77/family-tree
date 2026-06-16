@@ -670,12 +670,12 @@
   // Функция переключения фокусного предка
 function selectNodeTree(id) {
     currentId = id;
-    renderProfile(); // Сначала оригинальная функция штатно заполняет `#bio-container` и вставляет фото
+    renderProfile(); 
     drawTree();
 
     const profileModal = document.getElementById("bio-container"); 
     if (profileModal) {
-        // ---- 1. СОЗДАЕМ ТЕМНЫЙ ФОН-ВУАЛЬ (ЕСЛИ ЕГО ЕЩЕ НЕТ) ----
+        // 1. Создаем фоновую вуаль, которая перекроет нижний блок с одиноким фото
         let overlay = document.getElementById("modal-backdrop-overlay");
         if (!overlay) {
             overlay = document.createElement("div");
@@ -683,35 +683,33 @@ function selectNodeTree(id) {
             document.body.appendChild(overlay);
         }
         
-        // Стили вуали: она перекроет нижнюю часть страницы и заблюрит дерево
-        overlay.className = "fixed inset-0 w-full h-full bg-stone-900/50 backdrop-blur-md z-[99998]";
+        // Вуаль на весь экран, перекрывающая абсолютно всё старое под деревом
+        overlay.className = "fixed inset-0 w-screen h-screen bg-stone-900/60 backdrop-blur-md z-[99998]";
         overlay.style.display = "block";
-        overlay.onclick = closeProfileModal; // Клик мимо карточки закроет её
+        overlay.onclick = closeProfileModal;
 
-        // ---- 2. ПРЕВРАЩАЕМ САМ БИО-КОНТЕЙНЕР В МОДАЛКУ ----
-        // Переносим его в body, чтобы он вырвался из старых ограничений верстки
+        // 2. Вырываем карточку из старой верстки и крепим в body поверх вуали
         document.body.appendChild(profileModal);
         profileModal.classList.remove("hidden");
         profileModal.style.display = "block";
 
-        // СБРАСЫВАЕМ СТАРЫЕ СТИЛИ И ЗАДАЕМ ИДЕАЛЬНЫЕ НОВЫЕ
+        // 3. СТИЛИ ИДЕАЛЬНЫХ ГРАНИЦ КАРТОЧКИ (чтобы ничего не обрезалось)
         profileModal.style.position = "fixed";
         profileModal.style.top = "50%";
         profileModal.style.left = "50%";
         profileModal.style.transform = "translate(-50%, -50%)";
         
-        // Размеры карточки (чтобы ничего не вылезало)
         profileModal.style.width = "90%";          
-        profileModal.style.maxWidth = "550px";     // Идеальная компактная ширина
+        profileModal.style.maxWidth = "520px";     // Компактный, аккуратный формат
         profileModal.style.maxHeight = "85vh";     
-        profileModal.style.overflowY = "auto";     // Внутренний скролл, если текста много
-        profileModal.style.overflowX = "hidden";   // Запрещаем картинкам косить верстку
+        profileModal.style.overflowY = "auto";     // Вертикальный скролл, если текста много
+        profileModal.style.overflowX = "hidden";   // Никакого горизонтального вылезания элементов
         
-        // Дизайн
         profileModal.style.backgroundColor = "#fafaf9"; 
-        profileModal.style.borderRadius = "1rem";
-        profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.3)";
-        profileModal.style.zIndex = "99999";       // Карточка строго поверх вуали
+        profileModal.style.borderRadius = "1.25rem";
+        profileModal.style.padding = "24px";       // Внутренние поля анкеты
+        profileModal.style.boxShadow = "0 25px 50px -12px rgba(0, 0, 0, 0.4)";
+        profileModal.style.zIndex = "99999";       
     }
 }
 
