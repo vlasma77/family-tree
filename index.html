@@ -717,14 +717,12 @@ window.selectNodeOnTree = selectNodeTree;
 
 // --- ВСТАВЛЯЙТЕ СЮДА КНОПКУ ЗАКРЫТИЯ ---
 function closeProfileModal() {
-    // Скрываем саму карточку
     const profileModal = document.getElementById("bio-container");
     if (profileModal) {
         profileModal.classList.add("hidden");
         profileModal.style.display = "none";
     }
 
-    // Полностью убираем темную вуаль и размытие
     const overlay = document.getElementById("modal-backdrop-overlay");
     if (overlay) {
         overlay.style.display = "none";
