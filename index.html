@@ -881,37 +881,48 @@ drawTree();
 
   function openArchiveModal() {
     const person = db[currentId];
-    if (!person || !person.documents || person.documents.length === 0) return;
+    if (!person || !person.documents) return;
 
-    document.getElementById("modal-title").innerHTML = `<span>🗄️</span> ${labels[currentLang].modal_title}`;
-    document.getElementById("modal-subtitle").innerText = labels[currentLang].modal_subtitle;
-    document.getElementById("modal-close-btn").innerText = labels[currentLang].modal_close;
+    // Заполняем заголовки модального окна документов
+    const modalTitle = document.getElementById("modal-title");
+    if (modalTitle) modalTitle.innerText = currentLang === "ru" ? "Архивные документы" : "Archive Documents";
 
-    const listContainer = document.getElementById("modal-documents-list");
+    const listContainer = document.getElementById("documents-list");
+    if (!listContainer) return;
     listContainer.innerHTML = "";
 
     person.documents.forEach(doc => {
-      const card = document.createElement("a");
-      card.href = doc.url;
-      card.target = "_blank";
-      card.className = "flex flex-col bg-white border border-stone-300 rounded p-3 hover:border-amber-700 hover:shadow-md transition text-stone-800 group relative overflow-hidden";
-      
-      let isPdf = doc.url.toLowerCase().endsWith(".pdf");
-      let icon = isPdf ? "📄" : "🖼️";
-      let typeLabel = isPdf ? "Документ PDF" : "Фото / Скан";
+        const card = document.createElement("a");
+        card.href = doc.url;
+        card.target = "_blank";
+        // Используем стандартные стили на случай блокировки Tailwind
+        card.style.display = "flex";
+        card.style.flexDirection = "column";
+        card.style.padding = "12px";
+        card.style.marginBottom = "8px";
+        card.style.backgroundColor = "#f5f5f4";
+        card.style.borderRadius = "8px";
+        card.style.textDecoration = "none";
+        card.style.color = "#1c1917";
+        card.style.border = "1px solid #e7e5e4";
 
-      card.innerHTML = `
-        <div class="text-2xl mb-1">${icon}</div>
-        <div class="text-xs font-sans font-bold text-stone-400 uppercase tracking-wider mb-1">${typeLabel}</div>
-        <div class="text-sm font-serif font-medium leading-snug text-stone-900 group-hover:text-amber-900 transition flex-grow">${doc.label[currentLang]}</div>
-        <div class="text-[11px] text-amber-800 font-sans font-semibold underline mt-3 inline-flex items-center gap-1">Открыть оригинал &rarr;</div>
-      `;
-      listContainer.appendChild(card);
+        let isPdf = doc.url.toLowerCase().endsWith(".pdf");
+        let icon = isPdf ? "📄" : "🖼️";
+        let typeLabel = isPdf ? (currentLang === "ru" ? "Документ PDF" : "PDF Document") : (currentLang === "ru" ? "Изображение" : "Image");
+
+        card.innerHTML = `
+            <div style="font-size: 20px; margin-bottom: 4px;">${icon}</div>
+            <div style="font-size: 12px; color: #78716c;">${typeLabel}</div>
+            <div style="font-weight: bold; font-size: 14px;">${doc.title[currentLang]}</div>
+        `;
+        listContainer.appendChild(card);
     });
 
-    document.getElementById("archive-modal").classList.remove("hidden");
-  }
-  window.openArchiveModal = openArchiveModal;
+    // Показываем окно архива
+    const archiveModal = document.getElementById("archive-modal");
+    if (archiveModal) archiveModal.style.display = "block";
+}
+window.openArchiveModal = openArchiveModal;
 
   function closeArchiveModal(event) {
     if (event) event.stopPropagation();
