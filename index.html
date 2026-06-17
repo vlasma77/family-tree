@@ -666,7 +666,7 @@
         }
     }
 
-    // ИСПРАВЛЕНО: Полное и корректное управление отображением архивной секции
+    // Полное и корректное управление отображением архивной секции
     const docSection = document.getElementById("documents-section");
     if (docSection) {
         if (person.documents && person.documents.length > 0) {
@@ -674,6 +674,12 @@
         } else {
             docSection.style.display = "none";
         }
+    }
+
+    // === ДОБАВЛЕНО: Принудительный показ крестика на его новом привычном месте ===
+    const closeBtn = document.getElementById("close-profile-btn");
+    if (closeBtn) {
+        closeBtn.style.display = "block";
     }
 }
 
