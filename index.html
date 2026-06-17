@@ -95,52 +95,48 @@
     </div>
   </section>
 
-  <main class="max-w-5xl w-full mx-auto bg-vintage-paper border-2 border-[rgba(133,111,73,0.4)] rounded p-6 md:p-10 flex flex-col md:flex-row gap-10 items-start relative overflow-hidden mb-6">
+  <main class="max-w-4xl w-full mx-auto bg-vintage-paper border border-[rgba(133,111,73,0.3)] rounded-lg p-4 md:p-6 flex flex-col md:flex-row gap-6 items-start relative overflow-hidden mb-6 shadow-sm text-sm">
     
-    <div class="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-stone-600/50"></div>
-    <div class="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-stone-600/50"></div>
-    <div class="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-stone-600/50"></div>
-    <div class="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-stone-600/50"></div>
+    <div class="absolute top-0 left-0 w-3 h-3 border-t border-l border-stone-600/30"></div>
+    <div class="absolute top-0 right-0 w-3 h-3 border-t border-r border-stone-600/30"></div>
+    <div class="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-stone-600/30"></div>
+    <div class="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-stone-600/30"></div>
 
-    <div class="w-full md:w-2/5 flex flex-col items-center sticky top-4">
-      <div class="bg-stone-100/90 p-5 border border-stone-400/60 shadow-lg transform -rotate-1 hover:rotate-0 transition duration-300 w-full max-w-[320px] relative">
-        
-        <button id="close-profile-btn" onclick="document.querySelector('main').classList.add('hidden')" class="absolute top-2 right-3 text-stone-400 hover:text-stone-700 text-xl font-bold transition cursor-pointer" title="Скрыть карточку">&times;</button>
-
+    <div class="w-full md:w-1/4 flex flex-col items-center sticky top-2">
+      <div class="bg-stone-100/90 p-3 border border-stone-400/40 shadow-md w-full max-w-[180px] relative">
         <div id="photo-ribbon" class=""></div>
-
-        <div class="border border-stone-400 p-1.5 bg-stone-200 overflow-hidden aspect-[3/4] flex items-center justify-center shadow-inner mt-4">
+        <div class="border border-stone-300 p-1 bg-stone-200 overflow-hidden aspect-[3/4] flex items-center justify-center shadow-inner">
           <img id="person-photo" src="" alt="Портрет" class="w-full h-full object-cover grayscale sepia-[15%]">
         </div>
-        <p id="photo-caption" class="text-center text-sm italic text-stone-600 mt-3 font-serif leading-snug px-1"></p>
+        <p id="photo-caption" class="text-center text-xs italic text-stone-600 mt-2 font-serif leading-tight px-1"></p>
       </div>
     </div>
 
-    <div id="bio-container" class="w-full md:w-3/5 flex flex-col ltr relative pt-6">
+    <div id="bio-container" class="w-full md:w-3/4 flex flex-col ltr relative pt-4">
         
         <button id="close-profile-btn" onclick="document.querySelector('main').classList.add('hidden')" 
-                class="absolute top-0 right-0 text-stone-400 hover:text-stone-700 text-2xl font-bold transition cursor-pointer p-1" 
+                class="absolute -top-1 right-0 text-stone-450 hover:text-stone-700 text-xl font-bold transition cursor-pointer p-1" 
                 title="Скрыть карточку">&times;</button>
 
-        <span id="person-role" class="text-xs font-bold uppercase tracking-widest text-amber-700 mb-1"></span>
-        <h2 id="person-name" class="text-2xl md:text-3xl font-serif text-stone-900 font-bold leading-tight pr-6"></h2>
-        <h3 id="person-birth-name" class="text-sm italic text-stone-600 mt-1" style="display: none;"></h3>
-        <p id="person-years" class="text-lg font-mono text-stone-700 mt-1 mb-4"></p>
+        <span id="person-role" class="text-[10px] font-bold uppercase tracking-widest text-amber-700 mb-0.5"></span>
+        <h2 id="person-name" class="text-xl md:text-2xl font-serif text-stone-900 font-bold leading-tight pr-6"></h2>
+        <h3 id="person-birth-name" class="text-xs italic text-stone-500 mt-0.5" style="display: none;"></h3>
+        <p id="person-years" class="text-sm font-mono text-stone-700 mt-0.5 mb-2"></p>
         
-        <hr class="border-stone-300 my-2">
+        <hr class="border-stone-300 my-1">
         
-        <h4 id="milestones-title" class="text-sm font-bold text-stone-500 uppercase tracking-wider mb-2">Важные вехи</h4>
-        <table id="milestones-table" class="w-full text-sm text-stone-850 mb-4"></table>
+        <h4 id="milestones-title" class="text-[11px] font-bold text-stone-400 uppercase tracking-wider mb-1">Важные вехи</h4>
+        <table id="milestones-table" class="w-full text-xs text-stone-800 mb-2"></table>
         
-        <hr class="border-stone-300 my-2">
+        <hr class="border-stone-300 my-1">
         
-        <div id="person-bio" class="text-stone-800 text-sm leading-relaxed space-y-3 prose max-w-none my-3"></div>
+        <div id="person-bio" class="text-stone-800 text-xs leading-relaxed space-y-2 prose max-w-none my-2"></div>
         
-        <h4 id="family-title" class="text-sm font-bold text-stone-500 uppercase tracking-wider mt-4 mb-2">Семейный круг</h4>
-        <ul id="family-list" class="list-disc list-inside text-sm text-stone-700 space-y-1 mb-6"></ul>
+        <h4 id="family-title" class="text-[11px] font-bold text-stone-400 uppercase tracking-wider mt-2 mb-1">Семейный круг</h4>
+        <ul id="family-list" class="list-disc list-inside text-xs text-stone-700 space-y-0.5 mb-4"></ul>
         
-        <div id="documents-section" class="mt-auto pt-4 border-t border-stone-200">
-            <button onclick="openArchiveModal()" id="archive-btn" class="bg-amber-950 text-white px-4 py-2 rounded shadow hover:bg-amber-900 transition text-sm flex items-center gap-2 cursor-pointer">
+        <div id="documents-section" class="mt-auto pt-2 border-t border-stone-200">
+            <button onclick="openArchiveModal()" id="archive-btn" class="bg-amber-950 text-white px-3 py-1.5 rounded shadow hover:bg-amber-900 transition text-xs flex items-center gap-2 cursor-pointer">
                 <span id="archive-btn-text">Открыть архив документов</span>
             </button>
         </div>
