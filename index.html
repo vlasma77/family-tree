@@ -993,55 +993,69 @@
   window.setLanguage = setLanguage;
 
   function openArchiveModal() {
-    const person = db[currentId];
-    if (!person || !person.documents || person.documents.length === 0) return;
+    let activeId = typeof currentId !== 'undefined' ? currentId : null;
+    if (!activeId && typeof selectedPersonId !== 'undefined') activeId = selectedPersonId;
+    if (!activeId) activeId = "person_blyuma_1895";
 
-    const modalTitle = document.getElementById("modal-title");
-    if (modalTitle) {
-        modalTitle.innerHTML = currentLang === "ru" ? "<span>🗄️</span> Архивные свидетельства и сканы" : "<span>🗄️</span> Archival Records & Scans";
-    }
-
-    const modalSubtitle = document.getElementById("modal-subtitle");
-    if (modalSubtitle) {
-        modalSubtitle.innerText = currentLang === "ru" 
-            ? "Нажмите на документ, чтобы открыть его оригинальный скан или цифровую копию в новой вкладке:" 
-            : "Click on a document to open its original scan:";
-    }
-
-    const modalCloseBtn = document.getElementById("modal-close-btn");
-    if (modalCloseBtn) {
-        modalCloseBtn.innerText = labels[currentLang].modal_close;
-    }
-
-    const listContainer = document.getElementById("modal-documents-list");
-    if (!listContainer) return;
-    listContainer.innerHTML = "";
-
-    person.documents.forEach(doc => {
-        const card = document.createElement("a");
-        card.href = doc.url;
-        card.target = "_blank";
-        card.className = "flex flex-col p-4 bg-white hover:bg-amber-50/50 border border-stone-300 rounded-lg text-stone-900 no-underline transition shadow-sm hover:shadow-md";
-
-        let isPdf = doc.url.toLowerCase().endsWith(".pdf");
-        let icon = isPdf ? "📄" : "🖼️";
-        let typeLabel = isPdf ? (currentLang === "ru" ? "Документ PDF" : "PDF Document") : (currentLang === "ru" ? "Изображение" : "Image");
-        
-        let docTitle = doc.label && doc.label[currentLang] ? doc.label[currentLang] : "Document";
-
-        card.innerHTML = `
-            <div class="text-2xl mb-1">${icon}</div>
-            <div class="text-[11px] uppercase tracking-wider text-stone-400 font-sans font-bold">${typeLabel}</div>
-            <div class="font-serif font-bold text-sm mt-1 leading-tight text-stone-850">${docTitle}</div>
-        `;
-        listContainer.appendChild(card);
-    });
+    const person = db[activeId];
+    if (!person) return;
 
     const archiveModal = document.getElementById("archive-modal");
-    if (archiveModal) archiveModal.classList.remove("hidden");
+    if (!archiveModal) return;
+
+    // Ищем именно центральный белый блок, где написана инструкция
+    // Находим текст инструкции, чтобы вставить список строго ПОД него
+    const instructionText = archiveModal.querySelector("p") || archiveModal.querySelector(".modal-content p");
+    
+    // Проверяем, создавали ли мы уже правильный список ранее, чтобы не дублировать его
+    let docList = archiveModal.querySelector(".modal-docs-container");
+    
+    if (!docList) {
+        // Если списка еще нет, создаем его с красивыми внутренними отступами
+        docList = document.createElement("ul");
+        docList.className = "modal-docs-container mt-4 max-h-60 overflow-y-auto px-4";
+        
+        if (instructionText) {
+            // Вставляем список в HTML сразу ПОСЛЕ инструкции внутри белого блока
+            instructionText.parentNode.insertBefore(docList, instructionText.nextSibling);
+        } else {
+            // Запасной вариант: если инструкцию не нашли, ищем внутренний контейнер
+            const contentBlock = archiveModal.querySelector(".bg-white") || archiveModal.querySelector("div > div");
+            if (contentBlock) contentBlock.appendChild(docList);
+        }
+    }
+
+    // Очищаем список перед заполнением
+    docList.innerHTML = "";
+
+    if (person.documents && person.documents.length > 0) {
+        person.documents.forEach(doc => {
+            const li = document.createElement("li");
+            li.className = "py-2 border-b border-stone-200/60 list-none text-left";
+            
+            const lang = typeof currentLang !== 'undefined' ? currentLang : 'ru';
+            let displayName = (doc.title && doc.title[lang]) ? doc.title[lang] : "";
+            
+            if (!displayName) {
+                const fileNameWithExt = doc.url.substring(doc.url.lastIndexOf('/') + 1);
+                const fileName = fileNameWithExt.substring(0, fileNameWithExt.lastIndexOf('.'));
+                displayName = fileName.replace(/_/g, ' ');
+            }
+
+            li.innerHTML = `
+                <a href="${doc.url}" target="_blank" class="text-amber-950 hover:underline font-medium flex items-center gap-2 text-base" style="font-family: 'EB Garamond', serif; text-decoration: none; color: #451a03;">
+                    <span>📄</span> ${displayName}
+                </a>
+            `;
+            docList.appendChild(li);
+        });
+    } else {
+        docList.innerHTML = `<p class="text-center text-stone-500 py-4 font-serif">Документы не найдены.</p>`;
+    }
+
+    archiveModal.classList.remove("hidden");
 }
 window.openArchiveModal = openArchiveModal;
-
   function closeArchiveModal(event) {
     if (event) event.stopPropagation();
     const archiveModal = document.getElementById("archive-modal");
