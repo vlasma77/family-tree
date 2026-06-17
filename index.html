@@ -59,19 +59,10 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
 
-    /* Настройки контейнера для Balkan дерева, чтобы оно занимало всю выделенную область */
-    #tree-container-balkan {
+    /* Настройки для контейнера Balkan дерева */
+    #family-tree {
       width: 100%;
       height: 100%;
-    }
-
-    /* Стилизация внутренних карточек Balkan под винтажный стиль */
-    .bft-node rect {
-      fill: #ffffff !important;
-      stroke: #b45309 !important;
-      stroke-width: 2px !important;
-      rx: 8px;
-      ry: 8px;
     }
   </style>
 </head>
@@ -103,7 +94,7 @@
     </div> 
 
     <div class="w-full overflow-hidden min-h-[500px] h-[60vh] relative rounded" id="tree-viewport">
-       <div id="tree-container-balkan"></div>
+       <div id="family-tree"></div>
     </div>
   </section>
 
@@ -183,7 +174,7 @@
   let currentLang = "ru";
 
   // ==========================================
-  // 1. ПОЛНАЯ БАЗА ДАННЫХ РОДА СМАГАРИНСКИХ
+  // 1. БАЗА ДАННЫХ
   // ==========================================
   const db = {
    "person_vulf_1898": {
@@ -241,7 +232,7 @@
       "role": { "ru": "Хранительница очага", "en": "Keeper of the Hearth" },
       "years": "1895 – 1980",
       "isDeceased": true,
-      "photo": "photos/blyuma1895.jpg",
+      "photo": "photos/female.jpg",
       "photoCaption": { "ru": "Блюма Самуилова", "en": "Blyuma Samuilova" },
       "milestones": {
         "birthPlace": { "ru": "Киевская губерния", "en": "Kyiv Province" },
@@ -281,7 +272,7 @@
       "role": { "ru": "Ветеран / Инженер", "en": "Veteran / Engineer" },
       "years": "1919 – 2002",
       "isDeceased": true,
-      "photo": "documents/person_efim_1919/fima_december_12_1944.jpg",
+      "photo": "photos/efim1919.jpg",
       "photoCaption": { "ru": "Ефим Смагаринский, 1944 г.", "en": "Efim Smagarinsky, 1944" },
       "milestones": {
         "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" },
@@ -302,7 +293,6 @@
       },
       "documents": [
         { "url": "documents/person_efim_1919/booklet_efim.pdf", "title": { "ru": "Памятный буклет о Ефиме (PDF)", "en": "Memorial booklet about Efim (PDF)" } },
-        { "url": "documents/person_efim_1919/efim_december_12_1944.jpg", "title": { "ru": "Ефим, 12 декабря 1944 г.", "en": "Efim, December 12, 1944" } },
         { "url": "documents/person_efim_1919/efim_1945_hungary.jpg", "title": { "ru": "Ефим в Венгрии, 1945 г.", "en": "Efim in Hungary, 1945" } },
         { "url": "documents/person_efim_1919/efim_with_his_front_line_friends.jpg", "title": { "ru": "Ефим с фронтовыми друзьями", "en": "Efim with his front-line friends" } },
         { "url": "documents/person_efim_1919/efim_spouse_nadezhda_doch_mira_1947.jpg", "title": { "ru": "Ефим, супруга Надежда и дочь Мира, 1947 г.", "en": "Efim, spouse Nadezhda and daughter Mira, 1947" } },
@@ -317,385 +307,4 @@
     "person_shevel_1848": {
       "isDeceased": true,
       "role": { "ru": "Отец Вульфа", "en": "Vulf's Father" },
-      "name": { "ru": "Шевель Залманов Смагаринский", "en": "Shevel Zalmanov Smagarinsky" },
-      "years": "1848 — 1908",
-      "photo": "",
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Хая Исраелева Гуревич", "en": "Khaya Israeleva Gurevich" }, "occupation": { "ru": "Мещанин", "en": "Burgher" }, "burial": { "ru": "Данные исследуются", "en": "TBD" } },
-      "bio": { "ru": "<p>Глава семьи, мещанин. Представитель поколения Смагаринских второй половины XIX века.</p>", "en": "<p>Head of family, burgher.</p>" },
-      "familyText": { "ru": [ "Отец: Шнеур Залмон", "Мать: Слава", "Супруга: Хая Гуревич", "Дети: Вульф" ], "en": [ "Father: Shneur Zalmon", "Spouse: Khaya Gurevich" ] },
-      "links": { "parents": ["person_shneur_1821", "person_slava_1822"], "spouse": "person_khaya_1860" }
-    },
-    "person_khaya_1860": {
-      "isDeceased": true,
-      "role": { "ru": "Мать Вульфа", "en": "Vulf's Mother" },
-      "name": { "ru": "Хая Исраелева Смагаринская (урожд. Гуревич)", "en": "Khaya Smagarinskaya" },
-      "years": "1860 — ?",
-      "photo": "",
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Шевель Залманов Смагаринский", "en": "Shevel Smagarinsky" }, "occupation": { "ru": "Домашнее хозяйство", "en": "Homemaking" }, "burial": { "ru": "", "en": "" } },
-      "bio": { "ru": "<p>Дочь Исраеля Гуревича, мать Вульфа Смагаринского.</p>" },
-      "familyText": { "ru": [ "Отец: Исраэль Гуревич", "Супруг: Шевель", "Дети: Вульф" ] },
-      "links": { "spouse": "person_shevel_1848" }
-    },
-    "person_shneur_1821": {
-      "isDeceased": true,
-      "role": { "ru": "Дед Вульфа", "en": "Vulf's Grandfather" },
-      "name": { "ru": "Шнеур Залмон Смагаринский", "en": "Shneur Zalmon Smagarinsky" },
-      "years": "1821 — ?",
-      "links": { "parents": ["person_volka_1792", "person_feyga_1794"], "spouse": "person_slava_1822" }
-    },
-    "person_slava_1822": {
-      "isDeceased": true,
-      "role": { "ru": "Бабушка Вульфа", "en": "Vulf's Grandmother" },
-      "name": { "ru": "Слава Смагаринская", "en": "Slava Smagarinskaya" },
-      "years": "1822 — 1890",
-      "links": { "spouse": "person_shneur_1821" }
-    },
-    "person_volka_1792": {
-      "isDeceased": true,
-      "role": { "ru": "Прадед Вульфа", "en": "Vulf's Great-Grandfather" },
-      "name": { "ru": "Волька Иосел Смагаринский", "en": "Volka Iosel Smagarinsky" },
-      "years": "1792 — ?",
-      "links": { "parents": ["person_iosel_1760", null], "spouse": "person_feyga_1794" }
-    },
-    "person_feyga_1794": {
-      "isDeceased": true,
-      "role": { "ru": "Прабабушка Вульфа", "en": "Vulf's Great-Grandmother" },
-      "name": { "ru": "Фейга Рохля Смагаринская", "en": "Feyga Rokhlya" },
-      "years": "1794 — ?",
-      "links": { "spouse": "person_volka_1792" }
-    },
-    "person_iosel_1760": {
-      "isDeceased": true,
-      "role": { "ru": "Прапрадед Вульфа", "en": "Vulf's Great-Great-Grandfather" },
-      "name": { "ru": "Иосел Смагаринский", "en": "Iosel Smagarinsky" },
-      "years": "до 1792 — ?",
-      "links": {}
-    }
-  };
-
-  // ==========================================
-  // 2. ОБЪЕКТ С ДВУЯЗЫЧНЫМИ ПЕРЕВОДАМИ
-  // ==========================================
-  const labels = {
-    ru: {
-      site_title: "Летопись поколений рода Смагаринских",
-      parents: "Родители", spouse: "Супруг(а)", children: "Дети",
-      m_birth: "Место рождения", m_marriage: "Брак", m_occupation: "Род занятий", m_burial: "Место упокоения",
-      m_title: "Важные вехи", fam_title: "Семейный круг", archive_btn: "Открыть архив документов"
-    },
-    en: {
-      site_title: "The Smagarinsky Family Chronicle",
-      parents: "Parents", spouse: "Spouse", children: "Children",
-      m_birth: "Place of Birth", m_marriage: "Marriage", m_occupation: "Occupation", m_burial: "Place of Burial",
-      m_title: "Key Milestones", fam_title: "Family Circle", archive_btn: "Open Document Archive"
-    }
-  }; 
-
-  // ==========================================
-  // 3. ФУНКЦИЯ ОТРИСОВКИ ПРОФИЛЯ ПРЕДКА СНИЗУ
-  // ==========================================
-  function renderProfile() {
-    const person = db[currentId];
-    if (!person) return;
-
-    document.querySelector('main').classList.remove('hidden');
-
-    let photoUrl = "photos/male.jpg";
-    if (idIsFemale(currentId)) {
-        photoUrl = "photos/female.jpg";
-    }
-
-    if (person.photo && person.photo.trim() !== "") {
-        photoUrl = (person.photo.startsWith("photos/") || person.photo.startsWith("documents/")) ? person.photo : "photos/" + person.photo;
-    }
-
-    const imgEl = document.getElementById("person-photo");
-    if (imgEl) imgEl.src = photoUrl;
-
-    const captionEl = document.getElementById("photo-caption");
-    if (captionEl) captionEl.innerText = person.photoCaption ? person.photoCaption[currentLang] : "";
-
-    const ribbonContainer = document.getElementById("photo-ribbon");
-    if (ribbonContainer) ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
-
-    if (document.getElementById("person-role")) document.getElementById("person-role").innerText = (person.role && person.role[currentLang]) || "";
-    if (document.getElementById("person-name")) document.getElementById("person-name").innerText = (person.name && person.name[currentLang]) || "";
-
-    if (document.getElementById("person-years")) document.getElementById("person-years").innerText = person.years || "";
-    if (document.getElementById("milestones-title")) document.getElementById("milestones-title").innerText = labels[currentLang].m_title;
-    if (document.getElementById("family-title")) document.getElementById("family-title").innerText = labels[currentLang].fam_title;
-    if (document.getElementById("archive-btn-text")) document.getElementById("archive-btn-text").innerText = labels[currentLang].archive_btn;
-
-    const table = document.getElementById("milestones-table");
-    if (table) {
-        const ms = person.milestones || {};
-        table.innerHTML = `
-          <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600 w-1/3">${labels[currentLang].m_birth}:</td><td class="py-1.5">${ms.birthPlace ? ms.birthPlace[currentLang] : "—"}</td></tr>
-          <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_marriage}:</td><td class="py-1.5">${ms.marriage ? ms.marriage[currentLang] : "—"}</td></tr>
-          <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_occupation}:</td><td class="py-1.5 font-medium text-amber-950">${ms.occupation ? ms.occupation[currentLang] : "—"}</td></tr>
-          <tr><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_burial}:</td><td class="py-1.5">${ms.burial ? ms.burial[currentLang] : "—"}</td></tr>
-        `;
-    }
-
-    if (document.getElementById("person-bio")) document.getElementById("person-bio").innerHTML = (person.bio && person.bio[currentLang]) || "";
-
-    const familyList = document.getElementById("family-list");
-    if (familyList) {
-        familyList.innerHTML = "";
-        if (person.familyText && person.familyText[currentLang]) {
-          person.familyText[currentLang].forEach(item => {
-            const li = document.createElement("li");
-            li.innerHTML = item;
-            familyList.appendChild(li);
-          });
-        }
-    }
-
-    const docSection = document.getElementById("documents-section");
-    if (docSection) {
-        docSection.style.display = (person.documents && person.documents.length > 0) ? "block" : "none";
-    }
-  }
-
-  function idIsFemale(id) {
-    const lower = id.toLowerCase();
-    return lower.includes("blyuma") || lower.includes("haya") || lower.includes("feyga") || lower.includes("slava") || lower.includes("female");
-  }
-
-  // ==========================================
-  // 4. АВТОМАТИЧЕСКИЙ ПЕРЕВОД ДАННЫХ ДЛЯ FAMILYTREE.JS
-  // ==========================================
-  // ==========================================
-  // 4. АВТОМАТИЧЕСКИЙ ПЕРЕВОД ДАННЫХ ДЛЯ FAMILYTREE.JS
-  // ==========================================
-  function getTreeData() {
-    const treeData = [];
-    
-    Object.keys(db).forEach(id => {
-      const person = db[id];
-      const node = {
-        id: id,
-        name: person.name[currentLang] || person.name['ru'] || "",
-        title: person.years || ""
-      };
-
-      // БЕЗОПАСНАЯ ПРОВЕРКА ФОТОГРАФИИ
-      let photoUrl = idIsFemale(id) ? "photos/female.jpg" : "photos/male.jpg";
-      
-      if (person.photo && person.photo.trim() !== "") {
-        let cleanPhoto = person.photo.trim();
-        photoUrl = (cleanPhoto.startsWith("photos/") || cleanPhoto.startsWith("documents/")) 
-          ? cleanPhoto 
-          : "photos/" + cleanPhoto;
-      }
-      
-      // Напрямую передаем путь. Если браузер выдаст 404, дерево все равно отрисуется!
-      node.photo = photoUrl;
-
-      if (person.links) {
-        if (person.links.spouse) {
-          node.pids = Array.isArray(person.links.spouse) ? person.links.spouse : [person.links.spouse];
-        }
-        if (person.links.parents && Array.isArray(person.links.parents)) {
-          person.links.parents.forEach(pId => {
-            if (pId && db[pId]) {
-              if (idIsFemale(pId)) {
-                node.mother = pId;
-              } else {
-                node.father = pId;
-              }
-            }
-          });
-        }
-      }
-      
-      Object.keys(db).forEach(childId => {
-        const child = db[childId];
-        if (child.links && child.links.parents && child.links.parents.includes(id)) {
-          if (idIsFemale(id)) {
-            node.pids = node.pids || [];
-            child.links.parents.forEach(p => { if(p !== id && !node.pids.includes(p)) node.pids.push(p); });
-          }
-        }
-      });
-
-      treeData.push(node);
-    });
-    
-    return treeData;
-  }
-
-  // ==========================================
-  // 5. ИНИЦИАЛИЗАЦИЯ И СВЯЗЫВАНИЕ ДЕРЕВА
-  // ==========================================
-  let familyTreeInstance = null;
-
-  function drawTree() {
-    const treeContainer = document.getElementById("tree-container-balkan");
-    if (!treeContainer) return;
-    treeContainer.innerHTML = "";
-
-    // Создаем интерактивный холст
-    familyTreeInstance = new FamilyTree(treeContainer, {
-      mouseScroller: { zoom: true, scale: 0.5 },
-      nodeBinding: {
-        field_0: "name",
-        field_1: "title",
-        img_0: "photo"
-      }
-    });
-
-    // Нажатие на карточку в дереве открывает анкету снизу
-    familyTreeInstance.on('click', function (sender, args) {
-      currentId = args.node.id;
-      renderProfile();
-      return false; // отменяем внутреннее всплывающее окно Balkan
-    });
-
-    const dataForTree = getTreeData();
-    familyTreeInstance.load(dataForTree);
-  }
-
-  // ==========================================
-  // 6. СИСТЕМА УМНОГО ПОИСКА
-  // ==========================================
-  document.addEventListener("DOMContentLoaded", () => {
-    const searchInput = document.getElementById("tree-search");
-    if (searchInput) {
-        searchInput.addEventListener("input", (e) => {
-            const query = e.target.value.toLowerCase().trim();
-            const resultsContainer = document.getElementById("search-results");
-            const clearBtn = document.getElementById("search-clear-btn");
-
-            if (query === "") {
-                resultsContainer.classList.add("hidden");
-                clearBtn.classList.add("hidden");
-                return;
-            }
-
-            clearBtn.classList.remove("hidden");
-            resultsContainer.innerHTML = "";
-            let matches = 0;
-
-            Object.keys(db).forEach(id => {
-                const p = db[id];
-                const nameRu = (p.name.ru || "").toLowerCase();
-                const nameEn = (p.name.en || "").toLowerCase();
-
-                if (nameRu.includes(query) || nameEn.includes(query)) {
-                    matches++;
-                    const roleText = p.role ? p.role[currentLang] : "";
-                    const row = document.createElement("div");
-                    row.className = "px-3 py-2 hover:bg-amber-50 cursor-pointer text-sm text-stone-800 transition font-serif flex justify-between items-center";
-                    row.innerHTML = `<div><strong>${p.name[currentLang]}</strong> <span class="text-xs text-stone-500 font-mono ml-2">${p.years || ''}</span></div><div class="text-[10px] uppercase bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded font-sans font-bold">${roleText}</div>`;
-                    
-                    row.onclick = () => {
-                        currentId = id;
-                        renderProfile();
-                        if (familyTreeInstance) {
-                            familyTreeInstance.center(id);
-                        }
-                        resultsContainer.classList.add("hidden");
-                        searchInput.value = "";
-                        clearBtn.classList.add("hidden");
-                    };
-                    resultsContainer.appendChild(row);
-                }
-            });
-
-            if (matches > 0) {
-                resultsContainer.classList.remove("hidden");
-            } else {
-                resultsContainer.innerHTML = `<div class="p-3 text-xs text-stone-400 italic text-center font-sans">Совпадений не найдено</div>`;
-                resultsContainer.classList.remove("hidden");
-            }
-        });
-    }
-  });
-
-  function clearSearch() {
-    const input = document.getElementById("tree-search");
-    if (input) input.value = "";
-    document.getElementById("search-results").classList.add("hidden");
-    document.getElementById("search-clear-btn").classList.add("hidden");
-  }
-  window.clearSearch = clearSearch;
-
-  // ==========================================
-  // 7. УПРАВЛЕНИЕ АРХИВАМИ И ЯЗЫКОМ
-  // ==========================================
-  function setLanguage(lang) {
-    currentLang = lang;
-
-    const mainTitle = document.getElementById("main-title");
-    if (mainTitle) {
-        mainTitle.innerText = lang === 'ru' ? labels.ru.site_title : labels.en.site_title;
-    }
-    const btnRu = document.getElementById("btn-ru");
-    const btnEn = document.getElementById("btn-en");
-
-    if (lang === 'ru') {
-        if (btnRu) btnRu.className = "px-3 py-1 bg-stone-800 text-white rounded shadow-sm cursor-pointer";
-        if (btnEn) btnEn.className = "px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 cursor-pointer";
-        const searchInput = document.getElementById("tree-search");
-        if (searchInput) searchInput.placeholder = "Поиск предка (например, Вульф)...";
-    } else {
-        if (btnEn) btnEn.className = "px-3 py-1 bg-stone-800 text-white rounded shadow-sm cursor-pointer";
-        if (btnRu) btnRu.className = "px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 cursor-pointer";
-        const searchInput = document.getElementById("tree-search");
-        if (searchInput) searchInput.placeholder = "Search ancestor (e.g., Vulf)...";
-    }
-
-    renderProfile();
-    drawTree();
-  }
-  window.setLanguage = setLanguage;
-
-  function openArchiveModal() {
-    const person = db[currentId];
-    if (!person) return;
-
-    const archiveModal = document.getElementById("archive-modal");
-    const docList = document.getElementById("modal-documents-list");
-    if (!archiveModal || !docList) return;
-
-    docList.innerHTML = "";
-
-    if (person.documents && person.documents.length > 0) {
-        person.documents.forEach(doc => {
-            const div = document.createElement("div");
-            div.className = "bg-white p-4 border border-stone-300 rounded-lg shadow-sm hover:shadow transition flex flex-col justify-between items-start";
-            
-            let displayName = (doc.label && doc.label[currentLang]) ? doc.label[currentLang] : "";
-            if (!displayName) {
-                const fileNameWithExt = doc.url.substring(doc.url.lastIndexOf('/') + 1);
-                displayName = fileNameWithExt.substring(0, fileNameWithExt.lastIndexOf('.')).replace(/_/g, ' ');
-            }
-
-            div.innerHTML = `
-                <span class="text-xs text-stone-400 font-mono mb-2 block">📄 ДОКУМЕНТ</span>
-                <p class="text-stone-800 font-medium text-sm font-serif mb-4 flex-grow">${displayName}</p>
-                <a href="${doc.url}" target="_blank" class="text-amber-800 hover:text-amber-950 underline text-xs font-semibold mt-auto flex items-center gap-1">
-                   Смотреть оригинал ↗
-                </a>
-            `;
-            docList.appendChild(div);
-        });
-    }
-
-    archiveModal.classList.remove("hidden");
-  }
-  window.openArchiveModal = openArchiveModal;
-
-  function closeArchiveModal(event) {
-    if (event) event.stopPropagation();
-    const archiveModal = document.getElementById("archive-modal");
-    if (archiveModal) archiveModal.classList.add("hidden");
-  }
-  window.closeArchiveModal = closeArchiveModal;
-
-  // Первичный запуск
-  setLanguage(currentLang);
-</script>
-</body>
-</html>
+      "name": { "ru":
