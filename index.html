@@ -204,14 +204,14 @@
       "links": {
         "parents": ["person_shevel_1848", "person_khaya_1860"],
         "spouse": "person_blyuma_1895",
-        "children": ["person_fima_1919"]
+        "children": ["person_efim_1919"]
       },
       "documents": [
         {
           "url": "documents/person_vulf_1898/vulf's_children_fima_(standing_left)_misha_(back_right)_katya_with_anatoly_in_her_arms_sonya_and_mira_on_the_right_probably_1938_birobidzhan.jpg",
           "label": {
-            "ru": "Дети Вульфа: Фима, Миша, Катя с Анатолием, Соня и Мира, прибл. 1938 г., Биробиджан",
-            "en": "Vulf's children: Fima, Misha, Katya with Anatoly, Sonya, and Mira, approx. 1938, Birobidzhan"
+            "ru": "Дети Вульфа: Ефим, Миша, Катя с Анатолием, Соня и Мира, прибл. 1938 г., Биробиджан",
+            "en": "Vulf's children: Efim, Misha, Katya with Anatoly, Sonya, and Mira, approx. 1938, Birobidzhan"
           }
         },
         {
@@ -259,8 +259,8 @@
         {
           "url": "documents/person_vulf_1898/vulf_blyuma_fima_misha.jpg",
           "label": {
-            "ru": "Вульф, Блюма, Фима и Миша",
-            "en": "Vulf, Blyuma, Fima, and Misha"
+            "ru": "Вульф, Блюма, Ефим и Миша",
+            "en": "Vulf, Blyuma, Efim, and Misha"
           }
         },
         {
@@ -359,7 +359,7 @@
       },
       "links": {
         "spouse": "person_vulf_1898",
-        "children": ["person_fima_1919"]
+        "children": ["person_efim_1919"]
       },
       "documents": [
             {
@@ -393,8 +393,8 @@
             {
                 "url": "documents/person_blyuma_1895/vulf_blyuma_fima_misha.jpg",
                 "title": {
-                    "ru": "Вульф, Блюма, Фима и Миша",
-                    "en": "Vulf, Blyuma, Fima and Misha"
+                    "ru": "Вульф, Блюма, Ефим и Миша",
+                    "en": "Vulf, Blyuma, Efim and Misha"
                 }
             },
             {
@@ -451,8 +451,25 @@
       "role": { "ru": "Ветеран / Инженер", "en": "Veteran / Engineer" },
       "years": "1919 – 2002",
       "isDeceased": true,
-      "photo": "documents/person_efim_1919/fima_december_12_1944.jpg",
+      "photo": "documents/person_efim_1919/efim_december_12_1944.jpg",
       "photoCaption": { "ru": "Ефим Смагаринский, 1944 г.", "en": "Efim Smagarinsky, 1944" },
+      "milestones": {
+        "birthPlace": { "ru": "Биробиджан (уточняется)", "en": "Birobidzhan (TBD)" },
+        "marriage": { "ru": "Надежда Смагаринская", "en": "Nadezhda Smagarinskaya" },
+        "occupation": { "ru": "Фронтовик, инженер", "en": "WWII veteran, engineer" },
+        "burial": { "ru": "Данные исследуются", "en": "TBD" }
+      },
+      "bio": {
+        "ru": "<p>Участник Великой Отечественной войны, доблестно прошедший боевой путь. Инженер и гордость семьи Смагаринских.</p>",
+        "en": "<p>World War II veteran who honorably served his country. Engineer and pride of the Smagarinsky family.</p>"
+      },
+      "familyText": {
+        "ru": ["Отец: Вульф Смагаринский", "Мать: Блюма Смагаринская", "Супруга: Надежда Смагаринская", "Дочь: Мира Смагаринская"],
+        "en": ["Father: Vulf Smagarinsky", "Mother: Blyuma Smagarinskaya", "Spouse: Nadezhda Smagarinskaya", "Daughter: Mira Smagarinsky"]
+      },
+      "links": {
+        "parents": ["person_vulf_1898", "person_blyuma_1895"]
+      },
       "documents": [
         {
           "url": "documents/person_efim_1919/booklet_efim.pdf",
@@ -597,7 +614,7 @@
 
     "person_feyga_1794": {
       "isDeceased": true,
-      "role": { "ru": "Прабабушка Вульфа", "en": "Vulf's Great-Grandmother" },
+      "role": { "ru": "Прабабушка Вульфа", "en": "Vulf's Great-Mother" },
       "name": { "ru": "Фейга Рохля Смагаринская", "en": "Feyga Rokhlya Smagarinskaya" },
       "birthName": { "ru": "", "en": "" },
       "years": "1794 — ?",
@@ -1020,7 +1037,7 @@
     if (!archiveModal) return;
 
     // Ищем именно центральный белый блок, где написана инструкция
-    // Находим текст инструкции, чтобы вставить список строго ПОД него
+    // Находим text инструкции, чтобы вставить список строго ПОД него
     const instructionText = archiveModal.querySelector("p") || archiveModal.querySelector(".modal-content p");
     
     // Проверяем, создавали ли мы уже правильный список ранее, чтобы не дублировать его
@@ -1053,9 +1070,14 @@
             let displayName = (doc.title && doc.title[lang]) ? doc.title[lang] : "";
             
             if (!displayName) {
-                const fileNameWithExt = doc.url.substring(doc.url.lastIndexOf('/') + 1);
-                const fileName = fileNameWithExt.substring(0, fileNameWithExt.lastIndexOf('.'));
-                displayName = fileName.replace(/_/g, ' ');
+                // Пытаемся взять имя из doc.label, если структуры .title нет (как в карточке Вульфа)
+                if (doc.label && doc.label[lang]) {
+                    displayName = doc.label[lang];
+                } else {
+                    const fileNameWithExt = doc.url.substring(doc.url.lastIndexOf('/') + 1);
+                    const fileName = fileNameWithExt.substring(0, fileNameWithExt.lastIndexOf('.'));
+                    displayName = fileName.replace(/_/g, ' ');
+                }
             }
 
             li.innerHTML = `
