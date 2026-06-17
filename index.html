@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Семейный Архив Смагаринских</title>
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
   <script src="https://balkan.app/js/FamilyTree.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght=0,400..800;1,400..800&family=Oranienbaum&family=Playfair+Display:ital,wght=0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -14,7 +17,7 @@
     .font-historical {
       font-family: 'Oranienbaum', serif;
       font-weight: normal;
-      letter-spacing: 0.06em; /* Элегантное винтажное расстояние между буквами */
+      letter-spacing: 0.06em;
       text-shadow: 0.5px 0.5px 0px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(0,0,0,0.15);
     }
     body { font-family: 'Cormorant Garamond', Georgia, serif; }
@@ -33,7 +36,6 @@
     
     .rtl { direction: rtl; text-align: right; }
     .ltr { direction: ltr; text-align: left; }
-    .rtl-table th, .rtl-table td { text-align: right; }
 
     /* Черная траурная лента в углу фото */
     .mourning-ribbon {
@@ -56,17 +58,22 @@
       transform: rotate(-45deg);
       box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
-    
-    /* Линии связей между поколениями */
-    .tree-line-v {
-      position: absolute;
-      width: 2px;
-      background-color: #b45309;
-      left: 50%;
-      transform: translateX(-50%);
+
+    /* Настройки контейнера для Balkan дерева, чтобы оно занимало всю выделенную область */
+    #tree-container-balkan {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Стилизация внутренних карточек Balkan под винтажный стиль */
+    .bft-node rect {
+      fill: #ffffff !important;
+      stroke: #b45309 !important;
+      stroke-width: 2px !important;
+      rx: 8px;
+      ry: 8px;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
 </head>
 <body class="bg-stone-300 text-stone-900 min-h-screen flex flex-col justify-between p-4 md:p-8 selection:bg-amber-200">
 
@@ -86,7 +93,7 @@
 
   <section class="max-w-5xl w-full mx-auto mb-6 bg-vintage-paper border-2 border-[rgba(133,111,73,0.4)] rounded p-4 relative shadow-md overflow-hidden">
     
-    <div class="relative max-w-xs mx-auto mb-6 z-40 bg-[#f4ebe1]/95 backdrop-blur border border-[#d9c5b2] p-2 rounded-xl shadow-md">
+    <div class="relative max-w-xs mx-auto mb-4 z-40 bg-[#f4ebe1]/95 backdrop-blur border border-[#d9c5b2] p-2 rounded-xl shadow-md">
         <div class="relative flex items-center">
             <input type="text" id="tree-search" placeholder="Поиск предка (например, Вульф)..." 
                    class="w-full bg-white border border-stone-300 rounded-lg px-3 py-1.5 text-sm text-stone-800 focus:outline-none focus:border-amber-700 font-serif">
@@ -95,7 +102,9 @@
         <div id="search-results" class="bg-white border border-stone-200 rounded-lg shadow-xl max-h-48 overflow-y-auto hidden divide-y divide-stone-100 mt-1"></div>
     </div> 
 
-    <div class="w-full min-h-[600px] h-[65vh] bg-vintage-paper rounded-xl shadow-inner border border-stone-400/30" id="tree"></div>
+    <div class="w-full overflow-hidden min-h-[500px] h-[60vh] relative rounded" id="tree-viewport">
+       <div id="tree-container-balkan"></div>
+    </div>
   </section>
 
   <main class="max-w-4xl w-full mx-auto bg-vintage-paper border border-[rgba(133,111,73,0.3)] rounded-lg p-4 md:p-6 flex flex-col md:flex-row gap-6 items-start relative overflow-hidden mb-6 shadow-sm text-sm">
@@ -157,7 +166,7 @@
       </div>
       
       <div class="p-6 max-h-[60vh] overflow-y-auto">
-        <p id="modal-subtitle" class="text-sm text-stone-500 mb-4 font-sans italic">Нажмите на документ, чтобы открыть его оригинальный скан или цифровую копию в новой вкладке:</p>
+        <p id="modal-subtitle" class="text-sm text-stone-500 mb-4 font-sans italic">Нажмите на документ, чтобы открыть его оригинал в новой вкладке:</p>
         <div id="modal-documents-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
       </div>
       
@@ -206,132 +215,24 @@
         "children": ["person_efim_1919"]
       },
       "documents": [
-        {
-          "url": "documents/person_vulf_1898/vulf's_children_fima_(standing_left)_misha_(back_right)_katya_with_anatoly_in_her_arms_sonya_and_mira_on_the_right_probably_1938_birobidzhan.jpg",
-          "label": {
-            "ru": "Дети Вульфа: Ефим, Миша, Катя с Анатолием, Соня и Мира, прибл. 1938 г., Биробиджан",
-            "en": "Vulf's children: Efim, Misha, Katya with Anatoly, Sonya, and Mira, approx. 1938, Birobidzhan"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/birobidzhan_shoemakers'_artel.png",
-          "label": {
-            "ru": "Биробиджанская артель сапожников",
-            "en": "Birobidzhan Shoemakers' Artel"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/grandfather_vulf's_funeral_jewish_cemetery_in_astrakhan.jpg",
-          "label": {
-            "ru": "Похороны дедушки Вульфа, еврейское кладбище в Астрахани",
-            "en": "Grandfather Vulf's funeral, Jewish cemetery in Astrakhan"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/presumably-the_residence_of_the_smagaryinsky_family_in_priluki.jpg",
-          "label": {
-            "ru": "Предположительно, дом семьи Смагаринских в Прилуках",
-            "en": "Presumably the residence of the Smagarinsky family in Priluki"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png",
-          "label": {
-            "ru": "Дом в Биробиджане (справа внучка Люда, дочь Миры)",
-            "en": "The house in Birobidzhan (on the right is granddaughter Lyuda, daughter of Mira)"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_(right)_presumably_with_his_brothers.png",
-          "label": {
-            "ru": "Вульф (справа), предположительно с братьями",
-            "en": "Vulf (right), presumably with his brothers"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_blyuma.png",
-          "label": {
-            "ru": "Вульф и Блюма",
-            "en": "Vulf and Blyuma"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_blyuma_fima_misha.jpg",
-          "label": {
-            "ru": "Вульф, Блюма, Ефим и Миша",
-            "en": "Vulf, Blyuma, Efim, and Misha"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_circa_1960s.jpg",
-          "label": {
-            "ru": "Вульф, около 1960-х гг.",
-            "en": "Vulf, circa 1960s"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_funeral_astrakhan_kruglova_33_1975.jpg",
-          "label": {
-            "ru": "Похороны Вульфа, Астрахань, ул. Круглова 33, 1975 г.",
-            "en": "Vulf's funeral, Astrakhan, Kruglova str. 33, 1975"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_in_the_courtyard_of_his_house_birobidzhan.png",
-          "label": {
-            "ru": "Вульф во дворе своего дома, Биробиджан",
-            "en": "Vulf in the courtyard of his house, Birobidzhan"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_marriage_1916.jpg",
-          "label": {
-            "ru": "Запись о браке Вульфа (1916 г.)",
-            "en": "Vulf's marriage record (1916)"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_time_unknown.jpg",
-          "label": {
-            "ru": "Вульф (время неизвестно)",
-            "en": "Vulf (date unknown)"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_with_blyuma_birobidzhan.jpg",
-          "label": {
-            "ru": "Вульф с Блюмой, Биробиджан",
-            "en": "Vulf with Blyuma, Birobidzhan"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_with_blyuma_time_unknown.jpg",
-          "label": {
-            "ru": "Вульф с Блюмой (время неизвестно)",
-            "en": "Vulf with Blyuma (date unknown)"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_with_his_grandchildren_sveta_and_sasha_from_his_son_anatoly.jpg",
-          "label": {
-            "ru": "Вульф с внуками Светой и Сашей (дети сына Анатолия)",
-            "en": "Vulf with grandchildren Sveta and Sasha (children of his son Anatoly)"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulf_with_his_granddaughter_sveta.jpg",
-          "label": {
-            "ru": "Вульф с внучкой Светой",
-            "en": "Vulf with his granddaughter Sveta"
-          }
-        },
-        {
-          "url": "documents/person_vulf_1898/vulfe's_death_notice.png",
-          "label": {
-            "ru": "Извещение о смерти Вульфа",
-            "en": "Vulf's death notice"
-          }
-        }
+        { "url": "documents/person_vulf_1898/vulf's_children_fima_(standing_left)_misha_(back_right)_katya_with_anatoly_in_her_arms_sonya_and_mira_on_the_right_probably_1938_birobidzhan.jpg", "label": { "ru": "Дети Вульфа: Фима, Миша, Катя с Анатолием, Соня и Мира, прибл. 1938 г., Биробиджан", "en": "Vulf's children: Fima, Misha, Katya with Anatoly, Sonya, and Mira, approx. 1938, Birobidzhan" } },
+        { "url": "documents/person_vulf_1898/birobidzhan_shoemakers'_artel.png", "label": { "ru": "Биробиджанская артель сапожников", "en": "Birobidzhan Shoemakers' Artel" } },
+        { "url": "documents/person_vulf_1898/grandfather_vulf's_funeral_jewish_cemetery_in_astrakhan.jpg", "label": { "ru": "Похороны дедушки Вульфа, еврейское кладбище в Астрахани", "en": "Grandfather Vulf's funeral, Jewish cemetery in Astrakhan" } },
+        { "url": "documents/person_vulf_1898/presumably-the_residence_of_the_smagaryinsky_family_in_priluki.jpg", "label": { "ru": "Предположительно, дом семьи Смагаринских в Прилуках", "en": "Presumably the residence of the Smagarinsky family in Priluki" } },
+        { "url": "documents/person_vulf_1898/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png", "label": { "ru": "Дом в Биробиджане (справа внучка Люда, дочь Миры)", "en": "The house in Birobidzhan (on the right is granddaughter Lyuda, daughter of Mira)" } },
+        { "url": "documents/person_vulf_1898/vulf_(right)_presumably_with_his_brothers.png", "label": { "ru": "Вульф (справа), предположительно с братьями", "en": "Vulf (right), presumably with his brothers" } },
+        { "url": "documents/person_vulf_1898/vulf_blyuma.png", "label": { "ru": "Вульф и Блюма", "en": "Vulf and Blyuma" } },
+        { "url": "documents/person_vulf_1898/vulf_blyuma_fima_misha.jpg", "label": { "ru": "Вульф, Блюма, Фима и Миша", "en": "Vulf, Blyuma, Fima, and Misha" } },
+        { "url": "documents/person_vulf_1898/vulf_circa_1960s.jpg", "label": { "ru": "Вульф, около 1960-х гг.", "en": "Vulf, circa 1960s" } },
+        { "url": "documents/person_vulf_1898/vulf_funeral_astrakhan_kruglova_33_1975.jpg", "label": { "ru": "Похороны Вульфа, Астрахань, ул. Круглова 33, 1975 г.", "en": "Vulf's funeral, Astrakhan, Kruglova str. 33, 1975" } },
+        { "url": "documents/person_vulf_1898/vulf_in_the_courtyard_of_his_house_birobidzhan.png", "label": { "ru": "Вульф во дворе своего дома, Биробиджан", "en": "Vulf in the courtyard of his house, Birobidzhan" } },
+        { "url": "documents/person_vulf_1898/vulf_marriage_1916.jpg", "label": { "ru": "Запись о браке Вульфа (1916 г.)", "en": "Vulf's marriage record (1916)" } },
+        { "url": "documents/person_vulf_1898/vulf_time_unknown.jpg", "label": { "ru": "Вульф (время неизвестно)", "en": "Vulf (date unknown)" } },
+        { "url": "documents/person_vulf_1898/vulf_with_blyuma_birobidzhan.jpg", "label": { "ru": "Вульф с Блюмой, Биробиджан", "en": "Vulf with Blyuma, Birobidzhan" } },
+        { "url": "documents/person_vulf_1898/vulf_with_blyuma_time_unknown.jpg", "label": { "ru": "Вульф с Блюмой (время неизвестно)", "en": "Vulf with Blyuma (date unknown)" } },
+        { "url": "documents/person_vulf_1898/vulf_with_his_grandchildren_sveta_and_sasha_from_his_son_anatoly.jpg", "label": { "ru": "Вульф с внуками Светой и Сашей (дети сына Анатолия)", "en": "Vulf with grandchildren Sveta and Sasha (children of his son Anatoly)" } },
+        { "url": "documents/person_vulf_1898/vulf_with_his_granddaughter_sveta.jpg", "label": { "ru": "Вульф с внучкой Светой", "en": "Vulf with his granddaughter Sveta" } },
+        { "url": "documents/person_vulf_1898/vulfe's_death_notice.png", "label": { "ru": "Извещение о смерти Вульфа", "en": "Vulf's death notice" } }
       ]
     },
     "person_blyuma_1895": {
@@ -361,290 +262,114 @@
         "children": ["person_efim_1919"]
       },
       "documents": [
-            {
-                "url": "documents/person_blyuma_1895/vulf_marriage_1916.jpg",
-                "title": {
-                    "ru": "Бракосочетание Вульфа и Блюмы, 1916 г.",
-                    "en": "Marriage of Vulf and Blyuma, 1916"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/bluma_in_her_youth.mp4",
-                "title": {
-                    "ru": "Блюма в молодости (видеоархив)",
-                    "en": "Blyuma in her youth (video archive)"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/blyuma_beyla_.jpg",
-                "title": {
-                    "ru": "Блюма (Бейла)",
-                    "en": "Blyuma (Beyla)"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/vulf_children_1938.jpg",
-                "title": {
-                    "ru": "Вульф с детьми, 1938 г.",
-                    "en": "Vulf with children, 1938"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/vulf_blyuma_fima_misha.jpg",
-                "title": {
-                    "ru": "Вульф, Блюма, Ефим и Миша",
-                    "en": "Vulf, Blyuma, Efim and Misha"
-                }
-            },
-            {
-            "url": "documents/person_blyuma_1895/vulf_blyuma.png",
-            "title": { "ru": "Вульф и Блюма (бракосочетание)", "en": "Vulf and Blyuma (marriage portrait)" }
-          },
-            {
-                "url": "documents/person_blyuma_1895/vulf_with_blyuma_birobidzhan.jpg",
-                "title": {
-                    "ru": "Вульф с Блюмой в Биробиджане",
-                    "en": "Vulf with Blyuma in Birobidzhan"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/vulf_with_blyuma_time_unknown.jpg",
-                "title": {
-                    "ru": "Вульф и Блюма (период неизвестен)",
-                    "en": "Vulf and Blyuma (date unknown)"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/blyuma_with_her_daughters_(sonya_on_the_left_mira_on_the_right)_birobidzhan_1950_1960.jpg",
-                "title": {
-                    "ru": "Блюма с дочерьми (Соня слева, Мира справа), Биробиджан, 1950-1960 гг.",
-                    "en": "Blyuma with her daughters (Sonya on the left, Mira on the right), Birobidzhan, 1950-1960"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/blyuma_69_years_old.jpg",
-                "title": {
-                    "ru": "Блюма, 69 лет",
-                    "en": "Blyuma, 69 years old"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png",
-                "title": {
-                    "ru": "Дом в Биробиджане (справа внучка Люда, дочь Миры)",
-                    "en": "The house in Birobidzhan (on the right is granddaughter Lyuda, daughter of Mira)"
-                }
-            },
-            {
-                "url": "documents/person_blyuma_1895/blyuma's_grave_at_the_birobidzhan_cemetery.jpg",
-                "title": {
-                    "ru": "Могила Блюмы на кладбище в Биробиджане",
-                    "en": "Blyuma's grave at the Birobidzhan cemetery"
-                }
-            }
+            { "url": "documents/person_blyuma_1895/vulf_marriage_1916.jpg", "title": { "ru": "Бракосочетание Вульфа и Блюмы, 1916 г.", "en": "Marriage of Vulf and Blyuma, 1916" } },
+            { "url": "documents/person_blyuma_1895/bluma_in_her_youth.mp4", "title": { "ru": "Блюма в молодости (видеоархив)", "en": "Blyuma in her youth (video archive)" } },
+            { "url": "documents/person_blyuma_1895/blyuma_beyla_.jpg", "title": { "ru": "Блюма (Бейла)", "en": "Blyuma (Beyla)" } },
+            { "url": "documents/person_blyuma_1895/vulf_children_1938.jpg", "title": { "ru": "Вульф с детьми, 1938 г.", "en": "Vulf with children, 1938" } },
+            { "url": "documents/person_blyuma_1895/vulf_blyuma_fima_misha.jpg", "title": { "ru": "Вульф, Блюма, Фима и Миша", "en": "Vulf, Blyuma, Fima and Misha" } },
+            { "url": "documents/person_blyuma_1895/vulf_blyuma.png", "title": { "ru": "Вульф и Блюма (бракосочетание)", "en": "Vulf and Blyuma (marriage portrait)" } },
+            { "url": "documents/person_blyuma_1895/vulf_with_blyuma_birobidzhan.jpg", "title": { "ru": "Вульф с Блюмой в Биробиджане", "en": "Vulf with Blyuma in Birobidzhan" } },
+            { "url": "documents/person_blyuma_1895/vulf_with_blyuma_time_unknown.jpg", "title": { "ru": "Вульф и Блюма (период неизвестен)", "en": "Vulf and Blyuma (date unknown)" } },
+            { "url": "documents/person_blyuma_1895/blyuma_with_her_daughters_(sonya_on_the_left_mira_on_the_right)_birobidzhan_1950_1960.jpg", "title": { "ru": "Блюма с дочерьми (Соня слева, Мира справа), Биробиджан, 1950-1960 гг.", "en": "Blyuma with her daughters (Sonya on the left, Mira on the right), Birobidzhan, 1950-1960" } },
+            { "url": "documents/person_blyuma_1895/blyuma_69_years_old.jpg", "title": { "ru": "Блюма, 69 лет", "en": "Blyuma, 69 years old" } },
+            { "url": "documents/person_blyuma_1895/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png", "title": { "ru": "Дом в Биробиджане (справа внучка Люда, дочь Миры)", "en": "The house in Birobidzhan (on the right is granddaughter Lyuda, daughter of Mira)" } },
+            { "url": "documents/person_blyuma_1895/blyuma's_grave_at_the_birobidzhan_cemetery.jpg", "title": { "ru": "Могила Блюмы на кладбище в Биробиджане", "en": "Blyuma's grave at the Birobidzhan cemetery" } }
         ]
     },
-
     "person_efim_1919": {
       "name": { "ru": "Ефим Смагаринский", "en": "Efim Smagarinsky" },
       "role": { "ru": "Ветеран / Инженер", "en": "Veteran / Engineer" },
       "years": "1919 – 2002",
       "isDeceased": true,
-      "photo": "documents/person_efim_1919/efim_december_12_1944.jpg",
+      "photo": "documents/person_efim_1919/fima_december_12_1944.jpg",
       "photoCaption": { "ru": "Ефим Смагаринский, 1944 г.", "en": "Efim Smagarinsky, 1944" },
       "milestones": {
-        "birthPlace": { "ru": "Биробиджан (уточняется)", "en": "Birobidzhan (TBD)" },
+        "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" },
         "marriage": { "ru": "Надежда Смагаринская", "en": "Nadezhda Smagarinskaya" },
-        "occupation": { "ru": "Фронтовик, инженер", "en": "WWII veteran, engineer" },
-        "burial": { "ru": "Данные исследуются", "en": "TBD" }
+        "occupation": { "ru": "Фронтовой инженер", "en": "Front-line engineer" },
+        "burial": { "ru": "Уточняется", "en": "TBD" }
       },
       "bio": {
-        "ru": "<p>Участник Великой Отечественной войны, доблестно прошедший боевой путь. Инженер и гордость семьи Смагаринских.</p>",
-        "en": "<p>World War II veteran who honorably served his country. Engineer and pride of the Smagarinsky family.</p>"
+        "ru": "<p>Ветеран Великой Отечественной войны, доблестный инженер...</p>",
+        "en": "<p>Veteran of the Great Patriotic War, gallant engineer...</p>"
       },
       "familyText": {
-        "ru": ["Отец: Вульф Смагаринский", "Мать: Блюма Смагаринская", "Супруга: Надежда Смагаринская", "Дочь: Мира Смагаринская"],
-        "en": ["Father: Vulf Smagarinsky", "Mother: Blyuma Smagarinskaya", "Spouse: Nadezhda Smagarinskaya", "Daughter: Mira Smagarinsky"]
+        "ru": ["Отец: Вульф Смагаринский", "Мать: Блюма Самуилова", "Супруга: Надежда", "Дети: Мира"],
+        "en": ["Father: Vulf Smagarinsky", "Mother: Blyuma Samuilova", "Spouse: Nadezhda", "Children: Mira"]
       },
       "links": {
         "parents": ["person_vulf_1898", "person_blyuma_1895"]
       },
       "documents": [
-        {
-          "url": "documents/person_efim_1919/booklet_efim.pdf",
-          "title": { "ru": "Памятный буклет о Ефиме (PDF)", "en": "Memorial booklet about Efim (PDF)" }
-        },
-        {
-          "url": "documents/person_efim_1919/efim_december_12_1944.jpg",
-          "title": { "ru": "Ефим, 12 декабря 1944 г.", "en": "Efim, December 12, 1944" }
-        },
-        {
-          "url": "documents/person_efim_1919/efim_1945_hungary.jpg",
-          "title": { "ru": "Ефим в Венгрии, 1945 г.", "en": "Efim in Hungary, 1945" }
-        },
-        {
-          "url": "documents/person_efim_1919/efim_with_his_front_line_friends.jpg",
-          "title": { "ru": "Ефим с фронтовыми друзьями", "en": "Efim with his front-line friends" }
-        },
-        {
-          "url": "documents/person_efim_1919/efim_spouse_nadezhda_doch_mira_1947.jpg",
-          "title": { "ru": "Ефим, супруга Надежда и дочь Мира, 1947 г.", "en": "Efim, spouse Nadezhda and daughter Mira, 1947" }
-        },
-        {
-          "url": "documents/person_efim_1919/efims_family_1952.jpg",
-          "title": { "ru": "Семья Ефима, 1952 г.", "en": "Efim's family, 1952" }
-        },
-        {
-          "url": "documents/person_efim_1919/efims_family_1953.jpg",
-          "title": { "ru": "Семья Ефима, 1953 г.", "en": "Efim's family, 1953" }
-        },
-        {
-          "url": "documents/person_efim_1919/efims_family_1964.jpg",
-          "title": { "ru": "Семья Ефима, 1964 г.", "en": "Efim's family, 1964" }
-        },
-        {
-          "url": "documents/person_efim_1919/efims_wife_with_children_1974.jpg",
-          "title": { "ru": "Супруга Ефима с детьми, 1974 г.", "en": "Efim's wife with children, 1974" }
-        },
-        {
-          "url": "documents/person_efim_1919/efim_with_his_mother.jpg",
-          "title": { "ru": "Ефим со своей матерью (Блюмой)", "en": "Efim with his mother" }
-        },
-        {
-          "url": "documents/person_efim_1919/efim_is_on_vacation.jpg",
-          "title": { "ru": "Ефим на отдыхе", "en": "Efim is on vacation" }
-        },
-        {
-          "url": "documents/person_efim_1919/time_not_set.jpg",
-          "title": { "ru": "Архивное фото (период неизвестен)", "en": "Archive photo (date unknown)" }
-        }
+        { "url": "documents/person_efim_1919/booklet_efim.pdf", "title": { "ru": "Памятный буклет о Ефиме (PDF)", "en": "Memorial booklet about Efim (PDF)" } },
+        { "url": "documents/person_efim_1919/efim_december_12_1944.jpg", "title": { "ru": "Ефим, 12 декабря 1944 г.", "en": "Efim, December 12, 1944" } },
+        { "url": "documents/person_efim_1919/efim_1945_hungary.jpg", "title": { "ru": "Ефим в Венгрии, 1945 г.", "en": "Efim in Hungary, 1945" } },
+        { "url": "documents/person_efim_1919/efim_with_his_front_line_friends.jpg", "title": { "ru": "Ефим с фронтовыми друзьями", "en": "Efim with his front-line friends" } },
+        { "url": "documents/person_efim_1919/efim_spouse_nadezhda_doch_mira_1947.jpg", "title": { "ru": "Ефим, супруга Надежда и дочь Мира, 1947 г.", "en": "Efim, spouse Nadezhda and daughter Mira, 1947" } },
+        { "url": "documents/person_efim_1919/efims_family_1952.jpg", "title": { "ru": "Семья Ефима, 1952 г.", "en": "Efim's family, 1952" } },
+        { "url": "documents/person_efim_1919/efims_family_1953.jpg", "title": { "ru": "Семья Ефима, 1953 г.", "en": "Efim's family, 1953" } },
+        { "url": "documents/person_efim_1919/efims_family_1964.jpg", "title": { "ru": "Семья Ефима, 1964 г.", "en": "Efim's family, 1964" } },
+        { "url": "documents/person_efim_1919/efims_wife_with_children_1974.jpg", "title": { "ru": "Супруга Ефима с детьми, 1974 г.", "en": "Efim's wife with children, 1974" } },
+        { "url": "documents/person_efim_1919/efim_with_his_mother.jpg", "title": { "ru": "Ефим со своей матерью (Блюмой)", "en": "Efim with his mother" } },
+        { "url": "documents/person_efim_1919/efim_is_on_vacation.jpg", "title": { "ru": "Ефим на отдыхе", "en": "Efim is on vacation" } }
       ]
     },
-
     "person_shevel_1848": {
       "isDeceased": true,
       "role": { "ru": "Отец Вульфа", "en": "Vulf's Father" },
       "name": { "ru": "Шевель Залманов Смагаринский", "en": "Shevel Zalmanov Smagarinsky" },
-      "birthName": { "ru": "", "en": "" },
       "years": "1848 — 1908",
       "photo": "",
-      "photoCaption": { "ru": "", "en": "" },
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруга — Хая Исраелева Гуревич", "en": "Spouse — Khaya Israeleva Gurevich" }, "occupation": { "ru": "Данные исследуются", "en": "TBD" }, "burial": { "ru": "Данные исследуются", "en": "TBD" } },
-      "bio": { "ru": "<p>Глава семьи, мещанин. Представитель поколения Смагаринских второй половины XIX века.</p>", "en": "<p>Head of family, burgher. Representative of the Smagarinsky generation of the second half of the 19th century.</p>" },
-      "familyText": {
-        "ru": [ "<strong>Отец:</strong> Шнеур Залмон Смагаринский", "<strong>Мать:</strong> Слава Смагаринская", "<strong>Супруга:</strong> Хая Исраелева Смагаринская (урожд. Гуревич)", "<strong>Дети:</strong> Вульф Смагаринский" ],
-        "en": [ "<strong>Father:</strong> Shneur Zalmon Smagarinsky", "<strong>Mother:</strong> Slava Smagarinskaya", "<strong>Spouse:</strong> Khaya Israeleva Smagarinskaya (née Gurevich)", "<strong>Children:</strong> Vulf Smagarinsky" ]
-      },
-      "documents": [],
-      "links": { "parents": ["person_shneur_1821", "person_slava_1822"], "spouse": "person_khaya_1860", "children": ["person_vulf_1898"] }
+      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Хая Исраелева Гуревич", "en": "Khaya Israeleva Gurevich" }, "occupation": { "ru": "Мещанин", "en": "Burgher" }, "burial": { "ru": "Данные исследуются", "en": "TBD" } },
+      "bio": { "ru": "<p>Глава семьи, мещанин. Представитель поколения Смагаринских второй половины XIX века.</p>", "en": "<p>Head of family, burgher.</p>" },
+      "familyText": { "ru": [ "Отец: Шнеур Залмон", "Мать: Слава", "Супруга: Хая Гуревич", "Дети: Вульф" ], "en": [ "Father: Shneur Zalmon", "Spouse: Khaya Gurevich" ] },
+      "links": { "parents": ["person_shneur_1821", "person_slava_1822"], "spouse": "person_khaya_1860" }
     },
-
     "person_khaya_1860": {
       "isDeceased": true,
       "role": { "ru": "Мать Вульфа", "en": "Vulf's Mother" },
-      "name": { "ru": "Хая Исраелева Смагаринская (урожд. Гуревич)", "en": "Khaya Israeleva Smagarinskaya (née Gurevich)" },
-      "birthName": { "ru": "Фамилия при рождении: Гуревич", "en": "Birth name: Gurevich" },
+      "name": { "ru": "Хая Исраелева Смагаринская (урожд. Гуревич)", "en": "Khaya Smagarinskaya" },
       "years": "1860 — ?",
       "photo": "",
-      "photoCaption": { "ru": "", "en": "" },
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруг — Шевель Залманов Смагаринский", "en": "Spouse — Shevel Zalmanov Smagarinsky" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
-      "bio": { "ru": "<p>Дочь Исраеля Гуревича, мать Вульфа Смагаринского.</p>", "en": "<p>Daughter of Israel Gurevich, mother of Vulf Smagarinsky.</p>" },
-      "familyText": {
-        "ru": [ "<strong>Отец:</strong> Исраэль Гуревич", "<strong>Супруг:</strong> Шевель Залманов Смагаринский", "<strong>Дети:</strong> Вульф Смагаринский" ],
-        "en": [ "<strong>Father:</strong> Israel Gurevich", "<strong>Spouse:</strong> Shevel Zalmanov Smagarinsky", "<strong>Children:</strong> Vulf Smagarinsky" ]
-      },
-      "documents": [],
-      "links": { "spouse": "person_shevel_1848", "children": ["person_vulf_1898"] }
+      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Шевель Залманов Смагаринский", "en": "Shevel Smagarinsky" }, "occupation": { "ru": "Домашнее хозяйство", "en": "Homemaking" }, "burial": { "ru": "", "en": "" } },
+      "bio": { "ru": "<p>Дочь Исраеля Гуревича, мать Вульфа Смагаринского.</p>" },
+      "familyText": { "ru": [ "Отец: Исраэль Гуревич", "Супруг: Шевель", "Дети: Вульф" ] },
+      "links": { "spouse": "person_shevel_1848" }
     },
-
     "person_shneur_1821": {
       "isDeceased": true,
       "role": { "ru": "Дед Вульфа", "en": "Vulf's Grandfather" },
       "name": { "ru": "Шнеур Залмон Смагаринский", "en": "Shneur Zalmon Smagarinsky" },
-      "birthName": { "ru": "", "en": "" },
       "years": "1821 — ?",
-      "photo": "",
-      "photoCaption": { "ru": "", "en": "" },
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруга — Слава", "en": "Spouse — Slava" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
-      "bio": { "ru": "<p>Представитель первой половины XIX века, сын Волька Иосела.</p>", "en": "<p>Representative of the first half of the 19th century, son of Volka Iosel.</p>" },
-      "familyText": {
-        "ru": [ "<strong>Отец:</strong> Волька Иосел Смагаринский", "<strong>Мать:</strong> Фейга Рохля Смагаринская", "<strong>Супруга:</strong> Слава Смагаринская", "<strong>Дети:</strong> Шевель Залманов Смагаринский" ],
-        "en": [ "<strong>Father:</strong> Volka Iosel Smagarinsky", "<strong>Mother:</strong> Feyga Rokhlya Smagarinskaya", "<strong>Spouse:</strong> Slava Smagarinskaya", "<strong>Children:</strong> Shevel Zalmanov Smagarinsky" ]
-      },
-      "documents": [],
-      "links": { "parents": ["person_volka_1792", "person_feyga_1794"], "spouse": "person_slava_1822", "children": ["person_shevel_1848"] }
+      "links": { "parents": ["person_volka_1792", "person_feyga_1794"], "spouse": "person_slava_1822" }
     },
-
     "person_slava_1822": {
       "isDeceased": true,
       "role": { "ru": "Бабушка Вульфа", "en": "Vulf's Grandmother" },
       "name": { "ru": "Слава Смагаринская", "en": "Slava Smagarinskaya" },
-      "birthName": { "ru": "", "en": "" },
       "years": "1822 — 1890",
-      "photo": "",
-      "photoCaption": { "ru": "", "en": "" },
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруг — Шнеур Залмон Смагаринский", "en": "Spouse — Shneur Zalmon Smagarinsky" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
-      "bio": { "ru": "<p>Дочь Ицко Лейба.</p>", "en": "<p>Daughter of Itsko Leyb.</p>" },
-      "familyText": {
-        "ru": [ "<strong>Отец:</strong> Ицко Лейб", "<strong>Супруг:</strong> Шнеур Залмон Смагаринский", "<strong>Дети:</strong> Шевель Залманов Смагаринский" ],
-        "en": [ "<strong>Father:</strong> Itsko Leyb", "<strong>Spouse:</strong> Shneur Zalmon Smagarinsky", "<strong>Children:</strong> Shevel Zalmanov Smagarinsky" ]
-      },
-      "documents": [],
-      "links": { "spouse": "person_shneur_1821", "children": ["person_shevel_1848"] }
+      "links": { "spouse": "person_shneur_1821" }
     },
-
     "person_volka_1792": {
       "isDeceased": true,
       "role": { "ru": "Прадед Вульфа", "en": "Vulf's Great-Grandfather" },
       "name": { "ru": "Волька Иосел Смагаринский", "en": "Volka Iosel Smagarinsky" },
-      "birthName": { "ru": "", "en": "" },
       "years": "1792 — ?",
-      "photo": "",
-      "photoCaption": { "ru": "", "en": "" },
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруга — Фейга Рохля", "en": "Spouse — Feyga Rokhlya" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
-      "bio": { "ru": "<p>Родился в самом конце XVIII века. Сын Иосела Смагаринского.</p>", "en": "<p>Born at the very end of the 18th century. Son of Iosel Smagarinsky.</p>" },
-      "familyText": {
-        "ru": [ "<strong>Отец:</strong> Иосел Смагаринский", "<strong>Супруга:</strong> Фейга Рохля Смагаринская", "<strong>Дети:</strong> Шнеур Залмон Смагаринский" ],
-        "en": [ "<strong>Father:</strong> Iosel Smagarinsky", "<strong>Spouse:</strong> Feyga Rokhlya Smagarinskaya", "<strong>Children:</strong> Shneur Zalmon Smagarinsky" ]
-      },
-      "documents": [],
-      "links": { "parents": ["person_iosel_1760", null], "spouse": "person_feyga_1794", "children": ["person_shneur_1821"] }
+      "links": { "parents": ["person_iosel_1760", null], "spouse": "person_feyga_1794" }
     },
-
     "person_feyga_1794": {
       "isDeceased": true,
-      "role": { "ru": "Прабабушка Вульфа", "en": "Vulf's Great-Mother" },
-      "name": { "ru": "Фейга Рохля Смагаринская", "en": "Feyga Rokhlya Smagarinskaya" },
-      "birthName": { "ru": "", "en": "" },
+      "role": { "ru": "Прабабушка Вульфа", "en": "Vulf's Great-Grandmother" },
+      "name": { "ru": "Фейга Рохля Смагаринская", "en": "Feyga Rokhlya" },
       "years": "1794 — ?",
-      "photo": "",
-      "photoCaption": { "ru": "", "en": "" },
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Супруг — Волька Иосел Смагаринский", "en": "Spouse — Volka Iosel Smagarinsky" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
-      "bio": { "ru": "<p>Дочь Ицко.</p>", "en": "<p>Daughter of Itsko.</p>" },
-      "familyText": {
-        "ru": [ "<strong>Отец:</strong> Ицко", "<strong>Супруг:</strong> Волька Иосел Смагаринский", "<strong>Дети:</strong> Шнеур Залмон Смагаринский" ],
-        "en": [ "<strong>Father:</strong> Itsko", "<strong>Spouse:</strong> Volka Iosel Smagarinsky", "<strong>Children:</strong> Shneur Zalmon Smagarinsky" ]
-      },
-      "documents": [],
-      "links": { "spouse": "person_volka_1792", "children": ["person_shneur_1821"] }
+      "links": { "spouse": "person_volka_1792" }
     },
-
     "person_iosel_1760": {
       "isDeceased": true,
       "role": { "ru": "Прапрадед Вульфа", "en": "Vulf's Great-Great-Grandfather" },
       "name": { "ru": "Иосел Смагаринский", "en": "Iosel Smagarinsky" },
-      "birthName": { "ru": "", "en": "" },
       "years": "до 1792 — ?",
-      "photo": "",
-      "photoCaption": { "ru": "", "en": "" },
-      "milestones": { "birthPlace": { "ru": "Данные исследуются", "en": "TBD" }, "marriage": { "ru": "Данные исследуются", "en": "TBD" }, "occupation": { "ru": "", "en": "" }, "burial": { "ru": "", "en": "" } },
-      "bio": { "ru": "<p>Старейший известный на данный момент предок рода Смагаринских, отчества которого мы пока не знаем.</p>", "en": "<p>The oldest currently known ancestor of the Smagarinsky family, whose patronymic is yet to be discovered.</p>" },
-      "familyText": {
-        "ru": [ "<strong>Дети:</strong> Волька Иосел Смагаринский" ],
-        "en": [ "<strong>Children:</strong> Volka Iosel Smagarinsky" ]
-      },
-      "documents": [],
-      "links": { "children": ["person_volka_1792"] }
+      "links": {}
     }
   };
 
@@ -654,71 +379,34 @@
   const labels = {
     ru: {
       site_title: "Летопись поколений рода Смагаринских",
-      parents: "Родители",
-      spouse: "Супруг(а)",
-      siblings: "Братья и сёстры",
-      children: "Дети",
-      father: "Отец",
-      mother: "Мать",
-      m_birth: "Место рождения",
-      m_marriage: "Брак",
-      m_occupation: "Род занятий",
-      m_burial: "Место упокоения",
-      m_title: "Важные вехи",
-      fam_title: "Семейный круг",
-      archive_btn: "Открыть архив документов",
-      modal_title: "Архивные свидетельства и сканы",
-      modal_subtitle: "Нажмите на документ, чтобы открыть его оригинал в новой вкладке:",
-      modal_close: "Закрыть"
+      parents: "Родители", spouse: "Супруг(а)", children: "Дети",
+      m_birth: "Место рождения", m_marriage: "Брак", m_occupation: "Род занятий", m_burial: "Место упокоения",
+      m_title: "Важные вехи", fam_title: "Семейный круг", archive_btn: "Открыть архив документов"
     },
     en: {
       site_title: "The Smagarinsky Family Chronicle",
-      parents: "Parents",
-      spouse: "Spouse",
-      siblings: "Siblings",
-      children: "Children",
-      father: "Father",
-      mother: "Mother",
-      m_birth: "Place of Birth",
-      m_marriage: "Marriage",
-      m_occupation: "Occupation",
-      m_burial: "Place of Burial",
-      m_title: "Key Milestones",
-      fam_title: "Family Circle",
-      archive_btn: "Open Document Archive",
-      modal_title: "Archival Records & Scans",
-      modal_subtitle: "Click on a document to open its original scan:",
-      modal_close: "Close"
+      parents: "Parents", spouse: "Spouse", children: "Children",
+      m_birth: "Place of Birth", m_marriage: "Marriage", m_occupation: "Occupation", m_burial: "Place of Burial",
+      m_title: "Key Milestones", fam_title: "Family Circle", archive_btn: "Open Document Archive"
     }
   }; 
 
   // ==========================================
-  // 3. ФУНКЦИЯ ОТРИСОВКИ ПРОФИЛЯ ПРЕДКА
+  // 3. ФУНКЦИЯ ОТРИСОВКИ ПРОФИЛЯ ПРЕДКА СНИЗУ
   // ==========================================
- function renderProfile() {
+  function renderProfile() {
     const person = db[currentId];
     if (!person) return;
 
-    // Принудительно открываем блок главной карточки, если он был скрыт крестиком
     document.querySelector('main').classList.remove('hidden');
 
-    // 1. Автоподбор силуэта-заглушки по полу
     let photoUrl = "photos/male.jpg";
-    if (idIsFemale(currentId) || (person.role && person.role.ru && (
-        person.role.ru.includes("Мать") || 
-        person.role.ru.includes("Бабушка") || 
-        person.role.ru.includes("Хранительница") || 
-        person.role.ru.includes("Прабабушка")
-    ))) {
+    if (idIsFemale(currentId)) {
         photoUrl = "photos/female.jpg";
     }
 
     if (person.photo && person.photo.trim() !== "") {
-        if (person.photo.startsWith("photos/") || person.photo.startsWith("documents/")) {
-            photoUrl = person.photo;
-        } else {
-            photoUrl = "photos/" + person.photo;
-        }
+        photoUrl = (person.photo.startsWith("photos/") || person.photo.startsWith("documents/")) ? person.photo : "photos/" + person.photo;
     }
 
     const imgEl = document.getElementById("person-photo");
@@ -730,32 +418,14 @@
     const ribbonContainer = document.getElementById("photo-ribbon");
     if (ribbonContainer) ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
 
-    if (document.getElementById("person-role")) {
-        document.getElementById("person-role").innerText = (person.role && person.role[currentLang]) || "";
-    }
-    if (document.getElementById("person-name")) {
-        document.getElementById("person-name").innerText = (person.name && person.name[currentLang]) || "";
-    }
+    if (document.getElementById("person-role")) document.getElementById("person-role").innerText = (person.role && person.role[currentLang]) || "";
+    if (document.getElementById("person-name")) document.getElementById("person-name").innerText = (person.name && person.name[currentLang]) || "";
 
-    const birthNameEl = document.getElementById("person-birth-name");
-    if (birthNameEl) {
-        if (person.birthName && person.birthName[currentLang]) {
-          birthNameEl.innerText = person.birthName[currentLang];
-          birthNameEl.style.display = "block";
-        } else {
-          birthNameEl.style.display = "none";
-        }
-    }
-
-    if (document.getElementById("person-years")) {
-        document.getElementById("person-years").innerText = person.years || "";
-    }
-
+    if (document.getElementById("person-years")) document.getElementById("person-years").innerText = person.years || "";
     if (document.getElementById("milestones-title")) document.getElementById("milestones-title").innerText = labels[currentLang].m_title;
     if (document.getElementById("family-title")) document.getElementById("family-title").innerText = labels[currentLang].fam_title;
     if (document.getElementById("archive-btn-text")) document.getElementById("archive-btn-text").innerText = labels[currentLang].archive_btn;
 
-    // Наполнение таблицы вех
     const table = document.getElementById("milestones-table");
     if (table) {
         const ms = person.milestones || {};
@@ -767,9 +437,7 @@
         `;
     }
 
-    if (document.getElementById("person-bio")) {
-        document.getElementById("person-bio").innerHTML = (person.bio && person.bio[currentLang]) || "";
-    }
+    if (document.getElementById("person-bio")) document.getElementById("person-bio").innerHTML = (person.bio && person.bio[currentLang]) || "";
 
     const familyList = document.getElementById("family-list");
     if (familyList) {
@@ -783,33 +451,17 @@
         }
     }
 
-    // Полное и корректное управление отображением архивной секции
     const docSection = document.getElementById("documents-section");
     if (docSection) {
-        if (person.documents && person.documents.length > 0) {
-            docSection.style.display = "block";
-        } else {
-            docSection.style.display = "none";
-        }
+        docSection.style.display = (person.documents && person.documents.length > 0) ? "block" : "none";
     }
-
-    // === ДОБАВЛЕНО: Принудительный показ крестика на его новом привычном месте ===
-    const closeBtn = document.getElementById("close-profile-btn");
-    if (closeBtn) {
-        closeBtn.style.display = "block";
-    }
-}
-
-  // Вспомогательная проверка пола по ID
-  function idIsFemale(id) {
-    const lower = id.toLowerCase();
-    return lower.includes("blyuma") || lower.includes("fira") || lower.includes("fanny") || lower.includes("nela") || lower.includes("frida") || lower.includes("ela") || lower.includes("larisa") || lower.includes("haya") || lower.includes("feyga") || lower.includes("slava");
   }
 
- // ==========================================
-  // 4. АВТОМАТИЧЕСКИЙ ПЕРЕВОД ДАННЫХ ДЛЯ FAMILYTREE.JS
-  // ==========================================
-  // Эта функция сама превращает вашу базу данных db в формат для красивого дерева
+  function idIsFemale(id) {
+    const lower = id.toLowerCase();
+    return lower.includes("blyuma") || lower.includes("haya") || lower.includes("feyga") || lower.includes("slava") || lower.includes("female");
+  }
+
   // ==========================================
   // 4. АВТОМАТИЧЕСКИЙ ПЕРЕВОД ДАННЫХ ДЛЯ FAMILYTREE.JS
   // ==========================================
@@ -824,32 +476,21 @@
         title: person.years || ""
       };
 
-      // 1. Привязка фотографии
       if (person.photo && person.photo.trim() !== "") {
         let cleanPhoto = person.photo.trim();
-        node.photo = (cleanPhoto.startsWith("photos/") || cleanPhoto.startsWith("documents/")) 
-          ? cleanPhoto 
-          : "photos/" + cleanPhoto;
+        node.photo = (cleanPhoto.startsWith("photos/") || cleanPhoto.startsWith("documents/")) ? cleanPhoto : "photos/" + cleanPhoto;
       } else {
-        // Если фото нет, ставим стандартную заглушку (проверяем по букве 'f' или слову 'blyuma'/'olya')
-        const isFemale = id.toLowerCase().includes('female') || id.toLowerCase().includes('blyuma') || id.toLowerCase().includes('olya');
-        node.photo = isFemale ? "photos/female.jpg" : "photos/male.jpg";
+        node.photo = idIsFemale(id) ? "photos/female.jpg" : "photos/male.jpg";
       }
 
-      // 2. Настраиваем семейные связи (Перевод под стандарты Balkan)
       if (person.links) {
-        // Супруги (pids)
         if (person.links.spouse) {
           node.pids = Array.isArray(person.links.spouse) ? person.links.spouse : [person.links.spouse];
         }
-        
-        // Родители (father и mother)
         if (person.links.parents && Array.isArray(person.links.parents)) {
           person.links.parents.forEach(pId => {
-            if (pId) {
-              // Определяем, кто мать, а кто отец
-              const isMother = pId.toLowerCase().includes('female') || pId.toLowerCase().includes('blyuma') || pId.toLowerCase().includes('olya');
-              if (isMother) {
+            if (pId && db[pId]) {
+              if (idIsFemale(pId)) {
                 node.mother = pId;
               } else {
                 node.father = pId;
@@ -859,6 +500,17 @@
         }
       }
       
+      // Дополнительный поиск связей снизу вверх (если у детей прописаны родители)
+      Object.keys(db).forEach(childId => {
+        const child = db[childId];
+        if (child.links && child.links.parents && child.links.parents.includes(id)) {
+          if (idIsFemale(id)) {
+            node.pids = node.pids || [];
+            child.links.parents.forEach(p => { if(p !== id && !node.pids.includes(p)) node.pids.push(p); });
+          }
+        }
+      });
+
       treeData.push(node);
     });
     
@@ -866,36 +518,32 @@
   }
 
   // ==========================================
-  // 5. ИНИЦИАЛИЗАЦИЯ И НАСТРОЙКА ДЕРЕВА
+  // 5. ИНИЦИАЛИЗАЦИЯ И СВЯЗЫВАНИЕ ДЕРЕВА
   // ==========================================
   let familyTreeInstance = null;
 
   function drawTree() {
-    // Если дерево уже было нарисовано, полностью очищаем его перед перерисовкой
-    const treeContainer = document.getElementById("tree");
+    const treeContainer = document.getElementById("tree-container-balkan");
     if (!treeContainer) return;
     treeContainer.innerHTML = "";
 
-    // Создаем интерактивное дерево
+    // Создаем интерактивный холст
     familyTreeInstance = new FamilyTree(treeContainer, {
-      mouseScroller: { zoom: true, scale: 0.5 }, // Включаем плавный зум колесиком
+      mouseScroller: { zoom: true, scale: 0.5 },
       nodeBinding: {
         field_0: "name",
         field_1: "title",
         img_0: "photo"
-      },
-      // Настраиваем внешний вид карточек в дереве
-   
+      }
     });
 
-    // При клике на родственника в дереве — открываем его большую нижнюю карточку
+    // Нажатие на карточку в дереве открывает анкету снизу
     familyTreeInstance.on('click', function (sender, args) {
       currentId = args.node.id;
       renderProfile();
-      return false; // отменяем встроенное всплывающее окошко Balkan, так как у нас есть своё красивое
+      return false; // отменяем внутреннее всплывающее окно Balkan
     });
 
-    // Загружаем автоматически переведенные данные
     const dataForTree = getTreeData();
     familyTreeInstance.load(dataForTree);
   }
@@ -937,7 +585,6 @@
                         currentId = id;
                         renderProfile();
                         if (familyTreeInstance) {
-                            // Центрируем дерево на выбранном из поиска человеке
                             familyTreeInstance.center(id);
                         }
                         resultsContainer.classList.add("hidden");
@@ -967,7 +614,7 @@
   window.clearSearch = clearSearch;
 
   // ==========================================
-  // 7. СИСТЕМА УПРАВЛЕНИЯ АРХИВОМ И ЯЗЫКАМИ
+  // 7. УПРАВЛЕНИЕ АРХИВАМИ И ЯЗЫКОМ
   // ==========================================
   function setLanguage(lang) {
     currentLang = lang;
@@ -980,84 +627,57 @@
     const btnEn = document.getElementById("btn-en");
 
     if (lang === 'ru') {
-        if (btnRu) { btnRu.className = "px-3 py-1 bg-stone-800 text-white rounded shadow-sm cursor-pointer"; }
-        if (btnEn) { btnEn.className = "px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 cursor-pointer"; }
-        
+        if (btnRu) btnRu.className = "px-3 py-1 bg-stone-800 text-white rounded shadow-sm cursor-pointer";
+        if (btnEn) btnEn.className = "px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 cursor-pointer";
         const searchInput = document.getElementById("tree-search");
         if (searchInput) searchInput.placeholder = "Поиск предка (например, Вульф)...";
     } else {
-        if (btnEn) { btnEn.className = "px-3 py-1 bg-stone-800 text-white rounded shadow-sm cursor-pointer"; }
-        if (btnRu) { btnRu.className = "px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 cursor-pointer"; }
-        
+        if (btnEn) btnEn.className = "px-3 py-1 bg-stone-800 text-white rounded shadow-sm cursor-pointer";
+        if (btnRu) btnRu.className = "px-3 py-1 bg-stone-200 text-stone-700 rounded hover:bg-stone-400 cursor-pointer";
         const searchInput = document.getElementById("tree-search");
         if (searchInput) searchInput.placeholder = "Search ancestor (e.g., Vulf)...";
     }
 
-    if (typeof renderProfile === 'function') renderProfile();
-    if (typeof drawTree === 'function') drawTree();
-}
+    renderProfile();
+    drawTree();
+  }
   window.setLanguage = setLanguage;
 
   function openArchiveModal() {
-    let activeId = typeof currentId !== 'undefined' ? currentId : null;
-    if (!activeId && typeof selectedPersonId !== 'undefined') activeId = selectedPersonId;
-    if (!activeId) activeId = "person_blyuma_1895";
-
-    const person = db[activeId];
+    const person = db[currentId];
     if (!person) return;
 
     const archiveModal = document.getElementById("archive-modal");
-    if (!archiveModal) return;
-
-    const instructionText = archiveModal.querySelector("p") || archiveModal.querySelector(".modal-content p");
-    let docList = archiveModal.querySelector(".modal-docs-container");
-    
-    if (!docList) {
-        docList = document.createElement("ul");
-        docList.className = "modal-docs-container mt-4 max-h-60 overflow-y-auto px-4";
-        
-        if (instructionText) {
-            instructionText.parentNode.insertBefore(docList, instructionText.nextSibling);
-        } else {
-            const contentBlock = archiveModal.querySelector(".bg-white") || archiveModal.querySelector("div > div");
-            if (contentBlock) contentBlock.appendChild(docList);
-        }
-    }
+    const docList = document.getElementById("modal-documents-list");
+    if (!archiveModal || !docList) return;
 
     docList.innerHTML = "";
 
     if (person.documents && person.documents.length > 0) {
         person.documents.forEach(doc => {
-            const li = document.createElement("li");
-            li.className = "py-2 border-b border-stone-200/60 list-none text-left";
+            const div = document.createElement("div");
+            div.className = "bg-white p-4 border border-stone-300 rounded-lg shadow-sm hover:shadow transition flex flex-col justify-between items-start";
             
-            const lang = typeof currentLang !== 'undefined' ? currentLang : 'ru';
-            let displayName = (doc.title && doc.title[lang]) ? doc.title[lang] : "";
-            
+            let displayName = (doc.label && doc.label[currentLang]) ? doc.label[currentLang] : "";
             if (!displayName) {
-                if (doc.label && doc.label[lang]) {
-                    displayName = doc.label[lang];
-                } else {
-                    const fileNameWithExt = doc.url.substring(doc.url.lastIndexOf('/') + 1);
-                    const fileName = fileNameWithExt.substring(0, fileNameWithExt.lastIndexOf('.'));
-                    displayName = fileName.replace(/_/g, ' ');
-                }
+                const fileNameWithExt = doc.url.substring(doc.url.lastIndexOf('/') + 1);
+                displayName = fileNameWithExt.substring(0, fileNameWithExt.lastIndexOf('.')).replace(/_/g, ' ');
             }
 
-            li.innerHTML = `
-                <a href="${doc.url}" target="_blank" class="text-amber-950 hover:underline font-medium flex items-center gap-2 text-base" style="font-family: 'EB Garamond', serif; text-decoration: none; color: #451a03;">
-                    <span>📄</span> ${displayName}
+            div.innerHTML = `
+                <span class="text-xs text-stone-400 font-mono mb-2 block">📄 ДОКУМЕНТ</span>
+                <p class="text-stone-800 font-medium text-sm font-serif mb-4 flex-grow">${displayName}</p>
+                <a href="${doc.url}" target="_blank" class="text-amber-800 hover:text-amber-950 underline text-xs font-semibold mt-auto flex items-center gap-1">
+                   Смотреть оригинал ↗
                 </a>
             `;
-            docList.appendChild(li);
+            docList.appendChild(div);
         });
-    } else {
-        docList.innerHTML = `<p class="text-center text-stone-500 py-4 font-serif">Документы не найдены.</p>`;
     }
 
     archiveModal.classList.remove("hidden");
-}
-window.openArchiveModal = openArchiveModal;
+  }
+  window.openArchiveModal = openArchiveModal;
 
   function closeArchiveModal(event) {
     if (event) event.stopPropagation();
@@ -1066,7 +686,7 @@ window.openArchiveModal = openArchiveModal;
   }
   window.closeArchiveModal = closeArchiveModal;
 
-  // Запуск приложения
+  // Первичный запуск
   setLanguage(currentLang);
 </script>
 </body>
