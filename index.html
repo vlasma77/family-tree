@@ -806,133 +806,102 @@
     return lower.includes("blyuma") || lower.includes("fira") || lower.includes("fanny") || lower.includes("nela") || lower.includes("frida") || lower.includes("ela") || lower.includes("larisa") || lower.includes("haya") || lower.includes("feyga") || lower.includes("slava");
   }
 
+ // ==========================================
+  // 4. АВТОМАТИЧЕСКИЙ ПЕРЕВОД ДАННЫХ ДЛЯ FAMILYTREE.JS
   // ==========================================
-  // 4. ГЕНЕРАЦИЯ ДЕРЕВА И СВЯЗЕЙ С ЛИНИЯМИ
+  // Эта функция сама превращает вашу базу данных db в формат для красивого дерева
   // ==========================================
- function drawTree() {
-    const container = document.getElementById('family-tree');
-    if (!container) return;
-
-    container.innerHTML = '';
-    const person = db[currentId];
-    if (!person) return;
-
-    // Слой родителей
-    const parentsRow = document.createElement('div');
-    parentsRow.className = "flex justify-center gap-16 relative w-full z-10";
+  // 4. АВТОМАТИЧЕСКИЙ ПЕРЕВОД ДАННЫХ ДЛЯ FAMILYTREE.JS
+  // ==========================================
+  function getTreeData() {
+    const treeData = [];
     
-    let hasParents = false;
-    if (person.links && person.links.parents) {
-      const parentsArray = Array.isArray(person.links.parents) ? person.links.parents : [person.links.parents];
-      parentsArray.forEach(pId => {
-        if (db[pId]) {
-          parentsRow.appendChild(createHtmlCard(pId));
-          hasParents = true;
-        }
-      });
-    }
-    if (hasParents) {
-      container.appendChild(parentsRow);
-      
-      // Вертикальная линия вниз от родителей к центральному узлу
-      const lineDown = document.createElement('div');
-      lineDown.className = "tree-line-v";
-      lineDown.style.height = "26px";
-      lineDown.style.top = "66px"; 
-      container.appendChild(lineDown);
-    }
-
-    // Центральный слой (Фокусный предок + Супруг)
-    const centerRow = document.createElement('div');
-    centerRow.className = "flex justify-center gap-8 items-center relative w-full z-10";
-    centerRow.appendChild(createHtmlCard(currentId, true));
-
-    if (person.links && person.links.spouse) {
-      const spouseArray = Array.isArray(person.links.spouse) ? person.links.spouse : [person.links.spouse];
-      spouseArray.forEach(sId => {
-        if (db[sId]) {
-          const line = document.createElement('div');
-          line.className = "w-8 h-[2px] bg-amber-700 border-t-2 border-amber-600 shrink-0";
-          centerRow.appendChild(line);
-          centerRow.appendChild(createHtmlCard(sId));
-        }
-      });
-    }
-    container.appendChild(centerRow);
-
-    // Слой детей
-    const childrenRow = document.createElement('div');
-    childrenRow.className = "flex justify-center gap-16 relative w-full z-10";
-    
-    let hasChildren = false;
     Object.keys(db).forEach(id => {
-      const potentialChild = db[id];
-      if (potentialChild.links && potentialChild.links.parents) {
-        const cParents = Array.isArray(potentialChild.links.parents) ? potentialChild.links.parents : [potentialChild.links.parents];
-        if (cParents.includes(currentId)) {
-          childrenRow.appendChild(createHtmlCard(id));
-          hasChildren = true;
+      const person = db[id];
+      const node = {
+        id: id,
+        name: person.name[currentLang] || person.name['ru'] || "",
+        title: person.years || ""
+      };
+
+      // 1. Привязка фотографии
+      if (person.photo && person.photo.trim() !== "") {
+        let cleanPhoto = person.photo.trim();
+        node.photo = (cleanPhoto.startsWith("photos/") || cleanPhoto.startsWith("documents/")) 
+          ? cleanPhoto 
+          : "photos/" + cleanPhoto;
+      } else {
+        // Если фото нет, ставим стандартную заглушку (проверяем по букве 'f' или слову 'blyuma'/'olya')
+        const isFemale = id.toLowerCase().includes('female') || id.toLowerCase().includes('blyuma') || id.toLowerCase().includes('olya');
+        node.photo = isFemale ? "photos/female.jpg" : "photos/male.jpg";
+      }
+
+      // 2. Настраиваем семейные связи (Перевод под стандарты Balkan)
+      if (person.links) {
+        // Супруги (pids)
+        if (person.links.spouse) {
+          node.pids = Array.isArray(person.links.spouse) ? person.links.spouse : [person.links.spouse];
+        }
+        
+        // Родители (father и mother)
+        if (person.links.parents && Array.isArray(person.links.parents)) {
+          person.links.parents.forEach(pId => {
+            if (pId) {
+              // Определяем, кто мать, а кто отец
+              const isMother = pId.toLowerCase().includes('female') || pId.toLowerCase().includes('blyuma') || pId.toLowerCase().includes('olya');
+              if (isMother) {
+                node.mother = pId;
+              } else {
+                node.father = pId;
+              }
+            }
+          });
         }
       }
-    });
-
-    if (hasChildren) {
-      // Вертикальная линия вниз к детям
-      const lineToChildren = document.createElement('div');
-      lineToChildren.className = "tree-line-v";
-      lineToChildren.style.height = "26px";
-      lineToChildren.style.bottom = "66px";
-      container.appendChild(lineToChildren);
       
-      container.appendChild(childrenRow);
-    }
-  }
-
-  function createHtmlCard(id, isMain = false) {
-    const person = db[id];
-    const card = document.createElement('div');
-    
-    card.className = `flex items-center gap-3 p-2.5 w-60 bg-white border rounded-lg shadow-sm cursor-pointer transition-all hover:shadow-md hover:-translate-y-0.5 select-none ${
-      isMain ? 'border-amber-600 ring-4 ring-amber-700/20 bg-amber-50/50' : 'border-stone-300'
-    }`;
-    
-    let nodeImage = idIsFemale(id) ? "photos/female.jpg" : "photos/male.jpg";
-    if (person.photo && person.photo.trim() !== "") {
-      let cleanPhoto = person.photo.trim();
-      nodeImage = (cleanPhoto.startsWith("photos/") || cleanPhoto.startsWith("documents/")) ? cleanPhoto : "photos/" + cleanPhoto;
-    }
-
-    let sideColor = idIsFemale(id) ? "bg-pink-400" : "bg-sky-400";
-    if (person.isDeceased) sideColor = "bg-stone-400";
-
-    card.innerHTML = `
-      <div class="w-1 h-10 ${sideColor} rounded-full shrink-0"></div>
-      <img src="${nodeImage}" class="w-10 h-10 rounded-md object-cover border border-stone-200 shrink-0" alt="" onerror="this.src='${idIsFemale(id) ? 'photos/female.jpg' : 'photos/male.jpg'}'">
-      <div class="flex flex-col min-w-0">
-        <span class="font-semibold text-stone-900 truncate text-sm" style="font-family: 'Cormorant Garamond', serif;">
-          ${person.name[currentLang] || ''}
-        </span>
-        <span class="text-[11px] text-stone-500 font-mono leading-none mt-0.5">${person.years || ''}</span>
-      </div>
-    `;
-
-    card.addEventListener('click', (e) => {
-      e.stopPropagation();
-      selectNodeTree(id);
+      treeData.push(node);
     });
-
-    return card;
+    
+    return treeData;
   }
-
-  function selectNodeTree(id) {
-    currentId = id;
-    renderProfile(); 
-    drawTree();
-  }
-  window.selectNodeTree = selectNodeTree;
 
   // ==========================================
-  // 5. СИСТЕМА УМНОГО ПОИСКА
+  // 5. ИНИЦИАЛИЗАЦИЯ И НАСТРОЙКА ДЕРЕВА
+  // ==========================================
+  let familyTreeInstance = null;
+
+  function drawTree() {
+    // Если дерево уже было нарисовано, полностью очищаем его перед перерисовкой
+    const treeContainer = document.getElementById("tree");
+    if (!treeContainer) return;
+    treeContainer.innerHTML = "";
+
+    // Создаем интерактивное дерево
+    familyTreeInstance = new FamilyTree(treeContainer, {
+      mouseScroller: { zoom: true, scale: 0.5 }, // Включаем плавный зум колесиком
+      nodeBinding: {
+        field_0: "name",
+        field_1: "title",
+        img_0: "photo"
+      },
+      // Настраиваем внешний вид карточек в дереве
+   
+    });
+
+    // При клике на родственника в дереве — открываем его большую нижнюю карточку
+    familyTreeInstance.on('click', function (sender, args) {
+      currentId = args.node.id;
+      renderProfile();
+      return false; // отменяем встроенное всплывающее окошко Balkan, так как у нас есть своё красивое
+    });
+
+    // Загружаем автоматически переведенные данные
+    const dataForTree = getTreeData();
+    familyTreeInstance.load(dataForTree);
+  }
+
+  // ==========================================
+  // 6. СИСТЕМА УМНОГО ПОИСКА
   // ==========================================
   document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("tree-search");
@@ -963,8 +932,14 @@
                     const row = document.createElement("div");
                     row.className = "px-3 py-2 hover:bg-amber-50 cursor-pointer text-sm text-stone-800 transition font-serif flex justify-between items-center";
                     row.innerHTML = `<div><strong>${p.name[currentLang]}</strong> <span class="text-xs text-stone-500 font-mono ml-2">${p.years || ''}</span></div><div class="text-[10px] uppercase bg-stone-200 text-stone-600 px-1.5 py-0.5 rounded font-sans font-bold">${roleText}</div>`;
+                    
                     row.onclick = () => {
-                        selectNodeTree(id);
+                        currentId = id;
+                        renderProfile();
+                        if (familyTreeInstance) {
+                            // Центрируем дерево на выбранном из поиска человеке
+                            familyTreeInstance.center(id);
+                        }
                         resultsContainer.classList.add("hidden");
                         searchInput.value = "";
                         clearBtn.classList.add("hidden");
@@ -992,12 +967,11 @@
   window.clearSearch = clearSearch;
 
   // ==========================================
-  // 6. СИСТЕМА УПРАВЛЕНИЯ АРХИВОМ И ЯЗЫКАМИ
+  // 7. СИСТЕМА УПРАВЛЕНИЯ АРХИВОМ И ЯЗЫКАМИ
   // ==========================================
   function setLanguage(lang) {
     currentLang = lang;
 
-    // ИСПРАВЛЕНО: Элемент заголовок теперь успешно находит свой ID
     const mainTitle = document.getElementById("main-title");
     if (mainTitle) {
         mainTitle.innerText = lang === 'ru' ? labels.ru.site_title : labels.en.site_title;
@@ -1035,29 +1009,21 @@
     const archiveModal = document.getElementById("archive-modal");
     if (!archiveModal) return;
 
-    // Ищем именно центральный белый блок, где написана инструкция
-    // Находим text инструкции, чтобы вставить список строго ПОД него
     const instructionText = archiveModal.querySelector("p") || archiveModal.querySelector(".modal-content p");
-    
-    // Проверяем, создавали ли мы уже правильный список ранее, чтобы не дублировать его
     let docList = archiveModal.querySelector(".modal-docs-container");
     
     if (!docList) {
-        // Если списка еще нет, создаем его с красивыми внутренними отступами
         docList = document.createElement("ul");
         docList.className = "modal-docs-container mt-4 max-h-60 overflow-y-auto px-4";
         
         if (instructionText) {
-            // Вставляем список в HTML сразу ПОСЛЕ инструкции внутри белого блока
             instructionText.parentNode.insertBefore(docList, instructionText.nextSibling);
         } else {
-            // Запасной вариант: если инструкцию не нашли, ищем внутренний контейнер
             const contentBlock = archiveModal.querySelector(".bg-white") || archiveModal.querySelector("div > div");
             if (contentBlock) contentBlock.appendChild(docList);
         }
     }
 
-    // Очищаем список перед заполнением
     docList.innerHTML = "";
 
     if (person.documents && person.documents.length > 0) {
@@ -1069,7 +1035,6 @@
             let displayName = (doc.title && doc.title[lang]) ? doc.title[lang] : "";
             
             if (!displayName) {
-                // Пытаемся взять имя из doc.label, если структуры .title нет (как в карточке Вульфа)
                 if (doc.label && doc.label[lang]) {
                     displayName = doc.label[lang];
                 } else {
@@ -1093,6 +1058,7 @@
     archiveModal.classList.remove("hidden");
 }
 window.openArchiveModal = openArchiveModal;
+
   function closeArchiveModal(event) {
     if (event) event.stopPropagation();
     const archiveModal = document.getElementById("archive-modal");
@@ -1100,56 +1066,8 @@ window.openArchiveModal = openArchiveModal;
   }
   window.closeArchiveModal = closeArchiveModal;
 
-// ==========================================
-// 7. ИНТЕРАКТИВНОСТЬ (ЗУМ И ПЕРЕТАСКИВАНИЕ ХОЛСТА)
-// ==========================================
-const viewport = document.getElementById('tree-viewport');
-const el = document.getElementById('family-tree');
-let scale = 1, isDragging = false, startX, startY, translateX = 0, translateY = 0;
-
-if (viewport && el) {
-    el.style.transformOrigin = 'center center';
-
-    viewport.addEventListener('wheel', (e) => {
-        e.preventDefault();
-        const zoomSpeed = 0.05;
-        if (e.deltaY < 0) {
-            scale = Math.min(scale + zoomSpeed, 1.5);
-        } else {
-            scale = Math.max(scale - zoomSpeed, 0.6);
-        }
-        updateTransform();
-    }, { passive: false });
-
-    viewport.addEventListener('mousedown', (e) => {
-        if (e.target.closest('.cursor-pointer') || e.target.closest('input')) return;
-        isDragging = true;
-        viewport.style.cursor = 'grabbing';
-        startX = e.clientX - translateX;
-        startY = e.clientY - translateY;
-    });
-
-    window.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-        translateX = e.clientX - startX;
-        translateY = e.clientY - startY;
-        updateTransform();
-    });
-
-    window.addEventListener('mouseup', () => {
-        isDragging = false;
-        if (viewport) viewport.style.cursor = 'grab';
-    });
-}
-
-function updateTransform() {
-    if (el) {
-        el.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-    }
-}
-
-// Запуск приложения
-setLanguage(currentLang);
+  // Запуск приложения
+  setLanguage(currentLang);
 </script>
 </body>
 </html>
