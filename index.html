@@ -465,6 +465,9 @@
   // ==========================================
   // 4. АВТОМАТИЧЕСКИЙ ПЕРЕВОД ДАННЫХ ДЛЯ FAMILYTREE.JS
   // ==========================================
+  // ==========================================
+  // 4. АВТОМАТИЧЕСКИЙ ПЕРЕВОД ДАННЫХ ДЛЯ FAMILYTREE.JS
+  // ==========================================
   function getTreeData() {
     const treeData = [];
     
@@ -476,12 +479,18 @@
         title: person.years || ""
       };
 
+      // БЕЗОПАСНАЯ ПРОВЕРКА ФОТОГРАФИИ
+      let photoUrl = idIsFemale(id) ? "photos/female.jpg" : "photos/male.jpg";
+      
       if (person.photo && person.photo.trim() !== "") {
         let cleanPhoto = person.photo.trim();
-        node.photo = (cleanPhoto.startsWith("photos/") || cleanPhoto.startsWith("documents/")) ? cleanPhoto : "photos/" + cleanPhoto;
-      } else {
-        node.photo = idIsFemale(id) ? "photos/female.jpg" : "photos/male.jpg";
+        photoUrl = (cleanPhoto.startsWith("photos/") || cleanPhoto.startsWith("documents/")) 
+          ? cleanPhoto 
+          : "photos/" + cleanPhoto;
       }
+      
+      // Напрямую передаем путь. Если браузер выдаст 404, дерево все равно отрисуется!
+      node.photo = photoUrl;
 
       if (person.links) {
         if (person.links.spouse) {
@@ -500,7 +509,6 @@
         }
       }
       
-      // Дополнительный поиск связей снизу вверх (если у детей прописаны родители)
       Object.keys(db).forEach(childId => {
         const child = db[childId];
         if (child.links && child.links.parents && child.links.parents.includes(id)) {
