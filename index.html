@@ -8,11 +8,13 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght=0,400;0,600;1,400&family=Playfair+Display:ital,wght=0,600;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght=0,400..800;1,400..800&family=Oranienbaum&family=Playfair+Display:ital,wght=0,400..900;1,400..900&display=swap" rel="stylesheet">
   <style>
     .font-historical {
-      font-family: 'Ruslan Display', serif;
+      font-family: 'Oranienbaum', serif;
       font-weight: normal;
+      letter-spacing: 0.06em; /* Элегантное винтажное расстояние между буквами */
+      text-shadow: 0.5px 0.5px 0px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(0,0,0,0.15);
     }
     body { font-family: 'Cormorant Garamond', Georgia, serif; }
     h1, h2, h3 { font-family: 'Playfair Display', serif; }
@@ -68,9 +70,11 @@
 <body class="bg-stone-300 text-stone-900 min-h-screen flex flex-col justify-between p-4 md:p-8 selection:bg-amber-200">
 
   <header class="max-w-5xl w-full mx-auto flex flex-col sm:flex-row justify-between items-center border-b border-stone-400 pb-4 mb-6 gap-4">
-    <div class="text-center sm:text-left">
-      <h1 id="main-title" class="text-center font-historical text-4xl md:text-5xl my-8 text-stone-800 tracking-wide">
+   <div class="text-center w-full">
+      <h1 id="main-title" class="font-historical text-3xl md:text-5xl my-6 text-stone-850 tracking-wide flex items-center justify-center gap-4">
+        <span class="text-amber-800/30 text-2xl md:text-3xl select-none">❦</span>
         Летопись поколений рода Смагаринских
+        <span class="text-amber-800/30 text-2xl md:text-3xl select-none">❦</span>
       </h1>
     </div>
     <div class="flex gap-2 text-sm font-medium" id="lang-switcher">
@@ -357,7 +361,92 @@
         "spouse": "person_vulf_1898",
         "children": ["person_fima_1919"]
       },
-      "documents": []
+      "documents": [
+            {
+                "url": "documents/person_blyuma_1895/vulf_marriage_1916.jpg",
+                "title": {
+                    "ru": "Бракосочетание Вульфа и Блюмы, 1916 г.",
+                    "en": "Marriage of Vulf and Blyuma, 1916"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/bluma_in_her_youth.mp4",
+                "title": {
+                    "ru": "Блюма в молодости (видеоархив)",
+                    "en": "Blyuma in her youth (video archive)"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/blyuma_beyla_.jpg",
+                "title": {
+                    "ru": "Блюма (Бейла)",
+                    "en": "Blyuma (Beyla)"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/vulf_children_1938.jpg",
+                "title": {
+                    "ru": "Вульф с детьми, 1938 г.",
+                    "en": "Vulf with children, 1938"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/vulf_blyuma_fima_misha.jpg",
+                "title": {
+                    "ru": "Вульф, Блюма, Фима и Миша",
+                    "en": "Vulf, Blyuma, Fima and Misha"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/vulf_blyuma.png",
+                "title": {
+                    "ru": "Вульф и Блюма (портрет)",
+                    "en": "Vulf and Blyuma (portrait)"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/vulf_with_blyuma_birobidzhan.jpg",
+                "title": {
+                    "ru": "Вульф с Блюмой в Биробиджане",
+                    "en": "Vulf with Blyuma in Birobidzhan"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/vulf_with_blyuma_time_unknown.jpg",
+                "title": {
+                    "ru": "Вульф и Блюма (период неизвестен)",
+                    "en": "Vulf and Blyuma (date unknown)"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/blyuma_with_her_daughters_(sonya_on_the_left_mira_on_the_right)_birobidzhan_1950_1960.jpg",
+                "title": {
+                    "ru": "Блюма с дочерьми (Соня слева, Мира справа), Биробиджан, 1950-1960 гг.",
+                    "en": "Blyuma with her daughters (Sonya on the left, Mira on the right), Birobidzhan, 1950-1960"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/blyuma_69_years_old.jpg",
+                "title": {
+                    "ru": "Блюма, 69 лет",
+                    "en": "Blyuma, 69 years old"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png",
+                "title": {
+                    "ru": "Дом в Биробиджане (справа внучка Люда, дочь Миры)",
+                    "en": "The house in Birobidzhan (on the right is granddaughter Lyuda, daughter of Mira)"
+                }
+            },
+            {
+                "url": "documents/person_blyuma_1895/blyuma's_grave_at_the_birobidzhan_cemetery.jpg",
+                "title": {
+                    "ru": "Могила Блюмы на кладбище в Биробиджане",
+                    "en": "Blyuma's grave at the Birobidzhan cemetery"
+                }
+            }
+        ]
     },
 
     "person_fima_1919": {
