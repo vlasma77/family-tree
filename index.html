@@ -154,6 +154,9 @@
   </div>
 
   <script>
+    // Настройки по умолчанию (Вставляем сюда!)
+  let currentId = "person_vulf_1898";
+  let currentLang = "ru";
   // ==========================================
   // 1. ПОЛНАЯ БАЗА ДАННЫХ РОДА СМАГАРИНСКИХ
   // ==========================================
@@ -490,8 +493,7 @@
   // ==========================================
   // 2. ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ СОСТОЯНИЯ
   // ==========================================
-  let currentId = "person_vulf_1898";
-  let currentLang = "ru";
+ 
 
   // ==========================================
   // 3. ОБЪЕКТ С ДВУЯЗЫЧНЫМИ ПЕРЕВОДАМИ
@@ -544,9 +546,14 @@
     const person = db[currentId];
     if (!person) return;
 
-    // 1. Автоподбор силуэта-заглушки по полу
+    // 1. Автоподбор силуэта-заглушки по полу (БЕЗОПАСНЫЙ)
     let photoUrl = "photos/male.jpg";
-    if (idIsFemale(currentId) || (person.role && (person.role.ru.includes("Мать") || person.role.ru.includes("Бабушка") || person.role.ru.includes("Хранительница") || person.role.ru.includes("Прабабушка")))) {
+    if (idIsFemale(currentId) || (person.role && person.role.ru && (
+        person.role.ru.includes("Мать") || 
+        person.role.ru.includes("Бабушка") || 
+        person.role.ru.includes("Хранительница") || 
+        person.role.ru.includes("Прабабушка")
+    ))) {
         photoUrl = "photos/female.jpg";
     }
 
@@ -569,8 +576,13 @@
     const ribbonContainer = document.getElementById("photo-ribbon");
     if (ribbonContainer) ribbonContainer.className = person.isDeceased ? "mourning-ribbon" : "";
 
-    if (document.getElementById("person-role")) document.getElementById("person-role").innerText = person.role[currentLang] || "";
-    if (document.getElementById("person-name")) document.getElementById("person-name").innerText = person.name[currentLang] || "";
+    // Безопасно заполняем роль и имя
+    if (document.getElementById("person-role")) {
+        document.getElementById("person-role").innerText = (person.role && person.role[currentLang]) || "";
+    }
+    if (document.getElementById("person-name")) {
+        document.getElementById("person-name").innerText = (person.name && person.name[currentLang]) || "";
+    }
 
     const birthNameEl = document.getElementById("person-birth-name");
     if (birthNameEl) {
@@ -582,33 +594,42 @@
         }
     }
 
-    document.getElementById("person-years").innerText = person.years || "";
-
-    document.getElementById("milestones-title").innerText = labels[currentLang].m_title;
-    document.getElementById("family-title").innerText = labels[currentLang].fam_title;
-    document.getElementById("archive-btn-text").innerText = labels[currentLang].archive_btn;
-
-    // Наполнение таблицы вех
-    const table = document.getElementById("milestones-table");
-    table.innerHTML = `
-      <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600 w-1/3">${labels[currentLang].m_birth}:</td><td class="py-1.5">${person.milestones.birthPlace ? person.milestones.birthPlace[currentLang] : "—"}</td></tr>
-      <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_marriage}:</td><td class="py-1.5">${person.milestones.marriage ? person.milestones.marriage[currentLang] : "—"}</td></tr>
-      <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_occupation}:</td><td class="py-1.5 font-medium text-amber-950">${person.milestones.occupation ? person.milestones.occupation[currentLang] : "—"}</td></tr>
-      <tr><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_burial}:</td><td class="py-1.5">${person.milestones.burial ? person.milestones.burial[currentLang] : "—"}</td></tr>
-    `;
-
-    document.getElementById("person-bio").innerHTML = person.bio[currentLang] || "";
-
-    const familyList = document.getElementById("family-list");
-    familyList.innerHTML = "";
-    if (person.familyText && person.familyText[currentLang]) {
-      person.familyText[currentLang].forEach(item => {
-        const li = document.createElement("li");
-        li.innerHTML = item;
-        familyList.appendChild(li);
-      });
+    if (document.getElementById("person-years")) {
+        document.getElementById("person-years").innerText = person.years || "";
     }
 
+    if (document.getElementById("milestones-title")) document.getElementById("milestones-title").innerText = labels[currentLang].m_title;
+    if (document.getElementById("family-title")) document.getElementById("family-title").innerText = labels[currentLang].fam_title;
+    if (document.getElementById("archive-btn-text")) document.getElementById("archive-btn-text").innerText = labels[currentLang].archive_btn;
+
+    // Наполнение таблицы вех (С проверкой на существование person.milestones)
+    const table = document.getElementById("milestones-table");
+    if (table) {
+        const ms = person.milestones || {};
+        table.innerHTML = `
+          <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600 w-1/3">${labels[currentLang].m_birth}:</td><td class="py-1.5">${ms.birthPlace ? ms.birthPlace[currentLang] : "—"}</td></tr>
+          <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_marriage}:</td><td class="py-1.5">${ms.marriage ? ms.marriage[currentLang] : "—"}</td></tr>
+          <tr class="border-b border-stone-400/10"><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_occupation}:</td><td class="py-1.5 font-medium text-amber-950">${ms.occupation ? ms.occupation[currentLang] : "—"}</td></tr>
+          <tr><td class="py-1.5 font-semibold text-stone-600">${labels[currentLang].m_burial}:</td><td class="py-1.5">${ms.burial ? ms.burial[currentLang] : "—"}</td></tr>
+        `;
+    }
+
+    if (document.getElementById("person-bio")) {
+        document.getElementById("person-bio").innerHTML = (person.bio && person.bio[currentLang]) || "";
+    }
+
+    const familyList = document.getElementById("family-list");
+    if (familyList) {
+        familyList.innerHTML = "";
+        if (person.familyText && person.familyText[currentLang]) {
+          person.familyText[currentLang].forEach(item => {
+            const li = document.createElement("li");
+            li.innerHTML = item;
+            familyList.appendChild(li);
+          });
+        }
+    }
+}
     const docSection = document.getElementById("documents-section");
     if (person.documents && person.documents.length > 0) {
       docSection.style.display = "block";
@@ -627,7 +648,7 @@
       table.classList.remove('rtl-table');
       familyList.classList.remove('text-right');
     }
-  }
+  
 
   // Вспомогательная проверка пола по ID
   function idIsFemale(id) {
