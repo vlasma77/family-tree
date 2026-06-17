@@ -51,6 +51,7 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
 </head>
 <body class="bg-stone-300 text-stone-900 min-h-screen flex flex-col justify-between p-4 md:p-8 selection:bg-amber-200">
 
@@ -151,35 +152,139 @@
   // 1. ПОЛНАЯ БАЗА ДАННЫХ РОДА СМАГАРИНСКИХ
   // ==========================================
   const db = {
-    "person_vulf_1898": {
+   "person_vulf_1898": {
       "name": { "ru": "Вульф Смагаринский", "en": "Vulf Smagarinsky" },
-      "role": { "ru": "Глава семьи", "en": "Head of the Family" },
-      "years": "1898 – 1974",
-      "isDeceased": true,
-      "photo": "photos/vulf1898.jpg",
-      "photoCaption": { "ru": "Вульф Смагаринский", "en": "Vulf Smagarinsky" },
-      "milestones": {
-        "birthPlace": { "ru": "Киевская губерния", "en": "Kyiv Province" },
-        "marriage": { "ru": "Блюма Смагаринская", "en": "Blyuma Smagarinskaya" },
-        "occupation": { "ru": "Ремесленник / Рабочий", "en": "Artisan / Worker" },
-        "burial": { "ru": "Уточняется", "en": "To be specified" }
-      },
-      "bio": {
-        "ru": "<p>Глава и основатель основной ветви нашего семейного архива...</p>",
-        "en": "<p>The head and founder of the main branch of our family archive...</p>"
-      },
-      "familyText": {
-        "ru": ["Супруга: Блюма Смагаринская", "Дети: Ефим Смагаринский"],
-        "en": ["Spouse: Blyuma Smagarinskaya", "Children: Efim Smagarinsky"]
-      },
-      "links": {
-        "parents": ["person_shevel_1848", "person_khaya_1860"],
-        "spouse": "person_blyuma_1895",
-        "children": ["person_fima_1919"]
-      },
-      "documents": []
+      "birthDate": "1898",
+      "deathDate": "1975",
+      "documents": [
+        {
+          "url": "documents/person_vulf_1898/vulf's_children_fima_(standing_left)_misha_(back_right)_katya_with_anatoly_in_her_arms_sonya_and_mira_on_the_right_probably_1938_birobidzhan.jpg",
+          "label": {
+            "ru": "Дети Вульфа: Фима, Миша, Катя с Анатолием, Соня и Мира, прибл. 1938 г., Биробиджан",
+            "en": "Vulf's children: Fima, Misha, Katya with Anatoly, Sonya, and Mira, approx. 1938, Birobidzhan"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/birobidzhan_shoemakers'_artel.png",
+          "label": {
+            "ru": "Биробиджанская артель сапожников",
+            "en": "Birobidzhan Shoemakers' Artel"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/grandfather_vulf's_funeral_jewish_cemetery_in_astrakhan.jpg",
+          "label": {
+            "ru": "Похороны дедушки Вульфа, еврейское кладбище в Астрахани",
+            "en": "Grandfather Vulf's funeral, Jewish cemetery in Astrakhan"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/presumably-the_residence_of_the_smagaryinsky_family_in_priluki.jpg",
+          "label": {
+            "ru": "Предположительно, дом семьи Смагаринских в Прилуках",
+            "en": "Presumably the residence of the Smagarinsky family in Priluki"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/the_house_in_birobidzhan_on_the_right_is_granddaughter_lyuda_from_daughter_mira.png",
+          "label": {
+            "ru": "Дом в Биробиджане (справа внучка Люда, дочь Миры)",
+            "en": "The house in Birobidzhan (on the right is granddaughter Lyuda, daughter of Mira)"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_(right)_presumably_with_his_brothers.png",
+          "label": {
+            "ru": "Вульф (справа), предположительно с братьями",
+            "en": "Vulf (right), presumably with his brothers"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_blyuma.png",
+          "label": {
+            "ru": "Вульф и Блюма",
+            "en": "Vulf and Blyuma"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_blyuma_fima_misha.jpg",
+          "label": {
+            "ru": "Вульф, Блюма, Фима и Миша",
+            "en": "Vulf, Blyuma, Fima, and Misha"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_circa_1960s.jpg",
+          "label": {
+            "ru": "Вульф, около 1960-х гг.",
+            "en": "Vulf, circa 1960s"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_funeral_astrakhan_kruglova_33_1975.jpg",
+          "label": {
+            "ru": "Похороны Вульфа, Астрахань, ул. Круглова 33, 1975 г.",
+            "en": "Vulf's funeral, Astrakhan, Kruglova str. 33, 1975"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_in_the_courtyard_of_his_house_birobidzhan.png",
+          "label": {
+            "ru": "Вульф во дворе своего дома, Биробиджан",
+            "en": "Vulf in the courtyard of his house, Birobidzhan"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_marriage_1916.jpg",
+          "label": {
+            "ru": "Запись о браке Вульфа (1916 г.)",
+            "en": "Vulf's marriage record (1916)"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_time_unknown.jpg",
+          "label": {
+            "ru": "Вульф (время неизвестно)",
+            "en": "Vulf (date unknown)"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_with_blyuma_birobidzhan.jpg",
+          "label": {
+            "ru": "Вульф с Блюмой, Биробиджан",
+            "en": "Vulf with Blyuma, Birobidzhan"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_with_blyuma_time_unknown.jpg",
+          "label": {
+            "ru": "Вульф с Блюмой (время неизвестно)",
+            "en": "Vulf with Blyuma (date unknown)"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_with_his_grandchildren_sveta_and_sasha_from_his_son_anatoly.jpg",
+          "label": {
+            "ru": "Вульф с внуками Светой и Сашей (дети сына Анатолия)",
+            "en": "Vulf with grandchildren Sveta and Sasha (children of his son Anatoly)"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulf_with_his_granddaughter_sveta.jpg",
+          "label": {
+            "ru": "Вульф с внучкой Светой",
+            "en": "Vulf with his granddaughter Sveta"
+          }
+        },
+        {
+          "url": "documents/person_vulf_1898/vulfe's_death_notice.png",
+          "label": {
+            "ru": "Извещение о смерти Вульфа",
+            "en": "Vulf's death notice"
+          }
+        }
+      ]
     },
-
     "person_blyuma_1895": {
       "name": { "ru": "Блюма Самуилова Смагаринская", "en": "Blyuma Smagarinskaya" },
       "birthName": { "ru": "Урожденная Самуилова", "en": "Born Samuilova" },
