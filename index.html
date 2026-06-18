@@ -383,6 +383,21 @@
       });
     }
 
+    // ТЕПЕРЬ КНОПКА ЕСТЬ У ВСЕХ ПРЕДКОВ
+    const archiveContainer = document.getElementById("archive-container");
+    archiveContainer.innerHTML = "";
+    
+    let btn = document.createElement("a");
+    btn.className = "archive-btn";
+    
+    // Ссылка ведет в папку конкретного человека на файл index.html (или archive.html)
+    // Например: documents/person_vulf_1898/index.html
+    btn.href = `documents/${currentId}/index.html`; 
+    
+    btn.innerText = labels[currentLang].doc_btn;
+    archiveContainer.appendChild(btn);
+  }
+
     // ВОЗВРАТ КНОПКИ ДОКУМЕНТОВ
     const archiveContainer = document.getElementById("archive-container");
     archiveContainer.innerHTML = "";
