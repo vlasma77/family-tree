@@ -178,6 +178,22 @@
     .bio-text { font-size: 13px; line-height: 1.5; margin: 10px 0; }
     .family-list { list-style-position: inside; font-size: 13px; color: #444; }
 
+    /* КНОПКА ДОКУМЕНТОВ */
+    .archive-btn {
+      display: inline-block;
+      background-color: #451a03;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      font-size: 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+    .archive-btn:hover { background-color: #78350f; }
+
     .lang-switcher button {
       padding: 4px 10px;
       border: 1px solid #a8a29e;
@@ -237,6 +253,8 @@
         
         <div id="family-title" class="section-title">Семейный круг</div>
         <ul id="family-list" class="family-list"></ul>
+
+        <div id="archive-container"></div>
     </div>
   </main>
 </div>
@@ -246,7 +264,7 @@
   let currentLang = "ru";
 
   const db = {
-   "person_vulf_1898": {
+    "person_vulf_1898": {
       "name": { "ru": "Вульф Смагаринский", "en": "Vulf Smagarinsky" },
       "role": { "ru": "Глава Рода / Сапожник", "en": "Head of Family / Shoemaker" },
       "years": "1898 – 1975",
@@ -260,7 +278,7 @@
       },
       "bio": { "ru": "<p>Основатель биробиджанской ветви семьи, выдающийся мастер своего дела...</p>" },
       "familyText": { "ru": ["Супруга: Блюма Самуилова", "Дети: Ефим"] },
-      "links": { "spouse": "person_blyuma_1895", "children": ["person_efim_1919"], "parents": ["person_shevel_1848", "person_khaya_1860"] }
+      "links": { "spouse": "person_blyuma_1895", "parents": ["person_shevel_1848", "person_khaya_1860"] }
     },
     "person_blyuma_1895": {
       "name": { "ru": "Блюма Самуилова Смагаринская", "en": "Blyuma Smagarinskaya" },
@@ -271,7 +289,7 @@
       "milestones": { "birthPlace": { "ru": "Киевская губерния", "en": "Kyiv Province" } },
       "bio": { "ru": "<p>Хранительница семейных традиций.</p>" },
       "familyText": { "ru": ["Супруг: Вульф Смагаринский"] },
-      "links": { "spouse": "person_vulf_1898", "children": ["person_efim_1919"] }
+      "links": { "spouse": "person_vulf_1898" }
     },
     "person_efim_1919": {
       "name": { "ru": "Ефим Смагаринский", "en": "Efim Smagarinsky" },
@@ -322,8 +340,8 @@
   };
 
   const labels = {
-    ru: { m_title: "Важные вехи", fam_title: "Семейный круг", birth: "Место рождения", marriage: "Брак", job: "Род занятий", burial: "Место упокоения" },
-    en: { m_title: "Key Milestones", fam_title: "Family Circle", birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place" }
+    ru: { m_title: "Важные вехи", fam_title: "Семейный круг", birth: "Место рождения", marriage: "Брак", job: "Род занятий", burial: "Место упокоения", doc_btn: "Просмотр архивных документов" },
+    en: { m_title: "Key Milestones", fam_title: "Family Circle", birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place", doc_btn: "View Archive Documents" }
   };
 
   function renderProfile() {
@@ -364,18 +382,41 @@
         fList.appendChild(li);
       });
     }
+
+    // ВОЗВРАТ КНОПКИ ДОКУМЕНТОВ
+    const archiveContainer = document.getElementById("archive-container");
+    archiveContainer.innerHTML = "";
+    if (currentId === "person_vulf_1898") {
+      let btn = document.createElement("a");
+      btn.className = "archive-btn";
+      btn.href = "documents/person_vulf_1898/archive.html";
+      btn.innerText = labels[currentLang].doc_btn;
+      archiveContainer.appendChild(btn);
+    }
   }
 
-  // ТЕПЕРЬ ПРАВИЛЬНО ТРАНСФОРМИРУЕМ ДАННЫЕ ДЛЯ BALKAN ДЕРЕВА
+  // ЖЕСТКИЙ ПОРЯДОК СВЯЗЕЙ СТРОГО ОТ СТАРШИХ К МЛАДШИМ
   function getTreeData() {
+    // Порядок в массиве имеет решающее значение для Balkan Tree!
+    const generationOrder = [
+      "person_iosel_1760",
+      "person_volka_1792", "person_feyga_1794",
+      "person_shneur_1821", "person_slava_1822",
+      "person_shevel_1848", "person_khaya_1860",
+      "person_vulf_1898", "person_blyuma_1895",
+      "person_efim_1919"
+    ];
+
     const treeData = [];
-    Object.keys(db).forEach(id => {
+
+    generationOrder.forEach(id => {
       const person = db[id];
+      if (!person) return;
+
       let isFemale = id.includes("blyuma") || id.includes("haya") || id.includes("feyga") || id.includes("slava");
       let photoUrl = isFemale ? "photos/female.jpg" : "photos/male.jpg";
       if (person.photo) photoUrl = person.photo;
 
-      // Создаем базовый узел
       const node = {
         id: id,
         name: person.name[currentLang] || person.name['ru'],
@@ -383,18 +424,19 @@
         photo: photoUrl
       };
 
-      // ПЕРЕНОСИМ СВЯЗИ НА ВЕРХНИЙ УРОВЕНЬ ОБЪЕКТА (КАК ТРЕБУЕТ БИБЛИОТЕКА)
+      // Прописываем связи на верхний уровень
       if (person.links) {
-        if (person.links.spouse && db[person.links.spouse]) {
+        if (person.links.spouse) {
           node.pids = [person.links.spouse];
         }
         if (person.links.parents) {
-          if (person.links.parents[0] && db[person.links.parents[0]]) node.father = person.links.parents[0];
-          if (person.links.parents[1] && db[person.links.parents[1]]) node.mother = person.links.parents[1];
+          if (person.links.parents[0]) node.fid = person.links.parents[0]; // Использован классический fid/mid
+          if (person.links.parents[1]) node.mid = person.links.parents[1];
         }
       }
       treeData.push(node);
     });
+
     return treeData;
   }
 
@@ -418,7 +460,7 @@
 
       treeInstance.load(getTreeData());
     } catch (e) {
-      console.error(e);
+      console.error("Ошибка инициализации дерева:", e);
     }
   }
 
