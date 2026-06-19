@@ -69,40 +69,6 @@
       height: 100%;
     }
 
-    .search-box {
-      max-width: 350px;
-      margin: 0 auto 15px auto;
-      position: relative;
-      z-index: 100;
-    }
-    .search-box input {
-      width: 100%;
-      padding: 10px 15px;
-      border: 1px solid #a8a29e;
-      border-radius: 8px;
-      font-size: 14px;
-      font-family: serif;
-    }
-    #search-results {
-      position: absolute;
-      left: 0; right: 0; top: 100%;
-      background: white;
-      border: 1px solid #d6d3d1;
-      border-radius: 4px;
-      max-height: 200px;
-      overflow-y: auto;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      display: none;
-      z-index: 999;
-    }
-    .search-item {
-      padding: 8px 12px;
-      cursor: pointer;
-      border-bottom: 1px solid #f5f5f4;
-      font-size: 14px;
-    }
-    .search-item:hover { background-color: #fef3c7; }
-
     main {
       background-color: #e8dcbf;
       border: 1px solid #856f49;
@@ -218,11 +184,6 @@
   </header>
 
   <section class="bg-vintage-paper">
-    <div class="search-box">
-      <input type="text" id="tree-search" placeholder="Поиск предка (например, Вульф)...">
-      <div id="search-results"></div>
-    </div> 
-
     <div id="tree-viewport">
        <div id="family-tree"></div>
     </div>
@@ -262,20 +223,21 @@
   let currentId = "person_vulf_1898";
   let currentLang = "ru";
 
-  // Функция для автоматического определения фото по ID человека
+  // Стандартные базовые настройки библиотеки без попыток вмешательства в перевод
+  if (typeof FamilyTree !== 'undefined') {
+    FamilyTree.anim.shop = false; 
+    FamilyTree.SearchFields = ["name"];
+  }
+
   function getPhotoUrl(id) {
     const person = db[id];
-    
-    // Если в db явно прописано фото (как у Вульфа), используем его
     if (person && person.photo) {
       return person.photo;
     }
     
-    // Иначе пробуем найти по схеме имяГод.jpg (из папки photos)
-    const namePart = id.replace("person_", ""); // убираем префикс, получаем например 'blyuma_1895' или 'efim_1919'
-    const cleanName = namePart.replace("_", ""); // убираем подчеркивание, получаем 'blyuma1895' или 'efim1919'
+    const namePart = id.replace("person_", "");
+    const cleanName = namePart.replace("_", "");
     
-    // Список файлов, которые точно есть у вас в папке photos
     const existingPhotos = [
       "anatoly1937.jpg", "blyuma1895.jpg", "efim1919.jpg", 
       "katya1924.jpg", "mikhail1922.jpg", "mira1927.jpg", 
@@ -287,7 +249,6 @@
       return "photos/" + targetFile;
     }
     
-    // Если персональной фотки нет, выдаем стандартный ретро-силуэт
     let isFemale = id.includes("blyuma") || id.includes("haya") || id.includes("khaya") || id.includes("feyga") || id.includes("slava") || id.includes("katya") || id.includes("mira") || id.includes("sonya");
     return isFemale ? "photos/female.jpg" : "photos/male.jpg";
   }
@@ -298,7 +259,7 @@
       "role": { "ru": "Глава Рода / Сапожник", "en": "Head of Family / Shoemaker" },
       "years": "1898 – 1975",
       "isDeceased": true,
-      "photo": "photos/vulf1898.jpg", // Перенаправили на красивую аватарку
+      "photo": "photos/vulf1898.jpg",
       "milestones": {
         "birthPlace": { "ru": "Прилуки, Черниговская губ.", "en": "Priluki, Chernigov province" },
         "marriage": { "ru": "Блюма Смагаринская (1916 г.)", "en": "Blyuma Smagarinskaya (1916)" },
@@ -378,8 +339,6 @@
     if (!person) return;
 
     document.getElementById('profile-card').classList.remove('hidden');
-
-    // Получаем путь к картинке через нашу новую умную функцию
     let photoUrl = getPhotoUrl(currentId);
 
     document.getElementById("person-photo").src = photoUrl;
@@ -419,11 +378,7 @@
       btn.className = "archive-btn";
       btn.href = `documents/archive.html?id=${currentId}`;
       btn.target = "_blank"; 
-      
-      btn.onclick = function(e) {
-        e.stopPropagation();
-      };
-      
+      btn.onclick = function(e) { e.stopPropagation(); };
       btn.innerText = labels[currentLang].doc_btn;
       archiveContainer.appendChild(btn);
     }
@@ -440,25 +395,20 @@
     ];
 
     const treeData = [];
-
     generationOrder.forEach(id => {
       const person = db[id];
       if (!person) return;
 
-      // Получаем автоматический путь к аватарке
       let photoUrl = getPhotoUrl(id);
-
       const node = {
         id: id,
         name: person.name[currentLang] || person.name['ru'],
         title: person.years || "",
-        img: photoUrl // Свойство 'img' необходимо библиотеке Balkan Tree для вывода лиц!
+        img: photoUrl
       };
 
       if (person.links) {
-        if (person.links.spouse) {
-          node.pids = [person.links.spouse];
-        }
+        if (person.links.spouse) node.pids = [person.links.spouse];
         if (person.links.parents) {
           if (person.links.parents[0]) node.fid = person.links.parents[0];
           if (person.links.parents[1]) node.mid = person.links.parents[1];
@@ -466,7 +416,6 @@
       }
       treeData.push(node);
     });
-
     return treeData;
   }
 
@@ -479,7 +428,7 @@
     try {
       treeInstance = new FamilyTree(container, {
         mouseScroller: { zoom: true, scale: true },
-        nodeBinding: { field_0: "name", field_1: "title", img_0: "img" } // Указали брать картинку из поля 'img'
+        nodeBinding: { field_0: "name", field_1: "title", img_0: "img" }
       });
 
       treeInstance.on('click', function (sender, args) {
@@ -499,35 +448,10 @@
     document.getElementById("btn-ru").className = lang === 'ru' ? 'active' : '';
     document.getElementById("btn-en").className = lang === 'en' ? 'active' : '';
     document.getElementById("main-title").innerText = lang === 'ru' ? '❦ Летопись поколений рода Смагаринских ❦' : '❦ The Smagarinsky Family Chronicle ❦';
-    document.getElementById("tree-search").placeholder = lang === 'ru' ? 'Поиск предка...' : 'Search...';
+    
     renderProfile();
-    drawTree();
+    drawTree(); 
   }
-
-  document.getElementById("tree-search").addEventListener("input", (e) => {
-    const val = e.target.value.toLowerCase().trim();
-    const res = document.getElementById("search-results");
-    res.innerHTML = "";
-    if(!val) { res.style.display = "none"; return; }
-
-    Object.keys(db).forEach(id => {
-      let p = db[id];
-      if ((p.name.ru && p.name.ru.toLowerCase().includes(val)) || (p.name.en && p.name.en.toLowerCase().includes(val))) {
-        let div = document.createElement("div");
-        div.className = "search-item";
-        div.innerText = p.name[currentLang];
-        div.onclick = () => {
-          currentId = id;
-          renderProfile();
-          if (treeInstance) treeInstance.center(id);
-          res.style.display = "none";
-          document.getElementById("tree-search").value = "";
-        };
-        res.appendChild(div);
-      }
-    });
-    res.style.display = res.children.length ? "block" : "none";
-  });
 
   setLanguage('ru');
 </script>
