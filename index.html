@@ -326,7 +326,37 @@
       "name": { "ru": "Иосел Смагаринский", "en": "Iosel Smagarinsky" },
       "years": "до 1792 — ?", "isDeceased": true,
       "links": {}
-    }
+    },
+    "person_mikhail_1922": {
+      "name": { "ru": "Михаил Смагаринский", "en": "Mikhail Smagarinsky" },
+      "role": { "ru": "Ветеран / Фронтовик", "en": "Veteran / Front-line soldier" },
+      "years": "1922 – 2026", // Укажите точные годы жизни, если необходимо
+      "isDeceased": true,
+      "photo": "photos/mikhail1922.jpg",
+      "milestones": {
+        "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" },
+        "marriage": { "ru": "Свидетельство о браке", "en": "Marriage certificate" },
+        "occupation": { "ru": "Военная служба / Инженер", "en": "Military service / Engineer" },
+        "burial": { "ru": "Офаким, Израиль", "en": "Ofakim, Israel" }
+      },
+      "bio": { "ru": "<p>Пройденный славный жизненный путь, от фронтовых лет до мирной жизни в Ленинграде и Израиле...</p>" },
+      "familyText": { "ru": ["Супруга: Вера Смагаринская", "Родители: Вульф и Блюма"] },
+      "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
+      
+      // Наш новый блок: список архивных документов с русскими и английскими подписями
+      "archive": [
+        { "file": "mikhail.JPG", "caption": { "ru": "Портрет Михаила Смагаринского", "en": "Portrait of Mikhail Smagarinsky" } },
+        { "file": "booklet_mikhail.pdf", "caption": { "ru": "Памятный буклет о жизненном пути", "en": "Memorial booklet" } },
+        { "file": "birth_certificate.jpg", "caption": { "ru": "Свидетельство о рождении", "en": "Birth certificate" } },
+        { "file": "marriage_certificate.jpg", "caption": { "ru": "Свидетельство о заключении брака", "en": "Marriage certificate" } },
+        { "file": "leningrad _1946 (1).jpg", "caption": { "ru": "Михаил в Ленинграде, 1946 год", "en": "Mikhail in Leningrad, 1946" } },
+        { "file": "mikhail_astrakhan.jpg", "caption": { "ru": "Период жизни в Астрахани", "en": "Astrakhan period" } },
+        { "file": "evening_with_wife.jpg", "caption": { "ru": "Вечер в кругу семьи с супругой", "en": "Evening with his wife" } },
+        { "file": "dance_with_wife.jpg", "caption": { "ru": "Танец с супругой", "en": "Dancing with his wife" } },
+        { "file": "bat_yam_2020.jpg", "caption": { "ru": "В Бат-Яме, 2020 год", "en": "In Bat Yam, 2020" } },
+        { "file": "grave_ofakim.jpg", "caption": { "ru": "Место упокоения в Офакиме", "en": "Burial place in Ofakim" } }
+      ]
+    },
   };
 
   const labels = {
@@ -373,7 +403,7 @@
     const archiveContainer = document.getElementById("archive-container");
     archiveContainer.innerHTML = "";
     
-    if (currentId === "person_vulf_1898" || currentId === "person_blyuma_1895" || currentId === "person_efim_1919") {
+    if (currentId === "person_vulf_1898" || currentId === "person_blyuma_1895" || currentId === "person_efim_1919" || currentId === "person_mikhail_1922") {
       let btn = document.createElement("a");
       btn.className = "archive-btn";
       btn.href = `documents/archive.html?id=${currentId}`;
