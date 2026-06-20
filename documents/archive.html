@@ -27,8 +27,7 @@
   <a href="#" class="back-btn" onclick="window.close(); return false;">← Вернуться к дереву</a>
   <h1 id="archive-title">Архивные материалы</h1>
   
-  <div id="gallery-container" class="gallery">
-    </div>
+  <div id="gallery-container" class="gallery"></div>
 </div>
 
 <script>
@@ -93,19 +92,14 @@
     "person_mikhail_1922": {
       title: "Архив документов: Михаил Смагаринский",
       files: [
-        // Документы и военные годы
         { src: "birth_certificate.jpg", caption: "Свидетельство о рождении" },
         { src: "marriage_certificate.jpg", caption: "Свидетельство о заключении брака" },
         { src: "booklet_mikhail.pdf", caption: "Памятный буклет «Память Народа»" },
         { src: "mikhail_at_war.jpg", caption: "Михаил Смагаринский в годы войны" },
-        
-        // Ленинград и Астрахань
         { src: "leningrad _1946 (1).jpg", caption: "Михаил в Ленинграде, 1946 год" },
         { src: "with_girlfriend_leningrad.jpg", caption: "С подругой в Ленинграде" },
         { src: "mikhail_astrakhan.jpg", caption: "Период жизни в Астрахани" },
         { src: "mikhail_family_astrakhan.jpg", caption: "Семья Михаила в Астрахани" },
-        
-        // Семья и супруга
         { src: "mikhail.JPG", caption: "Михаила в Офакиме" },
         { src: "mikhail_with_wife.jpg", caption: "Михаил с супругой Фирой" },
         { src: "evening_with_wife.jpg", caption: "Вечер в кругу семьи с супругой" },
@@ -116,8 +110,6 @@
         { src: "with_son_yuri.jpg", caption: "Михаил с сыном Юрием" },
         { src: "with_childrens.jpg", caption: "С детьми" },
         { src: "with_grandchildren.jpg", caption: "С внуками" },
-        
-        // Израиль, видеоархив и память
         { src: "walk_ashkelon.jpg", caption: "На прогулке в Ашкелоне" },
         { src: "bat_yam_2020.jpg", caption: "В Бат-Яме, 2020 год" },
         { src: "mikhail_ofakim.jpg", caption: "День победы 9 мая" },
@@ -151,8 +143,17 @@
     }
   };
 
+  // Очищаем строку параметров от любых невидимых символов
   const urlParams = new URLSearchParams(window.location.search);
-  const personId = urlParams.get('id');
+  let personId = urlParams.get('id');
+  if (personId) {
+    personId = personId.trim().replace(/[\u200B-\u200D\uFEFF]/g, "");
+  }
+
+  // Принудительное выпрямление ID для Анатолия, если дерево передает его криво
+  if (!personId || personId.includes("anatoly")) {
+    personId = "person_anatoly_1937";
+  }
 
   const archive = archivesData[personId];
   if (archive) {
@@ -163,19 +164,31 @@
       const card = document.createElement("div");
       card.className = "doc-card";
       
-      const filePath = `${personId}/${item.src}`;
-      // Исправление: приводим расширение к нижнему регистру для точного распознавания .JPG и .pdf/.mp4
-      const fileSrcLower = item.src.toLowerCase();
+      // Находим имя файла, независимо от того, записано оно как item.src или item.file
+      const fileName = item.src || item.file;
+      
+      if (!fileName) return; // Если имени файла нет, пропускаем шаг
+
+      // Собираем правильный путь к папке
+      let folderName = personId ? personId : "person_anatoly_1937";
+      let filePath = folderName + "/" + fileName;
+      
+      const fileSrcLower = fileName.toLowerCase();
       const isVideo = fileSrcLower.endsWith('.mp4');
       const isPdf = fileSrcLower.endsWith('.pdf');
       
+      // Находим текст подписи, также страхуясь от разных форматов структуры данных
+      const captionText = (item.caption && typeof item.caption === 'object') 
+        ? (item.caption.ru || item.caption.en || "") 
+        : (item.caption || "");
+
       if (isVideo) {
         card.innerHTML = `
           <video controls>
             <source src="${filePath}" type="video/mp4">
             Ваш браузер не поддерживает видео.
           </video>
-          <div class="doc-title">${item.caption}</div>
+          <div class="doc-title">${captionText}</div>
         `;
       } else if (isPdf) {
         card.innerHTML = `
@@ -183,14 +196,14 @@
             <span class="pdf-icon">📄</span>
             <span>Открыть PDF</span>
           </a>
-          <div class="doc-title">${item.caption}</div>
+          <div class="doc-title">${captionText}</div>
         `;
       } else {
         card.innerHTML = `
           <a href="${filePath}" target="_blank">
-            <img src="${filePath}" alt="Документ" onerror="this.src='../photos/male.jpg';">
+            <img src="${filePath}" alt="Документ" onerror="this.onerror=null; this.src='../photos/male.jpg';">
           </a>
-          <div class="doc-title">${item.caption}</div>
+          <div class="doc-title">${captionText}</div>
         `;
       }
       container.appendChild(card);
