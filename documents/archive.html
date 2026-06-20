@@ -28,8 +28,7 @@
   <h1 id="archive-title">Архивные материалы</h1>
   
   <div id="gallery-container" class="gallery">
-    <!-- Файлы выводятся автоматически -->
-  </div>
+    </div>
 </div>
 
 <script>
@@ -90,6 +89,65 @@
         { src: "efim_family_1974.jpg", caption: "Супруга Ефима с детьми, 1974 г." },
         { src: "efim_unknown_time.jpg", caption: "Портрет Ефима Смагаринского, время не установлено" }
       ]
+    },
+    "person_mikhail_1922": {
+      title: "Архив документов: Михаил Смагаринский",
+      files: [
+        // Документы и военные годы
+        { src: "birth_certificate.jpg", caption: "Свидетельство о рождении" },
+        { src: "marriage_certificate.jpg", caption: "Свидетельство о заключении брака" },
+        { src: "booklet_mikhail.pdf", caption: "Памятный буклет «Память Народа»" },
+        { src: "mikhail_at_war.jpg", caption: "Михаил Смагаринский в годы войны" },
+        
+        // Ленинград и Астрахань
+        { src: "leningrad _1946 (1).jpg", caption: "Михаил в Ленинграде, 1946 год" },
+        { src: "with_girlfriend_leningrad.jpg", caption: "С подругой в Ленинграде" },
+        { src: "mikhail_astrakhan.jpg", caption: "Период жизни в Астрахани" },
+        { src: "mikhail_family_astrakhan.jpg", caption: "Семья Михаила в Астрахани" },
+        
+        // Семья и супруга
+        { src: "mikhail.JPG", caption: "Михаила в Офакиме" },
+        { src: "mikhail_with_wife.jpg", caption: "Михаил с супругой Фирой" },
+        { src: "evening_with_wife.jpg", caption: "Вечер в кругу семьи с супругой" },
+        { src: "dance_with_wife.jpg", caption: "Танец с супругой" },
+        { src: "wedding_anniversary.jpg", caption: "Годовщина свадьбы" },
+        { src: "mikhail_family.jpg", caption: "В кругу большой семьи" },
+        { src: "mikhail_fira.jpg", caption: "Михаил и Фира" },
+        { src: "with_son_yuri.jpg", caption: "Михаил с сыном Юрием" },
+        { src: "with_childrens.jpg", caption: "С детьми" },
+        { src: "with_grandchildren.jpg", caption: "С внуками" },
+        
+        // Израиль, видеоархив и память
+        { src: "walk_ashkelon.jpg", caption: "На прогулке в Ашкелоне" },
+        { src: "bat_yam_2020.jpg", caption: "В Бат-Яме, 2020 год" },
+        { src: "mikhail_ofakim.jpg", caption: "День победы 9 мая" },
+        { src: "story.mp4", caption: "Видеоистория / Воспоминания Михаила" },
+        { src: "grave_ofakim.jpg", caption: "Место упокоения в Офакиме" }
+      ]
+    },
+    "person_anatoly_1937": {
+      title: "Архив документов: Анатолий Смагаринский",
+      files: [
+        { src: "vladimir_anatoly_mikhail.jpg", caption: "Владимир, Анатолий и Михаил" },
+        { src: "with_vulf_khabarovsk.png", caption: "С отцом Вульфом, Хабаровск" },
+        { src: "with_wife_gala.jpg", caption: "С супругой Галой" },
+        { src: "anatoly.jpg", caption: "Портрет Анатолия" },
+        { src: "anatoly_and_mikhail.jpg", caption: "Анатолий и Михаил" },
+        { src: "anatoly_arad.jpg", caption: "В Араде" },
+        { src: "anatoly_the_youngest.png", caption: "Анатолий в юности" },
+        { src: "anatoly_with_mother.jpg", caption: "С мамой Блюмой" },
+        { src: "anatoly_with_nephews.jpg", caption: "С племянниками" },
+        { src: "anatoly_with_niece.jpg", caption: "С племянницей" },
+        { src: "anatolys_wife_gala.jpg", caption: "Супруга Гала" },
+        { src: "dance_with_wife.jpg", caption: "Танец с супругой" },
+        { src: "daughter_sveta.jpg", caption: "Дочь Света" },
+        { src: "early_years.jpg", caption: "Ранние годы" },
+        { src: "favorite_uncle.jpg", caption: "Любимый дядя" },
+        { src: "gala.jpg", caption: "Гала" },
+        { src: "meeting_with_vladimir_entin.JPG", caption: "Встреча с Владимиром Энтиным" },
+        { src: "snowy_winter.jpg", caption: "Снежная зима" },
+        { src: "son_alex.png", caption: "Сын Алекс" }
+      ]
     }
   };
 
@@ -106,8 +164,10 @@
       card.className = "doc-card";
       
       const filePath = `${personId}/${item.src}`;
-      const isVideo = item.src.endsWith('.mp4');
-      const isPdf = item.src.endsWith('.pdf');
+      // Исправление: приводим расширение к нижнему регистру для точного распознавания .JPG и .pdf/.mp4
+      const fileSrcLower = item.src.toLowerCase();
+      const isVideo = fileSrcLower.endsWith('.mp4');
+      const isPdf = fileSrcLower.endsWith('.pdf');
       
       if (isVideo) {
         card.innerHTML = `

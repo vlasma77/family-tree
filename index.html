@@ -223,7 +223,6 @@
   let currentId = "person_vulf_1898";
   let currentLang = "ru";
 
-  // Стандартные базовые настройки библиотеки без попыток вмешательства в перевод
   if (typeof FamilyTree !== 'undefined') {
     FamilyTree.anim.shop = false; 
     FamilyTree.SearchFields = ["name"];
@@ -239,7 +238,7 @@
     const cleanName = namePart.replace("_", "");
     
     const existingPhotos = [
-      "anatoly1937.jpg", "blyuma1895.jpg", "efim1919.jpg", 
+      "Anatoly1937.jpg", "blyuma1895.jpg", "efim1919.jpg", 
       "katya1924.jpg", "mikhail1922.jpg", "mira1927.jpg", 
       "sonya1929.jpg", "vulf1898.jpg"
     ];
@@ -267,7 +266,7 @@
         "burial": { "ru": "Еврейское кладбище, Астрахань", "en": "Jewish cemetery, Astrakhan" }
       },
       "bio": { "ru": "<p>Основатель биробиджанской ветви семьи, выдающийся мастер своего дела...</p>" },
-      "familyText": { "ru": ["Супруга: Блюма Самуилова", "Дети: Ефим"] },
+      "familyText": { "ru": ["Супруга: Блюма Самуилова", "Дети: Ефим, Михаил, Анатолий"] },
       "links": { "spouse": "person_blyuma_1895", "parents": ["person_shevel_1848", "person_khaya_1860"] }
     },
     "person_blyuma_1895": {
@@ -277,7 +276,7 @@
       "isDeceased": true,
       "photo": "",
       "milestones": { "birthPlace": { "ru": "Киевская губерния", "en": "Kyiv Province" } },
-      "bio": { "ru": "<p>Хранительница семейных традиций.</p>" },
+      "bio": { "ru": "<p>Хранительница семейных traditions.</p>" },
       "familyText": { "ru": ["Супруг: Вульф Смагаринский"] },
       "links": { "spouse": "person_vulf_1898" }
     },
@@ -330,7 +329,7 @@
     "person_mikhail_1922": {
       "name": { "ru": "Михаил Смагаринский", "en": "Mikhail Smagarinsky" },
       "role": { "ru": "Ветеран / Фронтовик", "en": "Veteran / Front-line soldier" },
-      "years": "1922 – 2026", // Укажите точные годы жизни, если необходимо
+      "years": "1922 – 2026", 
       "isDeceased": true,
       "photo": "photos/mikhail1922.jpg",
       "milestones": {
@@ -339,24 +338,82 @@
         "occupation": { "ru": "Военная служба / Инженер", "en": "Military service / Engineer" },
         "burial": { "ru": "Офаким, Израиль", "en": "Ofakim, Israel" }
       },
-      "bio": { "ru": "<p>Пройденный славный жизненный путь, от фронтовых лет до мирной жизни в Ленинграде и Израиле...</p>" },
-      "familyText": { "ru": ["Супруга: Вера Смагаринская", "Родители: Вульф и Блюма"] },
+      "bio": { 
+        "ru": "<p>Пройденный славный жизненный путь, от фронтовых лет до мирной жизни в Ленинграде и Израиле...</p>",
+        "en": "<p>A glorious life journey, from front-line years to peaceful life in Leningrad and Israel...</p>"
+      },
+      "familyText": { 
+        "ru": ["Супруга: Вера Смагаринская", "Родители: Вульф и Блюма"],
+        "en": ["Spouse: Vera Smagarinskaya", "Parents: Vulf and Blyuma"]
+      },
       "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
-      
-      // Наш новый блок: список архивных документов с русскими и английскими подписями
       "archive": [
-        { "file": "mikhail.JPG", "caption": { "ru": "Портрет Михаила Смагаринского", "en": "Portrait of Mikhail Smagarinsky" } },
-        { "file": "booklet_mikhail.pdf", "caption": { "ru": "Памятный буклет о жизненном пути", "en": "Memorial booklet" } },
         { "file": "birth_certificate.jpg", "caption": { "ru": "Свидетельство о рождении", "en": "Birth certificate" } },
         { "file": "marriage_certificate.jpg", "caption": { "ru": "Свидетельство о заключении брака", "en": "Marriage certificate" } },
+        { "file": "booklet_mikhail.pdf", "caption": { "ru": "Памятный буклет «Память Народа»", "en": "Memorial booklet" } },
+        { "file": "mikhail_at_war.jpg", "caption": { "ru": "Михаил Смагаринский в годы войны", "en": "Mikhail during the wartime" } },
         { "file": "leningrad _1946 (1).jpg", "caption": { "ru": "Михаил в Ленинграде, 1946 год", "en": "Mikhail in Leningrad, 1946" } },
+        { "file": "with_girlfriend_leningrad.jpg", "caption": { "ru": "С подругой в Ленинграде", "en": "With a girlfriend in Leningrad" } },
         { "file": "mikhail_astrakhan.jpg", "caption": { "ru": "Период жизни в Астрахани", "en": "Astrakhan period" } },
+        { "file": "mikhail_family_astrakhan.jpg", "caption": { "ru": "Семья Михаила в Астрахани", "en": "Mikhail's family in Astrakhan" } },
+        { "file": "mikhail.JPG", "caption": { "ru": "Михаил в Офакиме", "en": "Mikhail in Ofakim" } },
+        { "file": "mikhail_with_wife.jpg", "caption": { "ru": "Михаил с супругой Фирой", "en": "Mikhail with his wife Fira" } },
         { "file": "evening_with_wife.jpg", "caption": { "ru": "Вечер в кругу семьи с супругой", "en": "Evening with his wife" } },
         { "file": "dance_with_wife.jpg", "caption": { "ru": "Танец с супругой", "en": "Dancing with his wife" } },
+        { "file": "wedding_anniversary.jpg", "caption": { "ru": "Годовщина свадьбы", "en": "Wedding anniversary" } },
+        { "file": "mikhail_family.jpg", "caption": { "ru": "В кругу большой семьи", "en": "With the big family" } },
+        { "file": "mikhail_fira.jpg", "caption": { "ru": "Михаил и Фира", "en": "Mikhail and Fira" } },
+        { "file": "with_son_yuri.jpg", "caption": { "ru": "Михаил с сыном Юрием", "en": "Mikhail with his son Yuri" } },
+        { "file": "with_childrens.jpg", "caption": { "ru": "С детьми", "en": "With children" } },
+        { "file": "with_grandchildren.jpg", "caption": { "ru": "С внуками", "en": "With grandchildren" } },
+        { "file": "walk_ashkelon.jpg", "caption": { "ru": "На прогулке в Ашкелоне", "en": "Walking in Ashkelon" } },
         { "file": "bat_yam_2020.jpg", "caption": { "ru": "В Бат-Яме, 2020 год", "en": "In Bat Yam, 2020" } },
+        { "file": "mikhail_ofakim.jpg", "caption": { "ru": "День победы 9 мая", "en": "Victory Day, May 9" } },
+        { "file": "story.mp4", "caption": { "ru": "Видеоистория / Воспоминания", "en": "Video story / Memories" } },
         { "file": "grave_ofakim.jpg", "caption": { "ru": "Место упокоения в Офакиме", "en": "Burial place in Ofakim" } }
       ]
     },
+    "person_anatoly_1937": {
+      "name": { "ru": "Анатолий Смагаринский", "en": "Anatoly Smagarinsky" },
+      "role": { "ru": "Сын Вульфа", "en": "Son of Vulf" },
+      "years": "1937 – ...", 
+      "isDeceased": false,
+      "photo": "photos/anatoly.jpg",
+      "milestones": {
+        "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" },
+        "occupation": { "ru": "Инженер / Специалист", "en": "Engineer" }
+      },
+      "bio": { 
+        "ru": "<p>Младший сын Вульфа и Блюмы. Воспоминания о Хабаровске, семье и жизненном пути.</p>",
+        "en": "<p>Younger son of Vulf and Blyuma. Memories of Khabarovsk and family life.</p>"
+      },
+      "familyText": { 
+        "ru": ["Супруга: Гала", "Дети: Света, Алекс", "Родители: Вульф и Блюма"],
+        "en": ["Spouse: Gala", "Children: Sveta, Alex", "Parents: Vulf and Blyuma"]
+      },
+      "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
+      "archive": [
+        { "file": "vladimir_anatoly_mikhail.jpg", "caption": { "ru": "Владимир, Анатолий и Михаил", "en": "Vladimir, Anatoly and Mikhail" } },
+        { "file": "with_vulf_khabarovsk.png", "caption": { "ru": "С отцом Вульфом, Хабаровск", "en": "With father Vulf, Khabarovsk" } },
+        { "file": "with_wife_gala.jpg", "caption": { "ru": "С супругой Галой", "en": "With wife Gala" } },
+        { "file": "anatoly.jpg", "caption": { "ru": "Портрет Анатолия", "en": "Portrait of Anatoly" } },
+        { "file": "anatoly_and_mikhail.jpg", "caption": { "ru": "Анатолий и Михаил", "en": "Anatoly and Mikhail" } },
+        { "file": "anatoly_arad.jpg", "caption": { "ru": "В Араде", "en": "In Arad" } },
+        { "file": "anatoly_the_youngest.png", "caption": { "ru": "Анатолий в юности", "en": "Anatoly in his youth" } },
+        { "file": "anatoly_with_mother.jpg", "caption": { "ru": "С мамой Блюмой", "en": "With mother Blyuma" } },
+        { "file": "anatoly_with_nephews.jpg", "caption": { "ru": "С племянниками", "en": "With nephews" } },
+        { "file": "anatoly_with_niece.jpg", "caption": { "ru": "С племянницей", "en": "With niece" } },
+        { "file": "anatolys_wife_gala.jpg", "caption": { "ru": "Супруга Гала", "en": "Wife Gala" } },
+        { "file": "dance_with_wife.jpg", "caption": { "ru": "Танец с супругой", "en": "Dancing with wife" } },
+        { "file": "daughter_sveta.jpg", "caption": { "ru": "Дочь Света", "en": "Daughter Sveta" } },
+        { "file": "early_years.jpg", "caption": { "ru": "Ранние годы", "en": "Early years" } },
+        { "file": "favorite_uncle.jpg", "caption": { "ru": "Любимый дядя", "en": "Favorite uncle" } },
+        { "file": "gala.jpg", "caption": { "ru": "Гала", "en": "Gala" } },
+        { "file": "meeting_with_vladimir_entin.JPG", "caption": { "ru": "Встреча с Владимиром Энтиным", "en": "Meeting with Vladimir Entin" } },
+        { "file": "snowy_winter.jpg", "caption": { "ru": "Снежная зима", "en": "Snowy winter" } },
+        { "file": "son_alex.png", "caption": { "ru": "Сын Алекс", "en": "Son Alex" } }
+      ]
+    }
   };
 
   const labels = {
@@ -403,7 +460,7 @@
     const archiveContainer = document.getElementById("archive-container");
     archiveContainer.innerHTML = "";
     
-    if (currentId === "person_vulf_1898" || currentId === "person_blyuma_1895" || currentId === "person_efim_1919" || currentId === "person_mikhail_1922") {
+    if (currentId === "person_vulf_1898" || currentId === "person_blyuma_1895" || currentId === "person_efim_1919" || currentId === "person_mikhail_1922" || currentId === "person_anatoly_1937") {
       let btn = document.createElement("a");
       btn.className = "archive-btn";
       btn.href = `documents/archive.html?id=${currentId}`;
@@ -421,7 +478,9 @@
       "person_shneur_1821", "person_slava_1822",
       "person_shevel_1848", "person_khaya_1860",
       "person_vulf_1898", "person_blyuma_1895",
-      "person_efim_1919"
+      "person_efim_1919",
+      "person_mikhail_1922",
+      "person_anatoly_1937"
     ];
 
     const treeData = [];
