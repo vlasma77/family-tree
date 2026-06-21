@@ -266,7 +266,7 @@
         "burial": { "ru": "Еврейское кладбище, Астрахань", "en": "Jewish cemetery, Astrakhan" }
       },
       "bio": { "ru": "<p>Основатель биробиджанской ветви семьи, выдающийся мастер своего дела...</p>" },
-      "familyText": { "ru": ["Супруга: Блюма Самуилова", "Дети: Ефим, Михаил, Катя, Анатолий"] },
+      "familyText": { "ru": ["Супруга: Блюма Самуилова", "Дети: Ефим, Михаил, Катя, Соня, Анатолий"] },
       "links": { "spouse": "person_blyuma_1895", "parents": ["person_shevel_1848", "person_khaya_1860"] },
       "archive": "person_vulf_1898"
     },
@@ -277,7 +277,7 @@
       "isDeceased": true,
       "photo": "",
       "milestones": { "birthPlace": { "ru": "Киевская губерния", "en": "Kyiv Province" } },
-      "bio": { "ru": "<p>Хранительница семейных traditions.</p>" },
+      "bio": { "ru": "<p>Хранительница семейных традиций.</p>" },
       "familyText": { "ru": ["Супруг: Вульф Смагаринский"] },
       "links": { "spouse": "person_vulf_1898" },
       "archive": "person_blyuma_1895"
@@ -372,6 +372,27 @@
       "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
       "archive": "person_katya_1924"
     },
+    "person_sonya_1929": {
+      "name": { "ru": "Соня Смагаринская", "en": "Sonya Smagarinskaya" },
+      "role": { "ru": "Дочь Вульфа", "en": "Daughter of Vulf" },
+      "years": "1929 – 2011", 
+      "isDeceased": true,
+      "photo": "photos/sonya1929.jpg",
+      "milestones": {
+        "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" },
+        "burial": { "ru": "Израиль", "en": "Israel" }
+      },
+      "bio": {
+        "ru": "<p>Дочь Вульфа Смагаринского и Блюмы Самуиловой.</p>",
+        "en": "<p>Daughter of Vulf and Blyuma.</p>"
+      },
+      "familyText": {
+        "ru": ["Дети: Леонид, Игорь", "Родители: Вульф и Блюма"],
+        "en": ["Children: Leonid, Igor", "Parents: Vulf and Blyuma"]
+      },
+      "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
+      "archive": "person_sonya_1929"
+    },
     "person_anatoly_1937": {
       "name": { "ru": "Анатолий Смагаринский", "en": "Anatoly Smagarinsky" },
       "role": { "ru": "Сын Вульфа", "en": "Son of Vulf" },
@@ -439,7 +460,6 @@
     const archiveContainer = document.getElementById("archive-container");
     archiveContainer.innerHTML = "";
     
-    // Универсальная кнопка архива: если у персоны прописан ключ archive — выводим кнопку
     if (person.archive) {
       let btn = document.createElement("a");
       btn.className = "archive-btn";
@@ -461,6 +481,7 @@
       "person_efim_1919",
       "person_mikhail_1922",
       "person_katya_1924",
+      "person_sonya_1929",
       "person_anatoly_1937"
     ];
 
