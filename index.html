@@ -189,7 +189,7 @@
     </div>
   </section>
 
-  <main id="profile-card">
+  <main id="profile-card" class="hidden">
     <div class="profile-left">
       <div class="photo-frame">
         <div id="photo-ribbon"></div>
@@ -230,195 +230,207 @@
 
   function getPhotoUrl(id) {
     const person = db[id];
-    if (person && person.photo) {
-      return person.photo;
+    if (person && person.mainPhoto) {
+      return "photos/" + person.mainPhoto;
     }
-    
-    const namePart = id.replace("person_", "");
-    const cleanName = namePart.replace("_", "");
-    
-    const existingPhotos = [
-      "Anatoly1937.jpg", "blyuma1895.jpg", "efim1919.jpg", 
-      "katya1924.jpg", "mikhail1922.jpg", "mira1927.jpg", 
-      "sonya1929.jpg", "vulf1898.jpg"
-    ];
-    
-    const targetFile = cleanName + ".jpg";
-    if (existingPhotos.includes(targetFile)) {
-      return "photos/" + targetFile;
-    }
-    
-    let isFemale = id.includes("blyuma") || id.includes("haya") || id.includes("khaya") || id.includes("feyga") || id.includes("slava") || id.includes("katya") || id.includes("mira") || id.includes("sonya");
+    let isFemale = id.includes("blyuma") || id.includes("haya") || id.includes("khaya") || id.includes("feyga") || id.includes("slava") || id.includes("katya") || id.includes("mira") || id.includes("sonya") || id.includes("nadezhda");
     return isFemale ? "photos/female.jpg" : "photos/male.jpg";
   }
 
   const db = {
     "person_vulf_1898": {
-      "name": { "ru": "Вульф Смагаринский", "en": "Vulf Smagarinsky" },
-      "role": { "ru": "Глава Рода / Сапожник", "en": "Head of Family / Shoemaker" },
-      "years": "1898 – 1975",
+      "name": { "ru": "Вульф Шевелев Смагаринский", "en": "Vulf Shevelev Smagarinsky" },
+      "role": { "ru": "", "en": "" },
+      "years": "1898 – 1970",
       "isDeceased": true,
-      "photo": "photos/vulf1898.jpg",
+      "mainPhoto": "vulf1898.jpg",
       "milestones": {
-        "birthPlace": { "ru": "Прилуки, Черниговская губ.", "en": "Priluki, Chernigov province" },
-        "marriage": { "ru": "Блюма Смагаринская (1916 г.)", "en": "Blyuma Smagarinskaya (1916)" },
-        "occupation": { "ru": "Мастер обувного дела, артель сапожников", "en": "Shoemaker master" },
-        "burial": { "ru": "Еврейское кладбище, Астрахань", "en": "Jewish cemetery, Astrakhan" }
+        "birthPlace": { "ru": "1898 г., Прилуки", "en": "1898, Priluki" },
+        "marriage": { "ru": "Блюма Смагаринская (урожд. Энтин), Прилуки, 1916 г.", "en": "Blyuma Smagarinskaya (nee Entin), Priluki, 1916" },
+        "occupation": { "ru": "Мастер обувного дела", "en": "Master of shoemaking" },
+        "burial": { "ru": "Биробиджан", "en": "Birobidzhan" }
       },
-      "bio": { "ru": "<p>Основатель биробиджанской ветви семьи, выдающийся мастер своего дела...</p>" },
-      "familyText": { "ru": ["Супруга: Блюма Самуилова", "Дети: Ефим, Михаил, Катя, Соня, Анатолий"] },
+      "bio": { "ru": "", "en": "" },
+      "familyText": { 
+        "ru": [
+          "Родители: Шевель Залманов Смагаринский, Хая Смагаринская (Гуревич)",
+          "Дети: Ефим, Михаил, Катя, Мира, Соня, Анатолий"
+        ],
+        "en": [
+          "Parents: Shevel Zalmanov Smagarinsky, Khaya Smagarinskaya (Gurevich)",
+          "Children: Efim, Mikhail, Katya, Mira, Sonya, Anatoly"
+        ]
+      },
       "links": { "spouse": "person_blyuma_1895", "parents": ["person_shevel_1848", "person_khaya_1860"] },
       "archive": "person_vulf_1898"
     },
     "person_blyuma_1895": {
-      "name": { "ru": "Блюма Самуилова Смагаринская", "en": "Blyuma Smagarinskaya" },
-      "role": { "ru": "Хранительница очага", "en": "Keeper of the Hearth" },
-      "years": "1895 – 1980",
+      "name": { "ru": "Блюма Самуилова Смагаринская (Энтин)", "en": "Blyuma Samuilova Smagarinskaya (Entin)" },
+      "role": { "ru": "", "en": "" },
+      "years": "1895 – 1975",
       "isDeceased": true,
-      "photo": "",
-      "milestones": { "birthPlace": { "ru": "Киевская губерния", "en": "Kyiv Province" } },
-      "bio": { "ru": "<p>Хранительница семейных traditions.</p>" },
-      "familyText": { "ru": ["Супруг: Вульф Смагаринский"] },
+      "mainPhoto": "blyuma1895.jpg",
+      "milestones": {
+        "birthPlace": { "ru": "1895 г., Мстиславль, Киевская губерния", "en": "1895, Mstislavl, Kiev province" },
+        "marriage": { "ru": "Вульф Смагаринский, Прилуки, 1916 г.", "en": "Vulf Smagarinsky, Priluki, 1916" },
+        "occupation": { "ru": "домохозяйка", "en": "housewife" },
+        "burial": { "ru": "Хабаровск", "en": "Khabarovsk" }
+      },
+      "bio": { "ru": "", "en": "" },
+      "familyText": { 
+        "ru": [
+          "Родители: Самуил Энтин, Фрида Энтин",
+          "Дети: Ефим, Михаил, Катя, Мира, Соня, Анатолий"
+        ],
+        "en": [
+          "Parents: Samuil Entin, Frida Entin",
+          "Children: Efim, Mikhail, Katya, Mira, Sonya, Anatoly"
+        ]
+      },
       "links": { "spouse": "person_vulf_1898" },
       "archive": "person_blyuma_1895"
     },
     "person_efim_1919": {
       "name": { "ru": "Ефим Смагаринский", "en": "Efim Smagarinsky" },
-      "role": { "ru": "Ветеран / Инженер", "en": "Veteran / Engineer" },
-      "years": "1919 – 2002",
+      "role": { "ru": "", "en": "" },
+      "years": "09.04.1919 – 16.03.1998",
       "isDeceased": true,
-      "photo": "",
-      "milestones": { "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" } },
-      "bio": { "ru": "<p>Ветеран Великой Отечественной войны.</p>" },
-      "familyText": { "ru": ["Родители: Вульф и Блюма"] },
+      "mainPhoto": "efim1919.jpg",
+      "milestones": { 
+        "birthPlace": { "ru": "Прилуки, Черниговской губернии", "en": "Priluki, Chernigov province" },
+        "marriage": { "ru": "Смагаринская Надежда Иудовна", "en": "Smagarinskaya Nadezhda Iudovna" },
+        "occupation": { "ru": "Работник торговой сферы", "en": "Commercial worker" },
+        "burial": { "ru": "еврейское кладбище г. Астрахань", "en": "Jewish cemetery, Astrakhan" }
+      },
+      "bio": { "ru": "", "en": "" },
+      "familyText": { 
+        "ru": [
+          "Родители: Вульф Смагаринский, Блюма Смагаринская",
+          "Дети: Алла, Валера, Наташа"
+        ],
+        "en": [
+          "Parents: Vulf Smagarinsky, Blyuma Smagarinskaya",
+          "Children: Alla, Valera, Natasha"
+        ]
+      },
       "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
       "archive": "person_efim_1919"
     },
-    "person_shevel_1848": {
-      "name": { "ru": "Шевель Залманов Смагаринский", "en": "Shevel Smagarinsky" },
-      "years": "1848 — 1908", "isDeceased": true,
-      "links": { "parents": ["person_shneur_1821", "person_slava_1822"], "spouse": "person_khaya_1860" }
-    },
-    "person_khaya_1860": {
-      "name": { "ru": "Хая Смагаринская (Гуревич)", "en": "Khaya Smagarinskaya" },
-      "years": "1860 — ?", "isDeceased": true,
-      "links": { "spouse": "person_shevel_1848" }
-    },
-    "person_shneur_1821": {
-      "name": { "ru": "Шнеур Залмон Смагаринский", "en": "Shneur Smagarinsky" },
-      "years": "1821 — ?", "isDeceased": true,
-      "links": { "parents": ["person_volka_1792", "person_feyga_1794"], "spouse": "person_slava_1822" }
-    },
-    "person_slava_1822": {
-      "name": { "ru": "Слава Смагаринская", "en": "Slava Smagarinskaya" },
-      "years": "1822 — 1890", "isDeceased": true,
-      "links": { "spouse": "person_shneur_1821" }
-    },
-    "person_volka_1792": {
-      "name": { "ru": "Волька Иосел Смагаринский", "en": "Volka Smagarinsky" },
-      "years": "1792 — ?", "isDeceased": true,
-      "links": { "parents": ["person_iosel_1760", null], "spouse": "person_feyga_1794" }
-    },
-    "person_feyga_1794": {
-      "name": { "ru": "Фейга Рохля Смагаринская", "en": "Feyga" },
-      "years": "1794 — ?", "isDeceased": true,
-      "links": { "spouse": "person_volka_1792" }
-    },
-    "person_iosel_1760": {
-      "name": { "ru": "Иосел Смагаринский", "en": "Iosel Smagarinsky" },
-      "years": "до 1792 — ?", "isDeceased": true,
-      "links": {}
-    },
     "person_mikhail_1922": {
       "name": { "ru": "Михаил Смагаринский", "en": "Mikhail Smagarinsky" },
-      "role": { "ru": "Ветеран / Фронтовик", "en": "Veteran / Front-line soldier" },
-      "years": "1922 – 2026", 
+      "role": { "ru": "", "en": "" },
+      "years": "15.02.1922 – 17.01.2020", 
       "isDeceased": true,
-      "photo": "photos/mikhail1922.jpg",
+      "mainPhoto": "mikhail1922.jpg",
       "milestones": {
-        "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" },
-        "marriage": { "ru": "Свидетельство о браке", "en": "Marriage certificate" },
-        "occupation": { "ru": "Военная служба / Инженер", "en": "Military service / Engineer" },
+        "birthPlace": { "ru": "Прилуки, Черниговской губернии", "en": "Priluki, Chernigov province" },
+        "marriage": { "ru": "Фира Вольковна Смагаринская (урожд. Ройтман)", "en": "Fira Volkovna Smagarinskaya (nee Roytman)" },
+        "occupation": { "ru": "Ремонт холодильных установок", "en": "Repair of refrigeration units" },
         "burial": { "ru": "Офаким, Израиль", "en": "Ofakim, Israel" }
       },
-      "bio": { 
-        "ru": "<p>Пройденный славный жизненный путь, от фронтовых лет до мирной жизни в Ленинграде и Израиле...</p>",
-        "en": "<p>A glorious life journey, from front-line years to peaceful life in Leningrad and Israel...</p>"
-      },
+      "bio": { "ru": "" },
       "familyText": { 
-        "ru": ["Супруга: Вера Смагаринская", "Родители: Вульф и Блюма"],
-        "en": ["Spouse: Vera Smagarinskaya", "Parents: Vulf and Blyuma"]
+        "ru": [
+          "Супруга: Фира Смагаринская",
+          "Родители: Вульф Смагаринский, Блюма Смагаринская",
+          "Дети: Владимир, Юрий, Нелла"
+        ],
+        "en": [
+          "Spouse: Fira Smagarinskaya",
+          "Parents: Vulf Smagarinsky, Blyuma Smagarinskaya",
+          "Children: Vladimir, Yuri, Nella"
+        ]
       },
       "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
       "archive": "person_mikhail_1922"
     },
     "person_katya_1924": {
       "name": { "ru": "Катя Рубинович (Смагаринская)", "en": "Katya Rubinovich (Smagarinskaya)" },
-      "role": { "ru": "Дочь Вульфа", "en": "Daughter of Vulf" },
+      "role": { "ru": "", "en": "" },
       "years": "1924 – 1993", 
       "isDeceased": true,
-      "photo": "photos/katya1924.jpg",
-      "milestones": {
-        "birthPlace": { "ru": "Прилуки", "en": "Priluki" },
+      "mainPhoto": "katya1924.jpg",
+      "milestones": { 
+        "birthPlace": { "ru": "Прилуки, Черниговской губернии", "en": "Priluki, Chernigov province" },
         "marriage": { "ru": "Аба Лейбович Рубинович", "en": "Aba Leybovich Rubinovich" },
-        "occupation": { "ru": "Сфера питания", "en": "Food service industry" },
-        "burial": { "ru": "Еврейское кладбище, Астрахань", "en": "Jewish cemetery, Astrakhan" }
+        "occupation": { "ru": "сфера общественного питания", "en": "catering sector" },
+        "burial": { "ru": "еврейское кладбище г. Астрахань", "en": "Jewish cemetery, Astrakhan" }
       },
-      "bio": {
-        "ru": "<p>Дочь Вульфа и Блюмы.</p>",
-        "en": "<p>Daughter of Vulf and Blyuma.</p>"
-      },
-      "familyText": {
-        "ru": ["Супруг: Аба Лейбович Рубинович", "Сын: Евгений Рубинович", "Родители: Вульф и Блюма"],
-        "en": ["Spouse: Aba Leybovich Rubinovich", "Son: Evgeny Rubinovich", "Parents: Vulf and Blyuma"]
+      "bio": { "ru": "" },
+      "familyText": { 
+        "ru": [
+          "Родители: Вульф Смагаринский, Блюма Смагаринская",
+          "Дети: Евгений"
+        ],
+        "en": [
+          "Parents: Vulf Smagarinsky, Blyuma Smagarinskaya",
+          "Children: Evgeny"
+        ]
       },
       "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
       "archive": "person_katya_1924"
     },
     "person_sonya_1929": {
       "name": { "ru": "Соня Каплун (Смагаринская)", "en": "Sonya Kaplun (Smagarinskaya)" },
-      "role": { "ru": "Дочь Вульфа", "en": "Daughter of Vulf" },
-      "years": "1929 – 2011", 
+      "role": { "ru": "", "en": "" },
+      "years": "27.03.1929 – 10.03.1993", 
       "isDeceased": true,
-      "photo": "photos/sonya1929.jpg",
+      "mainPhoto": "sonya1929.jpg",
       "milestones": {
-        "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" },
+        "birthPlace": { "ru": "Прилуки, Черниговской губернии", "en": "Priluki, Chernigov province" },
         "marriage": { "ru": "Михаил Каплун", "en": "Mikhail Kaplun" },
         "occupation": { "ru": "Швея", "en": "Seamstress" },
-        "burial": { "ru": "Израиль", "en": "Israel" }
+        "burial": { "ru": "кладбище Цур Шалом, Кирьят-Бялик, Израиль", "en": "Tsur Shalom Cemetery, Israel" }
       },
-      "bio": {
-        "ru": "<p>Дочь Вульфа Смагаринского и Блюмы Самуиловой.</p>",
-        "en": "<p>Daughter of Vulf and Blyuma.</p>"
-      },
-      "familyText": {
-        "ru": ["Супруг: Михаил Каплун", "Дети: Леонид, Игорь", "Родители: Вульф и Блюма"],
-        "en": ["Spouse: Mikhail Kaplun", "Children: Leonid, Igor", "Parents: Vulf and Blyuma"]
+      "bio": { "ru": "" },
+      "familyText": { 
+        "ru": [
+          "Родители: Вульф Смагаринский, Блюма Смагаринская",
+          "Дети: Леонид, Игорь"
+        ],
+        "en": [
+          "Parents: Vulf Smagarinsky, Blyuma Smagarinskaya",
+          "Children: Leonid, Igor"
+        ]
       },
       "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
       "archive": "person_sonya_1929"
     },
     "person_anatoly_1937": {
       "name": { "ru": "Анатолий Смагаринский", "en": "Anatoly Smagarinsky" },
-      "role": { "ru": "Сын Вульфа", "en": "Son of Vulf" },
-      "years": "1937 – ...", 
-      "isDeceased": false,
-      "photo": "photos/anatoly1937.jpg",
-      "milestones": {
-        "birthPlace": { "ru": "Биробиджан", "en": "Birobidzhan" },
-        "occupation": { "ru": "Инженер / Специалист", "en": "Engineer" }
+      "role": { "ru": "", "en": "" },
+      "years": "01.03.1937 – 02.09.2017", 
+      "isDeceased": true,
+      "mainPhoto": "anatoly1937.jpg",
+      "milestones": { 
+        "birthPlace": { "ru": "Дежнёво, Ленинский район, Биробиджан", "en": "Dezhnyovo, Leninsky District, Birobidzhan" },
+        "marriage": { "ru": "Галина Смагаринская (урожд. Дульман)", "en": "Galina Smagarinskaya (nee Dulman)" },
+        "occupation": { "ru": "инженер-строитель", "en": "Civil engineer" },
+        "burial": { "ru": "Беер Шева, Израиль", "en": "Be'er Sheva, Israel" }
       },
-      "bio": { 
-        "ru": "<p>Младший сын Вульфа и Блюмы. Воспоминания о Хабаровске, семье и жизненном пути.</p>",
-        "en": "<p>Younger son of Vulf and Blyuma. Memories of Khabarovsk and family life.</p>"
-      },
+      "bio": { "ru": "", "en": "" },
       "familyText": { 
-        "ru": ["Супруга: Гала", "Дети: Света, Алекс", "Родители: Вульф и Блюма"],
-        "en": ["Spouse: Gala", "Children: Sveta, Alex", "Parents: Vulf and Blyuma"]
+        "ru": [
+          "Супруга: Гала Смагаринская", 
+          "Дети: Света, Алекс", 
+          "Родители: Вульф Смагаринский, Блюма Смагаринская"
+        ], 
+        "en": [
+          "Spouse: Gala Smagarinskaya", 
+          "Children: Sveta, Alex", 
+          "Parents: Vulf Smagarinsky, Blyuma Smagarinskaya"
+        ]
       },
       "links": { "parents": ["person_vulf_1898", "person_blyuma_1895"] },
       "archive": "person_anatoly_1937"
-    }
+    },
+    "person_shevel_1848": { "name": { "ru": "Шевель Залманов Смагаринский", "en": "Shevel" }, "years": "1848 — 1908", "isDeceased": true, "links": { "parents": ["person_shneur_1821", "person_slava_1822"], "spouse": "person_khaya_1860" } },
+    "person_khaya_1860": { "name": { "ru": "Хая Смагаринская (Гуревич)", "en": "Khaya" }, "years": "1860 — ?", "isDeceased": true, "links": { "spouse": "person_shevel_1848" } },
+    "person_shneur_1821": { "name": { "ru": "Шнеур Залмон Смагаринский", "en": "Shneur" }, "years": "1821 — ?", "isDeceased": true, "links": { "parents": ["person_volka_1792", "person_feyga_1794"], "spouse": "person_slava_1822" } },
+    "person_slava_1822": { "name": { "ru": "Слава Смагаринская", "en": "Slava" }, "years": "1822 — 1890", "isDeceased": true, "links": { "spouse": "person_shneur_1821" } },
+    "person_volka_1792": { "name": { "ru": "Волька Иосел Смагаринский", "en": "Volka" }, "years": "1792 — ?", "isDeceased": true, "links": { "parents": ["person_iosel_1760", null], "spouse": "person_feyga_1794" } },
+    "person_feyga_1794": { "name": { "ru": "Фейга Рохля Смагаринская", "en": "Feyga" }, "years": "1794 — ?", "isDeceased": true, "links": { "spouse": "person_volka_1792" } },
+    "person_iosel_1760": { "name": { "ru": "Иосел Смагаринский", "en": "Iosel" }, "years": "до 1792 — ?", "isDeceased": true, "links": {} }
   };
 
   const labels = {
@@ -444,10 +456,10 @@
 
     const ms = person.milestones || {};
     document.getElementById("milestones-table").innerHTML = `
-      <tr><td class="td-label">${labels[currentLang].birth}:</td><td>${ms.birthPlace ? ms.birthPlace[currentLang] : "—"}</td></tr>
-      <tr><td class="td-label">${labels[currentLang].marriage}:</td><td>${ms.marriage ? ms.marriage[currentLang] : "—"}</td></tr>
-      <tr><td class="td-label">${labels[currentLang].job}:</td><td>${ms.occupation ? ms.occupation[currentLang] : "—"}</td></tr>
-      <tr><td class="td-label">${labels[currentLang].burial}:</td><td>${ms.burial ? ms.burial[currentLang] : "—"}</td></tr>
+      <tr><td class="td-label">${labels[currentLang].birth}:</td><td>${ms.birthPlace ? (ms.birthPlace[currentLang] || ms.birthPlace['ru']) : "—"}</td></tr>
+      <tr><td class="td-label">${labels[currentLang].marriage}:</td><td>${ms.marriage ? (ms.marriage[currentLang] || ms.marriage['ru']) : "—"}</td></tr>
+      <tr><td class="td-label">${labels[currentLang].job}:</td><td>${ms.occupation ? (ms.occupation[currentLang] || ms.occupation['ru']) : "—"}</td></tr>
+      <tr><td class="td-label">${labels[currentLang].burial}:</td><td>${ms.burial ? (ms.burial[currentLang] || ms.burial['ru']) : "—"}</td></tr>
     `;
 
     document.getElementById("person-bio").innerHTML = (person.bio && person.bio[currentLang]) || "";
@@ -478,16 +490,10 @@
 
   function getTreeData() {
     const generationOrder = [
-      "person_iosel_1760",
-      "person_volka_1792", "person_feyga_1794",
-      "person_shneur_1821", "person_slava_1822",
-      "person_shevel_1848", "person_khaya_1860",
-      "person_vulf_1898", "person_blyuma_1895",
-      "person_efim_1919",
-      "person_mikhail_1922",
-      "person_katya_1924",
-      "person_sonya_1929",
-      "person_anatoly_1937"
+      "person_iosel_1760", "person_volka_1792", "person_feyga_1794",
+      "person_shneur_1821", "person_slava_1822", "person_shevel_1848", "person_khaya_1860",
+      "person_vulf_1898", "person_blyuma_1895", "person_efim_1919",
+      "person_mikhail_1922", "person_katya_1924", "person_sonya_1929", "person_anatoly_1937"
     ];
 
     const treeData = [];
