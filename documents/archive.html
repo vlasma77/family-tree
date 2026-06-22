@@ -55,8 +55,9 @@
       overflow: hidden;
       border: 1px solid #d6d3d1;
       cursor: pointer;
+      position: relative;
     }
-    .img-wrapper img {
+    .img-wrapper img, .img-wrapper video {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
@@ -96,18 +97,32 @@
       z-index: 9999;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0,0,0,0.85);
+      background: rgba(0,0,0,0.9);
       align-items: center;
       justify-content: center;
     }
     .lightbox.active { display: flex; }
-    .lightbox img { max-width: 90%; max-height: 90%; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
+    .lightbox img, .lightbox video { max-width: 90%; max-height: 90%; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
     .lightbox-close {
       position: absolute;
       top: 20px; right: 30px;
       color: white; font-size: 40px;
       cursor: pointer; user-select: none;
     }
+    .badge {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: white;
+      padding: 2px 6px;
+      font-size: 11px;
+      border-radius: 3px;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+    .badge-video { background: rgba(124, 45, 18, 0.9); }
+    .badge-pdf { background: rgba(185, 28, 28, 0.9); }
+    .pdf-icon { font-size: 55px; color: #b91c1c; }
   </style>
 </head>
 <body>
@@ -121,26 +136,114 @@
 
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
   <span class="lightbox-close">&times;</span>
-  <img id="lightbox-img" src="" alt="Крупный план" onclick="event.stopPropagation()">
+  <div id="lightbox-content" onclick="event.stopPropagation()" style="display:flex; justify-content:center; align-items:center; width:100%; height:100%;"></div>
 </div>
 
 <script>
+  // Идеально точная база данных на основе ваших скриншотов файлов!
   const archivesDb = {
     "person_mikhail_1922": [
+      { file: "person_mikhail_1922/bat_yam_2020.jpg", title: "Михаил в Бат-Яме (2020 г.)" },
       { file: "person_mikhail_1922/birth_certificate.jpg", title: "Свидетельство о рождении" },
-      { file: "person_mikhail_1922/vladimir_anatoly_mikhail.jpg", title: "Владимир, Анатолий и Михаил" },
-      { file: "person_mikhail_1922/mikhail_soldier.jpg", title: "Михаил в молодости (военные годы)" },
-      { file: "person_mikhail_1922/mikhail_vera.jpg", title: "Михаил и Вера" },
-      { file: "person_mikhail_1922/family_gathering.jpg", title: "Семейная встреча" }
+      { file: "person_mikhail_1922/booklet_mikhail.pdf", title: "Памятный буклет Михаила" },
+      { file: "person_mikhail_1922/dance_with_wife.jpg", title: "Танец с супругой" },
+      { file: "person_mikhail_1922/evening_with_wife.jpg", title: "Вечер с супругой" },
+      { file: "person_mikhail_1922/grave_ofakim.jpg", title: "Место упокоения (Офаким)" },
+      { file: "person_mikhail_1922/leningrad_1946.jpg", title: "Михаил в Ленинграде (1946 г.)" },
+      { file: "person_mikhail_1922/marriage_certificate.jpg", title: "Свидетельство о браке" },
+      { file: "person_mikhail_1922/mikhail.JPG", title: "Портрет Михаила Смагаринского" },
+      { file: "person_mikhail_1922/mikhail_astrakhan.jpg", title: "Михаил (Астрахань)" },
+      { file: "person_mikhail_1922/mikhail_at_war.jpg", title: "Михаил в военные годы" },
+      { file: "person_mikhail_1922/mikhail_family.jpg", title: "Семья Михаила" },
+      { file: "person_mikhail_1922/mikhail_family_astrakhan.jpg", title: "Семья Смагаринских в Астрахани" },
+      { file: "person_mikhail_1922/mikhail_fira.jpg", title: "Михаил и Фира" },
+      { file: "person_mikhail_1922/mikhail_ofakim.jpg", title: "Михаил Смагаринский (Офаким)" },
+      { file: "person_mikhail_1922/mikhail_with_wife.jpg", title: "Михаил с супругой" },
+      { file: "person_mikhail_1922/story.mp4", title: "Архивная видеоистория" },
+      { file: "person_mikhail_1922/walk_ashkelon.jpg", title: "На прогулке в Ашкелоне" },
+      { file: "person_mikhail_1922/wedding_anniversary.jpg", title: "Годовщина свадьбы" },
+      { file: "person_mikhail_1922/with_childrens.jpg", title: "Михаил с детьми" },
+      { file: "person_mikhail_1922/with_girlfriend_leningrad.jpg", title: "В Ленинграде" },
+      { file: "person_mikhail_1922/with_grandchildren.jpg", title: "Михаил в кругу внуков" },
+      { file: "person_mikhail_1922/with_son_yuri.jpg", title: "Михаил с сыном Юрием" }
     ],
     "person_anatoly_1937": [
-      { file: "person_anatoly_1937/anatoly_young.jpg", title: "Анатолий в молодости" },
-      { file: "person_anatoly_1937/anatoly_khabarovsk.jpg", title: "Анатолий в Хабаровске" },
-      { file: "person_anatoly_1937/family_photo.jpg", title: "Анатолий с семьей" }
+      { file: "person_anatoly_1937/anatoly.jpg", title: "Портрет Анатолия Смагаринского" },
+      { file: "person_anatoly_1937/anatoly_and_mikhail.jpg", title: "Анатолий и Михаил" },
+      { file: "person_anatoly_1937/anatoly_arad.jpg", title: "Анатолий в Араде" },
+      { file: "person_anatoly_1937/anatoly_the_youngest.png", title: "Анатолий в детстве с семьей" },
+      { file: "person_anatoly_1937/anatoly_with_mother.jpg", title: "Анатолий с матерью" },
+      { file: "person_anatoly_1937/anatoly_with_nephews.jpg", title: "Анатолий с племянниками" },
+      { file: "person_anatoly_1937/anatoly_with_niece.jpg", title: "Анатолий с племянницей" },
+      { file: "person_anatoly_1937/with_wife_gala.jpg", title: "Анатолий с супругой Галой" },
+      { file: "person_anatoly_1937/dance_with_wife.jpg", title: "Танец с женой" },
+      { file: "person_anatoly_1937/daughter_sveta.jpg", title: "Дочь Света" },
+      { file: "person_anatoly_1937/early_years.jpg", title: "Анатолий в молодости" },
+      { file: "person_anatoly_1937/favorite_uncle.jpg", title: "Любимый дядя" },
+      { file: "person_anatoly_1937/gala.jpg", title: "Гала" },
+      { file: "person_anatoly_1937/meeting_with_vladimir_entin.JPG", title: "Встреча с Владимиром Энтиным" },
+      { file: "person_anatoly_1937/snowy_winter.jpg", title: "Снежная зима" },
+      { file: "person_anatoly_1937/son_alex.png", title: "Сын Алекс" },
+      { file: "person_anatoly_1937/vladimir_anatoly_mikhail.jpg", title: "Братья Владимир, Анатолий и Михаил" },
+      { file: "person_anatoly_1937/with_vulf_khabarovsk.png", title: "Анатолий с Вульфом в Хабаровске" },
+      { file: "person_anatoly_1937/with_wife_gala.jpg", title: "Анатолий и Гала" }
+    ],
+    "person_efim_1919": [
+      { file: "person_efim_1919/booklet_efim.pdf", title: "Памятный буклет Ефима" },
+      { file: "person_efim_1919/efim_1944.jpg", title: "Ефим Смагаринский (1944 г.)" },
+      { file: "person_efim_1919/efim_1945_hungary.jpg", title: "Ефим в Венгрии (1945 г.)" },
+      { file: "person_efim_1919/efim_family_1947.jpg", title: "Семья Ефима (1947 г.)" },
+      { file: "person_efim_1919/efim_family_1952.jpg", title: "Семья Ефима (1952 г.)" },
+      { file: "person_efim_1919/efim_family_1953.jpg", title: "Семья Ефима (1953 г.)" },
+      { file: "person_efim_1919/efim_family_1964.jpg", title: "Семья Ефима (1964 г.)" },
+      { file: "person_efim_1919/efim_family_1974.jpg", title: "Семья Ефима (1974 г.)" },
+      { file: "person_efim_1919/efim_friends.jpg", title: "Ефим с друзьями" },
+      { file: "person_efim_1919/efim_unknown_time.jpg", title: "Архивный портрет Ефима" },
+      { file: "person_efim_1919/efim_vacation.jpg", title: "Ефим на отдыхе (канатная дорога)" },
+      { file: "person_efim_1919/efim_with_mother.jpg", title: "Ефим Смагаринский с матерью" }
+    ],
+    "person_vulf_1898": [
+      { file: "person_vulf_1898/vulf_1960s.jpg", title: "Вульф Смагаринский (1960-е гг.)" },
+      { file: "person_vulf_1898/vulf_artel.png", title: "Вульф в обувной артели" },
+      { file: "person_vulf_1898/vulf_blyuma.png", title: "Запись расчёта еврейских архивов" },
+      { file: "person_vulf_1898/vulf_blyuma_fima.jpg", title: "Вульф, Блюма и Фима" },
+      { file: "person_vulf_1898/vulf_blyuma_unknown.jpg", title: "Вульф и Блюма с родственниками" },
+      { file: "person_vulf_1898/vulf_brothers.png", title: "Братья Смагаринские" },
+      { file: "person_vulf_1898/vulf_children.jpg", title: "Дети Вульфа" },
+      { file: "person_vulf_1898/vulf_courtyard.png", title: "Во дворе дома" },
+      { file: "person_vulf_1898/vulf_death.png", title: "Архивная справка о смерти" },
+      { file: "person_vulf_1898/vulf_funeral_1.jpg", title: "Проводы в последний путь - 1" },
+      { file: "person_vulf_1898/vulf_funeral_2.jpg", title: "Проводы в последний путь - 2" },
+      { file: "person_vulf_1898/vulf_grandchildren.jpg", title: "Вульф с внуками" },
+      { file: "person_vulf_1898/vulf_granddaughter.jpg", title: "Вульф с внучкой" },
+      { file: "person_vulf_1898/vulf_house_birobidzhan.jpg", title: "Дом в Биробиджане" },
+      { file: "person_vulf_1898/vulf_house_priluki.jpg", title: "Дом в Прилуках" },
+      { file: "person_vulf_1898/vulf_marriage.jpg", title: "Документ о бракосочетании" },
+      { file: "person_vulf_1898/vulf_unknown_1.jpg", title: "Вульф Смагаринский в молодости" },
+      { file: "person_vulf_1898/vulf_with_blyuma_birobidzhan.jpg", title: "Вульф и Блюма в Биробиджане" }
+    ],
+    "person_blyuma_1895": [
+      { file: "person_blyuma_1895/blyuma_69_years.jpg", title: "Блюма Самуиловна (69 лет)" },
+      { file: "person_blyuma_1895/blyuma_beyla.jpg", title: "Блюма Бейла" },
+      { file: "person_blyuma_1895/blyuma_grave.jpg", title: "Место упокоения Блюмы" },
+      { file: "person_blyuma_1895/blyuma_house_birobidzhan.jpg", title: "У дома в Биробиджане" },
+      { file: "person_blyuma_1895/blyuma_with_daughters.jpg", title: "Блюма с дочерьми" },
+      { file: "person_blyuma_1895/blyuma_youth.mp4", title: "Архивное видео (Молодость)" },
+      { file: "person_blyuma_1895/vulf_blyuma.png", title: "Справка JewishGen" },
+      { file: "person_blyuma_1895/vulf_blyuma_fima.jpg", title: "Семья Смагаринских" },
+      { file: "person_blyuma_1895/vulf_blyuma_unknown.jpg", title: "Вульф и Блюма" },
+      { file: "person_blyuma_1895/vulf_children_1938.jpg", title: "Дети Смагаринских (1938 г.)" },
+      { file: "person_blyuma_1895/vulf_marriage.jpg", title: "Свидетельство о браке" },
+      { file: "person_blyuma_1895/vulf_with_blyuma_birobidzhan.jpg", title: "Супруги в Биробиджане" }
     ],
     "person_katya_1924": [
-      { file: "person_katya_1924/katya_portrait.jpg", title: "Портрет Кати Смагаринской" },
-      { file: "person_katya_1924/katya_document.jpg", title: "Архивный документ Кати" }
+      { file: "person_katya_1924/evgeny_alla_vova.png", title: "Евгений, Алла и Вова" },
+      { file: "person_katya_1924/evgeny_anatoly.jpg", title: "Евгений и Анатолий" },
+      { file: "person_katya_1924/katya_park.jpg", title: "Катя в парке на скамейке" },
+      { file: "person_katya_1924/katya_sisters_son_granddaughter.jpg", title: "Катя с сёстрами, сыном и внучкой" },
+      { file: "person_katya_1924/katya1924.jpg", title: "Портрет Кати (1924 г.)" },
+      { file: "person_katya_1924/meeting_relatives.png", title: "Встреча родственников" },
+      { file: "person_katya_1924/son_evgeny.jpg", title: "Сын Евгений" }
     ],
     "person_sonya_1929": [
       { file: "person_sonya_1929/sonya1929.jpg", title: "Портрет Сони Смагаринской" },
@@ -156,15 +259,6 @@
       { file: "person_sonya_1929/photo_session_elatives.jpg", title: "Фотосессия с родственниками" },
       { file: "person_sonya_1929/sonya_with_relatives.jpg", title: "Соня в кругу близких" },
       { file: "person_sonya_1929/grave_sonya.png", title: "Место упокоения Сони" }
-    ],
-    "person_vulf_1898": [
-      { file: "person_vulf_1898/vulf_shoe_master.jpg", title: "Вульф за работой в артели" }
-    ],
-    "person_blyuma_1895": [
-      { file: "person_blyuma_1895/blyuma_old.jpg", title: "Блюма Самуилова (архивное фото)" }
-    ],
-    "person_efim_1919": [
-      { file: "person_efim_1919/efim_war.jpg", title: "Ефим Смагаринский в военные годы" }
     ]
   };
 
@@ -193,30 +287,67 @@
     }
 
     if (!id || !archivesDb[id] || archivesDb[id].length === 0) {
-      grid.innerHTML = `<div class="no-docs">Для данной персоны архивные документы пока не добавлены или путей не найдено.</div>`;
+      grid.innerHTML = `<div class="no-docs">Для данной персоны архивные документы пока не добавлены.</div>`;
       return;
     }
+
+    grid.innerHTML = "";
 
     archivesDb[id].forEach(item => {
       const card = document.createElement("div");
       card.className = "doc-card";
+      const fullPath = `${item.file}`;
+      
+      const lowerPath = fullPath.toLowerCase();
+      const isVideo = lowerPath.endsWith('.mp4');
+      const isPdf = lowerPath.endsWith('.pdf');
+
+      let mediaHtml = "";
+      if (isVideo) {
+        mediaHtml = `
+          <div class="img-wrapper" onclick="openLightbox('${fullPath}', 'video')">
+            <span class="badge badge-video">ВИДЕО 🎬</span>
+            <video src="${fullPath}" muted preload="metadata"></video>
+          </div>
+        `;
+      } else if (isPdf) {
+        mediaHtml = `
+          <a class="img-wrapper" href="${fullPath}" target="_blank" style="text-decoration:none;">
+            <span class="badge badge-pdf">PDF 📄</span>
+            <div class="pdf-icon">📕</div>
+          </a>
+        `;
+      } else {
+        mediaHtml = `
+          <div class="img-wrapper" onclick="openLightbox('${fullPath}', 'img')">
+            <img src="${fullPath}" alt="${item.title}">
+          </div>
+        `;
+      }
 
       card.innerHTML = `
-        <div class="img-wrapper" onclick="openLightbox('${item.file}')">
-          <img src="${item.file}" alt="${item.title}" onerror="this.src='../photos/male.jpg';">
-        </div>
+        ${mediaHtml}
         <div class="doc-title">${item.title}</div>
       `;
       grid.appendChild(card);
     });
   }
 
-  function openLightbox(src) {
-    document.getElementById("lightbox-img").src = src;
+  function openLightbox(src, type) {
+    const container = document.getElementById("lightbox-content");
+    container.innerHTML = "";
+
+    if (type === 'video') {
+      container.innerHTML = `<video src="${src}" controls autoplay style="max-width:90%; max-height:90%;"></video>`;
+    } else {
+      container.innerHTML = `<img src="${src}" alt="Крупный план">`;
+    }
+
     document.getElementById("lightbox").classList.add("active");
   }
 
   function closeLightbox() {
+    document.getElementById("lightbox-content").innerHTML = ""; 
     document.getElementById("lightbox").classList.remove("active");
   }
 
