@@ -5,170 +5,492 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Летопись рода Смагаринских</title>
   
-  <script src="https://balkan.app/js/FamilyTree.js"></script>
+ <script src="https://balkan.app/js/FamilyTree.js"></script>
   <script src="database.js"></script>
   
   <style>
-    body { font-family: sans-serif; margin: 20px; background-color: #fcfaf2; }
+   body { font-family: sans-serif; margin: 20px; background-color: #fcfaf2; }
+    h1 { text-align: center; color: maroon; }
     .active { font-weight: bold; color: maroon; }
-    #family-tree { width: 100%; height: 750px; border: 1px solid #ccc; background: #fff; }
     
-    /* СТИЛИЗАЦИЯ НАШИХ КАСТОМНЫХ ЭЛЕМЕНТОВ ВНУТРИ БОКОВОЙ ПАНЕЛИ BALKAN */
-    .custom-edit-container { padding: 10px 0; font-family: sans-serif; color: #333; }
-    .custom-title { font-weight: bold; margin-top: 15px; margin-bottom: 5px; color: maroon; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+    /* Стиль для активной кнопки языка */
+.lang-btn.active {
+    background-color: #4CAF50; /* Зеленый цвет, как у кнопки Apply */
+    color: white;
+    border-color: #3e8e41;
+    font-weight: bold;
+}
+    /* СЕТКА ИНТЕРФЕЙСА */
+    #main-wrapper { display: flex; gap: 15px; width: 100%; height: 780px; position: relative; }
+    #family-tree { flex-grow: 1; height: 100%; border: 1px solid #ccc; background: #fff; }
     
-    .milestones-table { width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 13px; }
-    .milestones-table td { padding: 5px 0; vertical-align: top; }
-    .td-lbl { font-weight: bold; color: #666; width: 40%; }
-    
-    /* Кнопки управления */
-    .btn-row { display: flex; gap: 8px; margin-top: 15px; margin-bottom: 15px; flex-wrap: wrap; }
-    .action-btn { 
-      display: inline-flex; align-items: center; justify-content: center; gap: 5px;
-      padding: 8px 12px; font-size: 13px; border-radius: 4px; border: 1px solid #ccc;
-      background: #fdfdfd; cursor: pointer; text-decoration: none; color: #333; transition: all 0.2s;
+    /* БОКОВАЯ ПАНЕЛЬ С ГИБКИМ СКРОЛЛОМ */
+    #custom-side-panel {
+      width: 380px; min-width: 380px; height: 100%; background: #fff;
+      border: 1px solid #ccc; box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+      box-sizing: border-box; display: none; flex-direction: column;
     }
-    .action-btn:hover { background: #f0f0f0; border-color: #999; }
-    .btn-archive { background: maroon !important; color: white !important; border: none; font-weight: bold; }
-    .btn-archive:hover { background: #600000 !important; }
     
-    /* Раздел расширенной информации */
-    .bio-panel { background: #fdfbf7; border: 1px dashed #d1c7bd; padding: 10px; border-radius: 4px; margin-top: 10px; font-size: 13px; line-height: 1.4; }
+    .panel-content-scroll { flex-grow: 1; overflow-y: auto; padding: 20px; }
+    
+    .panel-photo-container { text-align: center; margin-bottom: 15px; }
+    .panel-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid maroon; box-shadow: 0 2px 5px rgba(0,0,0,0.15); }
+    
+    .panel-input-name { font-size: 18px; font-weight: bold; text-align: center; width: 100%; box-sizing: border-box; border: 1px solid #ddd; padding: 6px; border-radius: 4px; color: #333; margin-bottom: 6px; }
+    .panel-input-years { font-style: italic; text-align: center; width: 100%; font-size: 13px; box-sizing: border-box; border: 1px solid #ddd; padding: 5px; border-radius: 4px; color: #666; margin-bottom: 15px; }
+    .milestone-input { width: 100%; box-sizing: border-box; border: 1px solid #ddd; padding: 5px; border-radius: 4px; font-size: 13px; }
+    
+    .custom-title { font-weight: bold; margin-top: 18px; margin-bottom: 8px; color: maroon; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    .milestones-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 13px; }
+    .milestones-table td { padding: 5px 0; vertical-align: middle; }
+    .td-lbl { font-weight: bold; color: #777; width: 35%; }
+    
+    /* АВТОМАТИЧЕСКИЙ СЕМЕЙНЫЙ КРУГ СО СВОИМ СКРОЛЛОМ */
+    .family-circle-container { max-height: 140px; overflow-y: auto; border: 1px solid #eee; background: #fafafa; border-radius: 4px; padding: 8px; }
+    .family-list { margin: 0; padding-left: 0; list-style: none; font-size: 13px; line-height: 1.5; color: #444; }
+    .family-list li { margin-bottom: 5px; }
+   .family-link { color: maroon; text-decoration: none; cursor: pointer; font-weight: bold; }
+    .family-link:hover { color: #600000; text-decoration: underline; }
+    
+    .btn-row { display: flex; gap: 6px; margin-top: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+    .action-btn { display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 6px 12px; font-size: 12px; border-radius: 4px; border: 1px solid #ccc; background: #fdfdfd; cursor: pointer; font-weight: bold; transition: all 0.2s; }
+    .action-btn:hover { background: #f0f0f0; border-color: #888; }
+    .btn-archive { background: #8b8b8b !important; color: white !important; border: none; }
+    .btn-archive.has-data { background: maroon !important; cursor: pointer; }
+    
+    .geni-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; background: #f5f3eb; padding: 8px; border-radius: 6px; border: 1px solid #d1c7bd; margin: 8px 0; }
+    .geni-btn { padding: 6px; font-size: 12px; border: 1px solid #bbb; background: #fff; border-radius: 4px; cursor: pointer; text-align: left; color: #444; }
+    .geni-btn:hover { background: maroon; color: white; }
+    
+    .bio-panel { background: #fdfbf7; border: 1px dashed #d1c7bd; padding: 10px; border-radius: 4px; margin-top: 10px; }
+    .bio-textarea { width: 100%; height: 85px; box-sizing: border-box; border: 1px solid #ddd; padding: 6px; border-radius: 4px; font-size: 13px; resize: vertical; }
+    
+    /* ФИКСИРОВАННЫЙ ПОДВАЛ */
+    .panel-fixed-footer { background: #f4f4f4; border-top: 1px solid #ccc; padding: 15px 20px; box-sizing: border-box; }
+    .btn-save { background: #27ae60 !important; color: white !important; border: none; width: 100%; padding: 10px; font-size: 14px; font-weight: bold; margin-bottom: 8px; border-radius: 4px; cursor: pointer; display: block; text-align: center; }
+    .btn-save:hover { background: #219653 !important; }
+    .btn-download-db { background: maroon !important; color: white !important; border: none; width: 100%; padding: 10px; font-size: 13px; font-weight: bold; border-radius: 4px; cursor: pointer; display: block; text-align: center; }
+    .btn-download-db:hover { background: #600000 !important; }
+    
     .hidden-block { display: none; }
-    .family-list { margin: 5px 0 0 0; padding-left: 18px; }
+    .bft-edit-form, .bft-dialog, .bft-lightbox, .bft-control { display: none !important; }
+
+    /* Стиль для кнопки закрытия панели */
+    .panel-close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #999;
+      cursor: pointer;
+      z-index: 10;
+      transition: color 0.2s;
+    }
+    .panel-close-btn:hover {
+      color: maroon;
+    }
+
+    /* Стиль для двухэтажного текстового поля имени */
+    .panel-textarea-name {
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      padding: 6px;
+      border-radius: 4px;
+      color: #333;
+      margin-bottom: 6px;
+      resize: none; 
+      overflow: hidden; 
+    }
   </style>
 </head>
 <body>
 
-  <h1 id="main-title">Летопись поколений рода Смагаринских</h1>
+ <h1 id="main-title">Летопись поколений рода Смагаринских</h1>
   
-  <div style="margin-bottom: 20px;">
-    <button id="btn-ru" onclick="setLanguage('ru')">RU</button>
-    <button id="btn-en" onclick="setLanguage('en')">EN</button>
+  <div style="text-align: right; margin-bottom: 15px; padding-right: 10px;">
+   <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
+   <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
   </div>
 
-  <div id="family-tree"></div>
+  <div id="main-wrapper">
+    <div id="family-tree"></div>
+    <div id="custom-side-panel"></div>
+  </div>
 
   <script>
     let currentLang = "ru";
     const db = window.db || {};
+    let activeNodeId = null;
+    let treeInstance = null;
 
-    if (typeof FamilyTree !== 'undefined') {
-      FamilyTree.anim.shop = false; 
-      FamilyTree.SearchFields = ["name"];
-    }
-
-    // Автоматическое определение заглушек для фото
     function getPhotoUrl(id) {
       const person = db[id];
       if (person && person.mainPhoto) {
         return person.mainPhoto.startsWith("photos/") ? person.mainPhoto : "photos/" + person.mainPhoto;
       }
-      let isFemale = id.includes("blyuma") || id.includes("haya") || id.includes("khaya") || id.includes("feyga") || id.includes("slava") || id.includes("katya") || id.includes("mira") || id.includes("sonya") || id.includes("nadezhda");
+      let idLower = id.toLowerCase();
+      let isFemale = idLower.includes("blyuma") || idLower.includes("haya") || idLower.includes("khaya") || idLower.includes("feyga") || idLower.includes("slava") || idLower.includes("katya") || idLower.includes("mira") || idLower.includes("sonya");
       return isFemale ? "photos/female.jpg" : "photos/male.jpg";
     }
 
-    // Словари перевода для интерфейса боковой панели
     const labels = {
       ru: {
         birth: "Место рождения", marriage: "Брак", job: "Род занятий", burial: "Место упокоения",
-        btn_doc: "📂 Архивные документы", btn_add: "➕ Добавить", btn_edit: "✏️ Править", btn_more: "ℹ️ Подробнее",
-        vehi: "Важные вехи", circle: "Семейный круг", bio: "Биография"
+        btn_doc: "📂 Документы", btn_add: "➕ Добавить", btn_save: "💾 Применить к дереву", btn_more: "ℹ️ Биография",
+        vehi: "ВАЖНЫЕ ВЕХИ", circle: "СЕМЕЙНЫЙ КРУГ", bio: "Текст биографии",
+        father: "Отец", mother: "Мать", spouse: "Супруг(а)", children: "Дети", no_relations: "Связи в дереве не заданы",
+        add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь"
       },
       en: {
         birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place",
-        btn_doc: "📂 Documents", btn_add: "➕ Add Relative", btn_edit: "✏️ Edit", btn_more: "ℹ️ More Info",
-        vehi: "Key Milestones", circle: "Family Circle", bio: "Biography"
+        btn_doc: "📂 Documents", btn_add: "➕ Add", btn_save: "💾 Apply to Tree", btn_more: "ℹ️ Biography",
+        vehi: "KEY MILESTONES", circle: "FAMILY CIRCLE", bio: "Biography Text",
+        father: "Father", mother: "Mother", spouse: "Spouse", children: "Children", no_relations: "No relationships defined",
+        add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter"
       }
     };
 
-    // ФУНКЦИЯ СБОРКИ КАСТОМНОГО ИНТЕРФЕЙСА ДЛЯ БОКОВОЙ ПАНЕЛИ БАЛКАНА
-    function generateEditFormHtml(obj) {
-      const id = obj.id;
-      const person = db[id];
-      if (!person) return `<div style="padding:15px;">Запись не найдена в database.js</div>`;
+    function normalizeDatabase() {
+      let total = Object.keys(db).length;
+      console.log(`[DATA AUDIT] Старт проверки базы данных. Анализируется записей: ${total}`);
+
+      Object.keys(db).forEach(id => {
+        const person = db[id];
+        if (!person.name) person.name = { ru: "Неизвестно", en: "Unknown" };
+        if (!person.links) person.links = { parents: [], spouse: null };
+        if (!Array.isArray(person.links.parents)) person.links.parents = [];
+
+        if (person.familyText && person.familyText['ru']) {
+          person.familyText['ru'].forEach(line => {
+            if (line.toLowerCase().includes("дети:")) {
+              console.warn(`[AUDIT WARNING] Персона '${id}' содержит детей текстом в familyText. Требуется перевести на ID связи.`);
+            }
+          });
+        }
+
+        if (person.links.spouse && !db[person.links.spouse]) {
+          console.error(`[DATA ERROR] Персона '${id}' ссылается на несуществующий ID супруга(и): '${person.links.spouse}'`);
+        }
+        person.links.parents.forEach((pId, idx) => {
+          if (pId && !db[pId]) {
+            console.error(`[DATA ERROR] Персона '${id}' ссылается на несуществующий ID родителя [${idx}]: '${pId}'`);
+          }
+        });
+      });
+      console.log("[DATA AUDIT] Проверка структуры данных завершена успешно.");
+    }
+
+    function buildAutomaticFamilyHtml(nodeId) {
+      const person = db[nodeId];
+      if (!person) return "";
+      const bText = labels[currentLang];
+      let html = "";
+      let cleanNodeId = String(nodeId).trim().toLowerCase();
+
+      const getLinkOrText = (idOrName) => {
+        if (!idOrName) return null;
+        let targetStr = String(idOrName).trim();
+        if (!targetStr) return null;
+        
+        if (db[targetStr]) {
+          let name = db[targetStr].name[currentLang] || db[targetStr].name['ru'] || targetStr;
+          return `<span class="family-link" onclick="showCustomSidePanel('${targetStr}')">${name}</span>`;
+        }
+        return null;
+      };
+
+      let fatherId = (person.links && person.links.parents && person.links.parents[0]) ? person.links.parents[0] : (person.fid || person.father);
+      let motherId = (person.links && person.links.parents && person.links.parents[1]) ? person.links.parents[1] : (person.mid || person.mother);
+      let spouseId = (person.links && person.links.spouse) ? person.links.spouse : (person.pid || person.spouse);
+
+      let fatherHtml = getLinkOrText(fatherId);
+      let motherHtml = getLinkOrText(motherId);
+      let spouseHtml = getLinkOrText(spouseId);
+
+      if (fatherHtml) html += `<li><strong>${bText.father}:</strong> ${fatherHtml}</li>`;
+      if (motherHtml) html += `<li><strong>${bText.mother}:</strong> ${motherHtml}</li>`;
+      if (spouseHtml) html += `<li><strong>${bText.spouse}:</strong> ${spouseHtml}</li>`;
+
+      let childrenLinks = [];
+      Object.keys(db).forEach(id => {
+        if (id === nodeId) return;
+        const potentialChild = db[id];
+        let isChild = false;
+
+        if (potentialChild.fid && String(potentialChild.fid).trim().toLowerCase() === cleanNodeId) isChild = true;
+        if (potentialChild.mid && String(potentialChild.mid).trim().toLowerCase() === cleanNodeId) isChild = true;
+
+        if (!isChild && potentialChild.links && potentialChild.links.parents) {
+          let parentsArrayLower = potentialChild.links.parents.map(p => p ? String(p).trim().toLowerCase() : "");
+          if (parentsArrayLower.includes(cleanNodeId)) isChild = true;
+        }
+
+        if (isChild) {
+          let childHtml = getLinkOrText(id);
+          if (childHtml) childrenLinks.push(childHtml);
+        }
+      });
+
+      if (childrenLinks.length > 0) {
+        html += `<li><strong>${bText.children}:</strong> ${childrenLinks.join(", ")}</li>`;
+      }
+
+      return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
+    }
+
+    function showCustomSidePanel(nodeId) {
+      activeNodeId = nodeId;
+      const person = db[nodeId];
+      const panel = document.getElementById("custom-side-panel");
+      if (!person || !panel) return;
 
       const ms = person.milestones || {};
       const bText = labels[currentLang];
+      let photoUrl = getPhotoUrl(nodeId);
 
-      // Проверка наличия архива
+      // 1. Поиск документов в архиве напрямую через глобальный archivesDb
+      let hasDocs = false;
+      let archiveKey = nodeId;
+      
+      let globalDocs = window.archivesDb || (typeof archivesDb !== 'undefined' ? archivesDb : null);
+      
+      if (globalDocs) {
+        const targetKey = Object.keys(globalDocs).find(k => k.trim().toLowerCase() === nodeId.trim().toLowerCase());
+        if (targetKey && globalDocs[targetKey] && globalDocs[targetKey].length > 0) {
+          hasDocs = true;
+          archiveKey = targetKey;
+        }
+      }
+
       let archiveHtml = "";
-      if (person.archive) {
-        archiveHtml = `<a class="action-btn btn-archive" href="documents/archive.html?id=${person.archive}" target="_blank">${bText.btn_doc}</a>`;
+      if (hasDocs || person.archive) {
+    let finalId = archiveKey || person.archive;
+        archiveHtml = `<a class="action-btn btn-archive has-data" href="documents/archive.html?id=${finalId}&lang=${currentLang}" target="_blank" style="background-color: maroon !important; color: white !important; cursor: pointer; opacity: 1;">${bText.btn_doc}</a>`;
+      } else {
+        archiveHtml = `<button class="action-btn btn-archive" disabled style="opacity: 0.4; cursor: not-allowed; background-color: #8b8b8b !important;" title="Архив пуст">${bText.btn_doc}</button>`;
       }
 
-      // Сборка списка родственников
-      let familyLiItems = "";
-      if (person.familyText && person.familyText[currentLang]) {
-        person.familyText[currentLang].forEach(text => {
-          familyLiItems += `<li>${text}</li>`;
-        });
-      }
+      // Helper функция для правильного чтения языковых полей (работает со строками и объектами)
+      const getLangValue = (field) => {
+        if (!field) return "";
+        if (typeof field === "object") {
+          return field[currentLang] || field['ru'] || "";
+        }
+        return field;
+      };
 
-      const bioContent = person.bio ? (person.bio[currentLang] || "") : "";
+      let bioContent = person.bio ? getLangValue(person.bio) : "";
+      let automaticFamilyContent = buildAutomaticFamilyHtml(nodeId);
 
-      // Формируем результирующий HTML-шаблон внутри панели
-      return `
-        <div class="custom-edit-container">
+    panel.innerHTML = `
+        <div style="position: absolute; top: 10px; right: 15px; display: flex; align-items: center; gap: 12px; z-index: 10;">
+          <span title="Режим редактирования активен" style="font-size: 18px; cursor: default; color: maroon;">✏️</span>
+          <span class="panel-close-btn" style="position: static; font-size: 28px;" onclick="document.getElementById('custom-side-panel').style.display='none'">&times;</span>
+        </div>
+        <div class="panel-content-scroll">
+          <div class="panel-photo-container">
+            <img class="panel-avatar" src="${photoUrl}" alt="Фото">
+          </div>
+          
+          <textarea id="inp-name" class="panel-textarea-name" placeholder="Имя Фамилия" rows="2">${getLangValue(person.name)}</textarea>
+          
+          <input type="text" id="inp-years" class="panel-input-years" value="${person.years || ''}" placeholder="Годы жизни">
+
           <div class="custom-title">${bText.vehi}</div>
           <table class="milestones-table">
-            <tr><td class="td-lbl">${bText.birth}:</td><td>${ms.birthPlace ? (ms.birthPlace[currentLang] || ms.birthPlace['ru']) : "—"}</td></tr>
-            <tr><td class="td-lbl">${bText.marriage}:</td><td>${ms.marriage ? (ms.marriage[currentLang] || ms.marriage['ru']) : "—"}</td></tr>
-            <tr><td class="td-lbl">${bText.job}:</td><td>${ms.occupation ? (ms.occupation[currentLang] || ms.occupation['ru']) : "—"}</td></tr>
-            <tr><td class="td-lbl">${bText.burial}:</td><td>${ms.burial ? (ms.burial[currentLang] || ms.burial['ru']) : "—"}</td></tr>
+            <tr><td class="td-lbl">${bText.birth}:</td><td><input type="text" id="inp-birth" class="milestone-input" value="${getLangValue(ms.birthPlace)}"></td></tr>
+            <tr><td class="td-lbl">${bText.marriage}:</td><td><input type="text" id="inp-marriage" class="milestone-input" value="${getLangValue(ms.marriage)}"></td></tr>
+            <tr><td class="td-lbl">${bText.job}:</td><td><input type="text" id="inp-job" class="milestone-input" value="${getLangValue(ms.occupation)}"></td></tr>
+            <tr><td class="td-lbl">${bText.burial}:</td><td><input type="text" id="inp-burial" class="milestone-input" value="${getLangValue(ms.burial)}"></td></tr>
           </table>
+
+          <div class="custom-title">${bText.circle}</div>
+          <div class="family-circle-container">
+            ${automaticFamilyContent}
+          </div>
 
           <div class="btn-row">
             ${archiveHtml}
-            <button class="action-btn" onclick="alert('Добавить родственника для: ${person.name.ru}')">${bText.btn_add}</button>
-            <button class="action-btn" onclick="alert('Редактировать данные: ${person.name.ru}')">${bText.btn_edit}</button>
-            <button class="action-btn" onclick="toggleBioBlock()">${bText.btn_more}</button>
+            <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
+            <button class="action-btn" onclick="togglePureBio()">${bText.btn_more}</button>
           </div>
 
-          <div id="extended-bio-panel" class="bio-panel hidden-block">
-            <div style="font-weight:bold; margin-bottom:5px; color:maroon;">${bText.bio}:</div>
-            <div>${bioContent || "—"}</div>
-            
-            <div style="font-weight:bold; margin-top:10px; margin-bottom:5px; color:maroon;">${bText.circle}:</div>
-            <ul class="family-list">${familyLiItems || "—"}</ul>
+          <div id="geni-add-menu" class="geni-menu hidden-block">
+            <button class="geni-btn" onclick="addRelativeDirect('father')">${bText.add_father}</button>
+            <button class="geni-btn" onclick="addRelativeDirect('mother')">${bText.add_mother}</button>
+            <button class="geni-btn" onclick="addRelativeDirect('spouse')">${bText.add_spouse}</button>
+            <button class="geni-btn" onclick="addRelativeDirect('son')">${bText.add_son}</button>
+            <button class="geni-btn" onclick="addRelativeDirect('daughter')">${bText.add_daughter}</button>
+          </div>
+
+          <div id="pure-bio-panel" class="bio-panel hidden-block">
+            <div style="font-weight:bold; margin-bottom:5px; color:maroon; font-size:12px;">${bText.bio}:</div>
+            <textarea id="inp-bio" class="bio-textarea" placeholder="Введите историю жизни...">${bioContent}</textarea>
           </div>
         </div>
+
+        <div class="panel-fixed-footer">
+          <button class="btn-save" onclick="saveCurrentPersonData()">${bText.btn_save}</button>
+          <button class="btn-download-db" onclick="downloadDatabaseFile()">📥 Скачать базу (database.js)</button>
+        </div>
       `;
+
+      panel.style.display = "flex";
     }
 
-    // Функция-переключатель видимости дополнительной информации
-    window.toggleBioBlock = function() {
-      const panel = document.getElementById("extended-bio-panel");
-      if (panel) {
-        panel.classList.toggle("hidden-block");
+    window.saveCurrentPersonData = function() {
+      if (!activeNodeId || !db[activeNodeId]) return;
+      const person = db[activeNodeId];
+      
+      if (typeof person.name !== "object") person.name = { ru: person.name, en: "" };
+      person.name[currentLang] = document.getElementById("inp-name").value;
+      person.years = document.getElementById("inp-years").value;
+      
+      if (!person.milestones) person.milestones = {};
+      if (!person.milestones.birthPlace) person.milestones.birthPlace = {};
+      if (!person.milestones.marriage) person.milestones.marriage = {};
+      if (!person.milestones.occupation) person.milestones.occupation = {};
+      if (!person.milestones.burial) person.milestones.burial = {};
+      if (!person.bio) person.bio = {};
+
+      const setLangField = (field, elementId) => {
+        if (typeof field !== "object") return { ru: field, [currentLang]: document.getElementById(elementId).value };
+        field[currentLang] = document.getElementById(elementId).value;
+        return field;
+      };
+
+      person.milestones.birthPlace = setLangField(person.milestones.birthPlace, "inp-birth");
+      person.milestones.marriage = setLangField(person.milestones.marriage, "inp-marriage");
+      person.milestones.occupation = setLangField(person.milestones.occupation, "inp-job");
+      person.milestones.burial = setLangField(person.milestones.burial, "inp-burial");
+      
+      if (document.getElementById("inp-bio")) {
+        person.bio[currentLang] = document.getElementById("inp-bio").value;
       }
+
+      drawTree();
+      alert("Изменения применены к плитке! Нажмите кнопку 'Скачать базу' внизу, чтобы подготовить файл для сохранения.");
+    };
+
+    window.downloadDatabaseFile = function() {
+      const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
+      const blob = new Blob([fileContent], { type: "text/javascript;charset=utf-8;" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "database.js";
+      link.style.display = "none";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+
+    window.toggleGeniMenu = function() {
+      const geniMenu = document.getElementById("geni-add-menu");
+      if (geniMenu) geniMenu.classList.toggle("hidden-block");
+    };
+
+    window.togglePureBio = function() {
+      const bioEl = document.getElementById("pure-bio-panel");
+      if (bioEl) bioEl.classList.toggle("hidden-block");
+    };
+
+    window.addRelativeDirect = function(role) {
+      if (!activeNodeId || !db[activeNodeId]) return;
+      const newId = "P" + Date.now();
+      
+      db[newId] = {
+        id: newId,
+        name: { ru: "Новая персона", en: "New Person" },
+        years: "",
+        mainPhoto: "",
+        milestones: { birthPlace: { ru: "" }, marriage: { ru: "" }, occupation: { ru: "" }, burial: { ru: "" } },
+        bio: { ru: "", en: "" },
+        links: { parents: [], spouse: null }
+      };
+
+      const currentPerson = db[activeNodeId];
+      if (!currentPerson.links) currentPerson.links = { parents: [], spouse: null };
+
+      if (role === 'father') {
+        currentPerson.links.parents[0] = newId;
+      } else if (role === 'mother') {
+        currentPerson.links.parents[1] = newId;
+      } else if (role === 'spouse') {
+        currentPerson.links.spouse = newId;
+        db[newId].links.spouse = activeNodeId;
+      } else if (role === 'son' || role === 'daughter') {
+        if (currentPerson.links.spouse) {
+          let idLower = activeNodeId.toLowerCase();
+          let isFemale = idLower.includes("blyuma") || idLower.includes("haya") || idLower.includes("khaya") || idLower.includes("feyga") || idLower.includes("slava") || idLower.includes("katya") || idLower.includes("mira") || idLower.includes("sonya");
+          db[newId].links.parents = isFemale ? [currentPerson.links.spouse, activeNodeId] : [activeNodeId, currentPerson.links.spouse];
+        } else {
+          db[newId].links.parents = [activeNodeId];
+        }
+      }
+
+      document.getElementById("geni-add-menu").classList.add("hidden-block");
+      drawTree();
+      showCustomSidePanel(newId);
     };
 
     function getTreeData() {
+      normalizeDatabase(); 
       const treeData = [];
+      
       Object.keys(db).forEach(id => {
         const person = db[id];
         let photoUrl = getPhotoUrl(id);
+        
+        let rawName = id;
+        if (person.name) {
+          rawName = typeof person.name === "object" ? (person.name[currentLang] || person.name['ru'] || id) : person.name;
+        }
+
         const node = {
           id: id,
-          name: person.name[currentLang] || person.name['ru'],
+          name: rawName,
           title: person.years || "",
           img: photoUrl
         };
-
+        
         if (person.links) {
-          if (person.links.spouse) node.pids = [person.links.spouse];
-          if (person.links.parents) {
-            if (person.links.parents[0]) node.fid = person.links.parents[0];
-            if (person.links.parents[1]) node.mid = person.links.parents[1];
+          if (person.links.spouse && String(person.links.spouse).trim()) {
+            node.pids = [person.links.spouse];
+          }
+          if (person.links.parents && Array.isArray(person.links.parents)) {
+            if (person.links.parents[0] && String(person.links.parents[0]).trim()) node.fid = person.links.parents[0];
+            if (person.links.parents[1] && String(person.links.parents[1]).trim()) node.mid = person.links.parents[1];
           }
         }
+        
+        if (person.fid && (!person.links || !person.links.parents || !person.links.parents[0])) {
+          if (!person.links) person.links = { parents: [], spouse: null };
+          person.links.parents[0] = person.fid;
+          node.fid = person.fid;
+        }
+        if (person.mid && (!person.links || !person.links.parents || !person.links.parents[1])) {
+          if (!person.links) person.links = { parents: [], spouse: null };
+          person.links.parents[1] = person.mid;
+          node.mid = person.mid;
+        }
+        if (person.pid && (!person.links || !person.links.spouse)) {
+          if (!person.links) person.links = { parents: [], spouse: null };
+          person.links.spouse = person.pid;
+          node.pids = [person.pid];
+        }
+
         treeData.push(node);
       });
       return treeData;
     }
 
-    let treeInstance = null;
     function drawTree() {
       const container = document.getElementById("family-tree");
       if (!container) return;
@@ -177,42 +499,57 @@
       try {
         treeInstance = new FamilyTree(container, {
           mouseScroller: { zoom: true, scale: true },
-          nodeBinding: { 
-            field_0: "name", 
-            field_1: "title", 
-            img_0: "img"
-          },
-          // ПОДКЛЮЧАЕМ НАШ КАСТОМНЫЙ ШАБЛОН ДЛЯ ВСТРОЕННОЙ БОКОВОЙ ПАНЕЛИ
-          editForm: {
-            buttons: {
-              pdf: { text: "Сохранить в PDF" } // Оставим системную полезную кнопку PDF
-            },
-            generateElements: function(elements, nodes, fields) {
-              // Очищаем стандартные текстовые инпуты Balkan, чтобы они не дублировались
-              return []; 
-            },
-            // Внедряем наш умный HTML-шаблон внутрь боковой панели
-            template: function(obj, fields, node) {
-              return generateEditFormHtml(obj);
-            }
-          }
+          editForm: false,
+          nodeBinding: { field_0: "name", field_1: "title", img_0: "img" }
+        });
+
+        treeInstance.on('click', function (sender, args) {
+          showCustomSidePanel(args.node.id);
+          return false;
         });
 
         treeInstance.load(getTreeData());
       } catch (e) {
-        console.error("Ошибка при инициализации дерева:", e);
+        console.error("Ошибка инициализации графического графа:", e);
       }
     }
 
-    function setLanguage(lang) {
-      currentLang = lang;
-      document.getElementById("btn-ru").className = lang === 'ru' ? 'active' : '';
-      document.getElementById("btn-en").className = lang === 'en' ? 'active' : '';
-      document.getElementById("main-title").innerText = lang === 'ru' ? 'Летопись поколений рода Смагаринских' : 'The Smagarinsky Family Chronicle';
-      drawTree(); 
+  function setLanguage(lang) {
+  currentLang = lang;
+  
+  // 1. Управляем подсветкой кнопок через classList (чтобы не ломать другие стили)
+  const btnRu = document.getElementById("btn-ru");
+  const btnEn = document.getElementById("btn-en");
+  
+  if (btnRu && btnEn) {
+    if (lang === 'ru') {
+      btnRu.classList.add('active');
+      btnEn.classList.remove('active');
+    } else {
+      btnEn.classList.add('active');
+      btnRu.classList.remove('active');
     }
+  }
+  
+  // 2. Переводим главный заголовок страницы
+  const mainTitle = document.getElementById("main-title");
+  if (mainTitle) {
+    mainTitle.innerText = lang === 'ru' ? 'Летопись поколений рода Смагаринских' : 'The Smagarinsky Family Chronicle';
+  }
+  
+  // 3. Перерисовываем боковую панель для обновления полей (Умань -> Uman)
+  if (typeof activeNodeId !== 'undefined' && activeNodeId) {
+    showCustomSidePanel(activeNodeId);
+  }
+  
+  // 4. Обновляем само дерево
+  if (typeof drawTree === 'function') {
+    drawTree(); 
+  }
+}
 
-    setLanguage('ru');
+// Запуск по умолчанию при загрузке страницы
+setLanguage('ru');
   </script>
 </body>
 </html>
