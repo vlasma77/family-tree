@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Летопись рода Смагаринских</title>
   
- <script src="https://balkan.app/js/FamilyTree.js"></script>
+  <script src="https://balkan.app/js/FamilyTree.js"></script>
   <script src="database.js"></script>
   
   <style>
-   body { font-family: sans-serif; margin: 20px; background-color: #fcfaf2; }
+    body { font-family: sans-serif; margin: 20px; background-color: #fcfaf2; }
     h1 { text-align: center; color: maroon; }
     .active { font-weight: bold; color: maroon; }
     
     /* Стиль для активной кнопки языка */
-.lang-btn.active {
-    background-color: #4CAF50; /* Зеленый цвет, как у кнопки Apply */
-    color: white;
-    border-color: #3e8e41;
-    font-weight: bold;
-}
+    .lang-btn.active {
+        background-color: #4CAF50; /* Зеленый цвет, как у кнопки Apply */
+        color: white;
+        border-color: #3e8e41;
+        font-weight: bold;
+    }
     /* СЕТКА ИНТЕРФЕЙСА */
     #main-wrapper { display: flex; gap: 15px; width: 100%; height: 780px; position: relative; }
     #family-tree { flex-grow: 1; height: 100%; border: 1px solid #ccc; background: #fff; }
@@ -50,7 +50,7 @@
     .family-circle-container { max-height: 140px; overflow-y: auto; border: 1px solid #eee; background: #fafafa; border-radius: 4px; padding: 8px; }
     .family-list { margin: 0; padding-left: 0; list-style: none; font-size: 13px; line-height: 1.5; color: #444; }
     .family-list li { margin-bottom: 5px; }
-   .family-link { color: maroon; text-decoration: none; cursor: pointer; font-weight: bold; }
+    .family-link { color: maroon; text-decoration: none; cursor: pointer; font-weight: bold; }
     .family-link:hover { color: #600000; text-decoration: underline; }
     
     .btn-row { display: flex; gap: 6px; margin-top: 12px; margin-bottom: 12px; flex-wrap: wrap; }
@@ -144,6 +144,7 @@
       ru: {
         birth: "Место рождения", marriage: "Брак", job: "Род занятий", burial: "Место упокоения",
         btn_doc: "📂 Документы", btn_add: "➕ Добавить", btn_save: "💾 Применить к дереву", btn_more: "ℹ️ Биография",
+        btn_delete: "🗑️ Удалить",
         vehi: "ВАЖНЫЕ ВЕХИ", circle: "СЕМЕЙНЫЙ КРУГ", bio: "Текст биографии",
         father: "Отец", mother: "Мать", spouse: "Супруг(а)", children: "Дети", no_relations: "Связи в дереве не заданы",
         add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь"
@@ -151,6 +152,7 @@
       en: {
         birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place",
         btn_doc: "📂 Documents", btn_add: "➕ Add", btn_save: "💾 Apply to Tree", btn_more: "ℹ️ Biography",
+        btn_delete: "🗑️ Delete",
         vehi: "KEY MILESTONES", circle: "FAMILY CIRCLE", bio: "Biography Text",
         father: "Father", mother: "Mother", spouse: "Spouse", children: "Children", no_relations: "No relationships defined",
         add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter"
@@ -255,7 +257,6 @@
       const bText = labels[currentLang];
       let photoUrl = getPhotoUrl(nodeId);
 
-      // 1. Поиск документов в архиве напрямую через глобальный archivesDb
       let hasDocs = false;
       let archiveKey = nodeId;
       
@@ -271,13 +272,12 @@
 
       let archiveHtml = "";
       if (hasDocs || person.archive) {
-    let finalId = archiveKey || person.archive;
+        let finalId = archiveKey || person.archive;
         archiveHtml = `<a class="action-btn btn-archive has-data" href="documents/archive.html?id=${finalId}&lang=${currentLang}" target="_blank" style="background-color: maroon !important; color: white !important; cursor: pointer; opacity: 1;">${bText.btn_doc}</a>`;
       } else {
         archiveHtml = `<button class="action-btn btn-archive" disabled style="opacity: 0.4; cursor: not-allowed; background-color: #8b8b8b !important;" title="Архив пуст">${bText.btn_doc}</button>`;
       }
 
-      // Helper функция для правильного чтения языковых полей (работает со строками и объектами)
       const getLangValue = (field) => {
         if (!field) return "";
         if (typeof field === "object") {
@@ -289,7 +289,7 @@
       let bioContent = person.bio ? getLangValue(person.bio) : "";
       let automaticFamilyContent = buildAutomaticFamilyHtml(nodeId);
 
-    panel.innerHTML = `
+      panel.innerHTML = `
         <div style="position: absolute; top: 10px; right: 15px; display: flex; align-items: center; gap: 12px; z-index: 10;">
           <span title="Режим редактирования активен" style="font-size: 18px; cursor: default; color: maroon;">✏️</span>
           <span class="panel-close-btn" style="position: static; font-size: 28px;" onclick="document.getElementById('custom-side-panel').style.display='none'">&times;</span>
@@ -320,6 +320,10 @@
             ${archiveHtml}
             <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
             <button class="action-btn" onclick="togglePureBio()">${bText.btn_more}</button>
+            
+            <button class="action-btn" style="background-color: #e74c3c !important; color: white !important; border: none; cursor: pointer;" onclick="deletePerson(activeNodeId)">
+                ${bText.btn_delete}
+            </button>
           </div>
 
           <div id="geni-add-menu" class="geni-menu hidden-block">
@@ -377,6 +381,50 @@
 
       drawTree();
       alert("Изменения применены к плитке! Нажмите кнопку 'Скачать базу' внизу, чтобы подготовить файл для сохранения.");
+    };
+
+    window.deletePerson = function(id) {
+      if (!id || !db[id]) {
+        alert(currentLang === 'ru' ? "Ошибка: Карточка не найдена." : "Error: Person not found.");
+        return;
+      }
+
+      const confirmMsg = currentLang === 'ru' 
+        ? `Вы уверены, что хотите полностью удалить карточку "${db[id].name[currentLang] || db[id].name['ru']}" из древа?`
+        : `Are you sure you want to completely delete "${db[id].name[currentLang] || id}" from the tree?`;
+
+      if (confirm(confirmMsg)) {
+        // 1. Удаляем человека из базы данных
+        delete db[id];
+        
+        // 2. Очищаем связи у других родственников
+        Object.keys(db).forEach(key => {
+          const person = db[key];
+          if (person.links) {
+            if (person.links.spouse === id) person.links.spouse = null;
+            if (person.links.parents) {
+              person.links.parents = person.links.parents.filter(pId => pId !== id);
+            }
+          }
+          if (person.fid === id) delete person.fid;
+          if (person.mid === id) delete person.mid;
+          if (person.pid === id) delete person.pid;
+        });
+        
+        // 3. Закрываем боковую панель
+        document.getElementById("custom-side-panel").style.display = "none";
+        
+        // 4. Перерисовываем дерево на экране
+        drawTree();
+        
+        // --- АВТОМАТИЧЕСКИЙ СКАЧИВАНИЕ НОВОГО ФАЙЛА ---
+        downloadDatabaseFile();
+        
+        const alertMsg = currentLang === 'ru'
+          ? "Карточка удалена с экрана, и новый файл базы данных автоматически скачан! Замените им старый файл 'database.js' в папке проекта, чтобы сохранить изменения."
+          : "Deleted successfully! New database file downloaded automatically. Replace 'database.js' in your project folder to save permanent changes.";
+        alert(alertMsg);
+      }
     };
 
     window.downloadDatabaseFile = function() {
@@ -514,42 +562,38 @@
       }
     }
 
-  function setLanguage(lang) {
-  currentLang = lang;
-  
-  // 1. Управляем подсветкой кнопок через classList (чтобы не ломать другие стили)
-  const btnRu = document.getElementById("btn-ru");
-  const btnEn = document.getElementById("btn-en");
-  
-  if (btnRu && btnEn) {
-    if (lang === 'ru') {
-      btnRu.classList.add('active');
-      btnEn.classList.remove('active');
-    } else {
-      btnEn.classList.add('active');
-      btnRu.classList.remove('active');
+    function setLanguage(lang) {
+      currentLang = lang;
+      
+      const btnRu = document.getElementById("btn-ru");
+      const btnEn = document.getElementById("btn-en");
+      
+      if (btnRu && btnEn) {
+        if (lang === 'ru') {
+          btnRu.classList.add('active');
+          btnEn.classList.remove('active');
+        } else {
+          btnEn.classList.add('active');
+          btnRu.classList.remove('active');
+        }
+      }
+      
+      const mainTitle = document.getElementById("main-title");
+      if (mainTitle) {
+        mainTitle.innerText = lang === 'ru' ? 'Летопись поколений рода Смагаринских' : 'The Smagarinsky Family Chronicle';
+      }
+      
+      if (typeof activeNodeId !== 'undefined' && activeNodeId) {
+        showCustomSidePanel(activeNodeId);
+      }
+      
+      if (typeof drawTree === 'function') {
+        drawTree(); 
+      }
     }
-  }
-  
-  // 2. Переводим главный заголовок страницы
-  const mainTitle = document.getElementById("main-title");
-  if (mainTitle) {
-    mainTitle.innerText = lang === 'ru' ? 'Летопись поколений рода Смагаринских' : 'The Smagarinsky Family Chronicle';
-  }
-  
-  // 3. Перерисовываем боковую панель для обновления полей (Умань -> Uman)
-  if (typeof activeNodeId !== 'undefined' && activeNodeId) {
-    showCustomSidePanel(activeNodeId);
-  }
-  
-  // 4. Обновляем само дерево
-  if (typeof drawTree === 'function') {
-    drawTree(); 
-  }
-}
 
-// Запуск по умолчанию при загрузке страницы
-setLanguage('ru');
+    // Запуск по умолчанию при загрузке страницы
+    setLanguage('ru');
   </script>
 </body>
 </html>
