@@ -394,10 +394,8 @@
         : `Are you sure you want to completely delete "${db[id].name[currentLang] || id}" from the tree?`;
 
       if (confirm(confirmMsg)) {
-        // 1. Удаляем человека из базы данных
         delete db[id];
         
-        // 2. Очищаем связи у других родственников
         Object.keys(db).forEach(key => {
           const person = db[key];
           if (person.links) {
@@ -411,13 +409,9 @@
           if (person.pid === id) delete person.pid;
         });
         
-        // 3. Закрываем боковую панель
         document.getElementById("custom-side-panel").style.display = "none";
         
-        // 4. Перерисовываем дерево на экране
         drawTree();
-        
-        // --- АВТОМАТИЧЕСКИЙ СКАЧИВАНИЕ НОВОГО ФАЙЛА ---
         downloadDatabaseFile();
         
         const alertMsg = currentLang === 'ru'
@@ -587,6 +581,7 @@
         showCustomSidePanel(activeNodeId);
       }
       
+      // ИСПРАВЛЕНИЕ ТУТ: Корректно перерисовываем дерево при смене локализации
       if (typeof drawTree === 'function') {
         drawTree(); 
       }

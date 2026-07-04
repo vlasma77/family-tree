@@ -54,168 +54,168 @@ window.db = {
         "url": "archiv_birth_aizik.png",
         "title": {
           "ru": "archiv birth aizik",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "birth_aizik_1917.png",
         "title": {
           "ru": "birth aizik 1917",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "dearth_vulf.jpg",
         "title": {
           "ru": "dearth vulf",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "ktuba_marriage_vulf.png",
         "title": {
           "ru": "ktuba marriage vulf",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "marriage_vulf.png",
         "title": {
           "ru": "marriage vulf",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "priluki_archive_1923.jpg",
         "title": {
           "ru": "priluki archive 1923",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_1960s.jpg",
         "title": {
           "ru": "vulf 1960s",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_artel.png",
         "title": {
           "ru": "vulf artel",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_blyuma.png",
         "title": {
           "ru": "vulf blyuma",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_blyuma_fima.jpg",
         "title": {
           "ru": "vulf blyuma fima",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_blyuma_unknown.jpg",
         "title": {
           "ru": "vulf blyuma unknown",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_brothers.png",
         "title": {
           "ru": "vulf brothers",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_children.jpg",
         "title": {
           "ru": "vulf children",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_courtyard.png",
         "title": {
           "ru": "vulf courtyard",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_death.png",
         "title": {
           "ru": "vulf death",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_funeral_1.jpg",
         "title": {
           "ru": "vulf funeral 1",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_funeral_2.jpg",
         "title": {
           "ru": "vulf funeral 2",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_grandchildren.jpg",
         "title": {
           "ru": "vulf grandchildren",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_granddaughter.jpg",
         "title": {
           "ru": "vulf granddaughter",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_house_birobidzhan.jpg",
         "title": {
           "ru": "vulf house birobidzhan",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_house_priluki.jpg",
         "title": {
           "ru": "vulf house priluki",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_marriage.jpg",
         "title": {
           "ru": "vulf marriage",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_unknown_1.jpg",
         "title": {
           "ru": "vulf unknown 1",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "vulf_with_blyuma_birobidzhan.jpg",
         "title": {
           "ru": "vulf with blyuma birobidzhan",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       }
     ]
@@ -269,122 +269,122 @@ window.db = {
     "archive": "person_blyuma_1895",
     "documents": [
       {
-        "url": "archiv_birth_aizik.png",
+        "url": "Архивная запись о бракосочетании Вульфа и Блюмы.png",
         "title": {
-          "ru": "archiv birth aizik",
-          "en": "Archive document"
+          "ru": "Архивная запись о бракосочетании Вульфа и Блюмы",
+          "en": "Archival record of the marriage Wolfe and Blyuma"
         }
       },
       {
-        "url": "birth_aizik_1917.png",
+        "url": "Архивная запись рождения Израиля Айзика.png",
         "title": {
-          "ru": "birth aizik 1917",
-          "en": "Archive document"
+          "ru": "Архивная запись рождения Израиля Айзика",
+          "en": "Archival recording of Israel Aizyk birth"
         }
       },
       {
-        "url": "blyuma_69_years.jpg",
+        "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
         "title": {
-          "ru": "blyuma 69 years",
-          "en": "Archive document"
+          "ru": "Архивная справка из переписи населения Прилук, 1923",
+          "en": "Archival information from the Priluki population census, 1923"
         }
       },
       {
-        "url": "blyuma_beyla.jpg",
+        "url": "Блюма Бейла в молодости.jpg",
         "title": {
-          "ru": "blyuma beyla",
-          "en": "Archive document"
+          "ru": "Блюма Бейла в молодости",
+          "en": "Blyuma Beila in her youth"
         }
       },
       {
-        "url": "blyuma_grave.jpg",
+        "url": "Блюма с дочерьми Мирой и Соней.jpg",
         "title": {
-          "ru": "blyuma grave",
-          "en": "Archive document"
+          "ru": "Блюма с дочерьми Мирой и Соней",
+          "en": "Blyuma with her daughters Mira and Sonya"
         }
       },
       {
-        "url": "blyuma_with_daughters.jpg",
+        "url": "Блюма, 69 лет.jpg",
         "title": {
-          "ru": "blyuma with daughters",
-          "en": "Archive document"
+          "ru": "Блюма, 69 лет",
+          "en": "Blyuma, 69 years"
         }
       },
       {
-        "url": "dearth_bluma.jpg",
+        "url": "Все дети Вульфа и Блюмы.jpg",
         "title": {
-          "ru": "dearth bluma",
-          "en": "Archive document"
+          "ru": "Все дети Вульфа и Блюмы",
+          "en": "All children of Wolf and Blyuma"
         }
       },
       {
-        "url": "ktuba_marriage_vulf.png",
+        "url": "Вульф и Блюма с детьми Хаимом (Фима) и Самуилом (Миша).jpg",
         "title": {
-          "ru": "ktuba marriage vulf",
-          "en": "Archive document"
+          "ru": "Вульф и Блюма с детьми Хаимом (Фима) и Самуилом (Миша)",
+          "en": "Wulf and Blyuma with their children Chaim (Fima) and Samuel (Misha)"
         }
       },
       {
-        "url": "marriage_vulf.png",
+        "url": "Выписка о бракосочетании Вульфа и Блюмы.png",
         "title": {
-          "ru": "marriage vulf",
-          "en": "Archive document"
+          "ru": "Выписка о бракосочетании Вульфа и Блюмы",
+          "en": "Extract from the marriage certificate of Wulf and Blyuma"
         }
       },
       {
-        "url": "priluki_archive_1923.jpg",
+        "url": "Выписка о рождении Айзика, 1917.png",
         "title": {
-          "ru": "priluki archive 1923",
-          "en": "Archive document"
+          "ru": "Выписка о рождении Айзика, 1917",
+          "en": "Aizyks birth certificate, 1917"
         }
       },
       {
-        "url": "spouses_birobidzhan.jpg",
+        "url": "Дом проживания в Биробиджане.jpg",
         "title": {
-          "ru": "spouses birobidzhan",
-          "en": "Archive document"
+          "ru": "Дом проживания в Биробиджане",
+          "en": "Residential building in Birobidzhan"
         }
       },
       {
-        "url": "vulf_blyuma.png",
+        "url": "Запись брака Вульфа с Блюмой.png",
         "title": {
-          "ru": "vulf blyuma",
-          "en": "Archive document"
+          "ru": "Запись брака Вульфа с Блюмой",
+          "en": "Record of Wolfe's marriage to Blyuma"
         }
       },
       {
-        "url": "vulf_blyuma_fima.jpg",
+        "url": "Из жизни в Биробиджане.jpg",
         "title": {
-          "ru": "vulf blyuma fima",
-          "en": "Archive document"
+          "ru": "Из жизни в Биробиджане",
+          "en": "From life in Birobidzhan"
         }
       },
       {
-        "url": "vulf_children_1938.jpg",
+        "url": "Могила Блюмы, Хабаровск.jpg",
         "title": {
-          "ru": "vulf children 1938",
-          "en": "Archive document"
+          "ru": "Могила Блюмы, Хабаровск",
+          "en": "Blyuma's grave, Khabarovsk"
         }
       },
       {
-        "url": "vulf_house_birobidzhan.jpg",
+        "url": "Период жизни в Биробиджане.jpg",
         "title": {
-          "ru": "vulf house birobidzhan",
-          "en": "Archive document"
+          "ru": "Период жизни в Биробиджане",
+          "en": "Period of life in Birobidzhan"
         }
       },
       {
-        "url": "vulf_marriage.png",
+        "url": "Полная запись о бракосочетании.png",
         "title": {
-          "ru": "vulf marriage",
-          "en": "Archive document"
+          "ru": "Полная запись о бракосочетании",
+          "en": "Full marriage record"
         }
       },
       {
-        "url": "vulf_with_blyuma_birobidzhan.jpg",
+        "url": "Свидетельство о смерти Блюмы.jpg",
         "title": {
-          "ru": "vulf with blyuma birobidzhan",
-          "en": "Archive document"
+          "ru": "Свидетельство о смерти Блюмы",
+          "en": "Blyuma's death certificate"
         }
       }
     ]
@@ -441,122 +441,122 @@ window.db = {
     "archive": "person_efim_1919",
     "documents": [
       {
-        "url": "booklet_efim.pdf",
+        "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
         "title": {
-          "ru": "booklet efim",
-          "en": "Archive document"
+          "ru": "Архивная справка из переписи населения Прилук, 1923",
+          "en": "Archival information from the Priluki population census, 1923"
         }
       },
       {
-        "url": "childrens_efim.jpg",
+        "url": "Встреча взрослых детей.jpg",
         "title": {
-          "ru": "childrens efim",
-          "en": "Archive document"
+          "ru": "Встреча взрослых детей",
+          "en": "Meeting of adult children"
         }
       },
       {
-        "url": "efim_1944.jpg",
+        "url": "Дети Ефима и Надежды.jpg",
         "title": {
-          "ru": "efim 1944",
-          "en": "Archive document"
+          "ru": "Дети Ефима и Надежды",
+          "en": "Children of Efim and Nadezhda"
         }
       },
       {
-        "url": "efim_1945_hungary.jpg",
+        "url": "Ефим на отдыхе.jpg",
         "title": {
-          "ru": "efim 1945 hungary",
-          "en": "Archive document"
+          "ru": "Ефим на отдыхе",
+          "en": "Efim is on vacation"
         }
       },
       {
-        "url": "efim_family_1947.jpg",
+        "url": "Ефим с друзьями военных лет.jpg",
         "title": {
-          "ru": "efim family 1947",
-          "en": "Archive document"
+          "ru": "Ефим с друзьями военных лет",
+          "en": "Efim with his wartime friends"
         }
       },
       {
-        "url": "efim_family_1952.jpg",
+        "url": "Ефим с матерью.jpg",
         "title": {
-          "ru": "efim family 1952",
-          "en": "Archive document"
+          "ru": "Ефим с матерью",
+          "en": "Efim with his mother"
         }
       },
       {
-        "url": "efim_family_1953.jpg",
+        "url": "Ефим Смагаринский.jpg",
         "title": {
-          "ru": "efim family 1953",
-          "en": "Archive document"
+          "ru": "Ефим Смагаринский",
+          "en": "Efim Smagarinsky"
         }
       },
       {
-        "url": "efim_family_1964.jpg",
+        "url": "Ефим, 1944.jpg",
         "title": {
-          "ru": "efim family 1964",
-          "en": "Archive document"
+          "ru": "Ефим, 1944",
+          "en": "Efim, 1944"
         }
       },
       {
-        "url": "efim_family_1974.jpg",
+        "url": "Ефим, 1945, Венгрия.jpg",
         "title": {
-          "ru": "efim family 1974",
-          "en": "Archive document"
+          "ru": "Ефим, 1945, Венгрия",
+          "en": "Efim, 1945, Hungary"
         }
       },
       {
-        "url": "efim_friends.jpg",
+        "url": "Надежда, супруга Ефима.jpg",
         "title": {
-          "ru": "efim friends",
-          "en": "Archive document"
+          "ru": "Надежда, супруга Ефима",
+          "en": "Nadezhda, Efim's wife"
         }
       },
       {
-        "url": "efim_unknown_time.jpg",
+        "url": "Перевод архивной справки, Прилуки 1923.jpg",
         "title": {
-          "ru": "efim unknown time",
-          "en": "Archive document"
+          "ru": "Перевод архивной справки, Прилуки 1923",
+          "en": "Translation of an archival certificate, Priluki 1923"
         }
       },
       {
-        "url": "efim_vacation.jpg",
+        "url": "Семья Ефима, 1947.jpg",
         "title": {
-          "ru": "efim vacation",
-          "en": "Archive document"
+          "ru": "Семья Ефима, 1947",
+          "en": "Efim's family, 1947"
         }
       },
       {
-        "url": "efim_with_mother.jpg",
+        "url": "Семья Ефима, 1952.jpg",
         "title": {
-          "ru": "efim with mother",
-          "en": "Archive document"
+          "ru": "Семья Ефима, 1952",
+          "en": "Efim's family, 1952"
         }
       },
       {
-        "url": "meeting_adult_childrens.jpg",
+        "url": "Семья Ефима, 1954.jpg",
         "title": {
-          "ru": "meeting adult childrens",
-          "en": "Archive document"
+          "ru": "Семья Ефима, 1954",
+          "en": "Efim's family, 1954"
         }
       },
       {
-        "url": "priluki_archive_1923.jpg",
+        "url": "Семья Ефима, 1964.jpg",
         "title": {
-          "ru": "priluki archive 1923",
-          "en": "Archive document"
+          "ru": "Семья Ефима, 1964",
+          "en": "Efim's family, 1964"
         }
       },
       {
-        "url": "spouse_efim.jpg",
+        "url": "Семья Ефима, 1974.jpg",
         "title": {
-          "ru": "spouse efim",
-          "en": "Archive document"
+          "ru": "Семья Ефима, 1974",
+          "en": "Efim's family, 1974"
         }
       },
       {
-        "url": "архив прилуки-2.jpg",
+        "url": "Хроника военных лет.pdf",
         "title": {
-          "ru": "архив прилуки-2",
-          "en": "Archive document"
+          "ru": "Хроника военных лет",
+          "en": "Chronicle of the war years"
         }
       }
     ]
@@ -614,192 +614,192 @@ window.db = {
     "archive": "person_mikhail_1922",
     "documents": [
       {
-        "url": "bat_yam_2020.jpg",
+        "url": "Архивная справка переписи населения 1923.jpg",
         "title": {
-          "ru": "bat yam 2020",
-          "en": "Archive document"
+          "ru": "Архивная справка переписи населения 1923",
+          "en": "Official Certificate"
         }
       },
       {
-        "url": "birth_certificate.jpg",
+        "url": "Братья на набережной Ашкелона.jpg",
         "title": {
-          "ru": "birth certificate",
-          "en": "Archive document"
+          "ru": "Братья на набережной Ашкелона",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "booklet_mikhail.pdf",
+        "url": "Вальс с женой.jpg",
         "title": {
-          "ru": "booklet mikhail",
-          "en": "Archive document"
+          "ru": "Вальс с женой",
+          "en": "Waltz with wife"
         }
       },
       {
-        "url": "dance_with_wife.jpg",
+        "url": "Время войны.jpg",
         "title": {
-          "ru": "dance with wife",
-          "en": "Archive document"
+          "ru": "Время войны",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "evening_with_wife.jpg",
+        "url": "Встреча с Владимиром Энтиным.jpg",
         "title": {
-          "ru": "evening with wife",
-          "en": "Archive document"
+          "ru": "Встреча с Владимиром Энтиным",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "grave_ofakim.jpg",
+        "url": "Годовщина свадьбы.jpg",
         "title": {
-          "ru": "grave ofakim",
-          "en": "Archive document"
+          "ru": "Годовщина свадьбы",
+          "en": "Wedding anniversary"
         }
       },
       {
-        "url": "leningrad_1946.jpg",
+        "url": "Жизнь в Офакиме.jpg",
         "title": {
-          "ru": "leningrad 1946",
-          "en": "Archive document"
+          "ru": "Жизнь в Офакиме",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "marriage_certificate.jpg",
+        "url": "Курсант военного училища 1946.jpg",
         "title": {
-          "ru": "marriage certificate",
-          "en": "Archive document"
+          "ru": "Курсант военного училища 1946",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "meeting_vladimir_entin.jpg",
+        "url": "Михаил в Астрахани.jpg",
         "title": {
-          "ru": "meeting vladimir entin",
-          "en": "Archive document"
+          "ru": "Михаил в Астрахани",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "mikhail.JPG",
+        "url": "Михаил в Офакиме.jpg",
         "title": {
-          "ru": "mikhail",
-          "en": "Archive document"
+          "ru": "Михаил в Офакиме",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "mikhail_anatoly.jpg",
+        "url": "Михаил и Фира.jpg",
         "title": {
-          "ru": "mikhail anatoly",
-          "en": "Archive document"
+          "ru": "Михаил и Фира",
+          "en": "Mikhail and Fira"
         }
       },
       {
-        "url": "mikhail_astrakhan.jpg",
+        "url": "Михаил с внуками.jpg",
         "title": {
-          "ru": "mikhail astrakhan",
-          "en": "Archive document"
+          "ru": "Михаил с внуками",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "mikhail_at_war.jpg",
+        "url": "Михаил с детьми.jpg",
         "title": {
-          "ru": "mikhail at war",
-          "en": "Archive document"
+          "ru": "Михаил с детьми",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "mikhail_family.jpg",
+        "url": "Михаил с младшим братом Анатолием.jpg",
         "title": {
-          "ru": "mikhail family",
-          "en": "Archive document"
+          "ru": "Михаил с младшим братом Анатолием",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "mikhail_family_astrakhan.jpg",
+        "url": "Михаил с подругой, Ленинград.jpg",
         "title": {
-          "ru": "mikhail family astrakhan",
-          "en": "Archive document"
+          "ru": "Михаил с подругой, Ленинград",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "mikhail_fira.jpg",
+        "url": "Михаил с семьёй в Астрахани.jpg",
         "title": {
-          "ru": "mikhail fira",
-          "en": "Archive document"
+          "ru": "Михаил с семьёй в Астрахани",
+          "en": "Mikhail and his family in Astrakhan"
         }
       },
       {
-        "url": "mikhail_ofakim.jpg",
+        "url": "Михаил с сыном Юрием.jpg",
         "title": {
-          "ru": "mikhail ofakim",
-          "en": "Archive document"
+          "ru": "Михаил с сыном Юрием",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "mikhail_with_wife.jpg",
+        "url": "Могила в Офакиме.jpg",
         "title": {
-          "ru": "mikhail with wife",
-          "en": "Archive document"
+          "ru": "Могила в Офакиме",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "priluki_archive_1923.jpg",
+        "url": "На пикнике с женой.jpg",
         "title": {
-          "ru": "priluki archive 1923",
-          "en": "Archive document"
+          "ru": "На пикнике с женой",
+          "en": "Picnic with wife"
         }
       },
       {
-        "url": "vladimir_entin_anatoly_mikhail.jpg",
+        "url": "перевод архивной справки.jpg",
         "title": {
-          "ru": "vladimir entin anatoly mikhail",
-          "en": "Archive document"
+          "ru": "перевод архивной справки",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "walk_ashkelon.jpg",
+        "url": "Последний год в Бат Яме.jpg",
         "title": {
-          "ru": "walk ashkelon",
-          "en": "Archive document"
+          "ru": "Последний год в Бат Яме",
+          "en": "Archival Document"
         }
       },
       {
-        "url": "wedding_anniversary.jpg",
+        "url": "Приятный семейный вечер.jpg",
         "title": {
-          "ru": "wedding anniversary",
-          "en": "Archive document"
+          "ru": "Приятный семейный вечер",
+          "en": "A pleasant family evening"
         }
       },
       {
-        "url": "with_childrens.jpg",
+        "url": "Прогулка по набережной.jpg",
         "title": {
-          "ru": "with childrens",
-          "en": "Archive document"
+          "ru": "Прогулка по набережной",
+          "en": "A walk along the embankment"
         }
       },
       {
-        "url": "with_girlfriend_leningrad.jpg",
+        "url": "Свидетельство о браке.jpg",
         "title": {
-          "ru": "with girlfriend leningrad",
-          "en": "Archive document"
+          "ru": "Свидетельство о браке",
+          "en": "Marriage Certificate"
         }
       },
       {
-        "url": "with_grandchildren.jpg",
+        "url": "Свидетельство о рождении.jpg",
         "title": {
-          "ru": "with grandchildren",
-          "en": "Archive document"
+          "ru": "Свидетельство о рождении",
+          "en": "Birth Certificate"
         }
       },
       {
-        "url": "with_son_yuri.jpg",
+        "url": "Семейная фотография.jpg",
         "title": {
-          "ru": "with son yuri",
-          "en": "Archive document"
+          "ru": "Семейная фотография",
+          "en": "Family photo"
         }
       },
       {
-        "url": "архив прилуки-2.jpg",
+        "url": "Хроника военных лет.pdf",
         "title": {
-          "ru": "архив прилуки-2",
-          "en": "Archive document"
+          "ru": "Хроника военных лет",
+          "en": "Chronicle of the war years"
         }
       }
     ]
@@ -856,52 +856,38 @@ window.db = {
     "archive": "person_katya_1924",
     "documents": [
       {
-        "url": "evgeny_alla_vova.png",
+        "url": "Встреча с родственниками.png",
         "title": {
-          "ru": "evgeny alla vova",
-          "en": "Archive document"
+          "ru": "Встреча с родственниками",
+          "en": "Meeting with relatives"
         }
       },
       {
-        "url": "evgeny_anatoly.jpg",
+        "url": "Катя в парке, Астрахань.jpg",
         "title": {
-          "ru": "evgeny anatoly",
-          "en": "Archive document"
+          "ru": "Катя в парке, Астрахань",
+          "en": "Katya in the park, Astrakhan"
         }
       },
       {
-        "url": "katya1924.jpg",
+        "url": "Катя с сёстрами, сыном и внучкой.jpg",
         "title": {
-          "ru": "katya1924",
-          "en": "Archive document"
+          "ru": "Катя с сёстрами, сыном и внучкой",
+          "en": "Katya with her sisters, son, and granddaughter"
         }
       },
       {
-        "url": "katya_park.jpg",
+        "url": "Катя, 1965.jpg",
         "title": {
-          "ru": "katya park",
-          "en": "Archive document"
+          "ru": "Катя, 1965",
+          "en": "Katya, 1965"
         }
       },
       {
-        "url": "katya_sisters_son_granddaughter.jpg",
+        "url": "сын Евгений.jpg",
         "title": {
-          "ru": "katya sisters son granddaughter",
-          "en": "Archive document"
-        }
-      },
-      {
-        "url": "meeting_relatives.png",
-        "title": {
-          "ru": "meeting relatives",
-          "en": "Archive document"
-        }
-      },
-      {
-        "url": "son_evgeny.jpg",
-        "title": {
-          "ru": "son evgeny",
-          "en": "Archive document"
+          "ru": "сын Евгений",
+          "en": "son Evgeny"
         }
       }
     ]
@@ -948,154 +934,154 @@ window.db = {
         "url": "at_the_celebration.jpg",
         "title": {
           "ru": "at the celebration",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "booklet_linetzky.pdf",
         "title": {
           "ru": "booklet linetzky",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "dancing_with_spouse.jpg",
         "title": {
           "ru": "dancing with spouse",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "family_photo.jpg",
         "title": {
           "ru": "family photo",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "family_together.jpg",
         "title": {
           "ru": "family together",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "grave_mira.jpg",
         "title": {
           "ru": "grave mira",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "linetzky_bella.jpg",
         "title": {
           "ru": "linetzky bella",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "linetzky_luda.png",
         "title": {
           "ru": "linetzky luda",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "linetzky_roman.jpg",
         "title": {
           "ru": "linetzky roman",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "mira_at_home.jpg",
         "title": {
           "ru": "mira at home",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "mira_linetzky.jpg",
         "title": {
           "ru": "mira linetzky",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "mira_with_daughter.jpg",
         "title": {
           "ru": "mira with daughter",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "mira_with_daughters.jpg",
         "title": {
           "ru": "mira with daughters",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "mira_with_roman.jpg",
         "title": {
           "ru": "mira with roman",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "passionate_kiss.jpg",
         "title": {
           "ru": "passionate kiss",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sisters.jpg",
         "title": {
           "ru": "sisters",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "together_through_years.jpg",
         "title": {
           "ru": "together through years",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "valera_linetzky.jpg",
         "title": {
           "ru": "valera linetzky",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "свидетельство о браке Линецкий.jpeg",
         "title": {
           "ru": "свидетельство о браке Линецкий",
-          "en": "Archive document"
+          "en": "Marriage Certificate"
         }
       },
       {
         "url": "свидетельство о браке Роман.jpeg",
         "title": {
           "ru": "свидетельство о браке Роман",
-          "en": "Archive document"
+          "en": "Marriage Certificate"
         }
       },
       {
         "url": "трудовая книжка Линецкой.jpg",
         "title": {
           "ru": "трудовая книжка Линецкой",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "трудовая книжка Миры.jpg",
         "title": {
           "ru": "трудовая книжка Миры",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       }
     ]
@@ -1200,91 +1186,91 @@ window.db = {
         "url": "grave_sonya.png",
         "title": {
           "ru": "grave sonya",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "katya_sonya_mira.jpg",
         "title": {
           "ru": "katya sonya mira",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "meeting_with_sisters.jpg",
         "title": {
           "ru": "meeting with sisters",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "photo_session_elatives.jpg",
         "title": {
           "ru": "photo session elatives",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sons_leonid_igor.jpg",
         "title": {
           "ru": "sons leonid igor",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sons_sonya.jpg",
         "title": {
           "ru": "sons sonya",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sonya1929.jpg",
         "title": {
           "ru": "sonya1929",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sonya_middle.png",
         "title": {
           "ru": "sonya middle",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sonya_mikhail.jpg",
         "title": {
           "ru": "sonya mikhail",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sonya_mira_blyuma.jpg",
         "title": {
           "ru": "sonya mira blyuma",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sonya_sister_mira.jpg",
         "title": {
           "ru": "sonya sister mira",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "sonya_with_relatives.jpg",
         "title": {
           "ru": "sonya with relatives",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "with_parents.jpg",
         "title": {
           "ru": "with parents",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       }
     ]
@@ -1342,136 +1328,129 @@ window.db = {
     "archive": "person_anatoly_1937",
     "documents": [
       {
-        "url": "anatoly.jpg",
+        "url": "Алекс, сын Анатолия.png",
         "title": {
-          "ru": "anatoly",
-          "en": "Archive document"
+          "ru": "Алекс, сын Анатолия",
+          "en": "Alex, Anatoly's son"
         }
       },
       {
-        "url": "anatolys_wife_gala.jpg",
+        "url": "Анатолий в Араде.jpg",
         "title": {
-          "ru": "anatolys wife gala",
-          "en": "Archive document"
+          "ru": "Анатолий в Араде",
+          "en": "Anatoly in Arad"
         }
       },
       {
-        "url": "anatoly_and_mikhail.jpg",
+        "url": "Анатолий и Михаил с двоюродным братом Владимиром Энтиным.jpg",
         "title": {
-          "ru": "anatoly and mikhail",
-          "en": "Archive document"
+          "ru": "Анатолий и Михаил с двоюродным братом Владимиром Энтиным",
+          "en": "Anatoly and Mikhail with their cousin Vladimir Entin"
         }
       },
       {
-        "url": "anatoly_arad.jpg",
+        "url": "Анатолий и Михаил.jpg",
         "title": {
-          "ru": "anatoly arad",
-          "en": "Archive document"
+          "ru": "Анатолий и Михаил",
+          "en": "Anatoly and Mikhail"
         }
       },
       {
-        "url": "anatoly_the_youngest.png",
+        "url": "Анатолий с женой.jpg",
         "title": {
-          "ru": "anatoly the youngest",
-          "en": "Archive document"
+          "ru": "Анатолий с женой",
+          "en": "Anatoly with his wife"
         }
       },
       {
-        "url": "anatoly_with_mother.jpg",
+        "url": "Анатолий с мамой Блюмой.jpg",
         "title": {
-          "ru": "anatoly with mother",
-          "en": "Archive document"
+          "ru": "Анатолий с мамой Блюмой",
+          "en": "Anatoly with his mother Blyuma"
         }
       },
       {
-        "url": "anatoly_with_nephews.jpg",
+        "url": "Анатолий с отцом Вульфом, Хабаровск.png",
         "title": {
-          "ru": "anatoly with nephews",
-          "en": "Archive document"
+          "ru": "Анатолий с отцом Вульфом, Хабаровск",
+          "en": "Anatoly with his father Wulf, Khabarovsk"
         }
       },
       {
-        "url": "anatoly_with_niece.jpg",
+        "url": "Анатолий с племянниками.jpg",
         "title": {
-          "ru": "anatoly with niece",
-          "en": "Archive document"
+          "ru": "Анатолий с племянниками",
+          "en": "Anatoly with nephews"
         }
       },
       {
-        "url": "dance_with_wife.jpg",
+        "url": "Анатолий с племянницей.jpg",
         "title": {
-          "ru": "dance with wife",
-          "en": "Archive document"
+          "ru": "Анатолий с племянницей",
+          "en": "Anatoly with niece"
         }
       },
       {
-        "url": "daughter_sveta.jpg",
+        "url": "Анатолий Смагаринский.jpg",
         "title": {
-          "ru": "daughter sveta",
-          "en": "Archive document"
+          "ru": "Анатолий Смагаринский",
+          "en": "Anatoly Smagarinsky"
         }
       },
       {
-        "url": "early_years.jpg",
+        "url": "Владимир, Анатолий и Михаил.jpg",
         "title": {
-          "ru": "early years",
-          "en": "Archive document"
+          "ru": "Владимир, Анатолий и Михаил",
+          "en": "Vladimir, Anatoly and Mikhail"
         }
       },
       {
-        "url": "favorite_uncle.jpg",
+        "url": "Галина, жена Анатолия.jpg",
         "title": {
-          "ru": "favorite uncle",
-          "en": "Archive document"
+          "ru": "Галина, жена Анатолия",
+          "en": "Galina, Anatoly's wife"
         }
       },
       {
-        "url": "gala.jpg",
+        "url": "Дети Вульфа, Анатолий самый младший.png",
         "title": {
-          "ru": "gala",
-          "en": "Archive document"
+          "ru": "Дети Вульфа, Анатолий самый младший",
+          "en": "Wolfs children, Anatoly is the youngest"
         }
       },
       {
-        "url": "meeting_with_vladimir_entin.JPG",
+        "url": "Жена Анатолия, Гала.jpg",
         "title": {
-          "ru": "meeting with vladimir entin",
-          "en": "Archive document"
+          "ru": "Жена Анатолия, Гала",
+          "en": "Anatolys wife Gala"
         }
       },
       {
-        "url": "snowy_winter.jpg",
+        "url": "Любимый дядя Толя с племяниками.jpg",
         "title": {
-          "ru": "snowy winter",
-          "en": "Archive document"
+          "ru": "Любимый дядя Толя с племяниками",
+          "en": "Beloved Uncle Tolya with his nephews"
         }
       },
       {
-        "url": "son_alex.png",
+        "url": "Молодые годы Анатолия, Хабаровск.jpg",
         "title": {
-          "ru": "son alex",
-          "en": "Archive document"
+          "ru": "Молодые годы Анатолия, Хабаровск",
+          "en": "Anatoly's early years, Khabarovsk"
         }
       },
       {
-        "url": "vladimir_anatoly_mikhail.jpg",
+        "url": "Света, дочь Анатолия.jpg",
         "title": {
-          "ru": "vladimir anatoly mikhail",
-          "en": "Archive document"
+          "ru": "Света, дочь Анатолия",
+          "en": "Sveta, Anatoly's daughter"
         }
       },
       {
-        "url": "with_vulf_khabarovsk.png",
+        "url": "Супружеский танец.jpg",
         "title": {
-          "ru": "with vulf khabarovsk",
-          "en": "Archive document"
-        }
-      },
-      {
-        "url": "with_wife_gala.jpg",
-        "title": {
-          "ru": "with wife gala",
-          "en": "Archive document"
+          "ru": "Супружеский танец",
+          "en": "Marital dance"
         }
       }
     ]
@@ -1808,178 +1787,178 @@ window.db = {
     "archive": "person_fira_1927",
     "documents": [
       {
-        "url": "birth_certificate_fira.jpg",
+        "url": "Бабушка Фира.jpg",
         "title": {
-          "ru": "birth certificate fira",
-          "en": "Archive document"
+          "ru": "Бабушка Фира",
+          "en": "grandmother Fira"
         }
       },
       {
-        "url": "dance_with_wife.jpg",
+        "url": "В парке Умани с родственниками.jpg",
         "title": {
-          "ru": "dance with wife",
-          "en": "Archive document"
+          "ru": "В парке Умани с родственниками",
+          "en": "In Uman Park with relatives"
         }
       },
       {
-        "url": "evening_with_wife.jpg",
+        "url": "Вальс с женой.jpg",
         "title": {
-          "ru": "evening with wife",
-          "en": "Archive document"
+          "ru": "Вальс с женой",
+          "en": "Waltz with wife"
         }
       },
       {
-        "url": "family_roytman.jpg",
+        "url": "Встреча с родными в Умани.jpg",
         "title": {
-          "ru": "family roytman",
-          "en": "Archive document"
+          "ru": "Встреча с родными в Умани",
+          "en": "Meeting with relatives in Uman"
         }
       },
       {
-        "url": "fira_chidrens_astrakhan.jpg",
+        "url": "Годовщина свадьбы.jpg",
         "title": {
-          "ru": "fira chidrens astrakhan",
-          "en": "Archive document"
+          "ru": "Годовщина свадьбы",
+          "en": "Wedding anniversary"
         }
       },
       {
-        "url": "fira_milya_park_uman.jpg",
+        "url": "Михаил и Фира с Блюмой.jpg",
         "title": {
-          "ru": "fira milya park uman",
-          "en": "Archive document"
+          "ru": "Михаил и Фира с Блюмой",
+          "en": "Mikhail and Fira with Blyuma"
         }
       },
       {
-        "url": "fira_milya_uman.jpg",
+        "url": "Михаил и Фира.jpg",
         "title": {
-          "ru": "fira milya uman",
-          "en": "Archive document"
+          "ru": "Михаил и Фира",
+          "en": "Mikhail and Fira"
         }
       },
       {
-        "url": "fira_sister_milya.jpg",
+        "url": "Михаил с семьёй в Астрахани.jpg",
         "title": {
-          "ru": "fira sister milya",
-          "en": "Archive document"
+          "ru": "Михаил с семьёй в Астрахани",
+          "en": "Mikhail and his family in Astrakhan"
         }
       },
       {
-        "url": "fira_son_vova_astrakhan.jpg",
+        "url": "Могила Фиры в Офакиме.jpg",
         "title": {
-          "ru": "fira son vova astrakhan",
-          "en": "Archive document"
+          "ru": "Могила Фиры в Офакиме",
+          "en": "The grave of Fira in Ofakim"
         }
       },
       {
-        "url": "fira_with_childs.jpg",
+        "url": "моменты отдыха.jpg",
         "title": {
-          "ru": "fira with childs",
-          "en": "Archive document"
+          "ru": "моменты отдыха",
+          "en": "moments of relaxation"
         }
       },
       {
-        "url": "fira_younger_years.jpg",
+        "url": "На встрече с родственниками в Умани.jpg",
         "title": {
-          "ru": "fira younger years",
-          "en": "Archive document"
+          "ru": "На встрече с родственниками в Умани",
+          "en": "At a meeting with relatives in Uman"
         }
       },
       {
-        "url": "grandmother_fira.jpg",
+        "url": "На пикнике с женой.jpg",
         "title": {
-          "ru": "grandmother fira",
-          "en": "Archive document"
+          "ru": "На пикнике с женой",
+          "en": "Picnic with wife"
         }
       },
       {
-        "url": "grave_fira.jpg",
+        "url": "Приятный семейный вечер.jpg",
         "title": {
-          "ru": "grave fira",
-          "en": "Archive document"
+          "ru": "Приятный семейный вечер",
+          "en": "A pleasant family evening"
         }
       },
       {
-        "url": "meeting_priluki.jpg",
+        "url": "Прогулка по набережной.jpg",
         "title": {
-          "ru": "meeting priluki",
-          "en": "Archive document"
+          "ru": "Прогулка по набережной",
+          "en": "A walk along the embankment"
         }
       },
       {
-        "url": "meeting_with_relatives.jpg",
+        "url": "с тётей Златой.jpg",
         "title": {
-          "ru": "meeting with relatives",
-          "en": "Archive document"
+          "ru": "с тётей Златой",
+          "en": "with Aunt Zlata"
         }
       },
       {
-        "url": "mikhail_family.jpg",
+        "url": "свидетельство о рождении.jpg",
         "title": {
-          "ru": "mikhail family",
-          "en": "Archive document"
+          "ru": "свидетельство о рождении",
+          "en": "Birth Certificate"
         }
       },
       {
-        "url": "mikhail_family_astrakhan.jpg",
+        "url": "Семейная фотография Ройтман.jpg",
         "title": {
-          "ru": "mikhail family astrakhan",
-          "en": "Archive document"
+          "ru": "Семейная фотография Ройтман",
+          "en": "Roytman family photo"
         }
       },
       {
-        "url": "mikhail_fira.jpg",
+        "url": "Семейная фотография.jpg",
         "title": {
-          "ru": "mikhail fira",
-          "en": "Archive document"
+          "ru": "Семейная фотография",
+          "en": "Family photo"
         }
       },
       {
-        "url": "mikhail_with_wife.jpg",
+        "url": "Уманьские родственники.jpg",
         "title": {
-          "ru": "mikhail with wife",
-          "en": "Archive document"
+          "ru": "Уманьские родственники",
+          "en": "Uman relatives"
         }
       },
       {
-        "url": "misha_fira_blyuma.jpg",
+        "url": "Фира в молодые годы.jpg",
         "title": {
-          "ru": "misha fira blyuma",
-          "en": "Archive document"
+          "ru": "Фира в молодые годы",
+          "en": "Fira in her younger years"
         }
       },
       {
-        "url": "time_for_rest.jpg",
+        "url": "Фира с детьми в Астрахани.jpg",
         "title": {
-          "ru": "time for rest",
-          "en": "Archive document"
+          "ru": "Фира с детьми в Астрахани",
+          "en": "Fira with children in Astrakhan"
         }
       },
       {
-        "url": "uman_relatives.jpg",
+        "url": "Фира с детьми.jpg",
         "title": {
-          "ru": "uman relatives",
-          "en": "Archive document"
+          "ru": "Фира с детьми",
+          "en": "Fira with children"
         }
       },
       {
-        "url": "walk_ashkelon.jpg",
+        "url": "Фира с Нелечкой и Миля в парке Умани.jpg",
         "title": {
-          "ru": "walk ashkelon",
-          "en": "Archive document"
+          "ru": "Фира с Нелечкой и Миля в парке Умани",
+          "en": "Fira with Nelechka and Milya in Uman Park"
         }
       },
       {
-        "url": "wedding_anniversary.jpg",
+        "url": "Фира с сестрой Милей.jpg",
         "title": {
-          "ru": "wedding anniversary",
-          "en": "Archive document"
+          "ru": "Фира с сестрой Милей",
+          "en": "Fira with her sister Milya"
         }
       },
       {
-        "url": "with_aunt_zlata.jpg",
+        "url": "Фира со старшим сыном Вовой.jpg",
         "title": {
-          "ru": "with aunt zlata",
-          "en": "Archive document"
+          "ru": "Фира со старшим сыном Вовой",
+          "en": "Fira with her eldest son Vova"
         }
       }
     ]
@@ -2131,77 +2110,77 @@ window.db = {
         "url": "childrens_efim.jpg",
         "title": {
           "ru": "childrens efim",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "efim_family_1947.jpg",
         "title": {
           "ru": "efim family 1947",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "efim_family_1952.jpg",
         "title": {
           "ru": "efim family 1952",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "efim_family_1953.jpg",
         "title": {
           "ru": "efim family 1953",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "efim_family_1964.jpg",
         "title": {
           "ru": "efim family 1964",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "efim_family_1974.jpg",
         "title": {
           "ru": "efim family 1974",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "grandmother_with_grandson.jpg",
         "title": {
           "ru": "grandmother with grandson",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "meeting_adult_childrens.jpg",
         "title": {
           "ru": "meeting adult childrens",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "nadejda1924.jpg",
         "title": {
           "ru": "nadejda1924",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "nadejda_daughter.jpg",
         "title": {
           "ru": "nadejda daughter",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "nadejda_natasha.jpg",
         "title": {
           "ru": "nadejda natasha",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       }
     ]
@@ -2245,147 +2224,147 @@ window.db = {
         "url": "1958 год Молдавия.jpg",
         "title": {
           "ru": "1958 год Молдавия",
-          "en": "Archive document"
-        }
-      },
-      {
-        "url": "mira_zakharova.jpg",
-        "title": {
-          "ru": "mira zakharova",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Без слов.jpg",
         "title": {
           "ru": "Без слов",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "В пустыне Негев. Мира,Толя Смагаринский,Аня Захарова.jpg",
         "title": {
           "ru": "В пустыне Негев. Мира,Толя Смагаринский,Аня Захарова",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Встреча в Москве.jpg",
         "title": {
           "ru": "Встреча в Москве",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Встреча с родственниками.jpg",
         "title": {
           "ru": "Встреча с родственниками",
-          "en": "Archive document"
+          "en": "Meeting with relatives"
         }
       },
       {
         "url": "День рождения 25.01.2014.jpg",
         "title": {
           "ru": "День рождения 25.01.2014",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "День свадьбы.jpg",
         "title": {
           "ru": "День свадьбы",
-          "en": "Archive document"
+          "en": "Archival Document"
+        }
+      },
+      {
+        "url": "Мира Захарова.jpg",
+        "title": {
+          "ru": "Мира Захарова",
+          "en": "Archival Document"
         }
       },
       {
         "url": "Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г.jpg",
         "title": {
           "ru": "Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Мира после окончания школы 1959.jpg",
         "title": {
           "ru": "Мира после окончания школы 1959",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Мира с братом Валерием.jpg",
         "title": {
           "ru": "Мира с братом Валерием",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Мира с мужем и Владиком,Лиепая  09.05.1974.jpg",
         "title": {
           "ru": "Мира с мужем и Владиком,Лиепая  09.05.1974",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Мира с сыновьями. Лиепая 1975 г.jpg",
         "title": {
           "ru": "Мира с сыновьями. Лиепая 1975 г",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Мира с сыном Игорем,Бельцы Молдова 1978г.jpg",
         "title": {
           "ru": "Мира с сыном Игорем,Бельцы Молдова 1978г",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Мира,1980 Заполярье.jpg",
         "title": {
           "ru": "Мира,1980 Заполярье",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Мира,Иркутск 1961 год.jpg",
         "title": {
           "ru": "Мира,Иркутск 1961 год",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "На Мертвом море.  Мира,невестка Аня,Толя Смагаринский.jpg",
         "title": {
           "ru": "На Мертвом море.  Мира,невестка Аня,Толя Смагаринский",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "На одной из древних улочек Яффо.jpg",
         "title": {
           "ru": "На одной из древних улочек Яффо",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Родители.jpg",
         "title": {
           "ru": "Родители",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Семья Захаровых.jpg",
         "title": {
           "ru": "Семья Захаровых",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       },
       {
         "url": "Серебянная свадьба Лиепая 1988.jpg",
         "title": {
           "ru": "Серебянная свадьба Лиепая 1988",
-          "en": "Archive document"
+          "en": "Archival Document"
         }
       }
     ]

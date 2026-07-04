@@ -193,18 +193,45 @@
 
   function initArchive() {
     const id = getQueryParam("id");
+    const currentLang = getQueryParam("lang") || "ru"; // Перенесли наверх, чтобы использовать везде
     const grid = document.getElementById("archive-grid");
     const header = document.getElementById("archive-header");
+    const backLink = document.querySelector(".back-link"); // Находим ссылку возврата
     const db = window.db || window.database;
 
+    // Сразу локализуем ссылку возврата, сохраняя параметр языка в URL
+    if (backLink) {
+      if (currentLang === "en") {
+        backLink.innerText = "← Return to Family Tree";
+        backLink.href = `../index.html?lang=en`;
+      } else {
+        backLink.innerText = "← Вернуться к Семейному Дереву";
+        backLink.href = `../index.html?lang=ru`;
+      }
+    }
+
     if (!id || !db || !db[id]) {
-      grid.innerHTML = `<div class="no-docs">Указанный родственник не найден в базе данных.</div>`;
+      grid.innerHTML = currentLang === "en" 
+        ? `<div class="no-docs">The specified relative was not found in the database.</div>`
+        : `<div class="no-docs">Указанный родственник не найден в базе данных.</div>`;
       return;
     }
 
     const person = db[id];
-    if (person.name && person.name.ru) {
-      header.innerText = `Архивные документы — ${person.name.ru}`;
+    
+    // Переводим заголовок архива в зависимости от языка
+    if (person.name) {
+      // Пытаемся взять имя на нужном языке, если английского нет — берем русский
+      const personName = (currentLang === "en" && person.name.en) ? person.name.en : (person.name.ru || id);
+      
+      if (currentLang === "en") {
+        header.innerText = `Archival Documents — ${personName}`;
+      } else {
+        header.innerText = `Архивные документы — ${personName}`;
+      }
+    } else {
+      // Резервный случай, если структуры name вообще нет
+      header.innerText = currentLang === "en" ? "Archival Documents" : "Архивные документы";
     }
 
     let docs = person.documents || [];
@@ -216,7 +243,9 @@
     }
 
     if (docs.length === 0) {
-      grid.innerHTML = `<div class="no-docs">В архиве этой персоны файлы пока отсутствуют.</div>`;
+      grid.innerHTML = currentLang === "en"
+        ? `<div class="no-docs">There are no files in this person's archive yet.</div>`
+        : `<div class="no-docs">В архиве этой персоны файлы пока отсутствуют.</div>`;
       return;
     }
 
@@ -238,13 +267,18 @@
         fullPath = `../documents/${folder}/${fileName}`;
       }
       
-      const displayTitle = (item.title && item.title.ru) ? item.title.ru : (typeof item.title === 'string' ? item.title : "Документ");
+      // Выбираем правильное название для карточки:
+      let displayTitle = "Документ"; 
+      
+      if (currentLang === "en") {
+        displayTitle = (item.title && item.title.en) ? item.title.en : "Archive Document";
+      } else {
+        displayTitle = (item.title && item.title.ru) ? item.title.ru : (typeof item.title === 'string' ? item.title : "Документ");
+      }
 
       // Для PDF сразу используем стандартную заглушку, чтобы избежать моргания
       const isPDF = fileName.toLowerCase().endsWith('.pdf');
-      const previewSrc = isPDF ? '../photos/default.jpg' : fullPath;
-     if (isPDF) {
-        // Если это PDF, вместо картинки рисуем красивую текстовую плашку "PDF Буклет"
+      if (isPDF) {
         card.innerHTML = `
           <div class="img-wrapper" onclick="openLightbox('${fullPath}')" style="background: #b91c1c; color: #fff; font-family: sans-serif; font-weight: bold; font-size: 28px; letter-spacing: 2px;">
             PDF
@@ -252,7 +286,6 @@
           <div class="doc-title">${displayTitle}</div>
         `;
       } else {
-        // Если это обычное фото, оставляем стандартный вывод картинки
         card.innerHTML = `
           <div class="img-wrapper" onclick="openLightbox('${fullPath}')">
             <img src="${fullPath}" alt="${displayTitle}" loading="lazy" onerror="this.src='../photos/default.jpg';">
@@ -265,26 +298,24 @@
   }
 
   function openLightbox(src) {
-    // Если это PDF-буклет, просто открываем его в новой вкладке браузера
     if (src.toLowerCase().endsWith('.pdf')) {
       window.open(src, '_blank');
-      return; // Выходим из функции, модальное окно не открываем
+      return; 
     }
     
-    // Для обычных картинок оставляем стандартное модальное окно
     const container = document.getElementById("lightbox-content");
     container.innerHTML = `<img src="${src}" alt="Просмотр документа" style="max-width: 100%; max-height: 100%; object-fit: contain;">`;
     document.getElementById("lightbox").classList.add("active");
-  } // Это закрывающая скобка функции openLightbox на строке 278
+  } 
 
-function closeLightbox() {
-  const lightbox = document.getElementById("lightbox");
-  const container = document.getElementById("lightbox-content");
-  if (lightbox) lightbox.classList.remove("active");
-  if (container) container.innerHTML = "";
-}
+  function closeLightbox() {
+    const lightbox = document.getElementById("lightbox");
+    const container = document.getElementById("lightbox-content");
+    if (lightbox) lightbox.classList.remove("active");
+    if (container) container.innerHTML = "";
+  }
 
-window.onload = initArchive;
+  window.onload = initArchive;
 </script>
 </body>
 </html>
