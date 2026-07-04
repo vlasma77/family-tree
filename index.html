@@ -132,19 +132,46 @@
 
     function getPhotoUrl(id) {
       const person = db[id];
-      if (person && person.mainPhoto) {
-        return person.mainPhoto.startsWith("photos/") ? person.mainPhoto : "photos/" + person.mainPhoto;
+      
+      // 1. Если в карточке вручную прописан прямой путь
+      if (person && person.mainPhoto && person.mainPhoto.trim() !== "") {
+        return person.mainPhoto;
       }
-      let idLower = id.toLowerCase();
-      let isFemale = idLower.includes("blyuma") || idLower.includes("haya") || idLower.includes("khaya") || idLower.includes("feyga") || idLower.includes("slava") || idLower.includes("katya") || idLower.includes("mira") || idLower.includes("sonya");
+      
+      // 2. Если ID текстовый (например, person_alla_1952)
+      if (id && id.startsWith("person_") && !id.includes("temp_")) {
+        const slug = id.replace("person_", ""); // получаем "alla_1952"
+        const slugNoUnderscore = slug.replace("_", ""); // получаем "alla1952"
+        
+        // Массив возможных имён файлов в папке photos
+        // (система проверит точное совпадение, но так как JS в браузере не видит файлы на диске напрямую,
+        // мы по умолчанию вернём вариант БЕЗ подчёркивания, как у вас на скриншоте)
+        return `photos/${slugNoUnderscore}.jpg`; 
+      }
+      
+      // 3. Умная заглушка по полу, если фото вообще нет
+      let isFemale = false;
+      if (id) {
+        let idLower = id.toLowerCase();
+        isFemale = idLower.includes("alla") || idLower.includes("blyuma") || 
+                   idLower.includes("haya") || idLower.includes("khaya") || 
+                   idLower.includes("feyga") || idLower.includes("slava") || 
+                   idLower.includes("katya") || idLower.includes("mira") || 
+                   idLower.includes("sonya") || idLower.includes("natalya") || 
+                   // добавим новые имена из вашей папки
+                   idLower.includes("nella") || idLower.includes("nadejda");
+      }
+      
       return isFemale ? "photos/female.jpg" : "photos/male.jpg";
     }
 
-    const labels = {
+   const labels = {
       ru: {
         birth: "Место рождения", marriage: "Брак", job: "Род занятий", burial: "Место упокоения",
         btn_doc: "📂 Документы", btn_add: "➕ Добавить", btn_save: "💾 Применить к дереву", btn_more: "ℹ️ Биография",
         btn_delete: "🗑️ Удалить",
+        btn_download: "📥 Скачать базу (database.js)",
+       btn_copy: "📋 Копировать код базы",
         vehi: "ВАЖНЫЕ ВЕХИ", circle: "СЕМЕЙНЫЙ КРУГ", bio: "Текст биографии",
         father: "Отец", mother: "Мать", spouse: "Супруг(а)", children: "Дети", no_relations: "Связи в дереве не заданы",
         add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь"
@@ -153,12 +180,25 @@
         birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place",
         btn_doc: "📂 Documents", btn_add: "➕ Add", btn_save: "💾 Apply to Tree", btn_more: "ℹ️ Biography",
         btn_delete: "🗑️ Delete",
+        btn_copy: "📋 Copy Database Code",
+        btn_download: "📥 Download Base (database.js)", // <-- Добавили сюда
         vehi: "KEY MILESTONES", circle: "FAMILY CIRCLE", bio: "Biography Text",
         father: "Father", mother: "Mother", spouse: "Spouse", children: "Children", no_relations: "No relationships defined",
         add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter"
       }
     };
-
+window.copyDatabaseToClipboard = function() {
+      const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
+      
+      navigator.clipboard.writeText(fileContent).then(() => {
+        const successMsg = currentLang === 'ru' 
+          ? "Код базы успешно скопирован в буфер обмена! Перейдите в VS Code, откройте database.js, выделите всё (Ctrl+A) и вставьте (Ctrl+V)."
+          : "Database code copied to clipboard! Open database.js in VS Code, select all (Ctrl+A), and paste (Ctrl+V).";
+        alert(successMsg);
+      }).catch(err => {
+        alert("Ошибка при копировании: " + err);
+      });
+    };
     function normalizeDatabase() {
       let total = Object.keys(db).length;
       console.log(`[DATA AUDIT] Старт проверки базы данных. Анализируется записей: ${total}`);
@@ -340,47 +380,60 @@
           </div>
         </div>
 
-        <div class="panel-fixed-footer">
+       <div class="panel-fixed-footer">
           <button class="btn-save" onclick="saveCurrentPersonData()">${bText.btn_save}</button>
-          <button class="btn-download-db" onclick="downloadDatabaseFile()">📥 Скачать базу (database.js)</button>
+          <div style="display: flex; gap: 6px;">
+            <button class="btn-download-db" style="flex: 1; padding: 8px 4px; font-size: 11px;" onclick="downloadDatabaseFile()">${bText.btn_download}</button>
+            <button class="btn-download-db" style="flex: 1; padding: 8px 4px; font-size: 11px; background-color: #2c3e50 !important;" onclick="copyDatabaseToClipboard()">${bText.btn_copy}</button>
+          </div>
         </div>
       `;
 
       panel.style.display = "flex";
     }
-
-    window.saveCurrentPersonData = function() {
+window.saveCurrentPersonData = function() {
       if (!activeNodeId || !db[activeNodeId]) return;
       const person = db[activeNodeId];
       
-      if (typeof person.name !== "object") person.name = { ru: person.name, en: "" };
-      person.name[currentLang] = document.getElementById("inp-name").value;
-      person.years = document.getElementById("inp-years").value;
+      // Инициализируем мультиязычную структуру для имени, если её вдруг нет
+      if (typeof person.name !== "object") person.name = { ru: person.name || "", en: "" };
+      person.name[currentLang] = document.getElementById("inp-name").value.trim();
+      person.years = document.getElementById("inp-years").value.trim();
       
+      // Проверяем и инициализируем блоки вех
       if (!person.milestones) person.milestones = {};
-      if (!person.milestones.birthPlace) person.milestones.birthPlace = {};
-      if (!person.milestones.marriage) person.milestones.marriage = {};
-      if (!person.milestones.occupation) person.milestones.occupation = {};
-      if (!person.milestones.burial) person.milestones.burial = {};
-      if (!person.bio) person.bio = {};
+      const fields = ["birthPlace", "marriage", "occupation", "burial"];
+      fields.forEach(f => {
+        if (!person.milestones[f]) person.milestones[f] = { ru: "", en: "" };
+        if (typeof person.milestones[f] !== "object") {
+          person.milestones[f] = { ru: person.milestones[f], en: "" };
+        }
+      });
+      if (!person.bio) person.bio = { ru: "", en: "" };
 
-      const setLangField = (field, elementId) => {
-        if (typeof field !== "object") return { ru: field, [currentLang]: document.getElementById(elementId).value };
-        field[currentLang] = document.getElementById(elementId).value;
-        return field;
+      // Функция для безопасной записи в зависимости от выбранного языка
+      const saveLangField = (fieldObject, elementId) => {
+        fieldObject[currentLang] = document.getElementById(elementId).value.trim();
       };
 
-      person.milestones.birthPlace = setLangField(person.milestones.birthPlace, "inp-birth");
-      person.milestones.marriage = setLangField(person.milestones.marriage, "inp-marriage");
-      person.milestones.occupation = setLangField(person.milestones.occupation, "inp-job");
-      person.milestones.burial = setLangField(person.milestones.burial, "inp-burial");
+      // Записываем данные из полей ввода строго в текущую локаль (RU или EN)
+      saveLangField(person.milestones.birthPlace, "inp-birth");
+      saveLangField(person.milestones.marriage, "inp-marriage");
+      saveLangField(person.milestones.occupation, "inp-job");
+      saveLangField(person.milestones.burial, "inp-burial");
       
       if (document.getElementById("inp-bio")) {
         person.bio[currentLang] = document.getElementById("inp-bio").value;
       }
 
+      // Перерисовываем дерево и обновляем панель, чтобы зафиксировать изменения
       drawTree();
-      alert("Изменения применены к плитке! Нажмите кнопку 'Скачать базу' внизу, чтобы подготовить файл для сохранения.");
+      showCustomSidePanel(activeNodeId);
+      
+      const alertMsg = currentLang === 'ru'
+        ? "Изменения применены к плитке! Нажмите кнопку 'Скачать базу' внизу, чтобы обновить файл database.js."
+        : "Changes applied to the node! Click 'Download database' at the bottom to update your database.js file.";
+      alert(alertMsg);
     };
 
     window.deletePerson = function(id) {
@@ -443,9 +496,25 @@
       if (bioEl) bioEl.classList.toggle("hidden-block");
     };
 
-    window.addRelativeDirect = function(role) {
+ window.addRelativeDirect = function(role) {
       if (!activeNodeId || !db[activeNodeId]) return;
-      const newId = "P" + Date.now();
+      
+      let promptMsg = currentLang === 'ru' 
+        ? "Введите краткое имя на английском для ID карточки\n(например: ivan_1945 или mariya_1980):"
+        : "Enter a short English slug for the person ID\n(e.g., ivan_1945 or mariya_1980):";
+        
+      let userSlug = prompt(promptMsg);
+      let newId;
+
+      if (userSlug && userSlug.trim() !== "") {
+        newId = "person_" + userSlug.trim().toLowerCase().replace(/\s+/g, "_");
+      } else {
+        newId = "person_temp_" + Date.now();
+      }
+
+      if (db[newId]) {
+        newId = newId + "_" + Math.floor(Math.random() * 1000);
+      }
       
       db[newId] = {
         id: newId,
@@ -460,17 +529,28 @@
       const currentPerson = db[activeNodeId];
       if (!currentPerson.links) currentPerson.links = { parents: [], spouse: null };
 
+      // === АВТОМАТИЧЕСКОЕ ЗЕРКАЛЬНОЕ СВЯЗЫВАНИЕ ===
       if (role === 'father') {
         currentPerson.links.parents[0] = newId;
       } else if (role === 'mother') {
         currentPerson.links.parents[1] = newId;
       } else if (role === 'spouse') {
-        currentPerson.links.spouse = newId;
+        // 1. Прописываем новому человеку в супруги текущего активного
         db[newId].links.spouse = activeNodeId;
+        
+        // 2. А текущему активному человеку прописываем нового
+        currentPerson.links.spouse = newId;
+        
       } else if (role === 'son' || role === 'daughter') {
         if (currentPerson.links.spouse) {
           let idLower = activeNodeId.toLowerCase();
-          let isFemale = idLower.includes("blyuma") || idLower.includes("haya") || idLower.includes("khaya") || idLower.includes("feyga") || idLower.includes("slava") || idLower.includes("katya") || idLower.includes("mira") || idLower.includes("sonya");
+          let isFemale = idLower.includes("alla") || idLower.includes("blyuma") || 
+                         idLower.includes("haya") || idLower.includes("khaya") || 
+                         idLower.includes("feyga") || idLower.includes("slava") || 
+                         idLower.includes("katya") || idLower.includes("mira") || 
+                         idLower.includes("sonya") || idLower.includes("natalya") || 
+                         idLower.includes("nella") || idLower.includes("nadejda");
+                         
           db[newId].links.parents = isFemale ? [currentPerson.links.spouse, activeNodeId] : [activeNodeId, currentPerson.links.spouse];
         } else {
           db[newId].links.parents = [activeNodeId];
@@ -482,7 +562,7 @@
       showCustomSidePanel(newId);
     };
 
-    function getTreeData() {
+   function getTreeData() {
       normalizeDatabase(); 
       const treeData = [];
       
@@ -490,9 +570,22 @@
         const person = db[id];
         let photoUrl = getPhotoUrl(id);
         
+        // Корректно определяем имя для текущего языка
         let rawName = id;
         if (person.name) {
-          rawName = typeof person.name === "object" ? (person.name[currentLang] || person.name['ru'] || id) : person.name;
+          if (typeof person.name === "object") {
+            // Если выбранный язык есть и строка не пустая — берем её
+            if (person.name[currentLang] && person.name[currentLang].trim() !== "") {
+              rawName = person.name[currentLang];
+            } else {
+              // Если на английском имени нет, пишем понятную заглушку рядом с русским именем
+              rawName = currentLang === 'en' 
+                ? `[EN?] ${person.name['ru'] || id}` 
+                : (person.name['ru'] || id);
+            }
+          } else {
+            rawName = person.name;
+          }
         }
 
         const node = {

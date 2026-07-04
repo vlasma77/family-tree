@@ -931,157 +931,150 @@ window.db = {
     "archive": "person_mira_1927",
     "documents": [
       {
-        "url": "at_the_celebration.jpg",
+        "url": "Бэлла Ершова(Линецкая).jpg",
         "title": {
-          "ru": "at the celebration",
-          "en": "Archival Document"
+          "ru": "Бэлла Ершова(Линецкая)",
+          "en": "Bella Ershova (Linetskaya)"
         }
       },
       {
-        "url": "booklet_linetzky.pdf",
+        "url": "Валерий Линецкий.jpg",
         "title": {
-          "ru": "booklet linetzky",
-          "en": "Archival Document"
+          "ru": "Валерий Линецкий",
+          "en": "Valery Linetsky"
         }
       },
       {
-        "url": "dancing_with_spouse.jpg",
+        "url": "Люда Кутикова (Линецкая).png",
         "title": {
-          "ru": "dancing with spouse",
-          "en": "Archival Document"
+          "ru": "Люда Кутикова (Линецкая)",
+          "en": "Lyuda Kutikova (Linetskaya)"
         }
       },
       {
-        "url": "family_photo.jpg",
+        "url": "Мира в домашней обстановке.jpg",
         "title": {
-          "ru": "family photo",
-          "en": "Archival Document"
+          "ru": "Мира в домашней обстановке",
+          "en": "Mura in a home environment"
         }
       },
       {
-        "url": "family_together.jpg",
+        "url": "Мира Линецкая.jpg",
         "title": {
-          "ru": "family together",
-          "en": "Archival Document"
+          "ru": "Мира Линецкая",
+          "en": "Mira Linetskaya"
         }
       },
       {
-        "url": "grave_mira.jpg",
+        "url": "Мира на прогулке с дочкой.jpg",
         "title": {
-          "ru": "grave mira",
-          "en": "Archival Document"
+          "ru": "Мира на прогулке с дочкой",
+          "en": "Mira on a walk with her daughter"
         }
       },
       {
-        "url": "linetzky_bella.jpg",
+        "url": "Мира с дочерьми.jpg",
         "title": {
-          "ru": "linetzky bella",
-          "en": "Archival Document"
+          "ru": "Мира с дочерьми",
+          "en": "Mira with her daughters"
         }
       },
       {
-        "url": "linetzky_luda.png",
+        "url": "Много совместных лет прожито.jpg",
         "title": {
-          "ru": "linetzky luda",
-          "en": "Archival Document"
+          "ru": "Много совместных лет прожито",
+          "en": "Many years have been lived together"
         }
       },
       {
-        "url": "linetzky_roman.jpg",
+        "url": "Могила Миры Линецкой.jpg",
         "title": {
-          "ru": "linetzky roman",
-          "en": "Archival Document"
+          "ru": "Могила Миры Линецкой",
+          "en": "The grave of Mira Linetskaya"
         }
       },
       {
-        "url": "mira_at_home.jpg",
+        "url": "На демонстрации, Биробиджан.jpg",
         "title": {
-          "ru": "mira at home",
-          "en": "Archival Document"
+          "ru": "На демонстрации, Биробиджан",
+          "en": "At the demonstration, Birobidzhan"
         }
       },
       {
-        "url": "mira_linetzky.jpg",
+        "url": "Роман Линецкий.jpg",
         "title": {
-          "ru": "mira linetzky",
-          "en": "Archival Document"
+          "ru": "Роман Линецкий",
+          "en": "Roman Linetsky"
         }
       },
       {
-        "url": "mira_with_daughter.jpg",
+        "url": "Сёстры Мира, Катя и Соня.jpg",
         "title": {
-          "ru": "mira with daughter",
-          "en": "Archival Document"
+          "ru": "Сёстры Мира, Катя и Соня",
+          "en": "Sisters Mira, Katya and Sonya"
         }
       },
       {
-        "url": "mira_with_daughters.jpg",
+        "url": "свидетельство о браке.jpg",
         "title": {
-          "ru": "mira with daughters",
-          "en": "Archival Document"
-        }
-      },
-      {
-        "url": "mira_with_roman.jpg",
-        "title": {
-          "ru": "mira with roman",
-          "en": "Archival Document"
-        }
-      },
-      {
-        "url": "passionate_kiss.jpg",
-        "title": {
-          "ru": "passionate kiss",
-          "en": "Archival Document"
-        }
-      },
-      {
-        "url": "sisters.jpg",
-        "title": {
-          "ru": "sisters",
-          "en": "Archival Document"
-        }
-      },
-      {
-        "url": "together_through_years.jpg",
-        "title": {
-          "ru": "together through years",
-          "en": "Archival Document"
-        }
-      },
-      {
-        "url": "valera_linetzky.jpg",
-        "title": {
-          "ru": "valera linetzky",
-          "en": "Archival Document"
-        }
-      },
-      {
-        "url": "свидетельство о браке Линецкий.jpeg",
-        "title": {
-          "ru": "свидетельство о браке Линецкий",
+          "ru": "свидетельство о браке",
           "en": "Marriage Certificate"
         }
       },
       {
-        "url": "свидетельство о браке Роман.jpeg",
+        "url": "Семейная фотография.jpg",
         "title": {
-          "ru": "свидетельство о браке Роман",
-          "en": "Marriage Certificate"
+          "ru": "Семейная фотография",
+          "en": "Family photo"
+        }
+      },
+      {
+        "url": "Семья Линецких.jpg",
+        "title": {
+          "ru": "Семья Линецких",
+          "en": "The Linetsky family"
+        }
+      },
+      {
+        "url": "Страстный поцелуй.jpg",
+        "title": {
+          "ru": "Страстный поцелуй",
+          "en": "Passionate kiss"
+        }
+      },
+      {
+        "url": "Супруги Роман и Мира Линецкие.jpg",
+        "title": {
+          "ru": "Супруги Роман и Мира Линецкие",
+          "en": "Spouses Roman and Mira Linetsky"
+        }
+      },
+      {
+        "url": "Супружеский танец.jpg",
+        "title": {
+          "ru": "Супружеский танец",
+          "en": "Marital dance"
         }
       },
       {
         "url": "трудовая книжка Линецкой.jpg",
         "title": {
           "ru": "трудовая книжка Линецкой",
-          "en": "Archival Document"
+          "en": "Linetskaya's work record book"
         }
       },
       {
         "url": "трудовая книжка Миры.jpg",
         "title": {
           "ru": "трудовая книжка Миры",
-          "en": "Archival Document"
+          "en": "Mira's work record book"
+        }
+      },
+      {
+        "url": "Хроника военных лет.pdf",
+        "title": {
+          "ru": "Хроника военных лет",
+          "en": "Chronicle of the war years"
         }
       }
     ]
@@ -1963,11 +1956,11 @@ window.db = {
       }
     ]
   },
-  "P1782721785669": {
-    "id": "P1782721785669",
+  "person_alla_1952": {
+    "id": "person_alla_1952",
     "name": {
       "ru": "Алла Ефимовна Колесниченко (Смагаринская)",
-      "en": "New Person"
+      "en": "Alla Kolesnichenko (Smagarinskaya)"
     },
     "years": "",
     "mainPhoto": "",
@@ -1997,11 +1990,11 @@ window.db = {
       "spouse": null
     }
   },
-  "P1782722085475": {
-    "id": "P1782722085475",
+  "person_valery_1955": {
+    "id": "person_valery_1955",
     "name": {
       "ru": "Валерий Ефимович Смагаринский",
-      "en": "New Person"
+      "en": "Valery Smagarinsky"
     },
     "years": "",
     "mainPhoto": "",
@@ -2031,11 +2024,11 @@ window.db = {
       "spouse": null
     }
   },
-  "P1782722298772": {
-    "id": "P1782722298772",
+  "person_natalya_1958": {
+    "id": "person_natalya_1958",
     "name": {
       "ru": "Наталья Ефимовна Гельван (Смагаринская)",
-      "en": "New Person"
+      "en": "Natalya Gelvan (Smagarinskaya)"
     },
     "years": "",
     "mainPhoto": "",
@@ -2107,80 +2100,80 @@ window.db = {
     "archive": "person_nadejda_1924",
     "documents": [
       {
-        "url": "childrens_efim.jpg",
+        "url": "Бабушка Надежда.jpg",
         "title": {
-          "ru": "childrens efim",
-          "en": "Archival Document"
+          "ru": "Бабушка Надежда",
+          "en": "Grandma Nadezhda"
         }
       },
       {
-        "url": "efim_family_1947.jpg",
+        "url": "Встреча взрослых детей.jpg",
         "title": {
-          "ru": "efim family 1947",
-          "en": "Archival Document"
+          "ru": "Встреча взрослых детей",
+          "en": "Meeting of adult children"
         }
       },
       {
-        "url": "efim_family_1952.jpg",
+        "url": "Дети Ефима и Надежды.jpg",
         "title": {
-          "ru": "efim family 1952",
-          "en": "Archival Document"
+          "ru": "Дети Ефима и Надежды",
+          "en": "Children of Efim and Nadezhda"
         }
       },
       {
-        "url": "efim_family_1953.jpg",
+        "url": "Надежда с дочкой Наташей.jpg",
         "title": {
-          "ru": "efim family 1953",
-          "en": "Archival Document"
+          "ru": "Надежда с дочкой Наташей",
+          "en": "Nadezhda with her daughter Natasha"
         }
       },
       {
-        "url": "efim_family_1964.jpg",
+        "url": "Надежда с дочкой.jpg",
         "title": {
-          "ru": "efim family 1964",
-          "en": "Archival Document"
+          "ru": "Надежда с дочкой",
+          "en": "Nadezhda with her daughter"
         }
       },
       {
-        "url": "efim_family_1974.jpg",
+        "url": "Надежда Смагаринская.jpg",
         "title": {
-          "ru": "efim family 1974",
-          "en": "Archival Document"
+          "ru": "Надежда Смагаринская",
+          "en": "Nadezhda Smagarinskaya"
         }
       },
       {
-        "url": "grandmother_with_grandson.jpg",
+        "url": "Семья Ефима, 1947.jpg",
         "title": {
-          "ru": "grandmother with grandson",
-          "en": "Archival Document"
+          "ru": "Семья Ефима, 1947",
+          "en": "Efim's family, 1947"
         }
       },
       {
-        "url": "meeting_adult_childrens.jpg",
+        "url": "Семья Ефима, 1952.jpg",
         "title": {
-          "ru": "meeting adult childrens",
-          "en": "Archival Document"
+          "ru": "Семья Ефима, 1952",
+          "en": "Efim's family, 1952"
         }
       },
       {
-        "url": "nadejda1924.jpg",
+        "url": "Семья Ефима, 1954.jpg",
         "title": {
-          "ru": "nadejda1924",
-          "en": "Archival Document"
+          "ru": "Семья Ефима, 1954",
+          "en": "Efim's family, 1954"
         }
       },
       {
-        "url": "nadejda_daughter.jpg",
+        "url": "Семья Ефима, 1964.jpg",
         "title": {
-          "ru": "nadejda daughter",
-          "en": "Archival Document"
+          "ru": "Семья Ефима, 1964",
+          "en": "Efim's family, 1964"
         }
       },
       {
-        "url": "nadejda_natasha.jpg",
+        "url": "Семья Ефима, 1974.jpg",
         "title": {
-          "ru": "nadejda natasha",
-          "en": "Archival Document"
+          "ru": "Семья Ефима, 1974",
+          "en": "Efim's family, 1974"
         }
       }
     ]
@@ -2201,6 +2194,14 @@ window.db = {
       "occupation": {
         "ru": "Информацию о её жизни, месте рождения и работе укажем здесь",
         "en": "Life events and occupation fields"
+      },
+      "marriage": {
+        "ru": "Валерий Захаров",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
       }
     },
     "links": {
@@ -2224,7 +2225,7 @@ window.db = {
         "url": "1958 год Молдавия.jpg",
         "title": {
           "ru": "1958 год Молдавия",
-          "en": "Archival Document"
+          "en": "1958 Moldova"
         }
       },
       {
@@ -2238,14 +2239,14 @@ window.db = {
         "url": "В пустыне Негев. Мира,Толя Смагаринский,Аня Захарова.jpg",
         "title": {
           "ru": "В пустыне Негев. Мира,Толя Смагаринский,Аня Захарова",
-          "en": "Archival Document"
+          "en": "In the Negev Desert. Mira, Tolya Smagarinsky, Anya Zakharova"
         }
       },
       {
         "url": "Встреча в Москве.jpg",
         "title": {
           "ru": "Встреча в Москве",
-          "en": "Archival Document"
+          "en": "Meeting in Moscow"
         }
       },
       {
@@ -2256,115 +2257,115 @@ window.db = {
         }
       },
       {
-        "url": "День рождения 25.01.2014.jpg",
+        "url": "День рождения, 2014 год.jpg",
         "title": {
-          "ru": "День рождения 25.01.2014",
-          "en": "Archival Document"
+          "ru": "День рождения, 2014 год",
+          "en": "Birthday, 2014"
         }
       },
       {
         "url": "День свадьбы.jpg",
         "title": {
           "ru": "День свадьбы",
-          "en": "Archival Document"
+          "en": "Wedding day"
         }
       },
       {
         "url": "Мира Захарова.jpg",
         "title": {
           "ru": "Мира Захарова",
-          "en": "Archival Document"
+          "en": "Mira Zakharova"
         }
       },
       {
         "url": "Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г.jpg",
         "title": {
           "ru": "Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г",
-          "en": "Archival Document"
+          "en": "Mira Levchenko and Valery Zakharov, Beltsy, Moldova, 1960"
         }
       },
       {
         "url": "Мира после окончания школы 1959.jpg",
         "title": {
           "ru": "Мира после окончания школы 1959",
-          "en": "Archival Document"
+          "en": "Mira after graduating from school in 1959"
         }
       },
       {
         "url": "Мира с братом Валерием.jpg",
         "title": {
           "ru": "Мира с братом Валерием",
-          "en": "Archival Document"
+          "en": "Mira with brother Valery"
         }
       },
       {
         "url": "Мира с мужем и Владиком,Лиепая  09.05.1974.jpg",
         "title": {
           "ru": "Мира с мужем и Владиком,Лиепая  09.05.1974",
-          "en": "Archival Document"
+          "en": "Mira with her husband and Vladik, Liepaja 05/09/1974"
         }
       },
       {
         "url": "Мира с сыновьями. Лиепая 1975 г.jpg",
         "title": {
           "ru": "Мира с сыновьями. Лиепая 1975 г",
-          "en": "Archival Document"
+          "en": "Mira with her sons. Liepaja, 1975"
         }
       },
       {
         "url": "Мира с сыном Игорем,Бельцы Молдова 1978г.jpg",
         "title": {
           "ru": "Мира с сыном Игорем,Бельцы Молдова 1978г",
-          "en": "Archival Document"
+          "en": "Mira with her son Igor, Beltsy, Moldova, 1978"
         }
       },
       {
         "url": "Мира,1980 Заполярье.jpg",
         "title": {
           "ru": "Мира,1980 Заполярье",
-          "en": "Archival Document"
+          "en": "Mira, 1980 Arctic"
         }
       },
       {
         "url": "Мира,Иркутск 1961 год.jpg",
         "title": {
           "ru": "Мира,Иркутск 1961 год",
-          "en": "Archival Document"
+          "en": "Mira, Irkutsk, 1961"
         }
       },
       {
         "url": "На Мертвом море.  Мира,невестка Аня,Толя Смагаринский.jpg",
         "title": {
           "ru": "На Мертвом море.  Мира,невестка Аня,Толя Смагаринский",
-          "en": "Archival Document"
+          "en": "At the Dead Sea. Mira, daughter-in-law Anya, Tolya Smagarinsky"
         }
       },
       {
         "url": "На одной из древних улочек Яффо.jpg",
         "title": {
           "ru": "На одной из древних улочек Яффо",
-          "en": "Archival Document"
+          "en": "On one of the ancient streets of Jaffa"
         }
       },
       {
         "url": "Родители.jpg",
         "title": {
           "ru": "Родители",
-          "en": "Archival Document"
+          "en": "Parents"
         }
       },
       {
         "url": "Семья Захаровых.jpg",
         "title": {
           "ru": "Семья Захаровых",
-          "en": "Archival Document"
+          "en": "The Zakharov family"
         }
       },
       {
         "url": "Серебянная свадьба Лиепая 1988.jpg",
         "title": {
           "ru": "Серебянная свадьба Лиепая 1988",
-          "en": "Archival Document"
+          "en": "Silver Wedding Anniversary, Liepaja, 1988"
         }
       }
     ]
