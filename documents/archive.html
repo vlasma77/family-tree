@@ -97,6 +97,28 @@
       object-fit: cover; /* Красивое заполнение карточки */
     }
 
+    /* НОВОЕ: видео занимает то же место, что и фото, но без cursor:pointer конфликта с контролами */
+    .img-wrapper video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* НОВОЕ: аудио — отдельный, невысокий блок вместо квадратной картинки */
+    .audio-wrapper {
+      width: 100%;
+      padding: 30px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e7e5e4;
+      border-radius: 4px;
+      border: 1px solid #d6d3d1;
+    }
+    .audio-wrapper audio {
+      width: 100%;
+    }
+
     .doc-title {
       font-size: 12px;
       margin-top: 8px;
@@ -172,6 +194,8 @@
     }
   </style>
   <script src="../database.js"></script>
+  <!-- НОВОЕ: отдельный файл со списком документов, который собирает generate_db.js -->
+  <script src="../documents-index.js"></script>
 </head>
 <body>
 
@@ -198,6 +222,8 @@
     const header = document.getElementById("archive-header");
     const backLink = document.querySelector(".back-link"); // Находим ссылку возврата
     const db = window.db || window.database;
+    // НОВОЕ: документы теперь читаем из отдельного файла, а не из person.documents
+    const docsIndex = window.documentsIndex || {};
 
     // Сразу локализуем ссылку возврата, сохраняя параметр языка в URL
     if (backLink) {
@@ -234,12 +260,13 @@
       header.innerText = currentLang === "en" ? "Archival Documents" : "Архивные документы";
     }
 
-    let docs = person.documents || [];
+    // НОВОЕ: берём документы персоны из documents-index.js вместо person.documents
+    let docs = docsIndex[id] || [];
 
     // Резервный вариант: если документов нет, но есть главное фото, показываем его
     if (docs.length === 0 && person.mainPhoto && person.mainPhoto.trim() !== "") {
       const photoPath = person.mainPhoto.startsWith("../") ? person.mainPhoto : "../" + person.mainPhoto;
-      docs = [{ url: photoPath, title: { ru: "Портрет из карточки", en: "Main Photo" } }];
+      docs = [{ url: photoPath, type: "image", title: { ru: "Портрет из карточки", en: "Main Photo" } }];
     }
 
     if (docs.length === 0) {
@@ -276,16 +303,48 @@
         displayTitle = (item.title && item.title.ru) ? item.title.ru : (typeof item.title === 'string' ? item.title : "Документ");
       }
 
-      // Для PDF сразу используем стандартную заглушку, чтобы избежать моргания
-      const isPDF = fileName.toLowerCase().endsWith('.pdf');
-      if (isPDF) {
+      // НОВОЕ: определяем тип файла — сначала смотрим на поле type (его пишет generate_db.js),
+      // а если его нет (старые записи) — определяем по расширению, как раньше.
+      const ext = fileName.toLowerCase().split('.').pop();
+      let fileType = item.type;
+      if (!fileType) {
+        if (ext === 'pdf' || ext === 'doc' || ext === 'docx' || ext === 'txt') fileType = 'document';
+        else if (['mp4','mov','webm','m4v'].includes(ext)) fileType = 'video';
+        else if (['mp3','wav','m4a','ogg'].includes(ext)) fileType = 'audio';
+        else fileType = 'image';
+      }
+
+      if (fileType === 'document') {
+        // Текстовые документы (PDF/DOC/DOCX/TXT) — открываем в новой вкладке по клику
+        const badgeLabel = ext === 'pdf' ? 'PDF' : ext.toUpperCase();
         card.innerHTML = `
-          <div class="img-wrapper" onclick="openLightbox('${fullPath}')" style="background: #b91c1c; color: #fff; font-family: sans-serif; font-weight: bold; font-size: 28px; letter-spacing: 2px;">
-            PDF
+          <div class="img-wrapper" onclick="window.open('${fullPath}', '_blank')" style="background: #b91c1c; color: #fff; font-family: sans-serif; font-weight: bold; font-size: 24px; letter-spacing: 2px;">
+            ${badgeLabel}
+          </div>
+          <div class="doc-title">${displayTitle}</div>
+        `;
+      } else if (fileType === 'video') {
+        // НОВОЕ: видео проигрывается прямо в карточке, с обычными элементами управления браузера
+        card.innerHTML = `
+          <div class="img-wrapper" style="cursor: default;">
+            <video controls preload="metadata" playsinline>
+              <source src="${fullPath}">
+            </video>
+          </div>
+          <div class="doc-title">${displayTitle}</div>
+        `;
+      } else if (fileType === 'audio') {
+        // НОВОЕ: аудио показывается как аудиоплеер, без картинки
+        card.innerHTML = `
+          <div class="audio-wrapper">
+            <audio controls preload="metadata">
+              <source src="${fullPath}">
+            </audio>
           </div>
           <div class="doc-title">${displayTitle}</div>
         `;
       } else {
+        // Обычное изображение — по клику открывается в полноэкранной галерее (как раньше)
         card.innerHTML = `
           <div class="img-wrapper" onclick="openLightbox('${fullPath}')">
             <img src="${fullPath}" alt="${displayTitle}" loading="lazy" onerror="this.src='../photos/default.jpg';">
