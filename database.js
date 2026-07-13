@@ -76,8 +76,8 @@ window.db = {
         "en": "housewife"
       },
       "burial": {
-        "ru": "Хабаровск",
-        "en": "Khabarovsk"
+        "ru": "Биробиджан",
+        "en": "Birobidjan"
       }
     },
     "bio": {
