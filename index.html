@@ -22,7 +22,15 @@
     }
     /* СЕТКА ИНТЕРФЕЙСА */
     #main-wrapper { display: flex; gap: 15px; width: 100%; height: 780px; position: relative; }
-    #family-tree { flex-grow: 1; height: 100%; border: 1px solid #ccc; background: #fff; }
+    #family-tree {
+    flex-grow: 1;
+    height: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    /* Добавьте эти две строки в описание #family-tree: */
+    width: 100% !important;
+    position: relative !important;
+}
     
     /* БОКОВАЯ ПАНЕЛЬ С ГИБКИМ СКРОЛЛОМ */
     #custom-side-panel {
@@ -137,18 +145,13 @@
       if (person && person.mainPhoto && person.mainPhoto.trim() !== "") {
         return person.mainPhoto;
       }
-      
-      // 2. Если ID текстовый (например, person_alla_1952)
-      if (id && id.startsWith("person_") && !id.includes("temp_")) {
-        const slug = id.replace("person_", ""); // получаем "alla_1952"
-        const slugNoUnderscore = slug.replace("_", ""); // получаем "alla1952"
-        
-        // Массив возможных имён файлов в папке photos
-        // (система проверит точное совпадение, но так как JS в браузере не видит файлы на диске напрямую,
-        // мы по умолчанию вернём вариант БЕЗ подчёркивания, как у вас на скриншоте)
-        return `photos/${slugNoUnderscore}.jpg`; 
-      }
-      
+
+      // 2. ИСПРАВЛЕНО: раньше здесь был шаг, который пытался УГАДАТЬ имя файла
+      // по id персоны (например, photos/shevel1848.jpg) — из-за этого для людей
+      // без реального фото подставлялся несуществующий файл, и вместо красивой
+      // заглушки браузер показывал "сломанную картинку". Теперь, если mainPhoto
+      // не указан, сразу переходим к заглушке по полу (шаг ниже) — так и было задумано.
+
       // 3. Умная заглушка по полу, если фото вообще нет
       let isFemale = false;
       if (id) {
@@ -286,7 +289,15 @@ window.copyDatabaseToClipboard = function() {
 
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
-
+function closePanel() {
+    const panel = document.getElementById("custom-side-panel");
+    panel.style.display = "none";
+    
+    // Принудительно вызываем перерисовку дерева
+    if (typeof drawTree === 'function') {
+        drawTree();
+    }
+}
     function showCustomSidePanel(nodeId) {
       activeNodeId = nodeId;
       const person = db[nodeId];
@@ -332,7 +343,7 @@ window.copyDatabaseToClipboard = function() {
       panel.innerHTML = `
         <div style="position: absolute; top: 10px; right: 15px; display: flex; align-items: center; gap: 12px; z-index: 10;">
           <span title="Режим редактирования активен" style="font-size: 18px; cursor: default; color: maroon;">✏️</span>
-          <span class="panel-close-btn" style="position: static; font-size: 28px;" onclick="document.getElementById('custom-side-panel').style.display='none'">&times;</span>
+         <span class="panel-close-btn" style="position: static; font-size: 28px;" onclick="closePanel()">&times;</span>
         </div>
         <div class="panel-content-scroll">
           <div class="panel-photo-container">
