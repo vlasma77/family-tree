@@ -34,7 +34,7 @@ const TYPE_BY_EXT = {
 };
 const SUPPORTED_EXT = Object.keys(TYPE_BY_EXT);
 
-// Функция авто-переводчика для базовых слов
+// Функция авто-переводчика для базовых слов (когда имя файла НА РУССКОМ)
 function autoTranslateTitle(russianTitle) {
     const titleLower = russianTitle.toLowerCase();
 
@@ -47,13 +47,90 @@ function autoTranslateTitle(russianTitle) {
     if (titleLower.includes('паспорт')) return 'Passport';
     if (titleLower.includes('фото')) return 'Archival Photo';
     if (titleLower.includes('буклет')) return 'Information Booklet';
-    // НОВОЕ: подсказки для видео/аудио
     if (titleLower.includes('видео') || titleLower.includes('запись видео')) return 'Video Recording';
     if (titleLower.includes('аудио') || titleLower.includes('интервью') || titleLower.includes('голос')) return 'Audio Recording';
     if (titleLower.includes('воспоминани')) return 'Memoir / Notes';
 
     // Если это просто имя или неопознанный файл, пишем аккуратное базовое название
     return 'Archival Document';
+}
+
+// НОВОЕ: словарь ключевых английских слов -> русский перевод.
+// Нужен для случая, когда файлы названы латиницей/по-английски (как у Вульфа),
+// чтобы на русской кнопке не показывался сырой английский текст.
+const EN_TO_RU_WORDS = {
+    archiv: 'Архив', archive: 'Архив',
+    birth: 'Рождение',
+    death: 'Смерть', dearth: 'Смерть',
+    marriage: 'Свадьба', wedding: 'Свадьба',
+    ktuba: 'Ктуба', ketuba: 'Ктуба', ketubah: 'Ктуба',
+    funeral: 'Похороны',
+    house: 'Дом',
+    children: 'Дети',
+    grandchildren: 'Внуки',
+    granddaughter: 'Внучка',
+    grandson: 'Внук',
+    brothers: 'Братья', sister: 'Сестра', sisters: 'Сёстры', brother: 'Брат',
+    courtyard: 'Двор',
+    artel: 'Артель',
+    unknown: 'Неизвестно',
+    with: 'с',
+    certificate: 'Свидетельство',
+    photo: 'Фото', photograph: 'Фото',
+    video: 'Видео',
+    audio: 'Аудио',
+    interview: 'Интервью',
+    passport: 'Паспорт',
+    military: 'Военный',
+    diploma: 'Диплом',
+    booklet: 'Буклет',
+    memoir: 'Воспоминания', memories: 'Воспоминания',
+    portrait: 'Портрет',
+    family: 'Семья',
+    letter: 'Письмо',
+    school: 'Школа',
+    work: 'Работа', job: 'Работа',
+    army: 'Армия',
+    war: 'Война'
+};
+
+function capitalize(word) {
+    if (!word) return word;
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+// НОВОЕ: если имя файла на английском/латинице — собираем аккуратный русский вариант
+// слово за словом (найденные в словаре слова переводим, остальное — считаем именами/местами
+// и оставляем как есть, с большой буквы).
+function translateEnglishTitleToRussian(cleanTitle) {
+    const tokens = cleanTitle.split(' ').filter(Boolean);
+    const ruTokens = tokens.map(tok => {
+        const key = tok.toLowerCase();
+        return EN_TO_RU_WORDS[key] || capitalize(tok);
+    });
+    return capitalize(ruTokens.join(' '));
+}
+
+// НОВОЕ: частые опечатки/варианты написания в именах файлов -> правильное английское слово
+const EN_SPELLING_FIXES = {
+    dearth: 'Death',
+    archiv: 'Archive',
+    ktuba: 'Ketubah',
+    ketuba: 'Ketubah'
+};
+
+// НОВОЕ: если имя файла и так на английском — аккуратно оформляем регистр слов
+// и заодно поправляем частые опечатки (dearth -> Death и т.п.)
+function niceEnglishTitle(cleanTitle) {
+    return cleanTitle.split(' ').filter(Boolean).map(tok => {
+        const fix = EN_SPELLING_FIXES[tok.toLowerCase()];
+        return fix || capitalize(tok);
+    }).join(' ');
+}
+
+// НОВОЕ: определяем, на каком языке название файла — по наличию кириллицы
+function isCyrillicText(text) {
+    return /[а-яёА-ЯЁ]/.test(text);
 }
 
 if (!fs.existsSync(dbPath)) {
@@ -97,15 +174,28 @@ for (const personId in db) {
                 let ext = path.extname(file).toLowerCase();
                 let fileType = TYPE_BY_EXT[ext] || 'document';
 
-                // Сначала ищем в вашем ручном файле. Если не нашли — переводим автоматически!
-                let englishTitle = translationsDict[cleanTitle.toLowerCase()] || autoTranslateTitle(cleanTitle);
+                // НОВОЕ: сначала смотрим, на каком языке само имя файла,
+                // чтобы правильно заполнить и русскую, и английскую кнопку —
+                // а не оставлять "сырой" текст на одной из них.
+                let ruTitle, enTitle;
+                const manualOverride = translationsDict[cleanTitle.toLowerCase()];
+
+                if (isCyrillicText(cleanTitle)) {
+                    // Имя файла по-русски (например, "справка_о_рождении.pdf")
+                    ruTitle = cleanTitle;
+                    enTitle = manualOverride || autoTranslateTitle(cleanTitle);
+                } else {
+                    // Имя файла латиницей/по-английски (например, "vulf_death.png")
+                    enTitle = manualOverride || niceEnglishTitle(cleanTitle);
+                    ruTitle = translateEnglishTitleToRussian(cleanTitle);
+                }
 
                 return {
                     url: file,
-                    type: fileType, // НОВОЕ: тип файла — image / video / audio / document
+                    type: fileType, // тип файла — image / video / audio / document
                     title: {
-                        ru: cleanTitle,
-                        en: englishTitle
+                        ru: ruTitle,
+                        en: enTitle
                     }
                 };
             });
