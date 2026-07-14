@@ -1,195 +1,187 @@
 window.documentsIndex = {
   "person_vulf_1898": [
     {
-      "url": "archiv_birth_aizik.png",
+      "url": "Архивная запись о бракосочетании Вульфа и Блюмы.png",
       "type": "image",
       "title": {
-        "ru": "archiv birth aizik",
-        "en": "Archival Document"
+        "ru": "Архивная запись о бракосочетании Вульфа и Блюмы",
+        "en": "Archival record of the marriage Wulf and Blyuma"
       }
     },
     {
-      "url": "birth_aizik_1917.png",
+      "url": "Архивная запись рождения Израиля Айзика.png",
       "type": "image",
       "title": {
-        "ru": "birth aizik 1917",
-        "en": "Archival Document"
+        "ru": "Архивная запись рождения Израиля Айзика",
+        "en": "Archival recording of Israel Aizyk birth"
       }
     },
     {
-      "url": "dearth_vulf.jpg",
+      "url": "Архивная запись смерти Вульфа.png",
       "type": "image",
       "title": {
-        "ru": "dearth vulf",
-        "en": "Archival Document"
+        "ru": "Архивная запись смерти Вульфа",
+        "en": "Archival footage of Wulfs death"
       }
     },
     {
-      "url": "ktuba_marriage_vulf.png",
+      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
       "type": "image",
       "title": {
-        "ru": "ktuba marriage vulf",
-        "en": "Archival Document"
+        "ru": "Архивная справка из переписи населения Прилук, 1923",
+        "en": "Archival information from the Priluki population census, 1923"
       }
     },
     {
-      "url": "marriage_vulf.png",
+      "url": "Все дети Вульфа и Блюмы.jpg",
       "type": "image",
       "title": {
-        "ru": "marriage vulf",
-        "en": "Archival Document"
+        "ru": "Все дети Вульфа и Блюмы",
+        "en": "All children of Wulf and Blyuma"
       }
     },
     {
-      "url": "priluki_archive_1923.jpg",
+      "url": "Вульф в молодости.jpg",
       "type": "image",
       "title": {
-        "ru": "priluki archive 1923",
-        "en": "Archival Document"
+        "ru": "Вульф в молодости",
+        "en": "Wulf in his youth"
       }
     },
     {
-      "url": "vulf_1960s.jpg",
+      "url": "Вульф во дворе своего дома, Биробиджан.png",
       "type": "image",
       "title": {
-        "ru": "vulf 1960s",
-        "en": "Archival Document"
+        "ru": "Вульф во дворе своего дома, Биробиджан",
+        "en": "Wulf in the courtyard of his house, Birobidzhan"
       }
     },
     {
-      "url": "vulf_artel.png",
+      "url": "Вульф и Блюма с детьми Хаимом (Фима) и Самуилом (Миша).jpg",
       "type": "image",
       "title": {
-        "ru": "vulf artel",
-        "en": "Archival Document"
+        "ru": "Вульф и Блюма с детьми Хаимом (Фима) и Самуилом (Миша)",
+        "en": "Wulf and Blyuma with their children Chaim (Fima) and Samuel (Misha)"
       }
     },
     {
-      "url": "vulf_blyuma.png",
+      "url": "Вульф с братьями.png",
       "type": "image",
       "title": {
-        "ru": "vulf blyuma",
-        "en": "Archival Document"
+        "ru": "Вульф с братьями",
+        "en": "Wulf with his brothers"
       }
     },
     {
-      "url": "vulf_blyuma_fima.jpg",
+      "url": "Вульф с внучкой.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf blyuma fima",
-        "en": "Archival Document"
+        "ru": "Вульф с внучкой",
+        "en": "Wulf with his granddaughter"
       }
     },
     {
-      "url": "vulf_blyuma_unknown.jpg",
+      "url": "Вульф слева у окна. Обувная артель, Биробиджан.png",
       "type": "image",
       "title": {
-        "ru": "vulf blyuma unknown",
-        "en": "Archival Document"
+        "ru": "Вульф слева у окна. Обувная артель, Биробиджан",
+        "en": "Wulf is on the left by the window. Shoe cooperative, Birobidzhan"
       }
     },
     {
-      "url": "vulf_brothers.png",
+      "url": "Вульф, 1960.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf brothers",
-        "en": "Archival Document"
+        "ru": "Вульф, 1960",
+        "en": "Wulf, 1960"
       }
     },
     {
-      "url": "vulf_children.jpg",
+      "url": "Выписка о бракосочетании Вульфа и Блюмы.png",
       "type": "image",
       "title": {
-        "ru": "vulf children",
-        "en": "Archival Document"
+        "ru": "Выписка о бракосочетании Вульфа и Блюмы",
+        "en": "Extract from the marriage certificate of Wulf and Blyuma"
       }
     },
     {
-      "url": "vulf_courtyard.png",
+      "url": "Выписка о рождении Израиля Айзика.png",
       "type": "image",
       "title": {
-        "ru": "vulf courtyard",
-        "en": "Archival Document"
+        "ru": "Выписка о рождении Израиля Айзика",
+        "en": "Birth Certificate"
       }
     },
     {
-      "url": "vulf_death.png",
+      "url": "Дом в Прилуках где жила семья.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf death",
-        "en": "Archival Document"
+        "ru": "Дом в Прилуках где жила семья",
+        "en": "The house in Priluki where the family lived"
       }
     },
     {
-      "url": "vulf_funeral_1.jpg",
+      "url": "Дом проживания в Биробиджане.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf funeral 1",
-        "en": "Archival Document"
+        "ru": "Дом проживания в Биробиджане",
+        "en": "Residential building in Birobidzhan"
       }
     },
     {
-      "url": "vulf_funeral_2.jpg",
+      "url": "Запись брака Вульфа с Блюмой.png",
       "type": "image",
       "title": {
-        "ru": "vulf funeral 2",
-        "en": "Archival Document"
+        "ru": "Запись брака Вульфа с Блюмой",
+        "en": "Record of Wulfs marriage to Blyuma"
       }
     },
     {
-      "url": "vulf_grandchildren.jpg",
+      "url": "Из жизни в Биробиджане.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf grandchildren",
-        "en": "Archival Document"
+        "ru": "Из жизни в Биробиджане",
+        "en": "From life in Birobidzhan"
       }
     },
     {
-      "url": "vulf_granddaughter.jpg",
+      "url": "Период жизни в Биробиджане.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf granddaughter",
-        "en": "Archival Document"
+        "ru": "Период жизни в Биробиджане",
+        "en": "Period of life in Birobidzhan"
       }
     },
     {
-      "url": "vulf_house_birobidzhan.jpg",
+      "url": "Похороны Вульфа, Астрахань.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf house birobidzhan",
-        "en": "Archival Document"
+        "ru": "Похороны Вульфа, Астрахань",
+        "en": "Wulfs funeral, Astrakhan"
       }
     },
     {
-      "url": "vulf_house_priluki.jpg",
+      "url": "Прощание с Вульфом, Астрахань.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf house priluki",
-        "en": "Archival Document"
+        "ru": "Прощание с Вульфом, Астрахань",
+        "en": "Farewell to Wulf, Astrakhan"
       }
     },
     {
-      "url": "vulf_marriage.jpg",
+      "url": "С внуками.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf marriage",
-        "en": "Archival Document"
+        "ru": "С внуками",
+        "en": "With grandchildren"
       }
     },
     {
-      "url": "vulf_unknown_1.jpg",
+      "url": "Свидетельство о смерти Вульфа.jpg",
       "type": "image",
       "title": {
-        "ru": "vulf unknown 1",
-        "en": "Archival Document"
-      }
-    },
-    {
-      "url": "vulf_with_blyuma_birobidzhan.jpg",
-      "type": "image",
-      "title": {
-        "ru": "vulf with blyuma birobidzhan",
-        "en": "Archival Document"
+        "ru": "Свидетельство о смерти Вульфа",
+        "en": "Wulfs death certificate"
       }
     }
   ],
@@ -199,7 +191,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Архивная запись о бракосочетании Вульфа и Блюмы",
-        "en": "Archival record of the marriage Wolfe and Blyuma"
+        "en": "Archival record of the marriage Wulf and Blyuma"
       }
     },
     {
@@ -255,7 +247,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Все дети Вульфа и Блюмы",
-        "en": "All children of Wolf and Blyuma"
+        "en": "All children of Wulf and Blyuma"
       }
     },
     {
@@ -275,11 +267,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Выписка о рождении Айзика, 1917.png",
+      "url": "Выписка о рождении Израиля Айзика.png",
       "type": "image",
       "title": {
-        "ru": "Выписка о рождении Айзика, 1917",
-        "en": "Aizyks birth certificate, 1917"
+        "ru": "Выписка о рождении Израиля Айзика",
+        "en": "Birth Certificate"
       }
     },
     {
@@ -295,7 +287,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Запись брака Вульфа с Блюмой",
-        "en": "Record of Wolfe's marriage to Blyuma"
+        "en": "Record of Wulfs marriage to Blyuma"
       }
     },
     {
@@ -320,14 +312,6 @@ window.documentsIndex = {
       "title": {
         "ru": "Период жизни в Биробиджане",
         "en": "Period of life in Birobidzhan"
-      }
-    },
-    {
-      "url": "Полная запись о бракосочетании.png",
-      "type": "image",
-      "title": {
-        "ru": "Полная запись о бракосочетании",
-        "en": "Full marriage record"
       }
     },
     {
@@ -491,7 +475,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Братья на набережной Ашкелона",
-        "en": "Archival Document"
+        "en": "Brothers on the Ashkelon waterfront"
       }
     },
     {
@@ -515,7 +499,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Время войны",
-        "en": "Archival Document"
+        "en": "Time of war"
       }
     },
     {
@@ -523,7 +507,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Встреча с Владимиром Энтиным",
-        "en": "Archival Document"
+        "en": "Meeting with Vladimir Entin"
       }
     },
     {
@@ -539,7 +523,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Жизнь в Офакиме",
-        "en": "Archival Document"
+        "en": "Life in Ofakim"
       }
     },
     {
@@ -547,7 +531,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Курсант военного училища 1946",
-        "en": "Archival Document"
+        "en": "Military school cadet 1946"
       }
     },
     {
@@ -555,7 +539,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил в Астрахани",
-        "en": "Archival Document"
+        "en": "Mikhail in Astrakhan"
       }
     },
     {
@@ -563,7 +547,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил в Офакиме",
-        "en": "Archival Document"
+        "en": "Mikhail in Ofakim"
       }
     },
     {
@@ -579,7 +563,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил с внуками",
-        "en": "Archival Document"
+        "en": "Mikhail with grandchildren"
       }
     },
     {
@@ -587,7 +571,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил с детьми",
-        "en": "Archival Document"
+        "en": "Mikhail with children"
       }
     },
     {
@@ -595,7 +579,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил с младшим братом Анатолием",
-        "en": "Archival Document"
+        "en": "Mikhail with his younger brother Anatoly"
       }
     },
     {
@@ -603,7 +587,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил с подругой, Ленинград",
-        "en": "Archival Document"
+        "en": "Mikhail with a girlfriend, Leningrad"
       }
     },
     {
@@ -920,104 +904,104 @@ window.documentsIndex = {
       "url": "grave_sonya.png",
       "type": "image",
       "title": {
-        "ru": "grave sonya",
-        "en": "Archival Document"
+        "ru": "Grave Sonya",
+        "en": "Grave Sonya"
       }
     },
     {
       "url": "katya_sonya_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "katya sonya mira",
-        "en": "Archival Document"
+        "ru": "Katya Sonya Mira",
+        "en": "Katya Sonya Mira"
       }
     },
     {
       "url": "meeting_with_sisters.jpg",
       "type": "image",
       "title": {
-        "ru": "meeting with sisters",
-        "en": "Archival Document"
+        "ru": "Meeting с Сёстры",
+        "en": "Meeting With Sisters"
       }
     },
     {
       "url": "photo_session_elatives.jpg",
       "type": "image",
       "title": {
-        "ru": "photo session elatives",
-        "en": "Archival Document"
+        "ru": "Фото Session Elatives",
+        "en": "Photo Session Elatives"
       }
     },
     {
       "url": "sons_leonid_igor.jpg",
       "type": "image",
       "title": {
-        "ru": "sons leonid igor",
-        "en": "Archival Document"
+        "ru": "Sons Leonid Igor",
+        "en": "Sons Leonid Igor"
       }
     },
     {
       "url": "sons_sonya.jpg",
       "type": "image",
       "title": {
-        "ru": "sons sonya",
-        "en": "Archival Document"
+        "ru": "Sons Sonya",
+        "en": "Sons Sonya"
       }
     },
     {
       "url": "sonya1929.jpg",
       "type": "image",
       "title": {
-        "ru": "sonya1929",
-        "en": "Archival Document"
+        "ru": "Sonya1929",
+        "en": "Sonya1929"
       }
     },
     {
       "url": "sonya_middle.png",
       "type": "image",
       "title": {
-        "ru": "sonya middle",
-        "en": "Archival Document"
+        "ru": "Sonya Middle",
+        "en": "Sonya Middle"
       }
     },
     {
       "url": "sonya_mikhail.jpg",
       "type": "image",
       "title": {
-        "ru": "sonya mikhail",
-        "en": "Archival Document"
+        "ru": "Sonya Mikhail",
+        "en": "Sonya Mikhail"
       }
     },
     {
       "url": "sonya_mira_blyuma.jpg",
       "type": "image",
       "title": {
-        "ru": "sonya mira blyuma",
-        "en": "Archival Document"
+        "ru": "Sonya Mira Blyuma",
+        "en": "Sonya Mira Blyuma"
       }
     },
     {
       "url": "sonya_sister_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "sonya sister mira",
-        "en": "Archival Document"
+        "ru": "Sonya Сестра Mira",
+        "en": "Sonya Sister Mira"
       }
     },
     {
       "url": "sonya_with_relatives.jpg",
       "type": "image",
       "title": {
-        "ru": "sonya with relatives",
-        "en": "Archival Document"
+        "ru": "Sonya с Relatives",
+        "en": "Sonya With Relatives"
       }
     },
     {
       "url": "with_parents.jpg",
       "type": "image",
       "title": {
-        "ru": "with parents",
-        "en": "Archival Document"
+        "ru": "С Parents",
+        "en": "With Parents"
       }
     }
   ],
