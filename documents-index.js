@@ -941,11 +941,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "sons_sonya.jpg",
+      "url": "valery linetzky and leonid kaplun.jpg",
       "type": "image",
       "title": {
-        "ru": "Sons Sonya",
-        "en": "Sons Sonya"
+        "ru": "Валера Линецкий и Лёня Каплун",
+        "en": "valery linetzky and leonid kaplun"
       }
     },
     {
