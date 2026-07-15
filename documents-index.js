@@ -904,7 +904,7 @@ window.documentsIndex = {
       "url": "grave_sonya.png",
       "type": "image",
       "title": {
-        "ru": "Grave Sonya",
+        "ru": "Могила Сони",
         "en": "Grave Sonya"
       }
     },
@@ -912,32 +912,32 @@ window.documentsIndex = {
       "url": "katya_sonya_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Katya Sonya Mira",
-        "en": "Katya Sonya Mira"
+        "ru": "сестры Катя, Соня и Мира",
+        "en": "sisters Katya, Sonya and Mira"
       }
     },
     {
       "url": "meeting_with_sisters.jpg",
       "type": "image",
       "title": {
-        "ru": "Meeting с Сёстры",
-        "en": "Meeting With Sisters"
+        "ru": "Прогулка с сестрами, Астрахань",
+        "en": "A walk with sisters, Astrakhan"
       }
     },
     {
       "url": "photo_session_elatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Фото Session Elatives",
-        "en": "Photo Session Elatives"
+        "ru": "Встреча с родственниками",
+        "en": "Meeting with relatives"
       }
     },
     {
       "url": "sons_leonid_igor.jpg",
       "type": "image",
       "title": {
-        "ru": "Sons Leonid Igor",
-        "en": "Sons Leonid Igor"
+        "ru": "Соня с детьми Лёней и Игорем",
+        "en": "Sonya with her children Lenya and Igor"
       }
     },
     {
@@ -952,56 +952,56 @@ window.documentsIndex = {
       "url": "sonya1929.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya1929",
-        "en": "Sonya1929"
+        "ru": "Соня, Биробиджан",
+        "en": "Sonya, Birobidzhan"
       }
     },
     {
       "url": "sonya_middle.png",
       "type": "image",
       "title": {
-        "ru": "Sonya Middle",
-        "en": "Sonya Middle"
+        "ru": "Соня внизу вторая справа",
+        "en": "Sonya is second from the right below."
       }
     },
     {
       "url": "sonya_mikhail.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Mikhail",
-        "en": "Sonya Mikhail"
+        "ru": "Михаил Каплун и Соня",
+        "en": "Mikhail Kaplun and Sonya"
       }
     },
     {
       "url": "sonya_mira_blyuma.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Mira Blyuma",
-        "en": "Sonya Mira Blyuma"
+        "ru": "Соня и Мира с мамой",
+        "en": "Sonya and Mira with their mother"
       }
     },
     {
       "url": "sonya_sister_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Сестра Mira",
-        "en": "Sonya Sister Mira"
+        "ru": "Соня с сестрой Мирой, Биробиджан",
+        "en": "Sonya with her sister Mira, Birobidzhan"
       }
     },
     {
       "url": "sonya_with_relatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya с Relatives",
-        "en": "Sonya With Relatives"
+        "ru": "Соня в кругу родственников",
+        "en": "Sonya among her relatives"
       }
     },
     {
       "url": "with_parents.jpg",
       "type": "image",
       "title": {
-        "ru": "С Parents",
-        "en": "With Parents"
+        "ru": "Соня с родителями, Биробиджан",
+        "en": "Sonya with her parents, Birobidzhan"
       }
     }
   ],
