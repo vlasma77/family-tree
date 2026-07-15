@@ -1,4 +1,117 @@
+# Пишите сюда ТОЛЬКО те переводы, которые хотите настроить вручную:
+# Вариант 1 (только английский, как раньше):
+#   имя_файла_без_расширения = English Title
+# Вариант 2 (задать сразу оба языка, например для одинаковых документов у разных персон):
+#   имя_файла_без_расширения = English Title | Русское название
+#
+# Строки, начинающиеся с # — это просто заголовки-разделители для твоего удобства,
+# скрипт их полностью игнорирует. Используй Ctrl+F в Блокноте, чтобы быстро
+# находить нужный раздел по имени персоны.
+
+# ===================================================================
+# ОБЩИЕ ЗАПИСИ (встречаются у нескольких персон сразу)
+# ===================================================================
 Свидетельство о рождении = Birth Certificate
+Хроника военных лет = Chronicle of the war years
+Архивная справка из переписи населения Прилук, 1923 = Archival information from the Priluki population census, 1923
+Встреча с родственниками = Meeting with relatives
+Супружеский танец = Marital dance
+Семейная фотография = Family photo
+
+# ===================================================================
+# Вульф и Блюма (общие документы семьи)
+# ===================================================================
+Архивная запись рождения Израиля Айзика = Archival recording of Israel Aizyk birth
+Выписка о рождении Айзика, 1917 = Aizyks birth certificate, 1917
+Блюма, 69 лет = Blyuma, 69 years
+Блюма Бейла в молодости = Blyuma Beila in her youth
+Могила Блюмы, Хабаровск = Blyuma's grave, Khabarovsk
+Блюма с дочерьми Мирой и Соней = Blyuma with her daughters Mira and Sonya
+видео фантазия = video fantasy
+Свидетельство о смерти Блюмы = Blyuma's death certificate
+Архивная запись о бракосочетании Вульфа и Блюмы = Archival record of the marriage Wulf and Blyuma
+Выписка о бракосочетании Вульфа и Блюмы = Extract from the marriage certificate of Wulf and Blyuma
+Период жизни в Биробиджане = Period of life in Birobidzhan
+Запись брака Вульфа с Блюмой = Record of Wulfs marriage to Blyuma
+Вульф и Блюма с детьми Хаимом (Фима) и Самуилом (Миша) = Wulf and Blyuma with their children Chaim (Fima) and Samuel (Misha)
+Все дети Вульфа и Блюмы = All children of Wulf and Blyuma
+Дом проживания в Биробиджане = Residential building in Birobidzhan
+Из жизни в Биробиджане = From life in Birobidzhan
+Архивная запись смерти Вульфа = Archival footage of Wulfs death
+Вульф в молодости = Wulf in his youth
+Вульф во дворе своего дома, Биробиджан = Wulf in the courtyard of his house, Birobidzhan
+Вульф с братьями = Wulf with his brothers
+Вульф с внучкой = Wulf with his granddaughter
+Вульф слева у окна. Обувная артель, Биробиджан = Wulf is on the left by the window. Shoe cooperative, Birobidzhan
+Вульф, 1960 = Wulf, 1960
+Дом в Прилуках где жила семья = The house in Priluki where the family lived
+Похороны Вульфа, Астрахань = Wulfs funeral, Astrakhan
+Прощание с Вульфом, Астрахань = Farewell to Wulf, Astrakhan
+С внуками = With grandchildren
+Свидетельство о смерти Вульфа = Wulfs death certificate
+
+# ===================================================================
+# Ефим и Надежда
+# ===================================================================
+Дети Ефима и Надежды = Children of Efim and Nadezhda
+Ефим, 1944 = Efim, 1944
+Ефим, 1945, Венгрия = Efim, 1945, Hungary
+Семья Ефима, 1947 = Efim's family, 1947
+Семья Ефима, 1952 = Efim's family, 1952
+Семья Ефима, 1954 = Efim's family, 1954
+Семья Ефима, 1964 = Efim's family, 1964
+Семья Ефима, 1974 = Efim's family, 1974
+Ефим Смагаринский = Efim Smagarinsky
+Ефим с друзьями военных лет = Efim with his wartime friends
+Ефим на отдыхе = Efim is on vacation
+Ефим с матерью = Efim with his mother
+Встреча взрослых детей = Meeting of adult children
+Надежда, супруга Ефима = Nadezhda, Efim's wife
+Перевод архивной справки, Прилуки 1923 = Translation of an archival certificate, Priluki 1923
+Бабушка Надежда = Grandma Nadezhda
+Надежда Смагаринская = Nadezhda Smagarinskaya
+Надежда с дочкой = Nadezhda with her daughter
+Надежда с дочкой Наташей = Nadezhda with her daughter Natasha
+
+# ===================================================================
+# Михаил
+# ===================================================================
+Братья на набережной Ашкелона = Brothers on the Ashkelon waterfront
+Время войны = Time of war
+Встреча с Владимиром Энтиным = Meeting with Vladimir Entin
+Жизнь в Офакиме = Life in Ofakim
+Курсант военного училища 1946 = Military school cadet 1946
+Михаил в Астрахани = Mikhail in Astrakhan
+Михаил в Офакиме = Mikhail in Ofakim
+Михаил с внуками = Mikhail with grandchildren
+Михаил с детьми = Mikhail with children
+Михаил с младшим братом Анатолием = Mikhail with his younger brother Anatoly
+Михаил с подругой, Ленинград = Mikhail with a girlfriend, Leningrad
+
+# ===================================================================
+# Анатолий
+# ===================================================================
+Анатолий Смагаринский = Anatoly Smagarinsky
+Анатолий и Михаил = Anatoly and Mikhail
+Анатолий в Араде = Anatoly in Arad
+Дети Вульфа, Анатолий самый младший = Wolfs children, Anatoly is the youngest
+Анатолий с мамой Блюмой = Anatoly with his mother Blyuma
+Анатолий с племянниками = Anatoly with nephews
+Анатолий с племянницей = Anatoly with niece
+Жена Анатолия, Гала = Anatolys wife Gala
+Света, дочь Анатолия = Sveta, Anatoly's daughter
+Молодые годы Анатолия, Хабаровск = Anatoly's early years, Khabarovsk
+Любимый дядя Толя с племяниками = Beloved Uncle Tolya with his nephews
+Галина, жена Анатолия = Galina, Anatoly's wife
+Анатолий и Михаил с двоюродным братом Владимиром Энтиным = Anatoly and Mikhail with their cousin Vladimir Entin
+Алекс, сын Анатолия = Alex, Anatoly's son
+Владимир, Анатолий и Михаил = Vladimir, Anatoly and Mikhail
+Анатолий с отцом Вульфом, Хабаровск = Anatoly with his father Wulf, Khabarovsk
+Анатолий с женой = Anatoly with his wife
+
+# ===================================================================
+# Фира
+# ===================================================================
 Бабушка Фира = grandmother Fira
 Вальс с женой = Waltz with wife
 Встреча с родными в Умани = Meeting with relatives in Uman
@@ -15,7 +128,6 @@
 Прогулка по набережной = A walk along the embankment
 с тётей Златой = with Aunt Zlata
 Семейная фотография Ройтман = Roytman family photo
-Семейная фотография = Family photo
 Уманьские родственники = Uman relatives
 Фира в молодые годы = Fira in her younger years
 Фира с детьми в Астрахани = Fira with children in Astrakhan
@@ -23,64 +135,18 @@
 Фира с Нелечкой и Миля в парке Умани = Fira with Nelechka and Milya in Uman Park
 Фира с сестрой Милей = Fira with her sister Milya
 Фира со старшим сыном Вовой = Fira with her eldest son Vova
-Анатолий Смагаринский = Anatoly Smagarinsky
-Анатолий и Михаил = Anatoly and Mikhail
-Анатолий в Араде = Anatoly in Arad
-Дети Вульфа, Анатолий самый младший = Wolfs children, Anatoly is the youngest
-Анатолий с мамой Блюмой = Anatoly with his mother Blyuma
-Анатолий с племянниками = Anatoly with nephews
-Анатолий с племянницей = Anatoly with niece
-Жена Анатолия, Гала = Anatolys wife Gala
-Супружеский танец = Marital dance
-Света, дочь Анатолия = Sveta, Anatoly's daughter
-Молодые годы Анатолия, Хабаровск = Anatoly's early years, Khabarovsk
-Любимый дядя Толя с племяниками = Beloved Uncle Tolya with his nephews
-Галина, жена Анатолия = Galina, Anatoly's wife
-Анатолий и Михаил с двоюродным братом Владимиром Энтиным = Anatoly and Mikhail with their cousin Vladimir Entin
-Алекс, сын Анатолия = Alex, Anatoly's son
-Владимир, Анатолий и Михаил = Vladimir, Anatoly and Mikhail
-Анатолий с отцом Вульфом, Хабаровск = Anatoly with his father Wulf, Khabarovsk
-Анатолий с женой = Anatoly with his wife
-Архивная запись рождения Израиля Айзика = Archival recording of Israel Aizyk birth
-Выписка о рождении Айзика, 1917 = Aizyks birth certificate, 1917
-Блюма, 69 лет = Blyuma, 69 years
-Блюма Бейла в молодости = Blyuma Beila in her youth
-Могила Блюмы, Хабаровск = Blyuma's grave, Khabarovsk
-Блюма с дочерьми Мирой и Соней = Blyuma with her daughters Mira and Sonya
-видео фантазия = video fantasy
-Свидетельство о смерти Блюмы = Blyuma's death certificate
-Архивная запись о бракосочетании Вульфа и Блюмы = Archival record of the marriage Wolfe and Blyuma
-Выписка о бракосочетании Вульфа и Блюмы = Extract from the marriage certificate of Wulf and Blyuma
-Период жизни в Биробиджане = Period of life in Birobidzhan
-Архивная справка из переписи населения Прилук, 1923 = Archival information from the Priluki population census, 1923
-Запись брака Вульфа с Блюмой = Record of Wolfe's marriage to Blyuma
-Вульф и Блюма с детьми Хаимом (Фима) и Самуилом (Миша) = Wulf and Blyuma with their children Chaim (Fima) and Samuel (Misha)
-Все дети Вульфа и Блюмы = All children of Wolf and Blyuma
-Дом проживания в Биробиджане = Residential building in Birobidzhan
-Полная запись о бракосочетании = Full marriage record
-Из жизни в Биробиджане = From life in Birobidzhan
-Хроника военных лет = Chronicle of the war years
-Дети Ефима и Надежды = Children of Efim and Nadezhda
-Ефим, 1944 = Efim, 1944
-Ефим, 1945, Венгрия = Efim, 1945, Hungary
-Семья Ефима, 1947 = Efim's family, 1947
-Семья Ефима, 1952 = Efim's family, 1952
-Семья Ефима, 1954 = Efim's family, 1954
-Семья Ефима, 1964 = Efim's family, 1964
-Семья Ефима, 1974 = Efim's family, 1974
-Ефим Смагаринский = Efim Smagarinsky
-Ефим с друзьями военных лет = Efim with his wartime friends
-Ефим на отдыхе = Efim is on vacation
-Ефим с матерью = Efim with his mother
-Встреча взрослых детей = Meeting of adult children
-Надежда, супруга Ефима = Nadezhda, Efim's wife
-Архивная справка из переписи населения Прилук, 1923 = Archival information from the Priluki population census, 1923
-Перевод архивной справки, Прилуки 1923 = Translation of an archival certificate, Priluki 1923
+
+# ===================================================================
+# Катя
+# ===================================================================
 Катя в парке, Астрахань = Katya in the park, Astrakhan
 Катя с сёстрами, сыном и внучкой = Katya with her sisters, son, and granddaughter
 Катя, 1965 = Katya, 1965
-Встреча с родственниками = Meeting with relatives
 Сын Евгений = son Evgeny
+
+# ===================================================================
+# Мира Линецкая (и её семья)
+# ===================================================================
 На демонстрации, Биробиджан = At the demonstration, Birobidzhan
 Семья Линецких = The Linetsky family
 Могила Миры Линецкой = The grave of Mira Linetskaya
@@ -98,10 +164,14 @@
 Валерий Линецкий = Valery Linetsky
 трудовая книжка Линецкой = Linetskaya's work record book
 трудовая книжка Миры = Mira's work record book
+Валера Линецкий и Лёня  Каплун = valery linetzky and leonid kaplun
+
+# ===================================================================
+# Мира Захарова (и её семья)
+# ===================================================================
 1958 год Молдавия = 1958 Moldova
 В пустыне Негев. Мира,Толя Смагаринский,Аня Захарова = In the Negev Desert. Mira, Tolya Smagarinsky, Anya Zakharova
 Встреча в Москве = Meeting in Moscow
-Встреча с родственниками = Meeting with relatives
 День рождения, 2014 год = Birthday, 2014
 День свадьбы = Wedding day
 Мира Захарова = Mira Zakharova
@@ -118,18 +188,3 @@
 Родители = Parents
 Семья Захаровых = The Zakharov family
 Серебянная свадьба Лиепая 1988 = Silver Wedding Anniversary, Liepaja, 1988
-Бабушка Надежда = Grandma Nadezhda
-Надежда Смагаринская = Nadezhda Smagarinskaya
-Надежда с дочкой = Nadezhda with her daughter
-Надежда с дочкой Наташей = Nadezhda with her daughter Natasha
-Братья на набережной Ашкелона = Brothers on the Ashkelon waterfront
-Время войны = Time of war
-Встреча с Владимиром Энтиным = Meeting with Vladimir Entin
-Жизнь в Офакиме = Life in Ofakim
-Курсант военного училища 1946 = Military school cadet 1946
-Михаил в Астрахани = Mikhail in Astrakhan
-Михаил в Офакиме = Mikhail in Ofakim
-Михаил с внуками = Mikhail with grandchildren
-Михаил с детьми = Mikhail with children
-Михаил с младшим братом Анатолием = Mikhail with his younger brother Anatoly
-Михаил с подругой, Ленинград = Mikhail with a girlfriend, Leningrad
