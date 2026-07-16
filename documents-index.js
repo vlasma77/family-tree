@@ -904,7 +904,7 @@ window.documentsIndex = {
       "url": "grave_sonya.png",
       "type": "image",
       "title": {
-        "ru": "Могила Сони",
+        "ru": "Grave Sonya",
         "en": "Grave Sonya"
       }
     },
@@ -912,96 +912,96 @@ window.documentsIndex = {
       "url": "katya_sonya_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "сестры Катя, Соня и Мира",
-        "en": "sisters Katya, Sonya and Mira"
+        "ru": "Katya Sonya Mira",
+        "en": "Katya Sonya Mira"
       }
     },
     {
       "url": "meeting_with_sisters.jpg",
       "type": "image",
       "title": {
-        "ru": "Прогулка с сестрами, Астрахань",
-        "en": "A walk with sisters, Astrakhan"
+        "ru": "Meeting с Сёстры",
+        "en": "Meeting With Sisters"
       }
     },
     {
       "url": "photo_session_elatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Встреча с родственниками",
-        "en": "Meeting with relatives"
+        "ru": "Фото Session Elatives",
+        "en": "Photo Session Elatives"
       }
     },
     {
       "url": "sons_leonid_igor.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня с детьми Лёней и Игорем",
-        "en": "Sonya with her children Lenya and Igor"
-      }
-    },
-    {
-      "url": "valery linetzky and leonid kaplun.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Валера Линецкий и Лёня Каплун",
-        "en": "valery linetzky and leonid kaplun"
+        "ru": "Sons Leonid Igor",
+        "en": "Sons Leonid Igor"
       }
     },
     {
       "url": "sonya1929.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня, Биробиджан",
-        "en": "Sonya, Birobidzhan"
+        "ru": "Sonya1929",
+        "en": "Sonya1929"
       }
     },
     {
       "url": "sonya_middle.png",
       "type": "image",
       "title": {
-        "ru": "Соня внизу вторая справа",
-        "en": "Sonya is second from the right below."
+        "ru": "Sonya Middle",
+        "en": "Sonya Middle"
       }
     },
     {
       "url": "sonya_mikhail.jpg",
       "type": "image",
       "title": {
-        "ru": "Михаил Каплун и Соня",
-        "en": "Mikhail Kaplun and Sonya"
+        "ru": "Sonya Mikhail",
+        "en": "Sonya Mikhail"
       }
     },
     {
       "url": "sonya_mira_blyuma.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня и Мира с мамой",
-        "en": "Sonya and Mira with their mother"
+        "ru": "Sonya Mira Blyuma",
+        "en": "Sonya Mira Blyuma"
       }
     },
     {
       "url": "sonya_sister_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня с сестрой Мирой, Биробиджан",
-        "en": "Sonya with her sister Mira, Birobidzhan"
+        "ru": "Sonya Сестра Mira",
+        "en": "Sonya Sister Mira"
       }
     },
     {
       "url": "sonya_with_relatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня в кругу родственников",
-        "en": "Sonya among her relatives"
+        "ru": "Sonya с Relatives",
+        "en": "Sonya With Relatives"
+      }
+    },
+    {
+      "url": "valery linetzky and leonid kaplun.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Valery Linetzky And Leonid Kaplun",
+        "en": "Valery Linetzky And Leonid Kaplun"
       }
     },
     {
       "url": "with_parents.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня с родителями, Биробиджан",
-        "en": "Sonya with her parents, Birobidzhan"
+        "ru": "С Parents",
+        "en": "With Parents"
       }
     }
   ],
@@ -1148,6 +1148,24 @@ window.documentsIndex = {
       "title": {
         "ru": "Супружеский танец",
         "en": "Marital dance"
+      }
+    }
+  ],
+  "person_israil_aizik_1917": [
+    {
+      "url": "Архивная запись рождения Израиля Айзика.png",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись рождения Израиля Айзика",
+        "en": "Archival recording of Israel Aizyk birth"
+      }
+    },
+    {
+      "url": "Выписка о рождении Израиля Айзика.png",
+      "type": "image",
+      "title": {
+        "ru": "Выписка о рождении Израиля Айзика",
+        "en": "Birth Certificate"
       }
     }
   ],
