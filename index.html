@@ -259,11 +259,33 @@ window.copyDatabaseToClipboard = function() {
       let motherHtml = getLinkOrText(motherId);
       let spouseHtml = getLinkOrText(spouseId);
 
-      if (fatherHtml) html += `<li><strong>${bText.father}:</strong> ${fatherHtml}</li>`;
-      if (motherHtml) html += `<li><strong>${bText.mother}:</strong> ${motherHtml}</li>`;
-      if (spouseHtml) html += `<li><strong>${bText.spouse}:</strong> ${spouseHtml}</li>`;
+      // Необязательные текстовые пометки (усыновление / повторный брак и т.п.)
+      let fatherNote = (person.links && person.links.fatherNote) ? ` (${person.links.fatherNote})` : "";
+      let motherNote = (person.links && person.links.motherNote) ? ` (${person.links.motherNote})` : "";
+      let spouseNote = (person.links && person.links.spouseNote) ? ` (${person.links.spouseNote})` : "";
 
-      let childrenLinks = [];
+      if (fatherHtml) html += `<li><strong>${bText.father}:</strong> ${fatherHtml}${fatherNote}</li>`;
+      if (motherHtml) html += `<li><strong>${bText.mother}:</strong> ${motherHtml}${motherNote}</li>`;
+
+      // Биологические родители — только текстовая информация, НЕ связь в дереве.
+      // Используется, когда структурный "Отец"/"Мать" — приёмные, а нужно
+      // дополнительно упомянуть биологического родителя без изменения графика дерева.
+      let bioFatherText = (person.links && person.links.biologicalFatherName) ? person.links.biologicalFatherName : "";
+      let bioMotherText = (person.links && person.links.biologicalMotherName) ? person.links.biologicalMotherName : "";
+      if (bioFatherText) html += `<li><strong>${bText.biologicalFather || (currentLang === 'ru' ? "Биологический отец" : "Biological father")}:</strong> ${bioFatherText}</li>`;
+      if (bioMotherText) html += `<li><strong>${bText.biologicalMother || (currentLang === 'ru' ? "Биологическая мать" : "Biological mother")}:</strong> ${bioMotherText}</li>`;
+
+      if (spouseHtml) html += `<li><strong>${bText.spouse}:</strong> ${spouseHtml}${spouseNote}</li>`;
+
+      // Извлекаем год рождения из строки person.years (например "1920–1990" или "р. 1955")
+      const getBirthYear = (id) => {
+        let y = db[id] && db[id].years;
+        if (!y) return null;
+        let match = String(y).match(/\d{4}/);
+        return match ? parseInt(match[0], 10) : null;
+      };
+
+      let childrenIds = [];
       Object.keys(db).forEach(id => {
         if (id === nodeId) return;
         const potentialChild = db[id];
@@ -277,11 +299,21 @@ window.copyDatabaseToClipboard = function() {
           if (parentsArrayLower.includes(cleanNodeId)) isChild = true;
         }
 
-        if (isChild) {
-          let childHtml = getLinkOrText(id);
-          if (childHtml) childrenLinks.push(childHtml);
-        }
+        if (isChild) childrenIds.push(id);
       });
+
+      // Сортировка детей по году рождения (от старшего к младшему).
+      // Если год неизвестен — такой ребёнок уходит в конец списка.
+      childrenIds.sort((a, b) => {
+        let ya = getBirthYear(a);
+        let yb = getBirthYear(b);
+        if (ya === null && yb === null) return 0;
+        if (ya === null) return 1;
+        if (yb === null) return -1;
+        return ya - yb;
+      });
+
+      let childrenLinks = childrenIds.map(id => getLinkOrText(id)).filter(Boolean);
 
       if (childrenLinks.length > 0) {
         html += `<li><strong>${bText.children}:</strong> ${childrenLinks.join(", ")}</li>`;
@@ -311,7 +343,7 @@ function closePanel() {
       let hasDocs = false;
       let archiveKey = nodeId;
       
-      let globalDocs = window.archivesDb || (typeof archivesDb !== 'undefined' ? archivesDb : null);
+      let globalDocs = window.documentsIndex || window.archivesDb || (typeof documentsIndex !== 'undefined' ? documentsIndex : null) || (typeof archivesDb !== 'undefined' ? archivesDb : null);
       
       if (globalDocs) {
         const targetKey = Object.keys(globalDocs).find(k => k.trim().toLowerCase() === nodeId.trim().toLowerCase());
@@ -540,17 +572,44 @@ window.saveCurrentPersonData = function() {
       const currentPerson = db[activeNodeId];
       if (!currentPerson.links) currentPerson.links = { parents: [], spouse: null };
 
+      // Небольшой помощник: спросить необязательную текстовую пометку
+      const askOptionalNote = (ruMsg, enMsg) => {
+        let msg = currentLang === 'ru' ? ruMsg : enMsg;
+        let val = prompt(msg, "");
+        return (val && val.trim() !== "") ? val.trim() : null;
+      };
+
       // === АВТОМАТИЧЕСКОЕ ЗЕРКАЛЬНОЕ СВЯЗЫВАНИЕ ===
       if (role === 'father') {
         currentPerson.links.parents[0] = newId;
+        let note = askOptionalNote(
+          "Пометка к отцу (необязательно, например: «приёмный», «отчим»). Оставьте пустым, если не нужно:",
+          "Father note (optional, e.g. \"adoptive\", \"stepfather\"). Leave empty if not needed:"
+        );
+        if (note) currentPerson.links.fatherNote = note;
       } else if (role === 'mother') {
         currentPerson.links.parents[1] = newId;
+        let note = askOptionalNote(
+          "Пометка к матери (необязательно, например: «приёмная», «мачеха»). Оставьте пустым, если не нужно:",
+          "Mother note (optional, e.g. \"adoptive\", \"stepmother\"). Leave empty if not needed:"
+        );
+        if (note) currentPerson.links.motherNote = note;
       } else if (role === 'spouse') {
         // 1. Прописываем новому человеку в супруги текущего активного
         db[newId].links.spouse = activeNodeId;
         
         // 2. А текущему активному человеку прописываем нового
         currentPerson.links.spouse = newId;
+
+        // 3. Необязательная пометка к браку (например «второй брак»), видна у обоих супругов
+        let note = askOptionalNote(
+          "Пометка к браку (необязательно, например: «второй брак», «гражданский брак»). Оставьте пустым, если не нужно:",
+          "Marriage note (optional, e.g. \"second marriage\"). Leave empty if not needed:"
+        );
+        if (note) {
+          currentPerson.links.spouseNote = note;
+          db[newId].links.spouseNote = note;
+        }
         
       } else if (role === 'son' || role === 'daughter') {
         if (currentPerson.links.spouse) {
