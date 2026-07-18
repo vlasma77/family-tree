@@ -904,7 +904,7 @@ window.documentsIndex = {
       "url": "grave_sonya.png",
       "type": "image",
       "title": {
-        "ru": "Grave Sonya",
+        "ru": "Могила Сони",
         "en": "Grave Sonya"
       }
     },
@@ -912,96 +912,96 @@ window.documentsIndex = {
       "url": "katya_sonya_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Katya Sonya Mira",
-        "en": "Katya Sonya Mira"
+        "ru": "Сёстры Мира, Катя и Соня",
+        "en": "Sisters Mira, Katya and Sonya"
       }
     },
     {
       "url": "meeting_with_sisters.jpg",
       "type": "image",
       "title": {
-        "ru": "Meeting с Сёстры",
-        "en": "Meeting With Sisters"
+        "ru": "Катя с сёстрами, сыном и внучкой",
+        "en": "Katya with her sisters, son, and granddaughter"
       }
     },
     {
       "url": "photo_session_elatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Фото Session Elatives",
-        "en": "Photo Session Elatives"
+        "ru": "Фотосессия с родственниками",
+        "en": "Photo session with relatives"
       }
     },
     {
       "url": "sons_leonid_igor.jpg",
       "type": "image",
       "title": {
-        "ru": "Sons Leonid Igor",
-        "en": "Sons Leonid Igor"
+        "ru": "Соня с детьми Леонидом и Игорем",
+        "en": "Sonya with children Leonid and Igor"
       }
     },
     {
       "url": "sonya1929.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya1929",
-        "en": "Sonya1929"
+        "ru": "Соня, Биробиджан",
+        "en": "Sonya, Birobidzhan"
       }
     },
     {
       "url": "sonya_middle.png",
       "type": "image",
       "title": {
-        "ru": "Sonya Middle",
-        "en": "Sonya Middle"
+        "ru": "Все дети Вульфа и Блюмы",
+        "en": "All children of Wulf and Bluma"
       }
     },
     {
       "url": "sonya_mikhail.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Mikhail",
-        "en": "Sonya Mikhail"
+        "ru": "Соня и Михаил Каплун",
+        "en": "Sonya and Mikhail Kaplun"
       }
     },
     {
       "url": "sonya_mira_blyuma.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Mira Blyuma",
-        "en": "Sonya Mira Blyuma"
+        "ru": "Блюма с дочерьми Мирой и Соней",
+        "en": "Bluma with daughters Mira and Sonya"
       }
     },
     {
       "url": "sonya_sister_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Сестра Mira",
-        "en": "Sonya Sister Mira"
+        "ru": "Сестры Соня и Мира",
+        "en": "Sisters Sonya and Mira"
       }
     },
     {
       "url": "sonya_with_relatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya с Relatives",
-        "en": "Sonya With Relatives"
+        "ru": "Дедушка Вульф в окружении родных",
+        "en": "Grandpa Wulf surrounded by family"
       }
     },
     {
       "url": "valery linetzky and leonid kaplun.jpg",
       "type": "image",
       "title": {
-        "ru": "Valery Linetzky And Leonid Kaplun",
-        "en": "Valery Linetzky And Leonid Kaplun"
+        "ru": "Валерий Линецкий и Леонид Каплун",
+        "en": "Valery Linetzky and Leonid Kaplun"
       }
     },
     {
       "url": "with_parents.jpg",
       "type": "image",
       "title": {
-        "ru": "С Parents",
-        "en": "With Parents"
+        "ru": "Соня с родителями",
+        "en": "Sonya with her parents"
       }
     }
   ],
