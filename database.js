@@ -972,7 +972,7 @@ window.db = {
   },
   "years": "1923 – 1994",
   "isDeceased": true,
-  "mainPhoto": "photos/P011.jpg",
+  "mainPhoto": "photos/aba1923.jpg",
   "milestones": {
     "birthPlace": { "ru": "1924, Прилуки", "en": "1924, Priluky" },
     "marriage": { "ru": "Катя Рубинович (Смагаринская), Прилуки, 1924 г.", "en": "Katya Rubinovich (Smagarinsky), Priluky, 1924" },
