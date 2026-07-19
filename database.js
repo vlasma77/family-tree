@@ -961,8 +961,7 @@ window.db = {
     },
     "archive": "person_mira_zakharova"
   },
-{
-  "id": "person_aba_1923",
+  "person_aba_1923": {
   "name": {
     "ru": "Аба Лейбович Рубинович",
     "en": "Aba Leibovich Rubinovich"
@@ -975,9 +974,9 @@ window.db = {
   "isDeceased": true,
   "mainPhoto": "photos/P011.jpg",
   "milestones": {
-    "birthPlace": { "1924 , Прилуки": "", "en": "1924 , Priluky" },
-    "marriage": { "Катя Рубинович (Смагаринская), Прилуки, 1924 г.": "", "en": "Katya Rubinovich (Smagarinsky), Priluky, 1924" },
-    "occupation": { "Фотограф": "", "en": "Photographer" },
+    "birthPlace": { "ru": "1924, Прилуки", "en": "1924, Priluky" },
+    "marriage": { "ru": "Катя Рубинович (Смагаринская), Прилуки, 1924 г.", "en": "Katya Rubinovich (Smagarinsky), Priluky, 1924" },
+    "occupation": { "ru": "Фотограф", "en": "Photographer" },
     "burial": { "ru": "еврейское кладбище г. Астрахань", "en": "Jewish cemetery, Astrakhan" }
   },
   "bio": {
@@ -990,7 +989,7 @@ window.db = {
   },
   "links": {
     "spouse": "person_katya_1924",
-    "parents": ["person_aba_1923"]
+    "parents": []
   },
   "archive": "person_aba_1923"
 }
