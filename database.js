@@ -525,16 +525,20 @@ window.db = {
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Прилуки Черниговской губернии"
+        "ru": "Прилуки Черниговской губернии",
+        "en": "Прилуки Черниговской губернии"
       },
       "marriage": {
-        "ru": ""
+        "ru": "",
+        "en": ""
       },
       "occupation": {
-        "ru": ""
+        "ru": "",
+        "en": ""
       },
       "burial": {
-        "ru": "Прилуки Черниговской губернии"
+        "ru": "Прилуки Черниговской губернии",
+        "en": "Прилуки Черниговской губернии"
       }
     },
     "familyText": {
@@ -542,8 +546,8 @@ window.db = {
       "en": []
     },
     "bio": {
-      "ru": "",
-      "en": ""
+      "ru": "Первый ребёнок Вульфа и Блюмы. Умер в младенчестве.",
+      "en": "Первый ребёнок Вульфа и Блюмы. Умер в младенчестве."
     },
     "links": {
       "parents": [
@@ -551,7 +555,8 @@ window.db = {
         "person_blyuma_1895"
       ],
       "spouse": null
-    }
+    },
+    "archive": "person_israil_aizik_1917"
   },
   "person_evgeny_1948": {
     "name": {
@@ -922,7 +927,7 @@ window.db = {
     "mainPhoto": "photos/mira_zakharova.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Отец: родной — Левченко В. Р., приёмный — Смагаринский Е. В.",
+        "ru": "",
         "en": "Father: biological — V. Levchenko, adoptive — E. Smagarinsky"
       },
       "occupation": {
@@ -943,7 +948,8 @@ window.db = {
         "person_efim_1919",
         "person_nadejda_1924"
       ],
-      "spouse": null
+      "spouse": null,
+      "biologicalFatherName": "Левченко Василий Радионович"
     },
     "bio": {
       "ru": "Родной отец: Левченко Василий Радионович. Приёмный отец: Смагаринский Ефим Вульфович.",
@@ -954,5 +960,38 @@ window.db = {
       "en": []
     },
     "archive": "person_mira_zakharova"
-  }
+  },
+{
+  "id": "person_aba_1923",
+  "name": {
+    "ru": "Аба Лейбович Рубинович",
+    "en": "Aba Leibovich Rubinovich"
+  },
+  "role": {
+    "ru": "",
+    "en": ""
+  },
+  "years": "1923 – 1994",
+  "isDeceased": true,
+  "mainPhoto": "photos/P011.jpg",
+  "milestones": {
+    "birthPlace": { "1924 , Прилуки": "", "en": "1924 , Priluky" },
+    "marriage": { "Катя Рубинович (Смагаринская), Прилуки, 1924 г.": "", "en": "Katya Rubinovich (Smagarinsky), Priluky, 1924" },
+    "occupation": { "Фотограф": "", "en": "Photographer" },
+    "burial": { "ru": "еврейское кладбище г. Астрахань", "en": "Jewish cemetery, Astrakhan" }
+  },
+  "bio": {
+    "ru": "",
+    "en": ""
+  },
+  "familyText": {
+    "ru": [ "Родители: Лейб Рубинович"],
+    "en": ["Parents: Leib Rubinovich"]
+  },
+  "links": {
+    "spouse": "person_katya_1924",
+    "parents": ["person_aba_1923"]
+  },
+  "archive": "person_aba_1923"
+}
 };
