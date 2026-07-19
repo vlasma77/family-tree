@@ -598,28 +598,6 @@ window.db = {
     },
     "archive": "person_evgeny_1948"
   },
-  "person_aba_1923": {
-    "name": {
-      "ru": "Аба Лейбович Рубинович",
-      "en": "Aba Leybovich Rubinovich"
-    },
-    "years": "1923 — 1994",
-    "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {},
-    "familyText": {
-      "ru": [],
-      "en": []
-    },
-    "bio": {
-      "ru": "",
-      "en": ""
-    },
-    "links": {
-      "parents": [],
-      "spouse": "person_katya_1924"
-    }
-  },
   "person_vladimir_mikhailovich_1948": {
     "name": {
       "ru": "Владимир Михайлович Смагаринский",
