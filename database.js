@@ -940,35 +940,51 @@ window.db = {
     "archive": "person_mira_zakharova"
   },
   "person_aba_1923": {
-  "name": {
-    "ru": "Аба Лейбович Рубинович",
-    "en": "Aba Leibovich Rubinovich"
-  },
-  "role": {
-    "ru": "",
-    "en": ""
-  },
-  "years": "1923 – 1994",
-  "isDeceased": true,
-  "mainPhoto": "photos/aba1923.jpg",
-  "milestones": {
-    "birthPlace": { "ru": "1924, Прилуки", "en": "1924, Priluky" },
-    "marriage": { "ru": "Катя Рубинович (Смагаринская), Прилуки, 1924 г.", "en": "Katya Rubinovich (Smagarinsky), Priluky, 1924" },
-    "occupation": { "ru": "Фотограф", "en": "Photographer" },
-    "burial": { "ru": "еврейское кладбище г. Астрахань", "en": "Jewish cemetery, Astrakhan" }
-  },
-  "bio": {
-    "ru": "",
-    "en": ""
-  },
-  "familyText": {
-    "ru": [ "Родители: Лейб Рубинович"],
-    "en": ["Parents: Leib Rubinovich"]
-  },
-  "links": {
-    "spouse": "person_katya_1924",
-    "parents": []
-  },
-  "archive": "person_aba_1923"
-}
+    "name": {
+      "ru": "Аба Лейбович Рубинович",
+      "en": "Aba Leibovich Rubinovich"
+    },
+    "role": {
+      "ru": "",
+      "en": ""
+    },
+    "years": "1923 – 1994",
+    "isDeceased": true,
+    "mainPhoto": "photos/aba1923.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "1924, Прилуки",
+        "en": "1924, Priluky"
+      },
+      "marriage": {
+        "ru": "Катя Рубинович (Смагаринская), Прилуки, 1924 г.",
+        "en": "Katya Rubinovich (Smagarinsky), Priluky, 1924"
+      },
+      "occupation": {
+        "ru": "Фотограф",
+        "en": "Photographer"
+      },
+      "burial": {
+        "ru": "еврейское кладбище г. Астрахань",
+        "en": "Jewish cemetery, Astrakhan"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [
+        "Родители: Лейб Рубинович"
+      ],
+      "en": [
+        "Parents: Leib Rubinovich"
+      ]
+    },
+    "links": {
+      "spouse": "person_katya_1924",
+      "parents": []
+    },
+    "archive": "person_aba_1923"
+  }
 };
