@@ -759,7 +759,7 @@ window.db = {
       "en": "Alla Kolesnichenko (Smagarinskaya)"
     },
     "years": "",
-    "mainPhoto": "",
+    "mainPhoto": "alla1952.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
@@ -793,7 +793,7 @@ window.db = {
       "en": "Valery Smagarinsky"
     },
     "years": "",
-    "mainPhoto": "",
+    "mainPhoto": "valery1955.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
@@ -827,7 +827,7 @@ window.db = {
       "en": "Natalya Gelvan (Smagarinskaya)"
     },
     "years": "",
-    "mainPhoto": "",
+    "mainPhoto": "natalya1958.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
