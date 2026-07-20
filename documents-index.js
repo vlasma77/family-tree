@@ -904,7 +904,7 @@ window.documentsIndex = {
       "url": "grave_sonya.png",
       "type": "image",
       "title": {
-        "ru": "Могила Сони",
+        "ru": "Grave Sonya",
         "en": "Grave Sonya"
       }
     },
@@ -912,96 +912,96 @@ window.documentsIndex = {
       "url": "katya_sonya_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Сёстры Мира, Катя и Соня",
-        "en": "Sisters Mira, Katya and Sonya"
+        "ru": "Katya Sonya Mira",
+        "en": "Katya Sonya Mira"
       }
     },
     {
       "url": "meeting_with_sisters.jpg",
       "type": "image",
       "title": {
-        "ru": "Катя с сёстрами, сыном и внучкой",
-        "en": "Katya with her sisters, son, and granddaughter"
+        "ru": "Meeting с Сёстры",
+        "en": "Meeting With Sisters"
       }
     },
     {
       "url": "photo_session_elatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Фотосессия с родственниками",
-        "en": "Photo session with relatives"
+        "ru": "Фото Session Elatives",
+        "en": "Photo Session Elatives"
       }
     },
     {
       "url": "sons_leonid_igor.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня с детьми Леонидом и Игорем",
-        "en": "Sonya with children Leonid and Igor"
+        "ru": "Sons Leonid Igor",
+        "en": "Sons Leonid Igor"
       }
     },
     {
       "url": "sonya1929.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня, Биробиджан",
-        "en": "Sonya, Birobidzhan"
+        "ru": "Sonya1929",
+        "en": "Sonya1929"
       }
     },
     {
       "url": "sonya_middle.png",
       "type": "image",
       "title": {
-        "ru": "Все дети Вульфа и Блюмы",
-        "en": "All children of Wulf and Bluma"
+        "ru": "Sonya Middle",
+        "en": "Sonya Middle"
       }
     },
     {
       "url": "sonya_mikhail.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня и Михаил Каплун",
-        "en": "Sonya and Mikhail Kaplun"
+        "ru": "Sonya Mikhail",
+        "en": "Sonya Mikhail"
       }
     },
     {
       "url": "sonya_mira_blyuma.jpg",
       "type": "image",
       "title": {
-        "ru": "Блюма с дочерьми Мирой и Соней",
-        "en": "Bluma with daughters Mira and Sonya"
+        "ru": "Sonya Mira Blyuma",
+        "en": "Sonya Mira Blyuma"
       }
     },
     {
       "url": "sonya_sister_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Сестры Соня и Мира",
-        "en": "Sisters Sonya and Mira"
+        "ru": "Sonya Сестра Mira",
+        "en": "Sonya Sister Mira"
       }
     },
     {
       "url": "sonya_with_relatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Дедушка Вульф в окружении родных",
-        "en": "Grandpa Wulf surrounded by family"
+        "ru": "Sonya с Relatives",
+        "en": "Sonya With Relatives"
       }
     },
     {
       "url": "valery linetzky and leonid kaplun.jpg",
       "type": "image",
       "title": {
-        "ru": "Валерий Линецкий и Леонид Каплун",
-        "en": "Valery Linetzky and Leonid Kaplun"
+        "ru": "Valery Linetzky And Leonid Kaplun",
+        "en": "Valery Linetzky And Leonid Kaplun"
       }
     },
     {
       "url": "with_parents.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня с родителями",
-        "en": "Sonya with her parents"
+        "ru": "С Parents",
+        "en": "With Parents"
       }
     }
   ],
@@ -1628,6 +1628,32 @@ window.documentsIndex = {
       "title": {
         "ru": "Серебянная свадьба Лиепая 1988",
         "en": "Silver Wedding Anniversary, Liepaja, 1988"
+      }
+    }
+  ],
+  "person_aba_1923": [
+    {
+      "url": "дядя Саша, Астрахань, 1970-80г.png",
+      "type": "image",
+      "title": {
+        "ru": "дядя Саша, Астрахань, 1970-80г",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Фотосессия с родственниками.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фотосессия с родственниками",
+        "en": "Archival Photo"
+      }
+    },
+    {
+      "url": "Хроника военных лет.pdf",
+      "type": "document",
+      "title": {
+        "ru": "Хроника военных лет",
+        "en": "Chronicle of the war years"
       }
     }
   ]
