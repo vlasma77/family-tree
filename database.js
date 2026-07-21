@@ -752,14 +752,14 @@ window.db = {
     },
     "archive": "person_fira_1927"
   },
-  "person_alla_1952": {
-    "id": "person_alla_1952",
+  "person_alla_1948": {
+    "id": "person_alla_1948",
     "name": {
       "ru": "Алла Ефимовна Колесниченко (Смагаринская)",
       "en": "Alla Kolesnichenko (Smagarinskaya)"
     },
     "years": "",
-    "mainPhoto": "alla1952.jpg",
+    "mainPhoto": "photos/alla1952.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
@@ -793,7 +793,7 @@ window.db = {
       "en": "Valery Smagarinsky"
     },
     "years": "",
-    "mainPhoto": "valery1955.jpg",
+    "mainPhoto": "photos/valery1955.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
@@ -827,7 +827,7 @@ window.db = {
       "en": "Natalya Gelvan (Smagarinskaya)"
     },
     "years": "",
-    "mainPhoto": "natalya1958.jpg",
+    "mainPhoto": "photos/natalya1958.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
