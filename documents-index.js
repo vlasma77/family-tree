@@ -1371,6 +1371,221 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_valery_1955": [
+    {
+      "url": "Встреча в Москве.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча в Москве",
+        "en": "Meeting in Moscow"
+      }
+    },
+    {
+      "url": "Встреча взрослых детей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча взрослых детей",
+        "en": "Meeting of adult children"
+      }
+    },
+    {
+      "url": "Дети Ефима и Надежды.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дети Ефима и Надежды",
+        "en": "Children of Efim and Nadezhda"
+      }
+    },
+    {
+      "url": "Мира с братом Валерием.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира с братом Валерием",
+        "en": "Mira with brother Valery"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1952.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1952",
+        "en": "Efim's family, 1952"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1954.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1954",
+        "en": "Efim's family, 1954"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1964.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1964",
+        "en": "Efim's family, 1964"
+      }
+    }
+  ],
+"person_alla_1948": [
+    {
+      "url": "Алла с сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла с сестрой Наташей",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Алла с сыном Олегом и сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла с сыном Олегом и сестрой Наташей",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Встреча взрослых детей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча взрослых детей",
+        "en": "Meeting of adult children"
+      }
+    },
+    {
+      "url": "Дети Ефима и Надежды.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дети Ефима и Надежды",
+        "en": "Children of Efim and Nadezhda"
+      }
+    },
+    
+   {
+      "url": "Семья Ефима, 1952.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1952",
+        "en": "Efim's family, 1952"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1954.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1954",
+        "en": "Efim's family, 1954"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1964.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1964",
+        "en": "Efim's family, 1964"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1974.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1974",
+        "en": "Efim's family, 1974"
+      }
+    }
+  ],
+  "person_natalya_1958": [
+    {
+      "url": "Алла с сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла с сестрой Наташей",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Алла с сыном Олегом и сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла с сыном Олегом и сестрой Наташей",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Встреча взрослых детей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча взрослых детей",
+        "en": "Meeting of adult children"
+      }
+    },
+    {
+      "url": "Дети Ефима и Надежды.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дети Ефима и Надежды",
+        "en": "Children of Efim and Nadezhda"
+      }
+    },
+    {
+      "url": "Наталья Гельван (Смагаринская).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Наталья Гельван (Смагаринская)",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Наталья с мамой, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Наталья с мамой, Астрахань",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "с дочкой Ирочкой и мужем Геннадием, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "с дочкой Ирочкой и мужем Геннадием, Астрахань",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1952.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1952",
+        "en": "Efim's family, 1952"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1954.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1954",
+        "en": "Efim's family, 1954"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1964.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1964",
+        "en": "Efim's family, 1964"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1974.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1974",
+        "en": "Efim's family, 1974"
+      }
+    }
+  ],
   "person_nadejda_1924": [
     {
       "url": "Бабушка Надежда.jpg",
