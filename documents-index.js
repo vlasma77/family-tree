@@ -1409,7 +1409,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Алла с сестрой Наташей",
-        "en": "Алла с сестрой Наташей"
+        "en": "Alla with her sister Natasha"
       }
     },
     {
@@ -1549,7 +1549,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Алла с сестрой Наташей",
-        "en": "Алла с сестрой Наташей"
+        "en": "Alla with her sister Natasha"
       }
     },
     {
