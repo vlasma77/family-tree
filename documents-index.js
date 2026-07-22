@@ -1371,6 +1371,120 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_alla_1948": [
+    {
+      "url": "Алла Колесниченко (Смагаринская), Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла Колесниченко (Смагаринская), Астрахань",
+        "en": "Alla Kolesnichenko (Smagarinsky), Astrakhan"
+      }
+    },
+    {
+      "url": "Алла Колесниченко (Смагаринская).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла Колесниченко (Смагаринская)",
+        "en": "Alla Kolesnichenko (Smagarinsky)"
+      }
+    },
+    {
+      "url": "Алла на пикнике.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла на пикнике",
+        "en": "Alla at a picnic"
+      }
+    },
+    {
+      "url": "Алла с двоюродными братьями Евгением и Владимиром.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла с двоюродными братьями Евгением и Владимиром",
+        "en": "Alla with her cousins ​​Evgeny and Vladimir"
+      }
+    },
+    {
+      "url": "Алла с сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла с сестрой Наташей",
+        "en": "Алла с сестрой Наташей"
+      }
+    },
+    {
+      "url": "Алла с сыном Олегом и сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла с сыном Олегом и сестрой Наташей",
+        "en": "Alla with her son Oleg and sister Natasha"
+      }
+    },
+    {
+      "url": "Встреча в Москве.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча в Москве",
+        "en": "Meeting in Moscow"
+      }
+    },
+    {
+      "url": "Встреча взрослых детей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча взрослых детей",
+        "en": "Meeting of adult children"
+      }
+    },
+    {
+      "url": "Дети Ефима и Надежды.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дети Ефима и Надежды",
+        "en": "Children of Efim and Nadezhda"
+      }
+    },
+    {
+      "url": "свадьба сына Аллы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свадьба сына Аллы",
+        "en": "Alla's son's wedding"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1952.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1952",
+        "en": "Efim's family, 1952"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1954.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1954",
+        "en": "Efim's family, 1954"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1964.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1964",
+        "en": "Efim's family, 1964"
+      }
+    },
+    {
+      "url": "Семья Ефима, 1974.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Ефима, 1974",
+        "en": "Efim's family, 1974"
+      }
+    }
+  ],
   "person_valery_1955": [
     {
       "url": "Встреча в Москве.jpg",
@@ -1429,80 +1543,13 @@ window.documentsIndex = {
       }
     }
   ],
-"person_alla_1948": [
-    {
-      "url": "Алла с сестрой Наташей.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Алла с сестрой Наташей",
-        "en": "Archival Document"
-      }
-    },
-    {
-      "url": "Алла с сыном Олегом и сестрой Наташей.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Алла с сыном Олегом и сестрой Наташей",
-        "en": "Archival Document"
-      }
-    },
-    {
-      "url": "Встреча взрослых детей.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Встреча взрослых детей",
-        "en": "Meeting of adult children"
-      }
-    },
-    {
-      "url": "Дети Ефима и Надежды.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Дети Ефима и Надежды",
-        "en": "Children of Efim and Nadezhda"
-      }
-    },
-    
-   {
-      "url": "Семья Ефима, 1952.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1952",
-        "en": "Efim's family, 1952"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1954.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1954",
-        "en": "Efim's family, 1954"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1964.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1964",
-        "en": "Efim's family, 1964"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1974.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1974",
-        "en": "Efim's family, 1974"
-      }
-    }
-  ],
   "person_natalya_1958": [
     {
       "url": "Алла с сестрой Наташей.jpg",
       "type": "image",
       "title": {
         "ru": "Алла с сестрой Наташей",
-        "en": "Archival Document"
+        "en": "Алла с сестрой Наташей"
       }
     },
     {
@@ -1510,7 +1557,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Алла с сыном Олегом и сестрой Наташей",
-        "en": "Archival Document"
+        "en": "Alla with her son Oleg and sister Natasha"
       }
     },
     {
