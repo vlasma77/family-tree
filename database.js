@@ -440,15 +440,51 @@ window.db = {
   },
   "person_khaya_1860": {
     "name": {
-      "ru": "Хая Смагаринская (Гуревич)",
-      "en": "Khaya"
+      "ru": "Хая Исраелева Смагаринская (Гуревич)",
+      "en": "Khaya Israeleva Smagarinsky (Gurevich)"
     },
-    "years": "1860 — ?",
+    "role": {
+      "ru": "",
+      "en": ""
+    },
+    "years": "1860 –",
     "isDeceased": true,
+    "mainPhoto": "photos/khaya1860.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Шевель Залманов Смагаринский",
+        "en": "Shevel Zalmanov Smagarinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "еврейское кладбище, Прилуки",
+        "en": "Jewish cemetery, Pryluky"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [
+        "Родители: Шнеур Залмон Смагаринский, Слава Смагаринский"
+      ],
+      "en": [
+        "Parents: Shneur Zalmon Smagarinsky, Slava Smagarinsky"
+      ]
+    },
     "links": {
-      "spouse": "person_shevel_1848",
+      "spouse": "person_shneur_1821",
       "parents": []
-    }
+    },
+    "archive": "person_khaya_1860"
   },
   "person_shneur_1821": {
     "name": {
