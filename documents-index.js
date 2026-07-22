@@ -349,6 +349,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Ефим в молодые годы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ефим в молодые годы",
+        "en": "Efim in his younger years"
+      }
+    },
+    {
       "url": "Ефим на отдыхе.jpg",
       "type": "image",
       "title": {
@@ -1581,7 +1589,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Наталья Гельван (Смагаринская)",
-        "en": "Archival Document"
+        "en": "Natalia Gelvan (Smagarinskaya)"
       }
     },
     {
@@ -1589,7 +1597,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Наталья с мамой, Астрахань",
-        "en": "Archival Document"
+        "en": "Natalia with her mother, Astrakhan"
       }
     },
     {
@@ -1597,7 +1605,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "с дочкой Ирочкой и мужем Геннадием, Астрахань",
-        "en": "Archival Document"
+        "en": "with her daughter Irochka and husband Gennady, Astrakhan"
       }
     },
     {
@@ -1890,6 +1898,32 @@ window.documentsIndex = {
       "title": {
         "ru": "Серебянная свадьба Лиепая 1988",
         "en": "Silver Wedding Anniversary, Liepaja, 1988"
+      }
+    }
+  ],
+   "person_khaya_1860": [
+    {
+      "url": "Хая Смагаринская (Гуревич).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хая Смагаринская (Гуревич).jpg",
+        "en": "Khaya Smagarinsky (Gurevich).jpg"
+      }
+    },
+    {
+      "url": "дом в Прилуках семьи Смогоринских.jpg",
+      "type": "image",
+      "title": {
+        "ru": "дом в Прилуках семьи Смогоринских.jpg",
+        "en": "The Smogorinsky family's house in Priluki.jpg"
+      }
+    },
+    {
+      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная справка из переписи населения Прилук, 1923.jpg",
+        "en": "Archival information from the Priluki population census, 1923.jpg"
       }
     }
   ],
