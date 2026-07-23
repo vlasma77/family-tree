@@ -474,10 +474,10 @@ window.db = {
     },
     "familyText": {
       "ru": [
-        "Родители: Шнеур Залмон Смагаринский, Слава Смагаринский"
+        "Родители:"
       ],
       "en": [
-        "Parents: Shneur Zalmon Smagarinsky, Slava Smagarinsky"
+        "Parents:"
       ]
     },
     "links": {
@@ -489,7 +489,7 @@ window.db = {
   "person_shneur_1821": {
     "name": {
       "ru": "Шнеур Залмон Смагаринский",
-      "en": "Shneur"
+      "en": "Shneur Zalmon Smagarinsky"
     },
     "years": "1821 — ?",
     "isDeceased": true,
@@ -504,7 +504,7 @@ window.db = {
   "person_slava_1822": {
     "name": {
       "ru": "Слава Смагаринская",
-      "en": "Slava"
+      "en": "Slava Smagarinsky"
     },
     "years": "1822 — 1890",
     "isDeceased": true,
@@ -516,7 +516,7 @@ window.db = {
   "person_volka_1792": {
     "name": {
       "ru": "Волька Иосел Смагаринский",
-      "en": "Volka"
+      "en": "Volka Iosel Smagarinsky"
     },
     "years": "1792 — ?",
     "isDeceased": true,
@@ -531,7 +531,7 @@ window.db = {
   "person_feyga_1794": {
     "name": {
       "ru": "Фейга Рохля Смагаринская",
-      "en": "Feyga"
+      "en": "Feiga Rokhlya Smagarynsky"
     },
     "years": "1794 — ?",
     "isDeceased": true,
@@ -543,9 +543,9 @@ window.db = {
   "person_iosel_1760": {
     "name": {
       "ru": "Иосел Смагаринский",
-      "en": "Iosel"
+      "en": "Iosel Smagarynsky"
     },
-    "years": "до 1792 — ?",
+    "years": "1792 — ?",
     "isDeceased": true,
     "links": {
       "parents": [],
