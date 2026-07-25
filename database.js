@@ -481,7 +481,7 @@ window.db = {
       ]
     },
     "links": {
-      "spouse": "person_shneur_1821",
+      "spouse": "person_shevel_1848",
       "parents": []
     },
     "archive": "person_khaya_1860"
@@ -558,6 +558,7 @@ window.db = {
       "en": "New Person"
     },
     "years": "31.08.1917 - 1917",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -600,6 +601,7 @@ window.db = {
       "en": "Evgeny Abovich Rubinovich"
     },
     "years": "23.07.1948 - 1993",
+    "isDeceased": true,
     "mainPhoto": "photos/evgeny1948.jpg",
     "milestones": {
       "birthPlace": {
@@ -754,7 +756,7 @@ window.db = {
       "en": "Fira Smagarinskaya (Roytman)"
     },
     "years": "16.06.1927 — 04.06.2009",
-    "isDeceased": false,
+    "isDeceased": true,
     "mainPhoto": "photos/fira1927.png",
     "milestones": {
       "birthPlace": {
