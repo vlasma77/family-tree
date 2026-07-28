@@ -530,14 +530,15 @@ window.db = {
   },
   "person_feyga_1794": {
     "name": {
-      "ru": "Фейга Рохля Смагаринская",
-      "en": "Feiga Rokhlya Smagarynsky"
+      "ru": "Рохл Смагаринская",
+      "en": "Rokhl Smagarinsky"
     },
     "years": "1794 — ?",
     "isDeceased": true,
     "links": {
       "spouse": "person_volka_1792",
-      "parents": []
+      "parents": [],
+      "spouseNote": "первая жена Вольки Иоселева"
     }
   },
   "person_iosel_1760": {
@@ -1024,5 +1025,1807 @@ window.db = {
       "parents": []
     },
     "archive": "person_aba_1923"
+  },
+  "person_feyga_1800": {
+    "name": {
+      "ru": "Фейга Ицкова Смагаринская",
+      "en": "Feyga Itzkova Smagarinsky"
+    },
+    "years": "1800 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Вторая жена Вольки Иоселева Смагаринского.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_volka_1792",
+      "spouseNote": "вторая жена Вольки Иоселева"
+    },
+    "archive": "person_feyga_1800"
+  },
+  "person_morduh_1819": {
+    "name": {
+      "ru": "Мордух Вольков Смагаринский",
+      "en": "Mordukh Volkovich Smagarinsky"
+    },
+    "years": "1819 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Сын Вольки Иоселева Смагаринского. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volka_1792",
+        "person_feyga_1794"
+      ],
+      "spouse": "person_etsya_1818"
+    },
+    "archive": "person_morduh_1819"
+  },
+  "person_haim_1824": {
+    "name": {
+      "ru": "Хаим Вольков Смагаринский",
+      "en": "Haim Volkovich Smagarinsky"
+    },
+    "years": "1824 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Сын Вольки Иоселева Смагаринского. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volka_1792",
+        "person_feyga_1794"
+      ],
+      "spouse": "person_ginda_b_1825"
+    },
+    "archive": "person_haim_1824"
+  },
+  "person_icko_1844": {
+    "name": {
+      "ru": "Ицко Вольков Смагаринский",
+      "en": "Itzko Volkovich Smagarinsky"
+    },
+    "years": "1844 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Сын Вольки Иоселева Смагаринского. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volka_1792",
+        "person_feyga_1794"
+      ],
+      "spouse": null
+    },
+    "archive": "person_icko_1844"
+  },
+  "person_iosel_v_1812": {
+    "name": {
+      "ru": "Иосел Вольков Смагаринский",
+      "en": "Iosel Volkovich Smagarinsky"
+    },
+    "years": "1812 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Сын Вольки Иоселева Смагаринского. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volka_1792",
+        "person_feyga_1794"
+      ],
+      "spouse": "person_dina_blyuma_1814"
+    },
+    "archive": "person_iosel_v_1812"
+  },
+  "person_yankel_1851": {
+    "name": {
+      "ru": "Янкель Вольков Смагаринский",
+      "en": "Yankel Volkovich Smagarinsky"
+    },
+    "years": "1851 — 1853",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Сын Вольки Иоселева Смагаринского. Умер в раннем детстве. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volka_1792",
+        "person_feyga_1794"
+      ],
+      "spouse": null
+    },
+    "archive": "person_yankel_1851"
+  },
+  "person_ginda_1823": {
+    "name": {
+      "ru": "Гинда Смагаринская",
+      "en": "Ginda Smagarinsky"
+    },
+    "years": "1823 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Вольки Иоселева Смагаринского. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volka_1792",
+        "person_feyga_1794"
+      ],
+      "spouse": null
+    },
+    "archive": "person_ginda_1823"
+  },
+  "person_riva_1826": {
+    "name": {
+      "ru": "Рива Смагаринская",
+      "en": "Riva Smagarinsky"
+    },
+    "years": "1826 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Вольки Иоселева Смагаринского. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volka_1792",
+        "person_feyga_1794"
+      ],
+      "spouse": null
+    },
+    "archive": "person_riva_1826"
+  },
+  "person_malka_1828": {
+    "name": {
+      "ru": "Малка Смагаринская",
+      "en": "Malka Smagarinsky"
+    },
+    "years": "1828 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Вольки Иоселева Смагаринского. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volka_1792",
+        "person_feyga_1794"
+      ],
+      "spouse": null
+    },
+    "archive": "person_malka_1828"
+  },
+  "person_etsya_1818": {
+    "name": {
+      "ru": "Этся Шмеркова Смагаринская",
+      "en": "Etsya Shmerkovna Smagarinsky"
+    },
+    "years": "1818 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Жена Мордуха Волькова Смагаринского.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_morduh_1819"
+    },
+    "archive": "person_etsya_1818"
+  },
+  "person_pesya_m_1848": {
+    "name": {
+      "ru": "Песя Мордухова Смагаринская",
+      "en": "Pesya Mordukhovna Smagarinsky"
+    },
+    "years": "1848 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_morduh_1819",
+        "person_etsya_1818"
+      ],
+      "spouse": null
+    },
+    "archive": "person_pesya_m_1848"
+  },
+  "person_sima_m_1845": {
+    "name": {
+      "ru": "Сима Мордухова Смагаринская",
+      "en": "Sima Mordukhovna Smagarinsky"
+    },
+    "years": "1845 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_morduh_1819",
+        "person_etsya_1818"
+      ],
+      "spouse": null
+    },
+    "archive": "person_sima_m_1845"
+  },
+  "person_tsylya_1841": {
+    "name": {
+      "ru": "Цыля Мордухова Смагаринская",
+      "en": "Tsylya Mordukhovna Smagarinsky"
+    },
+    "years": "1841 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_morduh_1819",
+        "person_etsya_1818"
+      ],
+      "spouse": null
+    },
+    "archive": "person_tsylya_1841"
+  },
+  "person_shevel_m_1837": {
+    "name": {
+      "ru": "Шевель Мордухов Смагаринский",
+      "en": "Shevel Mordukhovich Smagarinsky"
+    },
+    "years": "1836/1837 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "В 1870 году арендовал дом для проживания семьи в Холмече. В 1882 году проживал в Холявин, Чернигов. В списке встречается дважды с годами рождения 1836 и 1837 — вероятно, расхождение источников.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_morduh_1819",
+        "person_etsya_1818"
+      ],
+      "spouse": "person_liba_1840"
+    },
+    "archive": "person_shevel_m_1837"
+  },
+  "person_liba_1840": {
+    "name": {
+      "ru": "Либа Янкель Аврамова Смагаринская",
+      "en": "Liba Yankel Avramovna Smagarinsky"
+    },
+    "years": "1840 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Жена Шевеля Мордухова Смагаринского. В 1882 году проживала в Холявин, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_shevel_m_1837"
+    },
+    "archive": "person_liba_1840"
+  },
+  "person_aron_simon_1861": {
+    "name": {
+      "ru": "Арон Симон Смагаринский",
+      "en": "Aron Simon Smagarinsky"
+    },
+    "years": "1861 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Холявин, Чернигов",
+        "en": "Холявин, Чернигов"
+      }
+    },
+    "bio": {
+      "ru": "Зарегистрирован брак с Гнесин Хана Лея, дочерью Израиля Лейба, 20.05.1886, Нежин, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": "person_hana_leya_gnesin"
+    },
+    "archive": "person_aron_simon_1861"
+  },
+  "person_hana_leya_gnesin": {
+    "name": {
+      "ru": "Хана Лея Гнесин (Смагаринская)",
+      "en": "Khana Leya Gnesin (Smagarinsky)"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Израиля Лейба. Жена Арона Симона Смагаринского, брак 20.05.1886, Нежин, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_aron_simon_1861"
+    },
+    "archive": "person_hana_leya_gnesin"
+  },
+  "person_volko_nohim_1865": {
+    "name": {
+      "ru": "Волько Нохим Смагаринский",
+      "en": "Volko Nohim Smagarinsky"
+    },
+    "years": "1864/1865 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "В 1882 году проживал в Холявин, Чернигов. В армии с 1886 года. В списке встречается с годами рождения 1864 и 1865 — вероятно, расхождение источников.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": null
+    },
+    "archive": "person_volko_nohim_1865"
+  },
+  "person_kalman_1869": {
+    "name": {
+      "ru": "Кальман Смагаринский",
+      "en": "Kalman Smagarinsky"
+    },
+    "years": "1868/1869 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "В 1882 году проживал в Холявин, Чернигов. Зарегистрирован брак 18.08.1895 с Шейнин Ента Груна, дочерью Зелика, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": "person_enta_gruna"
+    },
+    "archive": "person_kalman_1869"
+  },
+  "person_enta_gruna": {
+    "name": {
+      "ru": "Ента Груна Шейнин (Смагаринская)",
+      "en": "Enta Gruna Sheynin (Smagarinsky)"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Зелика Шейнина. Жена Кальмана Смагаринского, брак 18.08.1895, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_kalman_1869"
+    },
+    "archive": "person_enta_gruna"
+  },
+  "person_hana_1867": {
+    "name": {
+      "ru": "Хана Смагаринская",
+      "en": "Khana Smagarinsky"
+    },
+    "years": "1866/1867 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "В списке встречается с годами рождения 1866 и 1867 — вероятно, расхождение источников.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": null
+    },
+    "archive": "person_hana_1867"
+  },
+  "person_zusya_1871": {
+    "name": {
+      "ru": "Зуся (Рыся, Зися) Смагаринская",
+      "en": "Zusya (Zisya) Smagarinsky"
+    },
+    "years": "1870/1871 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Зарегистрирован брак с Явец Меер, сыном Нохима, 20.07.1901, Короп, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": "person_meer_yavets"
+    },
+    "archive": "person_zusya_1871"
+  },
+  "person_meer_yavets": {
+    "name": {
+      "ru": "Меер Явец",
+      "en": "Meer Yavets"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Сын Нохима Явеца. Муж Зуси (Зиси) Смагаринской, брак 20.07.1901, Короп, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_zusya_1871"
+    },
+    "archive": "person_meer_yavets"
+  },
+  "person_pesya_sh_1874": {
+    "name": {
+      "ru": "Песя Смагаринская",
+      "en": "Pesya Smagarinsky"
+    },
+    "years": "1873/1874 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "В списке встречается с годами рождения 1873 и 1874 — вероятно, расхождение источников.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": null
+    },
+    "archive": "person_pesya_sh_1874"
+  },
+  "person_menya_1878": {
+    "name": {
+      "ru": "Меня Смагаринская",
+      "en": "Menya Smagarinsky"
+    },
+    "years": "1877/1878 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "В списке встречается с годами рождения 1877 и 1878 — вероятно, расхождение источников.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": null
+    },
+    "archive": "person_menya_1878"
+  },
+  "person_girsha_1876": {
+    "name": {
+      "ru": "Гирша Смагаринский",
+      "en": "Girsha Smagarinsky"
+    },
+    "years": "1875/1876 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "В списке встречается с годами рождения 1875 и 1876 — вероятно, расхождение источников.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": null
+    },
+    "archive": "person_girsha_1876"
+  },
+  "person_avraam_david_1881": {
+    "name": {
+      "ru": "Авраам Давид Смагаринский",
+      "en": "Avraam David Smagarinsky"
+    },
+    "years": "28.02.1881/1882",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов",
+        "en": "Чернигов"
+      }
+    },
+    "bio": {
+      "ru": "В списке встречается с годами рождения 1881 и 28.02.1882 — вероятно, расхождение источников.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": null
+    },
+    "archive": "person_avraam_david_1881"
+  },
+  "person_pesya_sh2_1880": {
+    "name": {
+      "ru": "Песя Шевелева Смагаринская",
+      "en": "Pesya Shevelevna Smagarinsky"
+    },
+    "years": "1880 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "20.08.1904 зарегистрирован брак с Розенталь Ицко Фроимов, 1798 года рождения (вероятно, опечатка в архиве, скорее всего 1878), Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": "person_rozental_icko"
+    },
+    "archive": "person_pesya_sh2_1880"
+  },
+  "person_rozental_icko": {
+    "name": {
+      "ru": "Ицко Фроимов Розенталь",
+      "en": "Itzko Froimovich Rozental"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Муж Песи Шевелевой Смагаринской, брак 20.08.1904, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_pesya_sh2_1880"
+    },
+    "archive": "person_rozental_icko"
+  },
+  "person_rohlya_sh_1882": {
+    "name": {
+      "ru": "Рохля Шевелева Смагаринская",
+      "en": "Rokhlya Shevelevna Smagarinsky"
+    },
+    "years": "1882 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "07.07.1902 зарегистрирован брак с Агранович Авраам Мовша, 1882 года рождения, Прилуки.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": "person_agranovich_avraam"
+    },
+    "archive": "person_rohlya_sh_1882"
+  },
+  "person_agranovich_avraam": {
+    "name": {
+      "ru": "Авраам Мовша Агранович",
+      "en": "Avraam Movsha Agranovich"
+    },
+    "years": "1882 — ?",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Прилуки",
+        "en": "Прилуки"
+      }
+    },
+    "bio": {
+      "ru": "Муж Рохли Шевелевой Смагаринской, брак 07.07.1902, Прилуки.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_rohlya_sh_1882"
+    },
+    "archive": "person_agranovich_avraam"
+  },
+  "person_hana_leya_1869": {
+    "name": {
+      "ru": "Хана Лея Смагаринская",
+      "en": "Khana Leya Smagarinsky"
+    },
+    "years": "1869 — 25.02.1889",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов",
+        "en": "Чернигов"
+      }
+    },
+    "bio": {
+      "ru": "Дочь Шевеля Смагаринского (по архивной записи, вероятно — Шевеля Мордухова).",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_m_1837",
+        "person_liba_1840"
+      ],
+      "spouse": null
+    },
+    "archive": "person_hana_leya_1869"
+  },
+  "person_nehama_1889": {
+    "name": {
+      "ru": "Нехама Смагаринская",
+      "en": "Nehama Smagarinsky"
+    },
+    "years": "13.04.1889",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов",
+        "en": "Чернигов"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_aron_simon_1861",
+        "person_hana_leya_gnesin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_nehama_1889"
+  },
+  "person_zalman_leyvik_1898": {
+    "name": {
+      "ru": "Залман Лейвик Смагаринский",
+      "en": "Zalman Leyvik Smagarinsky"
+    },
+    "years": "11.04.1898",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов",
+        "en": "Чернигов"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_aron_simon_1861",
+        "person_hana_leya_gnesin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_zalman_leyvik_1898"
+  },
+  "person_shlema_1893": {
+    "name": {
+      "ru": "Шлема Смагаринский",
+      "en": "Shlema Smagarinsky"
+    },
+    "years": "02.06.1893",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов",
+        "en": "Чернигов"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_aron_simon_1861",
+        "person_hana_leya_gnesin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_shlema_1893"
+  },
+  "person_rivka_1888": {
+    "name": {
+      "ru": "Ривка Смагаринская",
+      "en": "Rivka Smagarinsky"
+    },
+    "years": "1888 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "27.05.1914 зарегистрирован брак с Айзик Мееров Гарелик, 1888 года рождения, сыном Меера Гарелика, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_aron_simon_1861",
+        "person_hana_leya_gnesin"
+      ],
+      "spouse": "person_garelik_aizik"
+    },
+    "archive": "person_rivka_1888"
+  },
+  "person_garelik_aizik": {
+    "name": {
+      "ru": "Айзик Мееров Гарелик",
+      "en": "Aizik Meerovich Garelik"
+    },
+    "years": "1888 — ?",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Сын Меера Гарелика. Муж Ривки Смагаринской, брак 27.05.1914, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_rivka_1888"
+    },
+    "archive": "person_garelik_aizik"
+  },
+  "person_isay_zelik_1898": {
+    "name": {
+      "ru": "Исай Зелик Смагаринский",
+      "en": "Isay Zelik Smagarinsky"
+    },
+    "years": "25.04.1898",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов",
+        "en": "Чернигов"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_kalman_1869",
+        "person_enta_gruna"
+      ],
+      "spouse": null
+    },
+    "archive": "person_isay_zelik_1898"
+  },
+  "person_ginda_b_1825": {
+    "name": {
+      "ru": "Гинда Борухова Смагаринская",
+      "en": "Ginda Borukhovna Smagarinsky"
+    },
+    "years": "1825 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Жена Хаима Волькова Смагаринского.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_haim_1824"
+    },
+    "archive": "person_ginda_b_1825"
+  },
+  "person_rohlya_h_1844": {
+    "name": {
+      "ru": "Рохля Смагаринская",
+      "en": "Rokhlya Smagarinsky"
+    },
+    "years": "1844 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_haim_1824",
+        "person_ginda_b_1825"
+      ],
+      "spouse": null
+    },
+    "archive": "person_rohlya_h_1844"
+  },
+  "person_sora_h_1847": {
+    "name": {
+      "ru": "Сора Смагаринская",
+      "en": "Sora Smagarinsky"
+    },
+    "years": "1847 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_haim_1824",
+        "person_ginda_b_1825"
+      ],
+      "spouse": null
+    },
+    "archive": "person_sora_h_1847"
+  },
+  "person_icko_h_1841": {
+    "name": {
+      "ru": "Ицко Хаимов Смагаринский",
+      "en": "Itzko Haimovich Smagarinsky"
+    },
+    "years": "1841 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_haim_1824",
+        "person_ginda_b_1825"
+      ],
+      "spouse": null
+    },
+    "archive": "person_icko_h_1841"
+  },
+  "person_dina_blyuma_1814": {
+    "name": {
+      "ru": "Дина (Блюма) Залманова Смагаринская",
+      "en": "Dina (Blyuma) Zalmanovna Smagarinsky"
+    },
+    "years": "1814 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "Жена Иосела Волькова Смагаринского.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_iosel_v_1812"
+    },
+    "archive": "person_dina_blyuma_1814"
+  },
+  "person_zalman_i_1841": {
+    "name": {
+      "ru": "Залман Смагаринский",
+      "en": "Zalman Smagarinsky"
+    },
+    "years": "1841 — 1896",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_iosel_v_1812",
+        "person_dina_blyuma_1814"
+      ],
+      "spouse": null
+    },
+    "archive": "person_zalman_i_1841"
+  },
+  "person_movsha_1843": {
+    "name": {
+      "ru": "Мовша Смагаринский",
+      "en": "Movsha Smagarinsky"
+    },
+    "years": "1843 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_iosel_v_1812",
+        "person_dina_blyuma_1814"
+      ],
+      "spouse": null
+    },
+    "archive": "person_movsha_1843"
+  },
+  "person_hackel_1844": {
+    "name": {
+      "ru": "Хацкель Смагаринский",
+      "en": "Hatzkel Smagarinsky"
+    },
+    "years": "1844 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_iosel_v_1812",
+        "person_dina_blyuma_1814"
+      ],
+      "spouse": null
+    },
+    "archive": "person_hackel_1844"
+  },
+  "person_hasya_i_1840": {
+    "name": {
+      "ru": "Хася Смагаринская",
+      "en": "Khasya Smagarinsky"
+    },
+    "years": "1840 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_iosel_v_1812",
+        "person_dina_blyuma_1814"
+      ],
+      "spouse": null
+    },
+    "archive": "person_hasya_i_1840"
+  },
+  "person_rohlya_i_1847": {
+    "name": {
+      "ru": "Рохля Смагаринская",
+      "en": "Rokhlya Smagarinsky"
+    },
+    "years": "1847 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_iosel_v_1812",
+        "person_dina_blyuma_1814"
+      ],
+      "spouse": null
+    },
+    "archive": "person_rohlya_i_1847"
+  },
+  "person_hana_z_1874": {
+    "name": {
+      "ru": "Хана Залманова Смагаринская",
+      "en": "Khana Zalmanovna Smagarinsky"
+    },
+    "years": "1874 — 1941",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "24.06.1894 зарегистрирован брак с Авраам Кальман Лейкин, сыном Волько, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_zalman_i_1841",
+        null
+      ],
+      "spouse": "person_leikin_avraam"
+    },
+    "archive": "person_hana_z_1874"
+  },
+  "person_leikin_avraam": {
+    "name": {
+      "ru": "Авраам Кальман Лейкин",
+      "en": "Avraam Kalman Leikin"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Сын Волько Лейкина. Муж Ханы Залмановой Смагаринской, брак 24.06.1894, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_hana_z_1874"
+    },
+    "archive": "person_leikin_avraam"
+  },
+  "person_slava_z": {
+    "name": {
+      "ru": "Слава Смагаринская",
+      "en": "Slava Smagarinsky"
+    },
+    "years": "? — 29.06.1890",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов",
+        "en": "Чернигов"
+      }
+    },
+    "bio": {
+      "ru": "Дочь Залмана Смагаринского. Умерла 29.06.1890, Чернигов.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_zalman_i_1841",
+        null
+      ],
+      "spouse": null
+    },
+    "archive": "person_slava_z"
+  },
+  "person_sora_z_1838": {
+    "name": {
+      "ru": "Сора Смагаринская",
+      "en": "Sora Smagarinsky"
+    },
+    "years": "1838 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shneur_1821",
+        "person_slava_1822"
+      ],
+      "spouse": null
+    },
+    "archive": "person_sora_z_1838"
+  },
+  "person_hasya_z_1841": {
+    "name": {
+      "ru": "Хася Смагаринская",
+      "en": "Khasya Smagarinsky"
+    },
+    "years": "1841 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shneur_1821",
+        "person_slava_1822"
+      ],
+      "spouse": null
+    },
+    "archive": "person_hasya_z_1841"
+  },
+  "person_rohlya_z_1850": {
+    "name": {
+      "ru": "Рохля Смагаринская",
+      "en": "Rokhlya Smagarinsky"
+    },
+    "years": "1850 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
+        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shneur_1821",
+        "person_slava_1822"
+      ],
+      "spouse": null
+    },
+    "archive": "person_rohlya_z_1850"
+  },
+  "person_shmuel_z": {
+    "name": {
+      "ru": "Шмуель Смагаринский",
+      "en": "Shmuel Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shneur_1821",
+        "person_slava_1822"
+      ],
+      "spouse": null
+    },
+    "archive": "person_shmuel_z"
+  },
+  "person_natan_z": {
+    "name": {
+      "ru": "Натан Смагаринский",
+      "en": "Natan Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shneur_1821",
+        "person_slava_1822"
+      ],
+      "spouse": null
+    },
+    "archive": "person_natan_z"
+  },
+  "person_sima_sh_shevel": {
+    "name": {
+      "ru": "Сима Шевелева Смагаринская",
+      "en": "Sima Shevelevna Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_1848",
+        "person_khaya_1860"
+      ],
+      "spouse": null
+    },
+    "archive": "person_sima_sh_shevel"
+  },
+  "person_slava_sh_shevel": {
+    "name": {
+      "ru": "Слава Шевелева Смагаринская",
+      "en": "Slava Shevelevna Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_1848",
+        "person_khaya_1860"
+      ],
+      "spouse": null
+    },
+    "archive": "person_slava_sh_shevel"
+  },
+  "person_ester_rohl_shevel": {
+    "name": {
+      "ru": "Эстер Рохл Шевелева Смагаринская",
+      "en": "Ester Rokhl Shevelevna Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_1848",
+        "person_khaya_1860"
+      ],
+      "spouse": null
+    },
+    "archive": "person_ester_rohl_shevel"
+  },
+  "person_yoha_shevel": {
+    "name": {
+      "ru": "Йоха Шевелева Смагаринская",
+      "en": "Yokha Shevelevna Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_1848",
+        "person_khaya_1860"
+      ],
+      "spouse": null
+    },
+    "archive": "person_yoha_shevel"
+  },
+  "person_zalman_shevel": {
+    "name": {
+      "ru": "Залман Шевелев Смагаринский",
+      "en": "Zalman Shevelevich Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "Сын Шевеля Залманова Смагаринского и Хаи, брат Вульфа.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_1848",
+        "person_khaya_1860"
+      ],
+      "spouse": null
+    },
+    "archive": "person_zalman_shevel"
+  },
+  "person_ginda_shevel_1900": {
+    "name": {
+      "ru": "Гинда Шевелева Смагаринская",
+      "en": "Ginda Shevelevna Smagarinsky"
+    },
+    "years": "1900 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Прилуки",
+        "en": "г. Прилуки"
+      },
+      "occupation": {
+        "ru": "набойщица на табачной фабрике",
+        "en": "набойщица на табачной фабрике"
+      }
+    },
+    "bio": {
+      "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа. Работала набойщицей на табачной фабрике г. Прилуки.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_shevel_1848",
+        "person_khaya_1860"
+      ],
+      "spouse": null
+    },
+    "archive": "person_ginda_shevel_1900"
+  },
+  "person_zalmon_unclear": {
+    "name": {
+      "ru": "Залмон Смагаринский",
+      "en": "Zalmon Smagarinsky"
+    },
+    "years": "~1841 — 04.10.1896",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
+      "ru": "⚠️ ТОЧНАЯ СВЯЗЬ С ОСНОВНЫМ ДРЕВОМ НЕ УСТАНОВЛЕНА. В архивной записи указан как сын Исраиля (это имя не встречается больше нигде в собранных документах). Мелкий буржуа. Умер от воспаления лёгких 04.10.1896 в Холмече, Гомельский уезд, Могилёвская губерния, в возрасте 55 лет.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": null
+    },
+    "archive": "person_zalmon_unclear"
+  },
+  "person_pesya_malka_unclear": {
+    "name": {
+      "ru": "Песя Малка Смагаринская",
+      "en": "Pesya Malka Smagarinsky"
+    },
+    "years": "1902 — 27.04.1908",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Прилуки",
+        "en": "г. Прилуки"
+      }
+    },
+    "bio": {
+      "ru": "⚠️ ТОЧНАЯ СВЯЗЬ С ОСНОВНЫМ ДРЕВОМ НЕ УСТАНОВЛЕНА. В архивной записи указана как дочь «Шевеля Смагаринского» без уточнения отчества — в этом поколении несколько человек с именем Шевель. Умерла в раннем детстве.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": null
+    },
+    "archive": "person_pesya_malka_unclear"
   }
 };
