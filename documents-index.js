@@ -1177,32 +1177,6 @@ window.documentsIndex = {
       }
     }
   ],
-  "person_khaya_1860": [
-    {
-      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Архивная справка из переписи населения Прилук, 1923.jpg",
-        "en": "Archival information from the Priluki population census, 1923.jpg"
-      }
-    },
-    {
-      "url": "дом в Прилуках семьи Смогоринских.jpg",
-      "type": "image",
-      "title": {
-        "ru": "дом в Прилуках семьи Смогоринских.jpg",
-        "en": "The Smogorinsky family's house in Priluki.jpg"
-      }
-    },
-    {
-    "url": "Хая Смагаринская (Гуревич).jpg",
-      "type": "image",
-      "title": {
-        "ru": "Хая Смагаринская (Гуревич).jpg",
-        "en": "Khaya Smagarinsky (Gurevich).jpg"
-      }
-    },  
-  ],
   "person_fira_1927": [
     {
       "url": "Бабушка Фира.jpg",
