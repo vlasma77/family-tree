@@ -286,9 +286,49 @@ window.db = {
       "parents": [
         "person_vulf_1898",
         "person_blyuma_1895"
-      ]
+      ],
+      "spouse": null
     },
     "archive": "person_mira_1927"
+  },
+"person_roman_1924": {
+    "name": {
+      "ru": "Роман Борисович Линецкий",
+      "en": "Roman Borisovich Linetzky"
+    },
+    "years": "01.01.1924 – 20.12.2010",
+    "isDeceased": true,
+    "mainPhoto": "photos/roman1924.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Черкассы, Украина",
+        "en": "Cherkasy, Ukraine"
+      },
+      "marriage": {
+        "ru": "Мира Линецкая (Смагаринская)",
+        "en": "Mira Linetzky (Smagarinsky)"
+      },
+      "burial": {
+        "ru": "Нацерет-Илит, Израиль",
+        "en": "Nazareth Illit, Israel"
+      }
+    },
+    "familyText": {
+      "ru": [
+        "Родители: Борис Линецкий, Хана Линецкая"
+      ],
+      "en": [
+        "Parents: Boris Linetzky, Khana Linetzky"
+      ]
+    },
+    "links": {
+      "parents": [
+        "person_boris_1884",
+        "person_khana_1898"
+      ],
+      "spouse": null
+    },
+    "archive": "person_roman_1924"
   },
   "person_shevel_1848": {
     "name": {
