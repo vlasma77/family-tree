@@ -291,7 +291,7 @@ window.db = {
     },
     "archive": "person_mira_1927"
   },
-"person_roman_1924": {
+  "person_roman_1924": {
     "name": {
       "ru": "Роман Борисович Линецкий",
       "en": "Roman Borisovich Linetzky"
