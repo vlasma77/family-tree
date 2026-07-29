@@ -287,7 +287,7 @@ window.db = {
         "person_vulf_1898",
         "person_blyuma_1895"
       ],
-      "spouse": null
+      "spouse": "person_roman_1924"
     },
     "archive": "person_mira_1927"
   },
@@ -322,11 +322,8 @@ window.db = {
       ]
     },
     "links": {
-      "parents": [
-        "person_boris_1884",
-        "person_khana_1898"
-      ],
-      "spouse": null
+      "parents": [],
+      "spouse": "person_mira_1927"
     },
     "archive": "person_roman_1924"
   },
