@@ -48,7 +48,8 @@ window.db = {
         "person_khaya_1860"
       ]
     },
-    "archive": "person_vulf_1898"
+    "archive": "person_vulf_1898",
+    "gender": "male"
   },
   "person_blyuma_1895": {
     "name": {
@@ -96,7 +97,8 @@ window.db = {
       "spouse": "person_vulf_1898",
       "parents": []
     },
-    "archive": "person_blyuma_1895"
+    "archive": "person_blyuma_1895",
+    "gender": "female"
   },
   "person_efim_1919": {
     "name": {
@@ -147,7 +149,8 @@ window.db = {
       ],
       "spouse": "person_nadejda_1924"
     },
-    "archive": "person_efim_1919"
+    "archive": "person_efim_1919",
+    "gender": "male"
   },
   "person_mikhail_1922": {
     "name": {
@@ -199,7 +202,8 @@ window.db = {
       ],
       "spouse": "person_fira_1927"
     },
-    "archive": "person_mikhail_1922"
+    "archive": "person_mikhail_1922",
+    "gender": "male"
   },
   "person_katya_1924": {
     "name": {
@@ -250,7 +254,8 @@ window.db = {
       ],
       "spouse": "person_aba_1923"
     },
-    "archive": "person_katya_1924"
+    "archive": "person_katya_1924",
+    "gender": "female"
   },
   "person_mira_1927": {
     "name": {
@@ -289,7 +294,8 @@ window.db = {
       ],
       "spouse": "person_roman_1924"
     },
-    "archive": "person_mira_1927"
+    "archive": "person_mira_1927",
+    "gender": "female"
   },
   "person_roman_1924": {
     "name": {
@@ -325,7 +331,8 @@ window.db = {
       "parents": [],
       "spouse": "person_mira_1927"
     },
-    "archive": "person_roman_1924"
+    "archive": "person_roman_1924",
+    "gender": "male"
   },
   "person_shevel_1848": {
     "name": {
@@ -372,7 +379,8 @@ window.db = {
       ],
       "spouse": "person_khaya_1860"
     },
-    "archive": "person_shevel_1848"
+    "archive": "person_shevel_1848",
+    "gender": "male"
   },
   "person_sonya_1929": {
     "name": {
@@ -421,7 +429,8 @@ window.db = {
         "person_blyuma_1895"
       ]
     },
-    "archive": "person_sonya_1929"
+    "archive": "person_sonya_1929",
+    "gender": "female"
   },
   "person_anatoly_1937": {
     "name": {
@@ -473,7 +482,8 @@ window.db = {
         "person_blyuma_1895"
       ]
     },
-    "archive": "person_anatoly_1937"
+    "archive": "person_anatoly_1937",
+    "gender": "male"
   },
   "person_khaya_1860": {
     "name": {
@@ -521,7 +531,8 @@ window.db = {
       "spouse": "person_shevel_1848",
       "parents": []
     },
-    "archive": "person_khaya_1860"
+    "archive": "person_khaya_1860",
+    "gender": "female"
   },
   "person_shneur_1821": {
     "name": {
@@ -536,7 +547,8 @@ window.db = {
         "person_feyga_1794"
       ],
       "spouse": "person_slava_1822"
-    }
+    },
+    "gender": "male"
   },
   "person_slava_1822": {
     "name": {
@@ -548,7 +560,8 @@ window.db = {
     "links": {
       "spouse": "person_shneur_1821",
       "parents": []
-    }
+    },
+    "gender": "female"
   },
   "person_volka_1792": {
     "name": {
@@ -563,7 +576,8 @@ window.db = {
         null
       ],
       "spouse": "person_feyga_1794"
-    }
+    },
+    "gender": "male"
   },
   "person_feyga_1794": {
     "name": {
@@ -576,7 +590,8 @@ window.db = {
       "spouse": "person_volka_1792",
       "parents": [],
       "spouseNote": "первая жена Вольки Иоселева"
-    }
+    },
+    "gender": "female"
   },
   "person_iosel_1760": {
     "name": {
@@ -588,7 +603,8 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": null
-    }
+    },
+    "gender": "male"
   },
   "person_israil_aizik_1917": {
     "name": {
@@ -631,7 +647,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_israil_aizik_1917"
+    "archive": "person_israil_aizik_1917",
+    "gender": "male"
   },
   "person_evgeny_1948": {
     "name": {
@@ -672,7 +689,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_evgeny_1948"
+    "archive": "person_evgeny_1948",
+    "gender": "male"
   },
   "person_vladimir_mikhailovich_1948": {
     "name": {
@@ -710,7 +728,8 @@ window.db = {
         "person_fira_1927"
       ],
       "spouse": null
-    }
+    },
+    "gender": "male"
   },
   "person_yuri_mikhailovich_1950": {
     "name": {
@@ -748,7 +767,8 @@ window.db = {
         "person_fira_1927"
       ],
       "spouse": null
-    }
+    },
+    "gender": "male"
   },
   "person_nella_mikhailovna_1957": {
     "name": {
@@ -786,7 +806,8 @@ window.db = {
         "person_fira_1927"
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   },
   "person_fira_1927": {
     "name": {
@@ -826,7 +847,8 @@ window.db = {
       "parents": [],
       "spouse": "person_mikhail_1922"
     },
-    "archive": "person_fira_1927"
+    "archive": "person_fira_1927",
+    "gender": "female"
   },
   "person_alla_1948": {
     "id": "person_alla_1948",
@@ -860,7 +882,8 @@ window.db = {
         "person_nadejda_1924"
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   },
   "person_valery_1955": {
     "id": "person_valery_1955",
@@ -894,7 +917,8 @@ window.db = {
         "person_nadejda_1924"
       ],
       "spouse": null
-    }
+    },
+    "gender": "male"
   },
   "person_natalya_1958": {
     "id": "person_natalya_1958",
@@ -928,7 +952,8 @@ window.db = {
         "person_nadejda_1924"
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   },
   "person_nadejda_1924": {
     "id": "person_nadejda_1924",
@@ -969,7 +994,8 @@ window.db = {
       "parents": [],
       "spouse": "person_efim_1919"
     },
-    "archive": "person_nadejda_1924"
+    "archive": "person_nadejda_1924",
+    "gender": "female"
   },
   "person_mira_zakharova": {
     "name": {
@@ -1013,7 +1039,8 @@ window.db = {
       "ru": [],
       "en": []
     },
-    "archive": "person_mira_zakharova"
+    "archive": "person_mira_zakharova",
+    "gender": "female"
   },
   "person_aba_1923": {
     "name": {
@@ -1061,7 +1088,8 @@ window.db = {
       "spouse": "person_katya_1924",
       "parents": []
     },
-    "archive": "person_aba_1923"
+    "archive": "person_aba_1923",
+    "gender": "male"
   },
   "person_feyga_1800": {
     "name": {
@@ -1090,7 +1118,8 @@ window.db = {
       "spouse": "person_volka_1792",
       "spouseNote": "вторая жена Вольки Иоселева"
     },
-    "archive": "person_feyga_1800"
+    "archive": "person_feyga_1800",
+    "gender": "female"
   },
   "person_morduh_1819": {
     "name": {
@@ -1121,7 +1150,8 @@ window.db = {
       ],
       "spouse": "person_etsya_1818"
     },
-    "archive": "person_morduh_1819"
+    "archive": "person_morduh_1819",
+    "gender": "male"
   },
   "person_haim_1824": {
     "name": {
@@ -1152,7 +1182,8 @@ window.db = {
       ],
       "spouse": "person_ginda_b_1825"
     },
-    "archive": "person_haim_1824"
+    "archive": "person_haim_1824",
+    "gender": "male"
   },
   "person_icko_1844": {
     "name": {
@@ -1183,7 +1214,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_icko_1844"
+    "archive": "person_icko_1844",
+    "gender": "male"
   },
   "person_iosel_v_1812": {
     "name": {
@@ -1214,7 +1246,8 @@ window.db = {
       ],
       "spouse": "person_dina_blyuma_1814"
     },
-    "archive": "person_iosel_v_1812"
+    "archive": "person_iosel_v_1812",
+    "gender": "male"
   },
   "person_yankel_1851": {
     "name": {
@@ -1245,7 +1278,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_yankel_1851"
+    "archive": "person_yankel_1851",
+    "gender": "male"
   },
   "person_ginda_1823": {
     "name": {
@@ -1271,7 +1305,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_ginda_1823"
+    "archive": "person_ginda_1823",
+    "gender": "female"
   },
   "person_riva_1826": {
     "name": {
@@ -1297,7 +1332,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_riva_1826"
+    "archive": "person_riva_1826",
+    "gender": "female"
   },
   "person_malka_1828": {
     "name": {
@@ -1323,7 +1359,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_malka_1828"
+    "archive": "person_malka_1828",
+    "gender": "female"
   },
   "person_etsya_1818": {
     "name": {
@@ -1351,7 +1388,8 @@ window.db = {
       "parents": [],
       "spouse": "person_morduh_1819"
     },
-    "archive": "person_etsya_1818"
+    "archive": "person_etsya_1818",
+    "gender": "female"
   },
   "person_pesya_m_1848": {
     "name": {
@@ -1382,7 +1420,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_pesya_m_1848"
+    "archive": "person_pesya_m_1848",
+    "gender": "female"
   },
   "person_sima_m_1845": {
     "name": {
@@ -1413,7 +1452,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_sima_m_1845"
+    "archive": "person_sima_m_1845",
+    "gender": "female"
   },
   "person_tsylya_1841": {
     "name": {
@@ -1444,7 +1484,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_tsylya_1841"
+    "archive": "person_tsylya_1841",
+    "gender": "female"
   },
   "person_shevel_m_1837": {
     "name": {
@@ -1475,7 +1516,8 @@ window.db = {
       ],
       "spouse": "person_liba_1840"
     },
-    "archive": "person_shevel_m_1837"
+    "archive": "person_shevel_m_1837",
+    "gender": "male"
   },
   "person_liba_1840": {
     "name": {
@@ -1498,7 +1540,8 @@ window.db = {
       "parents": [],
       "spouse": "person_shevel_m_1837"
     },
-    "archive": "person_liba_1840"
+    "archive": "person_liba_1840",
+    "gender": "female"
   },
   "person_aron_simon_1861": {
     "name": {
@@ -1529,7 +1572,8 @@ window.db = {
       ],
       "spouse": "person_hana_leya_gnesin"
     },
-    "archive": "person_aron_simon_1861"
+    "archive": "person_aron_simon_1861",
+    "gender": "male"
   },
   "person_hana_leya_gnesin": {
     "name": {
@@ -1552,7 +1596,8 @@ window.db = {
       "parents": [],
       "spouse": "person_aron_simon_1861"
     },
-    "archive": "person_hana_leya_gnesin"
+    "archive": "person_hana_leya_gnesin",
+    "gender": "female"
   },
   "person_volko_nohim_1865": {
     "name": {
@@ -1578,7 +1623,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_volko_nohim_1865"
+    "archive": "person_volko_nohim_1865",
+    "gender": "male"
   },
   "person_kalman_1869": {
     "name": {
@@ -1604,7 +1650,8 @@ window.db = {
       ],
       "spouse": "person_enta_gruna"
     },
-    "archive": "person_kalman_1869"
+    "archive": "person_kalman_1869",
+    "gender": "male"
   },
   "person_enta_gruna": {
     "name": {
@@ -1627,7 +1674,8 @@ window.db = {
       "parents": [],
       "spouse": "person_kalman_1869"
     },
-    "archive": "person_enta_gruna"
+    "archive": "person_enta_gruna",
+    "gender": "female"
   },
   "person_hana_1867": {
     "name": {
@@ -1653,7 +1701,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_hana_1867"
+    "archive": "person_hana_1867",
+    "gender": "female"
   },
   "person_zusya_1871": {
     "name": {
@@ -1679,7 +1728,8 @@ window.db = {
       ],
       "spouse": "person_meer_yavets"
     },
-    "archive": "person_zusya_1871"
+    "archive": "person_zusya_1871",
+    "gender": "female"
   },
   "person_meer_yavets": {
     "name": {
@@ -1702,7 +1752,8 @@ window.db = {
       "parents": [],
       "spouse": "person_zusya_1871"
     },
-    "archive": "person_meer_yavets"
+    "archive": "person_meer_yavets",
+    "gender": "male"
   },
   "person_pesya_sh_1874": {
     "name": {
@@ -1728,7 +1779,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_pesya_sh_1874"
+    "archive": "person_pesya_sh_1874",
+    "gender": "female"
   },
   "person_menya_1878": {
     "name": {
@@ -1754,7 +1806,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_menya_1878"
+    "archive": "person_menya_1878",
+    "gender": "female"
   },
   "person_girsha_1876": {
     "name": {
@@ -1780,7 +1833,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_girsha_1876"
+    "archive": "person_girsha_1876",
+    "gender": "male"
   },
   "person_avraam_david_1881": {
     "name": {
@@ -1811,7 +1865,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_avraam_david_1881"
+    "archive": "person_avraam_david_1881",
+    "gender": "male"
   },
   "person_pesya_sh2_1880": {
     "name": {
@@ -1837,7 +1892,8 @@ window.db = {
       ],
       "spouse": "person_rozental_icko"
     },
-    "archive": "person_pesya_sh2_1880"
+    "archive": "person_pesya_sh2_1880",
+    "gender": "female"
   },
   "person_rozental_icko": {
     "name": {
@@ -1860,7 +1916,8 @@ window.db = {
       "parents": [],
       "spouse": "person_pesya_sh2_1880"
     },
-    "archive": "person_rozental_icko"
+    "archive": "person_rozental_icko",
+    "gender": "male"
   },
   "person_rohlya_sh_1882": {
     "name": {
@@ -1886,7 +1943,8 @@ window.db = {
       ],
       "spouse": "person_agranovich_avraam"
     },
-    "archive": "person_rohlya_sh_1882"
+    "archive": "person_rohlya_sh_1882",
+    "gender": "female"
   },
   "person_agranovich_avraam": {
     "name": {
@@ -1914,7 +1972,8 @@ window.db = {
       "parents": [],
       "spouse": "person_rohlya_sh_1882"
     },
-    "archive": "person_agranovich_avraam"
+    "archive": "person_agranovich_avraam",
+    "gender": "male"
   },
   "person_hana_leya_1869": {
     "name": {
@@ -1945,7 +2004,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_hana_leya_1869"
+    "archive": "person_hana_leya_1869",
+    "gender": "female"
   },
   "person_nehama_1889": {
     "name": {
@@ -1976,7 +2036,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_nehama_1889"
+    "archive": "person_nehama_1889",
+    "gender": "female"
   },
   "person_zalman_leyvik_1898": {
     "name": {
@@ -2007,7 +2068,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_zalman_leyvik_1898"
+    "archive": "person_zalman_leyvik_1898",
+    "gender": "male"
   },
   "person_shlema_1893": {
     "name": {
@@ -2038,7 +2100,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_shlema_1893"
+    "archive": "person_shlema_1893",
+    "gender": "male"
   },
   "person_rivka_1888": {
     "name": {
@@ -2064,7 +2127,8 @@ window.db = {
       ],
       "spouse": "person_garelik_aizik"
     },
-    "archive": "person_rivka_1888"
+    "archive": "person_rivka_1888",
+    "gender": "female"
   },
   "person_garelik_aizik": {
     "name": {
@@ -2087,7 +2151,8 @@ window.db = {
       "parents": [],
       "spouse": "person_rivka_1888"
     },
-    "archive": "person_garelik_aizik"
+    "archive": "person_garelik_aizik",
+    "gender": "male"
   },
   "person_isay_zelik_1898": {
     "name": {
@@ -2118,7 +2183,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_isay_zelik_1898"
+    "archive": "person_isay_zelik_1898",
+    "gender": "male"
   },
   "person_ginda_b_1825": {
     "name": {
@@ -2146,7 +2212,8 @@ window.db = {
       "parents": [],
       "spouse": "person_haim_1824"
     },
-    "archive": "person_ginda_b_1825"
+    "archive": "person_ginda_b_1825",
+    "gender": "female"
   },
   "person_rohlya_h_1844": {
     "name": {
@@ -2177,7 +2244,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_rohlya_h_1844"
+    "archive": "person_rohlya_h_1844",
+    "gender": "female"
   },
   "person_sora_h_1847": {
     "name": {
@@ -2208,7 +2276,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_sora_h_1847"
+    "archive": "person_sora_h_1847",
+    "gender": "female"
   },
   "person_icko_h_1841": {
     "name": {
@@ -2239,7 +2308,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_icko_h_1841"
+    "archive": "person_icko_h_1841",
+    "gender": "male"
   },
   "person_dina_blyuma_1814": {
     "name": {
@@ -2267,7 +2337,8 @@ window.db = {
       "parents": [],
       "spouse": "person_iosel_v_1812"
     },
-    "archive": "person_dina_blyuma_1814"
+    "archive": "person_dina_blyuma_1814",
+    "gender": "female"
   },
   "person_zalman_i_1841": {
     "name": {
@@ -2298,7 +2369,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_zalman_i_1841"
+    "archive": "person_zalman_i_1841",
+    "gender": "male"
   },
   "person_movsha_1843": {
     "name": {
@@ -2329,7 +2401,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_movsha_1843"
+    "archive": "person_movsha_1843",
+    "gender": "male"
   },
   "person_hackel_1844": {
     "name": {
@@ -2360,7 +2433,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_hackel_1844"
+    "archive": "person_hackel_1844",
+    "gender": "male"
   },
   "person_hasya_i_1840": {
     "name": {
@@ -2391,7 +2465,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_hasya_i_1840"
+    "archive": "person_hasya_i_1840",
+    "gender": "female"
   },
   "person_rohlya_i_1847": {
     "name": {
@@ -2422,7 +2497,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_rohlya_i_1847"
+    "archive": "person_rohlya_i_1847",
+    "gender": "female"
   },
   "person_hana_z_1874": {
     "name": {
@@ -2448,7 +2524,8 @@ window.db = {
       ],
       "spouse": "person_leikin_avraam"
     },
-    "archive": "person_hana_z_1874"
+    "archive": "person_hana_z_1874",
+    "gender": "female"
   },
   "person_leikin_avraam": {
     "name": {
@@ -2471,7 +2548,8 @@ window.db = {
       "parents": [],
       "spouse": "person_hana_z_1874"
     },
-    "archive": "person_leikin_avraam"
+    "archive": "person_leikin_avraam",
+    "gender": "male"
   },
   "person_slava_z": {
     "name": {
@@ -2502,7 +2580,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_slava_z"
+    "archive": "person_slava_z",
+    "gender": "female"
   },
   "person_sora_z_1838": {
     "name": {
@@ -2533,7 +2612,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_sora_z_1838"
+    "archive": "person_sora_z_1838",
+    "gender": "female"
   },
   "person_hasya_z_1841": {
     "name": {
@@ -2564,7 +2644,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_hasya_z_1841"
+    "archive": "person_hasya_z_1841",
+    "gender": "female"
   },
   "person_rohlya_z_1850": {
     "name": {
@@ -2595,7 +2676,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_rohlya_z_1850"
+    "archive": "person_rohlya_z_1850",
+    "gender": "female"
   },
   "person_shmuel_z": {
     "name": {
@@ -2621,7 +2703,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_shmuel_z"
+    "archive": "person_shmuel_z",
+    "gender": "male"
   },
   "person_natan_z": {
     "name": {
@@ -2647,7 +2730,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_natan_z"
+    "archive": "person_natan_z",
+    "gender": "male"
   },
   "person_sima_sh_shevel": {
     "name": {
@@ -2673,7 +2757,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_sima_sh_shevel"
+    "archive": "person_sima_sh_shevel",
+    "gender": "female"
   },
   "person_slava_sh_shevel": {
     "name": {
@@ -2699,7 +2784,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_slava_sh_shevel"
+    "archive": "person_slava_sh_shevel",
+    "gender": "female"
   },
   "person_ester_rohl_shevel": {
     "name": {
@@ -2725,7 +2811,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_ester_rohl_shevel"
+    "archive": "person_ester_rohl_shevel",
+    "gender": "female"
   },
   "person_yoha_shevel": {
     "name": {
@@ -2751,7 +2838,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_yoha_shevel"
+    "archive": "person_yoha_shevel",
+    "gender": "female"
   },
   "person_zalman_shevel": {
     "name": {
@@ -2777,7 +2865,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_zalman_shevel"
+    "archive": "person_zalman_shevel",
+    "gender": "male"
   },
   "person_ginda_shevel_1900": {
     "name": {
@@ -2812,7 +2901,8 @@ window.db = {
       ],
       "spouse": null
     },
-    "archive": "person_ginda_shevel_1900"
+    "archive": "person_ginda_shevel_1900",
+    "gender": "female"
   },
   "person_zalmon_unclear": {
     "name": {
@@ -2835,7 +2925,8 @@ window.db = {
       "parents": [],
       "spouse": null
     },
-    "archive": "person_zalmon_unclear"
+    "archive": "person_zalmon_unclear",
+    "gender": "male"
   },
   "person_pesya_malka_unclear": {
     "name": {
@@ -2863,6 +2954,7 @@ window.db = {
       "parents": [],
       "spouse": null
     },
-    "archive": "person_pesya_malka_unclear"
+    "archive": "person_pesya_malka_unclear",
+    "gender": "female"
   }
 };
