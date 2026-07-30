@@ -2956,5 +2956,39 @@ window.db = {
     },
     "archive": "person_pesya_malka_unclear",
     "gender": "female"
+  },
+  "person_luda_1951": {
+    "id": "person_luda_1951",
+    "name": {
+      "ru": "Людмила Романовна Кутикова (Линецкая)",
+      "en": "New Person"
+    },
+    "years": "1951-",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Биробиджан, Хабаровский край"
+      },
+      "marriage": {
+        "ru": "Алик Кутиков"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_roman_1924",
+        "person_mira_1927"
+      ],
+      "spouse": null
+    }
   }
 };
