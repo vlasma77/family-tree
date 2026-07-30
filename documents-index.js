@@ -2040,5 +2040,135 @@ window.documentsIndex = {
         "en": "Chronicle of the war years"
       }
     }
+  ],
+  "person_luda_1951": [
+    {
+      "url": "Аккордеонистка.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Аккордеонистка",
+        "en": "Accordionist"
+      }
+    },
+    {
+      "url": "в новом платьице.jpg",
+      "type": "image",
+      "title": {
+        "ru": "в новом платьице",
+        "en": "in a new dress"
+      }
+    },
+    {
+      "url": "Люда в юности, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Люда в юности, Биробиджан",
+        "en": "Lyuda in her youth, Birobidzhan"
+      }
+    },
+    {
+      "url": "Люда Кутикова (Линецкая).png",
+      "type": "image",
+      "title": {
+        "ru": "Люда Кутикова (Линецкая)",
+        "en": "Lyuda Kutikova (Linetskaya)"
+      }
+    },
+    {
+      "url": "Люда с братом Валерием.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Люда с братом Валерием",
+        "en": "Lyuda with her brother Valery"
+      }
+    },
+    {
+      "url": "Люда с младшим братом.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Люда с младшим братом",
+        "en": "Lyuda with her younger brother"
+      }
+    },
+    {
+      "url": "Мира на прогулке с дочкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира на прогулке с дочкой",
+        "en": "Mira on a walk with her daughter"
+      }
+    },
+    {
+      "url": "Мира с дочерьми.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира с дочерьми",
+        "en": "Mira with her daughters"
+      }
+    },
+    {
+      "url": "музыкальные моменты.jpg",
+      "type": "image",
+      "title": {
+        "ru": "музыкальные моменты",
+        "en": "musical moments"
+      }
+    },
+    {
+      "url": "первый раз в первый класс.jpg",
+      "type": "image",
+      "title": {
+        "ru": "первый раз в первый класс",
+        "en": "first time in first grade"
+      }
+    },
+    {
+      "url": "Семейная фотография.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная фотография",
+        "en": "Family photo"
+      }
+    },
+    {
+      "url": "семейный дуэт.jpg",
+      "type": "image",
+      "title": {
+        "ru": "семейный дуэт",
+        "en": "family duet"
+      }
+    },
+    {
+      "url": "Семья Линецких.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Линецких",
+        "en": "The Linetsky family"
+      }
+    },
+    {
+      "url": "счастливое детство.jpg",
+      "type": "image",
+      "title": {
+        "ru": "счастливое детство",
+        "en": "happy childhood"
+      }
+    },
+    {
+      "url": "хорошее настроение.jpg",
+      "type": "image",
+      "title": {
+        "ru": "хорошее настроение",
+        "en": "good mood"
+      }
+    },
+    {
+      "url": "школьница.jpg",
+      "type": "image",
+      "title": {
+        "ru": "школьница",
+        "en": "schoolgirl"
+      }
+    }
   ]
 };
