@@ -819,14 +819,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Роман Линецкий.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Роман Линецкий",
-        "en": "Roman Linetsky"
-      }
-    },
-    {
       "url": "Сёстры Мира, Катя и Соня.jpg",
       "type": "image",
       "title": {
@@ -883,19 +875,141 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "трудовая книжка Линецкой.jpg",
-      "type": "image",
-      "title": {
-        "ru": "трудовая книжка Линецкой",
-        "en": "Linetskaya's work record book"
-      }
-    },
-    {
       "url": "трудовая книжка Миры.jpg",
       "type": "image",
       "title": {
         "ru": "трудовая книжка Миры",
         "en": "Mira's work record book"
+      }
+    }
+  ],
+  "person_roman_1924": [
+    {
+      "url": "Веселый танец с супругой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Веселый танец с супругой",
+        "en": "A fun dance with wife"
+      }
+    },
+    {
+      "url": "Могила Романа и Миры.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Могила Романа и Миры",
+        "en": "The grave of Roman and Mira"
+      }
+    },
+    {
+      "url": "На демонстрации, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На демонстрации, Биробиджан",
+        "en": "At the demonstration, Birobidzhan"
+      }
+    },
+    {
+      "url": "Подлодка, на которой служил Роман  Щ-132.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Подлодка, на которой служил Роман  Щ-132",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Роман Линецкий.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Роман Линецкий",
+        "en": "Roman Linetsky"
+      }
+    },
+    {
+      "url": "Роман с молодоженами.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Роман с молодоженами",
+        "en": "Roman with newlyweds"
+      }
+    },
+    {
+      "url": "свидетельство о браке Линецкий.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о браке Линецкий",
+        "en": "Marriage Certificate"
+      }
+    },
+    {
+      "url": "свидетельство о браке.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о браке",
+        "en": "Marriage Certificate"
+      }
+    },
+    {
+      "url": "свидетельство о рождении Линецкий Роман .jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о рождении Линецкий Роман",
+        "en": "Birth Certificate"
+      }
+    },
+    {
+      "url": "свидетельство о смерти Линецкий Борис.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о смерти Линецкий Борис",
+        "en": "Death Certificate"
+      }
+    },
+    {
+      "url": "свидетельство о смерти Линецкой Ханы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о смерти Линецкой Ханы",
+        "en": "Death Certificate"
+      }
+    },
+    {
+      "url": "Семейная фотография.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная фотография",
+        "en": "Family photo"
+      }
+    },
+    {
+      "url": "Семья Линецких.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Линецких",
+        "en": "The Linetsky family"
+      }
+    },
+    {
+      "url": "Страстный поцелуй.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Страстный поцелуй",
+        "en": "Passionate kiss"
+      }
+    },
+    {
+      "url": "Супруги Роман и Мира Линецкие.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Супруги Роман и Мира Линецкие",
+        "en": "Spouses Roman and Mira Linetsky"
+      }
+    },
+    {
+      "url": "Супружеский танец.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Супружеский танец",
+        "en": "Marital dance"
       }
     },
     {
