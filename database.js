@@ -2993,5 +2993,42 @@ window.db = {
       "spouse": null
     },
     "gender": "female"
+  },
+  "person_bella_1957": {
+    "id": "person_bella_1957",
+    "name": {
+      "ru": "Бэлла Романовна Ершова (Линецкая)",
+      "en": "Bella Romanovna Ershova (Linetsky)"
+    },
+    "years": "1957-",
+    "mainPhoto": "photos/bella1957.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsk Krai"
+      },
+      "marriage": {
+        "ru": "Ершов",
+        "en": "Ershov"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_roman_1924",
+        "person_mira_1927"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
   }
 };
