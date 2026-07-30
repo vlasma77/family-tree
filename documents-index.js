@@ -2170,5 +2170,71 @@ window.documentsIndex = {
         "en": "schoolgirl"
       }
     }
+  ],
+  "person_bella_1957": [
+    {
+      "url": "Бэлла в Биробиджане.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бэлла в Биробиджане",
+        "en": "Bella in Birobidzhan"
+      }
+    },
+    {
+      "url": "Бэлла Ершова(Линецкая).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бэлла Ершова(Линецкая)",
+        "en": "Bella Ershova (Linetskaya)"
+      }
+    },
+    {
+      "url": "Бэлочка Линецкая и Игорь Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бэлочка Линецкая и Игорь Каплун",
+        "en": "Bella Linetsky and Igor Kaplun"
+      }
+    },
+    {
+      "url": "Бэлочка Линецкая.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бэлочка Линецкая",
+        "en": "Belochka Linetsky"
+      }
+    },
+    {
+      "url": "Мира с дочерьми.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира с дочерьми",
+        "en": "Mira with her daughters"
+      }
+    },
+    {
+      "url": "октябренок Бэлла.jpg",
+      "type": "image",
+      "title": {
+        "ru": "октябренок Бэлла",
+        "en": "little octobrist girl Bella"
+      }
+    },
+    {
+      "url": "Семейная фотография.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная фотография",
+        "en": "Family photo"
+      }
+    },
+    {
+      "url": "Семья Линецких.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Линецких",
+        "en": "The Linetsky family"
+      }
+    }
   ]
 };
