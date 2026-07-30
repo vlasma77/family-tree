@@ -2964,14 +2964,14 @@ window.db = {
       "en": "Lyudmila Romanovna Kutikova (Linetzkaya)"
     },
     "years": "1951-",
-    "mainPhoto": "luda1951.jpg",
+    "mainPhoto": "photos/luda1951.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Биробиджан, Хабаровский край"
+        "ru": "Биробиджан, Хабаровский край",
         "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
-        "ru": "Алик Кутиков"
+        "ru": "Алик Кутиков",
         "en": "Alik Kutikov"
       },
       "occupation": {
@@ -2991,6 +2991,7 @@ window.db = {
         "person_mira_1927"
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   }
 };
