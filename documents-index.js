@@ -1291,6 +1291,248 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_vladimir_mikhailovich_1948": [
+    {
+      "url": "Алла с двоюродными братьями Евгением и Владимиром.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алла с двоюродными братьями Евгением и Владимиром",
+        "en": "Alla with her cousins ​​Evgeny and Vladimir"
+      }
+    },
+    {
+      "url": "Анатолий с племянниками.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий с племянниками",
+        "en": "Anatoly with nephews"
+      }
+    },
+    {
+      "url": "Биробиджан, 1949.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан, 1949",
+        "en": "Birobidzhan, 1949"
+      }
+    },
+    {
+      "url": "Биробиджан, Калинина 39.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан, Калинина 39",
+        "en": "Birobidzhan, Kalinina 39"
+      }
+    },
+    {
+      "url": "В поездке по северной Испании.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В поездке по северной Испании",
+        "en": "On a trip to northern Spain"
+      }
+    },
+    {
+      "url": "весёлая семейка.jpg",
+      "type": "image",
+      "title": {
+        "ru": "весёлая семейка",
+        "en": "a cheerful family"
+      }
+    },
+    {
+      "url": "Вечер прощания с друзьями перед отьездом в Израиль, 1994.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вечер прощания с друзьями перед отьездом в Израиль, 1994",
+        "en": "Farewell evening with friends before leaving for Israel, 1994"
+      }
+    },
+    {
+      "url": "Владимир со своими сестрами.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Владимир со своими сестрами",
+        "en": "Vladimir with his sisters"
+      }
+    },
+    {
+      "url": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
+        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
+      }
+    },
+    {
+      "url": "Вся жизнь впереди, Биробиджан, 06.09.1948.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вся жизнь впереди, Биробиджан, 06.09.1948",
+        "en": "My whole life ahead, Birobidzhan, September 6, 1948"
+      }
+    },
+    {
+      "url": "Михаил с детьми.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил с детьми",
+        "en": "Mikhail with children"
+      }
+    },
+    {
+      "url": "Михаил с семьёй в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил с семьёй в Астрахани",
+        "en": "Mikhail and his family in Astrakhan"
+      }
+    },
+    {
+      "url": "на студенческой практике в Мурманске.jpg",
+      "type": "image",
+      "title": {
+        "ru": "на студенческой практике в Мурманске",
+        "en": "during a student internship in Murmansk"
+      }
+    },
+    {
+      "url": "на студенческой практике в Севастополе.jpg",
+      "type": "image",
+      "title": {
+        "ru": "на студенческой практике в Севастополе",
+        "en": "during student internship in Sevastopol"
+      }
+    },
+    {
+      "url": "отпуск на озере Бодензее, Германия.jpg",
+      "type": "image",
+      "title": {
+        "ru": "отпуск на озере Бодензее, Германия",
+        "en": "vacation on Lake Bodenzee, Germany"
+      }
+    },
+    {
+      "url": "Поездка в Пензу.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Поездка в Пензу",
+        "en": "Trip to Penza"
+      }
+    },
+    {
+      "url": "прогулка по Ашкелонской набережной.jpg",
+      "type": "image",
+      "title": {
+        "ru": "прогулка по Ашкелонской набережной",
+        "en": "a walk along the Ashkelon promenade"
+      }
+    },
+    {
+      "url": "променад на набережной Ашкелона.jpg",
+      "type": "image",
+      "title": {
+        "ru": "променад на набережной Ашкелона",
+        "en": "promenade on the Ashkelon embankment"
+      }
+    },
+    {
+      "url": "С двоюродной сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С двоюродной сестрой Наташей",
+        "en": "With my cousin Natasha"
+      }
+    },
+    {
+      "url": "С сестрой Неллей, Варшава.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С сестрой Неллей, Варшава",
+        "en": "With sister Nella, Warsaw"
+      }
+    },
+    {
+      "url": "свидетельство о браке Владимира и Ольги.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о браке Владимира и Ольги",
+        "en": "marriage certificate of Vladimir and Olga"
+      }
+    },
+    {
+      "url": "Свидетельство о рождении Владимира.pdf",
+      "type": "document",
+      "title": {
+        "ru": "Свидетельство о рождении Владимира",
+        "en": "Vladimir's birth certificate"
+      }
+    },
+    {
+      "url": "семейное фото.jpg",
+      "type": "image",
+      "title": {
+        "ru": "семейное фото",
+        "en": "Archival Photo"
+      }
+    },
+    {
+      "url": "семейный пикник в Ашкелоне, 2025.jpg",
+      "type": "image",
+      "title": {
+        "ru": "семейный пикник в Ашкелоне, 2025",
+        "en": "Family picnic in Ashkelon, 2025"
+      }
+    },
+    {
+      "url": "служба в армии 1971-1972.jpg",
+      "type": "image",
+      "title": {
+        "ru": "служба в армии 1971-1972",
+        "en": "military service 1971-1972"
+      }
+    },
+    {
+      "url": "Танец с женой на вечеринке в ресторане.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Танец с женой на вечеринке в ресторане",
+        "en": "Dancing with wife at a restaurant party"
+      }
+    },
+    {
+      "url": "Торжественный момент, 14.06.1973, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Торжественный момент, 14.06.1973, Астрахань",
+        "en": "A solemn moment, June 14, 1973, Astrakhan"
+      }
+    },
+    {
+      "url": "Фира с детьми.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира с детьми",
+        "en": "Fira with children"
+      }
+    },
+    {
+      "url": "Фира со старшим сыном Вовой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира со старшим сыном Вовой",
+        "en": "Fira with her eldest son Vova"
+      }
+    },
+    {
+      "url": "школа на Криуше, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "школа на Криуше, Астрахань",
+        "en": "school on Kriusha, Astrakhan"
+      }
+    }
+  ],
   "person_fira_1927": [
     {
       "url": "Бабушка Фира.jpg",
