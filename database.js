@@ -778,20 +778,22 @@ window.db = {
   "person_nella_mikhailovna_1957": {
     "name": {
       "ru": "Нелла Михайловна Смагаринская",
-      "en": "Nella Mikhailovna Smagarinskaya"
+      "en": "Nella Mikhailovna Smagarinsky"
     },
-    "years": "13.12.1957 — ?",
+    "years": "13.12.1957—",
     "isDeceased": false,
     "mainPhoto": "photos/nella1957.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Биробиджан, Хабаровский край"
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
         "ru": ""
       },
       "occupation": {
-        "ru": "работа в бизнесе "
+        "ru": "работа в бизнесе",
+        "en": "work in business"
       },
       "burial": {
         "ru": ""
