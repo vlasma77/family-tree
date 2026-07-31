@@ -3030,5 +3030,42 @@ window.db = {
       "spouse": null
     },
     "gender": "female"
+  },
+  "person_valery_1954": {
+    "id": "person_valery_1954",
+    "name": {
+      "ru": "Валерий Романович Линецкий",
+      "en": "Valery Romanovich Linetzky"
+    },
+    "years": "1954-",
+    "mainPhoto": "photos/valery1954.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsky Krai"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": "музыкант",
+        "en": "musician"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_roman_1924",
+        "person_mira_1927"
+      ],
+      "spouse": null
+    },
+    "gender": "male"
   }
 };
