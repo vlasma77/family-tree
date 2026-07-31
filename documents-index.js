@@ -2236,5 +2236,119 @@ window.documentsIndex = {
         "en": "The Linetsky family"
       }
     }
+  ],
+  "person_valery_1954": [
+    {
+      "url": "В первый класс.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В первый класс",
+        "en": "to first school class"
+      }
+    },
+    {
+      "url": "Валера с братом Лёней.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валера с братом Лёней",
+        "en": "Valera with his brother Lenya"
+      }
+    },
+    {
+      "url": "Валерий в детские годы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валерий в детские годы",
+        "en": "Valery in his childhood"
+      }
+    },
+    {
+      "url": "Люда с братом Валерием.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Люда с братом Валерием",
+        "en": "Lyuda with her brother Valery"
+      }
+    },
+    {
+      "url": "Люда с младшим братом.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Люда с младшим братом",
+        "en": "Lyuda with her younger brother"
+      }
+    },
+    {
+      "url": "Молодая семья с дочкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Молодая семья с дочкой",
+        "en": "Young family with a daughter"
+      }
+    },
+    {
+      "url": "Прекрасные годы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Прекрасные годы",
+        "en": "Wonderful years"
+      }
+    },
+    {
+      "url": "Профессиональный музыкант Валерий Линецкий.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Профессиональный музыкант Валерий Линецкий",
+        "en": "Professional musician Valery Linetzky"
+      }
+    },
+    {
+      "url": "Роман с молодоженами.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Роман с молодоженами",
+        "en": "Roman with newlyweds"
+      }
+    },
+    {
+      "url": "Семейная фотография.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная фотография",
+        "en": "Family photo"
+      }
+    },
+    {
+      "url": "семейный дуэт.jpg",
+      "type": "image",
+      "title": {
+        "ru": "семейный дуэт",
+        "en": "family duet"
+      }
+    },
+    {
+      "url": "Семья Линецких.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Линецких",
+        "en": "The Linetsky family"
+      }
+    },
+    {
+      "url": "Сын моряка.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Сын моряка",
+        "en": "The Sailor's Son"
+      }
+    },
+    {
+      "url": "Улыбка будущего музыканта.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Улыбка будущего музыканта",
+        "en": "The smile of a future musician"
+      }
+    }
   ]
 };
