@@ -739,18 +739,20 @@ window.db = {
       "ru": "Юрий Михайлович Смагаринский",
       "en": "Yuri Mikhailovich Smagarinsky"
     },
-    "years": "02.09.1950 — ?",
+    "years": "02.09.1950—",
     "isDeceased": false,
     "mainPhoto": "photos/yuri1950.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Биробиджан, Хабаровский край"
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
         "ru": ""
       },
       "occupation": {
-        "ru": "работа в бизнесе "
+        "ru": "работа в бизнесе",
+        "en": "work in business"
       },
       "burial": {
         "ru": ""
