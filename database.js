@@ -697,18 +697,21 @@ window.db = {
       "ru": "Владимир Михайлович Смагаринский",
       "en": "Vladimir Mikhailovich Smagarinsky"
     },
-    "years": "23.07.1948 — ?",
+    "years": "23.07.1948—",
     "isDeceased": false,
     "mainPhoto": "photos/vladimir1948.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Биробиджан, Хабаровский край"
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
-        "ru": "Ольга Викторовна Смагаринская (Антонова) 14.06.1973"
+        "ru": "Ольга Викторовна Смагаринская (Антонова) 14.06.1973",
+        "en": "Olga Viktorovna Smagarinsky (Antonova) 06/14/1973"
       },
       "occupation": {
-        "ru": "инженер механик, работа в бизнесе "
+        "ru": "инженер механик, работа в бизнесе",
+        "en": "mechanical engineer, work in business"
       },
       "burial": {
         "ru": ""
@@ -719,8 +722,8 @@ window.db = {
       "en": []
     },
     "bio": {
-      "ru": "Закончил Астраханский институт рыбной промышленности и хозяйства в 1971 году по специальности \"Промышленное рыболовство\". Переехал с семьёй на постоянное место жительства в государство Израиль в 1994 году.",
-      "en": ""
+      "ru": "Закончил Астраханский институт рыбной промышленности и хозяйства в 1971 году по специальности \"Промышленное рыболовство\". Переехал с семьёй на постоянное место жительства в государство Израиль в 1994 году",
+      "en": "Vladimir graduated from the Astrakhan Institute of Fishing Industry and Economy in 1971 with a degree in Industrial Fishing. Vladimir moved with his family to Israel permanently in 1994."
     },
     "links": {
       "parents": [
