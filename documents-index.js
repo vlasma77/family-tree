@@ -1413,6 +1413,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Первый день в школе.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Первый день в школе",
+        "en": "First day at school"
+      }
+    },
+    {
       "url": "Поездка в Пензу.jpg",
       "type": "image",
       "title": {
@@ -1530,6 +1538,96 @@ window.documentsIndex = {
       "title": {
         "ru": "школа на Криуше, Астрахань",
         "en": "school on Kriusha, Astrakhan"
+      }
+    }
+  ],
+  "person_yuri_mikhailovich_1950": [
+    {
+      "url": "Биробиджан, Калинина 39.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан, Калинина 39",
+        "en": "Birobidzhan, Kalinina 39"
+      }
+    },
+    {
+      "url": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
+        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
+      }
+    },
+    {
+      "url": "Михаил с детьми.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил с детьми",
+        "en": "Mikhail with children"
+      }
+    },
+    {
+      "url": "Михаил с семьёй в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил с семьёй в Астрахани",
+        "en": "Mikhail and his family in Astrakhan"
+      }
+    },
+    {
+      "url": "Михаил с сыном Юрием.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил с сыном Юрием",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Нелла, Юра и Вова Смагаринские, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нелла, Юра и Вова Смагаринские, Астрахань",
+        "en": "Nella, Yura and Vova Smagarinsky, Astrakhan"
+      }
+    },
+    {
+      "url": "Семейная фотография.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная фотография",
+        "en": "Family photo"
+      }
+    },
+    {
+      "url": "Семейный ужин, Офаким, Израиль.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейный ужин, Офаким, Израиль",
+        "en": "Family dinner, Ofakim, Israel"
+      }
+    },
+    {
+      "url": "Фира с детьми в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира с детьми в Астрахани",
+        "en": "Fira with children in Astrakhan"
+      }
+    },
+    {
+      "url": "Фира с детьми.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира с детьми",
+        "en": "Fira with children"
+      }
+    },
+    {
+      "url": "Юрий Смагаринский, Израиль.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Юрий Смагаринский, Израиль",
+        "en": "Yuri Smagarinsky, Israel"
       }
     }
   ],
