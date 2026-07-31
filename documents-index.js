@@ -1631,6 +1631,200 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_nella_mikhailovna_1957": [
+    {
+      "url": "В парке Умани с родственниками.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В парке Умани с родственниками",
+        "en": "In Uman Park with relatives"
+      }
+    },
+    {
+      "url": "Владимир со своими сестрами.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Владимир со своими сестрами",
+        "en": "Vladimir with his sisters"
+      }
+    },
+    {
+      "url": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
+        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
+      }
+    },
+    {
+      "url": "Встреча с посланником Израиля, который проводил еврейские праздники в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча с посланником Израиля, который проводил еврейские праздники в Астрахани",
+        "en": "Meeting with the Israeli envoy who celebrated Jewish holidays in Astrakhan"
+      }
+    },
+    {
+      "url": "Встреча с родными в Умани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча с родными в Умани",
+        "en": "Meeting with relatives in Uman"
+      }
+    },
+    {
+      "url": "Михаил с детьми.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил с детьми",
+        "en": "Mikhail with children"
+      }
+    },
+    {
+      "url": "Михаил с семьёй в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил с семьёй в Астрахани",
+        "en": "Mikhail and his family in Astrakhan"
+      }
+    },
+    {
+      "url": "На встрече с родственниками в Умани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На встрече с родственниками в Умани",
+        "en": "At a meeting with relatives in Uman"
+      }
+    },
+    {
+      "url": "На папином мотороллере в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На папином мотороллере в Астрахани",
+        "en": "On dad's scooter in Astrakhan"
+      }
+    },
+    {
+      "url": "Нелла в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нелла в Астрахани",
+        "en": "Nella in Astrakhan"
+      }
+    },
+    {
+      "url": "Нелла в Киеве, 1965.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нелла в Киеве, 1965",
+        "en": "Nella in Kyiv, 1965"
+      }
+    },
+    {
+      "url": "Нелла на пикнике.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нелла на пикнике",
+        "en": "Nella on a picnic"
+      }
+    },
+    {
+      "url": "Нелла с сыном Артуром и братом Вовой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нелла с сыном Артуром и братом Вовой",
+        "en": "Nella with her son Artur and brother Vova"
+      }
+    },
+    {
+      "url": "Неожиданный момент.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Неожиданный момент",
+        "en": "An unexpected moment"
+      }
+    },
+    {
+      "url": "С мамой в парке Умани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С мамой в парке Умани",
+        "en": "With mother in Uman Park"
+      }
+    },
+    {
+      "url": "С сестрой Неллей, Варшава.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С сестрой Неллей, Варшава",
+        "en": "With sister Nella, Warsaw"
+      }
+    },
+    {
+      "url": "с тётей Златой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "с тётей Златой",
+        "en": "with Aunt Zlata"
+      }
+    },
+    {
+      "url": "Семейная фотография.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная фотография",
+        "en": "Family photo"
+      }
+    },
+    {
+      "url": "Семейный ужин, Офаким, Израиль.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейный ужин, Офаким, Израиль",
+        "en": "Family dinner, Ofakim, Israel"
+      }
+    },
+    {
+      "url": "Уманьские родственники.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Уманьские родственники",
+        "en": "Uman relatives"
+      }
+    },
+    {
+      "url": "Фира с детьми в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира с детьми в Астрахани",
+        "en": "Fira with children in Astrakhan"
+      }
+    },
+    {
+      "url": "Фира с детьми.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира с детьми",
+        "en": "Fira with children"
+      }
+    },
+    {
+      "url": "Фира с Нелечкой и Миля в парке Умани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира с Нелечкой и Миля в парке Умани",
+        "en": "Fira with Nelechka and Milya in Uman Park"
+      }
+    },
+    {
+      "url": "Хорошее настроение.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хорошее настроение",
+        "en": "good mood"
+      }
+    }
+  ],
   "person_fira_1927": [
     {
       "url": "Бабушка Фира.jpg",
