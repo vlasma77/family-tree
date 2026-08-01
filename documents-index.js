@@ -1357,10 +1357,10 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
+      "url": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
       "type": "image",
       "title": {
-        "ru": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
+        "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
         "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
       }
     },
@@ -1453,10 +1453,10 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "С сестрой Неллей, Варшава.jpg",
+      "url": "С сестрой Нэллей, Варшава.jpg",
       "type": "image",
       "title": {
-        "ru": "С сестрой Неллей, Варшава",
+        "ru": "С сестрой Нэллей, Варшава",
         "en": "With sister Nella, Warsaw"
       }
     },
@@ -1551,10 +1551,10 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
+      "url": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
       "type": "image",
       "title": {
-        "ru": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
+        "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
         "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
       }
     },
@@ -1583,10 +1583,10 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Нелла, Юра и Вова Смагаринские, Астрахань.jpg",
+      "url": "Нэлла, Юра и Вова Смагаринские, Астрахань.jpg",
       "type": "image",
       "title": {
-        "ru": "Нелла, Юра и Вова Смагаринские, Астрахань",
+        "ru": "Нэлла, Юра и Вова Смагаринские, Астрахань",
         "en": "Nella, Yura and Vova Smagarinsky, Astrakhan"
       }
     },
@@ -1649,10 +1649,10 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
+      "url": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
       "type": "image",
       "title": {
-        "ru": "Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
+        "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
         "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
       }
     },
@@ -1705,43 +1705,43 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Нелла в Астрахани.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Нелла в Астрахани",
-        "en": "Nella in Astrakhan"
-      }
-    },
-    {
-      "url": "Нелла в Киеве, 1965.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Нелла в Киеве, 1965",
-        "en": "Nella in Kyiv, 1965"
-      }
-    },
-    {
-      "url": "Нелла на пикнике.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Нелла на пикнике",
-        "en": "Nella on a picnic"
-      }
-    },
-    {
-      "url": "Нелла с сыном Артуром и братом Вовой.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Нелла с сыном Артуром и братом Вовой",
-        "en": "Nella with her son Artur and brother Vova"
-      }
-    },
-    {
       "url": "Неожиданный момент.jpg",
       "type": "image",
       "title": {
         "ru": "Неожиданный момент",
         "en": "An unexpected moment"
+      }
+    },
+    {
+      "url": "Нэлла в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нэлла в Астрахани",
+        "en": "Nella in Astrakhan"
+      }
+    },
+    {
+      "url": "Нэлла в Киеве, 1965.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нэлла в Киеве, 1965",
+        "en": "Nella in Kyiv, 1965"
+      }
+    },
+    {
+      "url": "Нэлла в Киеве, 2020.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нэлла в Киеве, 2020",
+        "en": "Nella in Kyiv, 2020"
+      }
+    },
+    {
+      "url": "Нэлла с сыном Артуром и братом Вовой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нэлла с сыном Артуром и братом Вовой",
+        "en": "Nella with her son Artur and brother Vova"
       }
     },
     {
@@ -1753,10 +1753,10 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "С сестрой Неллей, Варшава.jpg",
+      "url": "С сестрой Нэллей, Варшава.jpg",
       "type": "image",
       "title": {
-        "ru": "С сестрой Неллей, Варшава",
+        "ru": "С сестрой Нэллей, Варшава",
         "en": "With sister Nella, Warsaw"
       }
     },
@@ -1809,10 +1809,10 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Фира с Нелечкой и Миля в парке Умани.jpg",
+      "url": "Фира с Нэлечкой и Миля в парке Умани.jpg",
       "type": "image",
       "title": {
-        "ru": "Фира с Нелечкой и Миля в парке Умани",
+        "ru": "Фира с Нэлечкой и Миля в парке Умани",
         "en": "Fira with Nelechka and Milya in Uman Park"
       }
     },
@@ -2003,10 +2003,10 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Фира с Нелечкой и Миля в парке Умани.jpg",
+      "url": "Фира с Нэлечкой и Миля в парке Умани.jpg",
       "type": "image",
       "title": {
-        "ru": "Фира с Нелечкой и Миля в парке Умани",
+        "ru": "Фира с Нэлечкой и Миля в парке Умани",
         "en": "Fira with Nelechka and Milya in Uman Park"
       }
     },
@@ -2891,7 +2891,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил и Соня Каплун",
-        "en": "Mikhail and Sonya Kaplun"
+        "en": "Archival Document"
       }
     },
     {
@@ -2899,7 +2899,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил Каплун",
-        "en": "Mikhail Kaplun"
+        "en": "Archival Document"
       }
     }
   ],
@@ -2917,7 +2917,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Валерий Линецкий и Леонид Каплун",
-        "en": "Valery Linetzky and Leonid Kaplun"
+        "en": "Archival Document"
       }
     },
     {
@@ -2925,7 +2925,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Биробиджан",
-        "en": "Leonid Kaplun, Birobidzhan"
+        "en": "Archival Document"
       }
     },
     {
@@ -2933,7 +2933,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Израиль",
-        "en": "Leonid Kaplun, Israel"
+        "en": "Archival Document"
       }
     }
   ]
