@@ -206,6 +206,7 @@
    </div>
    <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
    <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
+   <button id="btn-edit-lock" onclick="toggleEditModeUI()" title="Режим редактирования" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 8px;cursor:pointer;font-size:16px;">🔒</button>
   </div>
 
   <div id="main-wrapper">
@@ -218,6 +219,52 @@
     const db = window.db || {};
     let activeNodeId = null;
     let treeInstance = null;
+
+    // === РЕЖИМ РЕДАКТИРОВАНИЯ (защищено паролем) ===
+    // ВАЖНО: это простая защита от случайных нажатий родственниками,
+    // а НЕ настоящая защита от взлома — сайт статический (без сервера),
+    // поэтому теоретически пароль можно найти в исходном коде страницы.
+    // Для семейного использования этого достаточно.
+    //
+    // Чтобы сменить пароль — поменяйте текст ниже, между кавычками:
+    const EDIT_PASSWORD = "kaluninA39";
+
+    function isEditModeOn() {
+      return localStorage.getItem("familyTreeEditMode") === "true";
+    }
+
+    window.toggleEditModeUI = function () {
+      if (isEditModeOn()) {
+        if (confirm("Выключить режим редактирования на этом устройстве?")) {
+          localStorage.removeItem("familyTreeEditMode");
+          location.reload();
+        }
+        return;
+      }
+      const pwd = prompt("Введите пароль для включения режима редактирования:");
+      if (pwd === null) return;
+      if (pwd === EDIT_PASSWORD) {
+        localStorage.setItem("familyTreeEditMode", "true");
+        alert("Режим редактирования включён на этом устройстве.");
+        location.reload();
+      } else {
+        alert("Неверный пароль.");
+      }
+    };
+
+    function updateEditLockIcon() {
+      const btn = document.getElementById("btn-edit-lock");
+      if (!btn) return;
+      if (isEditModeOn()) {
+        btn.textContent = "🔓";
+        btn.title = "Режим редактирования ВКЛЮЧЁН (нажмите, чтобы выключить)";
+        btn.style.borderColor = "#4CAF50";
+      } else {
+        btn.textContent = "🔒";
+        btn.title = "Режим редактирования выключен (нажмите, чтобы включить)";
+        btn.style.borderColor = "#ccc";
+      }
+    }
 
     function getPhotoUrl(id) {
       const person = db[id];
@@ -277,6 +324,7 @@
       }
     };
 window.copyDatabaseToClipboard = function() {
+      if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
       
       navigator.clipboard.writeText(fileContent).then(() => {
@@ -458,9 +506,12 @@ function closePanel() {
       let bioContent = person.bio ? getLangValue(person.bio) : "";
       let automaticFamilyContent = buildAutomaticFamilyHtml(nodeId);
 
+      const editMode = isEditModeOn();
+      const readonlyAttr = editMode ? "" : "readonly";
+
       panel.innerHTML = `
         <div style="position: absolute; top: 10px; right: 15px; display: flex; align-items: center; gap: 12px; z-index: 10;">
-          <span title="Режим редактирования активен" style="font-size: 18px; cursor: default; color: maroon;">✏️</span>
+          ${editMode ? '<span title="Режим редактирования активен" style="font-size: 18px; cursor: default; color: maroon;">✏️</span>' : ''}
          <span class="panel-close-btn" style="position: static; font-size: 28px;" onclick="closePanel()">&times;</span>
         </div>
         <div class="panel-content-scroll">
@@ -468,16 +519,16 @@ function closePanel() {
             <img class="panel-avatar" src="${photoUrl}" alt="Фото">
           </div>
           
-          <textarea id="inp-name" class="panel-textarea-name" placeholder="Имя Фамилия" rows="2">${getLangValue(person.name)}</textarea>
+          <textarea id="inp-name" class="panel-textarea-name" placeholder="Имя Фамилия" rows="2" ${readonlyAttr}>${getLangValue(person.name)}</textarea>
           
-          <input type="text" id="inp-years" class="panel-input-years" value="${person.years || ''}" placeholder="Годы жизни">
+          <input type="text" id="inp-years" class="panel-input-years" value="${person.years || ''}" placeholder="Годы жизни" ${readonlyAttr}>
 
           <div class="custom-title">${bText.vehi}</div>
           <table class="milestones-table">
-            <tr><td class="td-lbl">${bText.birth}:</td><td><input type="text" id="inp-birth" class="milestone-input" value="${getLangValue(ms.birthPlace)}"></td></tr>
-            <tr><td class="td-lbl">${bText.marriage}:</td><td><input type="text" id="inp-marriage" class="milestone-input" value="${getLangValue(ms.marriage)}"></td></tr>
-            <tr><td class="td-lbl">${bText.job}:</td><td><input type="text" id="inp-job" class="milestone-input" value="${getLangValue(ms.occupation)}"></td></tr>
-            <tr><td class="td-lbl">${bText.burial}:</td><td><input type="text" id="inp-burial" class="milestone-input" value="${getLangValue(ms.burial)}"></td></tr>
+            <tr><td class="td-lbl">${bText.birth}:</td><td><input type="text" id="inp-birth" class="milestone-input" value="${getLangValue(ms.birthPlace)}" ${readonlyAttr}></td></tr>
+            <tr><td class="td-lbl">${bText.marriage}:</td><td><input type="text" id="inp-marriage" class="milestone-input" value="${getLangValue(ms.marriage)}" ${readonlyAttr}></td></tr>
+            <tr><td class="td-lbl">${bText.job}:</td><td><input type="text" id="inp-job" class="milestone-input" value="${getLangValue(ms.occupation)}" ${readonlyAttr}></td></tr>
+            <tr><td class="td-lbl">${bText.burial}:</td><td><input type="text" id="inp-burial" class="milestone-input" value="${getLangValue(ms.burial)}" ${readonlyAttr}></td></tr>
           </table>
 
           <div class="custom-title">${bText.circle}</div>
@@ -487,40 +538,43 @@ function closePanel() {
 
           <div class="btn-row">
             ${archiveHtml}
-            <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
             <button class="action-btn" onclick="togglePureBio()">${bText.btn_more}</button>
-            
+            ${editMode ? `
+            <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
             <button class="action-btn" style="background-color: #e74c3c !important; color: white !important; border: none; cursor: pointer;" onclick="deletePerson(activeNodeId)">
                 ${bText.btn_delete}
-            </button>
+            </button>` : ''}
           </div>
 
+          ${editMode ? `
           <div id="geni-add-menu" class="geni-menu hidden-block">
             <button class="geni-btn" onclick="addRelativeDirect('father')">${bText.add_father}</button>
             <button class="geni-btn" onclick="addRelativeDirect('mother')">${bText.add_mother}</button>
             <button class="geni-btn" onclick="addRelativeDirect('spouse')">${bText.add_spouse}</button>
             <button class="geni-btn" onclick="addRelativeDirect('son')">${bText.add_son}</button>
             <button class="geni-btn" onclick="addRelativeDirect('daughter')">${bText.add_daughter}</button>
-          </div>
+          </div>` : ''}
 
           <div id="pure-bio-panel" class="bio-panel hidden-block">
             <div style="font-weight:bold; margin-bottom:5px; color:maroon; font-size:12px;">${bText.bio}:</div>
-            <textarea id="inp-bio" class="bio-textarea" placeholder="Введите историю жизни...">${bioContent}</textarea>
+            <textarea id="inp-bio" class="bio-textarea" placeholder="Введите историю жизни..." ${readonlyAttr}>${bioContent}</textarea>
           </div>
         </div>
 
+       ${editMode ? `
        <div class="panel-fixed-footer">
           <button class="btn-save" onclick="saveCurrentPersonData()">${bText.btn_save}</button>
           <div style="display: flex; gap: 6px;">
             <button class="btn-download-db" style="flex: 1; padding: 8px 4px; font-size: 11px;" onclick="downloadDatabaseFile()">${bText.btn_download}</button>
             <button class="btn-download-db" style="flex: 1; padding: 8px 4px; font-size: 11px; background-color: #2c3e50 !important;" onclick="copyDatabaseToClipboard()">${bText.btn_copy}</button>
           </div>
-        </div>
+        </div>` : ''}
       `;
 
       panel.style.display = "flex";
     }
 window.saveCurrentPersonData = function() {
+      if (!isEditModeOn()) { alert("Режим редактирования выключен. Включите его через значок замка в шапке сайта."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
       const person = db[activeNodeId];
       
@@ -566,6 +620,7 @@ window.saveCurrentPersonData = function() {
     };
 
     window.deletePerson = function(id) {
+      if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!id || !db[id]) {
         alert(currentLang === 'ru' ? "Ошибка: Карточка не найдена." : "Error: Person not found.");
         return;
@@ -604,6 +659,7 @@ window.saveCurrentPersonData = function() {
     };
 
     window.downloadDatabaseFile = function() {
+      if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
       const blob = new Blob([fileContent], { type: "text/javascript;charset=utf-8;" });
       const link = document.createElement("a");
@@ -626,6 +682,7 @@ window.saveCurrentPersonData = function() {
     };
 
  window.addRelativeDirect = function(role) {
+      if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
       
       let promptMsg = currentLang === 'ru' 
@@ -943,6 +1000,7 @@ window.saveCurrentPersonData = function() {
 
     // Запуск по умолчанию при загрузке страницы
     setLanguage('ru');
+    updateEditLockIcon();
   </script>
 </body>
 </html>
