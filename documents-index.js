@@ -1026,104 +1026,88 @@ window.documentsIndex = {
       "url": "grave_sonya.png",
       "type": "image",
       "title": {
-        "ru": "Grave Sonya",
-        "en": "Grave Sonya"
+        "ru": "Могила Сони",
+        "en": "Sonya's grave"
       }
     },
     {
       "url": "katya_sonya_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Katya Sonya Mira",
-        "en": "Katya Sonya Mira"
+        "ru": "Катя, Соня и Мира",
+        "en": "Katya, Sonya and Mira"
       }
     },
     {
       "url": "meeting_with_sisters.jpg",
       "type": "image",
       "title": {
-        "ru": "Meeting с Сёстры",
-        "en": "Meeting With Sisters"
+        "ru": "Встреча с сёстрами",
+        "en": "Meeting with the sisters"
       }
     },
     {
       "url": "photo_session_elatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Фото Session Elatives",
-        "en": "Photo Session Elatives"
+        "ru": "Фотосессия с родственниками",
+        "en": "Photo session with relatives"
       }
     },
     {
       "url": "sons_leonid_igor.jpg",
       "type": "image",
       "title": {
-        "ru": "Sons Leonid Igor",
-        "en": "Sons Leonid Igor"
-      }
-    },
-    {
-      "url": "sonya1929.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Sonya1929",
-        "en": "Sonya1929"
+        "ru": "Сыновья Леонид и Игорь",
+        "en": "Sons Leonid and Igor"
       }
     },
     {
       "url": "sonya_middle.png",
       "type": "image",
       "title": {
-        "ru": "Sonya Middle",
-        "en": "Sonya Middle"
+        "ru": "Соня в середине",
+        "en": "Sonya in the middle"
       }
     },
     {
       "url": "sonya_mikhail.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Mikhail",
-        "en": "Sonya Mikhail"
+        "ru": "Соня и Михаил",
+        "en": "Sonya and Mikhail"
       }
     },
     {
       "url": "sonya_mira_blyuma.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Mira Blyuma",
-        "en": "Sonya Mira Blyuma"
+        "ru": "Соня,Мира и Блюма",
+        "en": "Sonya, Mira and Bluma"
       }
     },
     {
       "url": "sonya_sister_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Сестра Mira",
-        "en": "Sonya Sister Mira"
+        "ru": "Соня с сестрой Мирой",
+        "en": "Sonya with her sister Mira"
       }
     },
     {
       "url": "sonya_with_relatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya с Relatives",
-        "en": "Sonya With Relatives"
-      }
-    },
-    {
-      "url": "valery linetzky and leonid kaplun.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Valery Linetzky And Leonid Kaplun",
-        "en": "Valery Linetzky And Leonid Kaplun"
+        "ru": "Соня с родственниками",
+        "en": "Sonya with her relatives"
       }
     },
     {
       "url": "with_parents.jpg",
       "type": "image",
       "title": {
-        "ru": "С Parents",
-        "en": "With Parents"
+        "ru": "Соня с родителями",
+        "en": "Sonya with her parents"
       }
     }
   ],
