@@ -384,7 +384,7 @@ window.db = {
   },
   "person_sonya_1929": {
     "name": {
-      "ru": "Соня Каплун (Смагаринская)",
+      "ru": "Соня Вульфовна Каплун (Смагаринская)",
       "en": "Sonya Kaplun (Smagarinskaya)"
     },
     "role": {
@@ -400,7 +400,7 @@ window.db = {
         "en": "Priluki, Chernigov province"
       },
       "marriage": {
-        "ru": "Михаил Каплун",
+        "ru": "Михаил Соломонович Каплун",
         "en": "Mikhail Kaplun"
       },
       "occupation": {
@@ -3079,7 +3079,7 @@ window.db = {
   "person_mikhail_abramovich_1928": {
     "id": "person_mikhail_abramovich_1928",
     "name": {
-      "ru": "Михаил Абрамович Каплун",
+      "ru": "Михаил Соломонович Каплун",
       "en": "Mikhail Abramovich Kaplun"
     },
     "years": "1928-2010",
@@ -3108,6 +3108,43 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_sonya_1929"
+    }
+  },
+  "person_leonid_1954": {
+    "id": "person_leonid_1954",
+    "name": {
+      "ru": "Леонид Михайлович Каплун",
+      "en": "Leonid Mikhailovich Kaplun"
+    },
+    "years": "03.02.1954-",
+    "mainPhoto": "photos/leonid1954.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsky Krai"
+      },
+      "marriage": {
+        "ru": "Галина Каплун",
+        "en": "Galina Kaplun"
+      },
+      "occupation": {
+        "ru": "учитель вождения",
+        "en": "driving teacher"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_mikhail_abramovich_1928",
+        "person_sonya_1929"
+      ],
+      "spouse": null
     }
   }
 };
