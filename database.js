@@ -427,7 +427,8 @@ window.db = {
       "parents": [
         "person_vulf_1898",
         "person_blyuma_1895"
-      ]
+      ],
+      "spouse": "person_mikhail_abramovich_1928"
     },
     "archive": "person_sonya_1929",
     "gender": "female"
@@ -3074,5 +3075,39 @@ window.db = {
       "spouse": null
     },
     "gender": "male"
+  },
+  "person_mikhail_abramovich_1928": {
+    "id": "person_mikhail_abramovich_1928",
+    "name": {
+      "ru": "Михаил Абрамович Каплун",
+      "en": "Mikhail Abramovich Kaplun"
+    },
+    "years": "1928-2010",
+    "mainPhoto": "photos/mikhail1928.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Новозыбково, Гомель, Беларусь",
+        "en": "Novozybkovo, Gomel, Belarus"
+      },
+      "marriage": {
+        "ru": "Соня Вульфовна Каплун (Смагаринская)",
+        "en": "Sonya Vulfovna Kaplun (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "кладбище Цур Шалом, Кирьят-Бялик, Израиль",
+        "en": "Tzur Shalom Cemetery, Kiryat Bialik, Israel"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_sonya_1929"
+    }
   }
 };
