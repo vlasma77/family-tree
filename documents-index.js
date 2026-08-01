@@ -1361,7 +1361,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
-        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
+        "en": "Archival Document"
       }
     },
     {
@@ -1457,7 +1457,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "С сестрой Нэллей, Варшава",
-        "en": "With sister Nella, Warsaw"
+        "en": "Archival Document"
       }
     },
     {
@@ -1555,7 +1555,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
-        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
+        "en": "Archival Document"
       }
     },
     {
@@ -1587,7 +1587,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла, Юра и Вова Смагаринские, Астрахань",
-        "en": "Nella, Yura and Vova Smagarinsky, Astrakhan"
+        "en": "Archival Document"
       }
     },
     {
@@ -1653,7 +1653,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
-        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
+        "en": "Archival Document"
       }
     },
     {
@@ -1717,7 +1717,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла в Астрахани",
-        "en": "Nella in Astrakhan"
+        "en": "Archival Document"
       }
     },
     {
@@ -1725,7 +1725,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла в Киеве, 1965",
-        "en": "Nella in Kyiv, 1965"
+        "en": "Archival Document"
       }
     },
     {
@@ -1733,7 +1733,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла в Киеве, 2020",
-        "en": "Nella in Kyiv, 2020"
+        "en": "Archival Document"
       }
     },
     {
@@ -1741,7 +1741,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла с сыном Артуром и братом Вовой",
-        "en": "Nella with her son Artur and brother Vova"
+        "en": "Archival Document"
       }
     },
     {
@@ -1757,7 +1757,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "С сестрой Нэллей, Варшава",
-        "en": "With sister Nella, Warsaw"
+        "en": "Archival Document"
       }
     },
     {
@@ -1813,7 +1813,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Фира с Нэлечкой и Миля в парке Умани",
-        "en": "Fira with Nelechka and Milya in Uman Park"
+        "en": "Archival Document"
       }
     },
     {
@@ -2007,7 +2007,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Фира с Нэлечкой и Миля в парке Умани",
-        "en": "Fira with Nelechka and Milya in Uman Park"
+        "en": "Archival Document"
       }
     },
     {
