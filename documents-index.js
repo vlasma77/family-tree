@@ -2884,5 +2884,23 @@ window.documentsIndex = {
         "en": "The smile of a future musician"
       }
     }
+  ],
+  "person_mikhail_abramovich_1928": [
+    {
+      "url": "Михаил и Соня Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил и Соня Каплун",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Михаил Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил Каплун",
+        "en": "Archival Document"
+      }
+    }
   ]
 };
