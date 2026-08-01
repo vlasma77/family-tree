@@ -1026,88 +1026,88 @@ window.documentsIndex = {
       "url": "grave_sonya.png",
       "type": "image",
       "title": {
-        "ru": "Могила Сони",
-        "en": "Sonya's grave"
+        "ru": "Grave Sonya",
+        "en": "Grave Sonya"
       }
     },
     {
       "url": "katya_sonya_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Катя, Соня и Мира",
-        "en": "Katya, Sonya and Mira"
+        "ru": "Katya Sonya Mira",
+        "en": "Katya Sonya Mira"
       }
     },
     {
       "url": "meeting_with_sisters.jpg",
       "type": "image",
       "title": {
-        "ru": "Встреча с сёстрами",
-        "en": "Meeting with the sisters"
+        "ru": "Meeting с Сёстры",
+        "en": "Meeting With Sisters"
       }
     },
     {
       "url": "photo_session_elatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Фотосессия с родственниками",
-        "en": "Photo session with relatives"
+        "ru": "Фото Session Elatives",
+        "en": "Photo Session Elatives"
       }
     },
     {
       "url": "sons_leonid_igor.jpg",
       "type": "image",
       "title": {
-        "ru": "Сыновья Леонид и Игорь",
-        "en": "Sons Leonid and Igor"
+        "ru": "Sons Leonid Igor",
+        "en": "Sons Leonid Igor"
       }
     },
     {
       "url": "sonya_middle.png",
       "type": "image",
       "title": {
-        "ru": "Соня в середине",
-        "en": "Sonya in the middle"
+        "ru": "Sonya Middle",
+        "en": "Sonya Middle"
       }
     },
     {
       "url": "sonya_mikhail.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня и Михаил",
-        "en": "Sonya and Mikhail"
+        "ru": "Sonya Mikhail",
+        "en": "Sonya Mikhail"
       }
     },
     {
       "url": "sonya_mira_blyuma.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня,Мира и Блюма",
-        "en": "Sonya, Mira and Bluma"
+        "ru": "Sonya Mira Blyuma",
+        "en": "Sonya Mira Blyuma"
       }
     },
     {
       "url": "sonya_sister_mira.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня с сестрой Мирой",
-        "en": "Sonya with her sister Mira"
+        "ru": "Sonya Сестра Mira",
+        "en": "Sonya Sister Mira"
       }
     },
     {
       "url": "sonya_with_relatives.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня с родственниками",
-        "en": "Sonya with her relatives"
+        "ru": "Sonya с Relatives",
+        "en": "Sonya With Relatives"
       }
     },
     {
       "url": "with_parents.jpg",
       "type": "image",
       "title": {
-        "ru": "Соня с родителями",
-        "en": "Sonya with her parents"
+        "ru": "С Parents",
+        "en": "With Parents"
       }
     }
   ],
@@ -2889,6 +2889,14 @@ window.documentsIndex = {
   ],
   "person_leonid_1954": [
     {
+      "url": "Анатолий с молодой семьёй Лёни Каплуна.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий с молодой семьёй Лёни Каплуна",
+        "en": "Anatoly with Lenya Kaplun's young family"
+      }
+    },
+    {
       "url": "Валера с братом Лёней.jpg",
       "type": "image",
       "title": {
@@ -2901,7 +2909,23 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Валерий Линецкий и Леонид Каплун",
-        "en": "Archival Document"
+        "en": "Valery Linetzky and Leonid Kaplun"
+      }
+    },
+    {
+      "url": "Встреча Линецких и Каплунов.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча Линецких и Каплунов",
+        "en": "Meeting of the Linetzkys and the Kapluns"
+      }
+    },
+    {
+      "url": "Леня и Игорь Каплун, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Леня и Игорь Каплун, Биробиджан",
+        "en": "Lenya and Igor Kaplun, Birobidzhan"
       }
     },
     {
@@ -2909,7 +2933,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Биробиджан",
-        "en": "Archival Document"
+        "en": "Leonid Kaplun, Birobidzhan"
       }
     },
     {
@@ -2917,7 +2941,31 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Израиль",
-        "en": "Archival Document"
+        "en": "Leonid Kaplun, Israel"
+      }
+    },
+    {
+      "url": "Леонид с двоюродной сестрой Светой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Леонид с двоюродной сестрой Светой",
+        "en": "Leonid with his cousin Sveta"
+      }
+    },
+    {
+      "url": "Молодая семья Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Молодая семья Каплун",
+        "en": "The young Kaplun family"
+      }
+    },
+    {
+      "url": "Утёнок с Лёней Каплуном.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Утёнок с Лёней Каплуном",
+        "en": "Duckling with Lenya Kaplun"
       }
     }
   ]
