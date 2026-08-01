@@ -3076,11 +3076,11 @@ window.db = {
     },
     "gender": "male"
   },
-  "person_mikhail_abramovich_1928": {
-    "id": "person_mikhail_abramovich_1928",
+  "person_mikhail_solomonovich_1928": {
+    "id": "person_mikhail_solomonovich_1928",
     "name": {
       "ru": "Михаил Соломонович Каплун",
-      "en": "Mikhail Abramovich Kaplun"
+      "en": "Mikhail Solomonovich Kaplun"
     },
     "years": "1928-2010",
     "mainPhoto": "photos/mikhail1928.jpg",
