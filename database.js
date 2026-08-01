@@ -385,7 +385,7 @@ window.db = {
   "person_sonya_1929": {
     "name": {
       "ru": "Соня Вульфовна Каплун (Смагаринская)",
-      "en": "Sonya Kaplun (Smagarinskaya)"
+      "en": "Sonya Kaplun (Smagarinsky)"
     },
     "role": {
       "ru": "",
@@ -401,7 +401,7 @@ window.db = {
       },
       "marriage": {
         "ru": "Михаил Соломонович Каплун",
-        "en": "Mikhail Kaplun"
+        "en": "Mikhail Solomonovich Kaplun"
       },
       "occupation": {
         "ru": "Швея",
@@ -420,7 +420,7 @@ window.db = {
         "Родители: Вульф Смагаринский, Блюма Смагаринская"
       ],
       "en": [
-        "Parents: Vulf Smagarinsky, Blyuma Smagarinskaya"
+        "Parents: Vulf Smagarinsky, Blyuma Smagarinsky"
       ]
     },
     "links": {
