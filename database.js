@@ -778,7 +778,7 @@ window.db = {
   },
   "person_nella_mikhailovna_1957": {
     "name": {
-      "ru": "Нелла Михайловна Смагаринская",
+      "ru": "Нэлла Михайловна Смагаринская",
       "en": "Nella Mikhailovna Smagarinsky"
     },
     "years": "13.12.1957—",
