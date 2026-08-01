@@ -428,7 +428,7 @@ window.db = {
         "person_vulf_1898",
         "person_blyuma_1895"
       ],
-      "spouse": "person_mikhail_abramovich_1928"
+      "spouse": "person_mikhail_solomonovich_1928"
     },
     "archive": "person_sonya_1929",
     "gender": "female"
@@ -3141,7 +3141,7 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_mikhail_abramovich_1928",
+        "person_mikhail_solomonovich_1928",
         "person_sonya_1929"
       ],
       "spouse": null
