@@ -2885,13 +2885,13 @@ window.documentsIndex = {
       }
     }
   ],
-  "person_mikhail_abramovich_1928": [
+  "person_mikhail_solomonovich_1928": [
     {
       "url": "Михаил и Соня Каплун.jpg",
       "type": "image",
       "title": {
         "ru": "Михаил и Соня Каплун",
-        "en": "Archival Document"
+        "en": "Mikhail and Sonya Kaplun"
       }
     },
     {
@@ -2899,7 +2899,41 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил Каплун",
-        "en": "Archival Document"
+        "en": "Mikhail Kaplun"
+      }
+    }
+  ],
+  "person_leonid_1954": [
+    {
+      "url": "Валера с братом Лёней.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валера с братом Лёней",
+        "en": "Valera with his brother Lenya"
+      }
+    },
+    {
+      "url": "Валерий Линецкий и Леонид Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валерий Линецкий и Леонид Каплун",
+        "en": "Valery Linetzky and Leonid Kaplun"
+      }
+    },
+    {
+      "url": "Леонид Каплун, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Леонид Каплун, Биробиджан",
+        "en": "Leonid Kaplun, Birobidzhan"
+      }
+    },
+    {
+      "url": "Леонид Каплун, Израиль.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Леонид Каплун, Израиль",
+        "en": "Leonid Kaplun, Israel"
       }
     }
   ]
