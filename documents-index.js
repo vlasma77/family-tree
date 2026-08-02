@@ -1555,7 +1555,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил с сыном Юрием",
-        "en": "Mikhail with his son Yuri"
+        "en": "Archival Document"
       }
     },
     {
@@ -1563,7 +1563,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла, Юра и Вова Смагаринские, Астрахань",
-        "en": "Nella, Yura and Vova Smagarinsky, Astrakhan"
+        "en": "Archival Document"
       }
     },
     {
@@ -2867,7 +2867,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил и Соня Каплун",
-        "en": "Mikhail and Sonya Kaplun"
+        "en": "Archival Document"
       }
     },
     {
@@ -2875,7 +2875,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил Каплун",
-        "en": "Mikhail Kaplun"
+        "en": "Archival Document"
       }
     }
   ],
@@ -2885,7 +2885,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Анатолий с молодой семьёй Лёни Каплуна",
-        "en": "Anatoly with Lenya Kaplun's young family"
+        "en": "Archival Document"
       }
     },
     {
@@ -2901,7 +2901,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Валерий Линецкий и Леонид Каплун",
-        "en": "Valery Linetsky and Leonid Kaplun"
+        "en": "Archival Document"
       }
     },
     {
@@ -2925,7 +2925,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Биробиджан",
-        "en": "Leonid Kaplun, Birobidzhan"
+        "en": "Archival Document"
       }
     },
     {
@@ -2933,7 +2933,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Израиль",
-        "en": "Leonid Kaplun, Israel"
+        "en": "Archival Document"
       }
     },
     {
@@ -2941,7 +2941,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид с двоюродной сестрой Светой",
-        "en": "Leonid with his cousin Sveta"
+        "en": "Archival Document"
       }
     },
     {
@@ -2949,7 +2949,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Молодая семья Каплун",
-        "en": "The young Kaplun family"
+        "en": "Archival Document"
       }
     },
     {
@@ -2957,7 +2957,65 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Утёнок с Лёней Каплуном",
-        "en": "Duckling with Lenya Kaplun"
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_igor_1958": [
+    {
+      "url": "Встреча Линецких и Каплунов.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча Линецких и Каплунов",
+        "en": "Meeting of the Linetskys and the Kapluns"
+      }
+    },
+    {
+      "url": "Игорь в зрелые годы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Игорь в зрелые годы",
+        "en": "Igor in his mature years"
+      }
+    },
+    {
+      "url": "Игорь Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Игорь Каплун",
+        "en": "Igor Kaplun"
+      }
+    },
+    {
+      "url": "Леня и Игорь Каплун, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Леня и Игорь Каплун, Биробиджан",
+        "en": "Lenya and Igor Kaplun, Birobidzhan"
+      }
+    },
+    {
+      "url": "Мужской коллектив.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мужской коллектив",
+        "en": "Male collective"
+      }
+    },
+    {
+      "url": "Соня с сыновьями Леонидом и Игорем.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Соня с сыновьями Леонидом и Игорем",
+        "en": "Sonya with her sons Leonid and Igor"
+      }
+    },
+    {
+      "url": "фото с паспорта.jpg",
+      "type": "image",
+      "title": {
+        "ru": "фото с паспорта",
+        "en": "passport photo"
       }
     }
   ]
