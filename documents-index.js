@@ -2687,6 +2687,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Саша и Катя Рубинович.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Саша и Катя Рубинович",
+        "en": "Sasha and Katya Rubinovich"
+      }
+    },
+    {
       "url": "Фотосессия с родственниками.jpg",
       "type": "image",
       "title": {
