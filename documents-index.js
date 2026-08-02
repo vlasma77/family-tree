@@ -463,6 +463,14 @@ window.documentsIndex = {
   ],
   "person_mikhail_1922": [
     {
+      "url": "Анатолий, Михаил, Соня и Фира.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий, Михаил, Соня и Фира",
+        "en": "Anatoly, Mikhail, Sonya and Fira"
+      }
+    },
+    {
       "url": "Архивная справка переписи населения 1923.jpg",
       "type": "image",
       "title": {
@@ -607,6 +615,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Миша Смагаринский с Соней и Галей Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миша Смагаринский с Соней и Галей Каплун",
+        "en": "Misha Smagarinsky with Sonya and Galya Kaplun"
+      }
+    },
+    {
       "url": "Могила в Офакиме.jpg",
       "type": "image",
       "title": {
@@ -676,6 +692,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Семейная фотография",
         "en": "Family photo"
+      }
+    },
+    {
+      "url": "Семейный совет, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейный совет, Астрахань",
+        "en": "Family Council, Astrakhan"
       }
     },
     {
@@ -1867,6 +1891,14 @@ window.documentsIndex = {
   ],
   "person_fira_1927": [
     {
+      "url": "Анатолий, Михаил, Соня и Фира.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий, Михаил, Соня и Фира",
+        "en": "Anatoly, Mikhail, Sonya and Fira"
+      }
+    },
+    {
       "url": "Бабушка Фира.jpg",
       "type": "image",
       "title": {
@@ -2008,6 +2040,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Семейная фотография",
         "en": "Family photo"
+      }
+    },
+    {
+      "url": "Семейный совет, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейный совет, Астрахань",
+        "en": "Family Council, Astrakhan"
       }
     },
     {
