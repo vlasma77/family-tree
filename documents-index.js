@@ -1313,6 +1313,22 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Анатолий, Михаил, Соня и Фира.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий, Михаил, Соня и Фира",
+        "en": "Anatoly, Mikhail, Sonya and Fira"
+      }
+    },
+    {
+      "url": "В гостях у  Вульфа с Блюмой, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В гостях у  Вульфа с Блюмой, Астрахань",
+        "en": "Visiting Wolf with Bluma, Astrakhan"
+      }
+    },
+    {
       "url": "Владимир, Анатолий и Михаил.jpg",
       "type": "image",
       "title": {
@@ -1361,6 +1377,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Посиделки на скамейке.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Посиделки на скамейке",
+        "en": "Bench time"
+      }
+    },
+    {
       "url": "Света, дочь Анатолия.jpg",
       "type": "image",
       "title": {
@@ -1369,11 +1393,43 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Семейный совет, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейный совет, Астрахань",
+        "en": "Family Council, Astrakhan"
+      }
+    },
+    {
+      "url": "слева направо Галя Каплун, Анатолий Смагаринский, Евгений и Катя Рубинович и Женечка Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "слева направо Галя Каплун, Анатолий Смагаринский, Евгений и Катя Рубинович и Женечка Каплун",
+        "en": "From left to right: Galya Kaplun, Anatoly Smagarinsky, Evgeny and Katya Rubinovich, and Zhenechka Kaplun"
+      }
+    },
+    {
+      "url": "справа налево Мира, Миша и Соня Каплун, слева Ефим.jpg",
+      "type": "image",
+      "title": {
+        "ru": "справа налево Мира, Миша и Соня Каплун, слева Ефим",
+        "en": "from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim"
+      }
+    },
+    {
       "url": "Супружеский танец.jpg",
       "type": "image",
       "title": {
         "ru": "Супружеский танец",
         "en": "Marital dance"
+      }
+    },
+    {
+      "url": "Толя и Галя Смагаринские с маленькой Светочкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Толя и Галя Смагаринские с маленькой Светочкой",
+        "en": "Tolya and Galya Smagarinsky with little Svetochka"
       }
     }
   ],
