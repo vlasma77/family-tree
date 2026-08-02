@@ -721,11 +721,27 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Евгений с женойТаней и мамой, слева Соня Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Евгений с женойТаней и мамой, слева Соня Каплун",
+        "en": "Evgeny with his wife Tanya and mother, with Sonya Kaplun on the left."
+      }
+    },
+    {
       "url": "Катя в парке, Астрахань.jpg",
       "type": "image",
       "title": {
         "ru": "Катя в парке, Астрахань",
         "en": "Katya in the park, Astrakhan"
+      }
+    },
+    {
+      "url": "Катя Рубинович с сыном Евгением и Алла Смагаринская.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Катя Рубинович с сыном Евгением и Алла Смагаринская",
+        "en": "Katya Rubinovich with her son Evgeny and Alla Smagarinskaya"
       }
     },
     {
@@ -742,6 +758,30 @@ window.documentsIndex = {
       "title": {
         "ru": "Катя, 1965",
         "en": "Katya, 1965"
+      }
+    },
+    {
+      "url": "Посиделки на скамейке.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Посиделки на скамейке",
+        "en": "Bench time"
+      }
+    },
+    {
+      "url": "Саша и Катя Рубинович.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Саша и Катя Рубинович",
+        "en": "Sasha and Katya Rubinovich"
+      }
+    },
+    {
+      "url": "слева направо Галя Каплун, Анатолий Смагаринский, Евгений и Катя Рубинович и Женечка Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "слева направо Галя Каплун, Анатолий Смагаринский, Евгений и Катя Рубинович и Женечка Каплун",
+        "en": "From left to right: Galya Kaplun, Anatoly Smagarinsky, Evgeny and Katya Rubinovich, and Zhenechka Kaplun"
       }
     },
     {
