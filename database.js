@@ -3146,5 +3146,41 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_igor_1958": {
+    "id": "person_igor_1958",
+    "name": {
+      "ru": "Игорь Михайлович Каплун",
+      "en": "Igor Mikhailovich Kaplun"
+    },
+    "years": "10.04.1958-",
+    "mainPhoto": "photos/igor1958.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsky Krai"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": "работа в бизнесе",
+        "en": "work in business"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_mikhail_solomonovich_1928",
+        "person_sonya_1929"
+      ],
+      "spouse": null
+    }
   }
 };
