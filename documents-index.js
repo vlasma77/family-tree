@@ -1023,91 +1023,91 @@ window.documentsIndex = {
   ],
   "person_sonya_1929": [
     {
-      "url": "grave_sonya.png",
+      "url": "Встреча с сёстрами.jpg",
       "type": "image",
       "title": {
-        "ru": "Grave Sonya",
-        "en": "Grave Sonya"
+        "ru": "Встреча с сёстрами",
+        "en": "Meeting with the sisters"
       }
     },
     {
-      "url": "katya_sonya_mira.jpg",
+      "url": "Катя, Соня и Мира.jpg",
       "type": "image",
       "title": {
-        "ru": "Katya Sonya Mira",
-        "en": "Katya Sonya Mira"
+        "ru": "Катя, Соня и Мира",
+        "en": "Katya, Sonya and Mira"
       }
     },
     {
-      "url": "meeting_with_sisters.jpg",
+      "url": "Могила Сони.jpg",
       "type": "image",
       "title": {
-        "ru": "Meeting с Сёстры",
-        "en": "Meeting With Sisters"
+        "ru": "Могила Сони",
+        "en": "Sonya's grave"
       }
     },
     {
-      "url": "photo_session_elatives.jpg",
+      "url": "Соня в центре.jpg",
       "type": "image",
       "title": {
-        "ru": "Фото Session Elatives",
-        "en": "Photo Session Elatives"
+        "ru": "Соня в центре",
+        "en": "Sonya in the center"
       }
     },
     {
-      "url": "sons_leonid_igor.jpg",
+      "url": "Соня и Михаил Каплун.jpg",
       "type": "image",
       "title": {
-        "ru": "Sons Leonid Igor",
-        "en": "Sons Leonid Igor"
+        "ru": "Соня и Михаил Каплун",
+        "en": "Sonya and Mikhail Kaplun"
       }
     },
     {
-      "url": "sonya_middle.png",
+      "url": "Соня с родителями.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Middle",
-        "en": "Sonya Middle"
+        "ru": "Соня с родителями",
+        "en": "Sonya with her parents"
       }
     },
     {
-      "url": "sonya_mikhail.jpg",
+      "url": "Соня с родственниками.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Mikhail",
-        "en": "Sonya Mikhail"
+        "ru": "Соня с родственниками",
+        "en": "Sonya with her relatives"
       }
     },
     {
-      "url": "sonya_mira_blyuma.jpg",
+      "url": "Соня с сестрой Мирой.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Mira Blyuma",
-        "en": "Sonya Mira Blyuma"
+        "ru": "Соня с сестрой Мирой",
+        "en": "Sonya with her sister Mira"
       }
     },
     {
-      "url": "sonya_sister_mira.jpg",
+      "url": "Соня с сыновьями Леонидом и Игорем.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya Сестра Mira",
-        "en": "Sonya Sister Mira"
+        "ru": "Соня с сыновьями Леонидом и Игорем",
+        "en": "Sonya with her sons Leonid and Igor"
       }
     },
     {
-      "url": "sonya_with_relatives.jpg",
+      "url": "Соня, Мира и Блюма.jpg",
       "type": "image",
       "title": {
-        "ru": "Sonya с Relatives",
-        "en": "Sonya With Relatives"
+        "ru": "Соня, Мира и Блюма",
+        "en": "Sonya, Mira and Bluma"
       }
     },
     {
-      "url": "with_parents.jpg",
+      "url": "Фотосессия с родственниками.jpg",
       "type": "image",
       "title": {
-        "ru": "С Parents",
-        "en": "With Parents"
+        "ru": "Фотосессия с родственниками",
+        "en": "Photo session with relatives"
       }
     }
   ],
@@ -1345,7 +1345,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
-        "en": "Archival Document"
+        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
       }
     },
     {
@@ -1441,7 +1441,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "С сестрой Нэллей, Варшава",
-        "en": "Archival Document"
+        "en": "With sister Nella, Warsaw"
       }
     },
     {
@@ -1539,7 +1539,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
-        "en": "Archival Document"
+        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
       }
     },
     {
@@ -1637,7 +1637,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
-        "en": "Archival Document"
+        "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
       }
     },
     {
@@ -1701,7 +1701,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла в Астрахани",
-        "en": "Archival Document"
+        "en": "Nella in Astrakhan"
       }
     },
     {
@@ -1709,7 +1709,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла в Киеве, 1965",
-        "en": "Archival Document"
+        "en": "Nella in Kyiv, 1965"
       }
     },
     {
@@ -1717,7 +1717,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла в Киеве, 2020",
-        "en": "Archival Document"
+        "en": "Nella in Kyiv, 2020"
       }
     },
     {
@@ -1725,7 +1725,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла с сыном Артуром и братом Вовой",
-        "en": "Archival Document"
+        "en": "Nella with her son Artur and brother Vova"
       }
     },
     {
@@ -1741,7 +1741,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "С сестрой Нэллей, Варшава",
-        "en": "Archival Document"
+        "en": "With sister Nella, Warsaw"
       }
     },
     {
@@ -1797,7 +1797,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Фира с Нэлечкой и Миля в парке Умани",
-        "en": "Archival Document"
+        "en": "Fira with Nelechka and Milya in Uman Park"
       }
     },
     {
@@ -1991,7 +1991,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Фира с Нэлечкой и Миля в парке Умани",
-        "en": "Archival Document"
+        "en": "Fira with Nelechka and Milya in Uman Park"
       }
     },
     {
@@ -2547,7 +2547,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Фотосессия с родственниками",
-        "en": "Archival Photo"
+        "en": "Photo session with relatives"
       }
     },
     {
@@ -2893,7 +2893,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Анатолий с молодой семьёй Лёни Каплуна",
-        "en": "Anatoly with Lenya Kaplun's young family"
+        "en": "Archival Document"
       }
     },
     {
@@ -2909,7 +2909,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Валерий Линецкий и Леонид Каплун",
-        "en": "Valery Linetzky and Leonid Kaplun"
+        "en": "Archival Document"
       }
     },
     {
@@ -2917,7 +2917,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Встреча Линецких и Каплунов",
-        "en": "Meeting of the Linetzkys and the Kapluns"
+        "en": "Archival Document"
       }
     },
     {
@@ -2925,7 +2925,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леня и Игорь Каплун, Биробиджан",
-        "en": "Lenya and Igor Kaplun, Birobidzhan"
+        "en": "Archival Document"
       }
     },
     {
@@ -2933,7 +2933,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Биробиджан",
-        "en": "Leonid Kaplun, Birobidzhan"
+        "en": "Archival Document"
       }
     },
     {
@@ -2941,7 +2941,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Израиль",
-        "en": "Leonid Kaplun, Israel"
+        "en": "Archival Document"
       }
     },
     {
@@ -2949,7 +2949,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид с двоюродной сестрой Светой",
-        "en": "Leonid with his cousin Sveta"
+        "en": "Archival Document"
       }
     },
     {
@@ -2957,7 +2957,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Молодая семья Каплун",
-        "en": "The young Kaplun family"
+        "en": "Archival Document"
       }
     },
     {
@@ -2965,7 +2965,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Утёнок с Лёней Каплуном",
-        "en": "Duckling with Lenya Kaplun"
+        "en": "Archival Document"
       }
     }
   ]
