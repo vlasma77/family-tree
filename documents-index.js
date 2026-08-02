@@ -1563,7 +1563,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил с сыном Юрием",
-        "en": "Archival Document"
+        "en": "Mikhail with his son Yuri"
       }
     },
     {
@@ -1571,7 +1571,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Нэлла, Юра и Вова Смагаринские, Астрахань",
-        "en": "Archival Document"
+        "en": "Nella, Yura and Vova Smagarinsky, Astrakhan"
       }
     },
     {
