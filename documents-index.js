@@ -2353,6 +2353,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Валера с сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валера с сестрой Наташей",
+        "en": "Valera with his sister Natasha"
+      }
+    },
+    {
       "url": "Встреча взрослых детей.jpg",
       "type": "image",
       "title": {
