@@ -2271,6 +2271,14 @@ window.documentsIndex = {
   ],
   "person_valery_1955": [
     {
+      "url": "Валера с сестрой Наташей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валера с сестрой Наташей",
+        "en": "Archival Document"
+      }
+    },
+    {
       "url": "Встреча в Москве.jpg",
       "type": "image",
       "title": {
