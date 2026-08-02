@@ -2275,7 +2275,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Валера с сестрой Наташей",
-        "en": "Archival Document"
+        "en": "Valera with his sister Natasha"
       }
     },
     {
