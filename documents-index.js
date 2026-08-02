@@ -2185,7 +2185,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Катя Рубинович с сыном Евгением и Алла Смагаринская",
-        "en": "Archival Document"
+        "en": "Katya Rubinovich with her son Evgeny and Alla Smagarinskaya"
       }
     },
     {
