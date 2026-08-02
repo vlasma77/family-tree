@@ -349,14 +349,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Ефим в молодые годы.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ефим в молодые годы",
-        "en": "Efim in his younger years"
-      }
-    },
-    {
       "url": "Ефим на отдыхе.jpg",
       "type": "image",
       "title": {
