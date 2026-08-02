@@ -2875,7 +2875,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил и Соня Каплун",
-        "en": "Archival Document"
+        "en": "Mikhail and Sonya Kaplun"
       }
     },
     {
@@ -2883,7 +2883,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил Каплун",
-        "en": "Archival Document"
+        "en": "Mikhail Kaplun"
       }
     }
   ],
