@@ -2931,7 +2931,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил и Соня Каплун",
-        "en": "Archival Document"
+        "en": "Mikhail and Sonya Kaplun"
       }
     },
     {
@@ -2939,7 +2939,47 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Михаил Каплун",
-        "en": "Archival Document"
+        "en": "Mikhail Kaplun"
+      }
+    },
+    {
+      "url": "Михаил Соломонович Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил Соломонович Каплун",
+        "en": "Mikhail Solomonovich Kaplun"
+      }
+    },
+    {
+      "url": "Мужской коллектив.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мужской коллектив",
+        "en": "Male collective"
+      }
+    },
+    {
+      "url": "свидетельство о браке Сони.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о браке Сони",
+        "en": "Sonya's marriage certificate"
+      }
+    },
+    {
+      "url": "Соломон Каплун, отец Михаила.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Соломон Каплун, отец Михаила",
+        "en": "Solomon Kaplun, Mikhail's father"
+      }
+    },
+    {
+      "url": "справа налево Мира, Миша и Соня Каплун, слева Ефим.jpg",
+      "type": "image",
+      "title": {
+        "ru": "справа налево Мира, Миша и Соня Каплун, слева Ефим",
+        "en": "from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim"
       }
     }
   ],
