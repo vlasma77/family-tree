@@ -1015,6 +1015,14 @@ window.documentsIndex = {
   ],
   "person_sonya_1929": [
     {
+      "url": "Анатолий, Михаил, Соня и Фира.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий, Михаил, Соня и Фира",
+        "en": "Anatoly, Mikhail, Sonya and Fira"
+      }
+    },
+    {
       "url": "Встреча с сёстрами.jpg",
       "type": "image",
       "title": {
@@ -1031,11 +1039,51 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Миша Смагаринский с Соней и Галей Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миша Смагаринский с Соней и Галей Каплун",
+        "en": "Misha Smagarinsky with Sonya and Galya Kaplun"
+      }
+    },
+    {
       "url": "Могила Сони.jpg",
       "type": "image",
       "title": {
         "ru": "Могила Сони",
         "en": "Sonya's grave"
+      }
+    },
+    {
+      "url": "Посиделки на скамейке.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Посиделки на скамейке",
+        "en": "Bench time"
+      }
+    },
+    {
+      "url": "свидетельство о браке Сони.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о браке Сони",
+        "en": "Sonya's marriage certificate"
+      }
+    },
+    {
+      "url": "свидетельство о рождении Сони.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о рождении Сони",
+        "en": "Sonya's birth certificate"
+      }
+    },
+    {
+      "url": "Семейный совет, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейный совет, Астрахань",
+        "en": "Family Council, Astrakhan"
       }
     },
     {
@@ -1052,6 +1100,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Соня и Михаил Каплун",
         "en": "Sonya and Mikhail Kaplun"
+      }
+    },
+    {
+      "url": "Соня Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Соня Каплун",
+        "en": "Sonya Kaplun"
       }
     },
     {
@@ -1092,6 +1148,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Соня, Мира и Блюма",
         "en": "Sonya, Mira and Bluma"
+      }
+    },
+    {
+      "url": "справа налево Мира, Миша и Соня Каплун, слева Ефим.jpg",
+      "type": "image",
+      "title": {
+        "ru": "справа налево Мира, Миша и Соня Каплун, слева Ефим",
+        "en": "from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim"
       }
     },
     {
