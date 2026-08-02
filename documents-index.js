@@ -2893,7 +2893,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Анатолий с молодой семьёй Лёни Каплуна",
-        "en": "Archival Document"
+        "en": "Anatoly with Lenya Kaplun's young family"
       }
     },
     {
@@ -2909,7 +2909,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Валерий Линецкий и Леонид Каплун",
-        "en": "Archival Document"
+        "en": "Valery Linetsky and Leonid Kaplun"
       }
     },
     {
@@ -2917,7 +2917,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Встреча Линецких и Каплунов",
-        "en": "Archival Document"
+        "en": "Meeting of the Linetskys and the Kapluns"
       }
     },
     {
@@ -2925,7 +2925,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леня и Игорь Каплун, Биробиджан",
-        "en": "Archival Document"
+        "en": "Lenya and Igor Kaplun, Birobidzhan"
       }
     },
     {
@@ -2933,7 +2933,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Биробиджан",
-        "en": "Archival Document"
+        "en": "Leonid Kaplun, Birobidzhan"
       }
     },
     {
@@ -2941,7 +2941,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид Каплун, Израиль",
-        "en": "Archival Document"
+        "en": "Leonid Kaplun, Israel"
       }
     },
     {
@@ -2949,7 +2949,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Леонид с двоюродной сестрой Светой",
-        "en": "Archival Document"
+        "en": "Leonid with his cousin Sveta"
       }
     },
     {
@@ -2957,7 +2957,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Молодая семья Каплун",
-        "en": "Archival Document"
+        "en": "The young Kaplun family"
       }
     },
     {
@@ -2965,7 +2965,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Утёнок с Лёней Каплуном",
-        "en": "Archival Document"
+        "en": "Duckling with Lenya Kaplun"
       }
     }
   ]
