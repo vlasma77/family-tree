@@ -3217,5 +3217,40 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_alex_1965": {
+    "id": "person_alex_1965",
+    "name": {
+      "ru": "Александр Анатольевич Смагаринский",
+      "en": "Alexander Anatolyevich Smagarinsky"
+    },
+    "years": "07.12.1965-",
+    "mainPhoto": "photos/alex1965.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Хабаровск",
+        "en": "Khabarovsk"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": "Работа в бизнесе",
+        "en": "Working in business"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_anatoly_1937"
+      ],
+      "spouse": null
+    }
   }
 };
