@@ -435,7 +435,7 @@ window.db = {
   },
   "person_anatoly_1937": {
     "name": {
-      "ru": "Анатолий Смагаринский",
+      "ru": "Анатолий Вульфович Смагаринский",
       "en": "Anatoly Smagarinsky"
     },
     "role": {
@@ -3179,6 +3179,41 @@ window.db = {
       "parents": [
         "person_mikhail_solomonovich_1928",
         "person_sonya_1929"
+      ],
+      "spouse": null
+    }
+  },
+  "person_sveta_1961": {
+    "id": "person_sveta_1961",
+    "name": {
+      "ru": "Светлана Анатольевна Лопатина (Смагаринская)",
+      "en": "Svetlana Anatolyevna Lopatina (Smagarinsky)"
+    },
+    "years": "08.08.1961-",
+    "mainPhoto": "photos/sveta1961.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Астрахань, Россия",
+        "en": "Astrakhan, Russia"
+      },
+      "marriage": {
+        "ru": "Николай Лопатин",
+        "en": "Nikolay Lopatin"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_anatoly_1937"
       ],
       "spouse": null
     }
