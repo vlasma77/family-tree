@@ -935,20 +935,24 @@ window.db = {
       "ru": "Наталья Ефимовна Гельван (Смагаринская)",
       "en": "Natalya Gelvan (Smagarinskaya)"
     },
-    "years": "",
+    "years": "12.10.1955-",
     "mainPhoto": "photos/natalya1958.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": ""
+        "ru": "Бельцы, Молдавия",
+        "en": "Beltzi, Moldova"
       },
       "marriage": {
-        "ru": "Геннадий Гельван"
+        "ru": "Геннадий Гельван",
+        "en": "Gennady Gelvan"
       },
       "occupation": {
-        "ru": "работа в бизнесе "
+        "ru": "медицинский работник",
+        "en": "medical worker"
       },
       "burial": {
-        "ru": "еврейское кладбище г. Астрахань"
+        "ru": "",
+        "en": ""
       }
     },
     "bio": {
