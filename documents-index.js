@@ -3322,5 +3322,31 @@ window.documentsIndex = {
         "en": "passport photo"
       }
     }
+  ],
+  "person_sveta_1961": [
+    {
+      "url": "В гостях у  Вульфа с Блюмой, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В гостях у  Вульфа с Блюмой, Астрахань",
+        "en": "Visiting Wolf with Bluma, Astrakhan"
+      }
+    },
+    {
+      "url": "Света и Николай на свадьбе дочери Ольги.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Света и Николай на свадьбе дочери Ольги",
+        "en": "Sveta and Nikolai at their daughter Olga's wedding"
+      }
+    },
+    {
+      "url": "Толя и Галя Смагаринские с маленькой Светочкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Толя и Галя Смагаринские с маленькой Светочкой",
+        "en": "Tolya and Galya Smagarinsky with little Svetochka"
+      }
+    }
   ]
 };
