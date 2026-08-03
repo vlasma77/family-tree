@@ -941,6 +941,14 @@ window.documentsIndex = {
   ],
   "person_roman_1924": [
     {
+      "url": "Анатолий и Роман Линецкий.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий и Роман Линецкий",
+        "en": "Anatoly and Roman Linetzky"
+      }
+    },
+    {
       "url": "Веселый танец с супругой.jpg",
       "type": "image",
       "title": {
