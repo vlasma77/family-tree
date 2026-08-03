@@ -481,7 +481,8 @@ window.db = {
       "parents": [
         "person_vulf_1898",
         "person_blyuma_1895"
-      ]
+      ],
+      "spouse": "person_galina_1938"
     },
     "archive": "person_anatoly_1937",
     "gender": "male"
@@ -3251,6 +3252,39 @@ window.db = {
         "person_anatoly_1937"
       ],
       "spouse": null
+    }
+  },
+  "person_galina_1938": {
+    "id": "person_galina_1938",
+    "name": {
+      "ru": "Галина Смагаринская (Дульман)",
+      "en": "Galina Smagarinsky (Dulman)"
+    },
+    "years": "15.12.1938-",
+    "mainPhoto": "photos/galina1938.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Анатолий Смагаринский",
+        "en": "Anatoly Smagarinsky"
+      },
+      "occupation": {
+        "ru": "медицинский работник",
+        "en": "medical worker"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_anatoly_1937"
     }
   }
 };
