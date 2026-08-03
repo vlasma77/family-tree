@@ -1479,7 +1479,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "дом в Прилуках семьи Смогоринских",
-        "en": "Archival Document"
+        "en": "the Smogorinsky family's house in Priluki"
       }
     },
     {
@@ -1487,7 +1487,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Хая Смагаринская (Гуревич)",
-        "en": "Archival Document"
+        "en": "Khaya Smagarinsky (Gurevich)"
       }
     }
   ],
