@@ -1249,6 +1249,22 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Анатолий и Мира Захарова с родственницей на Мёртвом море, Израиль.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий и Мира Захарова с родственницей на Мёртвом море, Израиль",
+        "en": "Anatoly and Mira Zakharova with a relative at the Dead Sea, Israel"
+      }
+    },
+    {
+      "url": "Анатолий и Мира Захарова с родственницей на смотровой площадке Мёртвого моря.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий и Мира Захарова с родственницей на смотровой площадке Мёртвого моря",
+        "en": "Anatoly and Mira Zakharova with a relative at the Dead Sea observation deck."
+      }
+    },
+    {
       "url": "Анатолий и Михаил с двоюродным братом Владимиром Энтиным.jpg",
       "type": "image",
       "title": {
@@ -1262,6 +1278,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Анатолий и Михаил",
         "en": "Anatoly and Mikhail"
+      }
+    },
+    {
+      "url": "Анатолий и Роман Линецкий.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий и Роман Линецкий",
+        "en": "Anatoly and Roman Linetzky"
       }
     },
     {
