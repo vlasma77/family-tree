@@ -1465,6 +1465,32 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_khaya_1860": [
+    {
+      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная справка из переписи населения Прилук, 1923",
+        "en": "Archival information from the Priluki population census, 1923"
+      }
+    },
+    {
+      "url": "дом в Прилуках семьи Смогоринских.jpg",
+      "type": "image",
+      "title": {
+        "ru": "дом в Прилуках семьи Смогоринских",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Хая Смагаринская (Гуревич).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хая Смагаринская (Гуревич)",
+        "en": "Archival Document"
+      }
+    }
+  ],
   "person_israil_aizik_1917": [
     {
       "url": "Архивная запись рождения Израиля Айзика.png",
@@ -3346,6 +3372,16 @@ window.documentsIndex = {
       "title": {
         "ru": "Толя и Галя Смагаринские с маленькой Светочкой",
         "en": "Tolya and Galya Smagarinsky with little Svetochka"
+      }
+    }
+  ],
+  "person_alex_1965": [
+    {
+      "url": "Алекс, сын Анатолия.png",
+      "type": "image",
+      "title": {
+        "ru": "Алекс, сын Анатолия",
+        "en": "Alex, Anatoly's son"
       }
     }
   ]
