@@ -1479,7 +1479,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "дом в Прилуках семьи Смогоринских",
-        "en": "the Smogorinsky family's house in Priluki"
+        "en": "Archival Document"
       }
     },
     {
@@ -1487,7 +1487,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Хая Смагаринская (Гуревич)",
-        "en": "Khaya Smagarinsky (Gurevich)"
+        "en": "Archival Document"
       }
     }
   ],
@@ -3382,6 +3382,56 @@ window.documentsIndex = {
       "title": {
         "ru": "Алекс, сын Анатолия",
         "en": "Alex, Anatoly's son"
+      }
+    }
+  ],
+  "person_galina_1938": [
+    {
+      "url": "Анатолий с женой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий с женой",
+        "en": "Anatoly with his wife"
+      }
+    },
+    {
+      "url": "В гостях у  Вульфа с Блюмой, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В гостях у  Вульфа с Блюмой, Астрахань",
+        "en": "Visiting Wolf with Bluma, Astrakhan"
+      }
+    },
+    {
+      "url": "Галина, жена Анатолия.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Галина, жена Анатолия",
+        "en": "Galina, Anatoly's wife"
+      }
+    },
+    {
+      "url": "Жена Анатолия, Гала.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Жена Анатолия, Гала",
+        "en": "Anatolys wife Gala"
+      }
+    },
+    {
+      "url": "Супружеский танец.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Супружеский танец",
+        "en": "Marital dance"
+      }
+    },
+    {
+      "url": "Толя и Галя Смагаринские с маленькой Светочкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Толя и Галя Смагаринские с маленькой Светочкой",
+        "en": "Tolya and Galya Smagarinsky with little Svetochka"
       }
     }
   ]
