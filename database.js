@@ -95,7 +95,10 @@ window.db = {
     },
     "links": {
       "spouse": "person_vulf_1898",
-      "parents": []
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ]
     },
     "archive": "person_blyuma_1895",
     "gender": "female"
@@ -2917,59 +2920,6 @@ window.db = {
     "archive": "person_ginda_shevel_1900",
     "gender": "female"
   },
-  "person_zalmon_unclear": {
-    "name": {
-      "ru": "Залмон Смагаринский",
-      "en": "Zalmon Smagarinsky"
-    },
-    "years": "~1841 — 04.10.1896",
-    "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {},
-    "bio": {
-      "ru": "⚠️ ТОЧНАЯ СВЯЗЬ С ОСНОВНЫМ ДРЕВОМ НЕ УСТАНОВЛЕНА. В архивной записи указан как сын Исраиля (это имя не встречается больше нигде в собранных документах). Мелкий буржуа. Умер от воспаления лёгких 04.10.1896 в Холмече, Гомельский уезд, Могилёвская губерния, в возрасте 55 лет.",
-      "en": ""
-    },
-    "familyText": {
-      "ru": [],
-      "en": []
-    },
-    "links": {
-      "parents": [],
-      "spouse": null
-    },
-    "archive": "person_zalmon_unclear",
-    "gender": "male"
-  },
-  "person_pesya_malka_unclear": {
-    "name": {
-      "ru": "Песя Малка Смагаринская",
-      "en": "Pesya Malka Smagarinsky"
-    },
-    "years": "1902 — 27.04.1908",
-    "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": "г. Прилуки",
-        "en": "г. Прилуки"
-      }
-    },
-    "bio": {
-      "ru": "⚠️ ТОЧНАЯ СВЯЗЬ С ОСНОВНЫМ ДРЕВОМ НЕ УСТАНОВЛЕНА. В архивной записи указана как дочь «Шевеля Смагаринского» без уточнения отчества — в этом поколении несколько человек с именем Шевель. Умерла в раннем детстве.",
-      "en": ""
-    },
-    "familyText": {
-      "ru": [],
-      "en": []
-    },
-    "links": {
-      "parents": [],
-      "spouse": null
-    },
-    "archive": "person_pesya_malka_unclear",
-    "gender": "female"
-  },
   "person_luda_1951": {
     "id": "person_luda_1951",
     "name": {
@@ -3218,7 +3168,8 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_anatoly_1937"
+        "person_anatoly_1937",
+        "person_galina_1938"
       ],
       "spouse": null
     }
@@ -3253,7 +3204,8 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_anatoly_1937"
+        "person_anatoly_1937",
+        "person_galina_1938"
       ],
       "spouse": null
     }
@@ -3290,5 +3242,345 @@ window.db = {
       "parents": [],
       "spouse": "person_anatoly_1937"
     }
+  },
+  "person_samuil_1860": {
+    "name": {
+      "ru": "Самуил Янкелев Энтин",
+      "en": "Samuil Yankelevich Entin"
+    },
+    "years": "1860 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Фрида Энтин",
+        "en": "Frida Entin"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Отец Блюмы Самуиловны Смагаринской (Энтин).",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_frida_entin"
+    },
+    "archive": "person_samuil_1860",
+    "gender": "male"
+  },
+  "person_frida_entin": {
+    "name": {
+      "ru": "Фрида Энтин",
+      "en": "Frida Entin"
+    },
+    "years": "? — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Самуил Энтин",
+        "en": "Samuil Entin"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Мать Блюмы Самуиловны Смагаринской (Энтин).",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_samuil_1860"
+    },
+    "archive": "person_frida_entin",
+    "gender": "female"
+  },
+  "person_boris_entin_1885": {
+    "name": {
+      "ru": "Борис Самуилович Энтин",
+      "en": "Boris Samuilovich Entin"
+    },
+    "years": "1885 — 20.05.1942",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Сара Яковлевна Энтин (Бурштейн)",
+        "en": "Sara Yakovlevna Entin (nee Burshtein)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "г. Прилуки",
+        "en": "Priluky"
+      }
+    },
+    "bio": {
+      "ru": "Сын Самуила Энтина и Фриды Энтин. Расстрелян немецкими фашистами вместе с еврейскими жителями Прилук 20.05.1942 года, в возрасте 57 лет.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": "person_sara_entin"
+    },
+    "archive": "person_boris_entin_1885",
+    "gender": "male"
+  },
+  "person_sara_entin": {
+    "name": {
+      "ru": "Сара Яковлевна Энтин (Бурштейн)",
+      "en": "Sara Yakovlevna Entin (nee Burshtein)"
+    },
+    "years": "1885 — 20.05.1942",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Борис Самуилович Энтин",
+        "en": "Boris Samuilovich Entin"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "г. Прилуки",
+        "en": "Priluky"
+      }
+    },
+    "bio": {
+      "ru": "Жена Бориса Самуиловича Энтина, урождённая Бурштейн. Расстреляна немецкими фашистами вместе с еврейскими жителями Прилук 20.05.1942 года, в возрасте 57 лет.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_boris_entin_1885"
+    },
+    "archive": "person_sara_entin",
+    "gender": "female"
+  },
+  "person_vladimir_entin_1925": {
+    "name": {
+      "ru": "Владимир Борисович Энтин",
+      "en": "Vladimir Borisovich Entin"
+    },
+    "years": "1925 — ?",
+    "isDeceased": true,
+    "mainPhoto": "photos/vladimir1925.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Сын Бориса Самуиловича Энтина и Сары Энтин.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_boris_entin_1885",
+        "person_sara_entin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_vladimir_entin_1925",
+    "gender": "male"
+  },
+  "person_abram_entin_1920": {
+    "name": {
+      "ru": "Абрам Борисович Энтин",
+      "en": "Abram Borisovich Entin"
+    },
+    "years": "18.02.1920 — 1963",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Сын Бориса Самуиловича Энтина и Сары Энтин. Был призван в армию, участник войны, вернулся с войны инвалидом. Умер в 1963 году.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_boris_entin_1885",
+        "person_sara_entin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_abram_entin_1920",
+    "gender": "male"
+  },
+  "person_boris_entin_jr": {
+    "name": {
+      "ru": "Борис Владимирович Энтин",
+      "en": "Boris Vladimirovich Entin"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Лена Энтин",
+        "en": "Lena Entin"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Сын Владимира Борисовича Энтина.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_vladimir_entin_1925",
+        null
+      ],
+      "spouse": "person_lena_entin"
+    },
+    "archive": "person_boris_entin_jr",
+    "gender": "male"
+  },
+  "person_lena_entin": {
+    "name": {
+      "ru": "Лена Энтин",
+      "en": "Lena Entin"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Борис Энтин",
+        "en": "Boris Entin"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Жена Бориса Владимировича Энтина.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_boris_entin_jr"
+    },
+    "archive": "person_lena_entin",
+    "gender": "female"
   }
 };
