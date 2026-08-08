@@ -868,6 +868,7 @@ window.saveCurrentPersonData = function() {
           mouseScroller: { zoom: true, scale: true },
           editForm: false,
           enableSearch: false,
+          lazyLoading: false,
           nodeBinding: { field_0: "name", field_1: "title", img_0: "img" }
         });
 
@@ -876,36 +877,33 @@ window.saveCurrentPersonData = function() {
           return false;
         });
 
-        // При таком небольшом количестве персон (пока их не сотни) удобнее
-        // сразу показывать ВСЕХ, без сворачивания отдельных ветвей —
-        // это заодно убирает саму иконку "развернуть", которая раньше
-        // вызывала проблемы.
-        treeInstance.load(getTreeData(), function () {
-          treeInstance.expand(null, "all", function () {
-            // Пауза — даём дереву время закончить разворачивание ВСЕХ
-            // карточек (их стало намного больше, чем раньше), прежде чем
-            // пытаться центрировать экран на Вульфе.
-            function centerOnVulf() {
+        // Используем onInit — событие, которое, по документации,
+        // срабатывает именно тогда, когда карточки РЕАЛЬНО созданы и
+        // помещены в DOM (в отличие от колбэка у load(), который не
+        // срабатывал надёжно). maximize() без параметров разворачивает
+        // ВСЕ карточки дерева сразу — как на обычных генеалогических
+        // сайтах.
+        treeInstance.onInit(function () {
+          console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM, разворачиваю всё...");
+          try {
+            treeInstance.maximize(null, false, false, function () {
+              console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, центрирую на Вульфе...");
               try {
                 if (db["person_vulf_1898"]) {
-                  console.log("[ЦЕНТРИРОВАНИЕ] Пробую центрировать на person_vulf_1898...");
-                  const result = treeInstance.center("person_vulf_1898");
-                  console.log("[ЦЕНТРИРОВАНИЕ] Результат вызова center():", result);
+                  treeInstance.center("person_vulf_1898");
                 } else {
-                  console.log("[ЦЕНТРИРОВАНИЕ] person_vulf_1898 НЕ найден в базе — вызываю fit() вместо этого.");
                   treeInstance.fit();
                 }
               } catch (e) {
-                console.warn("Не удалось отцентрировать экран:", e);
+                console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка центрирования:", e);
               }
-            }
-            setTimeout(centerOnVulf, 800);
-            // Подстраховка: повторяем через секунду ещё раз — на случай,
-            // если дерево с большим числом персон не успело отрисоваться
-            // с первого раза.
-            setTimeout(centerOnVulf, 1800);
-          });
+            });
+          } catch (e) {
+            console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка maximize():", e);
+          }
         });
+
+        treeInstance.load(getTreeData());
       } catch (e) {
         console.error("Ошибка инициализации графического графа:", e);
       }
