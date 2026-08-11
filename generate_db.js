@@ -169,7 +169,57 @@ for (const personId in db) {
         });
 
         if (files.length > 0) {
-            documentsIndex[personId] = files.map(file => {
+            // НОВОЕ: ищем группы файлов вида "префикс + номер" (например
+            // "страница_01.jpg", "страница_02.jpg" ... или "scan1.jpg", "scan2.jpg"...)
+            // Если таких файлов подряд достаточно много (BOOK_MIN_PAGES и больше),
+            // считаем это отсканированной книгой/альбомом и объединяем в одну
+            // запись с постраничным просмотром, а не показываем десятки
+            // отдельных мелких карточек.
+            const BOOK_MIN_PAGES = 5;
+            const numberedGroups = {}; // префикс -> [{num, file}]
+            const singles = []; // обычные файлы (не подошли под номерную серию)
+
+            files.forEach(file => {
+                let base = path.basename(file, path.extname(file));
+                let ext = path.extname(file).toLowerCase();
+                // подходит только для изображений — книги/сканы это фото страниц
+                if (TYPE_BY_EXT[ext] !== 'image') { singles.push(file); return; }
+
+                let m = base.match(/^(.*?)[\s_\-]*0*(\d+)$/);
+                if (!m) { singles.push(file); return; }
+
+                let prefix = m[1].trim().toLowerCase() || '_noprefix_';
+                let num = parseInt(m[2], 10);
+                if (!numberedGroups[prefix]) numberedGroups[prefix] = [];
+                numberedGroups[prefix].push({ num, file });
+            });
+
+            const bookEntries = [];
+            Object.keys(numberedGroups).forEach(prefix => {
+                const group = numberedGroups[prefix];
+                if (group.length >= BOOK_MIN_PAGES) {
+                    group.sort((a, b) => a.num - b.num);
+                    let rawTitle = prefix === '_noprefix_' ? 'Скан' : prefix.replace(/_/g, ' ').trim();
+                    let ruTitle, enTitle;
+                    if (isCyrillicText(rawTitle) && rawTitle) {
+                        ruTitle = capitalize(rawTitle);
+                        enTitle = translationsDict[rawTitle.toLowerCase()] || 'Scanned Document';
+                    } else {
+                        ruTitle = 'Отсканированный документ';
+                        enTitle = rawTitle ? niceEnglishTitle(rawTitle) : 'Scanned Document';
+                    }
+                    bookEntries.push({
+                        type: 'book',
+                        title: { ru: `${ruTitle} (${group.length} стр.)`, en: `${enTitle} (${group.length} pages)` },
+                        pages: group.map(g => g.file)
+                    });
+                } else {
+                    // группа слишком маленькая — считаем обычными отдельными файлами
+                    group.forEach(g => singles.push(g.file));
+                }
+            });
+
+            const singleEntries = singles.map(file => {
                 let cleanTitle = path.basename(file, path.extname(file)).replace(/_/g, ' ').trim();
                 let ext = path.extname(file).toLowerCase();
                 let fileType = TYPE_BY_EXT[ext] || 'document';
@@ -199,6 +249,8 @@ for (const personId in db) {
                     }
                 };
             });
+
+            documentsIndex[personId] = [...bookEntries, ...singleEntries];
             updatedCount++;
         }
     }
