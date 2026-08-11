@@ -25,14 +25,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Архивная справка из переписи населения Прилук, 1923",
-        "en": "Archival information from the Priluki population census, 1923"
-      }
-    },
-    {
       "url": "Все дети Вульфа и Блюмы.jpg",
       "type": "image",
       "title": {
@@ -86,14 +78,6 @@ window.documentsIndex = {
       "title": {
         "ru": "Вульф слева у окна. Обувная артель, Биробиджан",
         "en": "Wulf is on the left by the window. Shoe cooperative, Birobidzhan"
-      }
-    },
-    {
-      "url": "Вульф, 1960.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Вульф, 1960",
-        "en": "Wulf, 1960"
       }
     },
     {
@@ -183,6 +167,22 @@ window.documentsIndex = {
         "ru": "Свидетельство о смерти Вульфа",
         "en": "Wulfs death certificate"
       }
+    },
+    {
+      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная справка из переписи населения Прилук, 1923",
+        "en": "Archival information from the Priluki population census, 1923"
+      }
+    },
+    {
+      "url": "Вульф, 1960.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вульф, 1960",
+        "en": "Wulf, 1960"
+      }
     }
   ],
   "person_blyuma_1895": [
@@ -200,14 +200,6 @@ window.documentsIndex = {
       "title": {
         "ru": "Архивная запись рождения Израиля Айзика",
         "en": "Archival recording of Israel Aizyk birth"
-      }
-    },
-    {
-      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Архивная справка из переписи населения Прилук, 1923",
-        "en": "Archival information from the Priluki population census, 1923"
       }
     },
     {
@@ -321,9 +313,7 @@ window.documentsIndex = {
         "ru": "Свидетельство о смерти Блюмы",
         "en": "Blyuma's death certificate"
       }
-    }
-  ],
-  "person_efim_1919": [
+    },
     {
       "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
       "type": "image",
@@ -331,6 +321,22 @@ window.documentsIndex = {
         "ru": "Архивная справка из переписи населения Прилук, 1923",
         "en": "Archival information from the Priluki population census, 1923"
       }
+    }
+  ],
+  "person_efim_1919": [
+    {
+      "type": "book",
+      "title": {
+        "ru": "Семья ефима, (5 стр.)",
+        "en": "Scanned Document (5 pages)"
+      },
+      "pages": [
+        "Семья Ефима, 1947.jpg",
+        "Семья Ефима, 1952.jpg",
+        "Семья Ефима, 1954.jpg",
+        "Семья Ефима, 1964.jpg",
+        "Семья Ефима, 1974.jpg"
+      ]
     },
     {
       "url": "Встреча взрослых детей.jpg",
@@ -381,14 +387,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Ефим, 1944.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ефим, 1944",
-        "en": "Efim, 1944"
-      }
-    },
-    {
       "url": "Ефим, 1945, Венгрия.jpg",
       "type": "image",
       "title": {
@@ -405,59 +403,35 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Перевод архивной справки, Прилуки 1923.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Перевод архивной справки, Прилуки 1923",
-        "en": "Translation of an archival certificate, Priluki 1923"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1947.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1947",
-        "en": "Efim's family, 1947"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1952.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1952",
-        "en": "Efim's family, 1952"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1954.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1954",
-        "en": "Efim's family, 1954"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1964.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1964",
-        "en": "Efim's family, 1964"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1974.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1974",
-        "en": "Efim's family, 1974"
-      }
-    },
-    {
       "url": "Хроника военных лет.pdf",
       "type": "document",
       "title": {
         "ru": "Хроника военных лет",
         "en": "Chronicle of the war years"
+      }
+    },
+    {
+      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная справка из переписи населения Прилук, 1923",
+        "en": "Archival information from the Priluki population census, 1923"
+      }
+    },
+    {
+      "url": "Ефим, 1944.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ефим, 1944",
+        "en": "Efim, 1944"
+      }
+    },
+    {
+      "url": "Перевод архивной справки, Прилуки 1923.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Перевод архивной справки, Прилуки 1923",
+        "en": "Translation of an archival certificate, Priluki 1923"
       }
     }
   ],
@@ -471,19 +445,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Архивная справка переписи населения 1923.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Архивная справка переписи населения 1923",
-        "en": "Official Certificate"
-      }
-    },
-    {
       "url": "Братья на набережной Ашкелона.jpg",
       "type": "image",
       "title": {
         "ru": "Братья на набережной Ашкелона",
-        "en": "Brothers on the Ashkelon waterfront"
+        "en": "Brothers on the Ashkelon embankment"
       }
     },
     {
@@ -532,14 +498,6 @@ window.documentsIndex = {
       "title": {
         "ru": "Жизнь в Офакиме",
         "en": "Life in Ofakim"
-      }
-    },
-    {
-      "url": "Курсант военного училища 1946.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Курсант военного училища 1946",
-        "en": "Military school cadet 1946"
       }
     },
     {
@@ -709,6 +667,22 @@ window.documentsIndex = {
         "ru": "Хроника военных лет",
         "en": "Chronicle of the war years"
       }
+    },
+    {
+      "url": "Архивная справка переписи населения 1923.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная справка переписи населения 1923",
+        "en": "Official Certificate"
+      }
+    },
+    {
+      "url": "Курсант военного училища 1946.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Курсант военного училища 1946",
+        "en": "Military school cadet 1946"
+      }
     }
   ],
   "person_katya_1924": [
@@ -753,14 +727,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Катя, 1965.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Катя, 1965",
-        "en": "Katya, 1965"
-      }
-    },
-    {
       "url": "Посиделки на скамейке.jpg",
       "type": "image",
       "title": {
@@ -790,6 +756,14 @@ window.documentsIndex = {
       "title": {
         "ru": "сын Евгений",
         "en": "son Evgeny"
+      }
+    },
+    {
+      "url": "Катя, 1965.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Катя, 1965",
+        "en": "Katya, 1965"
       }
     }
   ],
@@ -973,14 +947,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Подлодка, на которой служил Роман  Щ-132.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Подлодка, на которой служил Роман  Щ-132",
-        "en": "Archival Document"
-      }
-    },
-    {
       "url": "Роман Линецкий.jpg",
       "type": "image",
       "title": {
@@ -1082,6 +1048,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Хроника военных лет",
         "en": "Chronicle of the war years"
+      }
+    },
+    {
+      "url": "Подлодка, на которой служил Роман  Щ-132.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Подлодка, на которой служил Роман  Щ-132",
+        "en": "Archival Document"
       }
     }
   ],
@@ -1467,14 +1441,6 @@ window.documentsIndex = {
   ],
   "person_khaya_1860": [
     {
-      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Архивная справка из переписи населения Прилук, 1923",
-        "en": "Archival information from the Priluki population census, 1923"
-      }
-    },
-    {
       "url": "дом в Прилуках семьи Смогоринских.jpg",
       "type": "image",
       "title": {
@@ -1488,6 +1454,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Хая Смагаринская (Гуревич)",
         "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Архивная справка из переписи населения Прилук, 1923.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная справка из переписи населения Прилук, 1923",
+        "en": "Archival information from the Priluki population census, 1923"
       }
     }
   ],
@@ -1527,22 +1501,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Биробиджан, 1949.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Биробиджан, 1949",
-        "en": "Birobidzhan, 1949"
-      }
-    },
-    {
-      "url": "Биробиджан, Калинина 39.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Биробиджан, Калинина 39",
-        "en": "Birobidzhan, Kalinina 39"
-      }
-    },
-    {
       "url": "В поездке по северной Испании.jpg",
       "type": "image",
       "title": {
@@ -1559,14 +1517,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Вечер прощания с друзьями перед отьездом в Израиль, 1994.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Вечер прощания с друзьями перед отьездом в Израиль, 1994",
-        "en": "Farewell evening with friends before leaving for Israel, 1994"
-      }
-    },
-    {
       "url": "Владимир со своими сестрами.jpg",
       "type": "image",
       "title": {
@@ -1580,14 +1530,6 @@ window.documentsIndex = {
       "title": {
         "ru": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман",
         "en": "Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman"
-      }
-    },
-    {
-      "url": "Вся жизнь впереди, Биробиджан, 06.09.1948.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Вся жизнь впереди, Биробиджан, 06.09.1948",
-        "en": "My whole life ahead, Birobidzhan, September 6, 1948"
       }
     },
     {
@@ -1703,22 +1645,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "семейный пикник в Ашкелоне, 2025.jpg",
-      "type": "image",
-      "title": {
-        "ru": "семейный пикник в Ашкелоне, 2025",
-        "en": "Family picnic in Ashkelon, 2025"
-      }
-    },
-    {
-      "url": "служба в армии 1971-1972.jpg",
-      "type": "image",
-      "title": {
-        "ru": "служба в армии 1971-1972",
-        "en": "military service 1971-1972"
-      }
-    },
-    {
       "url": "Танец с женой на вечеринке в ресторане.jpg",
       "type": "image",
       "title": {
@@ -1757,9 +1683,15 @@ window.documentsIndex = {
         "ru": "школа на Криуше, Астрахань",
         "en": "school on Kriusha, Astrakhan"
       }
-    }
-  ],
-  "person_yuri_mikhailovich_1950": [
+    },
+    {
+      "url": "Биробиджан, 1949.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан, 1949",
+        "en": "Birobidzhan, 1949"
+      }
+    },
     {
       "url": "Биробиджан, Калинина 39.jpg",
       "type": "image",
@@ -1768,6 +1700,40 @@ window.documentsIndex = {
         "en": "Birobidzhan, Kalinina 39"
       }
     },
+    {
+      "url": "Вечер прощания с друзьями перед отьездом в Израиль, 1994.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вечер прощания с друзьями перед отьездом в Израиль, 1994",
+        "en": "Farewell evening with friends before leaving for Israel, 1994"
+      }
+    },
+    {
+      "url": "Вся жизнь впереди, Биробиджан, 06.09.1948.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вся жизнь впереди, Биробиджан, 06.09.1948",
+        "en": "My whole life ahead, Birobidzhan, September 6, 1948"
+      }
+    },
+    {
+      "url": "семейный пикник в Ашкелоне, 2025.jpg",
+      "type": "image",
+      "title": {
+        "ru": "семейный пикник в Ашкелоне, 2025",
+        "en": "Family picnic in Ashkelon, 2025"
+      }
+    },
+    {
+      "url": "служба в армии 1971-1972.jpg",
+      "type": "image",
+      "title": {
+        "ru": "служба в армии 1971-1972",
+        "en": "military service 1971-1972"
+      }
+    }
+  ],
+  "person_yuri_mikhailovich_1950": [
     {
       "url": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
       "type": "image",
@@ -1846,6 +1812,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Юрий Смагаринский, Израиль",
         "en": "Yuri Smagarinsky, Israel"
+      }
+    },
+    {
+      "url": "Биробиджан, Калинина 39.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан, Калинина 39",
+        "en": "Birobidzhan, Kalinina 39"
       }
     }
   ],
@@ -1939,22 +1913,6 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Нэлла в Киеве, 1965.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Нэлла в Киеве, 1965",
-        "en": "Nella in Kyiv, 1965"
-      }
-    },
-    {
-      "url": "Нэлла в Киеве, 2020.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Нэлла в Киеве, 2020",
-        "en": "Nella in Kyiv, 2020"
-      }
-    },
-    {
       "url": "Нэлла с сыном Артуром и братом Вовой.jpg",
       "type": "image",
       "title": {
@@ -2040,6 +1998,22 @@ window.documentsIndex = {
       "title": {
         "ru": "Хорошее настроение",
         "en": "good mood"
+      }
+    },
+    {
+      "url": "Нэлла в Киеве, 1965.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нэлла в Киеве, 1965",
+        "en": "Nella in Kyiv, 1965"
+      }
+    },
+    {
+      "url": "Нэлла в Киеве, 2020.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нэлла в Киеве, 2020",
+        "en": "Nella in Kyiv, 2020"
       }
     }
   ],
@@ -2549,6 +2523,20 @@ window.documentsIndex = {
   ],
   "person_nadejda_1924": [
     {
+      "type": "book",
+      "title": {
+        "ru": "Семья ефима, (5 стр.)",
+        "en": "Scanned Document (5 pages)"
+      },
+      "pages": [
+        "Семья Ефима, 1947.jpg",
+        "Семья Ефима, 1952.jpg",
+        "Семья Ефима, 1954.jpg",
+        "Семья Ефима, 1964.jpg",
+        "Семья Ефима, 1974.jpg"
+      ]
+    },
+    {
       "url": "Бабушка Надежда.jpg",
       "type": "image",
       "title": {
@@ -2594,46 +2582,6 @@ window.documentsIndex = {
       "title": {
         "ru": "Надежда Смагаринская",
         "en": "Nadezhda Smagarinskaya"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1947.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1947",
-        "en": "Efim's family, 1947"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1952.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1952",
-        "en": "Efim's family, 1952"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1954.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1954",
-        "en": "Efim's family, 1954"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1964.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1964",
-        "en": "Efim's family, 1964"
-      }
-    },
-    {
-      "url": "Семья Ефима, 1974.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Ефима, 1974",
-        "en": "Efim's family, 1974"
       }
     }
   ],
@@ -2711,27 +2659,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Мира после окончания школы 1959.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Мира после окончания школы 1959",
-        "en": "Mira after graduating from school in 1959"
-      }
-    },
-    {
       "url": "Мира с братом Валерием.jpg",
       "type": "image",
       "title": {
         "ru": "Мира с братом Валерием",
         "en": "Mira with brother Valery"
-      }
-    },
-    {
-      "url": "Мира с мужем и Владиком,Лиепая  09.05.1974.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Мира с мужем и Владиком,Лиепая  09.05.1974",
-        "en": "Mira with her husband and Vladik, Liepaja 05/09/1974"
       }
     },
     {
@@ -2796,6 +2728,22 @@ window.documentsIndex = {
       "title": {
         "ru": "Семья Захаровых",
         "en": "The Zakharov family"
+      }
+    },
+    {
+      "url": "Мира после окончания школы 1959.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира после окончания школы 1959",
+        "en": "Mira after graduating from school in 1959"
+      }
+    },
+    {
+      "url": "Мира с мужем и Владиком,Лиепая  09.05.1974.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира с мужем и Владиком,Лиепая  09.05.1974",
+        "en": "Mira with her husband and Vladik, Liepaja 05/09/1974"
       }
     },
     {
@@ -3432,6 +3380,168 @@ window.documentsIndex = {
       "title": {
         "ru": "Толя и Галя Смагаринские с маленькой Светочкой",
         "en": "Tolya and Galya Smagarinsky with little Svetochka"
+      }
+    }
+  ],
+  "person_vladimir_entin_1925": [
+    {
+      "type": "book",
+      "title": {
+        "ru": "Скан (63 стр.)",
+        "en": "Scanned Document (63 pages)"
+      },
+      "pages": [
+        "скан1.jpg",
+        "скан2.jpg",
+        "скан3.jpg",
+        "скан4.jpg",
+        "скан5.jpg",
+        "скан6.jpg",
+        "скан7.jpg",
+        "скан8.jpg",
+        "скан9.jpg",
+        "скан10.jpg",
+        "скан11.jpg",
+        "скан12.jpg",
+        "скан13.jpg",
+        "скан14.jpg",
+        "скан15.jpg",
+        "скан16.jpg",
+        "скан17.jpg",
+        "скан18.jpg",
+        "скан19.jpg",
+        "скан20.jpg",
+        "скан21.jpg",
+        "скан22.jpg",
+        "скан23.jpg",
+        "скан24.jpg",
+        "скан25.jpg",
+        "скан26.jpg",
+        "скан27.jpg",
+        "скан28.jpg",
+        "скан29.jpg",
+        "скан30.jpg",
+        "скан31.jpg",
+        "скан32.jpg",
+        "скан33.jpg",
+        "скан34.jpg",
+        "скан35.jpg",
+        "скан36.jpg",
+        "скан37.jpg",
+        "скан38.jpg",
+        "скан39.jpg",
+        "скан40.jpg",
+        "скан41.jpg",
+        "скан42.jpg",
+        "скан43.jpg",
+        "скан44.jpg",
+        "скан45.jpg",
+        "скан46.jpg",
+        "скан47.jpg",
+        "скан48.jpg",
+        "скан49.jpg",
+        "скан50.jpg",
+        "скан51.jpg",
+        "скан52.jpg",
+        "скан53.jpg",
+        "скан54.jpg",
+        "скан55.jpg",
+        "скан56.jpg",
+        "скан57.jpg",
+        "скан58.jpg",
+        "скан59.jpg",
+        "скан60.jpg",
+        "скан61.jpg",
+        "скан62.jpg",
+        "скан63.jpg"
+      ]
+    },
+    {
+      "url": "Братья на набережной Ашкелона.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Братья на набережной Ашкелона",
+        "en": "Brothers on the Ashkelon embankment"
+      }
+    },
+    {
+      "url": "Владимир Борисович Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Владимир Борисович Энтин",
+        "en": "Vladimir Borisovich Entin"
+      }
+    },
+    {
+      "url": "Встреча с Владимиром Энтиным.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча с Владимиром Энтиным",
+        "en": "Meeting with Vladimir Entin"
+      }
+    },
+    {
+      "url": "Дом где проживал Владимир до 1933 г..jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дом где проживал Владимир до 1933 г.",
+        "en": "The house where Vladimir lived until 1933."
+      }
+    },
+    {
+      "url": "Лист свидетельских показаний Владимира о брате Абраме.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Лист свидетельских показаний Владимира о брате Абраме",
+        "en": "Vladimir's Testimony about his brother Abram"
+      }
+    },
+    {
+      "url": "Лист свидетельских показаний Владимира об отце Борисе.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Лист свидетельских показаний Владимира об отце Борисе",
+        "en": "Vladimir's Testimony about Father Boris"
+      }
+    },
+    {
+      "url": "Место расстрела евреев Прилук.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Место расстрела евреев Прилук",
+        "en": "The site of the execution of Jews in Priluki"
+      }
+    },
+    {
+      "url": "Памятник на могиле  расстрелянных евреев г.Прилуки.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Памятник на могиле  расстрелянных евреев г.Прилуки",
+        "en": "A monument at the grave of executed Jews in Priluki"
+      }
+    },
+    {
+      "url": "родители Владимира в расстрельных списках.pdf",
+      "type": "document",
+      "title": {
+        "ru": "родители Владимира в расстрельных списках",
+        "en": "Vladimir's parents are on the execution list"
+      }
+    },
+    {
+      "url": "Энтин Владимир, свидетельство о рождении .jpg",
+      "type": "image",
+      "title": {
+        "ru": "Энтин Владимир, свидетельство о рождении",
+        "en": "Vladimir Entin, birth certificate"
+      }
+    },
+    {
+      "url": "Место расставания навсегда Владимира с родителями 19.05.1942 г. На следующий день их расстреляли. Фото 05.2002.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Место расставания навсегда Владимира с родителями 19.05.1942 г. На следующий день их расстреляли. Фото 05.2002",
+        "en": "The place where Vladimir parted forever with his parents on May 19, 1942. They were executed the next day. Photo taken May 2002."
       }
     }
   ]
