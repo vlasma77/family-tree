@@ -224,8 +224,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-      touch-action: pan-y;
+      overflow: auto;
+      touch-action: pinch-zoom pan-x pan-y;
     }
     .reader-page-wrapper img {
       max-width: 92%;
@@ -233,6 +233,34 @@
       object-fit: contain;
       box-shadow: 0 0 30px rgba(0,0,0,0.6);
       border-radius: 4px;
+      user-select: none;
+      transition: max-width 0.15s, max-height 0.15s;
+      cursor: zoom-in;
+    }
+    .reader-page-wrapper img.zoomed {
+      max-width: none;
+      max-height: none;
+      width: 220%;
+      cursor: zoom-out;
+    }
+    .reader-zoom-controls {
+      position: absolute;
+      bottom: 90px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 10003;
+    }
+    .reader-zoom-btn {
+      background: rgba(133, 111, 73, 0.9);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      font-size: 20px;
+      cursor: pointer;
       user-select: none;
     }
     .reader-controls {
@@ -286,6 +314,10 @@
   <span class="reader-close" onclick="closeReader()">&times;</span>
   <div class="reader-page-wrapper" id="reader-page-wrapper">
     <img id="reader-img" src="" alt="Страница">
+  </div>
+  <div class="reader-zoom-controls">
+    <button class="reader-zoom-btn" onclick="readerZoomIn()" title="Приблизить">+</button>
+    <button class="reader-zoom-btn" onclick="readerZoomOut()" title="Отдалить">−</button>
   </div>
   <div class="reader-controls">
     <button class="reader-btn" id="reader-prev" onclick="readerPrev()">←</button>
@@ -490,10 +522,56 @@
   function renderReaderPage() {
     const img = document.getElementById("reader-img");
     img.src = readerPages[readerIndex];
+    img.classList.remove("zoomed"); // сбрасываем масштаб при смене страницы
+    readerZoomLevel = 1;
     document.getElementById("reader-counter").innerText = `${readerIndex + 1} / ${readerPages.length}`;
     document.getElementById("reader-prev").disabled = readerIndex === 0;
     document.getElementById("reader-next").disabled = readerIndex === readerPages.length - 1;
   }
+
+  // НОВОЕ: масштабирование страницы книги (мелкий шрифт сканов трудно читать без зума)
+  let readerZoomLevel = 1;
+  const ZOOM_STEP = 0.5;
+  const ZOOM_MAX = 4;
+  const ZOOM_MIN = 1;
+
+  function applyReaderZoom() {
+    const img = document.getElementById("reader-img");
+    if (readerZoomLevel <= 1) {
+      img.classList.remove("zoomed");
+      img.style.width = "";
+    } else {
+      img.classList.add("zoomed");
+      img.style.width = (readerZoomLevel * 100) + "%";
+    }
+  }
+
+  function readerZoomIn() {
+    readerZoomLevel = Math.min(ZOOM_MAX, readerZoomLevel + ZOOM_STEP);
+    applyReaderZoom();
+  }
+
+  function readerZoomOut() {
+    readerZoomLevel = Math.max(ZOOM_MIN, readerZoomLevel - ZOOM_STEP);
+    applyReaderZoom();
+  }
+
+  // Клик по странице — приближает/отдаляет (двойной клик на телефоне тоже сработает как два клика подряд)
+  document.getElementById("reader-img").addEventListener("click", function () {
+    if (readerZoomLevel > 1) {
+      readerZoomLevel = 1;
+    } else {
+      readerZoomLevel = 2;
+    }
+    applyReaderZoom();
+  });
+
+  // Колёсико мыши — тоже масштабирует (удобно на компьютере)
+  document.getElementById("reader-page-wrapper").addEventListener("wheel", function (e) {
+    if (!document.getElementById("reader").classList.contains("active")) return;
+    e.preventDefault();
+    if (e.deltaY < 0) readerZoomIn(); else readerZoomOut();
+  }, { passive: false });
 
   function readerPrev() {
     if (readerIndex > 0) { readerIndex--; renderReaderPage(); }
@@ -521,8 +599,12 @@
     wrapper.addEventListener("touchend", function (e) {
       if (touchStartX === null) return;
       const dx = e.changedTouches[0].clientX - touchStartX;
-      if (dx > 50) readerPrev();
-      else if (dx < -50) readerNext();
+      // Если страница увеличена — свайп используется для прокрутки/панорамирования,
+      // а не для перехода на другую страницу.
+      if (readerZoomLevel <= 1) {
+        if (dx > 50) readerPrev();
+        else if (dx < -50) readerNext();
+      }
       touchStartX = null;
     });
   })();
