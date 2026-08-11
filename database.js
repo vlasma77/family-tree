@@ -3582,5 +3582,38 @@ window.db = {
     },
     "archive": "person_lena_entin",
     "gender": "female"
+  },
+  "person_sofia_entin_1922": {
+    "id": "person_sofia_entin_1922",
+    "name": {
+      "ru": "София Владимировна Энтина",
+      "en": "New Person"
+    },
+    "years": "06.01.1925 — ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Прилуки, Черниговской губернии"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_vladimir_entin_1925"
+      ],
+      "spouse": null
+    }
   }
 };
