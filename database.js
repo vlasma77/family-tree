@@ -823,8 +823,8 @@ window.db = {
   },
   "person_fira_1927": {
     "name": {
-      "ru": "Фира Вольковна Смагаринская (Ройтман)",
-      "en": "Fira Smagarinskaya (Roytman)"
+      "ru": "Фира-Эстер Вольковна Смагаринская (Ройтман)",
+      "en": "Fira-Ester Smagarinskaya (Roytman)"
     },
     "years": "16.06.1927 — 04.06.2009",
     "isDeceased": true,
@@ -856,7 +856,10 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": [],
+      "parents": [
+        "person_volko_roitman",
+        "person_nehama_roitman"
+      ],
       "spouse": "person_mikhail_1922"
     },
     "archive": "person_fira_1927",
@@ -3415,16 +3418,16 @@ window.db = {
       "ru": "Владимир Борисович Энтин",
       "en": "Vladimir Borisovich Entin"
     },
-    "years": "1925 — ?",
+    "years": "06.01.1925 — 23.03.2019",
     "isDeceased": true,
     "mainPhoto": "photos/vladimir1925.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "",
+        "ru": "Кривой Рог, Украина",
         "en": ""
       },
       "marriage": {
-        "ru": "",
+        "ru": "Дора Энтин (Добин)",
         "en": ""
       },
       "occupation": {
@@ -3432,7 +3435,7 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "",
+        "ru": "Хедера, Израиль",
         "en": ""
       }
     },
@@ -3449,7 +3452,7 @@ window.db = {
         "person_boris_entin_1885",
         "person_sara_entin"
       ],
-      "spouse": null
+      "spouse": "person_dora_1926"
     },
     "archive": "person_vladimir_entin_1925",
     "gender": "male"
@@ -3503,29 +3506,29 @@ window.db = {
       "ru": "Борис Владимирович Энтин",
       "en": "Boris Vladimirovich Entin"
     },
-    "years": "",
+    "years": "12.01.1956 -",
     "isDeceased": false,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
+        "ru": "Кривой Рог, Украина",
         "en": ""
       },
       "marriage": {
-        "ru": "Лена Энтин",
+        "ru": "Лена Энтин (Мостовой)",
         "en": "Lena Entin"
       },
       "occupation": {
-        "ru": "",
+        "ru": "инженер механик",
         "en": ""
       },
       "burial": {
-        "ru": "",
+        "ru": "Хедера, Израиль",
         "en": ""
       }
     },
     "bio": {
-      "ru": "Сын Владимира Борисовича Энтина.",
+      "ru": "Сын Владимира Борисовича Энтина. Закончил Криворожский горнообогатительный институт.",
       "en": ""
     },
     "familyText": {
@@ -3544,15 +3547,15 @@ window.db = {
   },
   "person_lena_entin": {
     "name": {
-      "ru": "Лена Энтин",
+      "ru": "Лена Энтин (Мостовой)",
       "en": "Lena Entin"
     },
-    "years": "",
+    "years": "24.05.1960 -",
     "isDeceased": false,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
+        "ru": "Кривой Рог, Украина",
         "en": ""
       },
       "marriage": {
@@ -3564,7 +3567,7 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "",
+        "ru": "Хедера, Израиль",
         "en": ""
       }
     },
@@ -3583,17 +3586,295 @@ window.db = {
     "archive": "person_lena_entin",
     "gender": "female"
   },
-  "person_sofia_entin_1922": {
-    "id": "person_sofia_entin_1922",
+  "person_volko_roitman": {
     "name": {
-      "ru": "София Владимировна Энтина",
-      "en": "New Person"
+      "ru": "Волько Ройтман",
+      "en": "Volko Roitman"
     },
-    "years": "06.01.1925 — ?",
+    "years": "",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Прилуки, Черниговской губернии"
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Нехама Мордковна Ройтман (Хмельницкий), г. Умань Уманского уезда Киевской губернии",
+        "en": "Nekhama Mordkovna Roitman (nee Khmelnitsky), Uman, Kiev Governorate"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_nehama_roitman"
+    },
+    "archive": "person_volko_roitman",
+    "gender": "male"
+  },
+  "person_nehama_roitman": {
+    "name": {
+      "ru": "Нехама Мордковна Ройтман (Хмельницкий)",
+      "en": "Nekhama Mordkovna Roitman (nee Khmelnitsky)"
+    },
+    "years": "1898 — 1956",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Умань, Уманский уезд, Киевская губерния",
+        "en": "Uman, Kiev Governorate"
+      },
+      "marriage": {
+        "ru": "Ройтман Волько Шлемович, г. Умань Уманского уезда Киевской губернии",
+        "en": "Volko Shlemovich Roitman, Uman, Kiev Governorate"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_volko_roitman"
+    },
+    "archive": "person_nehama_roitman",
+    "gender": "female"
+  },
+  "person_boris_roitman_1921": {
+    "name": {
+      "ru": "Борис Ройтман",
+      "en": "Boris Roitman"
+    },
+    "years": "1921 — 1953",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Умань, Уманский уезд, Киевская губерния",
+        "en": "Uman, Kiev Governorate"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Сын Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volko_roitman",
+        "person_nehama_roitman"
+      ],
+      "spouse": null
+    },
+    "archive": "person_boris_roitman_1921",
+    "gender": "male"
+  },
+  "person_motl_roitman_1924": {
+    "name": {
+      "ru": "Мотл Ройтман",
+      "en": "Motl Roitman"
+    },
+    "years": "1924 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Умань, Уманский уезд, Киевская губерния",
+        "en": "Uman, Kiev Governorate"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Сын Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volko_roitman",
+        "person_nehama_roitman"
+      ],
+      "spouse": null
+    },
+    "archive": "person_motl_roitman_1924",
+    "gender": "male"
+  },
+  "person_mindlya_roitman_1930": {
+    "name": {
+      "ru": "Миндля (Миля) Вольковна Микельман (Ройтман)",
+      "en": "Mindlya (Milya) Volkovna Mikelman (nee Roitman)"
+    },
+    "years": "1930 — ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "г. Умань, Уманский уезд, Киевская губерния",
+        "en": "Uman, Kiev Governorate"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Дочь Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_volko_roitman",
+        "person_nehama_roitman"
+      ],
+      "spouse": null
+    },
+    "archive": "person_mindlya_roitman_1930",
+    "gender": "female"
+  },
+  "person_sofiya_1951": {
+    "id": "person_sofiya_1951",
+    "name": {
+      "ru": "София Владимировна Энтин",
+      "en": "New Person"
+    },
+    "years": "26.08.1951 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Харьков, Украина"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": "экономист"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_vladimir_entin_1925"
+      ],
+      "spouse": null
+    }
+  },
+  "person_dora_1926": {
+    "id": "person_dora_1926",
+    "name": {
+      "ru": "Дора Энтин (Добин)",
+      "en": "New Person"
+    },
+    "years": "17.11.1926 - 26.09.1996",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Кривой Рог, Украина"
+      },
+      "marriage": {
+        "ru": "Владимир Борисович Энтин"
+      },
+      "occupation": {
+        "ru": "бухгалтер"
+      },
+      "burial": {
+        "ru": "Хедера, Израиль"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_vladimir_entin_1925"
+    }
+  },
+  "person_anna_1983": {
+    "id": "person_anna_1983",
+    "name": {
+      "ru": "Анна",
+      "en": "New Person"
+    },
+    "years": "06.08.1983 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Кривой Рог, Украина"
       },
       "marriage": {
         "ru": ""
@@ -3611,7 +3892,42 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_vladimir_entin_1925"
+        "person_boris_entin_jr",
+        "person_lena_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_vladimir_zeev_1988": {
+    "id": "person_vladimir_zeev_1988",
+    "name": {
+      "ru": "Владимир-Зеев Борисович Энтин",
+      "en": "New Person"
+    },
+    "years": "18.07.1988 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Кривой Рог, Украина"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_boris_entin_jr",
+        "person_lena_entin"
       ],
       "spouse": null
     }
