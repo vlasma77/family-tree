@@ -3066,7 +3066,8 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_sonya_1929"
-    }
+    },
+    "gender": "male"
   },
   "person_leonid_1954": {
     "id": "person_leonid_1954",
@@ -3103,7 +3104,8 @@ window.db = {
         "person_sonya_1929"
       ],
       "spouse": null
-    }
+    },
+    "gender": "male"
   },
   "person_igor_1958": {
     "id": "person_igor_1958",
@@ -3139,7 +3141,8 @@ window.db = {
         "person_sonya_1929"
       ],
       "spouse": null
-    }
+    },
+    "gender": "male"
   },
   "person_sveta_1961": {
     "id": "person_sveta_1961",
@@ -3175,7 +3178,8 @@ window.db = {
         "person_galina_1938"
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   },
   "person_alex_1965": {
     "id": "person_alex_1965",
@@ -3211,7 +3215,8 @@ window.db = {
         "person_galina_1938"
       ],
       "spouse": null
-    }
+    },
+    "gender": "male"
   },
   "person_galina_1938": {
     "id": "person_galina_1938",
@@ -3244,7 +3249,8 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_anatoly_1937"
-    }
+    },
+    "gender": "female"
   },
   "person_samuil_1860": {
     "name": {
@@ -3756,29 +3762,29 @@ window.db = {
     "archive": "person_motl_roitman_1924",
     "gender": "male"
   },
-  "person_mindlya_roitman_1930": {
+  "person_mindlya_1930": {
     "name": {
       "ru": "Миндля (Миля) Вольковна Микельман (Ройтман)",
       "en": "Mindlya (Milya) Volkovna Mikelman (nee Roitman)"
     },
-    "years": "1930 — ?",
+    "years": "05.021930 — 11.10.2021",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/mindlya1930.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "г. Умань, Уманский уезд, Киевская губерния",
         "en": "Uman, Kiev Governorate"
       },
       "marriage": {
-        "ru": "",
+        "ru": "Михаил Микельман",
         "en": ""
       },
       "occupation": {
-        "ru": "",
+        "ru": "швея",
         "en": ""
       },
       "burial": {
-        "ru": "",
+        "ru": "Офаким, Израиль",
         "en": ""
       }
     },
@@ -3828,10 +3834,12 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_vladimir_entin_1925"
+        "person_vladimir_entin_1925",
+        null
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   },
   "person_dora_1926": {
     "id": "person_dora_1926",
@@ -3862,7 +3870,8 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_vladimir_entin_1925"
-    }
+    },
+    "gender": "female"
   },
   "person_anna_1983": {
     "id": "person_anna_1983",
@@ -3896,7 +3905,8 @@ window.db = {
         "person_lena_entin"
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   },
   "person_vladimir_zeev_1988": {
     "id": "person_vladimir_zeev_1988",
@@ -3930,6 +3940,7 @@ window.db = {
         "person_lena_entin"
       ],
       "spouse": null
-    }
+    },
+    "gender": "male"
   }
 };
