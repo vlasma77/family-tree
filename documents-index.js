@@ -3544,5 +3544,183 @@ window.documentsIndex = {
         "en": "The place where Vladimir parted forever with his parents on May 19, 1942. They were executed the next day. Photo taken May 2002."
       }
     }
+  ],
+  "person_mindlya_1930": [
+    {
+      "url": "13.06.1951 Калининград, Миля с Галочкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "13.06.1951 Калининград, Миля с Галочкой",
+        "en": "June 13, 1951, Kaliningrad, Milya with  Galochka"
+      }
+    },
+    {
+      "url": "Биробиджан 10.1990г.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан 10.1990г",
+        "en": "Birobidzhan 10.1990"
+      }
+    },
+    {
+      "url": "В парке Умани с родственниками.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В парке Умани с родственниками",
+        "en": "In Uman Park with relatives"
+      }
+    },
+    {
+      "url": "Встреча с родными в Умани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча с родными в Умани",
+        "en": "Meeting with relatives in Uman"
+      }
+    },
+    {
+      "url": "Миля (Миндля) Микельман, Офаким.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля (Миндля) Микельман, Офаким",
+        "en": "Milya (Mindlya) Mikelman, Ofakim"
+      }
+    },
+    {
+      "url": "Миля и Михаил Микельман, Рая Геренштейн, дочь Бэлла и внучка Наташа, Офаким.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля и Михаил Микельман, Рая Геренштейн, дочь Бэлла и внучка Наташа, Офаким",
+        "en": "Milya and Mikhail Mikelman, Raya Gerenshtein, daughter Bella and granddaughter Natasha, Ofakim"
+      }
+    },
+    {
+      "url": "Миля с родственниками.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля с родственниками",
+        "en": "Milya with relatives"
+      }
+    },
+    {
+      "url": "Могила Мили, Офаким.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Могила Мили, Офаким",
+        "en": "Mili's Tomb, Ofakim"
+      }
+    },
+    {
+      "url": "На встрече с родственниками в Умани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На встрече с родственниками в Умани",
+        "en": "At a meeting with relatives in Uman"
+      }
+    },
+    {
+      "url": "Офаким, 13.02.1998 .jpg",
+      "type": "image",
+      "title": {
+        "ru": "Офаким, 13.02.1998",
+        "en": "Ofakim, February 13, 1998"
+      }
+    },
+    {
+      "url": "с тётей Златой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "с тётей Златой",
+        "en": "with Aunt Zlata"
+      }
+    },
+    {
+      "url": "св-во о рождении Миндля Ройтман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "св-во о рождении Миндля Ройтман",
+        "en": "Mindlya Roytman's birth certificate"
+      }
+    },
+    {
+      "url": "Семейная фотография Ройтман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная фотография Ройтман",
+        "en": "Roytman family photo"
+      }
+    },
+    {
+      "url": "Семья Микельман, Биробиджан, 1966 год.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Микельман, Биробиджан, 1966 год",
+        "en": "The Mickelman family, Birobidzhan, 1966"
+      }
+    },
+    {
+      "url": "Уманьские родственники.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Уманьские родственники",
+        "en": "Uman relatives"
+      }
+    },
+    {
+      "url": "Фира с Нэлечкой и Миля в парке Умани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира с Нэлечкой и Миля в парке Умани",
+        "en": "Fira with Nelechka and Milya in Uman Park"
+      }
+    },
+    {
+      "url": "Фира с сестрой Милей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фира с сестрой Милей",
+        "en": "Fira with her sister Milya"
+      }
+    },
+    {
+      "url": "Биробиджан 12-1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан 12-1961",
+        "en": "Birobidzhan 12-1961"
+      }
+    },
+    {
+      "url": "Биробиджан, 1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан, 1961",
+        "en": "Birobidzhan, 1961"
+      }
+    },
+    {
+      "url": "в пионерлагере Биробиджан, 07.1964.jpg",
+      "type": "image",
+      "title": {
+        "ru": "в пионерлагере Биробиджан, 07.1964",
+        "en": "in the Birobidzhan pioneer camp, July 1964"
+      }
+    },
+    {
+      "url": "Миля и Михаил с детьми и внуками, Биробиджан, 1989.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля и Михаил с детьми и внуками, Биробиджан, 1989",
+        "en": "Milya and Mikhail with their children and grandchildren, Birobidzhan, 1989"
+      }
+    },
+    {
+      "url": "Миля, Калининград 19.06.1951.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля, Калининград 19.06.1951",
+        "en": "Milya, Kaliningrad, June 19, 1951"
+      }
+    }
   ]
 };
