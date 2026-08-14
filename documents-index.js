@@ -3545,7 +3545,189 @@ window.documentsIndex = {
       }
     }
   ],
-  "person_mindlya_1930": [
+  "person_volko_roitman": [
+    {
+      "url": "Волько Шлемович Ройтман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Волько Шлемович Ройтман",
+        "en": "Volko Shlemovich Roytman"
+      }
+    },
+    {
+      "url": "Запись 1910 года о заселении колесного мастера Волько Ройтмана с женой Фейгой в с.Бабановка.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Запись 1910 года о заселении колесного мастера Волько Ройтмана с женой Фейгой в с.Бабановка",
+        "en": "A 1910 entry about the settlement of wheelwright Volko Roytman and his wife Feiga in the village of Babanovka"
+      }
+    },
+    {
+      "url": "маме, папе, Злоте, дяде Моисею и ребятам от сестры Нехамы 08.1941 (адрес на фото Пролетарская 11).jpg",
+      "type": "image",
+      "title": {
+        "ru": "маме, папе, Злоте, дяде Моисею и ребятам от сестры Нехамы 08.1941 (адрес на фото Пролетарская 11)",
+        "en": "to mom, dad, Zlota, Uncle Moses and the kids from sister Nekhama 08.1941 (address in the photo: Proletarskaya 11)"
+      }
+    },
+    {
+      "url": "Первый брак Волько и Фейги.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Первый брак Волько и Фейги",
+        "en": "Volko and Feiga's first marriage"
+      }
+    },
+    {
+      "url": "Архивная запись синагоги Умани о браке Волька-Нехама ф. Р-5899, оп. 1, спр. 614, арк. 125 зв. - 126.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись синагоги Умани о браке Волька-Нехама ф. Р-5899, оп. 1, спр. 614, арк. 125 зв. - 126",
+        "en": "Archival record of the Uman synagogue on the marriage of Volka-Nekhama f. R-5899, op. 1, sp. 614, arch. 125 sv. - 126"
+      }
+    }
+  ],
+  "person_boris_roitman_1921": [
+    {
+      "url": "Борис Ройтман с женой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Борис Ройтман с женой",
+        "en": "Boris Roytman with his wife"
+      }
+    },
+    {
+      "url": "Борис Ройтман с сыном Владимиром.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Борис Ройтман с сыном Владимиром",
+        "en": "Boris Roytman with his son Vladimir"
+      }
+    },
+    {
+      "url": "Борис с женой и сыном, с тетей Златой и ее сыновьями.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Борис с женой и сыном, с тетей Златой и ее сыновьями",
+        "en": "Boris with his wife and son, with Aunt Zlata and her sons"
+      }
+    },
+    {
+      "url": "жена Бориса с сыном Владимиром.jpg",
+      "type": "image",
+      "title": {
+        "ru": "жена Бориса с сыном Владимиром",
+        "en": "Boris's wife with their son Vladimir"
+      }
+    },
+    {
+      "url": "Могила Нехамы и сына Бориса, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Могила Нехамы и сына Бориса, Биробиджан",
+        "en": "The grave of Nekhama and his son Boris, Birobidzhan"
+      }
+    },
+    {
+      "url": "Молодые годы Бориса, Умань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Молодые годы Бориса, Умань",
+        "en": "Boris's early years, Uman"
+      }
+    },
+    {
+      "url": "Нехама с сыном Борисом и внуком Владимиром.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нехама с сыном Борисом и внуком Владимиром",
+        "en": "Nekhama with her son Boris and grandson Vladimir"
+      }
+    },
+    {
+      "url": "Хроника военных лет Ройтман Борис Владимирович.pdf",
+      "type": "document",
+      "title": {
+        "ru": "Хроника военных лет Ройтман Борис Владимирович",
+        "en": "Chronicle of the War Years by Boris Vladimirovich Roytman"
+      }
+    },
+    {
+      "url": "Борис с сыном Вовочкой 06.1949.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Борис с сыном Вовочкой 06.1949",
+        "en": "Boris with his son Vovochka, June 1949"
+      }
+    }
+  ],
+  "person_motl_roitman_1924": [
+    {
+      "url": "Документы о захоронении Матвея (Мотл).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Документы о захоронении Матвея (Мотл)",
+        "en": "Documents on the burial of Matvey (Motl)"
+      }
+    },
+    {
+      "url": "Курская область, Фатежский район, Молотычевский сельсовет.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Курская область, Фатежский район, Молотычевский сельсовет",
+        "en": "Kursk region, Fatezhsky district, Molotychevsky village council"
+      }
+    },
+    {
+      "url": "Мемориальный комплекс «Поклонная высота 269».jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мемориальный комплекс «Поклонная высота 269»",
+        "en": "Memorial Complex \"Poklonnaya Height 269\""
+      }
+    },
+    {
+      "url": "Мотл Волькович  Ройтман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мотл Волькович  Ройтман",
+        "en": "Motl Volkovich Roytman"
+      }
+    },
+    {
+      "url": "Мотл Ройтман-лист свидетельских показаний Яд вашем.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мотл Ройтман-лист свидетельских показаний Яд вашем",
+        "en": "Motl Roytman - a list of witness statements Yad vashem"
+      }
+    },
+    {
+      "url": "Сегодня на месте подвига.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Сегодня на месте подвига",
+        "en": "Today at the site of the feat"
+      }
+    },
+    {
+      "url": "Хроника военных лет Ройтман Матвей Владимирович.pdf",
+      "type": "document",
+      "title": {
+        "ru": "Хроника военных лет Ройтман Матвей Владимирович",
+        "en": "Chronicle of the War Years by Matvey Vladimirovich Roytman"
+      }
+    },
+    {
+      "url": "Мемориальный комплекс Поклонная высота 269.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мемориальный комплекс Поклонная высота 269",
+        "en": "Memorial complex Poklonnaya Height 269"
+      }
+    }
+  ],
+  "person_mindlya_roitman_1930": [
     {
       "url": "13.06.1951 Калининград, Миля с Галочкой.jpg",
       "type": "image",
@@ -3720,6 +3902,104 @@ window.documentsIndex = {
       "title": {
         "ru": "Миля, Калининград 19.06.1951",
         "en": "Milya, Kaliningrad, June 19, 1951"
+      }
+    }
+  ],
+  "person_mikhail_mikelman_1928": [
+    {
+      "url": "Миля и Михаил Микельман, Рая Геренштейн, дочь Бэлла и внучка Наташа, Офаким.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля и Михаил Микельман, Рая Геренштейн, дочь Бэлла и внучка Наташа, Офаким",
+        "en": "Milya and Mikhail Mikelman, Raya Gerenshtein, daughter Bella and granddaughter Natasha, Ofakim"
+      }
+    },
+    {
+      "url": "Михаил в санатории «Садгород»  в г. Владивосток (Приморский край), на берегу Амурского залива.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил в санатории «Садгород»  в г. Владивосток (Приморский край), на берегу Амурского залива",
+        "en": "Mikhail at the Sadgorod sanatorium in Vladivostok (Primorsky Krai), on the shore of Amur Bay"
+      }
+    },
+    {
+      "url": "Михаил Микельман, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил Микельман, Биробиджан",
+        "en": "Mikhail Mikelman, Birobidzhan"
+      }
+    },
+    {
+      "url": "Михаил с братом Владимиром.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил с братом Владимиром",
+        "en": "Mikhail with his brother Vladimir"
+      }
+    },
+    {
+      "url": "Могила Михаила, Офаким.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Могила Михаила, Офаким",
+        "en": "Michael's Tomb, Ofakim"
+      }
+    },
+    {
+      "url": "Офаким, 13.02.1998 .jpg",
+      "type": "image",
+      "title": {
+        "ru": "Офаким, 13.02.1998",
+        "en": "Ofakim, February 13, 1998"
+      }
+    },
+    {
+      "url": "Семья Микельман, Биробиджан, 1966 год.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Микельман, Биробиджан, 1966 год",
+        "en": "The Mickelman family, Birobidzhan, 1966"
+      }
+    },
+    {
+      "url": "Биробиджан 12-1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан 12-1961",
+        "en": "Birobidzhan 12-1961"
+      }
+    },
+    {
+      "url": "в пионерлагере Биробиджан, 07.1964.jpg",
+      "type": "image",
+      "title": {
+        "ru": "в пионерлагере Биробиджан, 07.1964",
+        "en": "in the Birobidzhan pioneer camp, July 1964"
+      }
+    },
+    {
+      "url": "Миля и Михаил с детьми и внуками, Биробиджан, 1989.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля и Михаил с детьми и внуками, Биробиджан, 1989",
+        "en": "Milya and Mikhail with their children and grandchildren, Birobidzhan, 1989"
+      }
+    },
+    {
+      "url": "Михаил Аронович Микельман, Биробиджан 12-1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил Аронович Микельман, Биробиджан 12-1961",
+        "en": "Mikhail Aronovich Mikelman, Birobidzhan 12-1961"
+      }
+    },
+    {
+      "url": "Хиня Микельман, мать Михаила, Биробиджан 12-1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хиня Микельман, мать Михаила, Биробиджан 12-1961",
+        "en": "Khinya Mikelman, Mikhail's mother, Birobidzhan 12-1961"
       }
     }
   ]
