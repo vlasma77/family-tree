@@ -2938,11 +2938,11 @@ window.db = {
         "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
-        "ru": "Алик Кутиков",
+        "ru": "Олег Кутиков",
         "en": "Alik Kutikov"
       },
       "occupation": {
-        "ru": ""
+        "ru": "преподаватель музыки по классу аккордеона"
       },
       "burial": {
         "ru": ""
