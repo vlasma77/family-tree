@@ -3594,12 +3594,12 @@ window.db = {
   },
   "person_volko_roitman": {
     "name": {
-      "ru": "Волько Ройтман",
+      "ru": "Волько Шлемович Ройтман",
       "en": "Volko Roitman"
     },
-    "years": "",
+    "years": "1884 - ?",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/volko1884.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "",
@@ -3610,7 +3610,7 @@ window.db = {
         "en": "Nekhama Mordkovna Roitman (nee Khmelnitsky), Uman, Kiev Governorate"
       },
       "occupation": {
-        "ru": "",
+        "ru": "колёсный мастер",
         "en": ""
       },
       "burial": {
@@ -3640,7 +3640,7 @@ window.db = {
     },
     "years": "1898 — 1956",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/nekhama1898.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "г. Умань, Уманский уезд, Киевская губерния",
@@ -3655,8 +3655,8 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "",
-        "en": ""
+        "ru": "Биробиджан",
+        "en": "Birobidzhan"
       }
     },
     "bio": {
@@ -3676,12 +3676,12 @@ window.db = {
   },
   "person_boris_roitman_1921": {
     "name": {
-      "ru": "Борис Ройтман",
+      "ru": "Борис Волькович Ройтман",
       "en": "Boris Roitman"
     },
     "years": "1921 — 1953",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/boris_roitman1921.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "г. Умань, Уманский уезд, Киевская губерния",
@@ -3696,7 +3696,7 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "",
+        "ru": "Биробиджан",
         "en": ""
       }
     },
@@ -3720,12 +3720,12 @@ window.db = {
   },
   "person_motl_roitman_1924": {
     "name": {
-      "ru": "Мотл Ройтман",
+      "ru": "Мотл Волькович Ройтман",
       "en": "Motl Roitman"
     },
-    "years": "1924 — ?",
+    "years": "20.05.1924 — 10.07.1943",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/motl_roitman1924.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "г. Умань, Уманский уезд, Киевская губерния",
@@ -3740,7 +3740,7 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "",
+        "ru": "Курская обл., Верхне-Любажский р-н, Молотычевский с/с, д. Молотычи",
         "en": ""
       }
     },
@@ -3762,7 +3762,7 @@ window.db = {
     "archive": "person_motl_roitman_1924",
     "gender": "male"
   },
-  "person_mindlya_1930": {
+  "person_mindlya_roitman_1930": {
     "name": {
       "ru": "Миндля (Миля) Вольковна Микельман (Ройтман)",
       "en": "Mindlya (Milya) Volkovna Mikelman (nee Roitman)"
@@ -3801,7 +3801,7 @@ window.db = {
         "person_volko_roitman",
         "person_nehama_roitman"
       ],
-      "spouse": null
+      "spouse": "person_mikhail_mikelman_1928"
     },
     "archive": "person_mindlya_roitman_1930",
     "gender": "female"
@@ -3941,6 +3941,40 @@ window.db = {
       ],
       "spouse": null
     },
+    "gender": "male"
+  },
+  "person_mikhail_mikelman_1928": {
+    "id": "person_mikhail_mikelman_1928",
+    "name": {
+      "ru": "Михаил Аронович Микельман",
+      "en": "Mikhail Aronovich Mikelman"
+    },
+    "years": "15.12.1928 - 17.02.2017",
+    "isDeceased": true,
+    "mainPhoto": "photos/mikhail_mikelman1928.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Миндля Вольковна Микельман (Ройтман)"
+      },
+      "occupation": {
+        "ru": "водитель"
+      },
+      "burial": {
+        "ru": "Офаким, Израиль"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_mindlya_roitman_1930"
+    },
+    "archive": "person_mikhail_mikelman_1928",
     "gender": "male"
   }
 };
