@@ -2399,6 +2399,46 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "С семьей, 2010 год.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С семьей, 2010 год",
+        "en": "With family, 2010"
+      }
+    },
+    {
+      "url": "Валерий и Татьяна с дочками Олей и Оксаной, 2015.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валерий и Татьяна с дочками Олей и Оксаной, 2015",
+        "en": "Valery and Tatyana with their daughters Olya and Oksana, 2015"
+      }
+    },
+    {
+      "url": "Валерий и Татьяна с Оксаной и внуками, 2010.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валерий и Татьяна с Оксаной и внуками, 2010",
+        "en": "Valery and Tatyana with Oksana and their grandchildren, 2010"
+      }
+    },
+    {
+      "url": "С детьми и внуком, 2012.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С детьми и внуком, 2012",
+        "en": "With children and grandson, 2012"
+      }
+    },
+    {
+      "url": "Семья в сборе, 2015.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья в сборе, 2015",
+        "en": "Family Reunion, 2015"
+      }
+    },
+    {
       "url": "Семья Ефима, 1952.jpg",
       "type": "image",
       "title": {
@@ -2420,6 +2460,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Семья Ефима, 1964",
         "en": "Efim's family, 1964"
+      }
+    },
+    {
+      "url": "Хороший аппетит у бабушки на руках, 2012.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хороший аппетит у бабушки на руках, 2012",
+        "en": "A Good Appetite in Grandma's Arms, 2012"
       }
     }
   ],
@@ -4042,6 +4090,72 @@ window.documentsIndex = {
       "title": {
         "ru": "Хиня Микельман, мать Михаила, Биробиджан 12-1961",
         "en": "Khinya Mikelman, Mikhail's mother, Birobidzhan 12-1961"
+      }
+    }
+  ],
+  "person_tatiana_smagarinsky": [
+    {
+      "url": "С семьей, 2010 год.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С семьей, 2010 год",
+        "en": "With family, 2010"
+      }
+    },
+    {
+      "url": "Татьяна Смагаринская.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Татьяна Смагаринская",
+        "en": "Tatyana Smagarinsky"
+      }
+    },
+    {
+      "url": "Валерий и Татьяна с дочками Олей и Оксаной, 2015.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валерий и Татьяна с дочками Олей и Оксаной, 2015",
+        "en": "Valery and Tatyana with their daughters Olya and Oksana, 2015"
+      }
+    },
+    {
+      "url": "Валерий и Татьяна с Оксаной и внуками, 2010.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валерий и Татьяна с Оксаной и внуками, 2010",
+        "en": "Valery and Tatyana with Oksana and their grandchildren, 2010"
+      }
+    },
+    {
+      "url": "С детьми и внуком, 2012.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С детьми и внуком, 2012",
+        "en": "With children and grandson, 2012"
+      }
+    },
+    {
+      "url": "Семья в сборе, 2015.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья в сборе, 2015",
+        "en": "Family Reunion, 2015"
+      }
+    },
+    {
+      "url": "Счастливая бабушка с внуками, 2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Счастливая бабушка с внуками, 2018",
+        "en": "A happy grandmother with her grandchildren, 2018"
+      }
+    },
+    {
+      "url": "Хороший аппетит у бабушки на руках, 2012.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хороший аппетит у бабушки на руках, 2012",
+        "en": "A Good Appetite in Grandma's Arms, 2012"
       }
     }
   ]
