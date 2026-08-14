@@ -971,7 +971,7 @@ window.db = {
         "person_efim_1919",
         "person_nadejda_1924"
       ],
-      "spouse": null
+      "spouse": "person_gennady_gelvan"
     },
     "gender": "female"
   },
@@ -4013,5 +4013,41 @@ window.db = {
     },
     "archive": "person_tatiana_smagarinsky",
     "gender": "female"
-  }
+  },
+  "person_gennady_gelvan": {
+    "id": "person_gennady_gelvan",
+    "name": {
+      "ru": "Геннадий Яковлевич Гельван",
+      "en": "Gennady Yakovlevich Gelvan"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "photos/gennady_gelvan.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Наталья Ефимовна Гельван (Смагаринская)",
+        "en": "Natalia Efimovna Gelvan (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Астрахань",
+        "en": "Astrakhan"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_natalya_1958"
+    },
+    "archive": "person_gennady_gelvan",
+    "gender": "male"
+  },
 };
