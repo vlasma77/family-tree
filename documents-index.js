@@ -3587,6 +3587,48 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_nehama_roitman": [
+    {
+      "url": "маме, папе, Злоте, дяде Моисею и ребятам от сестры Нехамы 08.1941 (адрес на фото Пролетарская 11).jpg",
+      "type": "image",
+      "title": {
+        "ru": "маме, папе, Злоте, дяде Моисею и ребятам от сестры Нехамы 08.1941 (адрес на фото Пролетарская 11)",
+        "en": "to mom, dad, Zlota, Uncle Moses and the kids from sister Nekhama 08.1941 (address in the photo: Proletarskaya 11)"
+      }
+    },
+    {
+      "url": "Могила Нехамы и сына Бориса, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Могила Нехамы и сына Бориса, Биробиджан",
+        "en": "The grave of Nekhama and his son Boris, Birobidzhan"
+      }
+    },
+    {
+      "url": "Нехама с внуком Владимиром, сыном Бориса.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нехама с внуком Владимиром, сыном Бориса",
+        "en": "Nekhama with her grandson Vladimir, Boris's son"
+      }
+    },
+    {
+      "url": "Нехама с сыном Борисом и внуком Владимиром.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Нехама с сыном Борисом и внуком Владимиром",
+        "en": "Nekhama with her son Boris and grandson Vladimir"
+      }
+    },
+    {
+      "url": "Архивная запись синагоги Умани о браке Волька-Нехама ф. Р-5899, оп. 1, спр. 614, арк. 125 зв. - 126.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись синагоги Умани о браке Волька-Нехама ф. Р-5899, оп. 1, спр. 614, арк. 125 зв. - 126",
+        "en": "Archival record of the Uman synagogue on the marriage of Volka-Nekhama f. R-5899, op. 1, sp. 614, arch. 125 sv. - 126"
+      }
+    }
+  ],
   "person_boris_roitman_1921": [
     {
       "url": "Борис Ройтман с женой.jpg",
