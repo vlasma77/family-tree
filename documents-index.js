@@ -4158,5 +4158,15 @@ window.documentsIndex = {
         "en": "A Good Appetite in Grandma's Arms, 2012"
       }
     }
+  ],
+  "person_gennady_gelvan": [
+    {
+      "url": "Геннадий и Наташа Гельван с дочкой Ириной.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Геннадий и Наташа Гельван с дочкой Ириной",
+        "en": "Gennady and Natasha Gelvan with daughter Irina"
+      }
+    }
   ]
 };
