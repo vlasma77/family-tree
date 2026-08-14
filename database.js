@@ -904,7 +904,7 @@ window.db = {
     "id": "person_valery_1955",
     "name": {
       "ru": "Валерий Ефимович Смагаринский",
-      "en": "Valery Smagarinsky"
+      "en": "Valery Efimovich Smagarinsky"
     },
     "years": "",
     "mainPhoto": "photos/valery1955.jpg",
@@ -913,7 +913,8 @@ window.db = {
         "ru": ""
       },
       "marriage": {
-        "ru": ""
+        "ru": "Татьяна Николаевна Смагаринская",
+        "en": "Tatyana Nikolaevna Smagarinsky"
       },
       "occupation": {
         "ru": ""
@@ -931,7 +932,7 @@ window.db = {
         "person_efim_1919",
         "person_nadejda_1924"
       ],
-      "spouse": null
+      "spouse": "person_tatiana_smagarinsky"
     },
     "gender": "male"
   },
@@ -3976,5 +3977,41 @@ window.db = {
     },
     "archive": "person_mikhail_mikelman_1928",
     "gender": "male"
+  },
+  "person_tatiana_smagarinsky": {
+    "id": "person_tatiana_smagarinsky",
+    "name": {
+      "ru": "Татьяна Николаевна Смагаринская",
+      "en": "Tatyana Nikolaevna Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "photos/tatiana_smagarinsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Валерий Ефимович Смагаринский",
+        "en": "Valery Efimovich Smagarinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_valery_1955"
+    },
+    "archive": "person_tatiana_smagarinsky",
+    "gender": "female"
   }
 };
