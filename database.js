@@ -1048,7 +1048,7 @@ window.db = {
         "person_efim_1919",
         "person_nadejda_1924"
       ],
-      "spouse": null,
+      "spouse": "person_valery_zakharov",
       "biologicalFatherName": "Левченко Василий Радионович"
     },
     "bio": {
@@ -1061,6 +1061,47 @@ window.db = {
     },
     "archive": "person_mira_zakharova",
     "gender": "female"
+  },
+  "person_valery_zakharov": {
+    "name": {
+      "ru": "Валерий Захаров",
+      "en": "Valery Zakharov"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "photos/valery_zakharov.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Мира Захарова",
+        "en": "Mira Zakharova"
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_mira_zakharova"
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "archive": "person_valery_zakharov",
+    "gender": "male"
   },
   "person_aba_1923": {
     "name": {
