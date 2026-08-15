@@ -4168,5 +4168,71 @@ window.documentsIndex = {
         "en": "Gennady and Natasha Gelvan with daughter Irina"
       }
     }
+  ],
+  "person_valery_zakharov": [
+    {
+      "url": "Мира с мужем и Владиком,Лиепая  09.05.1974.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира с мужем и Владиком, Лиепая, 09.05.1974",
+        "en": "Mira with her husband and Vladik, Liepaja, 09.05.1974"
+      }
+    },
+    {
+      "url": "Родители.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Родители: Левченко Василий Радионович и Захаров Фёдор Васильевич",
+        "en": "Parents: Vasily Radionovich Levchenko and Fyodor Vasilyevich Zakharov"
+      }
+    },
+    {
+      "url": "Семья Захаровых.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Захаровых",
+        "en": "The Zakharov family"
+      }
+    },
+    {
+      "url": "Серебянная свадьба Лиепая 1988.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Серебряная свадьба, Лиепая, 1988",
+        "en": "Silver wedding anniversary, Liepaja, 1988"
+      }
+    },
+    {
+      "url": "Без слов.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Без слов",
+        "en": "Without words"
+      }
+    },
+    {
+      "url": "Встреча с родственниками.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча с родственниками",
+        "en": "Meeting with relatives"
+      }
+    },
+    {
+      "url": "День свадьбы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "День свадьбы",
+        "en": "Wedding day"
+      }
+    },
+    {
+      "url": "Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира Левченко и Валера Захаров, Бельцы, Молдавия, 1960 г.",
+        "en": "Mira Levchenko and Valera Zakharov, Balti, Moldova, 1960"
+      }
+    }
   ]
 };
