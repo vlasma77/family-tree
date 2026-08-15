@@ -281,21 +281,38 @@
       // не указан, сразу переходим к заглушке по полу (шаг ниже) — так и было задумано.
 
       // 3. Определяем пол для заглушки: сначала смотрим на явное поле
-      // "gender" в базе (надёжный способ), и только если его нет —
-      // подстраховываемся старым угадыванием по имени (для персон,
-      // которым ещё не проставили это поле).
+      // "gender" в базе (самый надёжный способ). Если его нет —
+      // пробуем угадать по окончанию русского имени (работает для
+      // любого нового человека, а не только из старого жёсткого списка).
       let isFemale = false;
       if (person && person.gender) {
         isFemale = person.gender === "female";
-      } else if (id) {
-        let idLower = id.toLowerCase();
-        isFemale = idLower.includes("alla") || idLower.includes("blyuma") || 
-                   idLower.includes("haya") || idLower.includes("khaya") || 
-                   idLower.includes("feyga") || idLower.includes("slava") || 
-                   idLower.includes("katya") || idLower.includes("mira") || 
-                   idLower.includes("sonya") || idLower.includes("natalya") || 
-                   // добавим новые имена из вашей папки
-                   idLower.includes("nella") || idLower.includes("nadejda");
+      } else {
+        // Берём русское имя персоны (первое слово — обычно само имя)
+        let ruName = (person && person.name && person.name.ru) ? person.name.ru : "";
+        let firstWord = ruName.trim().split(/\s+/)[0] || "";
+
+        // Небольшой список исключений — мужских имён, которые ошибочно
+        // выглядят "женскими" по окончанию (Никита, Илья, Лёва и т.п.)
+        const MALE_EXCEPTIONS = ["никита", "илья", "лёва", "лева", "фома", "кузьма", "гоша"];
+
+        let lower = firstWord.toLowerCase();
+        if (MALE_EXCEPTIONS.includes(lower)) {
+          isFemale = false;
+        } else if (/[ая]$/i.test(firstWord)) {
+          // Русские женские имена почти всегда заканчиваются на "а" или "я"
+          isFemale = true;
+        } else if (id) {
+          // Совсем крайняя подстраховка — старый список по ID
+          // (на случай нестандартных/иностранных имён без явного gender)
+          let idLower = id.toLowerCase();
+          isFemale = idLower.includes("alla") || idLower.includes("blyuma") ||
+                     idLower.includes("haya") || idLower.includes("khaya") ||
+                     idLower.includes("feyga") || idLower.includes("slava") ||
+                     idLower.includes("katya") || idLower.includes("mira") ||
+                     idLower.includes("sonya") || idLower.includes("natalya") ||
+                     idLower.includes("nella") || idLower.includes("nadejda");
+        }
       }
       
       return isFemale ? "photos/female.jpg" : "photos/male.jpg";
@@ -458,11 +475,10 @@ window.copyDatabaseToClipboard = function() {
 function closePanel() {
     const panel = document.getElementById("custom-side-panel");
     panel.style.display = "none";
-    
-    // Принудительно вызываем перерисовку дерева
-    if (typeof drawTree === 'function') {
-        drawTree();
-    }
+    // Раньше здесь был drawTree() — он полностью пересоздавал дерево
+    // и из-за onInit() каждый раз возвращал вид на person_vulf_1898.
+    // Просто закрытие панели не меняет данные дерева, поэтому
+    // перерисовка тут не нужна.
 }
     function showCustomSidePanel(nodeId) {
       activeNodeId = nodeId;
