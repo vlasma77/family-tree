@@ -677,6 +677,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "В парке Офакима, ориентировочно 1995.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В парке Офакима, ориентировочно 1995",
+        "en": "In Ofakim Park, circa 1995"
+      }
+    },
+    {
       "url": "Курсант военного училища 1946.jpg",
       "type": "image",
       "title": {
@@ -805,7 +813,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Мира Линецкая",
-        "en": "Mira Linetskaya"
+        "en": "Mira LinetskayaOlga with her nephew Vladimir, circa 1979, Voroshilovgrad"
       }
     },
     {
@@ -1621,6 +1629,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "с тётей Милей Микельман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "с тётей Милей Микельман",
+        "en": "with Aunt Mila Mickelman"
+      }
+    },
+    {
       "url": "свидетельство о браке Владимира и Ольги.jpg",
       "type": "image",
       "title": {
@@ -1642,14 +1658,6 @@ window.documentsIndex = {
       "title": {
         "ru": "семейное фото",
         "en": "Archival Photo"
-      }
-    },
-    {
-      "url": "Танец с женой на вечеринке в ресторане.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Танец с женой на вечеринке в ресторане",
-        "en": "Dancing with wife at a restaurant party"
       }
     },
     {
@@ -1701,11 +1709,27 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "В парке Офакима, ориентировочно 1995.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В парке Офакима, ориентировочно 1995",
+        "en": "In Ofakim Park, circa 1995"
+      }
+    },
+    {
       "url": "Вечер прощания с друзьями перед отьездом в Израиль, 1994.jpg",
       "type": "image",
       "title": {
         "ru": "Вечер прощания с друзьями перед отьездом в Израиль, 1994",
         "en": "Farewell evening with friends before leaving for Israel, 1994"
+      }
+    },
+    {
+      "url": "Владимир, ориентировочно 1971.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Владимир, ориентировочно 1971",
+        "en": "Vladimir, approximately 1971"
       }
     },
     {
@@ -1730,6 +1754,216 @@ window.documentsIndex = {
       "title": {
         "ru": "служба в армии 1971-1972",
         "en": "military service 1971-1972"
+      }
+    },
+    {
+      "url": "Танец с женой на вечеринке в ресторане 05.2004.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Танец с женой на вечеринке в ресторане 05.2004",
+        "en": "Dancing with wife at a restaurant party 05.2004"
+      }
+    }
+  ],
+  "person_olga_smagarinsky_1953": [
+    {
+      "url": "2003г.jpg",
+      "type": "image",
+      "title": {
+        "ru": "2003г",
+        "en": "2003"
+      }
+    },
+    {
+      "url": "В гостях у друзей Брусованских на крыше, Петах Тиква, 06.1996г..jpg",
+      "type": "image",
+      "title": {
+        "ru": "В гостях у друзей Брусованских на крыше, Петах Тиква, 06.1996г.",
+        "en": "Visiting friends Brusovanskys on the roof, Petah Tikva, 06.1996"
+      }
+    },
+    {
+      "url": "В зимнем дворе дома в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В зимнем дворе дома в Астрахани",
+        "en": "In the winter courtyard of a house in Astrakhan"
+      }
+    },
+    {
+      "url": "Выступление на юбилее преподователя класса скрипки Шошиной И.Л., 1992, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Выступление на юбилее преподователя класса скрипки Шошиной И.Л., 1992, Астрахань",
+        "en": "Performance at the anniversary of violin teacher I.L. Shoshina, 1992, Astrakhan"
+      }
+    },
+    {
+      "url": "Зима 1993г. в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Зима 1993г. в Астрахани",
+        "en": "Winter 1993 in Astrakhan"
+      }
+    },
+    {
+      "url": "На уроке в музыкальной школе, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На уроке в музыкальной школе, Астрахань",
+        "en": "During a lesson at a music school, Astrakhan"
+      }
+    },
+    {
+      "url": "Ольга с племянником Владимиром, ориентировочно 1979, Ворошиловград.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга с племянником Владимиром, ориентировочно 1979, Ворошиловград",
+        "en": "Olga with her nephew Vladimir, circa 1979, Voroshilovgrad"
+      }
+    },
+    {
+      "url": "Ольга с учеником Димой, который впоследствии стал священником.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга с учеником Димой, который впоследствии стал священником",
+        "en": "Olga with her student Dima, who later became a priest"
+      }
+    },
+    {
+      "url": "Ольга со своими выпускниками, двойняшками  Коваленко Ильей и Анастасией  (14 лет), участниками концерта в Астраханской консерватории 21.06.1992г.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга со своими выпускниками, двойняшками  Коваленко Ильей и Анастасией  (14 лет), участниками концерта в Астраханской консерватории 21.06.1992г",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Ольга, Ашкелон.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга, Ашкелон",
+        "en": "Olga, Ashkelon"
+      }
+    },
+    {
+      "url": "пикник в Офакиме в день 50-летия.jpg",
+      "type": "image",
+      "title": {
+        "ru": "пикник в Офакиме в день 50-летия",
+        "en": "Picnic in Ofakim on the 50th anniversary"
+      }
+    },
+    {
+      "url": "В поездке в Пензу, 1982.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В поездке в Пензу, 1982",
+        "en": "On a trip to Penza, 1982"
+      }
+    },
+    {
+      "url": "В свадебном путешествии на теплоходе Астрахань - Ленинград - Астрахань, 1973.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В свадебном путешествии на теплоходе Астрахань - Ленинград - Астрахань, 1973",
+        "en": "On a honeymoon on the ship Astrakhan - Leningrad - Astrakhan, 1973"
+      }
+    },
+    {
+      "url": "Кисловодск 1990.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Кисловодск 1990",
+        "en": "Kislovodsk 1990"
+      }
+    },
+    {
+      "url": "На природе в Астрахани, 1988.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На природе в Астрахани, 1988",
+        "en": "Outdoors in Astrakhan, 1988"
+      }
+    },
+    {
+      "url": "Ольга на субботнике музыкального училища в Астраханском кремле, 1970.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга на субботнике музыкального училища в Астраханском кремле, 1970",
+        "en": "Olga at a music school cleanup in the Astrakhan Kremlin, 1970"
+      }
+    },
+    {
+      "url": "Ольга с Бэллой Черновой на раскопках в Ашкелонском парке, 1997.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга с Бэллой Черновой на раскопках в Ашкелонском парке, 1997",
+        "en": "Olga with Bella Chernova at excavations in Ashkelon Park, 1997"
+      }
+    },
+    {
+      "url": "Ольга с дочками на Кавказе, 1990.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга с дочками на Кавказе, 1990",
+        "en": "Olga with her daughters in the Caucasus, 1990"
+      }
+    },
+    {
+      "url": "Ольга Смагаринская, Астрахань, 1978.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга Смагаринская, Астрахань, 1978",
+        "en": "Olga Smagarinsky, Astrakhan, 1978"
+      }
+    },
+    {
+      "url": "Офаким, 1994.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Офаким, 1994",
+        "en": "Ofakim, 1994"
+      }
+    },
+    {
+      "url": "Перед отъездом в Израиль, 1994.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Перед отъездом в Израиль, 1994",
+        "en": "Before leaving for Israel, 1994"
+      }
+    },
+    {
+      "url": "Петергоф, 1973.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Петергоф, 1973",
+        "en": "Peterhof, 1973"
+      }
+    },
+    {
+      "url": "С братом Владимиром, Астрахань, 1993.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С братом Владимиром, Астрахань, 1993",
+        "en": "With brother Vladimir, Astrakhan, 1993"
+      }
+    },
+    {
+      "url": "С первой учительницей по классу скрипки, Астрахань, 1961-62.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С первой учительницей по классу скрипки, Астрахань, 1961-62",
+        "en": "With her first violin teacher, Astrakhan, 1961-62"
+      }
+    },
+    {
+      "url": "Трио Мангина, программное выступление в российском посольстве в Тель Авиве, 2011.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Трио Мангина, программное выступление в российском посольстве в Тель Авиве, 2011",
+        "en": "The Mangina Trio, keynote performance at the Russian Embassy in Tel Aviv, 2011"
       }
     }
   ],
@@ -1820,6 +2054,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Биробиджан, Калинина 39",
         "en": "Birobidzhan, Kalinina 39"
+      }
+    },
+    {
+      "url": "В парке Офакима, ориентировочно 1995.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В парке Офакима, ориентировочно 1995",
+        "en": "In Ofakim Park, circa 1995"
       }
     }
   ],
@@ -1998,6 +2240,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Хорошее настроение",
         "en": "good mood"
+      }
+    },
+    {
+      "url": "В парке Офакима, ориентировочно 1995.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В парке Офакима, ориентировочно 1995",
+        "en": "In Ofakim Park, circa 1995"
       }
     },
     {
@@ -2233,6 +2483,14 @@ window.documentsIndex = {
         "ru": "Фира со старшим сыном Вовой",
         "en": "Fira with her eldest son Vova"
       }
+    },
+    {
+      "url": "В парке Офакима, ориентировочно 1995.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В парке Офакима, ориентировочно 1995",
+        "en": "In Ofakim Park, circa 1995"
+      }
     }
   ],
   "person_alla_1948": [
@@ -2364,6 +2622,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Валера с сестрой Наташей",
         "en": "Valera with his sister Natasha"
+      }
+    },
+    {
+      "url": "Валерий и Татьяна Смагаринские, Марбелья, Испания.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валерий и Татьяна Смагаринские, Марбелья, Испания",
+        "en": "Valery and Tatiana Smagarinsky, Marbella, Spain"
       }
     },
     {
@@ -2784,6 +3050,72 @@ window.documentsIndex = {
       "title": {
         "ru": "Мира после окончания школы 1959",
         "en": "Mira after graduating from school in 1959"
+      }
+    },
+    {
+      "url": "Мира с мужем и Владиком,Лиепая  09.05.1974.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира с мужем и Владиком,Лиепая  09.05.1974",
+        "en": "Mira with her husband and Vladik, Liepaja 05/09/1974"
+      }
+    },
+    {
+      "url": "Серебянная свадьба Лиепая 1988.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Серебянная свадьба Лиепая 1988",
+        "en": "Silver Wedding Anniversary, Liepaja, 1988"
+      }
+    }
+  ],
+  "person_valery_zakharov": [
+    {
+      "url": "Без слов.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Без слов",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Встреча с родственниками.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Встреча с родственниками",
+        "en": "Meeting with relatives"
+      }
+    },
+    {
+      "url": "День свадьбы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "День свадьбы",
+        "en": "Wedding day"
+      }
+    },
+    {
+      "url": "Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г",
+        "en": "Mira Levchenko and Valery Zakharov, Beltsy, Moldova, 1960"
+      }
+    },
+    {
+      "url": "Родители.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Родители",
+        "en": "Parents"
+      }
+    },
+    {
+      "url": "Семья Захаровых.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Захаровых",
+        "en": "The Zakharov family"
       }
     },
     {
@@ -4095,6 +4427,14 @@ window.documentsIndex = {
   ],
   "person_tatiana_smagarinsky": [
     {
+      "url": "Валерий и Татьяна Смагаринские, Марбелья, Испания.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Валерий и Татьяна Смагаринские, Марбелья, Испания",
+        "en": "Valery and Tatiana Smagarinsky, Marbella, Spain"
+      }
+    },
+    {
       "url": "С семьей, 2010 год.jpg",
       "type": "image",
       "title": {
@@ -4165,73 +4505,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Геннадий и Наташа Гельван с дочкой Ириной",
-        "en": "Gennady and Natasha Gelvan with daughter Irina"
-      }
-    }
-  ],
-  "person_valery_zakharov": [
-    {
-      "url": "Мира с мужем и Владиком,Лиепая  09.05.1974.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Мира с мужем и Владиком, Лиепая, 09.05.1974",
-        "en": "Mira with her husband and Vladik, Liepaja, 09.05.1974"
-      }
-    },
-    {
-      "url": "Родители.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Родители: Левченко Василий Радионович и Захаров Фёдор Васильевич",
-        "en": "Parents: Vasily Radionovich Levchenko and Fyodor Vasilyevich Zakharov"
-      }
-    },
-    {
-      "url": "Семья Захаровых.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Семья Захаровых",
-        "en": "The Zakharov family"
-      }
-    },
-    {
-      "url": "Серебянная свадьба Лиепая 1988.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Серебряная свадьба, Лиепая, 1988",
-        "en": "Silver wedding anniversary, Liepaja, 1988"
-      }
-    },
-    {
-      "url": "Без слов.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Без слов",
-        "en": "Without words"
-      }
-    },
-    {
-      "url": "Встреча с родственниками.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Встреча с родственниками",
-        "en": "Meeting with relatives"
-      }
-    },
-    {
-      "url": "День свадьбы.jpg",
-      "type": "image",
-      "title": {
-        "ru": "День свадьбы",
-        "en": "Wedding day"
-      }
-    },
-    {
-      "url": "Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Мира Левченко и Валера Захаров, Бельцы, Молдавия, 1960 г.",
-        "en": "Mira Levchenko and Valera Zakharov, Balti, Moldova, 1960"
+        "en": "Gennady and Natasha Gelvan with their daughter Irina"
       }
     }
   ]
