@@ -133,6 +133,18 @@ function isCyrillicText(text) {
     return /[а-яёА-ЯЁ]/.test(text);
 }
 
+// НОВОЕ: ручной порядок документов через префикс в начале имени файла.
+// Например: "01_Фото свадьбы.jpg", "02-Встреча с родственниками.jpg".
+// Специально разрешаем только 1-3 цифры, чтобы не путать с годами в
+// названиях файлов (1960, 1974, 2022 и т.п. — это 4 цифры, они не тронутся).
+function extractManualOrder(baseName) {
+    const m = baseName.match(/^(\d{1,3})[_\-.\s]+(.+)$/);
+    if (m) {
+        return { order: parseInt(m[1], 10), rest: m[2].trim() };
+    }
+    return { order: null, rest: baseName };
+}
+
 if (!fs.existsSync(dbPath)) {
     console.error('❌ Ошибка: Файл database.js не найден!');
     process.exit(1);
@@ -178,10 +190,18 @@ for (const personId in db) {
             const BOOK_MIN_PAGES = 5;
             const numberedGroups = {}; // префикс -> [{num, file}]
             const singles = []; // обычные файлы (не подошли под номерную серию)
+            const manualOrders = {}; // file -> ручной порядковый номер (если задан)
 
             files.forEach(file => {
-                let base = path.basename(file, path.extname(file));
+                let rawBase = path.basename(file, path.extname(file));
                 let ext = path.extname(file).toLowerCase();
+
+                // НОВОЕ: сначала снимаем ручной порядковый префикс (если он есть),
+                // и запоминаем номер отдельно — дальше везде работаем с "чистым" именем.
+                const { order, rest } = extractManualOrder(rawBase);
+                if (order !== null) manualOrders[file] = order;
+                let base = rest;
+
                 // подходит только для изображений — книги/сканы это фото страниц
                 if (TYPE_BY_EXT[ext] !== 'image') { singles.push(file); return; }
 
@@ -220,7 +240,10 @@ for (const personId in db) {
             });
 
             const singleEntries = singles.map(file => {
-                let cleanTitle = path.basename(file, path.extname(file)).replace(/_/g, ' ').trim();
+                let rawBase = path.basename(file, path.extname(file));
+                // НОВОЕ: убираем ручной порядковый префикс из отображаемого названия
+                const { rest } = extractManualOrder(rawBase);
+                let cleanTitle = rest.replace(/_/g, ' ').trim();
                 let ext = path.extname(file).toLowerCase();
                 let fileType = TYPE_BY_EXT[ext] || 'document';
 
@@ -246,11 +269,27 @@ for (const personId in db) {
                     title: {
                         ru: ruTitle,
                         en: enTitle
-                    }
+                    },
+                    _order: manualOrders[file] !== undefined ? manualOrders[file] : null // служебное поле, ниже удалим
                 };
             });
 
-            documentsIndex[personId] = [...bookEntries, ...singleEntries];
+            let combinedEntries = [...bookEntries, ...singleEntries];
+
+            // НОВОЕ: если хотя бы у одного документа задан ручной порядковый номер —
+            // сортируем весь список по нему (без номера — считаем "в конце", после всех
+            // пронумерованных, и сохраняем прежний порядок между собой — сортировка стабильна).
+            const hasManualOrder = combinedEntries.some(e => e._order !== null && e._order !== undefined);
+            if (hasManualOrder) {
+                combinedEntries = combinedEntries
+                    .map((entry, idx) => ({ entry, idx, ord: (entry._order !== null && entry._order !== undefined) ? entry._order : Infinity }))
+                    .sort((a, b) => a.ord - b.ord || a.idx - b.idx)
+                    .map(x => x.entry);
+            }
+            // Убираем служебное поле _order — оно не должно попасть в итоговый JSON
+            combinedEntries.forEach(entry => delete entry._order);
+
+            documentsIndex[personId] = combinedEntries;
             updatedCount++;
         }
     }
