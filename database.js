@@ -735,9 +735,136 @@ window.db = {
         "person_mikhail_1922",
         "person_fira_1927"
       ],
-      "spouse": null
+      "spouse": "person_olga_smagarinsky_1953"
     },
     "gender": "male"
+  },
+  "person_olga_smagarinsky_1953": {
+    "name": {
+      "ru": "Ольга Викторовна Смагаринская (Антонова)",
+      "en": "Olga Viktorovna Smagarinsky (Antonova)"
+    },
+    "years": "1953—",
+    "isDeceased": false,
+    "mainPhoto": "photos/olga_smagarinsky1953.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Грабово, Пензенской области",
+        "en": "Grabovo, Penza Oblast"
+      },
+      "marriage": {
+        "ru": "Владимир Михайлович Смагаринский, 14.06.1973",
+        "en": "Vladimir Mikhailovich Smagarinsky, 06/14/1973"
+      },
+      "occupation": {
+        "ru": "преподаватель музыки по классу скрипки",
+        "en": "music teacher specializing in violin"
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_vladimir_mikhailovich_1948"
+    },
+    "archive": "person_olga_smagarinsky_1953",
+    "gender": "female"
+  },
+  "person_irina_smagarinsky": {
+    "name": {
+      "ru": "Ирина Владимировна Смагаринская",
+      "en": "Irina Vladimirovna Smagarinsky"
+    },
+    "years": "31.03.1974 - ",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Астрахань",
+        "en": "Astrakhan"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_vladimir_mikhailovich_1948",
+        "person_olga_smagarinsky_1953"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
+  "person_anna_smagarinsky": {
+    "name": {
+      "ru": "Анна Владимировна Смагаринская",
+      "en": "Anna Vladimirovna Smagarinsky"
+    },
+    "years": "20.11.1982 - ",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Астрахань",
+        "en": "Astrakhan"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_vladimir_mikhailovich_1948",
+        "person_olga_smagarinsky_1953"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
   },
   "person_yuri_mikhailovich_1950": {
     "name": {
@@ -4090,5 +4217,5 @@ window.db = {
     },
     "archive": "person_gennady_gelvan",
     "gender": "male"
-  },
+  }
 };
