@@ -1767,191 +1767,7 @@ window.documentsIndex = {
   ],
   "person_olga_smagarinsky_1953": [
     {
-      "url": "2003г.jpg",
-      "type": "image",
-      "title": {
-        "ru": "2003г",
-        "en": "2003"
-      }
-    },
-    {
-      "url": "В гостях у друзей Брусованских на крыше, Петах Тиква, 06.1996г..jpg",
-      "type": "image",
-      "title": {
-        "ru": "В гостях у друзей Брусованских на крыше, Петах Тиква, 06.1996г.",
-        "en": "Visiting friends Brusovanskys on the roof, Petah Tikva, 06.1996"
-      }
-    },
-    {
-      "url": "В зимнем дворе дома в Астрахани.jpg",
-      "type": "image",
-      "title": {
-        "ru": "В зимнем дворе дома в Астрахани",
-        "en": "In the winter courtyard of a house in Astrakhan"
-      }
-    },
-    {
-      "url": "Выступление на юбилее преподователя класса скрипки Шошиной И.Л., 1992, Астрахань.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Выступление на юбилее преподователя класса скрипки Шошиной И.Л., 1992, Астрахань",
-        "en": "Performance at the anniversary of violin teacher I.L. Shoshina, 1992, Astrakhan"
-      }
-    },
-    {
-      "url": "Зима 1993г. в Астрахани.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Зима 1993г. в Астрахани",
-        "en": "Winter 1993 in Astrakhan"
-      }
-    },
-    {
-      "url": "На уроке в музыкальной школе, Астрахань.jpg",
-      "type": "image",
-      "title": {
-        "ru": "На уроке в музыкальной школе, Астрахань",
-        "en": "During a lesson at a music school, Astrakhan"
-      }
-    },
-    {
-      "url": "Ольга с племянником Владимиром, ориентировочно 1979, Ворошиловград.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ольга с племянником Владимиром, ориентировочно 1979, Ворошиловград",
-        "en": "Olga with her nephew Vladimir, circa 1979, Voroshilovgrad"
-      }
-    },
-    {
-      "url": "Ольга с учеником Димой, который впоследствии стал священником.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ольга с учеником Димой, который впоследствии стал священником",
-        "en": "Olga with her student Dima, who later became a priest"
-      }
-    },
-    {
-      "url": "Ольга со своими выпускниками, двойняшками  Коваленко Ильей и Анастасией  (14 лет), участниками концерта в Астраханской консерватории 21.06.1992г.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ольга со своими выпускниками, двойняшками  Коваленко Ильей и Анастасией  (14 лет), участниками концерта в Астраханской консерватории 21.06.1992г",
-        "en": "Archival Document"
-      }
-    },
-    {
-      "url": "Ольга, Ашкелон.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ольга, Ашкелон",
-        "en": "Olga, Ashkelon"
-      }
-    },
-    {
-      "url": "пикник в Офакиме в день 50-летия.jpg",
-      "type": "image",
-      "title": {
-        "ru": "пикник в Офакиме в день 50-летия",
-        "en": "Picnic in Ofakim on the 50th anniversary"
-      }
-    },
-    {
-      "url": "В поездке в Пензу, 1982.jpg",
-      "type": "image",
-      "title": {
-        "ru": "В поездке в Пензу, 1982",
-        "en": "On a trip to Penza, 1982"
-      }
-    },
-    {
-      "url": "В свадебном путешествии на теплоходе Астрахань - Ленинград - Астрахань, 1973.jpg",
-      "type": "image",
-      "title": {
-        "ru": "В свадебном путешествии на теплоходе Астрахань - Ленинград - Астрахань, 1973",
-        "en": "On a honeymoon on the ship Astrakhan - Leningrad - Astrakhan, 1973"
-      }
-    },
-    {
-      "url": "Кисловодск 1990.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Кисловодск 1990",
-        "en": "Kislovodsk 1990"
-      }
-    },
-    {
-      "url": "На природе в Астрахани, 1988.jpg",
-      "type": "image",
-      "title": {
-        "ru": "На природе в Астрахани, 1988",
-        "en": "Outdoors in Astrakhan, 1988"
-      }
-    },
-    {
-      "url": "Ольга на субботнике музыкального училища в Астраханском кремле, 1970.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ольга на субботнике музыкального училища в Астраханском кремле, 1970",
-        "en": "Olga at a music school cleanup in the Astrakhan Kremlin, 1970"
-      }
-    },
-    {
-      "url": "Ольга с Бэллой Черновой на раскопках в Ашкелонском парке, 1997.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ольга с Бэллой Черновой на раскопках в Ашкелонском парке, 1997",
-        "en": "Olga with Bella Chernova at excavations in Ashkelon Park, 1997"
-      }
-    },
-    {
-      "url": "Ольга с дочками на Кавказе, 1990.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ольга с дочками на Кавказе, 1990",
-        "en": "Olga with her daughters in the Caucasus, 1990"
-      }
-    },
-    {
-      "url": "Ольга Смагаринская, Астрахань, 1978.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Ольга Смагаринская, Астрахань, 1978",
-        "en": "Olga Smagarinsky, Astrakhan, 1978"
-      }
-    },
-    {
-      "url": "Офаким, 1994.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Офаким, 1994",
-        "en": "Ofakim, 1994"
-      }
-    },
-    {
-      "url": "Перед отъездом в Израиль, 1994.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Перед отъездом в Израиль, 1994",
-        "en": "Before leaving for Israel, 1994"
-      }
-    },
-    {
-      "url": "Петергоф, 1973.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Петергоф, 1973",
-        "en": "Peterhof, 1973"
-      }
-    },
-    {
-      "url": "С братом Владимиром, Астрахань, 1993.jpg",
-      "type": "image",
-      "title": {
-        "ru": "С братом Владимиром, Астрахань, 1993",
-        "en": "With brother Vladimir, Astrakhan, 1993"
-      }
-    },
-    {
-      "url": "С первой учительницей по классу скрипки, Астрахань, 1961-62.jpg",
+      "url": "01_С первой учительницей по классу скрипки, Астрахань, 1961-62.jpg",
       "type": "image",
       "title": {
         "ru": "С первой учительницей по классу скрипки, Астрахань, 1961-62",
@@ -1959,11 +1775,243 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Трио Мангина, программное выступление в российском посольстве в Тель Авиве, 2011.jpg",
+      "url": "02_Ольга на субботнике музыкального училища в Астраханском кремле, 1970.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга на субботнике музыкального училища в Астраханском кремле, 1970",
+        "en": "Olga at a music school cleanup in the Astrakhan Kremlin, 1970"
+      }
+    },
+    {
+      "url": "03_Торжественный момент, 14.06.1973, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Торжественный момент, 14.06.1973, Астрахань",
+        "en": "A solemn moment, June 14, 1973, Astrakhan"
+      }
+    },
+    {
+      "url": "04_свидетельство о браке Владимира и Ольги.jpg",
+      "type": "image",
+      "title": {
+        "ru": "свидетельство о браке Владимира и Ольги",
+        "en": "marriage certificate of Vladimir and Olga"
+      }
+    },
+    {
+      "url": "05_В свадебном путешествии на теплоходе Астрахань - Ленинград - Астрахань, 1973.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В свадебном путешествии на теплоходе Астрахань - Ленинград - Астрахань, 1973",
+        "en": "On a honeymoon on the ship Astrakhan - Leningrad - Astrakhan, 1973"
+      }
+    },
+    {
+      "url": "06_Петергоф, 1973.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Петергоф, 1973",
+        "en": "Peterhof, 1973"
+      }
+    },
+    {
+      "url": "07_На уроке в музыкальной школе, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На уроке в музыкальной школе, Астрахань",
+        "en": "During a lesson at a music school, Astrakhan"
+      }
+    },
+    {
+      "url": "08_Ольга с учеником Димой, который впоследствии стал священником.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга с учеником Димой, который впоследствии стал священником",
+        "en": "Olga with her student Dima, who later became a priest"
+      }
+    },
+    {
+      "url": "09_Ольга со своими выпускниками 21.06.1992г.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга со своими выпускниками 21.06.1992г",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "10_Выступление на юбилее преподователя класса скрипки Шошиной И.Л., 1992, Астрахань.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Выступление на юбилее преподователя класса скрипки Шошиной И.Л., 1992, Астрахань",
+        "en": "Performance at the anniversary of violin teacher I.L. Shoshina, 1992, Astrakhan"
+      }
+    },
+    {
+      "url": "11_Ольга Смагаринская, Астрахань, 1978.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга Смагаринская, Астрахань, 1978",
+        "en": "Olga Smagarinsky, Astrakhan, 1978"
+      }
+    },
+    {
+      "url": "12_Ольга с племянником Владимиром, ориентировочно 1979, Ворошиловград.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга с племянником Владимиром, ориентировочно 1979, Ворошиловград",
+        "en": "Olga with her nephew Vladimir, circa 1979, Voroshilovgrad"
+      }
+    },
+    {
+      "url": "13_В поездке в Пензу, 1982.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В поездке в Пензу, 1982",
+        "en": "On a trip to Penza, 1982"
+      }
+    },
+    {
+      "url": "14_Ольга с дочками на Кавказе, 1990.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга с дочками на Кавказе, 1990",
+        "en": "Olga with her daughters in the Caucasus, 1990"
+      }
+    },
+    {
+      "url": "15_Кисловодск 1990.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Кисловодск 1990",
+        "en": "Kislovodsk 1990"
+      }
+    },
+    {
+      "url": "16_На природе в Астрахани, 1988.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На природе в Астрахани, 1988",
+        "en": "Outdoors in Astrakhan, 1988"
+      }
+    },
+    {
+      "url": "17_Перед отъездом в Израиль, 1994.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Перед отъездом в Израиль, 1994",
+        "en": "Before leaving for Israel, 1994"
+      }
+    },
+    {
+      "url": "18_С братом Владимиром, Астрахань, 1993.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С братом Владимиром, Астрахань, 1993",
+        "en": "With brother Vladimir, Astrakhan, 1993"
+      }
+    },
+    {
+      "url": "19_Зима 1993г. в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Зима 1993г. в Астрахани",
+        "en": "Winter 1993 in Astrakhan"
+      }
+    },
+    {
+      "url": "20_В зимнем дворе дома в Астрахани.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В зимнем дворе дома в Астрахани",
+        "en": "In the winter courtyard of a house in Astrakhan"
+      }
+    },
+    {
+      "url": "21_Офаким, 1994.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Офаким, 1994",
+        "en": "Ofakim, 1994"
+      }
+    },
+    {
+      "url": "22_В гостях у друзей Брусованских на крыше, Петах Тиква, 06.1996г..jpg",
+      "type": "image",
+      "title": {
+        "ru": "В гостях у друзей Брусованских на крыше, Петах Тиква, 06.1996г.",
+        "en": "Visiting friends Brusovanskys on the roof, Petah Tikva, 06.1996"
+      }
+    },
+    {
+      "url": "23_2003г.jpg",
+      "type": "image",
+      "title": {
+        "ru": "2003г",
+        "en": "2003"
+      }
+    },
+    {
+      "url": "24_весёлая семейка.jpg",
+      "type": "image",
+      "title": {
+        "ru": "весёлая семейка",
+        "en": "a cheerful family"
+      }
+    },
+    {
+      "url": "25_Ольга, Ашкелон.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга, Ашкелон",
+        "en": "Olga, Ashkelon"
+      }
+    },
+    {
+      "url": "26_Танец с женой на вечеринке в ресторане 05.2004.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Танец с женой на вечеринке в ресторане 05.2004",
+        "en": "Dancing with wife at a restaurant party 05.2004"
+      }
+    },
+    {
+      "url": "27_Ольга с Бэллой Черновой на раскопках в Ашкелонском парке, 1997.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга с Бэллой Черновой на раскопках в Ашкелонском парке, 1997",
+        "en": "Olga with Bella Chernova at excavations in Ashkelon Park, 1997"
+      }
+    },
+    {
+      "url": "28_пикник в Офакиме в день 50-летия.jpg",
+      "type": "image",
+      "title": {
+        "ru": "пикник в Офакиме в день 50-летия",
+        "en": "Picnic in Ofakim on the 50th anniversary"
+      }
+    },
+    {
+      "url": "29_Трио Мангина, программное выступление в российском посольстве в Тель Авиве, 2011.jpg",
       "type": "image",
       "title": {
         "ru": "Трио Мангина, программное выступление в российском посольстве в Тель Авиве, 2011",
         "en": "The Mangina Trio, keynote performance at the Russian Embassy in Tel Aviv, 2011"
+      }
+    },
+    {
+      "url": "30_променад на набережной Ашкелона.jpg",
+      "type": "image",
+      "title": {
+        "ru": "променад на набережной Ашкелона",
+        "en": "promenade on the Ashkelon embankment"
+      }
+    },
+    {
+      "url": "31_семейный пикник в Ашкелоне, 2025.jpg",
+      "type": "image",
+      "title": {
+        "ru": "семейный пикник в Ашкелоне, 2025",
+        "en": "Family picnic in Ashkelon, 2025"
       }
     }
   ],
@@ -4154,8 +4202,8 @@ window.documentsIndex = {
       "url": "13.06.1951 Калининград, Миля с Галочкой.jpg",
       "type": "image",
       "title": {
-        "ru": "13.06.1951 Калининград, Миля с Галочкой",
-        "en": "June 13, 1951, Kaliningrad, Milya with  Galochka"
+        "ru": "06.1951 Калининград, Миля с Галочкой",
+        "en": "Archival Document"
       }
     },
     {
