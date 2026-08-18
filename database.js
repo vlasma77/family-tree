@@ -749,16 +749,16 @@ window.db = {
     "mainPhoto": "photos/olga_smagarinsky1953.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Грабово, Пензенской области",
-        "en": "Grabovo, Penza Oblast"
+        "ru": "",
+        "en": ""
       },
       "marriage": {
         "ru": "Владимир Михайлович Смагаринский, 14.06.1973",
         "en": "Vladimir Mikhailovich Smagarinsky, 06/14/1973"
       },
       "occupation": {
-        "ru": "преподаватель музыки по классу скрипки",
-        "en": "music teacher specializing in violin"
+        "ru": "",
+        "en": ""
       },
       "burial": {
         "ru": "",
@@ -785,13 +785,13 @@ window.db = {
       "ru": "Ирина Владимировна Смагаринская",
       "en": "Irina Vladimirovna Smagarinsky"
     },
-    "years": "31.03.1974 - ",
+    "years": "",
     "isDeceased": false,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Астрахань",
-        "en": "Astrakhan"
+        "ru": "",
+        "en": ""
       },
       "marriage": {
         "ru": "",
@@ -828,13 +828,13 @@ window.db = {
       "ru": "Анна Владимировна Смагаринская",
       "en": "Anna Vladimirovna Smagarinsky"
     },
-    "years": "20.11.1982 - ",
+    "years": "",
     "isDeceased": false,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Астрахань",
-        "en": "Astrakhan"
+        "ru": "",
+        "en": ""
       },
       "marriage": {
         "ru": "",
@@ -907,6 +907,49 @@ window.db = {
     },
     "gender": "male"
   },
+  "person_ella_goldes": {
+    "name": {
+      "ru": "Элла Юрьевна Гольдес (Смагаринская)",
+      "en": "Ella Yurievna Goldes (Smagarinsky)"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_yuri_mikhailovich_1950",
+        null
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
   "person_nella_mikhailovna_1957": {
     "name": {
       "ru": "Нэлла Михайловна Смагаринская",
@@ -947,6 +990,92 @@ window.db = {
       "spouse": null
     },
     "gender": "female"
+  },
+  "person_alexey_nella": {
+    "name": {
+      "ru": "Алексей Смагаринский",
+      "en": "Alexey Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_nella_mikhailovna_1957",
+        null
+      ],
+      "spouse": null
+    },
+    "gender": "male"
+  },
+  "person_artur_nella": {
+    "name": {
+      "ru": "Артур Смагаринский",
+      "en": "Artur Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_nella_mikhailovna_1957",
+        null
+      ],
+      "spouse": null
+    },
+    "gender": "male"
   },
   "person_fira_1927": {
     "name": {
@@ -1062,6 +1191,92 @@ window.db = {
       "spouse": "person_tatiana_smagarinsky"
     },
     "gender": "male"
+  },
+  "person_olga_valerievna_smagarinsky": {
+    "name": {
+      "ru": "Ольга Валерьевна Смагаринская",
+      "en": "Olga Valerievna Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_valery_1955",
+        "person_tatiana_smagarinsky"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
+  "person_oksana_valerievna_smagarinsky": {
+    "name": {
+      "ru": "Оксана Валерьевна Смагаринская",
+      "en": "Oksana Valerievna Smagarinsky"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_valery_1955",
+        "person_tatiana_smagarinsky"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
   },
   "person_natalya_1958": {
     "id": "person_natalya_1958",
@@ -2923,13 +3138,30 @@ window.db = {
   },
   "person_sima_sh_shevel": {
     "name": {
-      "ru": "Сима Шевелева Смагаринская",
+      "ru": "Сима Шевелева Гринберг (Смагаринская)",
       "en": "Sima Shevelevna Smagarinsky"
     },
-    "years": "",
+    "years": "1890 - 1921",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Авраам Мошкович Гринберг",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
     "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
       "en": ""
@@ -2950,13 +3182,30 @@ window.db = {
   },
   "person_slava_sh_shevel": {
     "name": {
-      "ru": "Слава Шевелева Смагаринская",
+      "ru": "Слава Шевелева Старобинская (Смагаринская)",
       "en": "Slava Shevelevna Smagarinsky"
     },
     "years": "",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Берл Старобинский",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
     "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
       "en": ""
@@ -3004,13 +3253,30 @@ window.db = {
   },
   "person_yoha_shevel": {
     "name": {
-      "ru": "Йоха Шевелева Смагаринская",
+      "ru": "Йоха Шевелева Рубин (Смагаринская)",
       "en": "Yokha Shevelevna Smagarinsky"
     },
     "years": "",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Эли Рубин",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
     "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
       "en": ""
@@ -3125,9 +3391,135 @@ window.db = {
         "person_roman_1924",
         "person_mira_1927"
       ],
-      "spouse": null
+      "spouse": "person_oleg_kutikov"
     },
     "gender": "female"
+  },
+  "person_oleg_kutikov": {
+    "name": {
+      "ru": "Олег Кутиков",
+      "en": "Oleg Kutikov"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Людмила Романовна Кутикова (Линецкая)",
+        "en": "Lyudmila Romanovna Kutikova (Linetzkaya)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_luda_1951"
+    },
+    "gender": "male"
+  },
+  "person_igor_kutikov": {
+    "name": {
+      "ru": "Игорь Олегович Кутиков",
+      "en": "Igor Olegovich Kutikov"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_luda_1951",
+        "person_oleg_kutikov"
+      ],
+      "spouse": null
+    },
+    "gender": "male"
+  },
+  "person_borya_kutikov": {
+    "name": {
+      "ru": "Боря Олегович Кутиков",
+      "en": "Borya Olegovich Kutikov"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_luda_1951",
+        "person_oleg_kutikov"
+      ],
+      "spouse": null
+    },
+    "gender": "male"
   },
   "person_bella_1957": {
     "id": "person_bella_1957",
@@ -3210,6 +3602,7 @@ window.db = {
       "en": "Mikhail Solomonovich Kaplun"
     },
     "years": "1928-2010",
+    "isDeceased": true,
     "mainPhoto": "photos/mikhail1928.jpg",
     "milestones": {
       "birthPlace": {
@@ -3271,6 +3664,132 @@ window.db = {
       "parents": [
         "person_mikhail_solomonovich_1928",
         "person_sonya_1929"
+      ],
+      "spouse": "person_galina_kaplun"
+    },
+    "gender": "male"
+  },
+  "person_galina_kaplun": {
+    "name": {
+      "ru": "Галина Каплун",
+      "en": "Galina Kaplun"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Леонид Михайлович Каплун",
+        "en": "Leonid Mikhailovich Kaplun"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_leonid_1954"
+    },
+    "gender": "female"
+  },
+  "person_evgeny_kaplun": {
+    "name": {
+      "ru": "Евгений Леонидович Каплун",
+      "en": "Evgeny Leonidovich Kaplun"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_leonid_1954",
+        "person_galina_kaplun"
+      ],
+      "spouse": null
+    },
+    "gender": "male"
+  },
+  "person_daniil_kaplun": {
+    "name": {
+      "ru": "Даниил Леонидович Каплун",
+      "en": "Daniil Leonidovich Kaplun"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_leonid_1954",
+        "person_galina_kaplun"
       ],
       "spouse": null
     },
@@ -3345,6 +3864,89 @@ window.db = {
       "parents": [
         "person_anatoly_1937",
         "person_galina_1938"
+      ],
+      "spouse": "person_nikolay_lopatin"
+    },
+    "gender": "female"
+  },
+  "person_nikolay_lopatin": {
+    "name": {
+      "ru": "Николай Лопатин",
+      "en": "Nikolay Lopatin"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Светлана Анатольевна Лопатина (Смагаринская)",
+        "en": "Svetlana Anatolyevna Lopatina (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_sveta_1961"
+    },
+    "gender": "male"
+  },
+  "person_olga_lopatina": {
+    "name": {
+      "ru": "Ольга Николаевна Лопатина",
+      "en": "Olga Nikolaevna Lopatina"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_sveta_1961",
+        "person_nikolay_lopatin"
       ],
       "spouse": null
     },
@@ -4017,6 +4619,7 @@ window.db = {
       "en": "New Person"
     },
     "years": "17.11.1926 - 26.09.1996",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -4217,5 +4820,266 @@ window.db = {
     },
     "archive": "person_gennady_gelvan",
     "gender": "male"
-  }
+  },
+  "person_irina_gennadievna_gelvan": {
+    "name": {
+      "ru": "Ирина Геннадьевна Гельван",
+      "en": "Irina Gennadievna Gelvan"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_gennady_gelvan",
+        "person_natalya_1958"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
+  "person_gennady_gennadievich_gelvan": {
+    "name": {
+      "ru": "Геннадий Геннадьевич Гельван",
+      "en": "Gennady Gennadievich Gelvan"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_gennady_gelvan",
+        "person_natalya_1958"
+      ],
+      "spouse": null
+    },
+    "gender": "male"
+  },
+  "person_girsh_samuilov_entin": {
+    "id": "person_girsh_samuilov_entin",
+    "name": {
+      "ru": "Гирш Самуилов Энтин",
+      "en": "Girsh Samuilov Entin"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Хая Ефремова Энтин",
+        "en": "Khaya Efremova Entin"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": "person_khaya_entin"
+    }
+  },
+  "person_khaya_entin": {
+    "id": "person_khaya_entin",
+    "name": {
+      "ru": "Хая Ефремова Энтин",
+      "en": "Khaya Efremova Entin"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Гирш Самуилов Энтин",
+        "en": "Girsh Samuilov Entin"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_girsh_samuilov_entin"
+    }
+  },
+  "person_yakov_entin_1907": {
+    "id": "person_yakov_entin_1907",
+    "name": {
+      "ru": "Яков Гиршов Энтин",
+      "en": "Yakov Girshov Entin"
+    },
+    "years": "1907 - ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_girsh_samuilov_entin",
+        "person_khaya_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_ester_entin": {
+    "id": "person_ester_entin",
+    "name": {
+      "ru": "Эстер Гиршова Энтин",
+      "en": "Esther Hirshova Entin"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_girsh_samuilov_entin",
+        "person_khaya_entin"
+      ],
+      "spouse": null
+    },
+     "gender": "female"
+  },
+  "person_ber_entin": {
+    "id": "person_ber_entin",
+    "name": {
+      "ru": "Бер Гиршов Энтин",
+      "en": "Ber Girshov Entin"
+    },
+    "years": "1910 - ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_girsh_samuilov_entin",
+        "person_khaya_entin"
+      ],
+      "spouse": null
+    },
+      "gender": "male"
+    
+}
 };
