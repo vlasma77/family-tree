@@ -5016,7 +5016,7 @@ window.db = {
       },
       "burial": {
         "ru": "Хедера, Израиль",
-              "Hedera, Israel"
+        "en":  "Hedera, Israel"
       }
     },
     "bio": {
