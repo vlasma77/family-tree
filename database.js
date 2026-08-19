@@ -3227,7 +3227,7 @@ window.db = {
     },
     "years": "21.02.1920 - 22.06.1981",
     "isDeceased": true,
-    "mainPhoto": "tereza1920.jpg",
+    "mainPhoto": "photos/tereza1920.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Прилуки, Черниговской губернии",
