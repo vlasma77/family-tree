@@ -4580,11 +4580,11 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "Кривой Рог, Украина",
-        "en": ""
+        "en": "Kryvyi Rih, Ukraine"
       },
       "marriage": {
         "ru": "Дора Энтин (Добин)",
-        "en": ""
+        "en": "Dora Entin (Dobin)"
       },
       "occupation": {
         "ru": "",
@@ -4592,12 +4592,12 @@ window.db = {
       },
       "burial": {
         "ru": "Хедера, Израиль",
-        "en": ""
+        "en": "Hedera, Israel"
       }
     },
     "bio": {
       "ru": "Сын Бориса Самуиловича Энтина и Сары Энтин.",
-      "en": ""
+      "en": "Son of Boris Samuilovich Entin and Sara Entin."
     },
     "familyText": {
       "ru": [],
@@ -4641,7 +4641,7 @@ window.db = {
     },
     "bio": {
       "ru": "Сын Бориса Самуиловича Энтина и Сары Энтин. Был призван в армию, участник войны, вернулся с войны инвалидом. Умер в 1963 году.",
-      "en": ""
+      "en": "Son of Boris Samuilovich Entin and Sara Entin. He was drafted into the army, fought in the war, and returned from the war disabled. He died in 1963."
     },
     "familyText": {
       "ru": [],
@@ -4668,24 +4668,24 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "Кривой Рог, Украина",
-        "en": ""
+        "en": "Kryvyi Rih, Ukraine"
       },
       "marriage": {
         "ru": "Лена Энтин (Мостовой)",
-        "en": "Lena Entin"
+        "en": "Lena Entin (Mostovoy)"
       },
       "occupation": {
         "ru": "инженер механик",
-        "en": ""
+        "en": "mechanical engineer"
       },
       "burial": {
         "ru": "Хедера, Израиль",
-        "en": ""
+        "en": "Hedera, Israel"
       }
     },
     "bio": {
       "ru": "Сын Владимира Борисовича Энтина. Закончил Криворожский горнообогатительный институт.",
-      "en": ""
+      "en": "Son of Vladimir Borisovich Entin. Graduated from the Krivoy Rog Mining and Processing Institute."
     },
     "familyText": {
       "ru": [],
@@ -4704,7 +4704,7 @@ window.db = {
   "person_lena_entin": {
     "name": {
       "ru": "Лена Энтин (Мостовой)",
-      "en": "Lena Entin"
+      "en": "Lena Entin (Mostovoy)"
     },
     "years": "24.05.1960 -",
     "isDeceased": false,
@@ -4712,7 +4712,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "Кривой Рог, Украина",
-        "en": ""
+        "en": "Kryvyi Rih, Ukraine"
       },
       "marriage": {
         "ru": "Борис Энтин",
@@ -4724,12 +4724,12 @@ window.db = {
       },
       "burial": {
         "ru": "Хедера, Израиль",
-        "en": ""
+        "en": "Hedera, Israel"
       }
     },
     "bio": {
       "ru": "Жена Бориса Владимировича Энтина.",
-      "en": ""
+      "en": "Wife of Boris Vladimirovich Entin."
     },
     "familyText": {
       "ru": [],
@@ -4761,7 +4761,7 @@ window.db = {
       },
       "occupation": {
         "ru": "колёсный мастер",
-        "en": ""
+        "en": "wheelwright"
       },
       "burial": {
         "ru": "",
@@ -4852,7 +4852,7 @@ window.db = {
     },
     "bio": {
       "ru": "Сын Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
-      "en": ""
+      "en": "Son of Volko Shlemovich Roitman and Nechama Mordkovna Roitman."
     },
     "familyText": {
       "ru": [],
@@ -4891,12 +4891,12 @@ window.db = {
       },
       "burial": {
         "ru": "Курская обл., Верхне-Любажский р-н, Молотычевский с/с, д. Молотычи",
-        "en": ""
+        "en": "Kursk region, Verkhne-Lyubazhsky district, Molotychevsky village council, Molotychi village"
       }
     },
     "bio": {
       "ru": "Сын Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
-      "en": ""
+      "en": "Son of Volko Shlemovich Roitman and Nechama Mordkovna Roitman."
     },
     "familyText": {
       "ru": [],
@@ -4927,20 +4927,20 @@ window.db = {
       },
       "marriage": {
         "ru": "Михаил Микельман",
-        "en": ""
+        "en": "Mikhail Mickelman"
       },
       "occupation": {
         "ru": "швея",
-        "en": ""
+        "en": "seamstress"
       },
       "burial": {
         "ru": "Офаким, Израиль",
-        "en": ""
+        "en": "Ofakim, Israel"
       }
     },
     "bio": {
       "ru": "Дочь Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
-      "en": ""
+      "en": "Daughter of Volko Shlemovich Roytman and Nekhama Mordkovna Roytman."
     },
     "familyText": {
       "ru": [],
@@ -4960,19 +4960,21 @@ window.db = {
     "id": "person_sofiya_1951",
     "name": {
       "ru": "София Владимировна Энтин",
-      "en": "New Person"
+      "en": "Sofia Vladimirovna Entin"
     },
     "years": "26.08.1951 -",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Харьков, Украина"
+        "ru": "Харьков, Украина",
+        "en": "Kharkiv, Ukraine"
       },
       "marriage": {
         "ru": ""
       },
       "occupation": {
-        "ru": "экономист"
+        "ru": "экономист",
+        "en": "economist"
       },
       "burial": {
         "ru": ""
@@ -4995,22 +4997,26 @@ window.db = {
     "id": "person_dora_1926",
     "name": {
       "ru": "Дора Энтин (Добин)",
-      "en": "New Person"
+      "en": "Dora Entin (Dobin)"
     },
     "years": "17.11.1926 - 26.09.1996",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Кривой Рог, Украина"
+        "ru": "Кривой Рог, Украина",
+        "en": "Kryvyi Rih, Ukraine"
       },
       "marriage": {
-        "ru": "Владимир Борисович Энтин"
+        "ru": "Владимир Борисович Энтин",
+        "en": "Vladimir Borisovich Entin"
       },
       "occupation": {
-        "ru": "бухгалтер"
+        "ru": "бухгалтер",
+        "en": "accountant"
       },
       "burial": {
-        "ru": "Хедера, Израиль"
+        "ru": "Хедера, Израиль",
+              "Hedera, Israel"
       }
     },
     "bio": {
@@ -5027,13 +5033,14 @@ window.db = {
     "id": "person_anna_1983",
     "name": {
       "ru": "Анна",
-      "en": "New Person"
+      "en": "Anna"
     },
     "years": "06.08.1983 -",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Кривой Рог, Украина"
+        "ru": "Кривой Рог, Украина",
+        "en": "Kryvyi Rih, Ukraine"
       },
       "marriage": {
         "ru": ""
@@ -5062,13 +5069,14 @@ window.db = {
     "id": "person_vladimir_zeev_1988",
     "name": {
       "ru": "Владимир-Зеев Борисович Энтин",
-      "en": "New Person"
+      "en": "Vladimir-Zeev Borisovich Entin"
     },
     "years": "18.07.1988 -",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Кривой Рог, Украина"
+        "ru": "Кривой Рог, Украина",
+        "en": "Kryvyi Rih, Ukraine"
       },
       "marriage": {
         "ru": ""
@@ -5107,13 +5115,16 @@ window.db = {
         "ru": ""
       },
       "marriage": {
-        "ru": "Миндля Вольковна Микельман (Ройтман)"
+        "ru": "Миндля Вольковна Микельман (Ройтман)",
+        "en": "Mindlya Volkovna Mikelman (Roytman)"
       },
       "occupation": {
-        "ru": "водитель"
+        "ru": "водитель",
+        "en":  "driver"
       },
       "burial": {
-        "ru": "Офаким, Израиль"
+        "ru": "Офаким, Израиль",
+        "en": "Ofakim, Israel"
       }
     },
     "bio": {
