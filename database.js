@@ -3139,14 +3139,14 @@ window.db = {
   "person_sima_sh_shevel": {
     "name": {
       "ru": "Сима Шевелева Гринберг (Смагаринская)",
-      "en": "Sima Shevelevna Smagarinsky"
+      "en": "Sima Shevelevna Grinberg (Smagarinsky)"
     },
     "years": "1890 - 1921",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
+        "ru": "Холмеч, Гомель, Беларусь",
         "en": ""
       },
       "marriage": {
@@ -3158,7 +3158,7 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "",
+        "ru": "Прилуки Черниговской губернии",
         "en": ""
       }
     },
@@ -3175,17 +3175,100 @@ window.db = {
         "person_shevel_1848",
         "person_khaya_1860"
       ],
-      "spouse": null
+      "spouse": "person_avraam_grinberg"
     },
     "archive": "person_sima_sh_shevel",
     "gender": "female"
   },
-  "person_slava_sh_shevel": {
+  "person_avraam_grinberg": {
     "name": {
-      "ru": "Слава Шевелева Старобинская (Смагаринская)",
-      "en": "Slava Shevelevna Smagarinsky"
+      "ru": "Авраам Мошкович Гринберг",
+      "en": "Avraam Moshkovich Grinberg"
     },
-    "years": "",
+    "years": "1889 - 23.12.1923",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Яссы, Румыния",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Сима Шевелева Смагаринская",
+        "en": "Sima Shevelevna Smagarinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "Прилуки Черниговской губернии",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_sima_sh_shevel"
+    },
+    "gender": "male"
+  },
+  "person_tereza_kozlov": {
+    "name": {
+      "ru": "Тереза Абрамовна Козлов (Гринберг)",
+      "en": "Tereza Kozlov (Grinberg)"
+    },
+    "years": "21.02.1920 - 22.06.1981",
+    "isDeceased": true,
+    "mainPhoto": "tereza1920.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Прилуки, Черниговской губернии",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Анатолий Иванович Козлов",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "Мариуполь, Донецкой области, Украина",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_avraam_grinberg",
+        "person_sima_sh_shevel"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
+  "person_moisey_grinberg": {
+    "name": {
+      "ru": "Моисей Гринберг",
+      "en": "Moisey Grinberg"
+    },
+    "years": "1914-1920",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
@@ -3194,7 +3277,7 @@ window.db = {
         "en": ""
       },
       "marriage": {
-        "ru": "Берл Старобинский",
+        "ru": "",
         "en": ""
       },
       "occupation": {
@@ -3207,6 +3290,32 @@ window.db = {
       }
     },
     "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_avraam_grinberg",
+        "person_sima_sh_shevel"
+      ],
+      "spouse": null
+    },
+    "gender": "male"
+  },
+  "person_slava_sh_shevel": {
+    "name": {
+      "ru": "Слава Шевелева Старобинская (Смагаринская)",
+      "en": "Slava Shevelevna Starobinsky (Smagarinsky)"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {},
+    "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
       "en": ""
     },
@@ -3219,10 +3328,50 @@ window.db = {
         "person_shevel_1848",
         "person_khaya_1860"
       ],
-      "spouse": null
+      "spouse": "person_berl_starobinsky"
     },
     "archive": "person_slava_sh_shevel",
     "gender": "female"
+  },
+  "person_berl_starobinsky": {
+    "name": {
+      "ru": "Берл Старобинский",
+      "en": "Berl Starobinsky"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Слава Шевелева Старобинская (Смагаринская)",
+        "en": "Slava Shevelevna Starobinsky (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_slava_sh_shevel"
+    },
+    "gender": "male"
   },
   "person_ester_rohl_shevel": {
     "name": {
@@ -3254,29 +3403,12 @@ window.db = {
   "person_yoha_shevel": {
     "name": {
       "ru": "Йоха Шевелева Рубин (Смагаринская)",
-      "en": "Yokha Shevelevna Smagarinsky"
+      "en": "Yokha Shevelevna Rubin (Smagarinsky)"
     },
     "years": "",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": "",
-        "en": ""
-      },
-      "marriage": {
-        "ru": "Эли Рубин",
-        "en": ""
-      },
-      "occupation": {
-        "ru": "",
-        "en": ""
-      },
-      "burial": {
-        "ru": "",
-        "en": ""
-      }
-    },
+    "milestones": {},
     "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
       "en": ""
@@ -3290,10 +3422,50 @@ window.db = {
         "person_shevel_1848",
         "person_khaya_1860"
       ],
-      "spouse": null
+      "spouse": "person_eli_rubin"
     },
     "archive": "person_yoha_shevel",
     "gender": "female"
+  },
+  "person_eli_rubin": {
+    "name": {
+      "ru": "Эли Рубин",
+      "en": "Eli Rubin"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Йоха Шевелева Рубин (Смагаринская)",
+        "en": "Yokha Shevelevna Rubin (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_yoha_shevel"
+    },
+    "gender": "male"
   },
   "person_zalman_shevel": {
     "name": {
@@ -3317,10 +3489,217 @@ window.db = {
         "person_shevel_1848",
         "person_khaya_1860"
       ],
-      "spouse": null
+      "spouse": "person_basya_riva_1888"
     },
     "archive": "person_zalman_shevel",
     "gender": "male"
+  },
+  "person_basya_riva_1888": {
+    "name": {
+      "ru": "Бася-Рива Смагаринская (Стародубская)",
+      "en": "Basya-Riva Smagarinsky (Starodubsky)"
+    },
+    "years": "1888 – ?",
+    "isDeceased": true,
+    "mainPhoto": "photos/basya-riva_1888.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Залман Шевелев Смагаринский",
+        "en": "Zalman Shevelevich Smagarinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_starodubsky_father",
+        "person_sara_gisya_starodubsky"
+      ],
+      "spouse": "person_zalman_shevel"
+    },
+    "archive": "person_basya_riva_1888",
+    "gender": "female"
+  },
+  "person_starodubsky_father": {
+    "name": {
+      "ru": "Стародубский",
+      "en": "Starodubsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Сара-Гися Стародубская",
+        "en": "Sara-Gisya Starodubsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_sara_gisya_starodubsky"
+    },
+    "gender": "male"
+  },
+  "person_sara_gisya_starodubsky": {
+    "name": {
+      "ru": "Сара-Гися Стародубская",
+      "en": "Sara-Gisya Starodubsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Стародубский",
+        "en": "Starodubsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_starodubsky_father"
+    },
+    "gender": "female"
+  },
+  "person_motl_starodubsky": {
+    "name": {
+      "ru": "Мотл Стародубский",
+      "en": "Motl Starodubsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Ида Стародубская",
+        "en": "Ida Starodubsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_starodubsky_father",
+        "person_sara_gisya_starodubsky"
+      ],
+      "spouse": "person_ida_starodubsky"
+    },
+    "gender": "male"
+  },
+  "person_ida_starodubsky": {
+    "name": {
+      "ru": "Ида Стародубская",
+      "en": "Ida Starodubsky"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Мотл Стародубский",
+        "en": "Motl Starodubsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_motl_starodubsky"
+    },
+    "gender": "female"
   },
   "person_ginda_shevel_1900": {
     "name": {
@@ -4619,7 +4998,6 @@ window.db = {
       "en": "New Person"
     },
     "years": "17.11.1926 - 26.09.1996",
-    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -4906,180 +5284,5 @@ window.db = {
       "spouse": null
     },
     "gender": "male"
-  },
-  "person_girsh_samuilov_entin": {
-    "id": "person_girsh_samuilov_entin",
-    "name": {
-      "ru": "Гирш Самуилов Энтин",
-      "en": "Girsh Samuilov Entin"
-    },
-    "years": "",
-    "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": ""
-      },
-      "marriage": {
-        "ru": "Хая Ефремова Энтин",
-        "en": "Khaya Efremova Entin"
-      },
-      "occupation": {
-        "ru": ""
-      },
-      "burial": {
-        "ru": ""
-      }
-    },
-    "bio": {
-      "ru": "",
-      "en": ""
-    },
-    "links": {
-      "parents": [
-        "person_samuil_1860",
-        "person_frida_entin"
-      ],
-      "spouse": "person_khaya_entin"
-    }
-  },
-  "person_khaya_entin": {
-    "id": "person_khaya_entin",
-    "name": {
-      "ru": "Хая Ефремова Энтин",
-      "en": "Khaya Efremova Entin"
-    },
-    "years": "",
-    "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": ""
-      },
-      "marriage": {
-        "ru": "Гирш Самуилов Энтин",
-        "en": "Girsh Samuilov Entin"
-      },
-      "occupation": {
-        "ru": ""
-      },
-      "burial": {
-        "ru": ""
-      }
-    },
-    "bio": {
-      "ru": "",
-      "en": ""
-    },
-    "links": {
-      "parents": [],
-      "spouse": "person_girsh_samuilov_entin"
-    }
-  },
-  "person_yakov_entin_1907": {
-    "id": "person_yakov_entin_1907",
-    "name": {
-      "ru": "Яков Гиршов Энтин",
-      "en": "Yakov Girshov Entin"
-    },
-    "years": "1907 - ?",
-    "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": ""
-      },
-      "marriage": {
-        "ru": ""
-      },
-      "occupation": {
-        "ru": ""
-      },
-      "burial": {
-        "ru": ""
-      }
-    },
-    "bio": {
-      "ru": "",
-      "en": ""
-    },
-    "links": {
-      "parents": [
-        "person_girsh_samuilov_entin",
-        "person_khaya_entin"
-      ],
-      "spouse": null
-    }
-  },
-  "person_ester_entin": {
-    "id": "person_ester_entin",
-    "name": {
-      "ru": "Эстер Гиршова Энтин",
-      "en": "Esther Hirshova Entin"
-    },
-    "years": "",
-    "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": ""
-      },
-      "marriage": {
-        "ru": ""
-      },
-      "occupation": {
-        "ru": ""
-      },
-      "burial": {
-        "ru": ""
-      }
-    },
-    "bio": {
-      "ru": "",
-      "en": ""
-    },
-    "links": {
-      "parents": [
-        "person_girsh_samuilov_entin",
-        "person_khaya_entin"
-      ],
-      "spouse": null
-    },
-     "gender": "female"
-  },
-  "person_ber_entin": {
-    "id": "person_ber_entin",
-    "name": {
-      "ru": "Бер Гиршов Энтин",
-      "en": "Ber Girshov Entin"
-    },
-    "years": "1910 - ?",
-    "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": ""
-      },
-      "marriage": {
-        "ru": ""
-      },
-      "occupation": {
-        "ru": ""
-      },
-      "burial": {
-        "ru": ""
-      }
-    },
-    "bio": {
-      "ru": "",
-      "en": ""
-    },
-    "links": {
-      "parents": [
-        "person_girsh_samuilov_entin",
-        "person_khaya_entin"
-      ],
-      "spouse": null
-    },
-      "gender": "male"
-    
-}
+  }
 };
