@@ -3141,27 +3141,10 @@ window.db = {
       "ru": "Сима Шевелева Гринберг (Смагаринская)",
       "en": "Sima Shevelevna Grinberg (Smagarinsky)"
     },
-    "years": "1890 - 1921",
+    "years": "",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": "Холмеч, Гомель, Беларусь",
-        "en": ""
-      },
-      "marriage": {
-        "ru": "Авраам Мошкович Гринберг",
-        "en": ""
-      },
-      "occupation": {
-        "ru": "",
-        "en": ""
-      },
-      "burial": {
-        "ru": "Прилуки Черниговской губернии",
-        "en": ""
-      }
-    },
+    "milestones": {},
     "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
       "en": ""
@@ -3185,12 +3168,12 @@ window.db = {
       "ru": "Авраам Мошкович Гринберг",
       "en": "Avraam Moshkovich Grinberg"
     },
-    "years": "1889 - 23.12.1923",
+    "years": "1888-1923",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Яссы, Румыния",
+        "ru": "",
         "en": ""
       },
       "marriage": {
@@ -3202,7 +3185,7 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "Прилуки Черниговской губернии",
+        "ru": "",
         "en": ""
       }
     },
@@ -3222,19 +3205,19 @@ window.db = {
   },
   "person_tereza_kozlov": {
     "name": {
-      "ru": "Тереза Абрамовна Козлов (Гринберг)",
+      "ru": "Тереза Козлов (Гринберг)",
       "en": "Tereza Kozlov (Grinberg)"
     },
-    "years": "21.02.1920 - 22.06.1981",
+    "years": "1920-1981",
     "isDeceased": true,
-    "mainPhoto": "photos/tereza1920.jpg",
+    "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Прилуки, Черниговской губернии",
+        "ru": "",
         "en": ""
       },
       "marriage": {
-        "ru": "Анатолий Иванович Козлов",
+        "ru": "",
         "en": ""
       },
       "occupation": {
@@ -3242,12 +3225,12 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "Мариуполь, Донецкой области, Украина",
+        "ru": "",
         "en": ""
       }
     },
     "bio": {
-      "ru": "Тереза воспитывалась в детском доме. Во время войны попала из Мариуполя в Биробиджан, п.Валдгейм. После войны вернулась с семьёй в Украину, Мариуполь.",
+      "ru": "",
       "en": ""
     },
     "familyText": {
@@ -3258,6 +3241,467 @@ window.db = {
       "parents": [
         "person_avraam_grinberg",
         "person_sima_sh_shevel"
+      ],
+      "spouse": "person_anatoly_kozlov_sr"
+    },
+    "gender": "female"
+  },
+  "person_anatoly_kozlov_sr": {
+    "name": {
+      "ru": "Анатолий Козлов",
+      "en": "Anatoly Kozlov"
+    },
+    "years": "1928-1995",
+    "isDeceased": true,
+    "mainPhoto": "photos/anatoly_kozlov.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Тереза Козлов (Гринберг)",
+        "en": "Tereza Kozlov (Grinberg)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_tereza_kozlov"
+    },
+    "gender": "male"
+  },
+  "person_tatyana_kozlov": {
+    "name": {
+      "ru": "Татьяна Козлов (Гринберг)",
+      "en": "Tatyana Kozlov (Grinberg)"
+    },
+    "years": "1953 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/tatyana_kozlov.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Мариуполь, Донецкая область, Украина",
+        "en": "Mariupol, Donetsk region, Ukraine"
+      },
+      "marriage": {
+        "ru": "Виктор Дмитренко",
+        "en": "Viktor Dmitrenko"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_anatoly_kozlov_sr",
+        "person_tereza_kozlov"
+      ],
+      "spouse": "person_viktor_dmitrenko"
+    },
+    "gender": "female"
+  },
+  "person_viktor_dmitrenko": {
+    "name": {
+      "ru": "Виктор Дмитренко",
+      "en": "Viktor Dmitrenko"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Татьяна Козлов (Гринберг)",
+        "en": "Tatyana Kozlov (Grinberg)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_tatyana_kozlov"
+    },
+    "gender": "male"
+  },
+  "person_anatoly_kozlov_jr": {
+    "name": {
+      "ru": "Анатолий Козлов",
+      "en": "Anatoly Kozlov"
+    },
+    "years": "1945-2010",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Валентина Чумаченко",
+        "en": "Valentina Chumachenko"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_anatoly_kozlov_sr",
+        "person_tereza_kozlov"
+      ],
+      "spouse": "person_valentina_chumachenko"
+    },
+    "gender": "male"
+  },
+  "person_valentina_chumachenko": {
+    "name": {
+      "ru": "Валентина Чумаченко",
+      "en": "Valentina Chumachenko"
+    },
+    "years": "1947 –",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Анатолий Козлов",
+        "en": "Anatoly Kozlov"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_anatoly_kozlov_jr"
+    },
+    "gender": "female"
+  },
+  "person_vladlena_yael_korsunsky": {
+    "name": {
+      "ru": "Владлена Яэль Корсунская",
+      "en": "Vladlena Yael Korsunsky"
+    },
+    "years": "23.08.1979 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/vladlena_yael.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Мариуполь, Донецкая область, Украина",
+        "en": "Mariupol, Donetsk region, Ukraine"
+      },
+      "marriage": {
+        "ru": "Реувен Корсунский",
+        "en": "Reuven Korsunsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Проживает в Иерусалиме, Израиль.",
+      "en": "Lives in Jerusalem, Israel."
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_viktor_dmitrenko",
+        "person_tatyana_kozlov"
+      ],
+      "spouse": "person_reuven_korsunsky"
+    },
+    "gender": "female"
+  },
+  "person_reuven_korsunsky": {
+    "name": {
+      "ru": "Реувен Корсунский",
+      "en": "Reuven Korsunsky"
+    },
+    "years": "28.08.1979 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/reuven_korsunsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Кадиевка, Луганская область, Украина",
+        "en": "Kadiivka, Luhansk region, Ukraine"
+      },
+      "marriage": {
+        "ru": "Владлена Яэль Корсунская",
+        "en": "Vladlena Yael Korsunsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Проживает в Иерусалиме, Израиль.",
+      "en": "Lives in Jerusalem, Israel."
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_vladlena_yael_korsunsky"
+    },
+    "gender": "male"
+  },
+  "person_natanel_korsunsky": {
+    "name": {
+      "ru": "Натанель Корсунский",
+      "en": "Natanel Korsunsky"
+    },
+    "years": "17.09.2006 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/natanel_korsunsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Иерусалим, Израиль",
+        "en": "Jerusalem, Israel"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Проживает в Иерусалиме, Израиль.",
+      "en": "Lives in Jerusalem, Israel."
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_reuven_korsunsky",
+        "person_vladlena_yael_korsunsky"
+      ],
+      "spouse": null
+    },
+    "gender": "male"
+  },
+  "person_rachel_korsunsky": {
+    "name": {
+      "ru": "Рахель Корсунская",
+      "en": "Rachel Korsunsky"
+    },
+    "years": "08.06.2010 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/rachel_tzofia_korsunsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Иерусалим, Израиль",
+        "en": "Jerusalem, Israel"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Проживает в Иерусалиме, Израиль.",
+      "en": "Lives in Jerusalem, Israel."
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_reuven_korsunsky",
+        "person_vladlena_yael_korsunsky"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
+  "person_david_berl_korsunsky": {
+    "name": {
+      "ru": "Давид Берл Корсунский",
+      "en": "David Berl Korsunsky"
+    },
+    "years": "03.02.2017 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/david_berl_korsunsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Иерусалим, Израиль",
+        "en": "Jerusalem, Israel"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Проживает в Иерусалиме, Израиль.",
+      "en": "Lives in Jerusalem, Israel."
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_reuven_korsunsky",
+        "person_vladlena_yael_korsunsky"
+      ],
+      "spouse": null
+    },
+    "gender": "male"
+  },
+  "person_lea_korsunsky": {
+    "name": {
+      "ru": "Лея Корсунская",
+      "en": "Lea Korsunsky"
+    },
+    "years": "29.09.2021 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/lea_korsunsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Иерусалим, Израиль",
+        "en": "Jerusalem, Israel"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "Проживает в Иерусалиме, Израиль.",
+      "en": "Lives in Jerusalem, Israel."
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_reuven_korsunsky",
+        "person_vladlena_yael_korsunsky"
       ],
       "spouse": null
     },
@@ -4430,7 +4874,7 @@ window.db = {
     },
     "bio": {
       "ru": "Отец Блюмы Самуиловны Смагаринской (Энтин).",
-      "en": ""
+      "en": "Father of Bluma Samuilovna Smagarinskaya (Entin)"
     },
     "familyText": {
       "ru": [],
@@ -4471,7 +4915,7 @@ window.db = {
     },
     "bio": {
       "ru": "Мать Блюмы Самуиловны Смагаринской (Энтин).",
-      "en": ""
+      "en": "Mother of Bluma Samuilovna Smagarinskaya (Entin)"
     },
     "familyText": {
       "ru": [],
@@ -4512,7 +4956,7 @@ window.db = {
     },
     "bio": {
       "ru": "Сын Самуила Энтина и Фриды Энтин. Расстрелян немецкими фашистами вместе с еврейскими жителями Прилук 20.05.1942 года, в возрасте 57 лет.",
-      "en": ""
+      "en": "The son of Samuil Entin and Frida Entin. He was executed by Nazi Germany along with Jewish residents of Priluki on May 20, 1942, at the age of 57."
     },
     "familyText": {
       "ru": [],
@@ -4556,7 +5000,7 @@ window.db = {
     },
     "bio": {
       "ru": "Жена Бориса Самуиловича Энтина, урождённая Бурштейн. Расстреляна немецкими фашистами вместе с еврейскими жителями Прилук 20.05.1942 года, в возрасте 57 лет.",
-      "en": ""
+      "en": "Boris Samuilovich Entin's wife, née Burshtein. Executed by Nazi Germans along with Jewish residents of Priluki on May 20, 1942, at the age of 57."
     },
     "familyText": {
       "ru": [],
@@ -4597,7 +5041,7 @@ window.db = {
     },
     "bio": {
       "ru": "Сын Бориса Самуиловича Энтина и Сары Энтин.",
-      "en": "Son of Boris Samuilovich Entin and Sara Entin."
+      "en": "Son of Boris Samuilovich Entin and Sara Entin"
     },
     "familyText": {
       "ru": [],
@@ -4685,7 +5129,7 @@ window.db = {
     },
     "bio": {
       "ru": "Сын Владимира Борисовича Энтина. Закончил Криворожский горнообогатительный институт.",
-      "en": "Son of Vladimir Borisovich Entin. Graduated from the Krivoy Rog Mining and Processing Institute."
+      "en": "Son of Vladimir Borisovich Entin. Graduated from the Kryvyi Rih Mining and Processing Institute."
     },
     "familyText": {
       "ru": [],
@@ -4729,7 +5173,7 @@ window.db = {
     },
     "bio": {
       "ru": "Жена Бориса Владимировича Энтина.",
-      "en": "Wife of Boris Vladimirovich Entin."
+      "en": "Boris Vladimirovich Entin's wife"
     },
     "familyText": {
       "ru": [],
@@ -4847,12 +5291,12 @@ window.db = {
       },
       "burial": {
         "ru": "Биробиджан",
-        "en": ""
+        "en": "Birobidzhan"
       }
     },
     "bio": {
       "ru": "Сын Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
-      "en": "Son of Volko Shlemovich Roitman and Nechama Mordkovna Roitman."
+      "en": "Son of Volko Shlemovich Roitman and Nechama Mordkovna Roitman"
     },
     "familyText": {
       "ru": [],
@@ -4896,7 +5340,7 @@ window.db = {
     },
     "bio": {
       "ru": "Сын Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
-      "en": "Son of Volko Shlemovich Roitman and Nechama Mordkovna Roitman."
+      "en": "Son of Volko Shlemovich Roitman and Nechama Mordkovna Roitman"
     },
     "familyText": {
       "ru": [],
@@ -4940,7 +5384,7 @@ window.db = {
     },
     "bio": {
       "ru": "Дочь Волько Шлемовича Ройтмана и Нехамы Мордковны Ройтман.",
-      "en": "Daughter of Volko Shlemovich Roytman and Nekhama Mordkovna Roytman."
+      "en": "Daughter of Volko Shlemovich Roytman and Nekhama Mordkovna Roytman"
     },
     "familyText": {
       "ru": [],
@@ -5016,7 +5460,7 @@ window.db = {
       },
       "burial": {
         "ru": "Хедера, Израиль",
-        "en":  "Hedera, Israel"
+        "en": "Hedera, Israel"
       }
     },
     "bio": {
@@ -5120,7 +5564,7 @@ window.db = {
       },
       "occupation": {
         "ru": "водитель",
-        "en":  "driver"
+        "en": "driver"
       },
       "burial": {
         "ru": "Офаким, Израиль",
