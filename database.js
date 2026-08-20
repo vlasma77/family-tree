@@ -4860,7 +4860,7 @@ window.db = {
         "en": ""
       },
       "marriage": {
-        "ru": "Фрида Энтин",
+        "ru": "Фрида Мирьям Энтин",
         "en": "Frida Entin"
       },
       "occupation": {
@@ -4889,7 +4889,7 @@ window.db = {
   },
   "person_frida_entin": {
     "name": {
-      "ru": "Фрида Энтин",
+      "ru": "Фрида Мирьям Энтин",
       "en": "Frida Entin"
     },
     "years": "? — ?",
@@ -4901,7 +4901,7 @@ window.db = {
         "en": ""
       },
       "marriage": {
-        "ru": "Самуил Энтин",
+        "ru": "Самуил Янкелев Энтин",
         "en": "Samuil Entin"
       },
       "occupation": {
@@ -5739,5 +5739,70 @@ window.db = {
       "spouse": null
     },
     "gender": "male"
+  },
+  "person_girsh_1899": {
+    "id": "person_girsh_1899",
+    "name": {
+      "ru": "Гирш Самуилов Энтин",
+      "en": "New Person"
+    },
+    "years": "1899 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Хая Ефремова Энтин"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": "person_khaya_entin"
+    }
+  },
+  "person_khaya_entin": {
+    "id": "person_khaya_entin",
+    "name": {
+      "ru": "Хая Ефремова Энтин",
+      "en": "New Person"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Гирш Самуилов Энтин"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_girsh_1899"
+    }
   }
 };
