@@ -6017,8 +6017,8 @@ window.db = {
       "spouse": null
     }
   },
-  "person_evsei_entin": {
-    "id": "person_evsei_entin",
+  "person_moisei_entin": {
+    "id": "person_moisei_entin",
     "name": {
       "ru": "Моисей Самуилов Энтин",
       "en": "Moses Samuilov Entin"
@@ -6231,6 +6231,40 @@ window.db = {
       "en": "Rivka Samuilova Entin"
     },
     "years": "28.05.1896 - 30.05.1896",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_evsei_entin": {
+    "id": "person_evsei_entin",
+    "name": {
+      "ru": "Евсей Самуилов Энтин",
+      "en": "New Person"
+    },
+    "years": "",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
