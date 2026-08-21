@@ -4851,7 +4851,7 @@ window.db = {
       "ru": "Самуил Янкелев Энтин",
       "en": "Samuil Yankelevich Entin"
     },
-    "years": "1860 — ?",
+    "years": "? — ?",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
@@ -4938,16 +4938,16 @@ window.db = {
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Прилуки, Черниговской губернии",
+        "en": "Priluki, Chernigov province"
       },
       "marriage": {
         "ru": "Сара Яковлевна Энтин (Бурштейн)",
         "en": "Sara Yakovlevna Entin (nee Burshtein)"
       },
       "occupation": {
-        "ru": "",
-        "en": ""
+        "ru": "ремесленник/кустарь",
+        "en": "artisan/handicraftsman"
       },
       "burial": {
         "ru": "г. Прилуки",
@@ -5067,20 +5067,20 @@ window.db = {
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Прилуки, Черниговской губернии",
+        "en": "Priluki, Chernigov province"
       },
       "marriage": {
         "ru": "",
         "en": ""
       },
       "occupation": {
-        "ru": "",
-        "en": ""
+        "ru": "водитель",
+        "en": "driver"
       },
       "burial": {
-        "ru": "",
-        "en": ""
+        "ru": "погиб в бою 1941 г. в Беларуси",
+        "en": "died in battle in 1941 in Belarus"
       }
     },
     "bio": {
@@ -5744,16 +5744,17 @@ window.db = {
     "id": "person_girsh_1899",
     "name": {
       "ru": "Гирш Самуилов Энтин",
-      "en": "New Person"
+      "en": "Girsh Samuilov Entin"
     },
-    "years": "1899 - ?",
+    "years": "? - ?",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
         "ru": ""
       },
       "marriage": {
-        "ru": "Хая Ефремова Энтин"
+        "ru": "Хая Ефремова Энтин",
+        "en": "Khaya Efremova Entin"
       },
       "occupation": {
         "ru": ""
@@ -5778,16 +5779,17 @@ window.db = {
     "id": "person_khaya_entin",
     "name": {
       "ru": "Хая Ефремова Энтин",
-      "en": "New Person"
+      "en": "Khaya Efremova Entin"
     },
-    "years": "",
+    "years": "? — ?",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
         "ru": ""
       },
       "marriage": {
-        "ru": "Гирш Самуилов Энтин"
+        "ru": "Гирш Самуилов Энтин",
+        "en": "Girsh Samuilov Entin"
       },
       "occupation": {
         "ru": ""
@@ -5803,6 +5805,457 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_girsh_1899"
+    }
+  },
+  "person_ester_1897": {
+    "id": "person_ester_1897",
+    "name": {
+      "ru": "Эстер Гиршова Энтин",
+      "en": "Esther Hirshova Entin"
+    },
+    "years": "05.01.1897 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Павлоград, Екатеринослав",
+        "en": "Pavlograd, Ekaterinoslav"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_girsh_1899",
+        "person_khaya_entin"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
+  "person_ber_1899": {
+    "id": "person_ber_1899",
+    "name": {
+      "ru": "Бер Гиршов Энтин",
+      "en": "Ber Girshov Entin"
+    },
+    "years": "12.03.1899 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Павлоград, Екатеринослав",
+        "en": "Pavlograd, Ekaterinoslav"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_girsh_1899",
+        "person_khaya_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_yakov_1907": {
+    "id": "person_yakov_1907",
+    "name": {
+      "ru": "Яков Гиршов Энтин",
+      "en": "Yakov Girshov Entin"
+    },
+    "years": "03.12.1907 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Павлоград, Екатеринослав",
+        "en": "Pavlograd, Ekaterinoslav"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_girsh_1899",
+        "person_khaya_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_bentsion_1905": {
+    "id": "person_bentsion_1905",
+    "name": {
+      "ru": "Бенцион Гиршов Энтин",
+      "en": "Benzion Girshov Entin"
+    },
+    "years": "24.03.1905 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Павлоград, Екатеринослав",
+        "en": "Pavlograd, Ekaterinoslav"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_girsh_1899",
+        "person_khaya_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_meer_1893": {
+    "id": "person_meer_1893",
+    "name": {
+      "ru": "Меер Самуилов Энтин",
+      "en": "Meer Samuilov Entin"
+    },
+    "years": "16.03.1893 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_khaim_1883": {
+    "id": "person_khaim_1883",
+    "name": {
+      "ru": "Хаим Самуилов Энтин",
+      "en": "Khaim Samuilov Entin"
+    },
+    "years": "25.08.1883 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Чернигов",
+        "en": "Chernihiv"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_evsei_entin": {
+    "id": "person_evsei_entin",
+    "name": {
+      "ru": "Моисей Самуилов Энтин",
+      "en": "Moses Samuilov Entin"
+    },
+    "years": "25.06.1880 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_sheina_1914": {
+    "id": "person_sheina_1914",
+    "name": {
+      "ru": "Шейна Самуилова Энтин",
+      "en": "Sheina Samuilova Entin"
+    },
+    "years": "25.10.1914 - 27.06.1915",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Прилуки, Черниговской губернии",
+        "en": "Priluki, Chernigov province"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Прилуки Черниговской губернии",
+        "en": "Priluki, Chernigov province"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_boris_entin_1885",
+        "person_sara_entin"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
+  "person_shlema_itsko_1889": {
+    "id": "person_shlema_itsko_1889",
+    "name": {
+      "ru": "Шлема-Ицко Самуилов Энтин",
+      "en": "Shlema-Itsko Samuilov Entin"
+    },
+    "years": "10.05.1889 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Рохл Мордухова Энтин",
+        "en": "Rokhl Mordukhova Entin"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": "person_rokhla_entin"
+    }
+  },
+  "person_rokhla_entin": {
+    "id": "person_rokhla_entin",
+    "name": {
+      "ru": "Рохл Мордухова Энтин",
+      "en": "Rokhl Mordukhova Entin"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Шлема-Ицко Самуилов Энтин",
+        "en": "Shlema-Itsko Samuilov Entin"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_shlema_itsko_1889"
+    },
+    "gender": "female"
+  },
+  "person_mordukh_1915": {
+    "id": "person_mordukh_1915",
+    "name": {
+      "ru": "Мордух Шлемов Энтин",
+      "en": "Mordukh Shlemov Entin"
+    },
+    "years": "1915 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_shlema_itsko_1889",
+        "person_rokhla_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_mordukh_1896": {
+    "id": "person_mordukh_1896",
+    "name": {
+      "ru": "Мордух Самуилов Энтин",
+      "en": "Mordukh Samuilov Entin"
+    },
+    "years": "28.05.1896 - 30.05.1896",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": null
+    }
+  },
+  "person_rivka_1896": {
+    "id": "person_rivka_1896",
+    "name": {
+      "ru": "Ривка Самуилова Энтин",
+      "en": "Rivka Samuilova Entin"
+    },
+    "years": "28.05.1896 - 30.05.1896",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_samuil_1860",
+        "person_frida_entin"
+      ],
+      "spouse": null
     }
   }
 };
