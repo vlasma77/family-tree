@@ -1493,6 +1493,22 @@ window.documentsIndex = {
   ],
   "person_vladimir_mikhailovich_1948": [
     {
+      "url": "01_Панорама дома где мы жили в Биробиджане, Калинина 39.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Панорама дома где мы жили в Биробиджане, Калинина 39",
+        "en": "Panorama of the house where we lived in Birobidzhan, Kalinina 39"
+      }
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!4v1787223377621!6m8!1m7!1siFB3XdLwf0J8gu86LDQhJg!2m2!1d48.79624381126397!2d132.9256605992312!3f212.3718437910923!4f9.863766304348232!5f0.7820865974627469",
+      "type": "panorama_embed",
+      "title": {
+        "ru": "Panorama dvor",
+        "en": "Panorama dvor"
+      }
+    },
+    {
       "url": "Алла с двоюродными братьями Евгением и Владимиром.jpg",
       "type": "image",
       "title": {
@@ -1709,11 +1725,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "В парке Офакима, ориентировочно 1995.jpg",
+      "url": "В парке Офакима, ориентировочно 1992.jpg",
       "type": "image",
       "title": {
-        "ru": "В парке Офакима, ориентировочно 1995",
-        "en": "In Ofakim Park, circa 1995"
+        "ru": "В парке Офакима, ориентировочно 1992",
+        "en": "Archival Document"
       }
     },
     {
@@ -1725,11 +1741,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Владимир, ориентировочно 1971.jpg",
+      "url": "Владимир, ориентировочно 1978.jpg",
       "type": "image",
       "title": {
-        "ru": "Владимир, ориентировочно 1971",
-        "en": "Vladimir, approximately 1971"
+        "ru": "Владимир, ориентировочно 1978",
+        "en": "Archival Document"
       }
     },
     {
@@ -2017,6 +2033,22 @@ window.documentsIndex = {
   ],
   "person_yuri_mikhailovich_1950": [
     {
+      "url": "01_Панорама дома где мы жили в Биробиджане, Калинина 39.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Панорама дома где мы жили в Биробиджане, Калинина 39",
+        "en": "Panorama of the house where we lived in Birobidzhan, Kalinina 39"
+      }
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!4v1787223377621!6m8!1m7!1siFB3XdLwf0J8gu86LDQhJg!2m2!1d48.79624381126397!2d132.9256605992312!3f212.3718437910923!4f9.863766304348232!5f0.7820865974627469",
+      "type": "panorama_embed",
+      "title": {
+        "ru": "Panorama dvor",
+        "en": "Panorama dvor"
+      }
+    },
+    {
       "url": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
       "type": "image",
       "title": {
@@ -2114,6 +2146,22 @@ window.documentsIndex = {
     }
   ],
   "person_nella_mikhailovna_1957": [
+    {
+      "url": "01_Панорама дома где мы жили в Биробиджане, Калинина 39.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Панорама дома где мы жили в Биробиджане, Калинина 39",
+        "en": "Panorama of the house where we lived in Birobidzhan, Kalinina 39"
+      }
+    },
+    {
+      "url": "https://www.google.com/maps/embed?pb=!4v1787223377621!6m8!1m7!1siFB3XdLwf0J8gu86LDQhJg!2m2!1d48.79624381126397!2d132.9256605992312!3f212.3718437910923!4f9.863766304348232!5f0.7820865974627469",
+      "type": "panorama_embed",
+      "title": {
+        "ru": "Panorama dvor",
+        "en": "Panorama dvor"
+      }
+    },
     {
       "url": "В парке Умани с родственниками.jpg",
       "type": "image",
@@ -3885,6 +3933,14 @@ window.documentsIndex = {
       ]
     },
     {
+      "url": "Брат Вова, 08.09.1957, г.Черкассы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Брат Вова, 08.09.1957, г.Черкассы",
+        "en": "Brother Vova, born September 8, 1957, Cherkassy"
+      }
+    },
+    {
       "url": "Братья на набережной Ашкелона.jpg",
       "type": "image",
       "title": {
@@ -3914,6 +3970,22 @@ window.documentsIndex = {
       "title": {
         "ru": "Дом где проживал Владимир до 1933 г.",
         "en": "The house where Vladimir lived until 1933."
+      }
+    },
+    {
+      "url": "дядя Соломон с сыновьями Муля, Рува и Фима.jpg",
+      "type": "image",
+      "title": {
+        "ru": "дядя Соломон с сыновьями Муля, Рува и Фима",
+        "en": "Uncle Solomon with his sons Mulya, Ruva and Fima"
+      }
+    },
+    {
+      "url": "Илья Энтин с женой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Илья Энтин с женой",
+        "en": "Ilya Entin with his wife"
       }
     },
     {
@@ -3965,11 +4037,43 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "дядя Миша и тётя Поля Энтины 09.05.1949.jpg",
+      "type": "image",
+      "title": {
+        "ru": "дядя Миша и тётя Поля Энтины 09.05.1949",
+        "en": "Uncle Misha and Aunt Polya Entiny, May 9, 1949"
+      }
+    },
+    {
       "url": "Место расставания навсегда Владимира с родителями 19.05.1942 г. На следующий день их расстреляли. Фото 05.2002.jpg",
       "type": "image",
       "title": {
         "ru": "Место расставания навсегда Владимира с родителями 19.05.1942 г. На следующий день их расстреляли. Фото 05.2002",
         "en": "The place where Vladimir parted forever with his parents on May 19, 1942. They were executed the next day. Photo taken May 2002."
+      }
+    },
+    {
+      "url": "сестра Полина Энтина, 09.09.1957.jpg",
+      "type": "image",
+      "title": {
+        "ru": "сестра Полина Энтина, 09.09.1957",
+        "en": "sister Polina Entina, 09.09.1957"
+      }
+    },
+    {
+      "url": "Сестра Соня, 06.11.1963.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Сестра Соня, 06.11.1963",
+        "en": "Sister Sonya, November 6, 1963"
+      }
+    },
+    {
+      "url": "Тётя Розалия, 27.06.1970.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Тётя Розалия, 27.06.1970",
+        "en": "Aunt Rosalia, June 27, 1970"
       }
     }
   ],
