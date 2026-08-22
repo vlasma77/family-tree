@@ -4930,20 +4930,20 @@ window.db = {
   },
   "person_boris_entin_1885": {
     "name": {
-      "ru": "Борис Самуилович Энтин",
-      "en": "Boris Samuilovich Entin"
+      "ru": "Борис (Берко) Самуилов Энтин",
+      "en": "Boris Samuilov Entin"
     },
     "years": "1885 — 20.05.1942",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Прилуки, Черниговской губернии",
-        "en": "Priluki, Chernigov province"
+        "ru": "Мстиславль, Беларусь",
+        "en": "Mstislavl, Belarus"
       },
       "marriage": {
-        "ru": "Сара Яковлевна Энтин (Бурштейн)",
-        "en": "Sara Yakovlevna Entin (nee Burshtein)"
+        "ru": "Сара Янкелева Энтин (Бурд)",
+        "en": "Sara Yankeleva Entin (Burd)"
       },
       "occupation": {
         "ru": "ремесленник/кустарь",
@@ -4974,8 +4974,8 @@ window.db = {
   },
   "person_sara_entin": {
     "name": {
-      "ru": "Сара Яковлевна Энтин (Бурштейн)",
-      "en": "Sara Yakovlevna Entin (nee Burshtein)"
+      "ru": "Сара Янкелева Энтин (Бурд)",
+      "en": "Sara Yankeleva Entin (Burd)"
     },
     "years": "1885 — 20.05.1942",
     "isDeceased": true,
@@ -4986,8 +4986,8 @@ window.db = {
         "en": ""
       },
       "marriage": {
-        "ru": "Борис Самуилович Энтин",
-        "en": "Boris Samuilovich Entin"
+        "ru": "Борис (Берко) Самуилов Энтин",
+        "en": "Boris (Berko) Samuilov Entin"
       },
       "occupation": {
         "ru": "",
@@ -4999,8 +4999,8 @@ window.db = {
       }
     },
     "bio": {
-      "ru": "Жена Бориса Самуиловича Энтина, урождённая Бурштейн. Расстреляна немецкими фашистами вместе с еврейскими жителями Прилук 20.05.1942 года, в возрасте 57 лет.",
-      "en": "Boris Samuilovich Entin's wife, née Burshtein. Executed by Nazi Germans along with Jewish residents of Priluki on May 20, 1942, at the age of 57."
+      "ru": "Жена Бориса Самуилова Энтина, урождённая Бурд. Расстреляна немецкими фашистами вместе с еврейскими жителями Прилук 20.05.1942 года, в возрасте 57 лет.",
+      "en": "Boris Samuilov Entin's wife, Burd. Executed by Nazi Germans along with Jewish residents of Priluki on May 20, 1942, at the age of 57."
     },
     "familyText": {
       "ru": [],
@@ -6262,7 +6262,7 @@ window.db = {
     "id": "person_evsei_entin",
     "name": {
       "ru": "Евсей Самуилов Энтин",
-      "en": "New Person"
+      "en": "Evsey Samuilov Entin"
     },
     "years": "",
     "mainPhoto": "",
