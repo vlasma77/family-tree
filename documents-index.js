@@ -3859,6 +3859,50 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_boris_entin_1885": [
+    {
+      "url": "Борис Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Борис Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "брак Берко и Сора Бурд.jpg",
+      "type": "image",
+      "title": {
+        "ru": "брак Берко и Сора Бурд",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "брак Берко Самуилова Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "брак Берко Самуилова Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_sara_entin": [
+    {
+      "url": "брак Берко и Сора Бурд.jpg",
+      "type": "image",
+      "title": {
+        "ru": "брак Берко и Сора Бурд",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "брак Берко Самуилова Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "брак Берко Самуилова Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
   "person_vladimir_entin_1925": [
     {
       "type": "book",
@@ -4658,6 +4702,268 @@ window.documentsIndex = {
       "title": {
         "ru": "Геннадий и Наташа Гельван с дочкой Ириной",
         "en": "Gennady and Natasha Gelvan with their daughter Irina"
+      }
+    }
+  ],
+  "person_girsh_1899": [
+    {
+      "url": "Бенцион, сын Гирша Энтина.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бенцион, сын Гирша Энтина",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Бер, сын Гирша Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бер, сын Гирша Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Эстер, дочь Гирша Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Эстер, дочь Гирша Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Яков, сын Гирша Энтина.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яков, сын Гирша Энтина",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_khaya_entin": [
+    {
+      "url": "Бенцион, сын Гирша Энтина.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бенцион, сын Гирша Энтина",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Бер, сын Гирша Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бер, сын Гирша Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Эстер, дочь Гирша Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Эстер, дочь Гирша Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Яков, сын Гирша Энтина.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яков, сын Гирша Энтина",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_ester_1897": [
+    {
+      "url": "рожд. Естер Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "рожд. Естер Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Эстер Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Эстер Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_ber_1899": [
+    {
+      "url": "Бер Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бер Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "рожд.Бер Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "рожд.Бер Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_yakov_1907": [
+    {
+      "url": "рожд.Яков Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "рожд.Яков Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Яков Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яков Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_bentsion_1905": [
+    {
+      "url": "Бенцион Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бенцион Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "рожд.Бенцион Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "рожд.Бенцион Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_meer_1893": [
+    {
+      "url": "Меер Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Меер Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "рожд.Меер Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "рожд.Меер Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_khaim_1883": [
+    {
+      "url": "рожд.Хаим Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "рожд.Хаим Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Хаим Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хаим Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_moisei_entin": [
+    {
+      "url": "Энтины исторические записи.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Энтины исторические записи",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_sheina_1914": [
+    {
+      "url": "Энтины исторические записи.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Энтины исторические записи",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_shlema_itsko_1889": [
+    {
+      "url": "Энтины историческ. записи 3.PNG",
+      "type": "image",
+      "title": {
+        "ru": "Энтины историческ. записи 3",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_rokhla_entin": [
+    {
+      "url": "Памятник на могиле  расстрелянных евреев г.Прилуки.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Памятник на могиле  расстрелянных евреев г.Прилуки",
+        "en": "A monument at the grave of executed Jews in Priluki"
+      }
+    }
+  ],
+  "person_mordukh_1915": [
+    {
+      "url": "Энтины историческ. записи.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Энтины историческ. записи",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_mordukh_1896": [
+    {
+      "url": "Мордух Энтин.PNG",
+      "type": "image",
+      "title": {
+        "ru": "Мордух Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "смерть Ривка и Мордух Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "смерть Ривка и Мордух Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_rivka_1896": [
+    {
+      "url": "Ривка Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ривка Энтин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "смерть Ривка и Мордух Энтин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "смерть Ривка и Мордух Энтин",
+        "en": "Archival Document"
       }
     }
   ]
