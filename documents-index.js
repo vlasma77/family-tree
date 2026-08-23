@@ -3395,6 +3395,16 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_oleg_kutikov": [
+    {
+      "url": "в домашней обстановке.jpg",
+      "type": "image",
+      "title": {
+        "ru": "в домашней обстановке",
+        "en": "Archival Document"
+      }
+    }
+  ],
   "person_bella_1957": [
     {
       "url": "Бэлла в Биробиджане.jpg",
@@ -3715,6 +3725,24 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_galina_kaplun": [
+    {
+      "url": "Анатолий с молодой семьёй Лёни Каплуна.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Анатолий с молодой семьёй Лёни Каплуна",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Молодая семья Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Молодая семья Каплун",
+        "en": "Archival Document"
+      }
+    }
+  ],
   "person_igor_1958": [
     {
       "url": "Встреча Линецких и Каплунов.jpg",
@@ -3796,6 +3824,24 @@ window.documentsIndex = {
       "title": {
         "ru": "Толя и Галя Смагаринские с маленькой Светочкой",
         "en": "Tolya and Galya Smagarinsky with little Svetochka"
+      }
+    }
+  ],
+  "person_nikolay_lopatin": [
+    {
+      "url": "Николай Лопатин.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Николай Лопатин",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Света и Николай на свадьбе дочери Ольги.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Света и Николай на свадьбе дочери Ольги",
+        "en": "Sveta and Nikolai at their daughter Olga's wedding"
       }
     }
   ],
@@ -4963,6 +5009,52 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "смерть Ривка и Мордух Энтин",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_svetlana_linetsky": [
+    {
+      "url": "Молодая семья с дочкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Молодая семья с дочкой",
+        "en": "Young family with a daughter"
+      }
+    },
+    {
+      "url": "Прекрасные годы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Прекрасные годы",
+        "en": "Wonderful years"
+      }
+    },
+    {
+      "url": "Роман с молодоженами.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Роман с молодоженами",
+        "en": "Roman with newlyweds"
+      }
+    }
+  ],
+  "person_larisa_smagarinsky": [
+    {
+      "url": "Лариса с дочкой Эллочкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Лариса с дочкой Эллочкой",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_elvira_kaplun": [
+    {
+      "url": "Эльвира Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Эльвира Каплун",
         "en": "Archival Document"
       }
     }
