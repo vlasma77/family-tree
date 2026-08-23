@@ -880,7 +880,8 @@ window.db = {
         "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Лариса Константиновна Смагаринская (Лазарева)",
+        "en": "Larisa Konstantinovna Smagarinsky (Lazareva)"
       },
       "occupation": {
         "ru": "работа в бизнесе",
@@ -903,7 +904,8 @@ window.db = {
         "person_mikhail_1922",
         "person_fira_1927"
       ],
-      "spouse": null
+      "spouse": "person_larisa_smagarinsky",
+      "spouseNote": "в разводе"
     },
     "gender": "male"
   },
@@ -917,8 +919,8 @@ window.db = {
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Астрахань",
+        "en": "Astrakhan"
       },
       "marriage": {
         "ru": "",
@@ -944,7 +946,7 @@ window.db = {
     "links": {
       "parents": [
         "person_yuri_mikhailovich_1950",
-        null
+        "person_larisa_smagarinsky"
       ],
       "spouse": null
     },
@@ -964,7 +966,8 @@ window.db = {
         "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Баграт Месропьян",
+        "en": "Bagrat Mesropyan"
       },
       "occupation": {
         "ru": "работа в бизнесе",
@@ -987,11 +990,12 @@ window.db = {
         "person_mikhail_1922",
         "person_fira_1927"
       ],
-      "spouse": null
+      "spouse": "person_bagrat_mesropian",
+      "spouseNote": "в разводе"
     },
     "gender": "female"
   },
-  "person_alexey_nella": {
+  "person_alexey_smagarinsky": {
     "name": {
       "ru": "Алексей Смагаринский",
       "en": "Alexey Smagarinsky"
@@ -1001,8 +1005,8 @@ window.db = {
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Астрахань",
+        "en": "Astrakhan"
       },
       "marriage": {
         "ru": "",
@@ -1028,32 +1032,32 @@ window.db = {
     "links": {
       "parents": [
         "person_nella_mikhailovna_1957",
-        null
+        "person_bagrat_mesropyan"
       ],
       "spouse": null
     },
     "gender": "male"
   },
-  "person_artur_nella": {
+  "person_artur_mesropyan": {
     "name": {
-      "ru": "Артур Смагаринский",
-      "en": "Artur Smagarinsky"
+      "ru": "Артур Багратович Месропьян",
+      "en": "Artur Bagratovich Mesropyan"
     },
     "years": "",
     "isDeceased": false,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Астрахань",
+        "en": "Astrakhan"
       },
       "marriage": {
         "ru": "",
         "en": ""
       },
       "occupation": {
-        "ru": "",
-        "en": ""
+        "ru": "работа в бизнесе",
+        "en": "work in business"
       },
       "burial": {
         "ru": "",
@@ -1071,7 +1075,7 @@ window.db = {
     "links": {
       "parents": [
         "person_nella_mikhailovna_1957",
-        null
+        "person_bagrat_mesropyan"
       ],
       "spouse": null
     },
@@ -4225,7 +4229,7 @@ window.db = {
     },
     "years": "",
     "isDeceased": false,
-    "mainPhoto": "",
+    "mainPhoto": "photos/oleg_kutikov.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "",
@@ -4395,7 +4399,8 @@ window.db = {
         "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Светлана Линецкая",
+        "en": "Svetlana Linetsky"
       },
       "occupation": {
         "ru": "музыкант",
@@ -4414,7 +4419,7 @@ window.db = {
         "person_roman_1924",
         "person_mira_1927"
       ],
-      "spouse": null
+      "spouse": "person_svetlana_linetsky"
     },
     "gender": "male"
   },
@@ -4499,7 +4504,7 @@ window.db = {
     },
     "years": "",
     "isDeceased": false,
-    "mainPhoto": "",
+    "mainPhoto": "photos/galina_kaplun.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "",
@@ -4632,10 +4637,10 @@ window.db = {
         "en": "Birobidzhan, Khabarovsky Krai"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Эльвира Каплун"
       },
       "occupation": {
-        "ru": "работа в бизнесе",
+        "ru": "",
         "en": "work in business"
       },
       "burial": {
@@ -4651,7 +4656,7 @@ window.db = {
         "person_mikhail_solomonovich_1928",
         "person_sonya_1929"
       ],
-      "spouse": null
+      "spouse": "person_elvira_kaplun"
     },
     "gender": "male"
   },
@@ -4697,9 +4702,9 @@ window.db = {
       "ru": "Николай Лопатин",
       "en": "Nikolay Lopatin"
     },
-    "years": "",
+    "years": "15.05.1959 -",
     "isDeceased": false,
-    "mainPhoto": "",
+    "mainPhoto": "photos/nikolay1959.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "",
@@ -6290,6 +6295,139 @@ window.db = {
         "person_frida_entin"
       ],
       "spouse": null
+    }
+  },
+  "person_svetlana_linetsky": {
+    "id": "person_svetlana_linetsky",
+    "name": {
+      "ru": "Светлана Линецкая",
+      "en": "Svetlana Linetsky"
+    },
+    "years": "",
+    "mainPhoto": "photos/svetlana_linetsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Валерий Романович Линецкий",
+        "en": "Valery Romanovich Linetsky"
+      },
+      "occupation": {
+        "ru": "музыкант",
+        "en": "musician"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_valery_1954"
+    }
+  },
+  "person_larisa_smagarinsky": {
+    "id": "person_larisa_smagarinsky",
+    "name": {
+      "ru": "Лариса Константиновна Смагаринская (Лазарева)",
+      "en": "Larisa Konstantinovna Smagarinsky (Lazareva)"
+    },
+    "years": "",
+    "mainPhoto": "photos/larisa_smagarinsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Юрий Михайлович Смагаринский",
+        "en": "Yuri Mikhailovich Smagarinsky"
+      },
+      "occupation": {
+        "ru": "делопроизводство",
+        "en": "office work"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_yuri_mikhailovich_1950",
+      "spouseNote": "в разводе"
+    }
+  },
+  "person_bagrat_mesropian": {
+    "id": "person_bagrat_mesropian",
+    "name": {
+      "ru": "Баграт Месропьян",
+      "en": "Bagrat Mesropyan"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Астрахань"
+      },
+      "marriage": {
+        "ru": "Нэлла Смагаринская",
+        "en": "Nella Smagarinsky"
+      },
+      "occupation": {
+        "ru": "работа в бизнесе",
+        "en": "work in business"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_nella_mikhailovna_1957",
+      "spouseNote": "в разводе"
+    }
+  },
+  "person_elvira_kaplun": {
+    "id": "person_elvira_kaplun",
+    "name": {
+      "ru": "Эльвира Каплун",
+      "en": "Elvira Kaplun"
+    },
+    "years": "",
+    "mainPhoto": "photos/elvira_kaplun.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Игорь Михайлович Каплун",
+        "en": "Igor Mikhailovich Kaplun"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_igor_1958"
     }
   }
 };
