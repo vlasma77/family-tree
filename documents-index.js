@@ -5058,5 +5058,127 @@ window.documentsIndex = {
         "en": "Archival Document"
       }
     }
+  ],
+  "person_galina_velikansky": [
+    {
+      "url": "Галина и Александр Великанские.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Галина и Александр Великанские",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Семья Великанских, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Великанских, Биробиджан",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Семья Микельман, Биробиджан, 1966 год.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Микельман, Биробиджан, 1966 год",
+        "en": "The Mickelman family, Birobidzhan, 1966"
+      }
+    },
+    {
+      "url": "Биробиджан 12-1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан 12-1961",
+        "en": "Birobidzhan 12-1961"
+      }
+    },
+    {
+      "url": "в пионерлагере Биробиджан, 07.1964.jpg",
+      "type": "image",
+      "title": {
+        "ru": "в пионерлагере Биробиджан, 07.1964",
+        "en": "in the Birobidzhan pioneer camp, July 1964"
+      }
+    }
+  ],
+  "person_aleksandr_velikansky": [
+    {
+      "url": "Галина и Александр Великанские.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Галина и Александр Великанские",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Семья Великанских, Биробиджан.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Великанских, Биробиджан",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_bella_chernov": [
+    {
+      "url": "Семья Микельман, Биробиджан, 1966 год.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Микельман, Биробиджан, 1966 год",
+        "en": "The Mickelman family, Birobidzhan, 1966"
+      }
+    },
+    {
+      "url": "Биробиджан 12-1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан 12-1961",
+        "en": "Birobidzhan 12-1961"
+      }
+    },
+    {
+      "url": "в пионерлагере Биробиджан, 07.1964.jpg",
+      "type": "image",
+      "title": {
+        "ru": "в пионерлагере Биробиджан, 07.1964",
+        "en": "in the Birobidzhan pioneer camp, July 1964"
+      }
+    }
+  ],
+  "person_aleksandr_chernov": [
+    {
+      "url": "aleksandr_chernov.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Aleksandr Chernov",
+        "en": "Aleksandr Chernov"
+      }
+    }
+  ],
+  "person_khinya_mikelman": [
+    {
+      "url": "Семья Микельман, Биробиджан, 1966 год.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Микельман, Биробиджан, 1966 год",
+        "en": "The Mickelman family, Birobidzhan, 1966"
+      }
+    },
+    {
+      "url": "Биробиджан 12-1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Биробиджан 12-1961",
+        "en": "Birobidzhan 12-1961"
+      }
+    },
+    {
+      "url": "Хиня Микельман, мать Михаила, Биробиджан 12-1961.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хиня Микельман, мать Михаила, Биробиджан 12-1961",
+        "en": "Khinya Mikelman, Mikhail's mother, Birobidzhan 12-1961"
+      }
+    }
   ]
 };
