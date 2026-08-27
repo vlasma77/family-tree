@@ -6962,5 +6962,40 @@ window.db = {
       "spouse": null
     },
     "gender": "female"
+  },
+  "person_sura_rivka_1893": {
+    "id": "person_sura_rivka_1893",
+    "name": {
+      "ru": "Сара Ривка Мордкова Хмельницкая",
+      "en": "Sarah Rivka Mordkova Khmelnitskaya"
+    },
+    "years": "~1893 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Украина",
+        "en": "Uman, Ukraine"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_mordko_khmelnitsky",
+        "person_beyla_khmelnitsky"
+      ],
+      "spouse": null
+    }
   }
 };
