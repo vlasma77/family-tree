@@ -6934,7 +6934,7 @@ window.db = {
       "en": "Rachel Mordkova Khmelnitsky"
     },
     "years": "1891 - ?",
-    "mainPhoto": "",
+    "mainPhoto": "photos/rahel_khmelnitsky.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Умань, Украина",
@@ -6970,7 +6970,7 @@ window.db = {
       "en": "Sarah Rivka Mordkova Khmelnitsky"
     },
     "years": "~1893 - ?",
-    "mainPhoto": "",
+    "mainPhoto": "photos/rivka_khmelnitsky.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Умань, Украина",

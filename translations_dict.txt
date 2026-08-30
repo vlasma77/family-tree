@@ -240,7 +240,6 @@ PANORAMA: panorama_dvor
 Люда Кутикова (Линецкая) = Lyuda Kutikova (Linetskaya)
 Роман Линецкий = Roman Linetsky
 Мира в домашней обстановке = Mura in a home environment
-
 Мира Линецкая = Mira LinetskayaOlga with her nephew Vladimir, circa 1979, Voroshilovgrad
 Мира на прогулке с дочкой = Mira on a walk with her daughter
 Мира с дочерьми = Mira with her daughters
@@ -441,6 +440,14 @@ PANORAMA: panorama_dvor
 Хмельницкая Бейла Гершова = Khmelnitsky Beila Gershova
 Хмельницкая Ривка Мордкова = Khmelnitsky Rivka Mordkova
 
+# =============================================================================
+# Вексельман, Гитман, Фельдман
+# =============================================================================
+
+Злота и сын Абрам (Аркадий) = Zlota and her son Abram (Arkady)
+Могила Семена и Евы Вексельман = The grave of Semyon and Eva Vekselman
+Мама и тётя Фаины Вексельман (Рябенко) 1952 = Faina Vekselman's (Ryabenko's) mother and aunt, 1952
+Злота Вексельман с сыновьями Борис и Абрам (Аркадий) = Zlota Vekselman with her sons Boris and Abram (Arkady)
 
 
 

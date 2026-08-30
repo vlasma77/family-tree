@@ -5249,13 +5249,81 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_rukhlya_1891": [
+    {
+      "url": "Архивная запись семьи Мордко.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись семьи Мордко",
+        "en": "Archival recording of the Mordko family"
+      }
+    },
+    {
+      "url": "слева направо - Нехама, Рахель, Злата Хмельницкие.jpg",
+      "type": "image",
+      "title": {
+        "ru": "слева направо - Нехама, Рахель, Злата Хмельницкие",
+        "en": "from left to right - Nehama, Rachel, Zlata Khmelnitsky"
+      }
+    },
+    {
+      "url": "Семья Мордко Хмельницкий, 1897.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Мордко Хмельницкий, 1897",
+        "en": "The Mordko Khmelnitsky family, 1897"
+      }
+    }
+  ],
+  "person_sura_rivka_1893": [
+    {
+      "url": "Архивная запись семьи Мордко.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись семьи Мордко",
+        "en": "Archival recording of the Mordko family"
+      }
+    },
+    {
+      "url": "Хмельницкая Ривка Мордкова.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хмельницкая Ривка Мордкова",
+        "en": "Khmelnitsky Rivka Mordkova"
+      }
+    },
+    {
+      "url": "Семья Мордко Хмельницкий, 1897.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Мордко Хмельницкий, 1897",
+        "en": "The Mordko Khmelnitsky family, 1897"
+      }
+    }
+  ],
   "person_zlota_1900": [
     {
       "url": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий).jpg",
       "type": "image",
       "title": {
         "ru": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий)",
-        "en": "Archival Document"
+        "en": "Zlota Vekselman with her sons Boris and Abram (Arkady)"
+      }
+    },
+    {
+      "url": "Злота и сын Абрам (Аркадий).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Злота и сын Абрам (Аркадий)",
+        "en": "Zlota and her son Abram (Arkady)"
+      }
+    },
+    {
+      "url": "слева направо - Нехама, Рахель, Злата Хмельницкие.jpg",
+      "type": "image",
+      "title": {
+        "ru": "слева направо - Нехама, Рахель, Злата Хмельницкие",
+        "en": "from left to right - Nehama, Rachel, Zlata Khmelnitsky"
       }
     }
   ],
@@ -5273,7 +5341,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий)",
-        "en": "Archival Document"
+        "en": "Zlota Vekselman with her sons Boris and Abram (Arkady)"
       }
     }
   ],
@@ -5291,7 +5359,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий)",
-        "en": "Archival Document"
+        "en": "Zlota Vekselman with her sons Boris and Abram (Arkady)"
       }
     }
   ]
