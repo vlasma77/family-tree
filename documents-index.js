@@ -5223,6 +5223,32 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_beyla_khmelnitsky": [
+    {
+      "url": "Архивная запись семьи Мордко.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись семьи Мордко",
+        "en": "Archival recording of the Mordko family"
+      }
+    },
+    {
+      "url": "Хмельницкая Бейла Гершова.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Хмельницкая Бейла Гершова",
+        "en": "Khmelnitsky Beila Gershova"
+      }
+    },
+    {
+      "url": "Семья Мордко Хмельницкий, 1897.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Мордко Хмельницкий, 1897",
+        "en": "The Mordko Khmelnitsky family, 1897"
+      }
+    }
+  ],
   "person_zlota_1900": [
     {
       "url": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий).jpg",
