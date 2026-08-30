@@ -4211,6 +4211,14 @@ window.documentsIndex = {
   ],
   "person_nehama_roitman": [
     {
+      "url": "Архивная запись семьи Мордко.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись семьи Мордко",
+        "en": "Archival recording of the Mordko family"
+      }
+    },
+    {
       "url": "маме, папе, Злоте, дяде Моисею и ребятам от сестры Нехамы 08.1941 (адрес на фото Пролетарская 11).jpg",
       "type": "image",
       "title": {
@@ -4243,11 +4251,27 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "слева направо - Нехама, Рахель, Злата Хмельницкие.jpg",
+      "type": "image",
+      "title": {
+        "ru": "слева направо - Нехама, Рахель, Злата Хмельницкие",
+        "en": "from left to right - Nehama, Rachel, Zlata Khmelnitsky"
+      }
+    },
+    {
       "url": "Архивная запись синагоги Умани о браке Волька-Нехама ф. Р-5899, оп. 1, спр. 614, арк. 125 зв. - 126.jpg",
       "type": "image",
       "title": {
         "ru": "Архивная запись синагоги Умани о браке Волька-Нехама ф. Р-5899, оп. 1, спр. 614, арк. 125 зв. - 126",
         "en": "Archival record of the Uman synagogue on the marriage of Volka-Nekhama f. R-5899, op. 1, sp. 614, arch. 125 sv. - 126"
+      }
+    },
+    {
+      "url": "Семья Мордко Хмельницкий, 1897.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Мордко Хмельницкий, 1897",
+        "en": "The Mordko Khmelnitsky family, 1897"
       }
     }
   ],
