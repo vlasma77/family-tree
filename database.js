@@ -6930,7 +6930,7 @@ window.db = {
   "person_rukhlya_1891": {
     "id": "person_rukhlya_1891",
     "name": {
-      "ru": "Рахель Мордкова Хмельницкая",
+      "ru": "Рахель Мордкова Гитман (Хмельницкая)",
       "en": "Rachel Mordkova Khmelnitsky"
     },
     "years": "1891 - ?",
@@ -7001,11 +7001,11 @@ window.db = {
   "person_zlota_1900": {
     "id": "person_zlota_1900",
     "name": {
-      "ru": "Злота Мордковна Хмельницкая",
-      "en": "Zlota Mordkovna Khmelnitsky"
+      "ru": "Злота Мордковна Вексельман (Хмельницкая)",
+      "en": "Zlota Mordkovna Vekselman (Khmelnitsky)"
     },
     "years": "~1900 - ?",
-    "mainPhoto": "",
+    "mainPhoto": "photos/zlota1900.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Умань, Украина",
@@ -7029,6 +7029,108 @@ window.db = {
       "parents": [
         "person_mordko_khmelnitsky",
         "person_beyla_khmelnitsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_semen_vekselman": {
+    "id": "person_semen_vekselman",
+    "name": {
+      "ru": "Семён Вексельман",
+      "en": "Semyon Vekselman"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Украина",
+        "en": "Uman, Ukraine"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_zlota_1900"
+      ],
+      "spouse": null
+    }
+  },
+  "person_boris_vekselman": {
+    "id": "person_boris_vekselman",
+    "name": {
+      "ru": "Борис Вексельман",
+      "en": "Boris Vekselman"
+    },
+    "years": "",
+    "mainPhoto": "photos/boris_vekselman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Украина",
+        "en": "Uman, Ukraine"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_zlota_1900"
+      ],
+      "spouse": null
+    }
+  },
+  "person_abram_arkady_vekselman": {
+    "id": "person_abram_arkady_vekselman",
+    "name": {
+      "ru": "Абрам (Аркадий) Вексельман",
+      "en": "Abram (Arkady) Vekselman"
+    },
+    "years": "",
+    "mainPhoto": "photos/abram_vekselman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Украина",
+        "en": "Uman, Ukraine"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_zlota_1900"
       ],
       "spouse": null
     }

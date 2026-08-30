@@ -307,6 +307,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Полная запись о бракосочетании.png",
+      "type": "image",
+      "title": {
+        "ru": "Полная запись о бракосочетании",
+        "en": "Archival Document"
+      }
+    },
+    {
       "url": "Свидетельство о смерти Блюмы.jpg",
       "type": "image",
       "title": {
@@ -320,6 +328,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Архивная справка из переписи населения Прилук, 1923",
         "en": "Archival information from the Priluki population census, 1923"
+      }
+    },
+    {
+      "url": "Выписка о рождении Айзика, 1917.png",
+      "type": "image",
+      "title": {
+        "ru": "Выписка о рождении Айзика, 1917",
+        "en": "Aizyks birth certificate, 1917"
       }
     }
   ],
@@ -857,6 +873,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Роман Линецкий.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Роман Линецкий",
+        "en": "Roman Linetsky"
+      }
+    },
+    {
       "url": "Сёстры Мира, Катя и Соня.jpg",
       "type": "image",
       "title": {
@@ -913,11 +937,27 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "трудовая книжка Линецкой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "трудовая книжка Линецкой",
+        "en": "Linetskaya's work record book"
+      }
+    },
+    {
       "url": "трудовая книжка Миры.jpg",
       "type": "image",
       "title": {
         "ru": "трудовая книжка Миры",
         "en": "Mira's work record book"
+      }
+    },
+    {
+      "url": "Хроника военных лет.pdf",
+      "type": "document",
+      "title": {
+        "ru": "Хроника военных лет",
+        "en": "Chronicle of the war years"
       }
     }
   ],
@@ -1493,22 +1533,6 @@ window.documentsIndex = {
   ],
   "person_vladimir_mikhailovich_1948": [
     {
-      "url": "01_Панорама дома где мы жили в Биробиджане, Калинина 39.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Панорама дома где мы жили в Биробиджане, Калинина 39",
-        "en": "Panorama of the house where we lived in Birobidzhan, Kalinina 39"
-      }
-    },
-    {
-      "url": "https://www.google.com/maps/embed?pb=!4v1787223377621!6m8!1m7!1siFB3XdLwf0J8gu86LDQhJg!2m2!1d48.79624381126397!2d132.9256605992312!3f212.3718437910923!4f9.863766304348232!5f0.7820865974627469",
-      "type": "panorama_embed",
-      "title": {
-        "ru": "Panorama dvor",
-        "en": "Panorama dvor"
-      }
-    },
-    {
       "url": "Алла с двоюродными братьями Евгением и Владимиром.jpg",
       "type": "image",
       "title": {
@@ -1677,6 +1701,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Танец с женой на вечеринке в ресторане.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Танец с женой на вечеринке в ресторане",
+        "en": "Archival Document"
+      }
+    },
+    {
       "url": "Торжественный момент, 14.06.1973, Астрахань.jpg",
       "type": "image",
       "title": {
@@ -1725,11 +1757,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "В парке Офакима, ориентировочно 1992.jpg",
+      "url": "В парке Офакима, ориентировочно 1995.jpg",
       "type": "image",
       "title": {
-        "ru": "В парке Офакима, ориентировочно 1992",
-        "en": "Archival Document"
+        "ru": "В парке Офакима, ориентировочно 1995",
+        "en": "In Ofakim Park, circa 1995"
       }
     },
     {
@@ -1741,11 +1773,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Владимир, ориентировочно 1978.jpg",
+      "url": "Владимир, ориентировочно 1971.jpg",
       "type": "image",
       "title": {
-        "ru": "Владимир, ориентировочно 1978",
-        "en": "Archival Document"
+        "ru": "Владимир, ориентировочно 1971",
+        "en": "Vladimir, approximately 1971"
       }
     },
     {
@@ -1754,6 +1786,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Вся жизнь впереди, Биробиджан, 06.09.1948",
         "en": "My whole life ahead, Birobidzhan, September 6, 1948"
+      }
+    },
+    {
+      "url": "Панорама дома где мы жили в Биробиджане, Калинина 39.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Панорама дома где мы жили в Биробиджане, Калинина 39",
+        "en": "Panorama of the house where we lived in Birobidzhan, Kalinina 39"
       }
     },
     {
@@ -1770,14 +1810,6 @@ window.documentsIndex = {
       "title": {
         "ru": "служба в армии 1971-1972",
         "en": "military service 1971-1972"
-      }
-    },
-    {
-      "url": "Танец с женой на вечеринке в ресторане 05.2004.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Танец с женой на вечеринке в ресторане 05.2004",
-        "en": "Dancing with wife at a restaurant party 05.2004"
       }
     }
   ],
@@ -2033,22 +2065,6 @@ window.documentsIndex = {
   ],
   "person_yuri_mikhailovich_1950": [
     {
-      "url": "01_Панорама дома где мы жили в Биробиджане, Калинина 39.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Панорама дома где мы жили в Биробиджане, Калинина 39",
-        "en": "Panorama of the house where we lived in Birobidzhan, Kalinina 39"
-      }
-    },
-    {
-      "url": "https://www.google.com/maps/embed?pb=!4v1787223377621!6m8!1m7!1siFB3XdLwf0J8gu86LDQhJg!2m2!1d48.79624381126397!2d132.9256605992312!3f212.3718437910923!4f9.863766304348232!5f0.7820865974627469",
-      "type": "panorama_embed",
-      "title": {
-        "ru": "Panorama dvor",
-        "en": "Panorama dvor"
-      }
-    },
-    {
       "url": "Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман.jpg",
       "type": "image",
       "title": {
@@ -2146,22 +2162,6 @@ window.documentsIndex = {
     }
   ],
   "person_nella_mikhailovna_1957": [
-    {
-      "url": "01_Панорама дома где мы жили в Биробиджане, Калинина 39.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Панорама дома где мы жили в Биробиджане, Калинина 39",
-        "en": "Panorama of the house where we lived in Birobidzhan, Kalinina 39"
-      }
-    },
-    {
-      "url": "https://www.google.com/maps/embed?pb=!4v1787223377621!6m8!1m7!1siFB3XdLwf0J8gu86LDQhJg!2m2!1d48.79624381126397!2d132.9256605992312!3f212.3718437910923!4f9.863766304348232!5f0.7820865974627469",
-      "type": "panorama_embed",
-      "title": {
-        "ru": "Panorama dvor",
-        "en": "Panorama dvor"
-      }
-    },
     {
       "url": "В парке Умани с родственниками.jpg",
       "type": "image",
@@ -5178,6 +5178,52 @@ window.documentsIndex = {
       "title": {
         "ru": "Хиня Микельман, мать Михаила, Биробиджан 12-1961",
         "en": "Khinya Mikelman, Mikhail's mother, Birobidzhan 12-1961"
+      }
+    }
+  ],
+  "person_zlota_1900": [
+    {
+      "url": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий)",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_boris_vekselman": [
+    {
+      "url": "Борис Вексельман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Борис Вексельман",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий)",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_abram_arkady_vekselman": [
+    {
+      "url": "Абрам (Аркадий) Вексельман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Абрам (Аркадий) Вексельман",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий)",
+        "en": "Archival Document"
       }
     }
   ]
