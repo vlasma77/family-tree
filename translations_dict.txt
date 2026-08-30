@@ -382,6 +382,7 @@ PANORAMA: panorama_dvor
 Тётя Розалия, 27.06.1970 = Aunt Rosalia, June 27, 1970
 Мордух Энтин = Mordukh Entin
 смерть Ривка и Мордух Энтин = the death of Rivka and Morduch Entin
+Энтины историческ. записи 2 = Entiny historical records 2
 
 # ======================================================================
 # Микельманы

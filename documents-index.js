@@ -4993,11 +4993,11 @@ window.documentsIndex = {
   ],
   "person_mordukh_1915": [
     {
-      "url": "Энтины историческ. записи.jpg",
+      "url": "Энтины историческ. записи 2.jpg",
       "type": "image",
       "title": {
-        "ru": "Энтины историческ. записи",
-        "en": "Archival Document"
+        "ru": "Энтины историческ. записи 2",
+        "en": "Entiny historical records 2"
       }
     }
   ],
@@ -5202,6 +5202,24 @@ window.documentsIndex = {
       "title": {
         "ru": "Хиня Микельман, мать Михаила, Биробиджан 12-1961",
         "en": "Khinya Mikelman, Mikhail's mother, Birobidzhan 12-1961"
+      }
+    }
+  ],
+  "person_mordko_khmelnitsky": [
+    {
+      "url": "Архивная запись семьи Мордко.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись семьи Мордко",
+        "en": "Archival recording of the Mordko family"
+      }
+    },
+    {
+      "url": "Семья Мордко Хмельницкий, 1897.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семья Мордко Хмельницкий, 1897",
+        "en": "The Mordko Khmelnitsky family, 1897"
       }
     }
   ],

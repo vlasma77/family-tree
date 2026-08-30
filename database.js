@@ -6833,7 +6833,7 @@ window.db = {
     },
     "years": "~1862 - ?",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/mordko_khmelnitsky.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
@@ -6866,7 +6866,7 @@ window.db = {
     },
     "years": "~1868 - ?",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/beyla_khmelnitsky.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
