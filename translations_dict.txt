@@ -380,6 +380,8 @@ PANORAMA: panorama_dvor
 сестра Полина Энтина, 09.09.1957 = sister Polina Entina, 09.09.1957
 Сестра Соня, 06.11.1963 = Sister Sonya, November 6, 1963
 Тётя Розалия, 27.06.1970 = Aunt Rosalia, June 27, 1970
+Мордух Энтин = Mordukh Entin
+смерть Ривка и Мордух Энтин = the death of Rivka and Morduch Entin
 
 # ======================================================================
 # Микельманы

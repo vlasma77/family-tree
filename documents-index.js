@@ -5003,11 +5003,11 @@ window.documentsIndex = {
   ],
   "person_mordukh_1896": [
     {
-      "url": "Мордух Энтин.PNG",
+      "url": "Мордух Энтин.jpg",
       "type": "image",
       "title": {
         "ru": "Мордух Энтин",
-        "en": "Archival Document"
+        "en": "Mordukh Entin"
       }
     },
     {
@@ -5015,7 +5015,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "смерть Ривка и Мордух Энтин",
-        "en": "Archival Document"
+        "en": "the death of Rivka and Morduch Entin"
       }
     }
   ],
@@ -5033,7 +5033,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "смерть Ривка и Мордух Энтин",
-        "en": "Archival Document"
+        "en": "the death of Rivka and Morduch Entin"
       }
     }
   ],
