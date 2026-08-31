@@ -7118,7 +7118,7 @@ window.db = {
         "en": "Uman, Ukraine"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Мася Гринберг"
       },
       "occupation": {
         "ru": ""
@@ -7135,7 +7135,7 @@ window.db = {
       "parents": [
         "person_zlota_1900"
       ],
-      "spouse": null
+      "spouse": "person_masya_vekselman"
     }
   },
   "person_eva_vekselman": {
@@ -7201,6 +7201,38 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_boris_vekselman"
+    }
+  },
+  "person_masya_vekselman": {
+    "id": "person_masya_vekselman",
+    "name": {
+      "ru": "Мася Вексельман (Гринберг)",
+      "en": "Masya Vekselman (Greenberg)"
+    },
+    "years": "1935 - 1997",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Абрам (Аркадий) Матвеевич Вексельман",
+        "en": "Abram (Arkady) Matveevich Vekselman"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_abram_arkady_vekselman"
     }
   }
 };
