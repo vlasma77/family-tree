@@ -7101,7 +7101,7 @@ window.db = {
       "parents": [
         "person_zlota_1900"
       ],
-      "spouse": null
+      "spouse": "person_faina_vekselman"
     }
   },
   "person_abram_arkady_vekselman": {
@@ -7169,6 +7169,38 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_semen_vekselman"
+    }
+  },
+  "person_faina_vekselman": {
+    "id": "person_faina_vekselman",
+    "name": {
+      "ru": "Фаина Вексельман",
+      "en": "Faina Vekselman"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Борис Матвеевич Вексельман",
+        "en": "Boris Matveevich Vekselman"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_boris_vekselman"
     }
   }
 };

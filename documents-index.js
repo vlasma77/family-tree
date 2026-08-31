@@ -5390,5 +5390,15 @@ window.documentsIndex = {
         "en": "The grave of Semyon and Eva Vekselman"
       }
     }
+  ],
+  "person_faina_vekselman": [
+    {
+      "url": "Мама и тётя Фаины Вексельман (Рябенко) 1952.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мама и тётя Фаины Вексельман (Рябенко) 1952",
+        "en": "Faina Vekselman's (Ryabenko's) mother and aunt, 1952"
+      }
+    }
   ]
 };
