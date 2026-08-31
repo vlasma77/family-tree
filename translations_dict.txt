@@ -450,6 +450,8 @@ PANORAMA: panorama_dvor
 Злота Вексельман с сыновьями Борис и Абрам (Аркадий) = Zlota Vekselman with her sons Boris and Abram (Arkady)
 Абрам (Аркадий) Вексельман = Abram (Arkady) Vekselman
 Злота и сын Абрам (Аркадий) = Zlota and her son Abram (Arkady)
+Борис Вексельман = Boris Vekselman
+Борис Матвеевич Вексельман = Boris Matveevich Vekselman
 
 
 

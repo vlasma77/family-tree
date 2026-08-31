@@ -5343,7 +5343,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Борис Вексельман",
-        "en": "Archival Document"
+        "en": "Boris Vekselman"
       }
     },
     {

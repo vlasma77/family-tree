@@ -7036,8 +7036,8 @@ window.db = {
   "person_semen_vekselman": {
     "id": "person_semen_vekselman",
     "name": {
-      "ru": "Семён Вексельман",
-      "en": "Semyon Vekselman"
+      "ru": "Семён Матвеевич Вексельман",
+      "en": "Semyon Matveevich Vekselman"
     },
     "years": "09.06.1923 - 05.11.1983",
     "mainPhoto": "photos/semen_vekselman.jpg",
@@ -7072,10 +7072,10 @@ window.db = {
   "person_boris_vekselman": {
     "id": "person_boris_vekselman",
     "name": {
-      "ru": "Борис Вексельман",
-      "en": "Boris Vekselman"
+      "ru": "Борис Матвеевич Вексельман",
+      "en": "Boris Matveevich Vekselman"
     },
-    "years": "",
+    "years": "1915 - 2000",
     "mainPhoto": "photos/boris_vekselman.jpg",
     "milestones": {
       "birthPlace": {
@@ -7083,7 +7083,8 @@ window.db = {
         "en": "Uman, Ukraine"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Фаина Вексельман (Рябенко)",
+        "en": "Faina Vekselman (Ryabenko)"
       },
       "occupation": {
         "ru": ""
@@ -7150,8 +7151,8 @@ window.db = {
         "ru": ""
       },
       "marriage": {
-        "ru": "Семен Вексельман",
-        "en": "Semyon Vekselman"
+        "ru": "Семен Матвеевич Вексельман",
+        "en": "Semyon Matveevich Vekselman"
       },
       "occupation": {
         "ru": ""
