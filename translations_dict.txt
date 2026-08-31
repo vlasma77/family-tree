@@ -452,6 +452,7 @@ PANORAMA: panorama_dvor
 Злота и сын Абрам (Аркадий) = Zlota and her son Abram (Arkady)
 Борис Вексельман = Boris Vekselman
 Борис Матвеевич Вексельман = Boris Matveevich Vekselman
+Мордко Янкелевич Хмельницкий домовладелец = Mordko Yankelevich Khmelnitsky, homeowner
 
 
 

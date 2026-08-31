@@ -6618,6 +6618,7 @@ window.db = {
       "en": "Bella Mikhailovna Chernova (Mickelman)"
     },
     "years": "1953 - 2014",
+    "isDeceased": true,
     "mainPhoto": "photos/bella_chernov.jpg",
     "milestones": {
       "birthPlace": {
@@ -6898,6 +6899,7 @@ window.db = {
       "en": "Meryam Mordkova Khmelnitsky"
     },
     "years": "1888 - ?",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -6934,6 +6936,7 @@ window.db = {
       "en": "Rachel Mordkova Khmelnitsky"
     },
     "years": "1891 - ?",
+    "isDeceased": true,
     "mainPhoto": "photos/rahel_khmelnitsky.jpg",
     "milestones": {
       "birthPlace": {
@@ -6970,6 +6973,7 @@ window.db = {
       "en": "Sarah Rivka Mordkova Khmelnitsky"
     },
     "years": "~1893 - ?",
+    "isDeceased": true,
     "mainPhoto": "photos/rivka_khmelnitsky.jpg",
     "milestones": {
       "birthPlace": {
@@ -7005,6 +7009,7 @@ window.db = {
       "en": "Zlota Mordkovna Vekselman (Khmelnitsky)"
     },
     "years": "~1900 - ?",
+    "isDeceased": true,
     "mainPhoto": "photos/zlota1900.jpg",
     "milestones": {
       "birthPlace": {
@@ -7041,6 +7046,7 @@ window.db = {
       "en": "Semyon Matveevich Vekselman"
     },
     "years": "09.06.1923 - 05.11.1983",
+    "isDeceased": true,
     "mainPhoto": "photos/semen_vekselman.jpg",
     "milestones": {
       "birthPlace": {
@@ -7078,6 +7084,7 @@ window.db = {
       "en": "Boris Matveevich Vekselman"
     },
     "years": "1915 - 2000",
+    "isDeceased": true,
     "mainPhoto": "photos/boris_vekselman.jpg",
     "milestones": {
       "birthPlace": {
@@ -7114,6 +7121,7 @@ window.db = {
       "en": "Abram (Arkady) Vekselman"
     },
     "years": "",
+    "isDeceased": true,
     "mainPhoto": "photos/abram_vekselman.jpg",
     "milestones": {
       "birthPlace": {
@@ -7149,6 +7157,7 @@ window.db = {
       "en": "Eva Markovna Vekselman (Talisweiber)"
     },
     "years": "03.04.1928 - 21.01.1992",
+    "isDeceased": true,
     "mainPhoto": "photos/semen_vekselman.jpg",
     "milestones": {
       "birthPlace": {
@@ -7182,6 +7191,7 @@ window.db = {
       "en": "Faina Vekselman"
     },
     "years": "",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -7214,6 +7224,7 @@ window.db = {
       "en": "Masya Vekselman (Greenberg)"
     },
     "years": "1935 - 1997",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -7246,6 +7257,7 @@ window.db = {
       "en": "Matvey Vekselman"
     },
     "years": "1900 - 1944",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {

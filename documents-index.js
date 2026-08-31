@@ -5215,6 +5215,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Мордко Янкелевич Хмельницкий домовладелец.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мордко Янкелевич Хмельницкий домовладелец",
+        "en": "Mordko Yankelevich Khmelnitsky, homeowner"
+      }
+    },
+    {
       "url": "Семья Мордко Хмельницкий, 1897.jpg",
       "type": "image",
       "title": {
