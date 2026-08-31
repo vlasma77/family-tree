@@ -7001,18 +7001,19 @@ window.db = {
   "person_zlota_1900": {
     "id": "person_zlota_1900",
     "name": {
-      "ru": "Злота Мордковна Вексельман (Хмельницкая)",
+      "ru": "Злота (Зина) Мордковна Вексельман (Хмельницкая)",
       "en": "Zlota Mordkovna Vekselman (Khmelnitsky)"
     },
     "years": "~1900 - ?",
     "mainPhoto": "photos/zlota1900.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Умань, Украина",
-        "en": "Uman, Ukraine"
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Матвей Вексельман",
+        "en": "Matvey Vekselman"
       },
       "occupation": {
         "ru": ""
