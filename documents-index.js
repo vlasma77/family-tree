@@ -5380,5 +5380,15 @@ window.documentsIndex = {
         "en": "Zlota and her son Abram (Arkady)"
       }
     }
+  ],
+  "person_eva_vekselman": [
+    {
+      "url": "Могила Семена и Евы Вексельман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Могила Семена и Евы Вексельман",
+        "en": "The grave of Semyon and Eva Vekselman"
+      }
+    }
   ]
 };

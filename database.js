@@ -7039,21 +7039,23 @@ window.db = {
       "ru": "Семён Вексельман",
       "en": "Semyon Vekselman"
     },
-    "years": "",
-    "mainPhoto": "",
+    "years": "09.06.1923 - 05.11.1983",
+    "mainPhoto": "photos/semen_vekselman.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Умань, Украина",
         "en": "Uman, Ukraine"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Ева Марковна Вексельман (Талисильвейбер)",
+        "en": "Eva Markovna Vekselman (Talisilveiber)"
       },
       "occupation": {
         "ru": ""
       },
       "burial": {
-        "ru": ""
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
       }
     },
     "bio": {
@@ -7064,7 +7066,7 @@ window.db = {
       "parents": [
         "person_zlota_1900"
       ],
-      "spouse": null
+      "spouse": "person_eva_vekselman"
     }
   },
   "person_boris_vekselman": {
@@ -7133,6 +7135,39 @@ window.db = {
         "person_zlota_1900"
       ],
       "spouse": null
+    }
+  },
+  "person_eva_vekselman": {
+    "id": "person_eva_vekselman",
+    "name": {
+      "ru": "Ева Марковна Вексельман (Талисвейбер)",
+      "en": "Eva Markovna Vekselman (Talisweiber)"
+    },
+    "years": "03.04.1928 - 21.01.1992",
+    "mainPhoto": "photos/semen_vekselman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Семен Вексельман",
+        "en": "Semyon Vekselman"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_semen_vekselman"
     }
   }
 };
