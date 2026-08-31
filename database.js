@@ -7031,7 +7031,7 @@ window.db = {
         "person_mordko_khmelnitsky",
         "person_beyla_khmelnitsky"
       ],
-      "spouse": null
+      "spouse": "person_matvey_vekselman"
     }
   },
   "person_semen_vekselman": {
@@ -7065,7 +7065,8 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_zlota_1900"
+        "person_zlota_1900",
+        "person_matvey_vekselman"
       ],
       "spouse": "person_eva_vekselman"
     }
@@ -7100,7 +7101,8 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_zlota_1900"
+        "person_zlota_1900",
+        "person_matvey_vekselman"
       ],
       "spouse": "person_faina_vekselman"
     }
@@ -7134,7 +7136,8 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_zlota_1900"
+        "person_zlota_1900",
+        "person_matvey_vekselman"
       ],
       "spouse": "person_masya_vekselman"
     }
@@ -7234,6 +7237,38 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_abram_arkady_vekselman"
+    }
+  },
+  "person_matvey_vekselman": {
+    "id": "person_matvey_vekselman",
+    "name": {
+      "ru": "Матвей Вексельман",
+      "en": "Matvey Vekselman"
+    },
+    "years": "1900 - 1944",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Злота (Зина) Мордковна Вексельман (Хмельницкая)",
+        "en": "Zlota (Zina) Mordkovna Vekselman (Khmelnitsky)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_zlota_1900"
     }
   }
 };
