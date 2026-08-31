@@ -5351,7 +5351,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Абрам (Аркадий) Вексельман",
-        "en": "Archival Document"
+        "en": "Abram (Arkady) Vekselman"
       }
     },
     {
@@ -5360,6 +5360,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Злота Вексельман с сыновьями Борис и Абрам (Аркадий)",
         "en": "Zlota Vekselman with her sons Boris and Abram (Arkady)"
+      }
+    },
+    {
+      "url": "Злота и сын Абрам (Аркадий).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Злота и сын Абрам (Аркадий)",
+        "en": "Zlota and her son Abram (Arkady)"
       }
     }
   ]

@@ -448,7 +448,8 @@ PANORAMA: panorama_dvor
 Могила Семена и Евы Вексельман = The grave of Semyon and Eva Vekselman
 Мама и тётя Фаины Вексельман (Рябенко) 1952 = Faina Vekselman's (Ryabenko's) mother and aunt, 1952
 Злота Вексельман с сыновьями Борис и Абрам (Аркадий) = Zlota Vekselman with her sons Boris and Abram (Arkady)
-
+Абрам (Аркадий) Вексельман = Abram (Arkady) Vekselman
+Злота и сын Абрам (Аркадий) = Zlota and her son Abram (Arkady)
 
 
 
