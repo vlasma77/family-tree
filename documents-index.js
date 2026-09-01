@@ -5418,5 +5418,15 @@ window.documentsIndex = {
         "en": "Pesach Gitman"
       }
     }
+  ],
+  "person_esther_gitman": [
+    {
+      "url": "Эстер Гитман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Эстер Гитман",
+        "en": "Esther Gitman"
+      }
+    }
   ]
 };

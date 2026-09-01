@@ -7049,7 +7049,7 @@ window.db = {
     "id": "person_zlota_1900",
     "name": {
       "ru": "Злота (Зина) Мордковна Вексельман (Хмельницкая)",
-      "en": "Zlota (Zina) Mordkovna Vekselman (Khmelnitskaya)"
+      "en": "Zlota Mordkovna Vekselman (Khmelnitsky)"
     },
     "years": "1900 - 1967",
     "isDeceased": true,
@@ -7067,8 +7067,7 @@ window.db = {
         "ru": ""
       },
       "burial": {
-        "ru": "Умань, Черкасская обл., Украина",
-        "en": "Uman, Cherkasy region, Ukraine"
+        "ru": "Умань, Черкасская обл., Украина"
       }
     },
     "bio": {
@@ -7360,5 +7359,43 @@ window.db = {
       "parents": [],
       "spouse": "person_rukhlya_1891"
     }
+  },
+  "person_esther_gitman": {
+    "id": "person_esther_gitman",
+    "name": {
+      "ru": "Эстер Песаховна Гитман",
+      "en": "Esther Pesakhovna Gitman"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "photos/esther_gitman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_pesah_gitman",
+        "person_rukhlya_1891"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
   }
 };
