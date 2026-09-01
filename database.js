@@ -6985,13 +6985,15 @@ window.db = {
         "en": "Uman, Ukraine"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Песах Гитман",
+        "en": "Pesach Gitman"
       },
       "occupation": {
         "ru": ""
       },
       "burial": {
-        "ru": ""
+        "ru": "Умань",
+        "en": "Uman"
       }
     },
     "bio": {
@@ -7047,9 +7049,9 @@ window.db = {
     "id": "person_zlota_1900",
     "name": {
       "ru": "Злота (Зина) Мордковна Вексельман (Хмельницкая)",
-      "en": "Zlota Mordkovna Vekselman (Khmelnitsky)"
+      "en": "Zlota (Zina) Mordkovna Vekselman (Khmelnitskaya)"
     },
-    "years": "~1900 - ?",
+    "years": "1900 - 1967",
     "isDeceased": true,
     "mainPhoto": "photos/zlota1900.jpg",
     "milestones": {
@@ -7065,7 +7067,8 @@ window.db = {
         "ru": ""
       },
       "burial": {
-        "ru": ""
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
       }
     },
     "bio": {
