@@ -7397,5 +7397,44 @@ window.db = {
       "spouse": null
     },
     "gender": "female"
+  },
+  "person_bella_shain": {
+    "id": "person_bella_shain",
+    "name": {
+      "ru": "Бэлла Песаховна Шайн (Гитман)",
+      "en": "Bella Pesakhovna Shine (Gitman)"
+    },
+    "years": "1922 - ?",
+    "isDeceased": true,
+    "mainPhoto": "photos/bella_shain.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      },
+      "marriage": {
+        "ru": "Давид (Дудек) Шайн",
+        "en": "David (Dudek) Shine"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "Израиль",
+        "en": "Israel"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_pesah_gitman",
+        "person_rukhlya_1891"
+      ],
+      "spouse": null
+    }
   }
 };

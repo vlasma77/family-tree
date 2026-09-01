@@ -5428,5 +5428,23 @@ window.documentsIndex = {
         "en": "Esther Gitman"
       }
     }
+  ],
+  "person_bella_shain": [
+    {
+      "url": "Белла (слева) и Роза.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Белла (слева) и Роза",
+        "en": "Bella (left) and Rose"
+      }
+    },
+    {
+      "url": "Миля, Роза на свадьбе внучки Беллы Рыбицкой (слева).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля, Роза на свадьбе внучки Беллы Рыбицкой (слева)",
+        "en": "Milya, Rosa at the wedding of Bella Rybitskaya's granddaughter (left)"
+      }
+    }
   ]
 };
