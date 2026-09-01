@@ -5408,5 +5408,15 @@ window.documentsIndex = {
         "en": "Faina Vekselman's (Ryabenko's) mother and aunt, 1952"
       }
     }
+  ],
+  "person_pesah_gitman": [
+    {
+      "url": "Песах Гитман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Песах Гитман",
+        "en": "Pesach Gitman"
+      }
+    }
   ]
 };

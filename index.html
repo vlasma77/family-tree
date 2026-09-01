@@ -204,9 +204,24 @@
      <input type="text" id="custom-search-input" placeholder="Поиск персоны...">
      <div id="custom-search-results"></div>
    </div>
+   <!-- НОВОЕ: кнопка открывает алфавитный список фамилий всех персон -->
+   <button id="btn-surnames" onclick="openSurnamesList()" title="Список фамилий" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">Список фамилий</button>
    <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
    <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
    <button id="btn-edit-lock" onclick="toggleEditModeUI()" title="Режим редактирования" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 8px;cursor:pointer;font-size:16px;">🔒</button>
+   <!-- НОВОЕ: счётчик общего числа персон в проекте -->
+   <span id="person-count-badge" title="Всего персон в дереве" style="display:inline-flex;align-items:center;justify-content:center;min-width:28px;height:22px;padding:0 6px;background:#2c3e50;color:#fff;border-radius:11px;font-size:12px;font-weight:bold;">0</span>
+  </div>
+
+  <!-- НОВОЕ: полноэкранная страница алфавитного списка фамилий -->
+  <div id="surnames-overlay" style="display:none;position:fixed;z-index:10002;top:0;left:0;width:100%;height:100%;background:#faf6ee;overflow-y:auto;">
+    <div style="max-width:800px;margin:0 auto;padding:24px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h2 id="surnames-title" style="margin:0;">Список фамилий</h2>
+        <button onclick="closeSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;">✕ Закрыть</button>
+      </div>
+      <div id="surnames-list-container"></div>
+    </div>
   </div>
 
   <div id="main-wrapper">
@@ -237,7 +252,12 @@
       if (isEditModeOn()) {
         if (confirm("Выключить режим редактирования на этом устройстве?")) {
           localStorage.removeItem("familyTreeEditMode");
-          location.reload();
+          // ИСПРАВЛЕНИЕ: раньше тут был location.reload() — но при открытии
+          // сайта локально через file:///... браузер блокирует такую
+          // перезагрузку ("Unsafe attempt to load URL... unique security
+          // origins"), поэтому иконка замка не обновлялась. Обновляем её
+          // напрямую, без перезагрузки страницы.
+          updateEditLockIcon();
         }
         return;
       }
@@ -246,7 +266,8 @@
       if (pwd === EDIT_PASSWORD) {
         localStorage.setItem("familyTreeEditMode", "true");
         alert("Режим редактирования включён на этом устройстве.");
-        location.reload();
+        // ИСПРАВЛЕНИЕ: см. комментарий выше — не перезагружаем страницу
+        updateEditLockIcon();
       } else {
         alert("Неверный пароль.");
       }
@@ -263,6 +284,111 @@
         btn.textContent = "🔒";
         btn.title = "Режим редактирования выключен (нажмите, чтобы включить)";
         btn.style.borderColor = "#ccc";
+      }
+    }
+
+    // НОВОЕ: показывает общее число персон в базе рядом с иконкой замка
+    function updatePersonCountBadge() {
+      const badge = document.getElementById("person-count-badge");
+      if (!badge) return;
+      const count = Object.keys(db).length;
+      badge.textContent = count;
+      badge.title = (currentLang === 'en')
+        ? `${count} people in the tree`
+        : `Всего персон в дереве: ${count}`;
+    }
+
+    // === НОВОЕ: алфавитный список фамилий ===
+
+    // Достаём фамилию из полного имени персоны. Имена в базе обычно
+    // построены как "Имя Отчество Фамилия" или "Имя Фамилия", поэтому
+    // берём последнее слово. Скобочные вставки убираем ПОЛНОСТЬЮ и везде
+    // (не только в конце) — у некоторых персон в скобках стоит прозвище
+    // ПЕРЕД фамилией, например "Зуся (Рыся, Зися) Смагаринская", и если
+    // обрезать только по первой скобке, настоящая фамилия потеряется.
+    function extractSurname(fullName) {
+      if (!fullName) return "";
+      let name = fullName.replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+      const words = name.split(/\s+/).filter(Boolean);
+      if (words.length === 0) return "";
+      return words[words.length - 1];
+    }
+
+    // НОВОЕ: приводим женскую форму фамилии к мужской, чтобы объединить
+    // пары вроде Захаров/Захарова, Лопатин/Лопатина в одну группу
+    // в списке фамилий. Несклоняемые фамилии (Гринберг, Гельван,
+    // Дмитренко и т.п.) не подходят ни под одно из правил и остаются
+    // без изменений — это ожидаемо и корректно для них.
+    function normalizeSurnameToMasculine(surname) {
+      if (!surname) return surname;
+      // -ская / -цкая -> -ский / -цкий (любая согласная перед "кая")
+      if (/кая$/.test(surname)) return surname.slice(0, -2) + 'ий';
+      // -ова / -ева -> -ов / -ев
+      if (/ова$/.test(surname) || /ева$/.test(surname)) return surname.slice(0, -1);
+      // -ина -> -ин (Лопатина -> Лопатин)
+      if (/ина$/.test(surname)) return surname.slice(0, -1);
+      return surname;
+    }
+
+    function buildSurnamesIndex() {
+      // фамилия (мужская форма, в нижнем регистре, для сортировки) -> { display, people: [{id, name}] }
+      const index = {};
+      Object.keys(db).forEach(id => {
+        const person = db[id];
+        const fullName = person.name ? (person.name[currentLang] || person.name.ru || person.name.en) : "";
+        const surname = extractSurname(fullName);
+        if (!surname) return;
+        // НОВОЕ: группируем по мужской форме, чтобы Лопатин/Лопатина,
+        // Захаров/Захарова и т.п. попадали в один и тот же раздел списка
+        const masculine = normalizeSurnameToMasculine(surname);
+        const key = masculine.toLowerCase();
+        if (!index[key]) index[key] = { display: masculine, people: [] };
+        index[key].people.push({ id, name: fullName });
+      });
+      return index;
+    }
+
+    function openSurnamesList() {
+      const overlay = document.getElementById("surnames-overlay");
+      const container = document.getElementById("surnames-list-container");
+      const title = document.getElementById("surnames-title");
+      title.textContent = (currentLang === 'en') ? "List of Surnames" : "Список фамилий";
+
+      const index = buildSurnamesIndex();
+      const sortedKeys = Object.keys(index).sort((a, b) => a.localeCompare(b, currentLang === 'en' ? 'en' : 'ru'));
+
+      let html = "";
+      sortedKeys.forEach(key => {
+        const entry = index[key];
+        // Внутри одной фамилии — люди по алфавиту имени, тоже кликабельны
+        const peopleSorted = entry.people.slice().sort((a, b) => a.name.localeCompare(b.name, currentLang === 'en' ? 'en' : 'ru'));
+        html += `<div style="margin-bottom:18px;">
+          <div style="font-size:18px;font-weight:bold;color:#2c3e50;border-bottom:1px solid #ddd;padding-bottom:4px;margin-bottom:6px;">
+            ${entry.display} <span style="font-weight:normal;color:#888;font-size:14px;">(${entry.people.length})</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            ${peopleSorted.map(p => `<span onclick="jumpToPersonFromSurnames('${p.id}')" style="cursor:pointer;color:#1a5276;text-decoration:underline;padding:2px 4px;">${p.name}</span>`).join('')}
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html || `<p>${currentLang === 'en' ? 'No persons found.' : 'Персоны не найдены.'}</p>`;
+      overlay.style.display = "block";
+    }
+
+    function closeSurnamesList() {
+      document.getElementById("surnames-overlay").style.display = "none";
+    }
+
+    function jumpToPersonFromSurnames(id) {
+      closeSurnamesList();
+      // Переиспользуем существующую логику показа боковой панели персоны
+      if (typeof showCustomSidePanel === 'function') {
+        showCustomSidePanel(id);
+      }
+      // По возможности центрируем дерево на выбранной персоне
+      if (treeInstance && typeof treeInstance.center === 'function') {
+        try { treeInstance.center(id); } catch (e) {}
       }
     }
 
@@ -665,6 +791,7 @@ window.saveCurrentPersonData = function() {
         document.getElementById("custom-side-panel").style.display = "none";
         
         drawTree();
+        updatePersonCountBadge(); // НОВОЕ
         downloadDatabaseFile();
         
         const alertMsg = currentLang === 'ru'
@@ -788,6 +915,7 @@ window.saveCurrentPersonData = function() {
 
       document.getElementById("geni-add-menu").classList.add("hidden-block");
       drawTree();
+      updatePersonCountBadge(); // НОВОЕ
       showCustomSidePanel(newId);
     };
 
@@ -1010,11 +1138,13 @@ window.saveCurrentPersonData = function() {
       if (typeof drawTree === 'function') {
         drawTree(); 
       }
+      updatePersonCountBadge(); // НОВОЕ: подсказка счётчика тоже на нужном языке
     }
 
     // Запуск по умолчанию при загрузке страницы
     setLanguage('ru');
     updateEditLockIcon();
+    updatePersonCountBadge(); // НОВОЕ
   </script>
 </body>
 </html>

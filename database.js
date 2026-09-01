@@ -6715,6 +6715,47 @@ window.db = {
       "spouse": "person_olga_chernov"
     }
   },
+  "person_olga_chernov": {
+    "id": "person_olga_chernov",
+    "name": {
+      "ru": "Ольга Чернова",
+      "en": "Olga Chernov"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Евгений Александрович Чернов",
+        "en": "Evgeny Alexandrovich Chernov"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_evgeny_chernov"
+    },
+    "gender": "female"
+  },
   "person_nataly_chernov": {
     "id": "person_nataly_chernov",
     "name": {
@@ -6933,7 +6974,7 @@ window.db = {
     "id": "person_rukhlya_1891",
     "name": {
       "ru": "Рахель Мордкова Гитман (Хмельницкая)",
-      "en": "Rachel Mordkova Khmelnitsky"
+      "en": "Rachel Mordkovna Gitman (Khmelnitsky)"
     },
     "years": "1891 - ?",
     "isDeceased": true,
@@ -6962,7 +7003,7 @@ window.db = {
         "person_mordko_khmelnitsky",
         "person_beyla_khmelnitsky"
       ],
-      "spouse": null
+      "spouse": "person_pesah_gitman"
     },
     "gender": "female"
   },
@@ -7281,6 +7322,40 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_zlota_1900"
+    }
+  },
+  "person_pesah_gitman": {
+    "id": "person_pesah_gitman",
+    "name": {
+      "ru": "Песах Гитман",
+      "en": "Pesach Gitman"
+    },
+    "years": "1897 - ?",
+    "isDeceased": true,
+    "mainPhoto": "photos/pesah_gitman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Рахель Мордковна Гитман (Хмельницкая)",
+        "en": "Rachel Mordkovna Gitman (Khmelnitsky)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Умань",
+        "en": "Uman"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_rukhlya_1891"
     }
   }
 };

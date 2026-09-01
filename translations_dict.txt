@@ -453,6 +453,7 @@ PANORAMA: panorama_dvor
 Борис Вексельман = Boris Vekselman
 Борис Матвеевич Вексельман = Boris Matveevich Vekselman
 Мордко Янкелевич Хмельницкий домовладелец = Mordko Yankelevich Khmelnitsky, homeowner
+Песах Гитман = Pesach Gitman
 
 
 
