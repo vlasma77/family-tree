@@ -7435,6 +7435,7 @@ window.db = {
         "person_rukhlya_1891"
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   }
 };
