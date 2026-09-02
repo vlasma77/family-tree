@@ -7434,8 +7434,43 @@ window.db = {
         "person_pesah_gitman",
         "person_rukhlya_1891"
       ],
-      "spouse": null
+      "spouse": "person_david_shain"
     },
     "gender": "female"
+  },
+  "person_david_shain": {
+    "id": "person_david_shain",
+    "name": {
+      "ru": "Давид (Дудек) Шайн",
+      "en": "David (Dudek) Shine"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Польша",
+        "en": "Poland"
+      },
+      "marriage": {
+        "ru": "Бэлла Песаховна Шайн (Гитман)",
+        "en": "Bella Pesakhovna Shine (Gitman)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Израиль",
+        "en": "Israel"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_bella_shain"
+    }
   }
 };
