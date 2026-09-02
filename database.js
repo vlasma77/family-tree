@@ -7586,6 +7586,7 @@ window.db = {
       "en": "New Person"
     },
     "years": "",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -7643,7 +7644,42 @@ window.db = {
         "person_nathan_gerenstein",
         "person_roza_gerenstein"
       ],
-      "spouse": null
+      "spouse": "person_igor_feldman"
+    }
+  },
+  "person_igor_feldman": {
+    "id": "person_igor_feldman",
+    "name": {
+      "ru": "Игорь Фельдман",
+      "en": "Igor Feldman"
+    },
+    "years": "1947 - 2020",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Звенигородка, Черкасской области, Украина",
+        "en": "Zvenigorodka, Cherkasy Oblast, Ukraine"
+      },
+      "marriage": {
+        "ru": "Рая Натановна Фельдман (Геренштейн)",
+        "en": "Raya Nathanovna Feldman (Gerenstein)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Израиль",
+        "en": "Israel"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_raya_feldman"
     }
   }
 };
