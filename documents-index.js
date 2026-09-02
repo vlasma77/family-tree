@@ -5538,5 +5538,31 @@ window.documentsIndex = {
         "en": "Nathan and Rosa Gerenstein (left), Sofievka, Uman, 1982"
       }
     }
+  ],
+  "person_raya_feldman": [
+    {
+      "url": "Рая и ее дочь Полина (справа).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рая и ее дочь Полина (справа)",
+        "en": "Raya and her daughter Polina (right)"
+      }
+    },
+    {
+      "url": "Рая с внуком Лираном.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рая с внуком Лираном",
+        "en": "Raya with her grandson Liran"
+      }
+    },
+    {
+      "url": "Рая Фельдман (Геренштейн).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рая Фельдман (Геренштейн)",
+        "en": "Raya Feldman (Gerenstein)"
+      }
+    }
   ]
 };
