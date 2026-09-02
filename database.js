@@ -7681,5 +7681,76 @@ window.db = {
       "parents": [],
       "spouse": "person_raya_feldman"
     }
+  },
+  "person_anatoly_gerenstein": {
+    "id": "person_anatoly_gerenstein",
+    "name": {
+      "ru": "Анатолий Натанович Геренштейн",
+      "en": "Anatoly Natanovich Gerenshtein"
+    },
+    "years": "1951 - 2023",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Черкасск, Украина",
+        "en": "Cherkassk, Ukraine"
+      },
+      "marriage": {
+        "ru": "Людмила Дидоренко (Ромашина)",
+        "en": "Lyudmila Didorenko (Romashina)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Черкасск, Украина",
+        "en": "Cherkassk, Ukraine"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_nathan_gerenstein",
+        "person_roza_gerenstein"
+      ],
+      "spouse": "person_ludmila_didorenko"
+    }
+  },
+  "person_ludmila_didorenko": {
+    "id": "person_ludmila_didorenko",
+    "name": {
+      "ru": "Людмила Дидоренко",
+      "en": "Lyudmila Didorenko"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      },
+      "marriage": {
+        "ru": "Анатолий Натанович Геренштейн",
+        "en": "Anatoly Natanovich Gerenshtein"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_anatoly_gerenstein"
+    }
   }
 };
