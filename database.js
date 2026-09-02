@@ -7508,5 +7508,40 @@ window.db = {
       ],
       "spouse": "person_nathan_gerenstein"
     }
+  },
+  "person_nathan_gerenstein": {
+    "id": "person_nathan_gerenstein",
+    "name": {
+      "ru": "Натан (Нюта) Песахович Геренштейн",
+      "en": "Nathan (Nyuta) Pesakhovich Gerenstein"
+    },
+    "years": "? - 10.01.1990",
+    "isDeceased": true,
+    "mainPhoto": "photos/natan_1982.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      },
+      "marriage": {
+        "ru": "Роза Песаховна Геренштейн (Гитман)",
+        "en": "Roza Pesakhovna Gerenshtein (Gitman)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_roza_gerenstein"
+    }
   }
 };

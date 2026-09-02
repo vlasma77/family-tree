@@ -5504,5 +5504,39 @@ window.documentsIndex = {
         "en": "Nathan and Rosa Gerenstein (left), Sofievka, Uman, 1982"
       }
     }
+  ],
+  "person_nathan_gerenstein": [
+    {
+      "url": "Натан (Нюта) Геренштейн.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Натан (Нюта) Геренштейн",
+        "en": "Nathan (Nyuta) Gerenstein"
+      }
+    },
+    {
+      "url": "Натан Геренштейн.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Натан Геренштейн",
+        "en": "Nathan Gerenstein"
+      }
+    },
+    {
+      "url": "Натан и Роза Геренштейн.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Натан и Роза Геренштейн",
+        "en": "Nathan and Rose Gerenstein"
+      }
+    },
+    {
+      "url": "Натан и Роза Геренштейн (слева), Софиевка, Умань, 1982.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Натан и Роза Геренштейн (слева), Софиевка, Умань, 1982",
+        "en": "Nathan and Rosa Gerenstein (left), Sofievka, Uman, 1982"
+      }
+    }
   ]
 };
