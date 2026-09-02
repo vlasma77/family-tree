@@ -7752,5 +7752,40 @@ window.db = {
       "parents": [],
       "spouse": "person_anatoly_gerenstein"
     }
+  },
+  "person_petr_gerenstein": {
+    "id": "person_petr_gerenstein",
+    "name": {
+      "ru": "Петр Анатольевич Геренштейн",
+      "en": "Petr Anatolyevich Gerenshtein"
+    },
+    "years": "2003 - ",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_anatoly_gerenstein",
+        "person_ludmila_didorenko"
+      ],
+      "spouse": null
+    }
   }
 };
