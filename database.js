@@ -7540,8 +7540,43 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": [],
+      "parents": [
+        "person_peretz_pesah"
+      ],
       "spouse": "person_roza_gerenstein"
+    }
+  },
+  "person_peretz_pesah": {
+    "id": "person_peretz_pesah",
+    "name": {
+      "ru": "Перец Песах Геренштейн",
+      "en": "Peretz Pesach Gerenstein"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Туба Ройтман",
+        "en": "Tuba Roytman"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_tuba_roytman"
     }
   }
 };
