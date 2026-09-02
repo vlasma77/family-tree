@@ -7541,8 +7541,7 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_peretz_pesah",
-        "person_tuba_roytman"
+        "person_peretz_pesah"
       ],
       "spouse": "person_roza_gerenstein"
     }
@@ -7584,18 +7583,16 @@ window.db = {
     "id": "person_tuba_roytman",
     "name": {
       "ru": "Туба Ройтман",
-      "en": "Tuba Roytman"
+      "en": "New Person"
     },
     "years": "",
-    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
         "ru": ""
       },
       "marriage": {
-        "ru": "Перец Песах Геренштейн",
-        "en": "Peretz Pesach Gerenstein"
+        "ru": "Перец Песах Геренштейн"
       },
       "occupation": {
         "ru": ""
@@ -7611,6 +7608,42 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_peretz_pesah"
+    }
+  },
+  "person_raya_feldman": {
+    "id": "person_raya_feldman",
+    "name": {
+      "ru": "Рая Натановна Фельдман (Геренштейн)",
+      "en": "Raya Nathanovna Feldman (Gerenstein)"
+    },
+    "years": "1949 - ?",
+    "mainPhoto": "photos/raya_feldman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      },
+      "marriage": {
+        "ru": "Игорь Фельдман",
+        "en": "Igor Feldman"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_nathan_gerenstein",
+        "person_roza_gerenstein"
+      ],
+      "spouse": null
     }
   }
 };
