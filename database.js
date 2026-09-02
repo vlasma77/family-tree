@@ -7126,7 +7126,7 @@ window.db = {
       "ru": "Борис Матвеевич Вексельман",
       "en": "Boris Matveevich Vekselman"
     },
-    "years": "1915 - 2000",
+    "years": "19.09.1925 - 29.01.2008",
     "isDeceased": true,
     "mainPhoto": "photos/boris_vekselman.jpg",
     "milestones": {
@@ -7449,8 +7449,7 @@ window.db = {
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Польша",
-        "en": "Poland"
+        "ru": "Польша"
       },
       "marriage": {
         "ru": "Бэлла Песаховна Шайн (Гитман)",
@@ -7460,8 +7459,7 @@ window.db = {
         "ru": ""
       },
       "burial": {
-        "ru": "Израиль",
-        "en": "Israel"
+        "ru": "Израиль"
       }
     },
     "bio": {
