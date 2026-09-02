@@ -5446,5 +5446,63 @@ window.documentsIndex = {
         "en": "Milya, Rosa at the wedding of Bella Rybitskaya's granddaughter (left)"
       }
     }
+  ],
+  "person_roza_gerenstein": [
+    {
+      "url": "Белла (слева) и Роза.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Белла (слева) и Роза",
+        "en": "Bella (left) and Rose"
+      }
+    },
+    {
+      "url": "Миля, Роза на свадьбе внучки Беллы Рыбицкой (слева).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Миля, Роза на свадьбе внучки Беллы Рыбицкой (слева)",
+        "en": "Milya, Rosa at the wedding of Bella Rybitskaya's granddaughter (left)"
+      }
+    },
+    {
+      "url": "могила Розы Геренштейн.jpg",
+      "type": "image",
+      "title": {
+        "ru": "могила Розы Геренштейн",
+        "en": "Rosa Gerenstein's grave"
+      }
+    },
+    {
+      "url": "Натан и Роза Геренштейн.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Натан и Роза Геренштейн",
+        "en": "Nathan and Rose Gerenstein"
+      }
+    },
+    {
+      "url": "Роза в молодости.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Роза в молодости",
+        "en": "Rose in her youth"
+      }
+    },
+    {
+      "url": "Роза Геренштейн.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Роза Геренштейн",
+        "en": "Rose Gerenstein"
+      }
+    },
+    {
+      "url": "Натан и Роза Геренштейн (слева), Софиевка, Умань, 1982.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Натан и Роза Геренштейн (слева), Софиевка, Умань, 1982",
+        "en": "Nathan and Rosa Gerenstein (left), Sofievka, Uman, 1982"
+      }
+    }
   ]
 };

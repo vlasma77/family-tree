@@ -7470,5 +7470,43 @@ window.db = {
       "parents": [],
       "spouse": "person_bella_shain"
     }
+  },
+  "person_roza_gerenstein": {
+    "id": "person_roza_gerenstein",
+    "name": {
+      "ru": "Роза Песаховна Геренштейн (Гитман)",
+      "en": "Roza Pesakhovna Gerenshtein (Gitman)"
+    },
+    "years": "09.1924 - 18.03.2000",
+    "isDeceased": true,
+    "mainPhoto": "photos/roza_1982.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Черкасская обл., Украина",
+        "en": "Uman, Cherkasy region, Ukraine"
+      },
+      "marriage": {
+        "ru": "Натан (Нюта) Геренштейн",
+        "en": "Nathan (Nyuta) Gerenstein"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Петах Тиква, Израиль",
+        "en": "Yarkon Cemetery, Petah Tiqwa, Israel"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_pesah_gitman",
+        "person_rukhlya_1891"
+      ],
+      "spouse": "person_nathan_gerenstein"
+    }
   }
 };
