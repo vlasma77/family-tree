@@ -7204,7 +7204,8 @@ window.db = {
     "mainPhoto": "photos/semen_vekselman.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": ""
+        "ru": "Бершад, Винница, Украина",
+        "en": "Bershad, Vinnytsya, Ukraine"
       },
       "marriage": {
         "ru": "Семен Матвеевич Вексельман",
