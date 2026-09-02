@@ -7541,7 +7541,8 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_peretz_pesah"
+        "person_peretz_pesah",
+        "person_tuba_roytman"
       ],
       "spouse": "person_roza_gerenstein"
     }
