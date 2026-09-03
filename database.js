@@ -7828,7 +7828,7 @@ window.db = {
         "person_igor_feldman",
         "person_raya_feldman"
       ],
-      "spouse": null
+      "spouse": "person_stanislav_shehtman_1974"
     },
     "archive": "person_polina_feldman_1977",
     "gender": "female"
@@ -7875,6 +7875,91 @@ window.db = {
       "spouse": null
     },
     "archive": "person_shlema_feldman",
+    "gender": "male"
+  },
+  "person_stanislav_shehtman_1974": {
+    "name": {
+      "ru": "Шехтман Станислав",
+      "en": "Stanislav Shekhtman"
+    },
+    "years": "1974 –",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Москва, Россия",
+        "en": "Moscow, Russia"
+      },
+      "marriage": {
+        "ru": "Полина Шехтман (Фельдман)",
+        "en": "Polina Shekhtman (Feldman)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_polina_feldman_1977"
+    },
+    "archive": "person_stanislav_shehtman_1974",
+    "gender": "male"
+  },
+  "person_liran_shehtman_2007": {
+    "name": {
+      "ru": "Лиран Станиславович Шехтман",
+      "en": "Liran Stanislavovich Shekhtman"
+    },
+    "years": "2007 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/liran_shehtman",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль",
+        "en": "Israel"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_stanislav_shehtman_1974",
+        "person_polina_feldman_1977"
+      ],
+      "spouse": null
+    },
+    "archive": "person_liran_shehtman_2007",
     "gender": "male"
   }
 };
