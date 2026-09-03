@@ -7788,5 +7788,93 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_polina_feldman_1977": {
+    "name": {
+      "ru": "Полина Игоревна Шехтман (Фельдман)",
+      "en": "Polina Igorevna Shekhtman (Feldman)"
+    },
+    "years": "1977 –",
+    "isDeceased": false,
+    "mainPhoto": "photos/polina_shehtman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Умань, Украина",
+        "en": "Uman, Ukraine"
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_igor_feldman",
+        "person_raya_feldman"
+      ],
+      "spouse": null
+    },
+    "archive": "person_polina_feldman_1977",
+    "gender": "female"
+  },
+  "person_shlema_feldman": {
+    "name": {
+      "ru": "Шлема Игоревич Фельдман",
+      "en": "Shlema Igorevich Feldman"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "photos/shlema_feldman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_igor_feldman",
+        "person_raya_feldman"
+      ],
+      "spouse": null
+    },
+    "archive": "person_shlema_feldman",
+    "gender": "male"
   }
 };
