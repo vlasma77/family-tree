@@ -165,9 +165,7 @@
       stroke-width: 3px !important;
     }
 
-    /* Более контрастное имя: жирный шрифт + тонкая тёмная обводка,
-       чтобы имя хорошо читалось на любом фоне карточки */
-    .field_0 {
+          .field_0 {
       font-weight: bold !important;
       paint-order: stroke fill;
       stroke: rgba(0, 0, 0, 0.55);
@@ -965,9 +963,9 @@ window.saveCurrentPersonData = function() {
           img: photoUrl
         };
 
-        // Помечаем умерших персон специальным тегом — по нему в CSS
-        // рисуется чёрная рамка вокруг карточки (см. стиль .node.deceased).
-        if (person.isDeceased === true) {
+               // Теги узла: "deceased" рисует чёрную рамку (см. CSS),
+        // "male"/"female" красят фон живых карточек по полу.
+              if (person.isDeceased === true) {
           node.tags = ["deceased"];
         }
         
