@@ -5564,5 +5564,53 @@ window.documentsIndex = {
         "en": "Raya Feldman (Gerenstein)"
       }
     }
+  ],
+  "person_polina_feldman_1977": [
+    {
+      "url": "Полина и Шлема.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Полина и Шлема",
+        "en": "Polina and Shlema"
+      }
+    },
+    {
+      "url": "Рая и ее дочь Полина (справа).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рая и ее дочь Полина (справа)",
+        "en": "Raya and her daughter Polina (right)"
+      }
+    }
+  ],
+  "person_shlema_feldman": [
+    {
+      "url": "Полина и Шлема.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Полина и Шлема",
+        "en": "Polina and Shlema"
+      }
+    }
+  ],
+  "person_stanislav_shehtman_1974": [
+    {
+      "url": "Рая с внуком Лираном.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рая с внуком Лираном",
+        "en": "Raya with her grandson Liran"
+      }
+    }
+  ],
+  "person_liran_shehtman_2007": [
+    {
+      "url": "Рая с внуком Лираном.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рая с внуком Лираном",
+        "en": "Raya with her grandson Liran"
+      }
+    }
   ]
 };
