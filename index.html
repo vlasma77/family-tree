@@ -1027,24 +1027,43 @@ window.saveCurrentPersonData = function() {
 
       try {
         treeInstance = new FamilyTree(container, {
-          mouseScroller: { zoom: true, scale: true },
-          editForm: false,
-          enableSearch: false,
-          lazyLoading: false,
-          nodeBinding: { field_0: "name", field_1: "title", img_0: "img" },
-          scaleInitial: FamilyTree.match.boundary  // <--- ЭТУ СТРОЧКУ ДОБАВИТЬ
-        });
+  mouseScroller: { zoom: true, scale: true },
+  editForm: false,
+  enableSearch: false,
+  lazyLoading: false,
+  nodeBinding: { field_0: "name", field_1: "title", img_0: "img" },
+ });
 
         treeInstance.on('click', function (sender, args) {
           showCustomSidePanel(args.node.id);
           return false;
         });
 
-            treeInstance.load(getTreeData());
+    treeInstance.onInit(function () {
+      console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM, разворачиваю всё...");
+      try {
+        treeInstance.maximize(null, false, false, function () {
+          console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, центрирую на Вульфе...");
+          try {
+            if (db["person_vulf_1898"]) {
+              treeInstance.center("person_vulf_1898");
+            } else {
+              treeInstance.fit();
+            }
+          } catch (e) {
+            console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка центрирования:", e);
+          }
+        });
       } catch (e) {
-        console.error("Ошибка инициализации графического графа:", e);
+        console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка maximize():", e);
       }
-    }
+    });
+
+    treeInstance.load(getTreeData());
+  } catch (e) {
+    console.error("Ошибка инициализации графического графа:", e);
+  }
+}
 
     // === СОБСТВЕННОЕ ПОЛЕ ПОИСКА В ШАПКЕ ===
     // Заменяет встроенное поле поиска библиотеки (которое было внутри
