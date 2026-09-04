@@ -1045,16 +1045,32 @@ window.saveCurrentPersonData = function() {
         // срабатывал надёжно). maximize() без параметров разворачивает
         // ВСЕ карточки дерева сразу — как на обычных генеалогических
         // сайтах.
-   treeInstance.onInit(function () {
+  treeInstance.onInit(function () {
   console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM, разворачиваю всё...");
   try {
     treeInstance.maximize(null, false, false, function () {
-      console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, подгоняю масштаб...");
-      try {
-        treeInstance.fit(); // подогнать под всё дерево
-      } catch (e) {
-        console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка fit():", e);
-      }
+      console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, пробую zoomToFit()...");
+      setTimeout(function() {
+        try {
+          // Пытаемся использовать zoomToFit, если доступен
+          if (typeof treeInstance.zoomToFit === 'function') {
+            treeInstance.zoomToFit();
+            console.log("[ИНИЦИАЛИЗАЦИЯ] zoomToFit() выполнен");
+          } else {
+            // Если нет — используем fit с увеличенной задержкой
+            console.log("[ИНИЦИАЛИЗАЦИЯ] zoomToFit() не найден, использую fit() с задержкой 500ms");
+            setTimeout(function() {
+              try {
+                treeInstance.fit();
+              } catch (e2) {
+                console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка fit():", e2);
+              }
+            }, 500);
+          }
+        } catch (e) {
+          console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка при масштабировании:", e);
+        }
+      }, 300);
     });
   } catch (e) {
     console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка maximize():", e);
