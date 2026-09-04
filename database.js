@@ -7925,7 +7925,7 @@ window.db = {
     },
     "years": "2007 –",
     "isDeceased": false,
-    "mainPhoto": "photos/liran_shehtman2007.jpg",
+    "mainPhoto": "photos/liran_shehtman",
     "milestones": {
       "birthPlace": {
         "ru": "Израиль",

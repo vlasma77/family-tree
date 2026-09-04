@@ -5602,5 +5602,18 @@ window.documentsIndex = {
         "en": "Raya with her grandson Liran"
       }
     }
+<<<<<<< HEAD
+=======
+  ],
+  "person_liran_shehtman_2007": [
+    {
+      "url": "Рая с внуком Лираном.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рая с внуком Лираном",
+        "en": "Raya with her grandson Liran"
+      }
+    }
+>>>>>>> 57e44fb3695a91bad45d0a5872befdca9dd32bf9
   ]
 };

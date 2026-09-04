@@ -470,6 +470,494 @@ PANORAMA: panorama_dvor
 Рая и ее дочь Полина (справа) = Raya and her daughter Polina (right)
 Рая с внуком Лираном = Raya with her grandson Liran
 Полина и Шлема = Polina and Shlema
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Пишите сюда ТОЛЬКО те переводы, которые хотите настроить вручную:
+# Вариант 1 (только английский, как раньше):
+#   имя_файла_без_расширения = English Title
+# Вариант 2 (задать сразу оба языка, например для одинаковых документов у разных персон):
+#   имя_файла_без_расширения = English Title | Русское название
+#
+# Строки, начинающиеся с # — это просто заголовки-разделители для твоего удобства,
+# скрипт их полностью игнорирует. Используй Ctrl+F в Блокноте, чтобы быстро
+# находить нужный раздел по имени персоны.
+
+# ===================================================================
+# ОБЩИЕ ЗАПИСИ (встречаются у нескольких персон сразу)
+# ===================================================================
+Свидетельство о рождении = Birth Certificate
+Хроника военных лет = Chronicle of the war years
+Архивная справка из переписи населения Прилук, 1923 = Archival information from the Priluki population census, 1923
+Встреча с родственниками = Meeting with relatives
+Супружеский танец = Marital dance
+Семейная фотография = Family photo
+
+# ===================================================================
+# Вульф и Блюма (общие документы семьи)
+# ===================================================================
+Архивная запись рождения Израиля Айзика = Archival recording of Israel Aizyk birth
+Выписка о рождении Айзика, 1917 = Aizyks birth certificate, 1917
+Блюма, 69 лет = Blyuma, 69 years
+Блюма Бейла в молодости = Blyuma Beila in her youth
+Могила Блюмы, Хабаровск = Blyuma's grave, Khabarovsk
+Блюма с дочерьми Мирой и Соней = Blyuma with her daughters Mira and Sonya
+видео фантазия = video fantasy
+Свидетельство о смерти Блюмы = Blyuma's death certificate
+Архивная запись о бракосочетании Вульфа и Блюмы = Archival record of the marriage Wulf and Blyuma
+Выписка о бракосочетании Вульфа и Блюмы = Extract from the marriage certificate of Wulf and Blyuma
+Период жизни в Биробиджане = Period of life in Birobidzhan
+Запись брака Вульфа с Блюмой = Record of Wulfs marriage to Blyuma
+Вульф и Блюма с детьми Хаимом (Фима) и Самуилом (Миша) = Wulf and Blyuma with their children Chaim (Fima) and Samuel (Misha)
+Все дети Вульфа и Блюмы = All children of Wulf and Blyuma
+Дом проживания в Биробиджане = Residential building in Birobidzhan
+Из жизни в Биробиджане = From life in Birobidzhan
+Архивная запись смерти Вульфа = Archival footage of Wulfs death
+Вульф в молодости = Wulf in his youth
+Вульф во дворе своего дома, Биробиджан = Wulf in the courtyard of his house, Birobidzhan
+Вульф с братьями = Wulf with his brothers
+Вульф с внучкой = Wulf with his granddaughter
+Вульф слева у окна. Обувная артель, Биробиджан = Wulf is on the left by the window. Shoe cooperative, Birobidzhan
+Вульф, 1960 = Wulf, 1960
+Дом в Прилуках где жила семья = The house in Priluki where the family lived
+Похороны Вульфа, Астрахань = Wulfs funeral, Astrakhan
+Прощание с Вульфом, Астрахань = Farewell to Wulf, Astrakhan
+С внуками = With grandchildren
+Свидетельство о смерти Вульфа = Wulfs death certificate
+
+# ===================================================================
+# Ефим, Надежда и семья
+# ===================================================================
+Дети Ефима и Надежды = Children of Efim and Nadezhda
+Ефим, 1944 = Efim, 1944
+Ефим, 1945, Венгрия = Efim, 1945, Hungary
+Семья Ефима, 1947 = Efim's family, 1947
+Семья Ефима, 1952 = Efim's family, 1952
+Семья Ефима, 1954 = Efim's family, 1954
+Семья Ефима, 1964 = Efim's family, 1964
+Семья Ефима, 1974 = Efim's family, 1974
+Ефим Смагаринский = Efim Smagarinsky
+Ефим с друзьями военных лет = Efim with his wartime friends
+Ефим на отдыхе = Efim is on vacation
+Ефим с матерью = Efim with his mother
+Встреча взрослых детей = Meeting of adult children
+Надежда, супруга Ефима = Nadezhda, Efim's wife
+Перевод архивной справки, Прилуки 1923 = Translation of an archival certificate, Priluki 1923
+Бабушка Надежда = Grandma Nadezhda
+Надежда Смагаринская = Nadezhda Smagarinskaya
+Надежда с дочкой = Nadezhda with her daughter
+Надежда с дочкой Наташей = Nadezhda with her daughter Natasha
+Ефим в молодые годы = Efim in his younger years
+Счастливая бабушка с внуками, 2018 = A happy grandmother with her grandchildren, 2018
+Татьяна Смагаринская = Tatyana Smagarinsky
+Семья в сборе, 2015 = Family Reunion, 2015
+Хороший аппетит у бабушки на руках, 2012 = A Good Appetite in Grandma's Arms, 2012
+С детьми и внуком, 2012 = With children and grandson, 2012
+Валерий и Татьяна с дочками Олей и Оксаной, 2015 = Valery and Tatyana with their daughters Olya and Oksana, 2015
+С семьей, 2010 год = With family, 2010
+Валерий и Татьяна с Оксаной и внуками, 2010 = Valery and Tatyana with Oksana and their grandchildren, 2010
+
+# ===================================================================
+# Михаил
+# ===================================================================
+Братья на набережной Ашкелона = Brothers on the Ashkelon waterfront
+Время войны = Time of war
+Встреча с Владимиром Энтиным = Meeting with Vladimir Entin
+Жизнь в Офакиме = Life in Ofakim
+Курсант военного училища 1946 = Military school cadet 1946
+Михаил в Астрахани = Mikhail in Astrakhan
+Михаил в Офакиме = Mikhail in Ofakim
+Михаил с внуками = Mikhail with grandchildren
+Михаил с детьми = Mikhail with children
+Михаил с младшим братом Анатолием = Mikhail with his younger brother Anatoly
+Михаил с подругой, Ленинград = Mikhail with a girlfriend, Leningrad
+
+# ===================================================================
+# Анатолий и семья
+# ===================================================================
+Анатолий Смагаринский = Anatoly Smagarinsky
+Анатолий и Михаил = Anatoly and Mikhail
+Анатолий в Араде = Anatoly in Arad
+Дети Вульфа, Анатолий самый младший = Wolfs children, Anatoly is the youngest
+Анатолий с мамой Блюмой = Anatoly with his mother Blyuma
+Анатолий с племянниками = Anatoly with nephews
+Анатолий с племянницей = Anatoly with niece
+Жена Анатолия, Гала = Anatolys wife Gala
+Света, дочь Анатолия = Sveta, Anatoly's daughter
+Молодые годы Анатолия, Хабаровск = Anatoly's early years, Khabarovsk
+Любимый дядя Толя с племяниками = Beloved Uncle Tolya with his nephews
+Галина, жена Анатолия = Galina, Anatoly's wife
+Анатолий и Михаил с двоюродным братом Владимиром Энтиным = Anatoly and Mikhail with their cousin Vladimir Entin
+Алекс, сын Анатолия = Alex, Anatoly's son
+Владимир, Анатолий и Михаил = Vladimir, Anatoly and Mikhail
+Анатолий с отцом Вульфом, Хабаровск = Anatoly with his father Wulf, Khabarovsk
+Анатолий с женой = Anatoly with his wife
+В гостях у  Вульфа с Блюмой, Астрахань = Visiting Wolf with Bluma, Astrakhan
+Толя и Галя Смагаринские с маленькой Светочкой = Tolya and Galya Smagarinsky with little Svetochka
+Анатолий и Мира Захарова с родственницей на смотровой площадке Мёртвого моря = Anatoly and Mira Zakharova with a relative at the Dead Sea observation deck.
+Анатолий и Мира Захарова с родственницей на Мёртвом море, Израиль = Anatoly and Mira Zakharova with a relative at the Dead Sea, Israel
+Анатолий и Роман Линецкий = Anatoly and Roman Linetzky
+Света и Николай на свадьбе дочери Ольги = Sveta and Nikolai at their daughter Olga's wedding
+
+# ===================================================================
+# Фира и её дети
+# ===================================================================
+Бабушка Фира = grandmother Fira
+Вальс с женой = Waltz with wife
+Встреча с родными в Умани = Meeting with relatives in Uman
+Годовщина свадьбы = Wedding anniversary
+Михаил и Фира с Блюмой = Mikhail and Fira with Blyuma
+Михаил и Фира = Mikhail and Fira
+Михаил с семьёй в Астрахани = Mikhail and his family in Astrakhan
+Могила Фиры в Офакиме = The grave of Fira in Ofakim
+В парке Умани с родственниками = In Uman Park with relatives
+моменты отдыха = moments of relaxation
+На встрече с родственниками в Умани = At a meeting with relatives in Uman
+На пикнике с женой = Picnic with wife
+Приятный семейный вечер = A pleasant family evening
+Прогулка по набережной = A walk along the embankment
+с тётей Златой = with Aunt Zlata
+Семейная фотография Ройтман = Roytman family photo
+Уманьские родственники = Uman relatives
+Фира в молодые годы = Fira in her younger years
+Фира с детьми в Астрахани = Fira with children in Astrakhan
+Фира с детьми = Fira with children
+Фира с Нэлечкой и Миля в парке Умани = Fira with Nelechka and Milya in Uman Park
+Фира с сестрой Милей = Fira with her sister Milya
+Фира со старшим сыном Вовой = Fira with her eldest son Vova
+Биробиджан, 1949 = Birobidzhan, 1949
+Биробиджан, Калинина 39 = Birobidzhan, Kalinina 39
+В поездке по северной Испании = On a trip to northern Spain
+весёлая семейка = a cheerful family
+Вечер прощания с друзьями перед отьездом в Израиль, 1994 = Farewell evening with friends before leaving for Israel, 1994
+Владимир со своими сестрами = Vladimir with his sisters
+Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман = Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman
+Вся жизнь впереди, Биробиджан, 06.09.1948 = My whole life ahead, Birobidzhan, September 6, 1948
+Свидетельство о рождении Владимира = Vladimir's birth certificate
+на студенческой практике в Мурманске = during a student internship in Murmansk
+на студенческой практике в Севастополе = during student internship in Sevastopol
+отпуск на озере Бодензее, Германия = vacation on Lake Bodenzee, Germany
+Поездка в Пензу = Trip to Penza
+прогулка по Ашкелонской набережной = a walk along the Ashkelon promenade
+променад на набережной Ашкелона = promenade on the Ashkelon embankment
+С двоюродной сестрой Наташей = With my cousin Natasha
+С сестрой Нэллей, Варшава = With sister Nella, Warsaw
+свидетельство о браке Владимира и Ольги = marriage certificate of Vladimir and Olga
+семейный пикник в Ашкелоне, 2025 = Family picnic in Ashkelon, 2025
+служба в армии 1971-1972 = military service 1971-1972
+Танец с женой на вечеринке в ресторане 05.2004 = Dancing with wife at a restaurant party 05.2004
+Торжественный момент, 14.06.1973, Астрахань = A solemn moment, June 14, 1973, Astrakhan
+школа на Криуше, Астрахань = school on Kriusha, Astrakhan
+Нелла, Юра и Вова Смагаринские, Астрахань = Nella, Yura and Vova Smagarinsky, Astrakhan
+Семейный ужин, Офаким, Израиль = Family dinner, Ofakim, Israel
+Юрий Смагаринский, Израиль = Yuri Smagarinsky, Israel
+Первый день в школе = First day at school
+Встреча с посланником Израиля, который проводил еврейские праздники в Астрахани = Meeting with the Israeli envoy who celebrated Jewish holidays in Astrakhan
+На папином мотороллере в Астрахани = On dad's scooter in Astrakhan
+Нэлла в Астрахани = Nella in Astrakhan
+Нэлла в Киеве, 1965 = Nella in Kyiv, 1965
+Нэлла в Киеве, 2020 = Nella in Kyiv, 2020
+Нэлла с сыном Артуром и братом Вовой = Nella with her son Artur and brother Vova
+Неожиданный момент = An unexpected moment
+С мамой в парке Умани = With mother in Uman Park
+Хорошее настроение = Good mood
+Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман = Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman
+Ольга Смагаринская, Астрахань, 1978 = Olga Smagarinsky, Astrakhan, 1978
+Зима 1993г. в Астрахани = Winter 1993 in Astrakhan
+Ольга с дочками на Кавказе, 1990 = Olga with her daughters in the Caucasus, 1990
+С первой учительницей по классу скрипки, Астрахань, 1961-62 = With her first violin teacher, Astrakhan, 1961-62
+Ольга с племянником Владимиром, ориентировочно 1979, Ворошиловград = Olga with her nephew Vladimir, circa 1979, Voroshilovgrad
+Трио Мангина, программное выступление в российском посольстве в Тель Авиве, 2011 = The Mangina Trio, keynote performance at the Russian Embassy in Tel Aviv, 2011
+Петергоф, 1973 = Peterhof, 1973
+В свадебном путешествии на теплоходе Астрахань - Ленинград - Астрахань, 1973 = On a honeymoon on the ship Astrakhan - Leningrad - Astrakhan, 1973
+Кисловодск 1990 = Kislovodsk 1990
+Выступление на юбилее преподователя класса скрипки Шошиной И.Л., 1992, Астрахань = Performance at the anniversary of violin teacher I.L. Shoshina, 1992, Astrakhan
+С братом Владимиром, Астрахань, 1993 = With brother Vladimir, Astrakhan, 1993
+В гостях у друзей Брусованских на крыше, Петах Тиква, 06.1996г. = Visiting friends Brusovanskys on the roof, Petah Tikva, 06.1996
+В поездке в Пензу, 1982 = On a trip to Penza, 1982
+Перед отъездом в Израиль, 1994 = Before leaving for Israel, 1994
+На уроке в музыкальной школе, Астрахань = During a lesson at a music school, Astrakhan
+Ольга на субботнике музыкального училища в Астраханском кремле, 1970 = Olga at a music school cleanup in the Astrakhan Kremlin, 1970
+2003г = 2003
+Офаким, 1994 = Ofakim, 1994
+На природе в Астрахани, 1988 = Outdoors in Astrakhan, 1988
+Ольга с учеником Димой, который впоследствии стал священником = Olga with her student Dima, who later became a priest
+пикник в Офакиме в день 50-летия = Picnic in Ofakim on the 50th anniversary
+Ольга с Бэллой Черновой на раскопках в Ашкелонском парке, 1997 = Olga with Bella Chernova at excavations in Ashkelon Park, 1997
+Ольга, Ашкелон = Olga, Ashkelon
+В зимнем дворе дома в Астрахани = In the winter courtyard of a house in Astrakhan
+Ольга с выпускниками, астрахань 1992 = Ольга со своими выпускниками, двойняшками  Коваленко Ильей и Анастасией  (14 лет), участниками концерта в Астраханской консерватории 21.06.1992г | Olga with her graduate students, twins Ilya and Anastasia Kovalenko (14 years old), participants of a concert at the Astrakhan Conservatory, 21.06.1992
+с тётей Милей Микельман = with Aunt Mila Mickelman
+Владимир, ориентировочно 1971 = Vladimir, approximately 1971
+В парке Офакима, ориентировочно 1995 = In Ofakim Park, circa 1995
+Панорама дома где мы жили в Биробиджане, Калинина 39 = Panorama of the house where we lived in Birobidzhan, Kalinina 39 
+PANORAMA: panorama_dvor
+
+# ===================================================================
+# Катя
+# ===================================================================
+Катя в парке, Астрахань = Katya in the park, Astrakhan
+Катя с сёстрами, сыном и внучкой = Katya with her sisters, son, and granddaughter
+Катя, 1965 = Katya, 1965
+Сын Евгений = son Evgeny
+Катя Рубинович с сыном Евгением и Алла Смагаринская = Katya Rubinovich with her son Evgeny and Alla Smagarinskaya
+Евгений с женойТаней и мамой, слева Соня Каплун = Evgeny with his wife Tanya and mother, with Sonya Kaplun on the left.
+Саша и Катя Рубинович = Sasha and Katya Rubinovich
+слева направо Галя Каплун, Анатолий Смагаринский, Евгений и Катя Рубинович и Женечка Каплун = From left to right: Galya Kaplun, Anatoly Smagarinsky, Evgeny and Katya Rubinovich, and Zhenechka Kaplun
+
+# ===================================================================
+# Мира Линецкая (и её семья)
+# ===================================================================
+На демонстрации, Биробиджан = At the demonstration, Birobidzhan
+Семья Линецких = The Linetsky family
+Могила Миры Линецкой = The grave of Mira Linetskaya
+Бэлла Ершова(Линецкая) = Bella Ershova (Linetskaya)
+Люда Кутикова (Линецкая) = Lyuda Kutikova (Linetskaya)
+Роман Линецкий = Roman Linetsky
+Мира в домашней обстановке = Mura in a home environment
+Мира Линецкая = Mira LinetskayaOlga with her nephew Vladimir, circa 1979, Voroshilovgrad
+Мира на прогулке с дочкой = Mira on a walk with her daughter
+Мира с дочерьми = Mira with her daughters
+Супруги Роман и Мира Линецкие = Spouses Roman and Mira Linetsky
+Страстный поцелуй = Passionate kiss
+Сёстры Мира, Катя и Соня = Sisters Mira, Katya and Sonya
+Много совместных лет прожито = Many years have been lived together
+Валерий Линецкий = Valery Linetsky
+трудовая книжка Линецкой = Linetskaya's work record book
+трудовая книжка Миры = Mira's work record book
+Валера Линецкий и Лёня  Каплун = valery linetzky and leonid kaplun
+Веселый танец с супругой = A fun dance with wife
+Могила Романа и Миры = The grave of Roman and Mira
+Подлодка, на которой служил Роман Щ-132 = The submarine on which Roman served, Shch-132
+Роман с молодоженами = Roman with newlyweds
+Аккордеонистка = Accordionist
+в новом платьице = in a new dress
+Люда в юности, Биробиджан = Lyuda in her youth, Birobidzhan
+Люда с братом Валерием = Lyuda with her brother Valery
+Люда с младшим братом = Lyuda with her younger brother
+музыкальные моменты = musical moments
+первый раз в первый класс = first time in first grade
+семейный дуэт = family duet
+счастливое детство = happy childhood
+хорошее настроение = good mood
+школьница = schoolgirl
+Бэлла в Биробиджане = Bella in Birobidzhan
+Бэлочка Линецкая и Игорь Каплун = Bella Linetsky and Igor Kaplun
+Бэлочка Линецкая = Belochka Linetsky
+октябренок Бэлла = little octobrist girl Bella
+В первый класс = to first school class
+Валера с братом Лёней = Valera with his brother Lenya
+Валерий в детские годы = Valery in his childhood
+Молодая семья с дочкой = Young family with a daughter
+Прекрасные годы = Wonderful years
+Профессиональный музыкант Валерий Линецкий = Professional musician Valery Linetzky
+Сын моряка = The Sailor's Son
+Улыбка будущего музыканта = The smile of a future musician
+
+# ===================================================================
+# Мира Захарова (и её семья)
+# ===================================================================
+1958 год Молдавия = 1958 Moldova
+В пустыне Негев. Мира,Толя Смагаринский,Аня Захарова = In the Negev Desert. Mira, Tolya Smagarinsky, Anya Zakharova
+Встреча в Москве = Meeting in Moscow
+День рождения, 2014 год = Birthday, 2014
+День свадьбы = Wedding day
+Мира Захарова = Mira Zakharova
+Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г = Mira Levchenko and Valery Zakharov, Beltsy, Moldova, 1960
+Мира после окончания школы 1959 = Mira after graduating from school in 1959
+Мира с братом Валерием = Mira with brother Valery
+Мира с мужем и Владиком,Лиепая  09.05.1974 = Mira with her husband and Vladik, Liepaja 05/09/1974
+Мира с сыновьями. Лиепая 1975 г = Mira with her sons. Liepaja, 1975
+Мира с сыном Игорем,Бельцы Молдова 1978г = Mira with her son Igor, Beltsy, Moldova, 1978
+Мира,1980 Заполярье = Mira, 1980 Arctic
+Мира,Иркутск 1961 год = Mira, Irkutsk, 1961
+На Мертвом море.  Мира,невестка Аня,Толя Смагаринский = At the Dead Sea. Mira, daughter-in-law Anya, Tolya Smagarinsky
+На одной из древних улочек Яффо = On one of the ancient streets of Jaffa
+Родители = Parents
+Семья Захаровых = The Zakharov family
+Серебянная свадьба Лиепая 1988 = Silver Wedding Anniversary, Liepaja, 1988
+
+# ======================================================================
+# Алла Колесниченко (Смагаринская)
+# ======================================================================
+Алла Колесниченко (Смагаринская), Астрахань = Alla Kolesnichenko (Smagarinsky), Astrakhan
+Алла Колесниченко (Смагаринская) = Alla Kolesnichenko (Smagarinsky)
+Алла на пикнике = Alla at a picnic
+Алла с двоюродными братьями Евгением и Владимиром = Alla with her cousins ​​Evgeny and Vladimir
+Алла с сыном Олегом и сестрой Наташей = Alla with her son Oleg and sister Natasha
+Алла с сестрой Наташей = Alla with her sister Natasha
+свадьба сына Аллы = Alla's son's wedding
+
+# ========================================================================
+# Наташа Гельван (Смагаринская) и Валера Смагаринский
+# ========================================================================
+Наталья Гельван (Смагаринская) = Natalia Gelvan (Smagarinskaya)
+Наталья с мамой, Астрахань = Natalia with her mother, Astrakhan
+с дочкой Ирочкой и мужем Геннадием, Астрахань = with her daughter Irochka and husband Gennady, Astrakhan
+Валера с сестрой Наташей = Valera with his sister Natasha
+Геннадий и Наташа Гельван с дочкой Ириной = Gennady and Natasha Gelvan with their daughter Irina
+Валерий и Татьяна Смагаринские, Марбелья, Испания = Valery and Tatiana Smagarinsky, Marbella, Spain
+
+# ========================================================================
+# Соня и её семья
+# ========================================================================
+Могила Сони = Sonya's grave
+Катя, Соня и Мира = Katya, Sonya and Mira
+Встреча с сёстрами = Meeting with the sisters
+Фотосессия с родственниками = Photo session with relatives
+Соня с сыновьями Леонидом и Игорем = Sonya with her sons Leonid and Igor
+Соня в центре = Sonya in the center
+Соня и Михаил Каплун = Sonya and Mikhail Kaplun
+Соня, Мира и Блюма = Sonya, Mira and Bluma
+Соня с сестрой Мирой = Sonya with her sister Mira
+Соня с родственниками = Sonya with her relatives
+Соня с родителями = Sonya with her parents
+Встреча Линецких и Каплунов = Meeting of the Linetskys and the Kapluns
+Игорь в зрелые годы = Igor in his mature years
+Игорь Каплун = Igor Kaplun
+Леня и Игорь Каплун, Биробиджан = Lenya and Igor Kaplun, Birobidzhan
+Мужской коллектив = Male collective
+фото с паспорта = passport photo
+Соня Каплун = Sonya Kaplun
+свидетельство о браке Сони = Sonya's marriage certificate
+свидетельство о рождении Сони = Sonya's birth certificate
+Анатолий, Михаил, Соня и Фира = Anatoly, Mikhail, Sonya and Fira
+справа налево Мира, Миша и Соня Каплун, слева Ефим = from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim
+Семейный совет, Астрахань = Family Council, Astrakhan
+Миша Смагаринский с Соней и Галей Каплун = Misha Smagarinsky with Sonya and Galya Kaplun
+Посиделки на скамейке = Bench time
+Михаил и Соня Каплун = Mikhail and Sonya Kaplun
+Михаил Каплун = Mikhail Kaplun
+Михаил Соломонович Каплун = Mikhail Solomonovich Kaplun
+Мужской коллектив = Male collective
+Соломон Каплун, отец Михаила = Solomon Kaplun, Mikhail's father
+справа налево Мира, Миша и Соня Каплун, слева Ефим = from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim
+
+# ======================================================================
+# Энтины
+# ======================================================================
+Братья на набережной Ашкелона = Brothers on the Ashkelon embankment
+Владимир Борисович Энтин = Vladimir Borisovich Entin
+Встреча с Владимиром Энтиным = Meeting with Vladimir Entin
+Дом где проживал Владимир до 1933 г. = The house where Vladimir lived until 1933.
+Лист свидетельских показаний Владимира о брате Абраме = Vladimir's Testimony about his brother Abram
+Лист свидетельских показаний Владимира об отце Борисе = Vladimir's Testimony about Father Boris
+Место расставания навсегда Владимира с родителями 19.05.1942 г. На следующий день их расстреляли. Фото 05.2002 = The place where Vladimir parted forever with his parents on May 19, 1942. They were executed the next day. Photo taken May 2002.
+Место расстрела евреев Прилук = The site of the execution of Jews in Priluki
+Памятник на могиле  расстрелянных евреев г.Прилуки = A monument at the grave of executed Jews in Priluki
+родители Владимира в расстрельных списках = Vladimir's parents are on the execution list
+Энтин Владимир, свидетельство о рождении = Vladimir Entin, birth certificate
+Брат Вова, 08.09.1957, г.Черкассы = Brother Vova, born September 8, 1957, Cherkassy
+дядя Миша и тётя Поля Энтины 09.05.1949 = Uncle Misha and Aunt Polya Entiny, May 9, 1949
+дядя Соломон с сыновьями Муля, Рува и Фима = Uncle Solomon with his sons Mulya, Ruva and Fima
+Илья Энтин с женой = Ilya Entin with his wife
+сестра Полина Энтина, 09.09.1957 = sister Polina Entina, 09.09.1957
+Сестра Соня, 06.11.1963 = Sister Sonya, November 6, 1963
+Тётя Розалия, 27.06.1970 = Aunt Rosalia, June 27, 1970
+Мордух Энтин = Mordukh Entin
+смерть Ривка и Мордух Энтин = the death of Rivka and Morduch Entin
+Энтины историческ. записи 2 = Entiny historical records 2
+
+# ======================================================================
+# Микельманы
+# ======================================================================
+Миля (Миндля) Микельман, Офаким = Milya (Mindlya) Mikelman, Ofakim
+св-во о рождении Миндля Ройтман = Mindlya Roytman's birth certificate
+13.06.1951 Калининград, Миля с Галочкой = June 13, 1951, Kaliningrad, Milya with  Galochka
+Семья Микельман, Биробиджан, 1966 год = The Mickelman family, Birobidzhan, 1966
+в пионерлагере Биробиджан, 07.1964 = in the Birobidzhan pioneer camp, July 1964
+Миля, Калининград 19.06.1951 = Milya, Kaliningrad, June 19, 1951
+Могила Мили, Офаким = Mili's Tomb, Ofakim
+Миля с родственниками = Milya with relatives
+Биробиджан, 1961 = Birobidzhan, 1961
+Биробиджан 10.1990г = Birobidzhan 10.1990
+Биробиджан 12-1961 = Birobidzhan 12-1961
+Миля и Михаил с детьми и внуками, Биробиджан, 1989 = Milya and Mikhail with their children and grandchildren, Birobidzhan, 1989
+Офаким, 13.02.1998  = Ofakim, February 13, 1998
+Миля и Михаил Микельман, Рая Геренштейн, дочь Бэлла и внучка Наташа, Офаким = Milya and Mikhail Mikelman, Raya Gerenshtein, daughter Bella and granddaughter Natasha, Ofakim
+Михаил Аронович Микельман, Биробиджан 12-1961 = Mikhail Aronovich Mikelman, Birobidzhan 12-1961
+Михаил в санатории «Садгород»  в г. Владивосток (Приморский край), на берегу Амурского залива = Mikhail at the Sadgorod sanatorium in Vladivostok (Primorsky Krai), on the shore of Amur Bay
+Михаил Микельман, Биробиджан = Mikhail Mikelman, Birobidzhan
+Михаил с братом Владимиром = Mikhail with his brother Vladimir
+Могила Михаила, Офаким = Michael's Tomb, Ofakim
+Хиня Микельман, мать Михаила, Биробиджан 12-1961 = Khinya Mikelman, Mikhail's mother, Birobidzhan 12-1961
+
+# =======================================================================
+# Ройтман, Хмельницкие
+# =======================================================================
+Архивная запись синагоги Умани о браке Волька-Нехама ф. Р-5899, оп. 1, спр. 614, арк. 125 зв. - 126 = Archival record of the Uman synagogue on the marriage of Volka-Nekhama f. R-5899, op. 1, sp. 614, arch. 125 sv. - 126
+маме, папе, Злоте, дяде Моисею и ребятам от сестры Нехамы 08.1941 (адрес на фото Пролетарская 11) = to mom, dad, Zlota, Uncle Moses and the kids from sister Nekhama 08.1941 (address in the photo: Proletarskaya 11)
+Могила Нехамы и сына Бориса, Биробиджан = The grave of Nekhama and his son Boris, Birobidzhan
+Нехама с внуком Владимиром, сыном Бориса = Nekhama with her grandson Vladimir, Boris's son
+Нехама с сыном Борисом и внуком Владимиром = Nekhama with her son Boris and grandson Vladimir
+Волько Шлемович Ройтман = Volko Shlemovich Roytman
+Запись 1910 года о заселении колесного мастера Волько Ройтмана с женой Фейгой в с.Бабановка = A 1910 entry about the settlement of wheelwright Volko Roytman and his wife Feiga in the village of Babanovka
+Первый брак Волько и Фейги = Volko and Feiga's first marriage
+Борис Ройтман с женой = Boris Roytman with his wife
+Борис Ройтман с сыном Владимиром = Boris Roytman with his son Vladimir
+Борис с женой и сыном, с тетей Златой и ее сыновьями = Boris with his wife and son, with Aunt Zlata and her sons
+Борис с сыном Вовочкой 06.1949 = Boris with his son Vovochka, June 1949
+жена Бориса с сыном Владимиром = Boris's wife with their son Vladimir
+Молодые годы Бориса, Умань = Boris's early years, Uman
+Хроника военных лет Ройтман Борис Владимирович = Chronicle of the War Years by Boris Vladimirovich Roytman
+Хроника военных лет Ройтман Матвей Владимирович = Chronicle of the War Years by Matvey Vladimirovich Roytman
+Документы о захоронении Матвея (Мотл) = Documents on the burial of Matvey (Motl)
+Курская область, Фатежский район, Молотычевский сельсовет = Kursk region, Fatezhsky district, Molotychevsky village council
+Мемориальный комплекс «Поклонная высота 269» = Memorial Complex "Poklonnaya Height 269"
+Мемориальный комплекс Поклонная высота 269 = Memorial complex Poklonnaya Height 269
+Мотл Волькович  Ройтман = Motl Volkovich Roytman
+Мотл Ройтман-лист свидетельских показаний Яд вашем = Motl Roytman - a list of witness statements Yad vashem
+Сегодня на месте подвига = Today at the site of the feat
+Волько Шлемович Ройтман = Volko Shlemovich Roytman
+слева направо - Нехама, Рахель, Злата Хмельницкие = from left to right - Nehama, Rachel, Zlata Khmelnitsky
+Семья Мордко Хмельницкий, 1897 = The Mordko Khmelnitsky family, 1897
+Архивная запись семьи Мордко = Archival recording of the Mordko family
+Хмельницкая Бейла Гершова = Khmelnitsky Beila Gershova
+Хмельницкая Ривка Мордкова = Khmelnitsky Rivka Mordkova
+
+# =============================================================================
+# Вексельман, Гитман, Фельдман
+# =============================================================================
+
+Злота и сын Абрам (Аркадий) = Zlota and her son Abram (Arkady)
+Могила Семена и Евы Вексельман = The grave of Semyon and Eva Vekselman
+Мама и тётя Фаины Вексельман (Рябенко) 1952 = Faina Vekselman's (Ryabenko's) mother and aunt, 1952
+Злота Вексельман с сыновьями Борис и Абрам (Аркадий) = Zlota Vekselman with her sons Boris and Abram (Arkady)
+Абрам (Аркадий) Вексельман = Abram (Arkady) Vekselman
+Злота и сын Абрам (Аркадий) = Zlota and her son Abram (Arkady)
+Борис Вексельман = Boris Vekselman
+Борис Матвеевич Вексельман = Boris Matveevich Vekselman
+Мордко Янкелевич Хмельницкий домовладелец = Mordko Yankelevich Khmelnitsky, homeowner
+Песах Гитман = Pesach Gitman
+Эстер Гитман = Esther Gitman
+Натан и Роза Геренштейн = Nathan and Rose Gerenstein
+Роза в молодости = Rose in her youth
+Натан (Нюта) Геренштейн = Nathan (Nyuta) Gerenstein
+Роза Геренштейн = Rose Gerenstein
+Натан Геренштейн = Nathan Gerenstein
+Натан и Роза Геренштейн (слева), Софиевка, Умань, 1982 = Nathan and Rosa Gerenstein (left), Sofievka, Uman, 1982
+могила Розы Геренштейн = Rosa Gerenstein's grave
+Миля, Роза на свадьбе внучки Беллы Рыбицкой (слева) = Milya, Rosa at the wedding of Bella Rybitskaya's granddaughter (left)
+Белла (слева) и Роза = Bella (left) and Rose
+Израиль = Israel
+Польша = Poland
+Рая Фельдман (Геренштейн) = Raya Feldman (Gerenstein)
+Рая и ее дочь Полина (справа) = Raya and her daughter Polina (right)
+Рая с внуком Лираном = Raya with her grandson Liran
+Полина и Шлема = Polina and Shlema
 
 
 
@@ -485,6 +973,549 @@ PANORAMA: panorama_dvor
 
 
 
+
+
+
+
+# Пишите сюда ТОЛЬКО те переводы, которые хотите настроить вручную:
+# Вариант 1 (только английский, как раньше):
+#   имя_файла_без_расширения = English Title
+# Вариант 2 (задать сразу оба языка, например для одинаковых документов у разных персон):
+#   имя_файла_без_расширения = English Title | Русское название
+#
+# Строки, начинающиеся с # — это просто заголовки-разделители для твоего удобства,
+# скрипт их полностью игнорирует. Используй Ctrl+F в Блокноте, чтобы быстро
+# находить нужный раздел по имени персоны.
+
+# ===================================================================
+# ОБЩИЕ ЗАПИСИ (встречаются у нескольких персон сразу)
+# ===================================================================
+Свидетельство о рождении = Birth Certificate
+Хроника военных лет = Chronicle of the war years
+Архивная справка из переписи населения Прилук, 1923 = Archival information from the Priluki population census, 1923
+Встреча с родственниками = Meeting with relatives
+Супружеский танец = Marital dance
+Семейная фотография = Family photo
+
+# ===================================================================
+# Вульф и Блюма (общие документы семьи)
+# ===================================================================
+Архивная запись рождения Израиля Айзика = Archival recording of Israel Aizyk birth
+Выписка о рождении Айзика, 1917 = Aizyks birth certificate, 1917
+Блюма, 69 лет = Blyuma, 69 years
+Блюма Бейла в молодости = Blyuma Beila in her youth
+Могила Блюмы, Хабаровск = Blyuma's grave, Khabarovsk
+Блюма с дочерьми Мирой и Соней = Blyuma with her daughters Mira and Sonya
+видео фантазия = video fantasy
+Свидетельство о смерти Блюмы = Blyuma's death certificate
+Архивная запись о бракосочетании Вульфа и Блюмы = Archival record of the marriage Wulf and Blyuma
+Выписка о бракосочетании Вульфа и Блюмы = Extract from the marriage certificate of Wulf and Blyuma
+Период жизни в Биробиджане = Period of life in Birobidzhan
+Запись брака Вульфа с Блюмой = Record of Wulfs marriage to Blyuma
+Вульф и Блюма с детьми Хаимом (Фима) и Самуилом (Миша) = Wulf and Blyuma with their children Chaim (Fima) and Samuel (Misha)
+Все дети Вульфа и Блюмы = All children of Wulf and Blyuma
+Дом проживания в Биробиджане = Residential building in Birobidzhan
+Из жизни в Биробиджане = From life in Birobidzhan
+Архивная запись смерти Вульфа = Archival footage of Wulfs death
+Вульф в молодости = Wulf in his youth
+Вульф во дворе своего дома, Биробиджан = Wulf in the courtyard of his house, Birobidzhan
+Вульф с братьями = Wulf with his brothers
+Вульф с внучкой = Wulf with his granddaughter
+Вульф слева у окна. Обувная артель, Биробиджан = Wulf is on the left by the window. Shoe cooperative, Birobidzhan
+Вульф, 1960 = Wulf, 1960
+Дом в Прилуках где жила семья = The house in Priluki where the family lived
+Похороны Вульфа, Астрахань = Wulfs funeral, Astrakhan
+Прощание с Вульфом, Астрахань = Farewell to Wulf, Astrakhan
+С внуками = With grandchildren
+Свидетельство о смерти Вульфа = Wulfs death certificate
+
+# ===================================================================
+# Ефим, Надежда и семья
+# ===================================================================
+Дети Ефима и Надежды = Children of Efim and Nadezhda
+Ефим, 1944 = Efim, 1944
+Ефим, 1945, Венгрия = Efim, 1945, Hungary
+Семья Ефима, 1947 = Efim's family, 1947
+Семья Ефима, 1952 = Efim's family, 1952
+Семья Ефима, 1954 = Efim's family, 1954
+Семья Ефима, 1964 = Efim's family, 1964
+Семья Ефима, 1974 = Efim's family, 1974
+Ефим Смагаринский = Efim Smagarinsky
+Ефим с друзьями военных лет = Efim with his wartime friends
+Ефим на отдыхе = Efim is on vacation
+Ефим с матерью = Efim with his mother
+Встреча взрослых детей = Meeting of adult children
+Надежда, супруга Ефима = Nadezhda, Efim's wife
+Перевод архивной справки, Прилуки 1923 = Translation of an archival certificate, Priluki 1923
+Бабушка Надежда = Grandma Nadezhda
+Надежда Смагаринская = Nadezhda Smagarinskaya
+Надежда с дочкой = Nadezhda with her daughter
+Надежда с дочкой Наташей = Nadezhda with her daughter Natasha
+Ефим в молодые годы = Efim in his younger years
+Счастливая бабушка с внуками, 2018 = A happy grandmother with her grandchildren, 2018
+Татьяна Смагаринская = Tatyana Smagarinsky
+Семья в сборе, 2015 = Family Reunion, 2015
+Хороший аппетит у бабушки на руках, 2012 = A Good Appetite in Grandma's Arms, 2012
+С детьми и внуком, 2012 = With children and grandson, 2012
+Валерий и Татьяна с дочками Олей и Оксаной, 2015 = Valery and Tatyana with their daughters Olya and Oksana, 2015
+С семьей, 2010 год = With family, 2010
+Валерий и Татьяна с Оксаной и внуками, 2010 = Valery and Tatyana with Oksana and their grandchildren, 2010
+
+# ===================================================================
+# Михаил
+# ===================================================================
+Братья на набережной Ашкелона = Brothers on the Ashkelon waterfront
+Время войны = Time of war
+Встреча с Владимиром Энтиным = Meeting with Vladimir Entin
+Жизнь в Офакиме = Life in Ofakim
+Курсант военного училища 1946 = Military school cadet 1946
+Михаил в Астрахани = Mikhail in Astrakhan
+Михаил в Офакиме = Mikhail in Ofakim
+Михаил с внуками = Mikhail with grandchildren
+Михаил с детьми = Mikhail with children
+Михаил с младшим братом Анатолием = Mikhail with his younger brother Anatoly
+Михаил с подругой, Ленинград = Mikhail with a girlfriend, Leningrad
+
+# ===================================================================
+# Анатолий и семья
+# ===================================================================
+Анатолий Смагаринский = Anatoly Smagarinsky
+Анатолий и Михаил = Anatoly and Mikhail
+Анатолий в Араде = Anatoly in Arad
+Дети Вульфа, Анатолий самый младший = Wolfs children, Anatoly is the youngest
+Анатолий с мамой Блюмой = Anatoly with his mother Blyuma
+Анатолий с племянниками = Anatoly with nephews
+Анатолий с племянницей = Anatoly with niece
+Жена Анатолия, Гала = Anatolys wife Gala
+Света, дочь Анатолия = Sveta, Anatoly's daughter
+Молодые годы Анатолия, Хабаровск = Anatoly's early years, Khabarovsk
+Любимый дядя Толя с племяниками = Beloved Uncle Tolya with his nephews
+Галина, жена Анатолия = Galina, Anatoly's wife
+Анатолий и Михаил с двоюродным братом Владимиром Энтиным = Anatoly and Mikhail with their cousin Vladimir Entin
+Алекс, сын Анатолия = Alex, Anatoly's son
+Владимир, Анатолий и Михаил = Vladimir, Anatoly and Mikhail
+Анатолий с отцом Вульфом, Хабаровск = Anatoly with his father Wulf, Khabarovsk
+Анатолий с женой = Anatoly with his wife
+В гостях у  Вульфа с Блюмой, Астрахань = Visiting Wolf with Bluma, Astrakhan
+Толя и Галя Смагаринские с маленькой Светочкой = Tolya and Galya Smagarinsky with little Svetochka
+Анатолий и Мира Захарова с родственницей на смотровой площадке Мёртвого моря = Anatoly and Mira Zakharova with a relative at the Dead Sea observation deck.
+Анатолий и Мира Захарова с родственницей на Мёртвом море, Израиль = Anatoly and Mira Zakharova with a relative at the Dead Sea, Israel
+Анатолий и Роман Линецкий = Anatoly and Roman Linetzky
+Света и Николай на свадьбе дочери Ольги = Sveta and Nikolai at their daughter Olga's wedding
+
+# ===================================================================
+# Фира и её дети
+# ===================================================================
+Бабушка Фира = grandmother Fira
+Вальс с женой = Waltz with wife
+Встреча с родными в Умани = Meeting with relatives in Uman
+Годовщина свадьбы = Wedding anniversary
+Михаил и Фира с Блюмой = Mikhail and Fira with Blyuma
+Михаил и Фира = Mikhail and Fira
+Михаил с семьёй в Астрахани = Mikhail and his family in Astrakhan
+Могила Фиры в Офакиме = The grave of Fira in Ofakim
+В парке Умани с родственниками = In Uman Park with relatives
+моменты отдыха = moments of relaxation
+На встрече с родственниками в Умани = At a meeting with relatives in Uman
+На пикнике с женой = Picnic with wife
+Приятный семейный вечер = A pleasant family evening
+Прогулка по набережной = A walk along the embankment
+с тётей Златой = with Aunt Zlata
+Семейная фотография Ройтман = Roytman family photo
+Уманьские родственники = Uman relatives
+Фира в молодые годы = Fira in her younger years
+Фира с детьми в Астрахани = Fira with children in Astrakhan
+Фира с детьми = Fira with children
+Фира с Нэлечкой и Миля в парке Умани = Fira with Nelechka and Milya in Uman Park
+Фира с сестрой Милей = Fira with her sister Milya
+Фира со старшим сыном Вовой = Fira with her eldest son Vova
+Биробиджан, 1949 = Birobidzhan, 1949
+Биробиджан, Калинина 39 = Birobidzhan, Kalinina 39
+В поездке по северной Испании = On a trip to northern Spain
+весёлая семейка = a cheerful family
+Вечер прощания с друзьями перед отьездом в Израиль, 1994 = Farewell evening with friends before leaving for Israel, 1994
+Владимир со своими сестрами = Vladimir with his sisters
+Вова, Юра и Нелла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман = Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman
+Вся жизнь впереди, Биробиджан, 06.09.1948 = My whole life ahead, Birobidzhan, September 6, 1948
+Свидетельство о рождении Владимира = Vladimir's birth certificate
+на студенческой практике в Мурманске = during a student internship in Murmansk
+на студенческой практике в Севастополе = during student internship in Sevastopol
+отпуск на озере Бодензее, Германия = vacation on Lake Bodenzee, Germany
+Поездка в Пензу = Trip to Penza
+прогулка по Ашкелонской набережной = a walk along the Ashkelon promenade
+променад на набережной Ашкелона = promenade on the Ashkelon embankment
+С двоюродной сестрой Наташей = With my cousin Natasha
+С сестрой Нэллей, Варшава = With sister Nella, Warsaw
+свидетельство о браке Владимира и Ольги = marriage certificate of Vladimir and Olga
+семейный пикник в Ашкелоне, 2025 = Family picnic in Ashkelon, 2025
+служба в армии 1971-1972 = military service 1971-1972
+Танец с женой на вечеринке в ресторане 05.2004 = Dancing with wife at a restaurant party 05.2004
+Торжественный момент, 14.06.1973, Астрахань = A solemn moment, June 14, 1973, Astrakhan
+школа на Криуше, Астрахань = school on Kriusha, Astrakhan
+Нелла, Юра и Вова Смагаринские, Астрахань = Nella, Yura and Vova Smagarinsky, Astrakhan
+Семейный ужин, Офаким, Израиль = Family dinner, Ofakim, Israel
+Юрий Смагаринский, Израиль = Yuri Smagarinsky, Israel
+Первый день в школе = First day at school
+Встреча с посланником Израиля, который проводил еврейские праздники в Астрахани = Meeting with the Israeli envoy who celebrated Jewish holidays in Astrakhan
+На папином мотороллере в Астрахани = On dad's scooter in Astrakhan
+Нэлла в Астрахани = Nella in Astrakhan
+Нэлла в Киеве, 1965 = Nella in Kyiv, 1965
+Нэлла в Киеве, 2020 = Nella in Kyiv, 2020
+Нэлла с сыном Артуром и братом Вовой = Nella with her son Artur and brother Vova
+Неожиданный момент = An unexpected moment
+С мамой в парке Умани = With mother in Uman Park
+Хорошее настроение = Good mood
+Вова, Юра и Нэлла Смагаринские со своими двоюродными сестрами Галей и Бэллой Микельман = Vova, Yura, and Nella Smagarinsky with their cousins ​​Galya and Bella Mickelman
+Ольга Смагаринская, Астрахань, 1978 = Olga Smagarinsky, Astrakhan, 1978
+Зима 1993г. в Астрахани = Winter 1993 in Astrakhan
+Ольга с дочками на Кавказе, 1990 = Olga with her daughters in the Caucasus, 1990
+С первой учительницей по классу скрипки, Астрахань, 1961-62 = With her first violin teacher, Astrakhan, 1961-62
+Ольга с племянником Владимиром, ориентировочно 1979, Ворошиловград = Olga with her nephew Vladimir, circa 1979, Voroshilovgrad
+Трио Мангина, программное выступление в российском посольстве в Тель Авиве, 2011 = The Mangina Trio, keynote performance at the Russian Embassy in Tel Aviv, 2011
+Петергоф, 1973 = Peterhof, 1973
+В свадебном путешествии на теплоходе Астрахань - Ленинград - Астрахань, 1973 = On a honeymoon on the ship Astrakhan - Leningrad - Astrakhan, 1973
+Кисловодск 1990 = Kislovodsk 1990
+Выступление на юбилее преподователя класса скрипки Шошиной И.Л., 1992, Астрахань = Performance at the anniversary of violin teacher I.L. Shoshina, 1992, Astrakhan
+С братом Владимиром, Астрахань, 1993 = With brother Vladimir, Astrakhan, 1993
+В гостях у друзей Брусованских на крыше, Петах Тиква, 06.1996г. = Visiting friends Brusovanskys on the roof, Petah Tikva, 06.1996
+В поездке в Пензу, 1982 = On a trip to Penza, 1982
+Перед отъездом в Израиль, 1994 = Before leaving for Israel, 1994
+На уроке в музыкальной школе, Астрахань = During a lesson at a music school, Astrakhan
+Ольга на субботнике музыкального училища в Астраханском кремле, 1970 = Olga at a music school cleanup in the Astrakhan Kremlin, 1970
+2003г = 2003
+Офаким, 1994 = Ofakim, 1994
+На природе в Астрахани, 1988 = Outdoors in Astrakhan, 1988
+Ольга с учеником Димой, который впоследствии стал священником = Olga with her student Dima, who later became a priest
+пикник в Офакиме в день 50-летия = Picnic in Ofakim on the 50th anniversary
+Ольга с Бэллой Черновой на раскопках в Ашкелонском парке, 1997 = Olga with Bella Chernova at excavations in Ashkelon Park, 1997
+Ольга, Ашкелон = Olga, Ashkelon
+В зимнем дворе дома в Астрахани = In the winter courtyard of a house in Astrakhan
+Ольга с выпускниками, астрахань 1992 = Ольга со своими выпускниками, двойняшками  Коваленко Ильей и Анастасией  (14 лет), участниками концерта в Астраханской консерватории 21.06.1992г | Olga with her graduate students, twins Ilya and Anastasia Kovalenko (14 years old), participants of a concert at the Astrakhan Conservatory, 21.06.1992
+с тётей Милей Микельман = with Aunt Mila Mickelman
+Владимир, ориентировочно 1971 = Vladimir, approximately 1971
+В парке Офакима, ориентировочно 1995 = In Ofakim Park, circa 1995
+Панорама дома где мы жили в Биробиджане, Калинина 39 = Panorama of the house where we lived in Birobidzhan, Kalinina 39 
+PANORAMA: panorama_dvor
+
+# ===================================================================
+# Катя
+# ===================================================================
+Катя в парке, Астрахань = Katya in the park, Astrakhan
+Катя с сёстрами, сыном и внучкой = Katya with her sisters, son, and granddaughter
+Катя, 1965 = Katya, 1965
+Сын Евгений = son Evgeny
+Катя Рубинович с сыном Евгением и Алла Смагаринская = Katya Rubinovich with her son Evgeny and Alla Smagarinskaya
+Евгений с женойТаней и мамой, слева Соня Каплун = Evgeny with his wife Tanya and mother, with Sonya Kaplun on the left.
+Саша и Катя Рубинович = Sasha and Katya Rubinovich
+слева направо Галя Каплун, Анатолий Смагаринский, Евгений и Катя Рубинович и Женечка Каплун = From left to right: Galya Kaplun, Anatoly Smagarinsky, Evgeny and Katya Rubinovich, and Zhenechka Kaplun
+
+# ===================================================================
+# Мира Линецкая (и её семья)
+# ===================================================================
+На демонстрации, Биробиджан = At the demonstration, Birobidzhan
+Семья Линецких = The Linetsky family
+Могила Миры Линецкой = The grave of Mira Linetskaya
+Бэлла Ершова(Линецкая) = Bella Ershova (Linetskaya)
+Люда Кутикова (Линецкая) = Lyuda Kutikova (Linetskaya)
+Роман Линецкий = Roman Linetsky
+Мира в домашней обстановке = Mura in a home environment
+Мира Линецкая = Mira LinetskayaOlga with her nephew Vladimir, circa 1979, Voroshilovgrad
+Мира на прогулке с дочкой = Mira on a walk with her daughter
+Мира с дочерьми = Mira with her daughters
+Супруги Роман и Мира Линецкие = Spouses Roman and Mira Linetsky
+Страстный поцелуй = Passionate kiss
+Сёстры Мира, Катя и Соня = Sisters Mira, Katya and Sonya
+Много совместных лет прожито = Many years have been lived together
+Валерий Линецкий = Valery Linetsky
+трудовая книжка Линецкой = Linetskaya's work record book
+трудовая книжка Миры = Mira's work record book
+Валера Линецкий и Лёня  Каплун = valery linetzky and leonid kaplun
+Веселый танец с супругой = A fun dance with wife
+Могила Романа и Миры = The grave of Roman and Mira
+Подлодка, на которой служил Роман Щ-132 = The submarine on which Roman served, Shch-132
+Роман с молодоженами = Roman with newlyweds
+Аккордеонистка = Accordionist
+в новом платьице = in a new dress
+Люда в юности, Биробиджан = Lyuda in her youth, Birobidzhan
+Люда с братом Валерием = Lyuda with her brother Valery
+Люда с младшим братом = Lyuda with her younger brother
+музыкальные моменты = musical moments
+первый раз в первый класс = first time in first grade
+семейный дуэт = family duet
+счастливое детство = happy childhood
+хорошее настроение = good mood
+школьница = schoolgirl
+Бэлла в Биробиджане = Bella in Birobidzhan
+Бэлочка Линецкая и Игорь Каплун = Bella Linetsky and Igor Kaplun
+Бэлочка Линецкая = Belochka Linetsky
+октябренок Бэлла = little octobrist girl Bella
+В первый класс = to first school class
+Валера с братом Лёней = Valera with his brother Lenya
+Валерий в детские годы = Valery in his childhood
+Молодая семья с дочкой = Young family with a daughter
+Прекрасные годы = Wonderful years
+Профессиональный музыкант Валерий Линецкий = Professional musician Valery Linetzky
+Сын моряка = The Sailor's Son
+Улыбка будущего музыканта = The smile of a future musician
+
+# ===================================================================
+# Мира Захарова (и её семья)
+# ===================================================================
+1958 год Молдавия = 1958 Moldova
+В пустыне Негев. Мира,Толя Смагаринский,Аня Захарова = In the Negev Desert. Mira, Tolya Smagarinsky, Anya Zakharova
+Встреча в Москве = Meeting in Moscow
+День рождения, 2014 год = Birthday, 2014
+День свадьбы = Wedding day
+Мира Захарова = Mira Zakharova
+Мира Левченко и Валера  Захаров Бельцы Молдавия1960 г = Mira Levchenko and Valery Zakharov, Beltsy, Moldova, 1960
+Мира после окончания школы 1959 = Mira after graduating from school in 1959
+Мира с братом Валерием = Mira with brother Valery
+Мира с мужем и Владиком,Лиепая  09.05.1974 = Mira with her husband and Vladik, Liepaja 05/09/1974
+Мира с сыновьями. Лиепая 1975 г = Mira with her sons. Liepaja, 1975
+Мира с сыном Игорем,Бельцы Молдова 1978г = Mira with her son Igor, Beltsy, Moldova, 1978
+Мира,1980 Заполярье = Mira, 1980 Arctic
+Мира,Иркутск 1961 год = Mira, Irkutsk, 1961
+На Мертвом море.  Мира,невестка Аня,Толя Смагаринский = At the Dead Sea. Mira, daughter-in-law Anya, Tolya Smagarinsky
+На одной из древних улочек Яффо = On one of the ancient streets of Jaffa
+Родители = Parents
+Семья Захаровых = The Zakharov family
+Серебянная свадьба Лиепая 1988 = Silver Wedding Anniversary, Liepaja, 1988
+
+# ======================================================================
+# Алла Колесниченко (Смагаринская)
+# ======================================================================
+Алла Колесниченко (Смагаринская), Астрахань = Alla Kolesnichenko (Smagarinsky), Astrakhan
+Алла Колесниченко (Смагаринская) = Alla Kolesnichenko (Smagarinsky)
+Алла на пикнике = Alla at a picnic
+Алла с двоюродными братьями Евгением и Владимиром = Alla with her cousins ​​Evgeny and Vladimir
+Алла с сыном Олегом и сестрой Наташей = Alla with her son Oleg and sister Natasha
+Алла с сестрой Наташей = Alla with her sister Natasha
+свадьба сына Аллы = Alla's son's wedding
+
+# ========================================================================
+# Наташа Гельван (Смагаринская) и Валера Смагаринский
+# ========================================================================
+Наталья Гельван (Смагаринская) = Natalia Gelvan (Smagarinskaya)
+Наталья с мамой, Астрахань = Natalia with her mother, Astrakhan
+с дочкой Ирочкой и мужем Геннадием, Астрахань = with her daughter Irochka and husband Gennady, Astrakhan
+Валера с сестрой Наташей = Valera with his sister Natasha
+Геннадий и Наташа Гельван с дочкой Ириной = Gennady and Natasha Gelvan with their daughter Irina
+Валерий и Татьяна Смагаринские, Марбелья, Испания = Valery and Tatiana Smagarinsky, Marbella, Spain
+
+# ========================================================================
+# Соня и её семья
+# ========================================================================
+Могила Сони = Sonya's grave
+Катя, Соня и Мира = Katya, Sonya and Mira
+Встреча с сёстрами = Meeting with the sisters
+Фотосессия с родственниками = Photo session with relatives
+Соня с сыновьями Леонидом и Игорем = Sonya with her sons Leonid and Igor
+Соня в центре = Sonya in the center
+Соня и Михаил Каплун = Sonya and Mikhail Kaplun
+Соня, Мира и Блюма = Sonya, Mira and Bluma
+Соня с сестрой Мирой = Sonya with her sister Mira
+Соня с родственниками = Sonya with her relatives
+Соня с родителями = Sonya with her parents
+Встреча Линецких и Каплунов = Meeting of the Linetskys and the Kapluns
+Игорь в зрелые годы = Igor in his mature years
+Игорь Каплун = Igor Kaplun
+Леня и Игорь Каплун, Биробиджан = Lenya and Igor Kaplun, Birobidzhan
+Мужской коллектив = Male collective
+фото с паспорта = passport photo
+Соня Каплун = Sonya Kaplun
+свидетельство о браке Сони = Sonya's marriage certificate
+свидетельство о рождении Сони = Sonya's birth certificate
+Анатолий, Михаил, Соня и Фира = Anatoly, Mikhail, Sonya and Fira
+справа налево Мира, Миша и Соня Каплун, слева Ефим = from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim
+Семейный совет, Астрахань = Family Council, Astrakhan
+Миша Смагаринский с Соней и Галей Каплун = Misha Smagarinsky with Sonya and Galya Kaplun
+Посиделки на скамейке = Bench time
+Михаил и Соня Каплун = Mikhail and Sonya Kaplun
+Михаил Каплун = Mikhail Kaplun
+Михаил Соломонович Каплун = Mikhail Solomonovich Kaplun
+Мужской коллектив = Male collective
+Соломон Каплун, отец Михаила = Solomon Kaplun, Mikhail's father
+справа налево Мира, Миша и Соня Каплун, слева Ефим = from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim
+
+# ======================================================================
+# Энтины
+# ======================================================================
+Братья на набережной Ашкелона = Brothers on the Ashkelon embankment
+Владимир Борисович Энтин = Vladimir Borisovich Entin
+Встреча с Владимиром Энтиным = Meeting with Vladimir Entin
+Дом где проживал Владимир до 1933 г. = The house where Vladimir lived until 1933.
+Лист свидетельских показаний Владимира о брате Абраме = Vladimir's Testimony about his brother Abram
+Лист свидетельских показаний Владимира об отце Борисе = Vladimir's Testimony about Father Boris
+Место расставания навсегда Владимира с родителями 19.05.1942 г. На следующий день их расстреляли. Фото 05.2002 = The place where Vladimir parted forever with his parents on May 19, 1942. They were executed the next day. Photo taken May 2002.
+Место расстрела евреев Прилук = The site of the execution of Jews in Priluki
+Памятник на могиле  расстрелянных евреев г.Прилуки = A monument at the grave of executed Jews in Priluki
+родители Владимира в расстрельных списках = Vladimir's parents are on the execution list
+Энтин Владимир, свидетельство о рождении = Vladimir Entin, birth certificate
+Брат Вова, 08.09.1957, г.Черкассы = Brother Vova, born September 8, 1957, Cherkassy
+дядя Миша и тётя Поля Энтины 09.05.1949 = Uncle Misha and Aunt Polya Entiny, May 9, 1949
+дядя Соломон с сыновьями Муля, Рува и Фима = Uncle Solomon with his sons Mulya, Ruva and Fima
+Илья Энтин с женой = Ilya Entin with his wife
+сестра Полина Энтина, 09.09.1957 = sister Polina Entina, 09.09.1957
+Сестра Соня, 06.11.1963 = Sister Sonya, November 6, 1963
+Тётя Розалия, 27.06.1970 = Aunt Rosalia, June 27, 1970
+Мордух Энтин = Mordukh Entin
+смерть Ривка и Мордух Энтин = the death of Rivka and Morduch Entin
+Энтины историческ. записи 2 = Entiny historical records 2
+
+# ======================================================================
+# Микельманы
+# ======================================================================
+Миля (Миндля) Микельман, Офаким = Milya (Mindlya) Mikelman, Ofakim
+св-во о рождении Миндля Ройтман = Mindlya Roytman's birth certificate
+13.06.1951 Калининград, Миля с Галочкой = June 13, 1951, Kaliningrad, Milya with  Galochka
+Семья Микельман, Биробиджан, 1966 год = The Mickelman family, Birobidzhan, 1966
+в пионерлагере Биробиджан, 07.1964 = in the Birobidzhan pioneer camp, July 1964
+Миля, Калининград 19.06.1951 = Milya, Kaliningrad, June 19, 1951
+Могила Мили, Офаким = Mili's Tomb, Ofakim
+Миля с родственниками = Milya with relatives
+Биробиджан, 1961 = Birobidzhan, 1961
+Биробиджан 10.1990г = Birobidzhan 10.1990
+Биробиджан 12-1961 = Birobidzhan 12-1961
+Миля и Михаил с детьми и внуками, Биробиджан, 1989 = Milya and Mikhail with their children and grandchildren, Birobidzhan, 1989
+Офаким, 13.02.1998  = Ofakim, February 13, 1998
+Миля и Михаил Микельман, Рая Геренштейн, дочь Бэлла и внучка Наташа, Офаким = Milya and Mikhail Mikelman, Raya Gerenshtein, daughter Bella and granddaughter Natasha, Ofakim
+Михаил Аронович Микельман, Биробиджан 12-1961 = Mikhail Aronovich Mikelman, Birobidzhan 12-1961
+Михаил в санатории «Садгород»  в г. Владивосток (Приморский край), на берегу Амурского залива = Mikhail at the Sadgorod sanatorium in Vladivostok (Primorsky Krai), on the shore of Amur Bay
+Михаил Микельман, Биробиджан = Mikhail Mikelman, Birobidzhan
+Михаил с братом Владимиром = Mikhail with his brother Vladimir
+Могила Михаила, Офаким = Michael's Tomb, Ofakim
+Хиня Микельман, мать Михаила, Биробиджан 12-1961 = Khinya Mikelman, Mikhail's mother, Birobidzhan 12-1961
+
+# =======================================================================
+# Ройтман, Хмельницкие
+# =======================================================================
+Архивная запись синагоги Умани о браке Волька-Нехама ф. Р-5899, оп. 1, спр. 614, арк. 125 зв. - 126 = Archival record of the Uman synagogue on the marriage of Volka-Nekhama f. R-5899, op. 1, sp. 614, arch. 125 sv. - 126
+маме, папе, Злоте, дяде Моисею и ребятам от сестры Нехамы 08.1941 (адрес на фото Пролетарская 11) = to mom, dad, Zlota, Uncle Moses and the kids from sister Nekhama 08.1941 (address in the photo: Proletarskaya 11)
+Могила Нехамы и сына Бориса, Биробиджан = The grave of Nekhama and his son Boris, Birobidzhan
+Нехама с внуком Владимиром, сыном Бориса = Nekhama with her grandson Vladimir, Boris's son
+Нехама с сыном Борисом и внуком Владимиром = Nekhama with her son Boris and grandson Vladimir
+Волько Шлемович Ройтман = Volko Shlemovich Roytman
+Запись 1910 года о заселении колесного мастера Волько Ройтмана с женой Фейгой в с.Бабановка = A 1910 entry about the settlement of wheelwright Volko Roytman and his wife Feiga in the village of Babanovka
+Первый брак Волько и Фейги = Volko and Feiga's first marriage
+Борис Ройтман с женой = Boris Roytman with his wife
+Борис Ройтман с сыном Владимиром = Boris Roytman with his son Vladimir
+Борис с женой и сыном, с тетей Златой и ее сыновьями = Boris with his wife and son, with Aunt Zlata and her sons
+Борис с сыном Вовочкой 06.1949 = Boris with his son Vovochka, June 1949
+жена Бориса с сыном Владимиром = Boris's wife with their son Vladimir
+Молодые годы Бориса, Умань = Boris's early years, Uman
+Хроника военных лет Ройтман Борис Владимирович = Chronicle of the War Years by Boris Vladimirovich Roytman
+Хроника военных лет Ройтман Матвей Владимирович = Chronicle of the War Years by Matvey Vladimirovich Roytman
+Документы о захоронении Матвея (Мотл) = Documents on the burial of Matvey (Motl)
+Курская область, Фатежский район, Молотычевский сельсовет = Kursk region, Fatezhsky district, Molotychevsky village council
+Мемориальный комплекс «Поклонная высота 269» = Memorial Complex "Poklonnaya Height 269"
+Мемориальный комплекс Поклонная высота 269 = Memorial complex Poklonnaya Height 269
+Мотл Волькович  Ройтман = Motl Volkovich Roytman
+Мотл Ройтман-лист свидетельских показаний Яд вашем = Motl Roytman - a list of witness statements Yad vashem
+Сегодня на месте подвига = Today at the site of the feat
+Волько Шлемович Ройтман = Volko Shlemovich Roytman
+слева направо - Нехама, Рахель, Злата Хмельницкие = from left to right - Nehama, Rachel, Zlata Khmelnitsky
+Семья Мордко Хмельницкий, 1897 = The Mordko Khmelnitsky family, 1897
+Архивная запись семьи Мордко = Archival recording of the Mordko family
+Хмельницкая Бейла Гершова = Khmelnitsky Beila Gershova
+Хмельницкая Ривка Мордкова = Khmelnitsky Rivka Mordkova
+
+# =============================================================================
+# Вексельман, Гитман, Фельдман
+# =============================================================================
+
+Злота и сын Абрам (Аркадий) = Zlota and her son Abram (Arkady)
+Могила Семена и Евы Вексельман = The grave of Semyon and Eva Vekselman
+Мама и тётя Фаины Вексельман (Рябенко) 1952 = Faina Vekselman's (Ryabenko's) mother and aunt, 1952
+Злота Вексельман с сыновьями Борис и Абрам (Аркадий) = Zlota Vekselman with her sons Boris and Abram (Arkady)
+Абрам (Аркадий) Вексельман = Abram (Arkady) Vekselman
+Злота и сын Абрам (Аркадий) = Zlota and her son Abram (Arkady)
+Борис Вексельман = Boris Vekselman
+Борис Матвеевич Вексельман = Boris Matveevich Vekselman
+Мордко Янкелевич Хмельницкий домовладелец = Mordko Yankelevich Khmelnitsky, homeowner
+Песах Гитман = Pesach Gitman
+Эстер Гитман = Esther Gitman
+Натан и Роза Геренштейн = Nathan and Rose Gerenstein
+Роза в молодости = Rose in her youth
+Натан (Нюта) Геренштейн = Nathan (Nyuta) Gerenstein
+Роза Геренштейн = Rose Gerenstein
+Натан Геренштейн = Nathan Gerenstein
+Натан и Роза Геренштейн (слева), Софиевка, Умань, 1982 = Nathan and Rosa Gerenstein (left), Sofievka, Uman, 1982
+могила Розы Геренштейн = Rosa Gerenstein's grave
+Миля, Роза на свадьбе внучки Беллы Рыбицкой (слева) = Milya, Rosa at the wedding of Bella Rybitskaya's granddaughter (left)
+Белла (слева) и Роза = Bella (left) and Rose
+Израиль = Israel
+Польша = Poland
+Рая Фельдман (Геренштейн) = Raya Feldman (Gerenstein)
+Рая и ее дочь Полина (справа) = Raya and her daughter Polina (right)
+Рая с внуком Лираном = Raya with her grandson Liran
+Полина и Шлема = Polina and Shlema
+>>>>>>> 57e44fb3695a91bad45d0a5872befdca9dd32bf9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
