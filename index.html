@@ -1045,25 +1045,21 @@ window.saveCurrentPersonData = function() {
         // срабатывал надёжно). maximize() без параметров разворачивает
         // ВСЕ карточки дерева сразу — как на обычных генеалогических
         // сайтах.
-        treeInstance.onInit(function () {
-          console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM, разворачиваю всё...");
-          try {
-            treeInstance.maximize(null, false, false, function () {
-              console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, центрирую на Вульфе...");
-              try {
-                if (db["person_vulf_1898"]) {
-                  treeInstance.center("person_vulf_1898");
-                } else {
-                  treeInstance.fit();
-                }
-              } catch (e) {
-                console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка центрирования:", e);
-              }
-            });
-          } catch (e) {
-            console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка maximize():", e);
-          }
-        });
+   treeInstance.onInit(function () {
+  console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM, разворачиваю всё...");
+  try {
+    treeInstance.maximize(null, false, false, function () {
+      console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, подгоняю масштаб...");
+      try {
+        treeInstance.fit(); // подогнать под всё дерево
+      } catch (e) {
+        console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка fit():", e);
+      }
+    });
+  } catch (e) {
+    console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка maximize():", e);
+  }
+});
 
         treeInstance.load(getTreeData());
       } catch (e) {
