@@ -1449,7 +1449,8 @@ PANORAMA: panorama_dvor
 Рая и ее дочь Полина (справа) = Raya and her daughter Polina (right)
 Рая с внуком Лираном = Raya with her grandson Liran
 Полина и Шлема = Polina and Shlema
->>>>>>> 57e44fb3695a91bad45d0a5872befdca9dd32bf9
+Запись рождения сына Моисея = Record of the birth son Moses
+
 
 
 

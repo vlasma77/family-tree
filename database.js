@@ -340,7 +340,7 @@ window.db = {
   "person_shevel_1848": {
     "name": {
       "ru": "Шевель Залманов Смагаринский",
-      "en": "Shevel Smagarinski"
+      "en": "Shevel Zalmanov Smagarinsky"
     },
     "role": {
       "ru": "",
@@ -356,7 +356,7 @@ window.db = {
       },
       "marriage": {
         "ru": "Хая Смагаринская (Гуревич)",
-        "en": "Khaya Smagarinskaya (Gurevich)"
+        "en": "Khaya Smagarinsky (Gurevich)"
       },
       "occupation": {
         "ru": "—",
@@ -372,7 +372,7 @@ window.db = {
         "Родители: Шнеур Залмон Смагаринский, Слава Смагаринская"
       ],
       "en": [
-        "Parents: Shneur Zalmon Smagarinsky, Slava Smagarinskaya"
+        "Parents: Shneur Zalmon Smagarinsky, Slava Smagarinsky"
       ]
     },
     "links": {
@@ -2393,12 +2393,12 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "Чернигов",
-        "en": "Чернигов"
+        "en": "Chernigov"
       }
     },
     "bio": {
       "ru": "Дочь Шевеля Смагаринского (по архивной записи, вероятно — Шевеля Мордухова).",
-      "en": ""
+      "en": "Daughter of Shevel Smagarinsky (according to archival records, probably Shevel Mordukhov)"
     },
     "familyText": {
       "ru": [],
@@ -2425,7 +2425,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "Чернигов",
-        "en": "Чернигов"
+        "en": "Chernigov"
       }
     },
     "bio": {
@@ -2489,7 +2489,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "Чернигов",
-        "en": "Чернигов"
+        "en": "Chernigov"
       }
     },
     "bio": {
@@ -2521,7 +2521,7 @@ window.db = {
     "milestones": {},
     "bio": {
       "ru": "27.05.1914 зарегистрирован брак с Айзик Мееров Гарелик, 1888 года рождения, сыном Меера Гарелика, Чернигов.",
-      "en": ""
+      "en": "On May 27, 1914, a marriage was registered with Aizik Meerov Garelik, born in 1888, the son of Meer Garelik, Chernigov."
     },
     "familyText": {
       "ru": [],
@@ -2572,7 +2572,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "Чернигов",
-        "en": "Чернигов"
+        "en": "Chernigov"
       }
     },
     "bio": {
@@ -2604,12 +2604,12 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
       "ru": "Жена Хаима Волькова Смагаринского.",
-      "en": ""
+      "en": "The wife of Khaim Volkov Smagarinsky"
     },
     "familyText": {
       "ru": [],
@@ -2633,7 +2633,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -2665,7 +2665,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -2697,7 +2697,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -2729,12 +2729,12 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
       "ru": "Жена Иосела Волькова Смагаринского.",
-      "en": ""
+      "en": "The wife of Iosele Volkov Smagarynsky"
     },
     "familyText": {
       "ru": [],
@@ -2758,7 +2758,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -2790,7 +2790,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -2822,7 +2822,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -2854,7 +2854,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -2886,7 +2886,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -2918,7 +2918,7 @@ window.db = {
     "milestones": {},
     "bio": {
       "ru": "24.06.1894 зарегистрирован брак с Авраам Кальман Лейкин, сыном Волько, Чернигов.",
-      "en": ""
+      "en": "On June 24, 1894, a marriage was registered with Abraham Kalman Leikin, son of Volko, Chernigov"
     },
     "familyText": {
       "ru": [],
@@ -2945,7 +2945,7 @@ window.db = {
     "milestones": {},
     "bio": {
       "ru": "Сын Волько Лейкина. Муж Ханы Залмановой Смагаринской, брак 24.06.1894, Чернигов.",
-      "en": ""
+      "en": "Son of Volko Leykin. Husband of Khana Zalmanova Smagarynsky, married June 24, 1894, Chernigov"
     },
     "familyText": {
       "ru": [],
@@ -2974,7 +2974,7 @@ window.db = {
     },
     "bio": {
       "ru": "Дочь Залмана Смагаринского. Умерла 29.06.1890, Чернигов.",
-      "en": ""
+      "en": "Daughter of Zalman Smagarynsky. Died June 29, 1890, Chernigov."
     },
     "familyText": {
       "ru": [],
@@ -3001,7 +3001,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -3033,7 +3033,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -3065,7 +3065,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -3145,13 +3145,30 @@ window.db = {
       "ru": "Сима Шевелева Гринберг (Смагаринская)",
       "en": "Sima Shevelevna Grinberg (Smagarinsky)"
     },
-    "years": "",
+    "years": "1890 - 1921",
     "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {},
+    "mainPhoto": "photos/sima_greenberg.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Гомель, Беларусь",
+        "en": "Gomel, Belarus"
+      },
+      "marriage": {
+        "ru": "Аврам Мошкович Гринберг",
+        "en": "Avram Moshkovich Grinberg"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "Прилуки Черниговской губернии, Украина",
+        "en": "Pryluky, Chernihiv Governorate, Ukraine"
+      }
+    },
     "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
-      "en": ""
+      "en": "Daughter of Shevel Zalmanov Smagarinsky and Khaya, sister of Wolf"
     },
     "familyText": {
       "ru": [],
