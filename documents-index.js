@@ -5602,8 +5602,6 @@ window.documentsIndex = {
         "en": "Raya with her grandson Liran"
       }
     }
-<<<<<<< HEAD
-=======
   ],
   "person_liran_shehtman_2007": [
     {
@@ -5614,6 +5612,5 @@ window.documentsIndex = {
         "en": "Raya with her grandson Liran"
       }
     }
->>>>>>> 57e44fb3695a91bad45d0a5872befdca9dd32bf9
   ]
 };
