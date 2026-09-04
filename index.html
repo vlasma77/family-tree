@@ -237,7 +237,7 @@
       <input type="text" id="custom-search-input" placeholder="Поиск персоны...">
       <div id="custom-search-results"></div>
     </div>
-    <button id="btn-surnames" onclick="openSurnamesList()" title="Список фамилий" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">Список фамилий</button>
+    <button id="btn-surnames" onclick="openSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">Список фамилий</button>
     <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
     <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
     <button id="btn-edit-lock" onclick="toggleEditModeUI()" title="Режим редактирования" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 8px;cursor:pointer;font-size:16px;">🔒</button>
@@ -425,7 +425,8 @@
         vehi: "ВАЖНЫЕ ВЕХИ", circle: "СЕМЕЙНЫЙ КРУГ", bio: "Текст биографии",
         father: "Отец", mother: "Мать", spouse: "Супруг(а)", children: "Дети", no_relations: "Связи в дереве не заданы",
         add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь",
-        tip: 'Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline">↕</span> на карточке персоны'
+        tip: 'Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline">↕</span> на карточке персоны',
+        surnames: "Список фамилий"
       },
       en: {
         birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place",
@@ -436,7 +437,8 @@
         vehi: "KEY MILESTONES", circle: "FAMILY CIRCLE", bio: "Biography Text",
         father: "Father", mother: "Mother", spouse: "Spouse", children: "Children", no_relations: "No relationships defined",
         add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter",
-        tip: 'To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> <span class="tip-icon-inline">↕</span> on a person\'s card to expand nodes'
+        tip: 'To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> <span class="tip-icon-inline">↕</span> on a person\'s card to expand nodes',
+        surnames: "Surnames List"
       }
     };
 
@@ -1079,7 +1081,14 @@
       if (tipElement) {
         tipElement.innerHTML = labels[currentLang].tip;
       }
-    }
+
+      // Обновляем текст кнопки "Список фамилий"
+  const surnamesBtn = document.getElementById("btn-surnames");
+  if (surnamesBtn) {
+    surnamesBtn.textContent = labels[currentLang].surnames;
+  }
+}
+    
 
     setLanguage('ru');
     updateEditLockIcon();
