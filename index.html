@@ -171,6 +171,7 @@
       stroke: #4CAF50 !important;
     }
 
+    /* ПОДСКАЗКА ДЛЯ ПОЛЬЗОВАТЕЛЯ */
     .tip-container {
       text-align: center;
       margin: -10px 0 15px 0;
@@ -185,20 +186,6 @@
       flex-wrap: wrap;
     }
 
-    .tip-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 28px;
-      height: 28px;
-      background: #4CAF50;
-      color: white;
-      border-radius: 50%;
-      font-size: 18px;
-      font-weight: bold;
-      flex-shrink: 0;
-    }
-
     .tip-text {
       font-size: 15px;
       color: #555;
@@ -211,10 +198,26 @@
       font-weight: 600;
     }
 
+    .tip-icon-inline {
+      display: inline-block;
+      vertical-align: middle;
+      width: 22px;
+      height: 22px;
+      background: #4CAF50;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      font-size: 13px;
+      font-weight: bold;
+      margin: 0 3px;
+      flex-shrink: 0;
+    }
+
     @media (max-width: 600px) {
       .tip-text { font-size: 13px; }
       .tip-container { padding: 8px 14px; margin: -5px 0 10px 0; }
-      .tip-icon { width: 22px; height: 22px; font-size: 14px; }
+      .tip-icon-inline { width: 20px; height: 20px; line-height: 20px; font-size: 12px; }
     }
   </style>
 </head>
@@ -222,10 +225,10 @@
 
   <h1 id="main-title">Летопись поколений рода Смагаринских</h1>
 
+  <!-- ПОДСКАЗКА ДЛЯ ПОЛЬЗОВАТЕЛЯ -->
   <div id="nav-tip" class="tip-container">
-    <span class="tip-icon">↕</span>
     <span id="tip-text" class="tip-text">
-      Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> на карточке персоны
+      Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline">↕</span> на карточке персоны
     </span>
   </div>
 
@@ -422,7 +425,7 @@
         vehi: "ВАЖНЫЕ ВЕХИ", circle: "СЕМЕЙНЫЙ КРУГ", bio: "Текст биографии",
         father: "Отец", mother: "Мать", spouse: "Супруг(а)", children: "Дети", no_relations: "Связи в дереве не заданы",
         add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь",
-        tip: "Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> на карточке персоны"
+        tip: 'Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline">↕</span> на карточке персоны'
       },
       en: {
         birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place",
@@ -433,7 +436,7 @@
         vehi: "KEY MILESTONES", circle: "FAMILY CIRCLE", bio: "Biography Text",
         father: "Father", mother: "Mother", spouse: "Spouse", children: "Children", no_relations: "No relationships defined",
         add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter",
-        tip: "To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> on a person's card to expand nodes"
+        tip: 'To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> <span class="tip-icon-inline">↕</span> on a person\'s card to expand nodes'
       }
     };
 
