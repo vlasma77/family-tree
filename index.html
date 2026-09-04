@@ -16,11 +16,12 @@
     
     /* Стиль для активной кнопки языка */
     .lang-btn.active {
-        background-color: #4CAF50; /* Зеленый цвет, как у кнопки Apply */
+        background-color: #4CAF50;
         color: white;
         border-color: #3e8e41;
         font-weight: bold;
     }
+    
     /* ПОЛЕ ПОИСКА В ШАПКЕ */
     #header-bar {
       display: flex;
@@ -60,17 +61,17 @@
       font-size: 14px;
     }
     #custom-search-results div:hover { background: #f0f0f0; }
+    
     /* СЕТКА ИНТЕРФЕЙСА */
     #main-wrapper { display: flex; gap: 15px; width: 100%; height: 780px; position: relative; }
     #family-tree {
-    flex-grow: 1;
-    height: 100%;
-    border: 1px solid #ccc;
-    background: #fff;
-    /* Добавьте эти две строки в описание #family-tree: */
-    width: 100% !important;
-    position: relative !important;
-}
+      flex-grow: 1;
+      height: 100%;
+      border: 1px solid #ccc;
+      background: #fff;
+      width: 100% !important;
+      position: relative !important;
+    }
     
     /* БОКОВАЯ ПАНЕЛЬ С ГИБКИМ СКРОЛЛОМ */
     #custom-side-panel {
@@ -94,7 +95,6 @@
     .milestones-table td { padding: 5px 0; vertical-align: middle; }
     .td-lbl { font-weight: bold; color: #777; width: 35%; }
     
-    /* АВТОМАТИЧЕСКИЙ СЕМЕЙНЫЙ КРУГ СО СВОИМ СКРОЛЛОМ */
     .family-circle-container { max-height: 140px; overflow-y: auto; border: 1px solid #eee; background: #fafafa; border-radius: 4px; padding: 8px; }
     .family-list { margin: 0; padding-left: 0; list-style: none; font-size: 13px; line-height: 1.5; color: #444; }
     .family-list li { margin-bottom: 5px; }
@@ -114,7 +114,6 @@
     .bio-panel { background: #fdfbf7; border: 1px dashed #d1c7bd; padding: 10px; border-radius: 4px; margin-top: 10px; }
     .bio-textarea { width: 100%; height: 85px; box-sizing: border-box; border: 1px solid #ddd; padding: 6px; border-radius: 4px; font-size: 13px; resize: vertical; }
     
-    /* ФИКСИРОВАННЫЙ ПОДВАЛ */
     .panel-fixed-footer { background: #f4f4f4; border-top: 1px solid #ccc; padding: 15px 20px; box-sizing: border-box; }
     .btn-save { background: #27ae60 !important; color: white !important; border: none; width: 100%; padding: 10px; font-size: 14px; font-weight: bold; margin-bottom: 8px; border-radius: 4px; cursor: pointer; display: block; text-align: center; }
     .btn-save:hover { background: #219653 !important; }
@@ -124,7 +123,6 @@
     .hidden-block { display: none; }
     .bft-edit-form, .bft-dialog, .bft-lightbox, .bft-control { display: none !important; }
 
-    /* Стиль для кнопки закрытия панели */
     .panel-close-btn {
       position: absolute;
       top: 10px;
@@ -140,7 +138,6 @@
       color: maroon;
     }
 
-    /* Стиль для двухэтажного текстового поля имени */
     .panel-textarea-name {
       font-family: sans-serif;
       font-size: 18px;
@@ -157,7 +154,9 @@
       overflow: hidden; 
     }
 
-    /* === ОФОРМЛЕНИЕ КАРТОЧЕК В ДЕРЕВЕ === */
+       /* ============================================================
+       ОФОРМЛЕНИЕ КАРТОЧЕК В ДЕРЕВЕ — ПРЕЖНИЙ ДИЗАЙН
+       ============================================================ */
 
     /* Чёрная рамка вокруг карточек умерших персон */
     .node.deceased>rect {
@@ -165,7 +164,8 @@
       stroke-width: 3px !important;
     }
 
-          .field_0 {
+    /* Стиль текста на карточках (как было) */
+    .field_0 {
       font-weight: bold !important;
       paint-order: stroke fill;
       stroke: rgba(0, 0, 0, 0.55);
@@ -179,11 +179,7 @@
       stroke-width: 2.5px !important;
     }
 
-    /* Иконка "дерево" (показать родителей супруга/супруги) — делаем зелёной.
-       Точный ID найден через инструмент разработчика: base_up / hugo_up
-       (определения иконки внутри <defs>, переиспользуются через <use>).
-       Красим ТОЛЬКО сам символ (path/ellipse), не трогая фоновый кружок
-       (circle) — иначе иконка превращается в сплошное пятно. */
+    /* Иконка "дерево" (показать родителей супруга/супруги) — зелёная */
     #base_up path,
     #base_up ellipse,
     #hugo_up path,
@@ -191,7 +187,31 @@
       fill: #4CAF50 !important;
       stroke: #4CAF50 !important;
     }
-  </style>
+
+    /* 3. Стиль для текста на карточках (делаем контрастнее) */
+    .field_0 {
+      font-weight: bold !important;
+      paint-order: stroke fill;
+      stroke: rgba(0, 0, 0, 0.55);
+      stroke-width: 2px;
+      stroke-linejoin: round;
+    }
+
+    /* 4. Линии связей между карточками — ярче и толще */
+    [data-l-id] path {
+      stroke: #8B0000 !important;
+      stroke-width: 2.5px !important;
+    }
+
+    /* 5. Иконка "дерево" (показать родителей супруга) — зелёная */
+    #base_up path,
+    #base_up ellipse,
+    #hugo_up path,
+    #hugo_up ellipse {
+      fill: #4CAF50 !important;
+      stroke: #4CAF50 !important;
+    }
+</style>
 </head>
 <body>
 
