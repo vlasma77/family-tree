@@ -1841,7 +1841,7 @@ window.db = {
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
       }
     },
     "bio": {
@@ -3189,25 +3189,25 @@ window.db = {
       "ru": "Авраам Мошкович Гринберг",
       "en": "Avraam Moshkovich Grinberg"
     },
-    "years": "1888-1923",
+    "years": "1888 - 23.12.1923",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/avram_greenberg.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Яссы, Румыния",
+        "en": "Iasi, Romania"
       },
       "marriage": {
-        "ru": "Сима Шевелева Смагаринская",
-        "en": "Sima Shevelevna Smagarinsky"
+        "ru": "Сима Шевелева Гринберг (Смагаринская)",
+        "en": "Sima Sheveleva Grinberg (Smagarinsky)"
       },
       "occupation": {
         "ru": "",
         "en": ""
       },
       "burial": {
-        "ru": "",
-        "en": ""
+        "ru": "Прилуки Черниговской губернии, Украина",
+        "en": "Pryluky, Chernihiv Governorate, Ukraine"
       }
     },
     "bio": {
@@ -3730,16 +3730,16 @@ window.db = {
   },
   "person_moisey_grinberg": {
     "name": {
-      "ru": "Моисей Гринберг",
-      "en": "Moisey Grinberg"
+      "ru": "Моисей Авраамович Гринберг",
+      "en": "Moses Avraamovich Grinberg"
     },
-    "years": "1914-1920",
+    "years": "25.10.1914-1920",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/moisey_grinberg1914.jpg.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Прилуки, Черниговская область, Украина",
+        "en": "Pryluky, Chernihiv Oblast, Ukraine"
       },
       "marriage": {
         "ru": "",
@@ -3750,8 +3750,8 @@ window.db = {
         "en": ""
       },
       "burial": {
-        "ru": "",
-        "en": ""
+        "ru": "Прилуки, Черниговская область, Украина",
+        "en": "Pryluky, Chernihiv Oblast, Ukraine"
       }
     },
     "bio": {

@@ -3265,6 +3265,44 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_sima_sh_shevel": [
+    {
+      "url": "Запись рождения сына Моисея.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Запись рождения сына Моисея",
+        "en": "Record of the birth son Moses"
+      }
+    }
+  ],
+  "person_avraam_grinberg": [
+    {
+      "url": "avram_greenberg.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Avram Greenberg",
+        "en": "Avram Greenberg"
+      }
+    },
+    {
+      "url": "Запись рождения сына Моисея.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Запись рождения сына Моисея",
+        "en": "Record of the birth son Moses"
+      }
+    }
+  ],
+  "person_moisey_grinberg": [
+    {
+      "url": "Запись рождения сына Моисея.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Запись рождения сына Моисея",
+        "en": "Record of the birth son Moses"
+      }
+    }
+  ],
   "person_luda_1951": [
     {
       "url": "Аккордеонистка.jpg",
