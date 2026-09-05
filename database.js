@@ -3937,13 +3937,30 @@ window.db = {
       "ru": "Залман Шевелев Смагаринский",
       "en": "Zalman Shevelevich Smagarinsky"
     },
-    "years": "",
+    "years": "1886 - ?",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "Прилуки, Черниговской губернии",
+        "en": "Priluki, Chernigov province"
+      },
+      "marriage": {
+        "ru": "Бася-Рива Шаевна Смагаринская (Стародубская)",
+        "en": "Basya-Riva Shaevna Smagarynsky (Starodubsky)"
+      },
+      "occupation": {
+        "ru": "извозчик",
+        "en": "cab"
+      },
+      "burial": {
+        "ru": "Прилуки Черниговской губернии",
+        "en": "Priluki, Chernigov province"
+      }
+    },
     "bio": {
       "ru": "Сын Шевеля Залманова Смагаринского и Хаи, брат Вульфа.",
-      "en": ""
+      "en": "Son of Shevel Zalmanov Smagarinsky and Khaya, brother of Wulf"
     },
     "familyText": {
       "ru": [],
