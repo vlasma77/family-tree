@@ -3994,12 +3994,12 @@ window.db = {
         "en": "Zalman Shevelevich Smagarinsky"
       },
       "occupation": {
-        "ru": "",
-        "en": ""
+        "ru": "домохозяйка",
+        "en": "housewife"
       },
       "burial": {
-        "ru": "",
-        "en": ""
+        "ru": "Прилуки Черниговской губернии",
+        "en": "Priluki, Chernigov province"
       }
     },
     "bio": {

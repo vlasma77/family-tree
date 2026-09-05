@@ -3313,6 +3313,24 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_basya_riva_1888": [
+    {
+      "url": "Бася Рива Шаевна Смагаринская (Стародубская).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бася Рива Шаевна Смагаринская (Стародубская)",
+        "en": "Basya Riva Shaevna Smagarynsky (Starodubsky)"
+      }
+    },
+    {
+      "url": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925",
+        "en": "Resettlement form for the family of Zalman Shevelevich Smagarinsky, 1925"
+      }
+    }
+  ],
   "person_luda_1951": [
     {
       "url": "Аккордеонистка.jpg",
