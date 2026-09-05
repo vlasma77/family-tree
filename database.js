@@ -3735,7 +3735,7 @@ window.db = {
     },
     "years": "25.10.1914-1920",
     "isDeceased": true,
-    "mainPhoto": "photos/moisey_grinberg1914.jpg.jpg",
+    "mainPhoto": "photos/moisey_grinberg1914.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Прилуки, Черниговская область, Украина",
