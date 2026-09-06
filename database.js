@@ -7995,5 +7995,43 @@ window.db = {
     },
     "archive": "person_liran_shehtman_2007",
     "gender": "male"
+  },
+  "person_alexandr_zalmanov_1919": {
+    "id": "person_alexandr_zalmanov_1919",
+    "name": {
+      "ru": "Александр Залманович Смагаринский",
+      "en": "Alexander Zalmanovich Smagarinsky"
+    },
+    "years": "16.12.1919 - 31.01.2012",
+    "mainPhoto": "photos/alexandr_smagarinsky1919.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Пирятин, Полтавская область, Украина",
+        "en": "Pyryatyn, Pyryatyns'kyi district, Poltava Oblast, Ukraine"
+      },
+      "marriage": {
+        "ru": "Фаина Хаимовна Смагаринская (Межубовская)",
+        "en": "Faina Khaimovna Smagarinsky (Mezhubovsky)"
+      },
+      "occupation": {
+        "ru": "строительство",
+        "en": "construction"
+      },
+      "burial": {
+        "ru": "Руквуд, городской совет Камберленда, Новый Южный Уэльс, Австралия",
+        "en": "Rookwood, Cumberland City Council, New South Wales, Australia"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_zalman_shevel",
+        "person_basya_riva_1888"
+      ],
+      "spouse": null
+    }
   }
 };
