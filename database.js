@@ -8269,5 +8269,71 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_boris_rudovsky": {
+    "id": "person_boris_rudovsky",
+    "name": {
+      "ru": "Борис Рудовский",
+      "en": "Boris Rudovsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_anna__rudovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_radislav_rudovsky": {
+    "id": "person_radislav_rudovsky",
+    "name": {
+      "ru": "Радислав Рудовский",
+      "en": "New Person"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_anna__rudovsky"
+      ],
+      "spouse": null
+    }
   }
 };
