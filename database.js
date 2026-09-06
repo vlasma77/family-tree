@@ -8335,5 +8335,39 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_yakov_smagarinsky_1939": {
+    "id": "person_yakov_smagarinsky_1939",
+    "name": {
+      "ru": "Яков Александрович Смагаринский",
+      "en": "New Person"
+    },
+    "years": "28.12.1939 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Гадиах, Полтава, Украина"
+      },
+      "marriage": {
+        "ru": "Фаина Смагаринская (Торбина)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_alexandr_zalmanov_1919",
+        "person_faina_1919"
+      ],
+      "spouse": null
+    }
   }
 };

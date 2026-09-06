@@ -1450,6 +1450,11 @@ PANORAMA: panorama_dvor
 Рая с внуком Лираном = Raya with her grandson Liran
 Полина и Шлема = Polina and Shlema
 Запись рождения сына Моисея = Record of the birth son Moses
+
+# ==================================================================
+# Ветка Залмана Шевелевича Смагаринского
+# ==================================================================
+
 Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925 = Resettlement form for the family of Zalman Shevelevich Smagarinsky, 1925
 Бася Рива Шаевна Смагаринская (Стародубская) = Basya Riva Shaevna Smagarynsky (Starodubsky)
 Александр и Фаина Смагаринские = Alexander and Faina Smagarinsky
@@ -1457,6 +1462,8 @@ PANORAMA: panorama_dvor
 записи о смерти Смагаринских, Австралия = Smagarinsky death records, Australia
 Фаина Смагаринская (Межубовская) = Faina Smagarinsky (Mezhubovsky)
 архивное фото = archive photo
+Архивная запись рождения Сары = Archival footage of Sarah's birth
+
 
 
 

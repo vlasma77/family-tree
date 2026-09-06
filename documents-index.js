@@ -5754,5 +5754,23 @@ window.documentsIndex = {
         "en": "Faina Smagarinsky (Mezhubovsky)"
       }
     }
+  ],
+  "person_sara_gisya": [
+    {
+      "url": "Архивная запись рождения Сары.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись рождения Сары",
+        "en": "Archival footage of Sarah's birth"
+      }
+    },
+    {
+      "url": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925",
+        "en": "Resettlement form for the family of Zalman Shevelevich Smagarinsky, 1925"
+      }
+    }
   ]
 };
