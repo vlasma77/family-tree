@@ -5689,6 +5689,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "архивное фото.jpg",
+      "type": "image",
+      "title": {
+        "ru": "архивное фото",
+        "en": "archive photo"
+      }
+    },
+    {
       "url": "записи о смерти Смагаринских, Австралия.pdf",
       "type": "document",
       "title": {
@@ -5702,6 +5710,14 @@ window.documentsIndex = {
       "title": {
         "ru": "могила Александра и Фаины",
         "en": "Alexander and Faina's grave"
+      }
+    },
+    {
+      "url": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925",
+        "en": "Resettlement form for the family of Zalman Shevelevich Smagarinsky, 1925"
       }
     }
   ],
