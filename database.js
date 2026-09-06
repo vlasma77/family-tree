@@ -8201,5 +8201,39 @@ window.db = {
       "parents": [],
       "spouse": "person_clara_rudovsky"
     }
+  },
+  "person_masha_rudovsky": {
+    "id": "person_masha_rudovsky",
+    "name": {
+      "ru": "Мария Львовна Рудовская",
+      "en": "Maria Lvovna Rudovsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_lev_rudovsky",
+        "person_clara_rudovsky"
+      ],
+      "spouse": null
+    }
   }
 };
