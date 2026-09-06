@@ -5704,5 +5704,39 @@ window.documentsIndex = {
         "en": "Alexander and Faina's grave"
       }
     }
+  ],
+  "person_faina_1919": [
+    {
+      "url": "Александр и Фаина Смагаринские.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Александр и Фаина Смагаринские",
+        "en": "Alexander and Faina Smagarinsky"
+      }
+    },
+    {
+      "url": "записи о смерти Смагаринских, Австралия.pdf",
+      "type": "document",
+      "title": {
+        "ru": "записи о смерти Смагаринских, Австралия",
+        "en": "Smagarinsky death records, Australia"
+      }
+    },
+    {
+      "url": "могила Александра и Фаины.jpg",
+      "type": "image",
+      "title": {
+        "ru": "могила Александра и Фаины",
+        "en": "Alexander and Faina's grave"
+      }
+    },
+    {
+      "url": "Фаина Смагаринская (Межубовская).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Фаина Смагаринская (Межубовская)",
+        "en": "Faina Smagarinsky (Mezhubovsky)"
+      }
+    }
   ]
 };

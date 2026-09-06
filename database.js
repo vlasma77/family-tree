@@ -8031,7 +8031,41 @@ window.db = {
         "person_zalman_shevel",
         "person_basya_riva_1888"
       ],
-      "spouse": null
+      "spouse": "person_faina_1919"
+    }
+  },
+  "person_faina_1919": {
+    "id": "person_faina_1919",
+    "name": {
+      "ru": "Фаина Ефимовна Смагаринская (Межубовская)",
+      "en": "Faina Efimovna Smagarinsky (Mezhubovsky)"
+    },
+    "years": "08.08.1919 - 23.12.2007",
+    "mainPhoto": "photos/faina_smagarinsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Александр Залманович Смагаринский",
+        "en": "Alexander Zalmanovich Smagarinsky"
+      },
+      "occupation": {
+        "ru": "почтовый работник",
+        "en": "postal worker"
+      },
+      "burial": {
+        "ru": "Руквуд, городской совет Камберленда, Новый Южный Уэльс, Австралия",
+        "en": "Rookwood, Cumberland City Council, New South Wales, Australia"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_alexandr_zalmanov_1919"
     }
   }
 };

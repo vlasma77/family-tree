@@ -1455,6 +1455,7 @@ PANORAMA: panorama_dvor
 Александр и Фаина Смагаринские = Alexander and Faina Smagarinsky
 могила Александра и Фаины = Alexander and Faina's grave
 записи о смерти Смагаринских, Австралия = Smagarinsky death records, Australia
+Фаина Смагаринская (Межубовская) = Faina Smagarinsky (Mezhubovsky)
 
 
 
