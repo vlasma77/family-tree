@@ -8340,16 +8340,18 @@ window.db = {
     "id": "person_yakov_smagarinsky_1939",
     "name": {
       "ru": "Яков Александрович Смагаринский",
-      "en": "New Person"
+      "en": "Yakov Alexandrovich Smagarinsky"
     },
     "years": "28.12.1939 -",
-    "mainPhoto": "",
+    "mainPhoto": "photos/yakov_smagarinsky1939.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Гадиах, Полтава, Украина"
+        "ru": "Гадиах, Полтава, Украина",
+        "en": "Gadiach, Poltava, Ukraine"
       },
       "marriage": {
-        "ru": "Фаина Смагаринская (Торбина)"
+        "ru": "Фаина Смагаринская (Торбина)",
+        "en": "Faina Smagarinsky (Torbina)"
       },
       "occupation": {
         "ru": ""

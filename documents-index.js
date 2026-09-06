@@ -5772,5 +5772,31 @@ window.documentsIndex = {
         "en": "Resettlement form for the family of Zalman Shevelevich Smagarinsky, 1925"
       }
     }
+  ],
+  "person_yakov_smagarinsky_1939": [
+    {
+      "url": "архивное фото.jpg",
+      "type": "image",
+      "title": {
+        "ru": "архивное фото",
+        "en": "archive photo"
+      }
+    },
+    {
+      "url": "Яков Смагаринский и Лариса Патракова.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яков Смагаринский и Лариса Патракова",
+        "en": "Yakov Smagarinsky and Larisa Patrakova"
+      }
+    },
+    {
+      "url": "Яков, г. Байкальск 1969.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яков, г. Байкальск 1969",
+        "en": "Yakov, Baikalsk 1969"
+      }
+    }
   ]
 };
