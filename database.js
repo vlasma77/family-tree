@@ -8067,5 +8067,107 @@ window.db = {
       "parents": [],
       "spouse": "person_alexandr_zalmanov_1919"
     }
+  },
+  "person_sara_gisya": {
+    "id": "person_sara_gisya",
+    "name": {
+      "ru": "Сара-Гися Залмановна Катенберг (Смагаринская)",
+      "en": "Sara-Gisya Zalmanovna Katenberg (Stagarinsky)"
+    },
+    "years": "1908 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Наум Катенберг",
+        "en": "Naum Katenberg"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_zalman_shevel",
+        "person_basya_riva_1888"
+      ],
+      "spouse": "person_naum_katenberg"
+    }
+  },
+  "person_naum_katenberg": {
+    "id": "person_naum_katenberg",
+    "name": {
+      "ru": "Наум Катенберг",
+      "en": "Naum Katenberg"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Сара-Гися Залмановна Катенберг (Смагаринская)",
+        "en": "Sara-Gisya Zalmanovna Katenberg (Stagarinsky)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_sara_gisya"
+    }
+  },
+  "person_clara_rudovsky": {
+    "id": "person_clara_rudovsky",
+    "name": {
+      "ru": "Клара Наумовна Рудовская (Катенберг)",
+      "en": "Clara Naumovna Rudovsky (Katenberg)"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Лев Рудовский",
+        "en": "Lev Rudovsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_naum_katenberg",
+        "person_sara_gisya"
+      ],
+      "spouse": null
+    }
   }
 };
