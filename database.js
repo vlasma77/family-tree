@@ -3978,7 +3978,7 @@ window.db = {
   },
   "person_basya_riva_1888": {
     "name": {
-      "ru": "Бася-Рива Смагаринская (Стародубская)",
+      "ru": "Бася-Рива Шаевна Смагаринская (Стародубская)",
       "en": "Basya-Riva Smagarinsky (Starodubsky)"
     },
     "years": "1888 – ?",
@@ -4022,7 +4022,7 @@ window.db = {
   },
   "person_starodubsky_father": {
     "name": {
-      "ru": "Стародубский",
+      "ru": "Шай Стародубский",
       "en": "Starodubsky"
     },
     "years": "",
