@@ -8167,7 +8167,39 @@ window.db = {
         "person_naum_katenberg",
         "person_sara_gisya"
       ],
-      "spouse": null
+      "spouse": "person_lev_rudovsky"
+    }
+  },
+  "person_lev_rudovsky": {
+    "id": "person_lev_rudovsky",
+    "name": {
+      "ru": "Лев Рудовский",
+      "en": "Lev Rudovsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Клара Наумовна Рудовская (Катенберг)",
+        "en": "Clara Naumovna Rudovsky (Katenberg)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_clara_rudovsky"
     }
   }
 };
