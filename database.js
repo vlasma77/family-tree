@@ -8369,7 +8369,42 @@ window.db = {
         "person_alexandr_zalmanov_1919",
         "person_faina_1919"
       ],
-      "spouse": null
+      "spouse": "person_faina_smagarinsky"
+    }
+  },
+  "person_faina_smagarinsky": {
+    "id": "person_faina_smagarinsky",
+    "name": {
+      "ru": "Фаина Смагаринская (Торбина)",
+      "en": "New Person"
+    },
+    "years": "18.12.1939 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Яков Александрович Смагаринский",
+        "en": "Yakov Alexandrovich Smagarinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_yakov_smagarinsky_1939"
     }
   }
 };

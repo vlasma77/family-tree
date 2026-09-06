@@ -5783,6 +5783,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Яков Александрович Смагаринский.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яков Александрович Смагаринский",
+        "en": "Yakov Alexandrovich Smagarinsky"
+      }
+    },
+    {
       "url": "Яков Смагаринский и Лариса Патракова.jpg",
       "type": "image",
       "title": {
