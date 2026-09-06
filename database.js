@@ -8235,5 +8235,39 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_anna__rudovsky": {
+    "id": "person_anna__rudovsky",
+    "name": {
+      "ru": "Анна Львовна Рудовская",
+      "en": "Anna Lvovna Rudovsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_lev_rudovsky",
+        "person_clara_rudovsky"
+      ],
+      "spouse": null
+    }
   }
 };
