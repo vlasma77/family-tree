@@ -5806,5 +5806,31 @@ window.documentsIndex = {
         "en": "Yakov, Baikalsk 1969"
       }
     }
+  ],
+  "person_vladimir_1948": [
+    {
+      "url": "Владимир Александрович Смагаринский.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Владимир Александрович Смагаринский",
+        "en": "Vladimir Alexandrovich Smagarinsky"
+      }
+    },
+    {
+      "url": "Владимир с сестрой Ларисой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Владимир с сестрой Ларисой",
+        "en": "Vladimir with his sister Larisa"
+      }
+    },
+    {
+      "url": "записи о смерти Смагаринских, Австралия.pdf",
+      "type": "document",
+      "title": {
+        "ru": "записи о смерти Смагаринских, Австралия",
+        "en": "Smagarinsky death records, Australia"
+      }
+    }
   ]
 };

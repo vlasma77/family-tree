@@ -1466,6 +1466,9 @@ PANORAMA: panorama_dvor
 Яков Смагаринский и Лариса Патракова = Yakov Smagarinsky and Larisa Patrakova
 Яков, г. Байкальск 1969 = Yakov, Baikalsk 1969
 Яков Александрович Смагаринский = Yakov Alexandrovich Smagarinsky
+Владимир Александрович Смагаринский = Vladimir Alexandrovich Smagarinsky
+Владимир с сестрой Ларисой = Vladimir with his sister Larisa
+
 
 
 

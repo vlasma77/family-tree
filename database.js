@@ -8406,5 +8406,41 @@ window.db = {
       "parents": [],
       "spouse": "person_yakov_smagarinsky_1939"
     }
+  },
+  "person_vladimir_1948": {
+    "id": "person_vladimir_1948",
+    "name": {
+      "ru": "Владимир Александрович Смагаринский",
+      "en": "Vladimir Alexandrovich Smagarinsky"
+    },
+    "years": "09.10.1948 - 26.11.2021",
+    "mainPhoto": "photos/vladimir_alexandrov1950.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Рита Смагаринская",
+        "en": "Rita Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Руквуд, городской совет Камберленда, Новый Южный Уэльс, Австралия",
+        "en": "Rookwood, Cumberland City Council, New South Wales, Australia"
+      }
+    },
+    "bio": {
+      "ru": "У Володи был музыкальный слух и он хорошо пел и пел в детстве каждый день. Когда приходили гости наш папа устраивал для них концерт - играл на мандолине а Вова, тогда еще ребенок, стоя в кроватке пел. Папа мечтал сделать из него виолончелиста, но Володя пошел другим путем. Тогда только становилась модной профессия электроника, по совету старшего брата он ее и выбрал. - из воспоминаний сестры Ларисы",
+      "en": "Volodya had an ear for music and sang well, singing every day as a child. When guests came over, our dad would put on a concert for them – he'd play the mandolin, and Vova, then still a baby, would sing standing up in his crib. Dad dreamed of making him a cellist, but Volodya chose a different path. Electronics engineering was just becoming fashionable back then, and on his older brother's advice, he chose it.- from the memoirs of sister Larisa"
+    },
+    "links": {
+      "parents": [
+        "person_alexandr_zalmanov_1919",
+        "person_faina_1919"
+      ],
+      "spouse": null
+    }
   }
 };
