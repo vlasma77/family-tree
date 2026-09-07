@@ -5832,5 +5832,15 @@ window.documentsIndex = {
         "en": "Smagarinsky death records, Australia"
       }
     }
+  ],
+  "person_rita_smagarinsky": [
+    {
+      "url": "Рита Смагаринская.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рита Смагаринская",
+        "en": "Rita Smagarinsky"
+      }
+    }
   ]
 };

@@ -8003,6 +8003,7 @@ window.db = {
       "en": "Alexander Zalmanovich Smagarinsky"
     },
     "years": "16.12.1919 - 31.01.2012",
+    "isDeceased": true,
     "mainPhoto": "photos/alexandr_smagarinsky1919.jpg",
     "milestones": {
       "birthPlace": {
@@ -8041,6 +8042,7 @@ window.db = {
       "en": "Faina Efimovna Smagarinsky (Mezhubovsky)"
     },
     "years": "08.08.1919 - 23.12.2007",
+    "isDeceased": true,
     "mainPhoto": "photos/faina_smagarinsky.jpg",
     "milestones": {
       "birthPlace": {
@@ -8075,6 +8077,7 @@ window.db = {
       "en": "Sara-Gisya Zalmanovna Katenberg (Stagarinsky)"
     },
     "years": "1908 - ?",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -8110,6 +8113,7 @@ window.db = {
       "en": "Naum Katenberg"
     },
     "years": "",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -8376,9 +8380,10 @@ window.db = {
     "id": "person_faina_smagarinsky",
     "name": {
       "ru": "Фаина Смагаринская (Торбина)",
-      "en": "New Person"
+      "en": "Faina Smagarinsky (Torbina)"
     },
     "years": "18.12.1939 -",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -8414,14 +8419,15 @@ window.db = {
       "en": "Vladimir Alexandrovich Smagarinsky"
     },
     "years": "09.10.1948 - 26.11.2021",
+    "isDeceased": true,
     "mainPhoto": "photos/vladimir_alexandrov1950.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
       },
       "marriage": {
-        "ru": "Рита Смагаринская",
-        "en": "Rita Smagarinsky"
+        "ru": "Рита Смагаринская (Коган)",
+        "en": "Rita Smagarinsky (Kogan)"
       },
       "occupation": {
         "ru": ""
@@ -8440,7 +8446,40 @@ window.db = {
         "person_alexandr_zalmanov_1919",
         "person_faina_1919"
       ],
-      "spouse": null
+      "spouse": "person_rita_smagarinsky"
+    }
+  },
+  "person_rita_smagarinsky": {
+    "id": "person_rita_smagarinsky",
+    "name": {
+      "ru": "Рита Смагаринская (Коган)",
+      "en": "Rita Smagarinsky (Kogan)"
+    },
+    "years": "1950 - ?",
+    "mainPhoto": "photos/rita_smagarinsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Владимир Александрович Смагаринский",
+        "en": "Vladimir Alexandrovich Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Руквуд, городской совет Камберленда, Новый Южный Уэльс, Австралия",
+        "en": "Rookwood, Cumberland City Council, New South Wales, Australia"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_vladimir_1948"
     }
   }
 };

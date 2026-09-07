@@ -1468,9 +1468,7 @@ PANORAMA: panorama_dvor
 Яков Александрович Смагаринский = Yakov Alexandrovich Smagarinsky
 Владимир Александрович Смагаринский = Vladimir Alexandrovich Smagarinsky
 Владимир с сестрой Ларисой = Vladimir with his sister Larisa
-
-
-
+Рита Смагаринская = Rita Smagarinsky
 
 
 
