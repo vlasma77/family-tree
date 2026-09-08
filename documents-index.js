@@ -5681,7 +5681,15 @@ window.documentsIndex = {
   ],
   "person_alexandr_zalmanov_1919": [
     {
-      "url": "Александр и Фаина Смагаринские.jpg",
+      "url": "01_Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925",
+        "en": "Resettlement form for the family of Zalman Shevelevich Smagarinsky, 1925"
+      }
+    },
+    {
+      "url": "02_Александр и Фаина Смагаринские.jpg",
       "type": "image",
       "title": {
         "ru": "Александр и Фаина Смагаринские",
@@ -5689,23 +5697,63 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "архивное фото.jpg",
+      "url": "03_Александр и Фаина.jpg",
       "type": "image",
       "title": {
-        "ru": "архивное фото",
-        "en": "archive photo"
+        "ru": "Александр и Фаина",
+        "en": "Alexandr and Faina"
       }
     },
     {
-      "url": "записи о смерти Смагаринских, Австралия.pdf",
+      "url": "04_Александр с дочкой Ларисой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Александр с дочкой Ларисой",
+        "en": "Alexander with his daughter Larisa"
+      }
+    },
+    {
+      "url": "05_Лариса с папой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Лариса с папой",
+        "en": "Larisa with her dad"
+      }
+    },
+    {
+      "url": "06_Александр с поэтесой Ларисой Патраковой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Александр с поэтесой Ларисой Патраковой",
+        "en": "Alexander with poetess Larisa Patrakova"
+      }
+    },
+    {
+      "url": "07_Лариса Патракова с Александром Смагаринским .jpg",
+      "type": "image",
+      "title": {
+        "ru": "Лариса Патракова с Александром Смагаринским",
+        "en": "Larisa Patrakova with Alexander Smagarinsky"
+      }
+    },
+    {
+      "url": "08_рассказ и стих Ларисы Патраковой.pdf",
       "type": "document",
       "title": {
-        "ru": "записи о смерти Смагаринских, Австралия",
-        "en": "Smagarinsky death records, Australia"
+        "ru": "рассказ и стих Ларисы Патраковой",
+        "en": "a story and poem by Larisa Patrakova"
       }
     },
     {
-      "url": "могила Александра и Фаины.jpg",
+      "url": "09_Александр (Шая) Смагаринский.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Александр (Шая) Смагаринский",
+        "en": "Alexander (Shaya) Smagarinsky"
+      }
+    },
+    {
+      "url": "10_могила Александра и Фаины.jpg",
       "type": "image",
       "title": {
         "ru": "могила Александра и Фаины",
@@ -5713,11 +5761,11 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925.jpg",
-      "type": "image",
+      "url": "11_записи о смерти Смагаринских, Австралия.pdf",
+      "type": "document",
       "title": {
-        "ru": "Формуляр переселения семьи Смагаринского Залмана Шевелевича 1925",
-        "en": "Resettlement form for the family of Zalman Shevelevich Smagarinsky, 1925"
+        "ru": "записи о смерти Смагаринских, Австралия",
+        "en": "Smagarinsky death records, Australia"
       }
     }
   ],
@@ -5796,6 +5844,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Яков Смагаринский и Лариса Патракова",
         "en": "Yakov Smagarinsky and Larisa Patrakova"
+      }
+    },
+    {
+      "url": "Яков, Анна и Лариса в прекрасном японском саду недалеко от художественной галереи Госфорда.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яков, Анна и Лариса в прекрасном японском саду недалеко от художественной галереи Госфорда",
+        "en": "Yakov, Anna and Larisa in the beautiful Japanese garden near the Gosford Art Gallery"
       }
     },
     {

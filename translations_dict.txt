@@ -1469,6 +1469,16 @@ PANORAMA: panorama_dvor
 Владимир Александрович Смагаринский = Vladimir Alexandrovich Smagarinsky
 Владимир с сестрой Ларисой = Vladimir with his sister Larisa
 Рита Смагаринская = Rita Smagarinsky
+Александр и Фаина = Alexandr and Faina
+Александр (Шая) Смагаринский = Alexander (Shaya) Smagarinsky
+Александр с дочкой Ларисой = Alexander with his daughter Larisa
+Лариса с папой = Larisa with her dad
+Александр с поэтесой Ларисой Патраковой = Alexander with poetess Larisa Patrakova
+Лариса Патракова с Александром Смагаринским  = Larisa Patrakova with Alexander Smagarinsky
+рассказ и стих Ларисы Патраковой = a story and poem by Larisa Patrakova
+Яков, Анна и Лариса в прекрасном японском саду недалеко от художественной галереи Госфорда = Yakov, Anna and Larisa in the beautiful Japanese garden near the Gosford Art Gallery
+
+
 
 
 
