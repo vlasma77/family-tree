@@ -8481,5 +8481,107 @@ window.db = {
       "parents": [],
       "spouse": "person_vladimir_1948"
     }
+  },
+  "person_larisa_1945": {
+    "id": "person_larisa_1945",
+    "name": {
+      "ru": "Лариса Александровна Смагаринская",
+      "en": "Larisa Alexandrovna Smagarinsky"
+    },
+    "years": "09.12.1945 -",
+    "mainPhoto": "photos/larisa_smagarinsky1945.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Колин Лик",
+        "en": "Colin Leek"
+      },
+      "occupation": {
+        "ru": "художник, скульптор",
+        "en": "artist, sculptor"
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_alexandr_zalmanov_1919",
+        "person_faina_1919"
+      ],
+      "spouse": "person_colin_leek"
+    }
+  },
+  "person_colin_leek": {
+    "id": "person_colin_leek",
+    "name": {
+      "ru": "Колин Лик",
+      "en": "Colin Leek"
+    },
+    "years": "",
+    "mainPhoto": "photos/colin_leek.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Лариса Александровна Смагаринская",
+        "en": "Larisa Alexandrovna Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_larisa_1945"
+    }
+  },
+  "person_michail_vainman": {
+    "id": "person_michail_vainman",
+    "name": {
+      "ru": "Михаил Вайнман",
+      "en": "Mikhail Vainman"
+    },
+    "years": "",
+    "mainPhoto": "photos/michail_vainman.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_larisa_1945",
+        "person_colin_leek"
+      ],
+      "spouse": null
+    }
   }
 };

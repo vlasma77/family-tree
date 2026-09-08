@@ -5898,5 +5898,107 @@ window.documentsIndex = {
         "en": "Rita Smagarinsky"
       }
     }
+  ],
+  "person_larisa_1945": [
+    {
+      "url": "Владимир с сестрой Ларисой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Владимир с сестрой Ларисой",
+        "en": "Vladimir with his sister Larisa"
+      }
+    },
+    {
+      "url": "Колин с Ларисой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Колин с Ларисой",
+        "en": "Colin with Larisa"
+      }
+    },
+    {
+      "url": "Лариса Александровна Смагаринская.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Лариса Александровна Смагаринская",
+        "en": "Larisa Alexandrovna Smagarinsky"
+      }
+    },
+    {
+      "url": "Лариса Смагаринская и Колин Лик.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Лариса Смагаринская и Колин Лик",
+        "en": "Larisa Smagarinskaya and Colin Leake"
+      }
+    },
+    {
+      "url": "Момент рабочего процесса.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Момент рабочего процесса",
+        "en": "A moment in the work process"
+      }
+    }
+  ],
+  "person_colin_leek": [
+    {
+      "url": "вместе весело расслабляться на природе.jpg",
+      "type": "image",
+      "title": {
+        "ru": "вместе весело расслабляться на природе",
+        "en": "have fun relaxing together in nature"
+      }
+    },
+    {
+      "url": "время отдыха.jpg",
+      "type": "image",
+      "title": {
+        "ru": "время отдыха",
+        "en": "rest time"
+      }
+    },
+    {
+      "url": "Колин с Ларисой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Колин с Ларисой",
+        "en": "Colin with Larisa"
+      }
+    },
+    {
+      "url": "Лариса Смагаринская и Колин Лик.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Лариса Смагаринская и Колин Лик",
+        "en": "Larisa Smagarinskaya and Colin Leake"
+      }
+    },
+    {
+      "url": "смех от хорошей шутки .jpg",
+      "type": "image",
+      "title": {
+        "ru": "смех от хорошей шутки",
+        "en": "laughter from a good joke"
+      }
+    },
+    {
+      "url": "телефонная пауза.jpg",
+      "type": "image",
+      "title": {
+        "ru": "телефонная пауза",
+        "en": "telephone pause"
+      }
+    }
+  ],
+  "person_michail_vainman": [
+    {
+      "url": "Михаил Дмитриевич Вайнман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Михаил Дмитриевич Вайнман",
+        "en": "Mikhail Dmitrievich Vainman"
+      }
+    }
   ]
 };
