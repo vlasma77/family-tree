@@ -6180,5 +6180,31 @@ window.documentsIndex = {
         "en": "Milena with her mother, 2026"
       }
     }
+  ],
+  "person_daliah_smagarinsky": [
+    {
+      "url": "Далия Смагаринская.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Далия Смагаринская",
+        "en": "Daliah Smagarinsky"
+      }
+    },
+    {
+      "url": "Милена с дочкой Далией.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Милена с дочкой Далией",
+        "en": "Milena with her daughter Daliah"
+      }
+    },
+    {
+      "url": "В день рождения Далии, 2025.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В день рождения Далии, 2025",
+        "en": "On Daliah's birthday, 2025"
+      }
+    }
   ]
 };

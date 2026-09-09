@@ -8492,8 +8492,7 @@ window.db = {
     "mainPhoto": "photos/larisa_smagarinsky1945.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Белогорск, Россия",
-        "en": "Belogorsk, Russia"
+        "ru": ""
       },
       "marriage": {
         "ru": "Колин Лик",
@@ -8822,6 +8821,41 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_serge_smagarinsky"
+    }
+  },
+  "person_daliah_smagarinsky": {
+    "id": "person_daliah_smagarinsky",
+    "name": {
+      "ru": "Далия Сергеевна Смагаринская",
+      "en": "Daliah Sergeevna Smagarinsky"
+    },
+    "years": "2007 -",
+    "mainPhoto": "photos/daliah_smagarinsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Сидней, Австралия",
+        "en": "Sydney, Australia"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_serge_smagarinsky",
+        "person_milena_smagarinsky"
+      ],
+      "spouse": null
     }
   }
 };
