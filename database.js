@@ -8857,5 +8857,40 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_simon_smagarinsky": {
+    "id": "person_simon_smagarinsky",
+    "name": {
+      "ru": "Симон Сергеевич Смагаринский",
+      "en": "Simon Sergeevich Smagarinsky"
+    },
+    "years": "2013 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Сидней, Австралия",
+        "en": "Sydney, Australia"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_serge_smagarinsky",
+        "person_milena_smagarinsky"
+      ],
+      "spouse": null
+    }
   }
 };
