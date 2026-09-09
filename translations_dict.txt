@@ -1485,7 +1485,28 @@ PANORAMA: panorama_dvor
 телефонная пауза = telephone pause
 смех от хорошей шутки  = laughter from a good joke
 время отдыха = rest time
-Михаил Дмитриевич Вайнман = Mikhail Dmitrievich Vainman
+Михаил Дмитриевич Вайнман = Mikhail Dmitrievich Waynman
+В ресторане круизного судна = In a cruise ship restaurant
+Кадр из морского путешествия, 2012 = A still from a sea voyage, 2012
+Владимир, 2010 = Vladimir, 2010
+Контакт с представителем другой эпохи = Contact with a representative of another era
+Спустя более 25 лет вместе с Трейси Райан и Майклом Вайнманом = After more than 25 years with Tracey Ryan and Michael Waynman
+Майкл с Би, 2012 = Michael with Bee, 2012
+Майкл с Би Вайнман = Michael with Bee Waynman
+С друзьями, 2015 = With Friends, 2015
+Мастер-класс по восковой депиляции с Майклом Вайнманом, июль 2014 = Waxing Masterclass with Michael Waynman, July 2014
+Михаил Дмитриевич Вайнман = Mikhael Dmitrievich Vaynman
+Бракосочетание Сергея и Милены, 2007 = The wedding of Sergei and Milena, 2007
+Serge Smagarinsky, 2008 = Serge Smagarinsky, 2008
+Детские забавы с любимым папой = Children's fun with their beloved dad
+Безграничная радость первенцу, 2008 = Unlimited Joy for the Firstborn, 2008
+Сергей и Милена Смагаринские = Sergey and Milena Smagarinsky
+В день рождения Далии, 2025 = On Daliah's birthday, 2025
+Милена с мамой, 2026 = Milena with her mother, 2026
+Милена с дочкой Далией = Milena with her daughter Daliah
+10 летний юбилей = 10th anniversary
+Продолжение свадебной церемонии = Continuation of the wedding ceremony
+
 
 
 

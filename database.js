@@ -8492,7 +8492,8 @@ window.db = {
     "mainPhoto": "photos/larisa_smagarinsky1945.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": ""
+        "ru": "Белогорск, Россия",
+        "en": "Belogorsk, Russia"
       },
       "marriage": {
         "ru": "Колин Лик",
@@ -8563,7 +8564,8 @@ window.db = {
         "ru": ""
       },
       "marriage": {
-        "ru": ""
+        "ru": "Барбара Вайнман",
+        "en": "Barbara Vaynman"
       },
       "occupation": {
         "ru": ""
@@ -8581,7 +8583,245 @@ window.db = {
         "person_larisa_1945",
         "person_colin_leek"
       ],
+      "spouse": "person_barbara_vaynman"
+    }
+  },
+  "person_boris_smagarinsky_1973": {
+    "id": "person_boris_smagarinsky_1973",
+    "name": {
+      "ru": "Борис Владимирович Смагаринский",
+      "en": "Boris Vladimirovich Smagarinsky"
+    },
+    "years": "04.01.1973 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Сильвия Некреп",
+        "en": "Sylvia Nekrep"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_vladimir_1948",
+        "person_rita_smagarinsky"
+      ],
       "spouse": null
+    }
+  },
+  "person_barbara_vaynman": {
+    "id": "person_barbara_vaynman",
+    "name": {
+      "ru": "Барбара Вайнман",
+      "en": "Barbara Waynman"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Михаил Вайнман",
+        "en": "Mikhael Vaynman"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_michail_vainman"
+    }
+  },
+  "person_samuel_vaynman": {
+    "id": "person_samuel_vaynman",
+    "name": {
+      "ru": "Самуил Вайнман",
+      "en": "Samuel Vaynman"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_michail_vainman",
+        "person_barbara_vaynman"
+      ],
+      "spouse": null
+    }
+  },
+  "person_indiana_vaynman": {
+    "id": "person_indiana_vaynman",
+    "name": {
+      "ru": "Индиана Вайнман",
+      "en": "Indiana Vaynman"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_michail_vainman",
+        "person_barbara_vaynman"
+      ],
+      "spouse": null
+    }
+  },
+  "person_josef_vaynman": {
+    "id": "person_josef_vaynman",
+    "name": {
+      "ru": "Джозеф Вайнман",
+      "en": "Josef Vaynman"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_michail_vainman",
+        "person_barbara_vaynman"
+      ],
+      "spouse": null
+    }
+  },
+  "person_serge_smagarinsky": {
+    "id": "person_serge_smagarinsky",
+    "name": {
+      "ru": "Сергей Владимирович Смагаринский",
+      "en": "Serge Vladimirovich Smagarinsky"
+    },
+    "years": "29.05.1978 -",
+    "mainPhoto": "photos/serge_smagarinsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Кишинев, Молдова",
+        "en": "Chisinau, Moldova"
+      },
+      "marriage": {
+        "ru": "Милена Кац",
+        "en": "Milena Katz"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_vladimir_1948",
+        "person_rita_smagarinsky"
+      ],
+      "spouse": "person_milena_smagarinsky"
+    }
+  },
+  "person_milena_smagarinsky": {
+    "id": "person_milena_smagarinsky",
+    "name": {
+      "ru": "Милена Смагаринская (Кац)",
+      "en": "Milena Smagarinsky (Katz)"
+    },
+    "years": "",
+    "mainPhoto": "photos/milena_smagarinsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Минск, Беларусь",
+        "en": "Minsk, Belarus"
+      },
+      "marriage": {
+        "ru": "Сергей Владимирович Смагаринский",
+        "en": "Sergei Vladimirovich Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_serge_smagarinsky"
     }
   }
 };

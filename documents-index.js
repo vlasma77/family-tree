@@ -5865,15 +5865,39 @@ window.documentsIndex = {
   ],
   "person_vladimir_1948": [
     {
-      "url": "Владимир Александрович Смагаринский.jpg",
+      "url": "01_Владимир, 2010 (1).jpg",
       "type": "image",
       "title": {
-        "ru": "Владимир Александрович Смагаринский",
-        "en": "Vladimir Alexandrovich Smagarinsky"
+        "ru": "Владимир, 2010 (1)",
+        "en": "Archival Document"
       }
     },
     {
-      "url": "Владимир с сестрой Ларисой.jpg",
+      "url": "02_Контакт с представителем другой эпохи.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Контакт с представителем другой эпохи",
+        "en": "Contact with a representative of another era"
+      }
+    },
+    {
+      "url": "03_Кадр из морского путешествия, 2012.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Кадр из морского путешествия, 2012",
+        "en": "A still from a sea voyage, 2012"
+      }
+    },
+    {
+      "url": "04_В ресторане круизного судна.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В ресторане круизного судна",
+        "en": "In a cruise ship restaurant"
+      }
+    },
+    {
+      "url": "05_Владимир с сестрой Ларисой.jpg",
       "type": "image",
       "title": {
         "ru": "Владимир с сестрой Ларисой",
@@ -5881,7 +5905,15 @@ window.documentsIndex = {
       }
     },
     {
-      "url": "записи о смерти Смагаринских, Австралия.pdf",
+      "url": "06_Владимир Александрович Смагаринский.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Владимир Александрович Смагаринский",
+        "en": "Vladimir Alexandrovich Smagarinsky"
+      }
+    },
+    {
+      "url": "07_записи о смерти Смагаринских, Австралия.pdf",
       "type": "document",
       "title": {
         "ru": "записи о смерти Смагаринских, Австралия",
@@ -5993,11 +6025,159 @@ window.documentsIndex = {
   ],
   "person_michail_vainman": [
     {
+      "url": "Майкл с Би Вайнман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Майкл с Би Вайнман",
+        "en": "Michael with Bee Waynman"
+      }
+    },
+    {
       "url": "Михаил Дмитриевич Вайнман.jpg",
       "type": "image",
       "title": {
         "ru": "Михаил Дмитриевич Вайнман",
-        "en": "Mikhail Dmitrievich Vainman"
+        "en": "Mikhael Dmitrievich Vaynman"
+      }
+    },
+    {
+      "url": "Спустя более 25 лет вместе с Трейси Райан и Майклом Вайнманом.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Спустя более 25 лет вместе с Трейси Райан и Майклом Вайнманом",
+        "en": "After more than 25 years with Tracey Ryan and Michael Waynman"
+      }
+    },
+    {
+      "url": "Майкл с Би, 2012.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Майкл с Би, 2012",
+        "en": "Michael with Bee, 2012"
+      }
+    },
+    {
+      "url": "Мастер-класс по восковой депиляции с Майклом Вайнманом, июль 2014.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мастер-класс по восковой депиляции с Майклом Вайнманом, июль 2014",
+        "en": "Waxing Masterclass with Michael Waynman, July 2014"
+      }
+    },
+    {
+      "url": "С друзьями, 2015.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С друзьями, 2015",
+        "en": "With Friends, 2015"
+      }
+    }
+  ],
+  "person_serge_smagarinsky": [
+    {
+      "url": "01_Бракосочетание Сергея и Милены, 2007.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бракосочетание Сергея и Милены, 2007",
+        "en": "The wedding of Sergei and Milena, 2007"
+      }
+    },
+    {
+      "url": "02_Безграничная радость первенцу, 2008.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Безграничная радость первенцу, 2008",
+        "en": "Unlimited Joy for the Firstborn, 2008"
+      }
+    },
+    {
+      "url": "03_Сергей и Милена Смагаринские.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Сергей и Милена Смагаринские",
+        "en": "Sergey and Milena Smagarinsky"
+      }
+    },
+    {
+      "url": "04_Serge Smagarinsky, 2008.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Serge Smagarinsky, 2008",
+        "en": "Serge Smagarinsky, 2008"
+      }
+    },
+    {
+      "url": "05_Детские забавы с любимым папой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Детские забавы с любимым папой",
+        "en": "Children's fun with their beloved dad"
+      }
+    }
+  ],
+  "person_milena_smagarinsky": [
+    {
+      "url": "01_Бракосочетание Сергея и Милены, 2007.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Бракосочетание Сергея и Милены, 2007",
+        "en": "The wedding of Sergei and Milena, 2007"
+      }
+    },
+    {
+      "url": "02_Продолжение свадебной церемонии.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Продолжение свадебной церемонии",
+        "en": "Continuation of the wedding ceremony"
+      }
+    },
+    {
+      "url": "03_Безграничная радость первенцу, 2008.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Безграничная радость первенцу, 2008",
+        "en": "Unlimited Joy for the Firstborn, 2008"
+      }
+    },
+    {
+      "url": "04_Сергей и Милена Смагаринские.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Сергей и Милена Смагаринские",
+        "en": "Sergey and Milena Smagarinsky"
+      }
+    },
+    {
+      "url": "05_10 летний юбилей.jpg",
+      "type": "image",
+      "title": {
+        "ru": "10 летний юбилей",
+        "en": "10th anniversary"
+      }
+    },
+    {
+      "url": "Милена с дочкой Далией.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Милена с дочкой Далией",
+        "en": "Milena with her daughter Daliah"
+      }
+    },
+    {
+      "url": "В день рождения Далии, 2025.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В день рождения Далии, 2025",
+        "en": "On Daliah's birthday, 2025"
+      }
+    },
+    {
+      "url": "Милена с мамой, 2026.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Милена с мамой, 2026",
+        "en": "Milena with her mother, 2026"
       }
     }
   ]
