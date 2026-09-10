@@ -9137,7 +9137,7 @@ window.db = {
       "ru": "Адам Альбертович Смагаринский",
       "en": "Adam Albertovich Smagarinsky"
     },
-    "years": "",
+    "years": "03.06.1998 -",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -9171,7 +9171,7 @@ window.db = {
       "ru": "Джек Альбертович Смагаринский",
       "en": "Jack Albertovich Smagarinsky"
     },
-    "years": "",
+    "years": "28.01.2005 -",
     "mainPhoto": "photos/jack_smagarinsky.jpg",
     "milestones": {
       "birthPlace": {
