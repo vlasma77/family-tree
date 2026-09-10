@@ -9172,7 +9172,7 @@ window.db = {
       "en": "Jack Albertovich Smagarinsky"
     },
     "years": "",
-    "mainPhoto": "",
+    "mainPhoto": "photos/jack_smagarinsky.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""

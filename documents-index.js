@@ -6214,5 +6214,39 @@ window.documentsIndex = {
         "en": "On Daliah's birthday, 2025"
       }
     }
+  ],
+  "person_jack_smagarinsky": [
+    {
+      "url": "В приятном кафе на морском берегу.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В приятном кафе на морском берегу",
+        "en": "In a nice cafe on the seashore"
+      }
+    },
+    {
+      "url": "Дружеская вечеринка.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дружеская вечеринка",
+        "en": "A friendly party"
+      }
+    },
+    {
+      "url": "на Цепном мосту через Дунай, Будапешт.jpg",
+      "type": "image",
+      "title": {
+        "ru": "на Цепном мосту через Дунай, Будапешт",
+        "en": "on the Chain Bridge over the Danube, Budapest"
+      }
+    },
+    {
+      "url": "Джек, 2019.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Джек, 2019",
+        "en": "Jack, 2019"
+      }
+    }
   ]
 };
