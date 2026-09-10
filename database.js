@@ -8595,7 +8595,8 @@ window.db = {
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": ""
+        "ru": "Кишинёв, Молдова",
+        "en": "Chisinau, Moldova"
       },
       "marriage": {
         "ru": "Сильвия Некреп",
@@ -8617,7 +8618,7 @@ window.db = {
         "person_vladimir_1948",
         "person_rita_smagarinsky"
       ],
-      "spouse": null
+      "spouse": "person_silvia_nekrep"
     }
   },
   "person_barbara_vaynman": {
@@ -8891,6 +8892,38 @@ window.db = {
         "person_milena_smagarinsky"
       ],
       "spouse": null
+    }
+  },
+  "person_silvia_nekrep": {
+    "id": "person_silvia_nekrep",
+    "name": {
+      "ru": "Сильвия Некреп",
+      "en": "Silvia Nekrep"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Борис Владимирович Смагаринский",
+        "en": "Boris Vladimirovich Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_boris_smagarinsky_1973"
     }
   }
 };
