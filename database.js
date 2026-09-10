@@ -8994,5 +8994,175 @@ window.db = {
       "parents": [],
       "spouse": "person_edward_1963"
     }
+  },
+  "person_yana_1991": {
+    "id": "person_yana_1991",
+    "name": {
+      "ru": "Яна Роза Смагаринская",
+      "en": "Yana Rose Smagarinsky"
+    },
+    "years": "21.10.1991 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Провиденс, Род Айленд, США",
+        "en": "Providence, Rhode Island, USA"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_edward_1963",
+        "person_eleanor_1969"
+      ],
+      "spouse": null
+    }
+  },
+  "person_benjamin_1995": {
+    "id": "person_benjamin_1995",
+    "name": {
+      "ru": "Бенжамин Эдуардович Смагаринский",
+      "en": "Benjamin Eduardovich Smagarinsky"
+    },
+    "years": "17.03.1995 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_edward_1963",
+        "person_eleanor_1969"
+      ],
+      "spouse": null
+    }
+  },
+  "person_albert_smagarinsky": {
+    "id": "person_albert_smagarinsky",
+    "name": {
+      "ru": "Альберт Яковлевич Смагаринский",
+      "en": "Albert Yakovlevich Smagarinsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Лина Смагаринская",
+        "en": "Lina Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_yakov_smagarinsky_1939",
+        "person_faina_smagarinsky"
+      ],
+      "spouse": "person_lina_smagarinsky"
+    }
+  },
+  "person_lina_smagarinsky": {
+    "id": "person_lina_smagarinsky",
+    "name": {
+      "ru": "Лина Смагаринская",
+      "en": "Lina Smagarinsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Альберт Яковлевич Смагаринский",
+        "en": "Albert Yakovlevich Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_albert_smagarinsky"
+    }
+  },
+  "person_adam_smagarinsky": {
+    "id": "person_adam_smagarinsky",
+    "name": {
+      "ru": "Адам Альбертович Смагаринский",
+      "en": "Adam Albertovich Smagarinsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_albert_smagarinsky",
+        "person_lina_smagarinsky"
+      ],
+      "spouse": null
+    }
   }
 };
