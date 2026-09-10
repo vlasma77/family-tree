@@ -5971,6 +5971,14 @@ window.documentsIndex = {
         "ru": "Момент рабочего процесса",
         "en": "A moment in the work process"
       }
+    },
+    {
+      "url": "Яков, Анна и Лариса в прекрасном японском саду недалеко от художественной галереи Госфорда.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яков, Анна и Лариса в прекрасном японском саду недалеко от художественной галереи Госфорда",
+        "en": "Yakov, Anna and Larisa in the beautiful Japanese garden near the Gosford Art Gallery"
+      }
     }
   ],
   "person_colin_leek": [
