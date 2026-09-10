@@ -8925,5 +8925,74 @@ window.db = {
       "parents": [],
       "spouse": "person_boris_smagarinsky_1973"
     }
+  },
+  "person_edward_1963": {
+    "id": "person_edward_1963",
+    "name": {
+      "ru": "Эдвард Яковлевич Смагаринский",
+      "en": "Edward Yakovlevich Smagarinsky"
+    },
+    "years": "14.09.1963 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Душанбе, Таджикистан",
+        "en": "Dushanbe, Tajikistan"
+      },
+      "marriage": {
+        "ru": "Элеанор Смагаринская",
+        "en": "Eleanor Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_yakov_smagarinsky_1939",
+        "person_faina_smagarinsky"
+      ],
+      "spouse": "person_eleanor_1969"
+    }
+  },
+  "person_eleanor_1969": {
+    "id": "person_eleanor_1969",
+    "name": {
+      "ru": "Элеанор Смагаринская",
+      "en": "Eleanor Smagarinsky"
+    },
+    "years": "01.01.1969 -",
+    "mainPhoto": "photos/eleanor_1969.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Йонкерс, Нью-Йорк, США",
+        "en": "Yonkers, New York, USA"
+      },
+      "marriage": {
+        "ru": "Эдвард Яковлевич Смагаринский",
+        "en": "Edward Yakovlevich Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_edward_1963"
+    }
   }
 };
