@@ -9164,5 +9164,39 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_jack_smagarinsky": {
+    "id": "person_jack_smagarinsky",
+    "name": {
+      "ru": "Джек Альбертович Смагаринский",
+      "en": "Jack Albertovich Smagarinsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_albert_smagarinsky",
+        "person_lina_smagarinsky"
+      ],
+      "spouse": null
+    }
   }
 };
