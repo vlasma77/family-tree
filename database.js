@@ -9138,7 +9138,7 @@ window.db = {
       "en": "Adam Albertovich Smagarinsky"
     },
     "years": "03.06.1998 -",
-    "mainPhoto": "",
+    "mainPhoto": "photos/adam_smagarinsky.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""

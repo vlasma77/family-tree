@@ -572,6 +572,37 @@
       panel.style.display = "none";
     }
 
+// Центрирует дерево на выбранной персоне и закрывает боковую панель
+function centerTreeOnPerson(personId) {
+  if (!personId) return;
+  
+  console.log("🎯 Центрирую дерево на персоне:", personId);
+  
+  // Закрываем боковую панель
+  closePanel();
+  
+  // Центрируем дерево на персоне
+  if (treeInstance && typeof treeInstance.center === 'function') {
+    try {
+      treeInstance.center(personId);
+      
+      // Дополнительно можно выделить персону (если поддерживается)
+      if (typeof treeInstance.select === 'function') {
+        treeInstance.select(personId);
+      }
+      
+      console.log("✅ Дерево центрировано на:", personId);
+    } catch (e) {
+      console.warn("⚠️ Ошибка центрирования:", e);
+    }
+  } else {
+    console.warn("⚠️ Дерево не инициализировано");
+  }
+}
+
+// Делаем функцию доступной глобально
+window.centerTreeOnPerson = centerTreeOnPerson;
+
     function showCustomSidePanel(nodeId) {
       activeNodeId = nodeId;
       const person = db[nodeId];
@@ -646,6 +677,7 @@
 
           <div class="btn-row">
             ${archiveHtml}
+            <button class="action-btn" onclick="centerTreeOnPerson('${nodeId}')" title="${currentLang === 'ru' ? 'Показать в дереве' : 'Show in tree'}">🎯 ${currentLang === 'ru' ? 'В дереве' : 'In tree'}</button>
             <button class="action-btn" onclick="togglePureBio()">${bText.btn_more}</button>
             ${editMode ? `
             <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
@@ -882,6 +914,35 @@
       return parts[0] + " " + parts[parts.length - 1];
     }
 
+    // Автоматически определяет, умер ли человек, по строке "years"
+// Возвращает true, если в строке есть год смерти
+function isPersonDeceased(person) {
+  // Если явно указано isDeceased — используем его
+  if (person.isDeceased === true) return true;
+  if (person.isDeceased === false) return false;
+  
+  // Иначе анализируем строку years
+  const years = person.years;
+  if (!years || typeof years !== "string") return false;
+  
+  // Убираем пробелы
+  const clean = years.trim();
+  
+  // Проверяем, есть ли год смерти после тире
+  // Форматы: "1898 – 1970", "1924 — ?", "09.04.1919 – 16.03.1998"
+  const match = clean.match(/[–—-]\s*(.+)$/);
+  if (!match) return false; // нет тире — значит, жив
+  
+  const afterDash = match[1].trim();
+  
+  // Если после тире есть "?" — умер (год смерти неизвестен)
+  if (afterDash === "?" || afterDash === "??" || afterDash === "—") return true;
+  
+  // Если после тире есть цифры (год) — умер
+  if (/\d{4}/.test(afterDash)) return true;
+  
+  return false;
+}
     function getTreeData() {
       normalizeDatabase(); 
       const treeData = [];
@@ -913,9 +974,11 @@
           img: photoUrl
         };
 
-        if (person.isDeceased === true) {
+                // Теги узла: "deceased" рисует чёрную рамку (см. CSS)
+        // Используем автоматическое определение по годам
+        if (isPersonDeceased(person)) {
           node.tags = ["deceased"];
-        }
+        }git
         
         if (person.links) {
           if (person.links.spouse && String(person.links.spouse).trim()) {

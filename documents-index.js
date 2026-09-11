@@ -6215,6 +6215,16 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_adam_smagarinsky": [
+    {
+      "url": "Адам Смагаринский.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Адам Смагаринский",
+        "en": "Adam Smagarinsky"
+      }
+    }
+  ],
   "person_jack_smagarinsky": [
     {
       "url": "В приятном кафе на морском берегу.jpg",
