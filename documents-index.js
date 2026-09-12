@@ -6215,6 +6215,40 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_yana_1991": [
+    {
+      "url": "В Большом театре в Москве, 2014.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В Большом театре в Москве, 2014",
+        "en": "At the Bolshoi Theatre in Moscow, 2014"
+      }
+    },
+    {
+      "url": "В хорошем настроении, 2012.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В хорошем настроении, 2012",
+        "en": "In a Good Mood, 2012"
+      }
+    },
+    {
+      "url": "Яна Смагаринская, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яна Смагаринская, 2017",
+        "en": "Yana Smagarinsky, 2017"
+      }
+    },
+    {
+      "url": "Яна, 2016.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яна, 2016",
+        "en": "Yana, 2016"
+      }
+    }
+  ],
   "person_adam_smagarinsky": [
     {
       "url": "Адам Смагаринский.jpg",

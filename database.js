@@ -9002,7 +9002,7 @@ window.db = {
       "en": "Yana Rose Smagarinsky"
     },
     "years": "21.10.1991 -",
-    "mainPhoto": "",
+    "mainPhoto": "photos/yana_rose_smagarinsky.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Провиденс, Род Айленд, США",
