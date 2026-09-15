@@ -1446,10 +1446,15 @@ PANORAMA: panorama_dvor
 Израиль = Israel
 Польша = Poland
 Рая Фельдман (Геренштейн) = Raya Feldman (Gerenstein)
-Рая и ее дочь Полина (справа) = Raya and her daughter Polina (right)
+Рая и ее дочь Полина (слева) = Raya and her daughter Polina (left)
 Рая с внуком Лираном = Raya with her grandson Liran
 Полина и Шлема = Polina and Shlema
 Запись рождения сына Моисея = Record of the birth son Moses
+Петр Геренштейн = Pyotr Gerenstein
+Рая Натановна Фельдман (Геренштейн) = Raya Natanovna Feldman (Gerenstein)
+Могила Натана Геренштейн = Nathan Gerenstein's grave
+Станислав Шехтман = Stanislav Shekhtman
+Людмила Дидоренко = Lyudmila Didorenko
 
 # ==================================================================
 # Ветка Залмана Шевелевича Смагаринского

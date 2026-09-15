@@ -7652,7 +7652,7 @@ window.db = {
       "ru": "Рая Натановна Фельдман (Геренштейн)",
       "en": "Raya Nathanovna Feldman (Gerenstein)"
     },
-    "years": "1949 - ?",
+    "years": "1949 -",
     "mainPhoto": "photos/raya_feldman.jpg",
     "milestones": {
       "birthPlace": {
@@ -7690,7 +7690,7 @@ window.db = {
     },
     "years": "1947 - 2020",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/igor_Feldman.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Звенигородка, Черкасской области, Украина",
@@ -7725,7 +7725,7 @@ window.db = {
     },
     "years": "1951 - 2023",
     "isDeceased": true,
-    "mainPhoto": "",
+    "mainPhoto": "photos/anatoly_gerenstein.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Черкасск, Украина",
@@ -7762,7 +7762,7 @@ window.db = {
       "en": "Lyudmila Didorenko"
     },
     "years": "",
-    "mainPhoto": "",
+    "mainPhoto": "photos/ludmila_didorenko.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Умань, Черкасская обл., Украина",
@@ -7795,7 +7795,7 @@ window.db = {
       "en": "Petr Anatolyevich Gerenshtein"
     },
     "years": "2003 - ",
-    "mainPhoto": "",
+    "mainPhoto": "photos/peter_gerenstein.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Умань, Черкасская обл., Украина",
@@ -7913,12 +7913,12 @@ window.db = {
   },
   "person_stanislav_shehtman_1974": {
     "name": {
-      "ru": "Шехтман Станислав",
+      "ru": "Станислав Шехтман",
       "en": "Stanislav Shekhtman"
     },
     "years": "1974 –",
     "isDeceased": false,
-    "mainPhoto": "",
+    "mainPhoto": "photos/stanislav_shehtman.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Москва, Россия",
@@ -8311,7 +8311,7 @@ window.db = {
     "id": "person_radislav_rudovsky",
     "name": {
       "ru": "Радислав Рудовский",
-      "en": "New Person"
+      "en": "Radislav Rudovsky"
     },
     "years": "",
     "mainPhoto": "",

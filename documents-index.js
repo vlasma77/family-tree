@@ -5573,6 +5573,14 @@ window.documentsIndex = {
   ],
   "person_nathan_gerenstein": [
     {
+      "url": "Могила Натана Геренштейн.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Могила Натана Геренштейн",
+        "en": "Nathan Gerenstein's grave"
+      }
+    },
+    {
       "url": "Натан (Нюта) Геренштейн.jpg",
       "type": "image",
       "title": {
@@ -5607,11 +5615,19 @@ window.documentsIndex = {
   ],
   "person_raya_feldman": [
     {
-      "url": "Рая и ее дочь Полина (справа).jpg",
+      "url": "Рая и ее дочь Полина (слева).jpg",
       "type": "image",
       "title": {
-        "ru": "Рая и ее дочь Полина (справа)",
-        "en": "Raya and her daughter Polina (right)"
+        "ru": "Рая и ее дочь Полина (слева)",
+        "en": "Raya and her daughter Polina (left)"
+      }
+    },
+    {
+      "url": "Рая Натановна Фельдман (Геренштейн).jpg",
+      "type": "image",
+      "title": {
+        "ru": "Рая Натановна Фельдман (Геренштейн)",
+        "en": "Raya Natanovna Feldman (Gerenstein)"
       }
     },
     {
@@ -5628,6 +5644,36 @@ window.documentsIndex = {
       "title": {
         "ru": "Рая Фельдман (Геренштейн)",
         "en": "Raya Feldman (Gerenstein)"
+      }
+    }
+  ],
+  "person_anatoly_gerenstein": [
+    {
+      "url": "Могила Анатолия Геренштейна.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Могила Анатолия Геренштейна",
+        "en": "Archival Document"
+      }
+    }
+  ],
+  "person_ludmila_didorenko": [
+    {
+      "url": "Людмила Дидоренко.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Людмила Дидоренко",
+        "en": "Lyudmila Didorenko"
+      }
+    }
+  ],
+  "person_petr_gerenstein": [
+    {
+      "url": "Петр Геренштейн.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Петр Геренштейн",
+        "en": "Pyotr Gerenstein"
       }
     }
   ],
@@ -5666,6 +5712,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Рая с внуком Лираном",
         "en": "Raya with her grandson Liran"
+      }
+    },
+    {
+      "url": "Станислав Шехтман.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Станислав Шехтман",
+        "en": "Stanislav Shekhtman"
       }
     }
   ],
