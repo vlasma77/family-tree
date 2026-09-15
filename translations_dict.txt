@@ -1516,8 +1516,7 @@ Serge Smagarinsky, 2008 = Serge Smagarinsky, 2008
 Яна, 2016 = Yana, 2016
 В хорошем настроении, 2012 = In a Good Mood, 2012
 Яна Смагаринская, 2017 = Yana Smagarinsky, 2017
-
-
+raskaz_01 = Сборник рассказов Якова Смагаринского | Collection of stories by Yakov Smagarinsky
 
 
 

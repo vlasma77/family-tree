@@ -217,26 +217,51 @@ for (const personId in db) {
             const bookEntries = [];
             Object.keys(numberedGroups).forEach(prefix => {
                 const group = numberedGroups[prefix];
-                if (group.length >= BOOK_MIN_PAGES) {
-                    group.sort((a, b) => a.num - b.num);
-                    let rawTitle = prefix === '_noprefix_' ? 'Скан' : prefix.replace(/_/g, ' ').trim();
-                    let ruTitle, enTitle;
-                    if (isCyrillicText(rawTitle) && rawTitle) {
-                        ruTitle = capitalize(rawTitle);
-                        enTitle = translationsDict[rawTitle.toLowerCase()] || 'Scanned Document';
-                    } else {
-                        ruTitle = 'Отсканированный документ';
-                        enTitle = rawTitle ? niceEnglishTitle(rawTitle) : 'Scanned Document';
-                    }
-                    bookEntries.push({
-                        type: 'book',
-                        title: { ru: `${ruTitle} (${group.length} стр.)`, en: `${enTitle} (${group.length} pages)` },
-                        pages: group.map(g => g.file)
-                    });
-                } else {
-                    // группа слишком маленькая — считаем обычными отдельными файлами
-                    group.forEach(g => singles.push(g.file));
-                }
+                        if (group.length >= BOOK_MIN_PAGES) {
+            group.sort((a, b) => a.num - b.num);
+
+            // НОВОЕ: сначала пробуем найти ручной перевод для книги.
+            // Ключом может быть:
+            //   1) имя ПЕРВОГО файла группы без расширения ("raskaz_01")
+            //   2) префикс ("raskaz")
+            //   3) префикс с подчёркиванием ("raskaz_")
+            const firstFileName = group[0].file;
+            const firstBaseName = path.basename(firstFileName, path.extname(firstFileName)).toLowerCase();
+            const prefixKey = (prefix === '_noprefix_') ? '' : prefix.toLowerCase();
+
+            const manualBookTitle =
+                translationsDict[firstBaseName] ||
+                translationsDict[prefixKey] ||
+                translationsDict[(prefixKey + '_').toLowerCase()];
+
+            let rawTitle = prefix === '_noprefix_' ? 'Скан' : prefix.replace(/_/g, ' ').trim();
+            let ruTitle, enTitle;
+
+            if (manualBookTitle) {
+                const parts = manualBookTitle.split('|').map(s => s.trim());
+                ruTitle = parts[0];
+                enTitle = parts[1] || parts[0];
+            } else if (isCyrillicText(rawTitle) && rawTitle) {
+                ruTitle = capitalize(rawTitle);
+                enTitle = translationsDict[rawTitle.toLowerCase()] || 'Scanned Document';
+            } else {
+                ruTitle = 'Отсканированный документ';
+                enTitle = rawTitle ? niceEnglishTitle(rawTitle) : 'Scanned Document';
+            }
+
+            // Не дублируем "(N стр.)", если оно уже указано в названии из словаря
+            const hasPagesWord = /стр\.|page/i.test(ruTitle);
+            bookEntries.push({
+                type: 'book',
+                title: {
+                    ru: hasPagesWord ? ruTitle : `${ruTitle} (${group.length} стр.)`,
+                    en: hasPagesWord ? enTitle : `${enTitle} (${group.length} pages)`
+                },
+                pages: group.map(g => g.file)
+            });
+        } else {
+            group.forEach(g => singles.push(g.file));
+        }
             });
 
             const singleEntries = singles.map(file => {
