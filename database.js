@@ -923,7 +923,7 @@ window.db = {
         "en": "Astrakhan"
       },
       "marriage": {
-        "ru": "",
+        "ru": "Владислав Гольдес - в разводе",
         "en": ""
       },
       "occupation": {
@@ -948,7 +948,8 @@ window.db = {
         "person_yuri_mikhailovich_1950",
         "person_larisa_smagarinsky"
       ],
-      "spouse": null
+      "spouse": "person_vladislav_goldes",
+      "spouseNote": "в разводе"
     },
     "gender": "female"
   },
@@ -4778,7 +4779,7 @@ window.db = {
     },
     "years": "",
     "isDeceased": false,
-    "mainPhoto": "",
+    "mainPhoto": "photos/olga_lopatin.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "",
@@ -4807,10 +4808,10 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_sveta_1961",
-        "person_nikolay_lopatin"
+        "person_nikolay_lopatin",
+        "person_sveta_1961"
       ],
-      "spouse": null
+      "spouse": "person_adam_klein"
     },
     "gender": "female"
   },
@@ -9295,7 +9296,8 @@ window.db = {
         "person_anna_smagarinsky"
       ],
       "spouse": null
-    }
+    },
+    "gender": "female"
   },
   "person_ben_2021": {
     "id": "person_ben_2021",
@@ -9329,6 +9331,173 @@ window.db = {
         "person_anna_smagarinsky"
       ],
       "spouse": null
+    }
+  },
+  "person_vladislav_goldes": {
+    "id": "person_vladislav_goldes",
+    "name": {
+      "ru": "Владислав Гольдес",
+      "en": "New Person"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Элла Юрьевна Гольдес (Смагаринская) - в разводе"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_ella_goldes",
+      "spouseNote": "в разводе"
+    }
+  },
+  "person_maxim_goldes": {
+    "id": "person_maxim_goldes",
+    "name": {
+      "ru": "Максим Владиславович Гольдес",
+      "en": "Maxim Vladislavovich Goldes"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_vladislav_goldes",
+        "person_ella_goldes"
+      ],
+      "spouse": null
+    }
+  },
+  "person_elina_goldes": {
+    "id": "person_elina_goldes",
+    "name": {
+      "ru": "Элина Владиславовна Гольдес",
+      "en": "Elina Vladislavovna Goldes"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_vladislav_goldes",
+        "person_ella_goldes"
+      ],
+      "spouse": null
+    }
+  },
+  "person_emily_goldes": {
+    "id": "person_emily_goldes",
+    "name": {
+      "ru": "Эмили Владиславовна Гольдес",
+      "en": "Emily Vladislavovna Goldes"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_vladislav_goldes",
+        "person_ella_goldes"
+      ],
+      "spouse": null
+    },
+    "gender": "female"
+  },
+  "person_adam_klein": {
+    "id": "person_adam_klein",
+    "name": {
+      "ru": "Адам Клейн",
+      "en": "Adam Klein"
+    },
+    "years": "19.11.1982 -",
+    "mainPhoto": "photos/adam_klein.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Ольга Николаевна Лопатина, брак 11.02.2016, Израиль",
+        "en": "Olga Nikolaevna Lopatina, marriage 02/11/2016, Israel"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_olga_lopatina"
     }
   }
 };

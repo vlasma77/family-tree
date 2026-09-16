@@ -3911,6 +3911,88 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_olga_lopatina": [
+    {
+      "url": "Маленькое чудо большой любви.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Маленькое чудо большой любви",
+        "en": "A little miracle of great love"
+      }
+    },
+    {
+      "url": "На закате дня.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На закате дня",
+        "en": "At day's end"
+      }
+    },
+    {
+      "url": "С любимым папой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С любимым папой",
+        "en": "With my beloved dad"
+      }
+    },
+    {
+      "url": "Счастье в твоих объятиях.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Счастье в твоих объятиях",
+        "en": "Happiness in your arms"
+      }
+    },
+    {
+      "url": "Уютный ужин вдвоем.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Уютный ужин вдвоем",
+        "en": "A cozy dinner for two"
+      }
+    },
+    {
+      "url": "Иерусалим, 2020.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Иерусалим, 2020",
+        "en": "Jerusalem, 2020"
+      }
+    },
+    {
+      "url": "Национальный парк Брайс-Каньон, Тропик, США, 2016.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Национальный парк Брайс-Каньон, Тропик, США, 2016",
+        "en": "Bryce Canyon National Park, Tropic, USA, 2016"
+      }
+    },
+    {
+      "url": "Солнечная улыбка на древних камнях, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Солнечная улыбка на древних камнях, 2017",
+        "en": "A Sunny Smile on Ancient Stones, 2017"
+      }
+    },
+    {
+      "url": "Тель Авив, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Тель Авив, 2017",
+        "en": "Tel Aviv, 2017"
+      }
+    },
+    {
+      "url": "Утро в Италии, Лацио, Рим, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Утро в Италии, Лацио, Рим, 2017",
+        "en": "Morning in Italy, Lazio, Rome, 2017"
+      }
+    }
+  ],
   "person_alex_1965": [
     {
       "url": "Алекс, сын Анатолия.png",
@@ -6451,6 +6533,48 @@ window.documentsIndex = {
       "title": {
         "ru": "Джек, 2019",
         "en": "Jack, 2019"
+      }
+    }
+  ],
+  "person_adam_klein": [
+    {
+      "url": "Вместе — куда угодно.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вместе — куда угодно",
+        "en": "Together — anywhere"
+      }
+    },
+    {
+      "url": "Гранд каньон, США.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Гранд каньон, США",
+        "en": "Grand Canyon, USA"
+      }
+    },
+    {
+      "url": "Маленькое чудо большой любви.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Маленькое чудо большой любви",
+        "en": "A little miracle of great love"
+      }
+    },
+    {
+      "url": "Счастье в твоих объятиях.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Счастье в твоих объятиях",
+        "en": "Happiness in your arms"
+      }
+    },
+    {
+      "url": "Уютный ужин вдвоем.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Уютный ужин вдвоем",
+        "en": "A cozy dinner for two"
       }
     }
   ]
