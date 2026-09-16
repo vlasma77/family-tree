@@ -290,6 +290,7 @@ PANORAMA: panorama_dvor
 Профессиональный музыкант Валерий Линецкий = Professional musician Valery Linetzky
 Сын моряка = The Sailor's Son
 Улыбка будущего музыканта = The smile of a future musician
+Мамина дочка = Mommy's girl
 
 # ===================================================================
 # Мира Захарова (и её семья)

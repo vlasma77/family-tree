@@ -3505,6 +3505,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Мамина дочка.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Мамина дочка",
+        "en": "Mommy's girl"
+      }
+    },
+    {
       "url": "Мира с дочерьми.jpg",
       "type": "image",
       "title": {

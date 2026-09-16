@@ -914,7 +914,7 @@ window.db = {
       "ru": "Элла Юрьевна Гольдес (Смагаринская)",
       "en": "Ella Yurievna Goldes (Smagarinsky)"
     },
-    "years": "",
+    "years": "26.04.1974 -",
     "isDeceased": false,
     "mainPhoto": "",
     "milestones": {
@@ -4389,7 +4389,7 @@ window.db = {
       "ru": "Бэлла Романовна Ершова (Линецкая)",
       "en": "Bella Romanovna Ershova (Linetsky)"
     },
-    "years": "1957-",
+    "years": "27.04.1957-",
     "mainPhoto": "photos/bella1957.jpg",
     "milestones": {
       "birthPlace": {
@@ -4777,7 +4777,7 @@ window.db = {
       "ru": "Ольга Николаевна Лопатина",
       "en": "Olga Nikolaevna Lopatina"
     },
-    "years": "",
+    "years": "28.06.1983 -",
     "isDeceased": false,
     "mainPhoto": "photos/olga_lopatin.jpg",
     "milestones": {
@@ -4786,8 +4786,8 @@ window.db = {
         "en": ""
       },
       "marriage": {
-        "ru": "",
-        "en": ""
+        "ru": "Адам Клейн",
+        "en": "Adam Klein"
       },
       "occupation": {
         "ru": "",
@@ -7653,7 +7653,7 @@ window.db = {
       "ru": "Рая Натановна Фельдман (Геренштейн)",
       "en": "Raya Nathanovna Feldman (Gerenstein)"
     },
-    "years": "1949 -",
+    "years": "15.03.1949 -",
     "mainPhoto": "photos/raya_feldman.jpg",
     "milestones": {
       "birthPlace": {
