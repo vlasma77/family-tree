@@ -7690,7 +7690,7 @@ window.db = {
     },
     "years": "1947 - 2020",
     "isDeceased": true,
-    "mainPhoto": "photos/igor_Feldman.jpg",
+    "mainPhoto": "photos/igor_feldman.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Звенигородка, Черкасской области, Украина",
