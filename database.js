@@ -782,7 +782,7 @@ window.db = {
   },
   "person_irina_smagarinsky": {
     "name": {
-      "ru": "Ирина Владимировна Смагаринская",
+      "ru": "Ирина Владимировна Серебрякова (Смагаринская)",
       "en": "Irina Vladimirovna Smagarinsky"
     },
     "years": "",
@@ -862,7 +862,7 @@ window.db = {
         "person_vladimir_mikhailovich_1948",
         "person_olga_smagarinsky_1953"
       ],
-      "spouse": null
+      "spouse": "person_sagi_asis"
     },
     "gender": "female"
   },
@@ -9195,6 +9195,138 @@ window.db = {
       "parents": [
         "person_albert_smagarinsky",
         "person_lina_smagarinsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_mia_2007": {
+    "id": "person_mia_2007",
+    "name": {
+      "ru": "Мия Серебрякова",
+      "en": "New Person"
+    },
+    "years": "15.03.2007 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_irina_smagarinsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_sagi_asis": {
+    "id": "person_sagi_asis",
+    "name": {
+      "ru": "Саги Асис",
+      "en": "Sagi Asis"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_anna_smagarinsky"
+    }
+  },
+  "person_rony_2018": {
+    "id": "person_rony_2018",
+    "name": {
+      "ru": "Рони Асис-Смагаринская",
+      "en": "Roni Asis-Smagarinsky"
+    },
+    "years": "03.08.2018 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_sagi_asis",
+        "person_anna_smagarinsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_ben_2021": {
+    "id": "person_ben_2021",
+    "name": {
+      "ru": "Бен Асис-Смагаринский",
+      "en": "Ben Asis-Smagarinsky"
+    },
+    "years": "29.11.2021 -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_sagi_asis",
+        "person_anna_smagarinsky"
       ],
       "spouse": null
     }
