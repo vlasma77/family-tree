@@ -370,6 +370,8 @@ PANORAMA: panorama_dvor
 Мужской коллектив = Male collective
 Соломон Каплун, отец Михаила = Solomon Kaplun, Mikhail's father
 справа налево Мира, Миша и Соня Каплун, слева Ефим = from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim
+Даниель с Юлией Бавич = Daniel with Yulia Bavich
+Даниель и Юлия = Daniel and Yulia
 
 # ======================================================================
 # Энтины

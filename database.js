@@ -4615,22 +4615,22 @@ window.db = {
     },
     "gender": "male"
   },
-  "person_daniil_kaplun": {
+  "person_daniel_kaplun": {
     "name": {
-      "ru": "Даниил Леонидович Каплун",
-      "en": "Daniil Leonidovich Kaplun"
+      "ru": "Даниель Леонидович Каплун",
+      "en": "Daniel Leonidovich Kaplun"
     },
     "years": "",
     "isDeceased": false,
-    "mainPhoto": "",
+    "mainPhoto": "photos/daniel_kaplun.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Израиль",
+        "en": "Israel"
       },
       "marriage": {
-        "ru": "",
-        "en": ""
+        "ru": "Юлия Бавич",
+        "en": "Yulia Bavich"
       },
       "occupation": {
         "ru": "",
@@ -4654,7 +4654,7 @@ window.db = {
         "person_leonid_1954",
         "person_galina_kaplun"
       ],
-      "spouse": null
+      "spouse": "person_yulia_bavich"
     },
     "gender": "male"
   },

@@ -3817,6 +3817,24 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_daniel_kaplun": [
+    {
+      "url": "Даниель и Юлия .jpg",
+      "type": "image",
+      "title": {
+        "ru": "Даниель и Юлия",
+        "en": "Daniel and Yulia"
+      }
+    },
+    {
+      "url": "Даниель с Юлией Бавич.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Даниель с Юлией Бавич",
+        "en": "Daniel with Yulia Bavich"
+      }
+    }
+  ],
   "person_igor_1958": [
     {
       "url": "Встреча Линецких и Каплунов.jpg",
