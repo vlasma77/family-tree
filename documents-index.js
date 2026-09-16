@@ -6603,5 +6603,23 @@ window.documentsIndex = {
         "en": "A cozy dinner for two"
       }
     }
+  ],
+  "person_yulia_bavich": [
+    {
+      "url": "Даниель и Юлия .jpg",
+      "type": "image",
+      "title": {
+        "ru": "Даниель и Юлия",
+        "en": "Daniel and Yulia"
+      }
+    },
+    {
+      "url": "Даниель с Юлией Бавич.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Даниель с Юлией Бавич",
+        "en": "Daniel with Yulia Bavich"
+      }
+    }
   ]
 };

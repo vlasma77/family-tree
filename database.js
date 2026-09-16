@@ -9499,5 +9499,40 @@ window.db = {
       "parents": [],
       "spouse": "person_olga_lopatina"
     }
+  },
+  "person_yulia_bavich": {
+    "id": "person_yulia_bavich",
+    "name": {
+      "ru": "Юлия Бавич",
+      "en": "Yulia Bavich"
+    },
+    "years": "",
+    "mainPhoto": "photos/daniel_kaplun.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Даниель Леонидович Каплун",
+        "en": "Daniel Leonidovich Kaplun"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_daniel_kaplun"
+    }
   }
 };
