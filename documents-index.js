@@ -6807,5 +6807,31 @@ window.documentsIndex = {
         "en": "Daniel with Yulia Bavich"
       }
     }
+  ],
+  "person_vika_taranets": [
+    {
+      "url": "Вика Таранец.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вика Таранец",
+        "en": "Vika Taranets"
+      }
+    },
+    {
+      "url": "В день рождения Евгения, Будапешт, 2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В день рождения Евгения, Будапешт, 2018",
+        "en": "On Evgeny's birthday, Budapest, 2018"
+      }
+    },
+    {
+      "url": "Евгений с Викой, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Евгений с Викой, 2017",
+        "en": "Evgeny and Vika, 2017"
+      }
+    }
   ]
 };

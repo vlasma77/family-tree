@@ -9534,5 +9534,37 @@ window.db = {
       "parents": [],
       "spouse": "person_daniel_kaplun"
     }
+  },
+  "person_vika_taranets": {
+    "id": "person_vika_taranets",
+    "name": {
+      "ru": "Вика Таранец",
+      "en": "Vika Taranets"
+    },
+    "years": "",
+    "mainPhoto": "photos/vika_taranets.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Евгений Леонидович Каплун",
+        "en": "Evgeny Leonidovich Kaplun"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_evgeny_kaplun"
+    }
   }
 };
