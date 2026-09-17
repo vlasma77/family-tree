@@ -295,6 +295,9 @@ PANORAMA: panorama_dvor
 Сын моряка = The Sailor's Son
 Улыбка будущего музыканта = The smile of a future musician
 Мамина дочка = Mommy's girl
+У самого синего моря = By the Deep Blue Sea
+Прогулка по старинным улочкам = A walk through the old streets
+Праздник для маленькой принцессы = A celebration for a little princess
 
 # ===================================================================
 # Мира Захарова (и её семья)

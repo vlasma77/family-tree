@@ -3413,6 +3413,22 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Праздник для маленькой принцессы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Праздник для маленькой принцессы",
+        "en": "A celebration for a little princess"
+      }
+    },
+    {
+      "url": "Прогулка по старинным улочкам.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Прогулка по старинным улочкам",
+        "en": "A walk through the old streets"
+      }
+    },
+    {
       "url": "Семейная фотография.jpg",
       "type": "image",
       "title": {
@@ -3542,6 +3558,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Семья Линецких",
         "en": "The Linetsky family"
+      }
+    },
+    {
+      "url": "У самого синего моря .jpg",
+      "type": "image",
+      "title": {
+        "ru": "У самого синего моря",
+        "en": "By the Deep Blue Sea"
       }
     }
   ],
