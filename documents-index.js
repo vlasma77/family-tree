@@ -3873,6 +3873,64 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_evgeny_kaplun": [
+    {
+      "url": "Братья в праздничный день.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Братья в праздничный день",
+        "en": "Brothers on a festive day"
+      }
+    },
+    {
+      "url": "Вика Таранец.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вика Таранец",
+        "en": "Vika Taranets"
+      }
+    },
+    {
+      "url": "День свадьбы Даниеля и Юлии.jpg",
+      "type": "image",
+      "title": {
+        "ru": "День свадьбы Даниеля и Юлии",
+        "en": "Daniel and Yulia's wedding day"
+      }
+    },
+    {
+      "url": "Евгений Леонидович Каплун.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Евгений Леонидович Каплун",
+        "en": "Evgeny Leonidovich Kaplun"
+      }
+    },
+    {
+      "url": "В день рождения Евгения, Будапешт, 2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В день рождения Евгения, Будапешт, 2018",
+        "en": "On Evgeny's birthday, Budapest, 2018"
+      }
+    },
+    {
+      "url": "Евгений с Викой, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Евгений с Викой, 2017",
+        "en": "Evgeny and Vika, 2017"
+      }
+    },
+    {
+      "url": "На свадьбе Даниеля, 2019.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На свадьбе Даниеля, 2019",
+        "en": "At Daniel's wedding, 2019"
+      }
+    }
+  ],
   "person_daniel_kaplun": [
     {
       "url": "Даниель и Юлия .jpg",

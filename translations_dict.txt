@@ -383,6 +383,13 @@ PANORAMA: panorama_dvor
 В тени цветущей сакуры = In the shade of the blooming cherry blossoms
 Вместе на набережной Яффо = Together on the Jaffa waterfront
 Счастливая путешественница = Happy traveler
+На свадьбе Даниеля, 2019 = At Daniel's wedding, 2019
+Вика Таранец = Vika Taranets
+Евгений Леонидович Каплун = Evgeny Leonidovich Kaplun
+В день рождения Евгения, Будапешт, 2018 = On Evgeny's birthday, Budapest, 2018
+Евгений с Викой, 2017 = Evgeny and Vika, 2017
+День свадьбы Даниеля и Юлии = Daniel and Yulia's wedding day
+Братья в праздничный день = Brothers on a festive day
 
 # ======================================================================
 # Энтины

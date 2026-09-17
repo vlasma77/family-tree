@@ -4577,17 +4577,17 @@ window.db = {
       "ru": "Евгений Леонидович Каплун",
       "en": "Evgeny Leonidovich Kaplun"
     },
-    "years": "",
+    "years": "27.04.1978 -",
     "isDeceased": false,
-    "mainPhoto": "",
+    "mainPhoto": "photos/evgeny_kaplun.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsk Krai"
       },
       "marriage": {
-        "ru": "",
-        "en": ""
+        "ru": "Вика Таранец",
+        "en": "Vika Taranets"
       },
       "occupation": {
         "ru": "",
@@ -4611,7 +4611,7 @@ window.db = {
         "person_leonid_1954",
         "person_galina_kaplun"
       ],
-      "spouse": null
+      "spouse": "person_vika_taranets"
     },
     "gender": "male"
   },
