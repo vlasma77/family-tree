@@ -4537,7 +4537,7 @@ window.db = {
       "ru": "Галина Каплун",
       "en": "Galina Kaplun"
     },
-    "years": "",
+    "years": "14.11.1954 -",
     "isDeceased": false,
     "mainPhoto": "photos/galina_kaplun.jpg",
     "milestones": {

@@ -3809,11 +3809,43 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "В тени цветущей сакуры.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В тени цветущей сакуры",
+        "en": "In the shade of the blooming cherry blossoms"
+      }
+    },
+    {
+      "url": "Вместе на набережной Яффо.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вместе на набережной Яффо",
+        "en": "Together on the Jaffa waterfront"
+      }
+    },
+    {
       "url": "Молодая семья Каплун.jpg",
       "type": "image",
       "title": {
         "ru": "Молодая семья Каплун",
         "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Моменты радости и гастрономических открытий.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Моменты радости и гастрономических открытий",
+        "en": "Moments of joy and gastronomic discoveries"
+      }
+    },
+    {
+      "url": "Счастливая путешественница.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Счастливая путешественница",
+        "en": "Happy traveler"
       }
     }
   ],

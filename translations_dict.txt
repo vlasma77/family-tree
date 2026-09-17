@@ -372,6 +372,10 @@ PANORAMA: panorama_dvor
 справа налево Мира, Миша и Соня Каплун, слева Ефим = from right to left: Mira, Misha and Sonya Kaplun, on the left: Efim
 Даниель с Юлией Бавич = Daniel with Yulia Bavich
 Даниель и Юлия = Daniel and Yulia
+Моменты радости и гастрономических открытий = Moments of joy and gastronomic discoveries
+В тени цветущей сакуры = In the shade of the blooming cherry blossoms
+Вместе на набережной Яффо = Together on the Jaffa waterfront
+Счастливая путешественница = Happy traveler
 
 # ======================================================================
 # Энтины
