@@ -3993,11 +3993,27 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "С любимым папой.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С любимым папой",
+        "en": "With my beloved dad"
+      }
+    },
+    {
       "url": "Света и Николай на свадьбе дочери Ольги.jpg",
       "type": "image",
       "title": {
         "ru": "Света и Николай на свадьбе дочери Ольги",
         "en": "Sveta and Nikolai at their daughter Olga's wedding"
+      }
+    },
+    {
+      "url": "Три поколения в одном кадре.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Три поколения в одном кадре",
+        "en": "Three generations in one shot"
       }
     }
   ],
@@ -4019,6 +4035,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Прогулка сквозь века.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Прогулка сквозь века",
+        "en": "A Walk Through the Centuries"
+      }
+    },
+    {
       "url": "С любимым папой.jpg",
       "type": "image",
       "title": {
@@ -4035,11 +4059,27 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Три поколения в одном кадре.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Три поколения в одном кадре",
+        "en": "Three generations in one shot"
+      }
+    },
+    {
       "url": "Уютный ужин вдвоем.jpg",
       "type": "image",
       "title": {
         "ru": "Уютный ужин вдвоем",
         "en": "A cozy dinner for two"
+      }
+    },
+    {
+      "url": "Яблоко от яблони.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яблоко от яблони",
+        "en": "The apple doesn't fall far from the tree."
       }
     },
     {
