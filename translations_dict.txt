@@ -135,6 +135,10 @@
 Национальный парк Брайс-Каньон, Тропик, США, 2016 = Bryce Canyon National Park, Tropic, USA, 2016
 Солнечная улыбка на древних камнях, 2017 = A Sunny Smile on Ancient Stones, 2017
 Утро в Италии, Лацио, Рим, 2017 = Morning in Italy, Lazio, Rome, 2017
+Прогулка сквозь века = A Walk Through the Centuries
+Три поколения в одном кадре = Three generations in one shot
+В одном из Парижских уголков, 2015 = In a corner of Paris, 2015
+Яблоко от яблони = The apple doesn't fall far from the tree.
 
 # ===================================================================
 # Фира и её дети

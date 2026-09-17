@@ -3935,6 +3935,14 @@ window.documentsIndex = {
       }
     },
     {
+      "url": "Прогулка сквозь века.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Прогулка сквозь века",
+        "en": "A Walk Through the Centuries"
+      }
+    },
+    {
       "url": "Света и Николай на свадьбе дочери Ольги.jpg",
       "type": "image",
       "title": {
@@ -3948,6 +3956,30 @@ window.documentsIndex = {
       "title": {
         "ru": "Толя и Галя Смагаринские с маленькой Светочкой",
         "en": "Tolya and Galya Smagarinsky with little Svetochka"
+      }
+    },
+    {
+      "url": "Три поколения в одном кадре.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Три поколения в одном кадре",
+        "en": "Three generations in one shot"
+      }
+    },
+    {
+      "url": "Яблоко от яблони.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Яблоко от яблони",
+        "en": "The apple doesn't fall far from the tree."
+      }
+    },
+    {
+      "url": "В одном из Парижских уголков, 2015.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В одном из Парижских уголков, 2015",
+        "en": "In a corner of Paris, 2015"
       }
     }
   ],
