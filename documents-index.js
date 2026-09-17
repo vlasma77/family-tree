@@ -3933,6 +3933,14 @@ window.documentsIndex = {
   ],
   "person_daniel_kaplun": [
     {
+      "url": "Братья в праздничный день.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Братья в праздничный день",
+        "en": "Brothers on a festive day"
+      }
+    },
+    {
       "url": "Даниель и Юлия .jpg",
       "type": "image",
       "title": {
@@ -3946,6 +3954,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Даниель с Юлией Бавич",
         "en": "Daniel with Yulia Bavich"
+      }
+    },
+    {
+      "url": "День свадьбы Даниеля и Юлии.jpg",
+      "type": "image",
+      "title": {
+        "ru": "День свадьбы Даниеля и Юлии",
+        "en": "Daniel and Yulia's wedding day"
       }
     }
   ],
@@ -6805,6 +6821,14 @@ window.documentsIndex = {
       "title": {
         "ru": "Даниель с Юлией Бавич",
         "en": "Daniel with Yulia Bavich"
+      }
+    },
+    {
+      "url": "День свадьбы Даниеля и Юлии.jpg",
+      "type": "image",
+      "title": {
+        "ru": "День свадьбы Даниеля и Юлии",
+        "en": "Daniel and Yulia's wedding day"
       }
     }
   ],
