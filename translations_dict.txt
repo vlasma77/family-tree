@@ -298,6 +298,14 @@ PANORAMA: panorama_dvor
 У самого синего моря = By the Deep Blue Sea
 Прогулка по старинным улочкам = A walk through the old streets
 Праздник для маленькой принцессы = A celebration for a little princess
+Ниссим Браха и Ольга = Nissim Bracha and Olga
+В путешествие всей семьёй = A trip with the whole family
+Родительский дом — начало начал = The parental home — the very beginning of everything.
+Главней всего — погода в доме, 2024 = The Weather at Home Is What Matters Most, 2024
+Ольга и Ниссим Браха = Olga and Nissim Bracha
+На вечеринке = At the party
+Вечерний релакс = Evening relaxation
+Семейная гармония на фоне заката = Family harmony against the backdrop of a sunset
 
 # ===================================================================
 # Мира Захарова (и её семья)

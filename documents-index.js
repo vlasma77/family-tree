@@ -6857,5 +6857,137 @@ window.documentsIndex = {
         "en": "Evgeny and Vika, 2017"
       }
     }
+  ],
+  "person_olga_bracha_ershov": [
+    {
+      "url": "В путешествие всей семьёй.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В путешествие всей семьёй",
+        "en": "A trip with the whole family"
+      }
+    },
+    {
+      "url": "Вечерний релакс.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вечерний релакс",
+        "en": "Evening relaxation"
+      }
+    },
+    {
+      "url": "На вечеринке.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На вечеринке",
+        "en": "At the party"
+      }
+    },
+    {
+      "url": "Ниссим Браха и Ольга.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ниссим Браха и Ольга",
+        "en": "Nissim Bracha and Olga"
+      }
+    },
+    {
+      "url": "Ольга и Ниссим Браха.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга и Ниссим Браха",
+        "en": "Olga and Nissim Bracha"
+      }
+    },
+    {
+      "url": "Родительский дом — начало начал.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Родительский дом — начало начал",
+        "en": "The parental home — the very beginning of everything."
+      }
+    },
+    {
+      "url": "Семейная гармония на фоне заката.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная гармония на фоне заката",
+        "en": "Family harmony against the backdrop of a sunset"
+      }
+    },
+    {
+      "url": "Главней всего — погода в доме, 2024.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Главней всего — погода в доме, 2024",
+        "en": "The Weather at Home Is What Matters Most, 2024"
+      }
+    }
+  ],
+  "person_nissim_bracha": [
+    {
+      "url": "В путешествие всей семьёй.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В путешествие всей семьёй",
+        "en": "A trip with the whole family"
+      }
+    },
+    {
+      "url": "Вечерний релакс.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вечерний релакс",
+        "en": "Evening relaxation"
+      }
+    },
+    {
+      "url": "На вечеринке.jpg",
+      "type": "image",
+      "title": {
+        "ru": "На вечеринке",
+        "en": "At the party"
+      }
+    },
+    {
+      "url": "Ниссим Браха и Ольга.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ниссим Браха и Ольга",
+        "en": "Nissim Bracha and Olga"
+      }
+    },
+    {
+      "url": "Ольга и Ниссим Браха.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Ольга и Ниссим Браха",
+        "en": "Olga and Nissim Bracha"
+      }
+    },
+    {
+      "url": "Родительский дом — начало начал.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Родительский дом — начало начал",
+        "en": "The parental home — the very beginning of everything."
+      }
+    },
+    {
+      "url": "Семейная гармония на фоне заката.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейная гармония на фоне заката",
+        "en": "Family harmony against the backdrop of a sunset"
+      }
+    },
+    {
+      "url": "Главней всего — погода в доме, 2024.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Главней всего — погода в доме, 2024",
+        "en": "The Weather at Home Is What Matters Most, 2024"
+      }
+    }
   ]
 };

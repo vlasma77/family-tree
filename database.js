@@ -4226,7 +4226,7 @@ window.db = {
       "ru": "Людмила Романовна Кутикова  (Линецкая)",
       "en": "Lyudmila Romanovna Kutikova (Linetzkaya)"
     },
-    "years": "1951-",
+    "years": "07.05.1951-",
     "mainPhoto": "photos/luda1951.jpg",
     "milestones": {
       "birthPlace": {
@@ -4262,7 +4262,7 @@ window.db = {
       "ru": "Олег Кутиков",
       "en": "Oleg Kutikov"
     },
-    "years": "",
+    "years": "08.02.1952 -",
     "isDeceased": false,
     "mainPhoto": "photos/oleg_kutikov.jpg",
     "milestones": {
@@ -9565,6 +9565,72 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_evgeny_kaplun"
+    }
+  },
+  "person_olga_bracha_ershov": {
+    "id": "person_olga_bracha_ershov",
+    "name": {
+      "ru": "Ольга Браха-Ершов",
+      "en": "Olga Bracha-Ershov"
+    },
+    "years": "",
+    "mainPhoto": "photos/olga_bracha_ershov.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Ниссим Браха",
+        "en": "Nissim Bracha"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_bella_1957"
+      ],
+      "spouse": "person_nissim_bracha"
+    }
+  },
+  "person_nissim_bracha": {
+    "id": "person_nissim_bracha",
+    "name": {
+      "ru": "Ниссим Браха",
+      "en": "Nissim Bracha"
+    },
+    "years": "",
+    "mainPhoto": "photos/nissim_bracha.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Ольга Браха-Ершов",
+        "en": "Olga Bracha-Ershov"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_olga_bracha_ershov"
     }
   }
 };
