@@ -6001,7 +6001,7 @@ window.documentsIndex = {
       "type": "image",
       "title": {
         "ru": "Рая и ее дочь Полина (справа)",
-        "en": "Raya and her daughter Polina (right)"
+        "en": "Archival Document"
       }
     }
   ],
