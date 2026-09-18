@@ -7195,8 +7195,8 @@ window.db = {
   "person_abram_arkady_vekselman": {
     "id": "person_abram_arkady_vekselman",
     "name": {
-      "ru": "Абрам (Аркадий) Вексельман",
-      "en": "Abram (Arkady) Vekselman"
+      "ru": "Аркадий (Абрам) Вексельман",
+      "en": "Arkady (Abram) Vekselman"
     },
     "years": "",
     "isDeceased": true,
@@ -7207,7 +7207,8 @@ window.db = {
         "en": "Uman, Ukraine"
       },
       "marriage": {
-        "ru": "Мася Гринберг"
+        "ru": "Мася Вексельман (Гринберг)",
+        "en": "Masya Vekselman (Greenberg)"
       },
       "occupation": {
         "ru": ""
@@ -7222,8 +7223,8 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_zlota_1900",
-        "person_matvey_vekselman"
+        "person_matvey_vekselman",
+        "person_zlota_1900"
       ],
       "spouse": "person_masya_vekselman"
     }
@@ -7325,7 +7326,9 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": [],
+      "parents": [
+        "person_shmuel_greenberg"
+      ],
       "spouse": "person_abram_arkady_vekselman"
     }
   },
@@ -9631,6 +9634,136 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_olga_bracha_ershov"
+    }
+  },
+  "person_shmuel_greenberg": {
+    "id": "person_shmuel_greenberg",
+    "name": {
+      "ru": "Шмуель Гринберг",
+      "en": "Shmuel Greenberg"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": null
+    }
+  },
+  "person_michael_greenberg": {
+    "id": "person_michael_greenberg",
+    "name": {
+      "ru": "Михаель Гринберг",
+      "en": "Michael Greenberg"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_shmuel_greenberg"
+      ],
+      "spouse": null
+    }
+  },
+  "person_rivka_greenberg": {
+    "id": "person_rivka_greenberg",
+    "name": {
+      "ru": "Ривка (Рая) Гринберг",
+      "en": "New Person"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_shmuel_greenberg"
+      ],
+      "spouse": null
+    }
+  },
+  "person_alexey_greenberg": {
+    "id": "person_alexey_greenberg",
+    "name": {
+      "ru": "Алексей Гринберг",
+      "en": "Alexey Greenberg"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_shmuel_greenberg"
+      ],
+      "spouse": null
     }
   }
 };
