@@ -6989,5 +6989,39 @@ window.documentsIndex = {
         "en": "The Weather at Home Is What Matters Most, 2024"
       }
     }
+  ],
+  "person_maya_chernov": [
+    {
+      "url": "Борис и Майя Черновы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Борис и Майя Черновы",
+        "en": "Boris and Maya Chernov"
+      }
+    },
+    {
+      "url": "Под звёздами и лимонным деревом.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Под звёздами и лимонным деревом",
+        "en": "Under the stars and the lemon tree"
+      }
+    },
+    {
+      "url": "Городской релакс с ароматом латте, 2015.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Городской релакс с ароматом латте, 2015",
+        "en": "Urban relaxation with the aroma of a latte, 2015"
+      }
+    },
+    {
+      "url": "Энергия цвета Яркий момент, 2014.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Энергия цвета Яркий момент, 2014",
+        "en": "Energy of Color: A Bright Moment, 2014"
+      }
+    }
   ]
 };

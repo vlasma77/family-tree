@@ -425,7 +425,7 @@ PANORAMA: panorama_dvor
 Энтины историческ. записи 2 = Entiny historical records 2
 
 # ======================================================================
-# Микельманы
+# Микельманы, Черновы, Великанские
 # ======================================================================
 Миля (Миндля) Микельман, Офаким = Milya (Mindlya) Mikelman, Ofakim
 св-во о рождении Миндля Ройтман = Mindlya Roytman's birth certificate
@@ -447,6 +447,10 @@ PANORAMA: panorama_dvor
 Михаил с братом Владимиром = Mikhail with his brother Vladimir
 Могила Михаила, Офаким = Michael's Tomb, Ofakim
 Хиня Микельман, мать Михаила, Биробиджан 12-1961 = Khinya Mikelman, Mikhail's mother, Birobidzhan 12-1961
+Энергия цвета Яркий момент, 2014 = Energy of Color: A Bright Moment, 2014
+Борис и Майя Черновы = Boris and Maya Chernov
+Городской релакс с ароматом латте, 2015 = Urban relaxation with the aroma of a latte, 2015
+Под звёздами и лимонным деревом = Under the stars and the lemon tree
 
 # =======================================================================
 # Ройтман, Хмельницкие
