@@ -9776,8 +9776,7 @@ window.db = {
     "mainPhoto": "photos/maya_chernov.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": "Киев",
-        "en": "Kyiv"
+        "ru": "Киев"
       },
       "marriage": {
         "ru": "Борис Чернов",
@@ -9935,6 +9934,38 @@ window.db = {
         "person_maya_chernov"
       ],
       "spouse": "person_tali_chernov"
+    }
+  },
+  "person_tali_chernov": {
+    "id": "person_tali_chernov",
+    "name": {
+      "ru": "Тали Чернова",
+      "en": "Tali Chernova"
+    },
+    "years": "",
+    "mainPhoto": "photos/tali_chernov.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Павел Борисович Чернов",
+        "en": "Pavel Borisovich Chernov"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_pavel_chernov"
     }
   }
 };

@@ -459,6 +459,12 @@ PANORAMA: panorama_dvor
 Птицелов в Будапеште = The Bird-Catcher in Budapest
 С белым медведем в Праге, 12.2018 = With a polar bear in Prague, December 2018
 Храбрый джигит, 2025 = The Brave Dzhigit, 2025
+Морская прогулка 08.2017 = Boat trip, August 2017
+Девушка в красном, 2016 = Girl in Red, 2016
+Семейный ужин, 2018 = Family Dinner, 2018
+Когда рядом тот самый человек — больше ничего не нужно, 2018 = When the right person is by your side, nothing else is needed, 2018
+День бракосочетания = Wedding Day
+Счастливые часов не наблюдают, 2025 = The happy do not watch the clock, 2025
 
 # =======================================================================
 # Ройтман, Хмельницкие

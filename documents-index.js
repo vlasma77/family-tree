@@ -7107,5 +7107,87 @@ window.documentsIndex = {
         "en": "The Brave Dzhigit, 2025"
       }
     }
+  ],
+  "person_tali_chernov": [
+    {
+      "url": "День бракосочетания.jpg",
+      "type": "image",
+      "title": {
+        "ru": "День бракосочетания",
+        "en": "Wedding Day"
+      }
+    },
+    {
+      "url": "Брачный танец молодожёнов, 11.2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Брачный танец молодожёнов, 11.2018",
+        "en": "The newlyweds' wedding dance, November 2018"
+      }
+    },
+    {
+      "url": "Девушка в красном, 2016.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Девушка в красном, 2016",
+        "en": "Girl in Red, 2016"
+      }
+    },
+    {
+      "url": "Когда рядом тот самый человек — больше ничего не нужно, 2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Когда рядом тот самый человек — больше ничего не нужно, 2018",
+        "en": "When the right person is by your side, nothing else is needed, 2018"
+      }
+    },
+    {
+      "url": "Морская прогулка 08.2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Морская прогулка 08.2017",
+        "en": "Boat trip, August 2017"
+      }
+    },
+    {
+      "url": "Осенний променад, 2016.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Осенний променад, 2016",
+        "en": "Autumn Promenade, 2016"
+      }
+    },
+    {
+      "url": "Перед фантастическим полетом, 2022.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Перед фантастическим полетом, 2022",
+        "en": "Before the Fantastic Flight, 2022"
+      }
+    },
+    {
+      "url": "С белым медведем в Праге, 12.2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С белым медведем в Праге, 12.2018",
+        "en": "With a polar bear in Prague, December 2018"
+      }
+    },
+    {
+      "url": "Семейный ужин, 2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Семейный ужин, 2018",
+        "en": "Family Dinner, 2018"
+      }
+    },
+    {
+      "url": "Счастливые часов не наблюдают, 2025.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Счастливые часов не наблюдают, 2025",
+        "en": "The happy do not watch the clock, 2025"
+      }
+    }
   ]
 };
