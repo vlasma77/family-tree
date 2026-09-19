@@ -7041,5 +7041,71 @@ window.documentsIndex = {
         "en": "Under the stars and the lemon tree"
       }
     }
+  ],
+  "person_pavel_chernov": [
+    {
+      "url": "Перед казнью, Венгрия, Пешт, Вишеград.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Перед казнью, Венгрия, Пешт, Вишеград",
+        "en": "Before execution, Hungary, Pest, Visegrad"
+      }
+    },
+    {
+      "url": "Перед крупным выигрышем в казино Атлантис, Будапешт.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Перед крупным выигрышем в казино Атлантис, Будапешт",
+        "en": "Before a big win at the Atlantis Casino, Budapest"
+      }
+    },
+    {
+      "url": "Птицелов в Будапеште.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Птицелов в Будапеште",
+        "en": "The Bird-Catcher in Budapest"
+      }
+    },
+    {
+      "url": "Брачный танец молодожёнов, 11.2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Брачный танец молодожёнов, 11.2018",
+        "en": "The newlyweds' wedding dance, November 2018"
+      }
+    },
+    {
+      "url": "Осенний променад, 2016.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Осенний променад, 2016",
+        "en": "Autumn Promenade, 2016"
+      }
+    },
+    {
+      "url": "Перед фантастическим полетом, 2022.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Перед фантастическим полетом, 2022",
+        "en": "Before the Fantastic Flight, 2022"
+      }
+    },
+    {
+      "url": "С белым медведем в Праге, 12.2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "С белым медведем в Праге, 12.2018",
+        "en": "With a polar bear in Prague, December 2018"
+      }
+    },
+    {
+      "url": "Храбрый джигит, 2025.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Храбрый джигит, 2025",
+        "en": "The Brave Dzhigit, 2025"
+      }
+    }
   ]
 };

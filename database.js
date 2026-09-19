@@ -9899,5 +9899,41 @@ window.db = {
       "parents": [],
       "spouse": "person_lyudmila_goldberg"
     }
+  },
+  "person_pavel_chernov": {
+    "id": "person_pavel_chernov",
+    "name": {
+      "ru": "Павел Борисович Чернов",
+      "en": "Pavel Borisovich Chernov"
+    },
+    "years": "30.08.1981 -",
+    "mainPhoto": "photos/pavel_chernov.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Израиль",
+        "en": "Israel"
+      },
+      "marriage": {
+        "ru": "Тали Чернов, брак 22.11.2018",
+        "en": "Tali Chernov, marriage 22.11.2018"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_boris_chernov",
+        "person_maya_chernov"
+      ],
+      "spouse": "person_tali_chernov"
+    }
   }
 };

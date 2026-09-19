@@ -451,6 +451,14 @@ PANORAMA: panorama_dvor
 Борис и Майя Черновы = Boris and Maya Chernov
 Городской релакс с ароматом латте, 2015 = Urban relaxation with the aroma of a latte, 2015
 Под звёздами и лимонным деревом = Under the stars and the lemon tree
+Брачный танец молодожёнов, 11.2018 = The newlyweds' wedding dance, November 2018
+Осенний променад, 2016 = Autumn Promenade, 2016
+Перед казнью, Венгрия, Пешт, Вишеград = Before execution, Hungary, Pest, Visegrad
+Перед крупным выигрышем в казино Атлантис, Будапешт = Before a big win at the Atlantis Casino, Budapest
+Перед фантастическим полетом, 2022 = Before the Fantastic Flight, 2022
+Птицелов в Будапеште = The Bird-Catcher in Budapest
+С белым медведем в Праге, 12.2018 = With a polar bear in Prague, December 2018
+Храбрый джигит, 2025 = The Brave Dzhigit, 2025
 
 # =======================================================================
 # Ройтман, Хмельницкие
