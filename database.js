@@ -9772,11 +9772,12 @@ window.db = {
       "ru": "Майя Аркадьевна Чернова (Вексельман)",
       "en": "Maya Arkadyevna Chernova (Vekselman)"
     },
-    "years": "1958 -",
+    "years": "23.03.1955 -",
     "mainPhoto": "photos/maya_chernov.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": ""
+        "ru": "Киев",
+        "en": "Kyiv"
       },
       "marriage": {
         "ru": "Борис Чернов",
@@ -9842,7 +9843,7 @@ window.db = {
       "ru": "Борис Чернов",
       "en": "Boris Chernov"
     },
-    "years": "",
+    "years": "04.11.1954 -",
     "mainPhoto": "photos/boris_chernov.jpg",
     "milestones": {
       "birthPlace": {
