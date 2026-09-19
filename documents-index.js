@@ -5553,6 +5553,14 @@ window.documentsIndex = {
         "ru": "Aleksandr Chernov",
         "en": "Aleksandr Chernov"
       }
+    },
+    {
+      "url": "Шесть судеб — одна семья или Когда дети собираются вместе.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Шесть судеб — одна семья или Когда дети собираются вместе",
+        "en": "Six Lives, One Family — or When Children Come Together"
+      }
     }
   ],
   "person_khinya_mikelman": [

@@ -465,6 +465,8 @@ PANORAMA: panorama_dvor
 Когда рядом тот самый человек — больше ничего не нужно, 2018 = When the right person is by your side, nothing else is needed, 2018
 День бракосочетания = Wedding Day
 Счастливые часов не наблюдают, 2025 = The happy do not watch the clock, 2025
+Шесть судеб — одна семья или Когда дети собираются вместе = Six Lives, One Family — or When Children Come Together
+
 
 # =======================================================================
 # Ройтман, Хмельницкие
