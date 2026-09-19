@@ -7197,5 +7197,73 @@ window.documentsIndex = {
         "en": "The happy do not watch the clock, 2025"
       }
     }
+  ],
+  "person_marina_karpel": [
+    {
+      "url": "Вместе весело шагать по просторам.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вместе весело шагать по просторам",
+        "en": "It’s fun to march together across the open spaces"
+      }
+    },
+    {
+      "url": "Селфи путешественников.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Селфи путешественников",
+        "en": "Travelers' selfies"
+      }
+    },
+    {
+      "url": "Алексей и Марина Карпель, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алексей и Марина Карпель, 2017",
+        "en": "Alexey and Marina Karpel, 2017"
+      }
+    },
+    {
+      "url": "Гуляем по Манхэттену, 01.2019.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Гуляем по Манхэттену, 01.2019",
+        "en": "Walking around Manhattan, January 2019"
+      }
+    }
+  ],
+  "person_alexey_karpel": [
+    {
+      "url": "Вместе весело шагать по просторам.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вместе весело шагать по просторам",
+        "en": "It’s fun to march together across the open spaces"
+      }
+    },
+    {
+      "url": "Селфи путешественников.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Селфи путешественников",
+        "en": "Travelers' selfies"
+      }
+    },
+    {
+      "url": "Алексей и Марина Карпель, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Алексей и Марина Карпель, 2017",
+        "en": "Alexey and Marina Karpel, 2017"
+      }
+    },
+    {
+      "url": "Гуляем по Манхэттену, 01.2019.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Гуляем по Манхэттену, 01.2019",
+        "en": "Walking around Manhattan, January 2019"
+      }
+    }
   ]
 };

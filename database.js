@@ -9967,5 +9967,107 @@ window.db = {
       "parents": [],
       "spouse": "person_pavel_chernov"
     }
+  },
+  "person_inga_goldberg": {
+    "id": "person_inga_goldberg",
+    "name": {
+      "ru": "Инга Анатольевна Голдберг",
+      "en": "New Person"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_anatoly_goldberg",
+        "person_lyudmila_goldberg"
+      ],
+      "spouse": null
+    }
+  },
+  "person_marina_karpel": {
+    "id": "person_marina_karpel",
+    "name": {
+      "ru": "Марина Борисовна Карпель (Чернова)",
+      "en": "Marina Borisovna Karpel (Chernova)"
+    },
+    "years": "",
+    "mainPhoto": "photos/marina_karpel.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Алексей Карпель",
+        "en": "Alexey Karpel"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_boris_chernov",
+        "person_maya_chernov"
+      ],
+      "spouse": "person_alexey_karpel"
+    }
+  },
+  "person_alexey_karpel": {
+    "id": "person_alexey_karpel",
+    "name": {
+      "ru": "Алексей Карпель",
+      "en": "Alexey Karpel"
+    },
+    "years": "07.04.1977 -",
+    "mainPhoto": "photos/alexy_karpel.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Новокузнецк, Кемеровской области",
+        "en": "Novokuznetsk, Kemerovo Oblast"
+      },
+      "marriage": {
+        "ru": "Марина Борисовна Карпель (Чернова)",
+        "en": "Marina Borisovna Karpel (Chernova)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_marina_karpel"
+    }
   }
 };

@@ -466,7 +466,10 @@ PANORAMA: panorama_dvor
 День бракосочетания = Wedding Day
 Счастливые часов не наблюдают, 2025 = The happy do not watch the clock, 2025
 Шесть судеб — одна семья или Когда дети собираются вместе = Six Lives, One Family — or When Children Come Together
-
+Алексей и Марина Карпель, 2017 = Alexey and Marina Karpel, 2017
+Селфи путешественников = Travelers' selfies
+Вместе весело шагать по просторам = It’s fun to march together across the open spaces
+Гуляем по Манхэттену, 01.2019 = Walking around Manhattan, January 2019
 
 # =======================================================================
 # Ройтман, Хмельницкие
