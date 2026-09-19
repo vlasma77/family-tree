@@ -7023,5 +7023,23 @@ window.documentsIndex = {
         "en": "Energy of Color: A Bright Moment, 2014"
       }
     }
+  ],
+  "person_boris_chernov": [
+    {
+      "url": "Борис и Майя Черновы.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Борис и Майя Черновы",
+        "en": "Boris and Maya Chernov"
+      }
+    },
+    {
+      "url": "Под звёздами и лимонным деревом.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Под звёздами и лимонным деревом",
+        "en": "Under the stars and the lemon tree"
+      }
+    }
   ]
 };

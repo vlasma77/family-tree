@@ -9773,7 +9773,7 @@ window.db = {
       "en": "Maya Arkadyevna Chernova (Vekselman)"
     },
     "years": "1958 -",
-    "mainPhoto": "",
+    "mainPhoto": "photos/maya_chernov.jpg",
     "milestones": {
       "birthPlace": {
         "ru": ""
@@ -9799,6 +9799,73 @@ window.db = {
         "person_masya_vekselman"
       ],
       "spouse": "person_boris_chernov"
+    }
+  },
+  "person_lyudmila_goldberg": {
+    "id": "person_lyudmila_goldberg",
+    "name": {
+      "ru": "Людмила Аркадьевна Голдберг (Вексельман)",
+      "en": "Lyudmila Arkadyevna Goldberg (Vekselman)"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Анатолий Голдберг",
+        "en": "Anatoly Goldberg"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_abram_arkady_vekselman",
+        "person_masya_vekselman"
+      ],
+      "spouse": "person_anatoly_goldberg"
+    }
+  },
+  "person_boris_chernov": {
+    "id": "person_boris_chernov",
+    "name": {
+      "ru": "Борис Чернов",
+      "en": "Boris Chernov"
+    },
+    "years": "",
+    "mainPhoto": "photos/boris_chernov.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Майя Аркадьевна Чернова (Вексельман)",
+        "en": "Maya Arkadyevna Chernova (Vekselman)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_maya_chernov"
     }
   }
 };
