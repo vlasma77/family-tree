@@ -9867,5 +9867,37 @@ window.db = {
       "parents": [],
       "spouse": "person_maya_chernov"
     }
+  },
+  "person_anatoly_goldberg": {
+    "id": "person_anatoly_goldberg",
+    "name": {
+      "ru": "Анатолий Голдберг",
+      "en": "Anatoly Goldberg"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Людмила Аркадьевна Голдберг (Вексельман)",
+        "en": "Lyudmila Arkadyevna Goldberg (Vekselman)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_lyudmila_goldberg"
+    }
   }
 };
