@@ -6614,11 +6614,11 @@ window.db = {
   "person_tatyana_kostenko": {
     "id": "person_tatyana_kostenko",
     "name": {
-      "ru": "Татьяна Александровна Костенко(Великанская)",
+      "ru": "Татьяна Александровна Костенко (Великанская)",
       "en": "Tatyana Aleksandrovna Kostenko (Velikanskaya)"
     },
-    "years": "",
-    "mainPhoto": "",
+    "years": "23.09.1973 -",
+    "mainPhoto": "photos/tanya_kostenko.jpg",
     "milestones": {
       "birthPlace": {
         "ru": "Биробиджан, Хабаровский край",
@@ -8077,10 +8077,10 @@ window.db = {
   "person_sara_gisya": {
     "id": "person_sara_gisya",
     "name": {
-      "ru": "Сара-Гися Залмановна Катенберг (Смагаринская)",
-      "en": "Sara-Gisya Zalmanovna Katenberg (Stagarinsky)"
+      "ru": "Сара-Гися (Соня) Залмановна Катенберг (Смагаринская)",
+      "en": "Sara-Gisya (Sonya) Zalmanovna Katenberg (Smagarinsky)"
     },
-    "years": "1908 - ?",
+    "years": "1907 - ?",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {

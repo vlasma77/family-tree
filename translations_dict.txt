@@ -470,6 +470,12 @@ PANORAMA: panorama_dvor
 Селфи путешественников = Travelers' selfies
 Вместе весело шагать по просторам = It’s fun to march together across the open spaces
 Гуляем по Манхэттену, 01.2019 = Walking around Manhattan, January 2019
+В Беларуси, 08.2019 = In Belarus, August 2019
+В Парижском музее, 2018 = At a Paris Museum, 2018
+Вечер, который умеет красиво начинаться, 2017 = An Evening That Knows How to Begin Beautifully, 2017
+Внутренний двор Несвижского замка, Несвиж, Минская область, Беларусь = Inner courtyard of Nesvizh Castle, Nesvizh, Minsk Region, Belarus
+Деньги-денежки, жаренные семечки! = Money, money, roasted sunflower seeds!
+Опера Гарнье, Париж = Opéra Garnier, Paris
 
 # =======================================================================
 # Ройтман, Хмельницкие

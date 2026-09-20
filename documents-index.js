@@ -5519,6 +5519,56 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_tatyana_kostenko": [
+    {
+      "url": "Внутренний двор Несвижского замка, Несвиж, Минская область, Беларусь.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Внутренний двор Несвижского замка, Несвиж, Минская область, Беларусь",
+        "en": "Inner courtyard of Nesvizh Castle, Nesvizh, Minsk Region, Belarus"
+      }
+    },
+    {
+      "url": "Деньги-денежки, жаренные семечки!.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Деньги-денежки, жаренные семечки!",
+        "en": "Money, money, roasted sunflower seeds!"
+      }
+    },
+    {
+      "url": "Опера Гарнье, Париж.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Опера Гарнье, Париж",
+        "en": "Opéra Garnier, Paris"
+      }
+    },
+    {
+      "url": "В Беларуси, 08.2019.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В Беларуси, 08.2019",
+        "en": "In Belarus, August 2019"
+      }
+    },
+    {
+      "url": "В Парижском музее, 2018.jpg",
+      "type": "image",
+      "title": {
+        "ru": "В Парижском музее, 2018",
+        "en": "At a Paris Museum, 2018"
+      }
+    },
+    {
+      "url": "Вечер, который умеет красиво начинаться, 2017.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вечер, который умеет красиво начинаться, 2017",
+        "en": "An Evening That Knows How to Begin Beautifully, 2017"
+      }
+    }
+  ],
   "person_bella_chernov": [
     {
       "url": "Семья Микельман, Биробиджан, 1966 год.jpg",
