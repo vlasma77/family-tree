@@ -6794,17 +6794,19 @@ window.db = {
   "person_nataly_chernov": {
     "id": "person_nataly_chernov",
     "name": {
-      "ru": "Наталья Александровна Чернова",
-      "en": "Natalia Alexandrovna Chernova"
+      "ru": "Наталья Александровна Коган-Чернова",
+      "en": "Natalia Alexandrovna Kogan-Chernova"
     },
-    "years": "",
-    "mainPhoto": "",
+    "years": "1980 -",
+    "mainPhoto": "photos/nataly_kogan_chernov.jpg",
     "milestones": {
       "birthPlace": {
-        "ru": ""
+        "ru": "Биробиджан, Хабаровский край",
+        "en": "Birobidzhan, Khabarovsk Krai"
       },
       "marriage": {
-        "ru": ""
+        "ru": "Коган",
+        "en": "Kogan"
       },
       "occupation": {
         "ru": ""
@@ -6819,10 +6821,10 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_bella_chernov",
-        "person_aleksandr_chernov"
+        "person_aleksandr_chernov",
+        "person_bella_chernov"
       ],
-      "spouse": null
+      "spouse": "person_kogan_kogan"
     }
   },
   "person_khinya_mikelman": {
@@ -10068,6 +10070,38 @@ window.db = {
     "links": {
       "parents": [],
       "spouse": "person_marina_karpel"
+    }
+  },
+  "person_kogan_kogan": {
+    "id": "person_kogan_kogan",
+    "name": {
+      "ru": "Коган",
+      "en": "Kogan"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Наталья Александровна Коган-Чернова",
+        "en": "Natalya Aleksandrovna Kogan-Chernova"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_nataly_chernov"
     }
   }
 };

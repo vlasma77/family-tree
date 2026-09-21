@@ -5613,6 +5613,32 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_nataly_chernov": [
+    {
+      "url": "Доверительный момент.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Доверительный момент",
+        "en": "A Silent Moment of Trust"
+      }
+    },
+    {
+      "url": "Моменты отдыха и вкусного ужина.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Моменты отдыха и вкусного ужина",
+        "en": "Moments of relaxation and a delicious dinner"
+      }
+    },
+    {
+      "url": "Солнечный день у каналов Амстердама.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Солнечный день у каналов Амстердама",
+        "en": "A sunny day by the canals of Amsterdam"
+      }
+    }
+  ],
   "person_khinya_mikelman": [
     {
       "url": "Семья Микельман, Биробиджан, 1966 год.jpg",

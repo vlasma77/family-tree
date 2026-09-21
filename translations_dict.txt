@@ -476,6 +476,9 @@ PANORAMA: panorama_dvor
 Внутренний двор Несвижского замка, Несвиж, Минская область, Беларусь = Inner courtyard of Nesvizh Castle, Nesvizh, Minsk Region, Belarus
 Деньги-денежки, жаренные семечки! = Money, money, roasted sunflower seeds!
 Опера Гарнье, Париж = Opéra Garnier, Paris
+Солнечный день у каналов Амстердама = A sunny day by the canals of Amsterdam
+Моменты отдыха и вкусного ужина = Moments of relaxation and a delicious dinner
+Доверительный момент = A Silent Moment of Trust
 
 # =======================================================================
 # Ройтман, Хмельницкие
