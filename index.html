@@ -908,7 +908,10 @@
       return parts[0] + " " + parts[parts.length - 1];
     }
 
-    // Автоматически определяет, умер ли человек, по строке "years"
+       // Автоматически определяет, умер ли человек
+    // 1) Если явно указано isDeceased — используем его
+    // 2) Если в years есть год смерти — умер
+    // 3) Если в years есть только год рождения и прошло >100 лет — считаем умершим
     function isPersonDeceased(person) {
       if (person.isDeceased === true) return true;
       if (person.isDeceased === false) return false;
@@ -917,12 +920,31 @@
       if (!years || typeof years !== "string") return false;
 
       const clean = years.trim();
-      const match = clean.match(/[–—-]\s*(.+)$/);
-      if (!match) return false;
 
-      const afterDash = match[1].trim();
-      if (afterDash === "?" || afterDash === "??" || afterDash === "—") return true;
-      if (/\d{4}/.test(afterDash)) return true;
+      // Ищем все 4-значные годы в строке
+      const allYears = clean.match(/\d{4}/g) || [];
+      if (allYears.length === 0) return false;
+
+      // Проверяем, есть ли год смерти после тире
+      const match = clean.match(/[–—-]\s*(.+)$/);
+      if (match) {
+        const afterDash = match[1].trim();
+        // "?" или "??" после тире — умер (год смерти неизвестен)
+        if (afterDash === "?" || afterDash === "??" || afterDash === "—") return true;
+        // Если после тире есть 4-значный год — умер
+        if (/\d{4}/.test(afterDash)) return true;
+      }
+
+      // НОВОЕ: если в строке только ОДИН год (год рождения) и нет года смерти —
+      // проверяем, сколько лет прошло с года рождения.
+      if (allYears.length === 1) {
+        const birthYear = parseInt(allYears[0], 10);
+        const currentYear = new Date().getFullYear();
+        const age = currentYear - birthYear;
+
+        // Если больше 100 лет — считаем умершим
+        if (age > 100) return true;
+      }
 
       return false;
     }
