@@ -145,10 +145,37 @@
       overflow: hidden;
     }
 
-    /* ОФОРМЛЕНИЕ КАРТОЧЕК В ДЕРЕВЕ */
+            /* ОФОРМЛЕНИЕ КАРТОЧЕК В ДЕРЕВЕ */
+
+    /* Умершие — серый фон чуть темнее + чёрная рамка */
     .node.deceased>rect {
+      fill: #d9d9d9 !important;
       stroke: #000000 !important;
       stroke-width: 3px !important;
+    }
+
+    /* Живые мужчины — мягкий голубой + мягкая синяя обводка */
+    .node.male:not(.deceased)>rect {
+      fill: #CDE3F2 !important;
+      stroke: #7FAECB !important;
+      stroke-width: 2px !important;
+    }
+
+    /* Живые женщины — мягкий розовый + мягкая розовая обводка */
+    .node.female:not(.deceased)>rect {
+      fill: #F4D3E0 !important;
+      stroke: #C98EAB !important;
+      stroke-width: 2px !important;
+    }
+
+    /* Тёмный текст на всех карточках */
+    .node text,
+    .node tspan,
+    .node .field_0,
+    .node .field_1 {
+      fill: #1a1a1a !important;
+      stroke: none !important;
+      font-weight: 600 !important;
     }
 
     .field_0 {
@@ -908,11 +935,7 @@
       return parts[0] + " " + parts[parts.length - 1];
     }
 
-        // Автоматически определяет, умер ли человек
-    // 1) Если явно указано isDeceased — используем его
-    // 2) Если в years стоит "? — ?" или "? - ?" — считаем умершим
-    // 3) Если в years есть год смерти — умер
-    // 4) Если в years есть только год рождения и прошло >100 лет — умер
+    // Автоматически определяет, умер ли человек
     function isPersonDeceased(person) {
       if (person.isDeceased === true) return true;
       if (person.isDeceased === false) return false;
@@ -922,25 +945,18 @@
 
       const clean = years.trim();
 
-      // НОВОЕ: проверяем "? — ?" или "? - ?" (все виды тире)
       if (/^\?\s*[–—-]\s*\?\s*$/.test(clean)) return true;
 
-      // Ищем все 4-значные годы в строке
       const allYears = clean.match(/\d{4}/g) || [];
       if (allYears.length === 0) return false;
 
-      // Проверяем, есть ли год смерти после тире
       const match = clean.match(/[–—-]\s*(.+)$/);
       if (match) {
         const afterDash = match[1].trim();
-        // "?" или "??" после тире — умер (год смерти неизвестен)
         if (afterDash === "?" || afterDash === "??" || afterDash === "—") return true;
-        // Если после тире есть 4-значный год — умер
         if (/\d{4}/.test(afterDash)) return true;
       }
 
-      // Если в строке только ОДИН год (год рождения) и нет года смерти —
-      // проверяем, сколько лет прошло с года рождения.
       if (allYears.length === 1) {
         const birthYear = parseInt(allYears[0], 10);
         const currentYear = new Date().getFullYear();
@@ -982,9 +998,37 @@
           img: photoUrl
         };
 
-        if (isPersonDeceased(person)) {
-          node.tags = ["deceased"];
+        // НОВОЕ: определяем пол для цветовой подсветки карточки
+        let isFemaleForTag = false;
+        if (person.gender) {
+          isFemaleForTag = person.gender === "female";
+        } else {
+          let ruNameForTag = (person.name && person.name.ru) ? person.name.ru : "";
+          let firstWordForTag = ruNameForTag.trim().split(/\s+/)[0] || "";
+          const MALE_EXCEPTIONS = ["никита", "илья", "лёва", "лева", "фома", "кузьма", "гоша"];
+          let lowerForTag = firstWordForTag.toLowerCase();
+          if (MALE_EXCEPTIONS.includes(lowerForTag)) {
+            isFemaleForTag = false;
+          } else if (/[ая]$/i.test(firstWordForTag)) {
+            isFemaleForTag = true;
+          } else if (id) {
+            let idLowerForTag = id.toLowerCase();
+            isFemaleForTag = idLowerForTag.includes("alla") || idLowerForTag.includes("blyuma") ||
+                             idLowerForTag.includes("haya") || idLowerForTag.includes("khaya") ||
+                             idLowerForTag.includes("feyga") || idLowerForTag.includes("slava") ||
+                             idLowerForTag.includes("katya") || idLowerForTag.includes("mira") ||
+                             idLowerForTag.includes("sonya") || idLowerForTag.includes("natalya") ||
+                             idLowerForTag.includes("nella") || idLowerForTag.includes("nadejda");
+          }
         }
+
+        // Собираем теги: пол + умерший
+        const nodeTags = [];
+        nodeTags.push(isFemaleForTag ? "female" : "male");
+        if (isPersonDeceased(person)) {
+          nodeTags.push("deceased");
+        }
+        node.tags = nodeTags;
 
         if (person.links) {
           if (person.links.spouse && String(person.links.spouse).trim()) {
