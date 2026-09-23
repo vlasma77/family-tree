@@ -1989,7 +1989,7 @@ window.db = {
       "en": "Khana Leya Gnesin (Smagarinsky)"
     },
     "years": "",
-    "isDeceased": false,
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {},
     "bio": {
@@ -2067,7 +2067,7 @@ window.db = {
       "en": "Enta Gruna Sheynin (Smagarinsky)"
     },
     "years": "",
-    "isDeceased": false,
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {},
     "bio": {
@@ -2083,33 +2083,6 @@ window.db = {
       "spouse": "person_kalman_1869"
     },
     "archive": "person_enta_gruna",
-    "gender": "female"
-  },
-  "person_hana_1867": {
-    "name": {
-      "ru": "Хана Смагаринская",
-      "en": "Khana Smagarinsky"
-    },
-    "years": "1866/1867 — ?",
-    "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {},
-    "bio": {
-      "ru": "В списке встречается с годами рождения 1866 и 1867 — вероятно, расхождение источников.",
-      "en": ""
-    },
-    "familyText": {
-      "ru": [],
-      "en": []
-    },
-    "links": {
-      "parents": [
-        "person_shevel_m_1837",
-        "person_liba_1840"
-      ],
-      "spouse": null
-    },
-    "archive": "person_hana_1867",
     "gender": "female"
   },
   "person_zusya_1871": {
@@ -2145,7 +2118,7 @@ window.db = {
       "en": "Meer Yavets"
     },
     "years": "",
-    "isDeceased": false,
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {},
     "bio": {
@@ -2276,57 +2249,6 @@ window.db = {
     "archive": "person_avraam_david_1881",
     "gender": "male"
   },
-  "person_pesya_sh2_1880": {
-    "name": {
-      "ru": "Песя Шевелева Смагаринская",
-      "en": "Pesya Shevelevna Smagarinsky"
-    },
-    "years": "1880 — ?",
-    "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {},
-    "bio": {
-      "ru": "20.08.1904 зарегистрирован брак с Розенталь Ицко Фроимов, 1798 года рождения (вероятно, опечатка в архиве, скорее всего 1878), Чернигов.",
-      "en": ""
-    },
-    "familyText": {
-      "ru": [],
-      "en": []
-    },
-    "links": {
-      "parents": [
-        "person_shevel_m_1837",
-        "person_liba_1840"
-      ],
-      "spouse": "person_rozental_icko"
-    },
-    "archive": "person_pesya_sh2_1880",
-    "gender": "female"
-  },
-  "person_rozental_icko": {
-    "name": {
-      "ru": "Ицко Фроимов Розенталь",
-      "en": "Itzko Froimovich Rozental"
-    },
-    "years": "",
-    "isDeceased": false,
-    "mainPhoto": "",
-    "milestones": {},
-    "bio": {
-      "ru": "Муж Песи Шевелевой Смагаринской, брак 20.08.1904, Чернигов.",
-      "en": ""
-    },
-    "familyText": {
-      "ru": [],
-      "en": []
-    },
-    "links": {
-      "parents": [],
-      "spouse": "person_pesya_sh2_1880"
-    },
-    "archive": "person_rozental_icko",
-    "gender": "male"
-  },
   "person_rohlya_sh_1882": {
     "name": {
       "ru": "Рохля Шевелева Смагаринская",
@@ -2360,7 +2282,7 @@ window.db = {
       "en": "Avraam Movsha Agranovich"
     },
     "years": "1882 — ?",
-    "isDeceased": false,
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -2544,7 +2466,7 @@ window.db = {
       "en": "Aizik Meerovich Garelik"
     },
     "years": "1888 — ?",
-    "isDeceased": false,
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {},
     "bio": {
@@ -2941,7 +2863,7 @@ window.db = {
       "en": "Avraam Kalman Leikin"
     },
     "years": "",
-    "isDeceased": false,
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {},
     "bio": {
@@ -3804,8 +3726,8 @@ window.db = {
       "ru": "Берл Старобинский",
       "en": "Berl Starobinsky"
     },
-    "years": "",
-    "isDeceased": false,
+    "years": "? - ?",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -3898,8 +3820,8 @@ window.db = {
       "ru": "Эли Рубин",
       "en": "Eli Rubin"
     },
-    "years": "",
-    "isDeceased": false,
+    "years": "? - ?",
+    "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
@@ -4024,7 +3946,7 @@ window.db = {
   "person_starodubsky_father": {
     "name": {
       "ru": "Шай Стародубский",
-      "en": "Starodubsky"
+      "en": "Shay Starodubsky"
     },
     "years": "",
     "isDeceased": true,
@@ -7269,7 +7191,7 @@ window.db = {
   "person_faina_vekselman": {
     "id": "person_faina_vekselman",
     "name": {
-      "ru": "Фаина Вексельман",
+      "ru": "Фаина Вексельман (Ребенко)",
       "en": "Faina Vekselman"
     },
     "years": "",
