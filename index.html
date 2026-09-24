@@ -13,83 +13,289 @@
     body { font-family: sans-serif; margin: 20px; background-color: #fcfaf2; }
     h1 { text-align: center; color: maroon; }
     .active { font-weight: bold; color: maroon; }
-    .lang-btn.active { background-color: #4CAF50; color: white; border-color: #3e8e41; font-weight: bold; }
-    #header-bar { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-bottom: 15px; padding-right: 10px; position: relative; }
+
+    .lang-btn.active {
+      background-color: #4CAF50;
+      color: white;
+      border-color: #3e8e41;
+      font-weight: bold;
+    }
+
+    #header-bar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 15px;
+      padding-right: 10px;
+      position: relative;
+    }
     #custom-search-wrapper { position: relative; width: 220px; }
-    #custom-search-input { width: 100%; box-sizing: border-box; padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
-    #custom-search-results { position: absolute; top: 100%; left: 0; right: 0; background: #fff; border: 1px solid #ccc; border-top: none; max-height: 250px; overflow-y: auto; z-index: 50; display: none; text-align: left; }
-    #custom-search-results div { padding: 6px 10px; cursor: pointer; font-size: 14px; }
+    #custom-search-input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    #custom-search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+      max-height: 250px;
+      overflow-y: auto;
+      z-index: 50;
+      display: none;
+      text-align: left;
+    }
+    #custom-search-results div {
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
     #custom-search-results div:hover { background: #f0f0f0; }
+
     #main-wrapper { display: flex; gap: 15px; width: 100%; height: 780px; position: relative; }
-    #family-tree { flex-grow: 1; height: 100%; border: 1px solid #ccc; background: #fff; width: 100% !important; position: relative !important; }
-    #custom-side-panel { width: 380px; min-width: 380px; height: 100%; background: #fff; border: 1px solid #ccc; box-shadow: -2px 0 8px rgba(0,0,0,0.1); box-sizing: border-box; display: none; flex-direction: column; }
+    #family-tree {
+      flex-grow: 1;
+      height: 100%;
+      border: 1px solid #ccc;
+      background: #fff;
+      width: 100% !important;
+      position: relative !important;
+    }
+
+    #custom-side-panel {
+      width: 380px; min-width: 380px; height: 100%; background: #fff;
+      border: 1px solid #ccc; box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+      box-sizing: border-box; display: none; flex-direction: column;
+    }
+
     .panel-content-scroll { flex-grow: 1; overflow-y: auto; padding: 20px; }
     .panel-photo-container { text-align: center; margin-bottom: 15px; }
     .panel-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid maroon; box-shadow: 0 2px 5px rgba(0,0,0,0.15); }
     .panel-input-name { font-size: 18px; font-weight: bold; text-align: center; width: 100%; box-sizing: border-box; border: 1px solid #ddd; padding: 6px; border-radius: 4px; color: #333; margin-bottom: 6px; }
     .panel-input-years { font-style: italic; text-align: center; width: 100%; font-size: 13px; box-sizing: border-box; border: 1px solid #ddd; padding: 5px; border-radius: 4px; color: #666; margin-bottom: 15px; }
     .milestone-input { width: 100%; box-sizing: border-box; border: 1px solid #ddd; padding: 5px; border-radius: 4px; font-size: 13px; }
+
     .custom-title { font-weight: bold; margin-top: 18px; margin-bottom: 8px; color: maroon; border-bottom: 1px solid #ddd; padding-bottom: 3px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
     .milestones-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 13px; }
     .milestones-table td { padding: 5px 0; vertical-align: middle; }
     .td-lbl { font-weight: bold; color: #777; width: 35%; }
+
     .family-circle-container { max-height: 140px; overflow-y: auto; border: 1px solid #eee; background: #fafafa; border-radius: 4px; padding: 8px; }
     .family-list { margin: 0; padding-left: 0; list-style: none; font-size: 13px; line-height: 1.5; color: #444; }
     .family-list li { margin-bottom: 5px; }
     .family-link { color: maroon; text-decoration: none; cursor: pointer; font-weight: bold; }
     .family-link:hover { color: #600000; text-decoration: underline; }
+
     .btn-row { display: flex; gap: 6px; margin-top: 12px; margin-bottom: 12px; flex-wrap: wrap; }
     .action-btn { display: inline-flex; align-items: center; justify-content: center; gap: 4px; padding: 6px 12px; font-size: 12px; border-radius: 4px; border: 1px solid #ccc; background: #fdfdfd; cursor: pointer; font-weight: bold; transition: all 0.2s; }
     .action-btn:hover { background: #f0f0f0; border-color: #888; }
     .btn-archive { background: #8b8b8b !important; color: white !important; border: none; }
     .btn-archive.has-data { background: maroon !important; cursor: pointer; }
+
     .geni-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; background: #f5f3eb; padding: 8px; border-radius: 6px; border: 1px solid #d1c7bd; margin: 8px 0; }
     .geni-btn { padding: 6px; font-size: 12px; border: 1px solid #bbb; background: #fff; border-radius: 4px; cursor: pointer; text-align: left; color: #444; }
     .geni-btn:hover { background: maroon; color: white; }
+
     .bio-panel { background: #fdfbf7; border: 1px dashed #d1c7bd; padding: 10px; border-radius: 4px; margin-top: 10px; }
     .bio-textarea { width: 100%; height: 85px; box-sizing: border-box; border: 1px solid #ddd; padding: 6px; border-radius: 4px; font-size: 13px; resize: vertical; }
+
     .panel-fixed-footer { background: #f4f4f4; border-top: 1px solid #ccc; padding: 15px 20px; box-sizing: border-box; }
     .btn-save { background: #27ae60 !important; color: white !important; border: none; width: 100%; padding: 10px; font-size: 14px; font-weight: bold; margin-bottom: 8px; border-radius: 4px; cursor: pointer; display: block; text-align: center; }
     .btn-save:hover { background: #219653 !important; }
     .btn-download-db { background: maroon !important; color: white !important; border: none; width: 100%; padding: 10px; font-size: 13px; font-weight: bold; border-radius: 4px; cursor: pointer; display: block; text-align: center; }
     .btn-download-db:hover { background: #600000 !important; }
+
     .hidden-block { display: none; }
     .bft-edit-form, .bft-dialog, .bft-lightbox, .bft-control { display: none !important; }
-    .panel-close-btn { position: absolute; top: 10px; right: 15px; font-size: 28px; font-weight: bold; color: #999; cursor: pointer; z-index: 10; transition: color 0.2s; }
+
+    .panel-close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #999;
+      cursor: pointer;
+      z-index: 10;
+      transition: color 0.2s;
+    }
     .panel-close-btn:hover { color: maroon; }
-    .panel-textarea-name { font-family: sans-serif; font-size: 18px; font-weight: bold; text-align: center; width: 100%; box-sizing: border-box; border: 1px solid #ddd; padding: 6px; border-radius: 4px; color: #333; margin-bottom: 6px; resize: none; overflow: hidden; }
-    .node.deceased > rect { fill: #d9d9d9 !important; stroke: #000000 !important; stroke-width: 3px !important; }
-    .node.male:not(.deceased) > rect { fill: #CDE3F2 !important; stroke: #7FAECB !important; stroke-width: 2px !important; }
-    .node.female:not(.deceased) > rect { fill: #F4D3E0 !important; stroke: #C98EAB !important; stroke-width: 2px !important; }
-    .node text, .node tspan { fill: #1a1a1a !important; stroke: none !important; font-weight: 600 !important; }
+
+    .panel-textarea-name {
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      padding: 6px;
+      border-radius: 4px;
+      color: #333;
+      margin-bottom: 6px;
+      resize: none;
+      overflow: hidden;
+    }
+
+    /* ==== ОФОРМЛЕНИЕ КАРТОЧЕК ==== */
+    .node.deceased > rect {
+      fill: #d9d9d9 !important;
+      stroke: #000000 !important;
+      stroke-width: 3px !important;
+    }
+    .node.male:not(.deceased) > rect {
+      fill: #CDE3F2 !important;
+      stroke: #7FAECB !important;
+      stroke-width: 2px !important;
+    }
+    .node.female:not(.deceased) > rect {
+      fill: #F4D3E0 !important;
+      stroke: #C98EAB !important;
+      stroke-width: 2px !important;
+    }
+
+    .node text,
+    .node tspan {
+      fill: #1a1a1a !important;
+      stroke: none !important;
+      font-weight: 600 !important;
+    }
+
     .node text.field_0 { font-size: 18px !important; font-weight: bold !important; }
     .node text.field_1 { font-size: 12px !important; font-weight: normal !important; }
-    .node.male:not(.deceased):hover > rect { stroke: #4A90C2 !important; stroke-width: 3px !important; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2)); cursor: pointer; }
-    .node.female:not(.deceased):hover > rect { stroke: #D96B9E !important; stroke-width: 3px !important; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2)); cursor: pointer; }
-    .node.deceased:hover > rect { stroke: #000000 !important; stroke-width: 4px !important; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2)); cursor: pointer; }
-    [data-l-id] path { stroke: #8B0000 !important; stroke-width: 2.5px !important; }
-    #base_up path, #base_up ellipse, #hugo_up path, #hugo_up ellipse { fill: #4CAF50 !important; stroke: #4CAF50 !important; }
-    .tip-container { text-align: center; margin: -10px 0 15px 0; padding: 10px 20px; background: rgba(139,0,0,0.04); border-radius: 6px; border-left: 3px solid maroon; display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+
+    .node.male:not(.deceased):hover > rect {
+      stroke: #4A90C2 !important;
+      stroke-width: 3px !important;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+      cursor: pointer;
+    }
+    .node.female:not(.deceased):hover > rect {
+      stroke: #D96B9E !important;
+      stroke-width: 3px !important;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+      cursor: pointer;
+    }
+    .node.deceased:hover > rect {
+      stroke: #000000 !important;
+      stroke-width: 4px !important;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+      cursor: pointer;
+    }
+
+    [data-l-id] path {
+      stroke: #8B0000 !important;
+      stroke-width: 2.5px !important;
+    }
+
+    #base_up path,
+    #base_up ellipse,
+    #hugo_up path,
+    #hugo_up ellipse {
+      fill: #4CAF50 !important;
+      stroke: #4CAF50 !important;
+    }
+
+    /* ==== ПОДСКАЗКА ==== */
+    .tip-container {
+      text-align: center;
+      margin: -10px 0 15px 0;
+      padding: 10px 20px;
+      background: rgba(139, 0, 0, 0.04);
+      border-radius: 6px;
+      border-left: 3px solid maroon;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
     .tip-text { font-size: 15px; color: #555; letter-spacing: 0.3px; line-height: 1.5; }
     .tip-text strong { color: maroon; font-weight: 600; }
     .tip-icon-inline { display: inline-flex; align-items: center; vertical-align: middle; margin: 0 3px; }
     .tip-icon-inline svg { display: block; width: 22px; height: 22px; }
-    @media (max-width: 600px) { .tip-text { font-size: 13px; } .tip-container { padding: 8px 14px; margin: -5px 0 10px 0; } .tip-icon-inline svg { width: 20px; height: 20px; } }
-    @media (max-width: 1024px) { body { margin: 10px; } h1 { font-size: 22px; } #header-bar { gap: 8px; padding-right: 5px; flex-wrap: wrap; } #custom-search-wrapper { width: 160px; } #custom-search-input { font-size: 13px; padding: 5px 8px; } #main-wrapper { height: 640px; gap: 10px; } #custom-side-panel { width: 320px; min-width: 320px; } }
-    @media (max-width: 768px) { body { margin: 6px; } h1 { font-size: 18px; margin-bottom: 8px; } #header-bar { gap: 6px; margin-bottom: 8px; padding-right: 0; justify-content: center; flex-wrap: wrap; } #custom-search-wrapper { width: 100%; max-width: 260px; } #custom-search-input { font-size: 13px; padding: 5px 8px; } #btn-surnames, #btn-ru, #btn-en, #btn-edit-lock { padding: 4px 8px !important; font-size: 12px !important; } #person-count-badge { height: 20px !important; min-width: 24px !important; font-size: 11px !important; } .tip-container { padding: 6px 10px; margin: -5px 0 8px 0; gap: 6px; } .tip-text { font-size: 12px; line-height: 1.4; } .tip-icon-inline svg { width: 18px; height: 18px; } #main-wrapper { height: calc(100vh - 180px); min-height: 400px; gap: 0; flex-direction: column; } #custom-side-panel { width: 100%; min-width: 100%; height: 50%; max-height: 500px; } .node text { font-size: 14px !important; } .node text.field_0 { font-size: 14px !important; } .node text.field_1 { font-size: 10px !important; } }
-    @media (max-width: 480px) { body { margin: 4px; } h1 { font-size: 16px; margin-bottom: 6px; } #header-bar { gap: 4px; margin-bottom: 6px; } #custom-search-wrapper { width: 100%; } #btn-surnames, #btn-ru, #btn-en, #btn-edit-lock { padding: 3px 6px !important; font-size: 11px !important; } .tip-container { padding: 5px 8px; font-size: 11px; } .tip-text { font-size: 11px; } .tip-icon-inline svg { width: 16px; height: 16px; } #main-wrapper { height: calc(100vh - 140px); min-height: 350px; } #custom-side-panel { height: 60%; max-height: 400px; } .node text { font-size: 12px !important; } .node text.field_0 { font-size: 12px !important; } .node text.field_1 { font-size: 9px !important; } #surnames-overlay > div { padding: 16px !important; } #surnames-title { font-size: 18px !important; } }
-    #diag-block { position: fixed; bottom: 10px; right: 10px; max-width: 320px; background: rgba(220,20,20,0.95); color: white; font-family: monospace; font-size: 11px; padding: 10px 12px; border-radius: 6px; z-index: 99999; line-height: 1.5; box-shadow: 0 4px 12px rgba(0,0,0,0.3); word-break: break-all; }
-    #diag-block .diag-close { position: absolute; top: 2px; right: 6px; cursor: pointer; font-size: 14px; font-weight: bold; }
-    #diag-block .diag-title { font-weight: bold; margin-bottom: 4px; display: block; }
+
+    @media (max-width: 600px) {
+      .tip-text { font-size: 13px; }
+      .tip-container { padding: 8px 14px; margin: -5px 0 10px 0; }
+      .tip-icon-inline svg { width: 20px; height: 20px; }
+    }
+
+    /* ==== АДАПТИВНОСТЬ ==== */
+    @media (max-width: 1024px) {
+      body { margin: 10px; }
+      h1 { font-size: 22px; }
+      #header-bar { gap: 8px; padding-right: 5px; flex-wrap: wrap; }
+      #custom-search-wrapper { width: 160px; }
+      #custom-search-input { font-size: 13px; padding: 5px 8px; }
+      #main-wrapper { height: 640px; gap: 10px; }
+      #custom-side-panel { width: 320px; min-width: 320px; }
+    }
+    @media (max-width: 768px) {
+      body { margin: 6px; }
+      h1 { font-size: 18px; margin-bottom: 8px; }
+      #header-bar { gap: 6px; margin-bottom: 8px; padding-right: 0; justify-content: center; flex-wrap: wrap; }
+      #custom-search-wrapper { width: 100%; max-width: 260px; }
+      #custom-search-input { font-size: 13px; padding: 5px 8px; }
+      #btn-surnames, #btn-ru, #btn-en, #btn-edit-lock {
+        padding: 4px 8px !important;
+        font-size: 12px !important;
+      }
+      #person-count-badge {
+        height: 20px !important;
+        min-width: 24px !important;
+        font-size: 11px !important;
+      }
+      .tip-container { padding: 6px 10px; margin: -5px 0 8px 0; gap: 6px; }
+      .tip-text { font-size: 12px; line-height: 1.4; }
+      .tip-icon-inline svg { width: 18px; height: 18px; }
+      #main-wrapper {
+        height: calc(100vh - 180px);
+        min-height: 400px;
+        gap: 0;
+        flex-direction: column;
+      }
+      #custom-side-panel {
+        width: 100%;
+        min-width: 100%;
+        height: 50%;
+        max-height: 500px;
+      }
+      .node text { font-size: 14px !important; }
+      .node text.field_0 { font-size: 14px !important; }
+      .node text.field_1 { font-size: 10px !important; }
+    }
+    @media (max-width: 480px) {
+      body { margin: 4px; }
+      h1 { font-size: 16px; margin-bottom: 6px; }
+      #header-bar { gap: 4px; margin-bottom: 6px; }
+      #custom-search-wrapper { width: 100%; }
+      #btn-surnames, #btn-ru, #btn-en, #btn-edit-lock {
+        padding: 3px 6px !important;
+        font-size: 11px !important;
+      }
+      .tip-container { padding: 5px 8px; font-size: 11px; }
+      .tip-text { font-size: 11px; }
+      .tip-icon-inline svg { width: 16px; height: 16px; }
+      #main-wrapper { height: calc(100vh - 140px); min-height: 350px; }
+      #custom-side-panel { height: 60%; max-height: 400px; }
+      .node text { font-size: 12px !important; }
+      .node text.field_0 { font-size: 12px !important; }
+      .node text.field_1 { font-size: 9px !important; }
+      #surnames-overlay > div { padding: 16px !important; }
+      #surnames-title { font-size: 18px !important; }
+    }
   </style>
 </head>
 <body>
-
-  <div id="diag-block">
-    <span class="diag-close" onclick="document.getElementById('diag-block').style.display='none'">×</span>
-    <span class="diag-title">🩺 ДИАГНОСТИКА</span>
-    <div id="diag-content">Загрузка...</div>
-  </div>
 
   <h1 id="main-title">Летопись поколений рода Смагаринских</h1>
 
@@ -135,55 +341,78 @@
     const EDIT_PASSWORD = "kaluninA39";
     const TREE_CENTER_KEY = 'familyTree_centerPerson';
 
-    function diagLog(msg) {
-      console.log('[DIAG]', msg);
-      const el = document.getElementById('diag-content');
-      if (el) el.innerHTML += msg + '<br>';
-    }
-
-    /* ==== СРАЗУ ПРОВЕРЯЕМ БАЗУ ==== */
-    diagLog('Всего в db: <b>' + Object.keys(db).length + '</b>');
-
-    // Проверяем, есть ли Вульф
-    diagLog('Вульф есть: ' + (db['person_vulf_1898'] ? 'да' : 'НЕТ'));
-
+    /* =============================================================
+       СОХРАНЕНИЕ / ВОССТАНОВЛЕНИЕ ЦЕНТРАЛЬНОЙ ПЕРСОНЫ
+       ============================================================= */
     function saveTreeCenterPerson(personId) {
       if (!personId || !db[personId]) return;
-      try { localStorage.setItem(TREE_CENTER_KEY, personId); } catch (e) {}
+      try {
+        localStorage.setItem(TREE_CENTER_KEY, personId);
+      } catch (e) {}
     }
 
     function restoreTreeCenterPerson() {
       try {
         const savedId = localStorage.getItem(TREE_CENTER_KEY);
-        if (!savedId) { diagLog('restore: нет ID'); return false; }
-        if (!db[savedId]) { localStorage.removeItem(TREE_CENTER_KEY); diagLog('restore: ID нет в базе'); return false; }
+        if (!savedId) return false;
+        if (!db[savedId]) {
+          localStorage.removeItem(TREE_CENTER_KEY);
+          return false;
+        }
         if (treeInstance && typeof treeInstance.center === 'function') {
-          try { treeInstance.center(savedId); diagLog('restore: ✅ ' + savedId); return true; } catch (e) {}
+          try {
+            treeInstance.center(savedId);
+            return true;
+          } catch (e) {}
         }
         return false;
-      } catch (e) { return false; }
+      } catch (e) {
+        return false;
+      }
     }
 
-    function resetTreeCenter() { localStorage.removeItem(TREE_CENTER_KEY); }
+    function resetTreeCenter() {
+      localStorage.removeItem(TREE_CENTER_KEY);
+    }
 
-    function isEditModeOn() { return localStorage.getItem("familyTreeEditMode") === "true"; }
+    /* =============================================================
+       РЕЖИМ РЕДАКТИРОВАНИЯ
+       ============================================================= */
+    function isEditModeOn() {
+      return localStorage.getItem("familyTreeEditMode") === "true";
+    }
 
     window.toggleEditModeUI = function () {
       if (isEditModeOn()) {
-        if (confirm("Выключить режим редактирования?")) { localStorage.removeItem("familyTreeEditMode"); updateEditLockIcon(); }
+        if (confirm("Выключить режим редактирования на этом устройстве?")) {
+          localStorage.removeItem("familyTreeEditMode");
+          updateEditLockIcon();
+        }
         return;
       }
-      const pwd = prompt("Пароль:");
+      const pwd = prompt("Введите пароль для включения режима редактирования:");
       if (pwd === null) return;
-      if (pwd === EDIT_PASSWORD) { localStorage.setItem("familyTreeEditMode", "true"); alert("Включено."); updateEditLockIcon(); }
-      else { alert("Неверный пароль."); }
+      if (pwd === EDIT_PASSWORD) {
+        localStorage.setItem("familyTreeEditMode", "true");
+        alert("Режим редактирования включён на этом устройстве.");
+        updateEditLockIcon();
+      } else {
+        alert("Неверный пароль.");
+      }
     };
 
     function updateEditLockIcon() {
       const btn = document.getElementById("btn-edit-lock");
       if (!btn) return;
-      if (isEditModeOn()) { btn.textContent = "🔓"; btn.style.borderColor = "#4CAF50"; }
-      else { btn.textContent = "🔒"; btn.style.borderColor = "#ccc"; }
+      if (isEditModeOn()) {
+        btn.textContent = "🔓";
+        btn.title = "Режим редактирования ВКЛЮЧЁН";
+        btn.style.borderColor = "#4CAF50";
+      } else {
+        btn.textContent = "🔒";
+        btn.title = "Режим редактирования выключен";
+        btn.style.borderColor = "#ccc";
+      }
     }
 
     function updatePersonCountBadge() {
@@ -191,8 +420,12 @@
       if (!badge) return;
       const count = Object.keys(db).length;
       badge.textContent = count;
+      badge.title = (currentLang === 'en') ? `${count} people in the tree` : `Всего персон в дереве: ${count}`;
     }
 
+    /* =============================================================
+       СПИСОК ФАМИЛИЙ
+       ============================================================= */
     function extractSurname(fullName) {
       if (!fullName) return "";
       let name = fullName.replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
@@ -229,8 +462,10 @@
       const container = document.getElementById("surnames-list-container");
       const title = document.getElementById("surnames-title");
       title.textContent = (currentLang === 'en') ? "List of Surnames" : "Список фамилий";
+
       const index = buildSurnamesIndex();
       const sortedKeys = Object.keys(index).sort((a, b) => a.localeCompare(b, currentLang === 'en' ? 'en' : 'ru'));
+
       let html = "";
       sortedKeys.forEach(key => {
         const entry = index[key];
@@ -244,49 +479,104 @@
           </div>
         </div>`;
       });
+
       container.innerHTML = html || `<p>${currentLang === 'en' ? 'No persons found.' : 'Персоны не найдены.'}</p>`;
       overlay.style.display = "block";
     }
 
-    function closeSurnamesList() { document.getElementById("surnames-overlay").style.display = "none"; }
+    function closeSurnamesList() {
+      document.getElementById("surnames-overlay").style.display = "none";
+    }
 
     function jumpToPersonFromSurnames(id) {
       closeSurnamesList();
-      if (typeof showCustomSidePanel === 'function') showCustomSidePanel(id);
+      if (typeof showCustomSidePanel === 'function') {
+        showCustomSidePanel(id);
+      }
       if (treeInstance && typeof treeInstance.center === 'function') {
-        try { treeInstance.center(id); saveTreeCenterPerson(id); } catch (e) {}
+        try {
+          treeInstance.center(id);
+          saveTreeCenterPerson(id);
+        } catch (e) {}
       }
     }
 
+    /* =============================================================
+       ФОТО
+       ============================================================= */
     function getPhotoUrl(id) {
       const person = db[id];
-      if (person && person.mainPhoto && person.mainPhoto.trim() !== "") return person.mainPhoto;
+      if (person && person.mainPhoto && person.mainPhoto.trim() !== "") {
+        return person.mainPhoto;
+      }
+
       let isFemale = false;
-      if (person && person.gender) isFemale = person.gender === "female";
-      else {
+      if (person && person.gender) {
+        isFemale = person.gender === "female";
+      } else {
         let ruName = (person && person.name && person.name.ru) ? person.name.ru : "";
         let firstWord = ruName.trim().split(/\s+/)[0] || "";
         const MALE_EXCEPTIONS = ["никита", "илья", "лёва", "лева", "фома", "кузьма", "гоша"];
         let lower = firstWord.toLowerCase();
-        if (MALE_EXCEPTIONS.includes(lower)) isFemale = false;
-        else if (/[ая]$/i.test(firstWord)) isFemale = true;
-        else if (id) {
+        if (MALE_EXCEPTIONS.includes(lower)) {
+          isFemale = false;
+        } else if (/[ая]$/i.test(firstWord)) {
+          isFemale = true;
+        } else if (id) {
           let idLower = id.toLowerCase();
-          isFemale = idLower.includes("alla") || idLower.includes("blyuma") || idLower.includes("haya") || idLower.includes("khaya") || idLower.includes("feyga") || idLower.includes("slava") || idLower.includes("katya") || idLower.includes("mira") || idLower.includes("sonya") || idLower.includes("natalya") || idLower.includes("nella") || idLower.includes("nadejda");
+          isFemale = idLower.includes("alla") || idLower.includes("blyuma") ||
+                     idLower.includes("haya") || idLower.includes("khaya") ||
+                     idLower.includes("feyga") || idLower.includes("slava") ||
+                     idLower.includes("katya") || idLower.includes("mira") ||
+                     idLower.includes("sonya") || idLower.includes("natalya") ||
+                     idLower.includes("nella") || idLower.includes("nadejda");
         }
       }
       return isFemale ? "photos/female.jpg" : "photos/male.jpg";
     }
 
+    /* =============================================================
+       ПЕРЕВОДЫ
+       ============================================================= */
     const labels = {
-      ru: { birth: "Место рождения", marriage: "Брак", job: "Род занятий", burial: "Место упокоения", btn_doc: "📂 Документы", btn_add: "➕ Добавить", btn_save: "💾 Применить к дереву", btn_more: "ℹ️ Биография", btn_delete: "🗑️ Удалить", btn_download: "📥 Скачать базу (database.js)", btn_copy: "📋 Копировать код базы", vehi: "ВАЖНЫЕ ВЕХИ", circle: "СЕМЕЙНЫЙ КРУГ", bio: "Текст биографии", father: "Отец", mother: "Мать", spouse: "Супруг(а)", children: "Дети", no_relations: "Связи не заданы", biologicalFather: "Биологический отец", biologicalMother: "Биологическая мать", add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь", tip: 'Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> на карточке персоны', surnames: "Список фамилий", close: "✕ Закрыть" },
-      en: { birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place", btn_doc: "📂 Documents", btn_add: "➕ Add", btn_save: "💾 Apply to Tree", btn_more: "ℹ️ Biography", btn_delete: "🗑️ Delete", btn_copy: "📋 Copy Database Code", btn_download: "📥 Download Base (database.js)", vehi: "KEY MILESTONES", circle: "FAMILY CIRCLE", bio: "Biography Text", father: "Father", mother: "Mother", spouse: "Spouse", children: "Children", no_relations: "No relationships defined", biologicalFather: "Biological father", biologicalMother: "Biological mother", add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter", tip: 'To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> on a person\'s card to expand nodes', surnames: "Surnames List", close: "✕ Close" }
+      ru: {
+        birth: "Место рождения", marriage: "Брак", job: "Род занятий", burial: "Место упокоения",
+        btn_doc: "📂 Документы", btn_add: "➕ Добавить", btn_save: "💾 Применить к дереву", btn_more: "ℹ️ Биография",
+        btn_delete: "🗑️ Удалить",
+        btn_download: "📥 Скачать базу (database.js)",
+        btn_copy: "📋 Копировать код базы",
+        vehi: "ВАЖНЫЕ ВЕХИ", circle: "СЕМЕЙНЫЙ КРУГ", bio: "Текст биографии",
+        father: "Отец", mother: "Мать", spouse: "Супруг(а)", children: "Дети", no_relations: "Связи в дереве не заданы",
+        biologicalFather: "Биологический отец", biologicalMother: "Биологическая мать",
+        add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь",
+        tip: 'Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> на карточке персоны',
+        surnames: "Список фамилий",
+        close: "✕ Закрыть"
+      },
+      en: {
+        birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place",
+        btn_doc: "📂 Documents", btn_add: "➕ Add", btn_save: "💾 Apply to Tree", btn_more: "ℹ️ Biography",
+        btn_delete: "🗑️ Delete",
+        btn_copy: "📋 Copy Database Code",
+        btn_download: "📥 Download Base (database.js)",
+        vehi: "KEY MILESTONES", circle: "FAMILY CIRCLE", bio: "Biography Text",
+        father: "Father", mother: "Mother", spouse: "Spouse", children: "Children", no_relations: "No relationships defined",
+        biologicalFather: "Biological father", biologicalMother: "Biological mother",
+        add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter",
+        tip: 'To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> on a person\'s card to expand nodes',
+        surnames: "Surnames List",
+        close: "✕ Close"
+      }
     };
 
     window.copyDatabaseToClipboard = function() {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
-      navigator.clipboard.writeText(fileContent).then(() => { alert("Скопировано!"); }).catch(err => { alert("Ошибка: " + err); });
+      navigator.clipboard.writeText(fileContent).then(() => {
+        alert(currentLang === 'ru' ? "Код базы скопирован!" : "Database code copied!");
+      }).catch(err => {
+        alert("Ошибка: " + err);
+      });
     };
 
     function normalizeDatabase() {
@@ -306,6 +596,7 @@
       const bText = labels[currentLang];
       let html = "";
       let cleanNodeId = String(nodeId).trim().toLowerCase();
+
       const getLinkOrText = (idOrName) => {
         if (!idOrName) return null;
         let targetStr = String(idOrName).trim();
@@ -316,51 +607,91 @@
         }
         return null;
       };
+
       let fatherId = (person.links && person.links.parents && person.links.parents[0]) ? person.links.parents[0] : (person.fid || person.father);
       let motherId = (person.links && person.links.parents && person.links.parents[1]) ? person.links.parents[1] : (person.mid || person.mother);
       let spouseId = (person.links && person.links.spouse) ? person.links.spouse : (person.pid || person.spouse);
+
       let fatherHtml = getLinkOrText(fatherId);
       let motherHtml = getLinkOrText(motherId);
       let spouseHtml = getLinkOrText(spouseId);
+
       let fatherNote = (person.links && person.links.fatherNote) ? ` (${person.links.fatherNote})` : "";
       let motherNote = (person.links && person.links.motherNote) ? ` (${person.links.motherNote})` : "";
       let spouseNote = (person.links && person.links.spouseNote) ? ` (${person.links.spouseNote})` : "";
+
       if (fatherHtml) html += `<li><strong>${bText.father}:</strong> ${fatherHtml}${fatherNote}</li>`;
       if (motherHtml) html += `<li><strong>${bText.mother}:</strong> ${motherHtml}${motherNote}</li>`;
+
       let bioFatherText = (person.links && person.links.biologicalFatherName) ? person.links.biologicalFatherName : "";
       let bioMotherText = (person.links && person.links.biologicalMotherName) ? person.links.biologicalMotherName : "";
       if (bioFatherText) html += `<li><strong>${bText.biologicalFather}:</strong> ${bioFatherText}</li>`;
       if (bioMotherText) html += `<li><strong>${bText.biologicalMother}:</strong> ${bioMotherText}</li>`;
+
       if (spouseHtml) html += `<li><strong>${bText.spouse}:</strong> ${spouseHtml}${spouseNote}</li>`;
-      const getBirthYear = (id) => { let y = db[id] && db[id].years; if (!y) return null; let match = String(y).match(/\d{4}/); return match ? parseInt(match[0], 10) : null; };
+
+      const getBirthYear = (id) => {
+        let y = db[id] && db[id].years;
+        if (!y) return null;
+        let match = String(y).match(/\d{4}/);
+        return match ? parseInt(match[0], 10) : null;
+      };
+
       let childrenIds = [];
       Object.keys(db).forEach(id => {
         if (id === nodeId) return;
         const potentialChild = db[id];
         let isChild = false;
+
         if (potentialChild.fid && String(potentialChild.fid).trim().toLowerCase() === cleanNodeId) isChild = true;
         if (potentialChild.mid && String(potentialChild.mid).trim().toLowerCase() === cleanNodeId) isChild = true;
+
         if (!isChild && potentialChild.links && potentialChild.links.parents) {
           let parentsArrayLower = potentialChild.links.parents.map(p => p ? String(p).trim().toLowerCase() : "");
           if (parentsArrayLower.includes(cleanNodeId)) isChild = true;
         }
+
         if (isChild) childrenIds.push(id);
       });
-      childrenIds.sort((a, b) => { let ya = getBirthYear(a); let yb = getBirthYear(b); if (ya === null && yb === null) return 0; if (ya === null) return 1; if (yb === null) return -1; return ya - yb; });
+
+      childrenIds.sort((a, b) => {
+        let ya = getBirthYear(a);
+        let yb = getBirthYear(b);
+        if (ya === null && yb === null) return 0;
+        if (ya === null) return 1;
+        if (yb === null) return -1;
+        return ya - yb;
+      });
+
       let childrenLinks = childrenIds.map(id => getLinkOrText(id)).filter(Boolean);
-      if (childrenLinks.length > 0) html += `<li><strong>${bText.children}:</strong> ${childrenLinks.join(", ")}</li>`;
+
+      if (childrenLinks.length > 0) {
+        html += `<li><strong>${bText.children}:</strong> ${childrenLinks.join(", ")}</li>`;
+      }
+
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
 
-    function closePanel() { const panel = document.getElementById("custom-side-panel"); panel.style.display = "none"; }
+    function closePanel() {
+      const panel = document.getElementById("custom-side-panel");
+      panel.style.display = "none";
+    }
 
     function centerTreeOnPerson(personId) {
       if (!personId) return;
       closePanel();
+
       if (treeInstance && typeof treeInstance.center === 'function') {
-        try { treeInstance.center(personId); if (typeof treeInstance.select === 'function') treeInstance.select(personId); saveTreeCenterPerson(personId); } catch (e) {}
+        try {
+          treeInstance.center(personId);
+          if (typeof treeInstance.select === 'function') {
+            treeInstance.select(personId);
+          }
+          saveTreeCenterPerson(personId);
+        } catch (e) {}
       }
     }
+
     window.centerTreeOnPerson = centerTreeOnPerson;
 
     function showCustomSidePanel(nodeId) {
@@ -368,16 +699,23 @@
       const person = db[nodeId];
       const panel = document.getElementById("custom-side-panel");
       if (!person || !panel) return;
+
       const ms = person.milestones || {};
       const bText = labels[currentLang];
       let photoUrl = getPhotoUrl(nodeId);
+
       let hasDocs = false;
       let archiveKey = nodeId;
+
       let globalDocs = window.documentsIndex || {};
       if (globalDocs) {
         const targetKey = Object.keys(globalDocs).find(k => k.trim().toLowerCase() === nodeId.trim().toLowerCase());
-        if (targetKey && globalDocs[targetKey] && globalDocs[targetKey].length > 0) { hasDocs = true; archiveKey = targetKey; }
+        if (targetKey && globalDocs[targetKey] && globalDocs[targetKey].length > 0) {
+          hasDocs = true;
+          archiveKey = targetKey;
+        }
       }
+
       let archiveHtml = "";
       if (hasDocs || person.archive) {
         let finalId = archiveKey || person.archive;
@@ -385,20 +723,35 @@
       } else {
         archiveHtml = `<button class="action-btn btn-archive" disabled style="opacity: 0.4; cursor: not-allowed; background-color: #8b8b8b !important;">${bText.btn_doc}</button>`;
       }
-      const getLangValue = (field) => { if (!field) return ""; if (typeof field === "object") return field[currentLang] || field['ru'] || ""; return field; };
+
+      const getLangValue = (field) => {
+        if (!field) return "";
+        if (typeof field === "object") {
+          return field[currentLang] || field['ru'] || "";
+        }
+        return field;
+      };
+
       let bioContent = person.bio ? getLangValue(person.bio) : "";
       let automaticFamilyContent = buildAutomaticFamilyHtml(nodeId);
+
       const editMode = isEditModeOn();
       const readonlyAttr = editMode ? "" : "readonly";
+
       panel.innerHTML = `
         <div style="position: absolute; top: 10px; right: 15px; display: flex; align-items: center; gap: 12px; z-index: 10;">
           ${editMode ? '<span style="font-size: 18px; color: maroon;">✏️</span>' : ''}
           <span class="panel-close-btn" style="position: static; font-size: 28px;" onclick="closePanel()">&times;</span>
         </div>
         <div class="panel-content-scroll">
-          <div class="panel-photo-container"><img class="panel-avatar" src="${photoUrl}" alt="Фото"></div>
+          <div class="panel-photo-container">
+            <img class="panel-avatar" src="${photoUrl}" alt="Фото">
+          </div>
+
           <textarea id="inp-name" class="panel-textarea-name" placeholder="Имя Фамилия" rows="2" ${readonlyAttr}>${getLangValue(person.name)}</textarea>
+
           <input type="text" id="inp-years" class="panel-input-years" value="${person.years || ''}" placeholder="Годы жизни" ${readonlyAttr}>
+
           <div class="custom-title">${bText.vehi}</div>
           <table class="milestones-table">
             <tr><td class="td-lbl">${bText.birth}:</td><td><input type="text" id="inp-birth" class="milestone-input" value="${getLangValue(ms.birthPlace)}" ${readonlyAttr}></td></tr>
@@ -406,16 +759,23 @@
             <tr><td class="td-lbl">${bText.job}:</td><td><input type="text" id="inp-job" class="milestone-input" value="${getLangValue(ms.occupation)}" ${readonlyAttr}></td></tr>
             <tr><td class="td-lbl">${bText.burial}:</td><td><input type="text" id="inp-burial" class="milestone-input" value="${getLangValue(ms.burial)}" ${readonlyAttr}></td></tr>
           </table>
+
           <div class="custom-title">${bText.circle}</div>
-          <div class="family-circle-container">${automaticFamilyContent}</div>
+          <div class="family-circle-container">
+            ${automaticFamilyContent}
+          </div>
+
           <div class="btn-row">
             ${archiveHtml}
-            <button class="action-btn" onclick="centerTreeOnPerson('${nodeId}')">🎯 ${currentLang === 'ru' ? 'В дереве' : 'In tree'}</button>
+            <button class="action-btn" onclick="centerTreeOnPerson('${nodeId}')" title="${currentLang === 'ru' ? 'Показать в дереве' : 'Show in tree'}">🎯 ${currentLang === 'ru' ? 'В дереве' : 'In tree'}</button>
             <button class="action-btn" onclick="togglePureBio()">${bText.btn_more}</button>
             ${editMode ? `
             <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
-            <button class="action-btn" style="background-color: #e74c3c !important; color: white !important; border: none;" onclick="deletePerson(activeNodeId)">${bText.btn_delete}</button>` : ''}
+            <button class="action-btn" style="background-color: #e74c3c !important; color: white !important; border: none; cursor: pointer;" onclick="deletePerson(activeNodeId)">
+                ${bText.btn_delete}
+            </button>` : ''}
           </div>
+
           ${editMode ? `
           <div id="geni-add-menu" class="geni-menu hidden-block">
             <button class="geni-btn" onclick="addRelativeDirect('father')">${bText.add_father}</button>
@@ -424,11 +784,13 @@
             <button class="geni-btn" onclick="addRelativeDirect('son')">${bText.add_son}</button>
             <button class="geni-btn" onclick="addRelativeDirect('daughter')">${bText.add_daughter}</button>
           </div>` : ''}
+
           <div id="pure-bio-panel" class="bio-panel hidden-block">
             <div style="font-weight:bold; margin-bottom:5px; color:maroon; font-size:12px;">${bText.bio}:</div>
             <textarea id="inp-bio" class="bio-textarea" placeholder="Введите историю жизни..." ${readonlyAttr}>${bioContent}</textarea>
           </div>
         </div>
+
         ${editMode ? `
         <div class="panel-fixed-footer">
           <button class="btn-save" onclick="saveCurrentPersonData()">${bText.btn_save}</button>
@@ -438,6 +800,7 @@
           </div>
         </div>` : ''}
       `;
+
       panel.style.display = "flex";
     }
 
@@ -445,47 +808,78 @@
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
       const person = db[activeNodeId];
+
       resetTreeCenter();
+
       if (typeof person.name !== "object") person.name = { ru: person.name || "", en: "" };
       person.name[currentLang] = document.getElementById("inp-name").value.trim();
       person.years = document.getElementById("inp-years").value.trim();
+
       if (!person.milestones) person.milestones = {};
       const fields = ["birthPlace", "marriage", "occupation", "burial"];
-      fields.forEach(f => { if (!person.milestones[f]) person.milestones[f] = { ru: "", en: "" }; if (typeof person.milestones[f] !== "object") person.milestones[f] = { ru: person.milestones[f], en: "" }; });
+      fields.forEach(f => {
+        if (!person.milestones[f]) person.milestones[f] = { ru: "", en: "" };
+        if (typeof person.milestones[f] !== "object") {
+          person.milestones[f] = { ru: person.milestones[f], en: "" };
+        }
+      });
       if (!person.bio) person.bio = { ru: "", en: "" };
-      const saveLangField = (fieldObject, elementId) => { fieldObject[currentLang] = document.getElementById(elementId).value.trim(); };
+
+      const saveLangField = (fieldObject, elementId) => {
+        fieldObject[currentLang] = document.getElementById(elementId).value.trim();
+      };
+
       saveLangField(person.milestones.birthPlace, "inp-birth");
       saveLangField(person.milestones.marriage, "inp-marriage");
       saveLangField(person.milestones.occupation, "inp-job");
       saveLangField(person.milestones.burial, "inp-burial");
-      if (document.getElementById("inp-bio")) person.bio[currentLang] = document.getElementById("inp-bio").value;
+
+      if (document.getElementById("inp-bio")) {
+        person.bio[currentLang] = document.getElementById("inp-bio").value;
+      }
+
       drawTree();
       showCustomSidePanel(activeNodeId);
-      alert(currentLang === 'ru' ? "Изменения применены! Нажмите 'Скачать базу'." : "Changes applied!");
+
+      alert(currentLang === 'ru'
+        ? "Изменения применены! Нажмите 'Скачать базу' внизу."
+        : "Changes applied! Click 'Download database' at the bottom.");
     };
 
     window.deletePerson = function(id) {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!id || !db[id]) return;
-      const confirmMsg = currentLang === 'ru' ? `Удалить карточку?` : `Delete?`;
+
+      const confirmMsg = currentLang === 'ru'
+        ? `Удалить карточку "${db[id].name[currentLang] || db[id].name['ru']}"?`
+        : `Delete "${db[id].name[currentLang] || id}"?`;
+
       if (confirm(confirmMsg)) {
         resetTreeCenter();
         delete db[id];
+
         Object.keys(db).forEach(key => {
           const person = db[key];
           if (person.links) {
             if (person.links.spouse === id) person.links.spouse = null;
-            if (person.links.parents) person.links.parents = person.links.parents.filter(pId => pId !== id);
+            if (person.links.parents) {
+              person.links.parents = person.links.parents.filter(pId => pId !== id);
+            }
           }
           if (person.fid === id) delete person.fid;
           if (person.mid === id) delete person.mid;
           if (person.pid === id) delete person.pid;
         });
+
         document.getElementById("custom-side-panel").style.display = "none";
+
         drawTree();
         updatePersonCountBadge();
         downloadDatabaseFile();
-        alert("Удалено!");
+
+        alert(currentLang === 'ru'
+          ? "Карточка удалена! Новый файл скачан — замените им database.js."
+          : "Deleted! New file downloaded — replace database.js.");
       }
     };
 
@@ -502,96 +896,218 @@
       document.body.removeChild(link);
     };
 
-    window.toggleGeniMenu = function() { const geniMenu = document.getElementById("geni-add-menu"); if (geniMenu) geniMenu.classList.toggle("hidden-block"); };
-    window.togglePureBio = function() { const bioEl = document.getElementById("pure-bio-panel"); if (bioEl) bioEl.classList.toggle("hidden-block"); };
+    window.toggleGeniMenu = function() {
+      const geniMenu = document.getElementById("geni-add-menu");
+      if (geniMenu) geniMenu.classList.toggle("hidden-block");
+    };
+
+    window.togglePureBio = function() {
+      const bioEl = document.getElementById("pure-bio-panel");
+      if (bioEl) bioEl.classList.toggle("hidden-block");
+    };
 
     window.addRelativeDirect = function(role) {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
+
       resetTreeCenter();
-      let userSlug = prompt("Введите краткое имя на английском для ID карточки:");
+
+      let promptMsg = currentLang === 'ru'
+        ? "Введите краткое имя на английском для ID карточки:"
+        : "Enter a short English slug for the person ID:";
+
+      let userSlug = prompt(promptMsg);
       let newId;
-      if (userSlug && userSlug.trim() !== "") newId = "person_" + userSlug.trim().toLowerCase().replace(/\s+/g, "_");
-      else newId = "person_temp_" + Date.now();
-      if (db[newId]) newId = newId + "_" + Math.floor(Math.random() * 1000);
-      db[newId] = { id: newId, name: { ru: "Новая персона", en: "New Person" }, years: "", mainPhoto: "", milestones: { birthPlace: { ru: "" }, marriage: { ru: "" }, occupation: { ru: "" }, burial: { ru: "" } }, bio: { ru: "", en: "" }, links: { parents: [], spouse: null } };
+
+      if (userSlug && userSlug.trim() !== "") {
+        newId = "person_" + userSlug.trim().toLowerCase().replace(/\s+/g, "_");
+      } else {
+        newId = "person_temp_" + Date.now();
+      }
+
+      if (db[newId]) {
+        newId = newId + "_" + Math.floor(Math.random() * 1000);
+      }
+
+      db[newId] = {
+        id: newId,
+        name: { ru: "Новая персона", en: "New Person" },
+        years: "",
+        mainPhoto: "",
+        milestones: { birthPlace: { ru: "" }, marriage: { ru: "" }, occupation: { ru: "" }, burial: { ru: "" } },
+        bio: { ru: "", en: "" },
+        links: { parents: [], spouse: null }
+      };
+
       const currentPerson = db[activeNodeId];
       if (!currentPerson.links) currentPerson.links = { parents: [], spouse: null };
-      if (role === 'father') currentPerson.links.parents[0] = newId;
-      else if (role === 'mother') currentPerson.links.parents[1] = newId;
-      else if (role === 'spouse') { db[newId].links.spouse = activeNodeId; currentPerson.links.spouse = newId; }
-      else if (role === 'son' || role === 'daughter') {
+
+      const askOptionalNote = (ruMsg, enMsg) => {
+        let msg = currentLang === 'ru' ? ruMsg : enMsg;
+        let val = prompt(msg, "");
+        return (val && val.trim() !== "") ? val.trim() : null;
+      };
+
+      if (role === 'father') {
+        currentPerson.links.parents[0] = newId;
+        let note = askOptionalNote("Пометка к отцу (необязательно):", "Father note (optional):");
+        if (note) currentPerson.links.fatherNote = note;
+      } else if (role === 'mother') {
+        currentPerson.links.parents[1] = newId;
+        let note = askOptionalNote("Пометка к матери (необязательно):", "Mother note (optional):");
+        if (note) currentPerson.links.motherNote = note;
+      } else if (role === 'spouse') {
+        db[newId].links.spouse = activeNodeId;
+        currentPerson.links.spouse = newId;
+        let note = askOptionalNote("Пометка к браку (необязательно):", "Marriage note (optional):");
+        if (note) {
+          currentPerson.links.spouseNote = note;
+          db[newId].links.spouseNote = note;
+        }
+      } else if (role === 'son' || role === 'daughter') {
         if (currentPerson.links.spouse) {
           let idLower = activeNodeId.toLowerCase();
-          let isFemale = idLower.includes("alla") || idLower.includes("blyuma") || idLower.includes("haya") || idLower.includes("khaya") || idLower.includes("feyga") || idLower.includes("slava") || idLower.includes("katya") || idLower.includes("mira") || idLower.includes("sonya") || idLower.includes("natalya") || idLower.includes("nella") || idLower.includes("nadejda");
+          let isFemale = idLower.includes("alla") || idLower.includes("blyuma") ||
+                         idLower.includes("haya") || idLower.includes("khaya") ||
+                         idLower.includes("feyga") || idLower.includes("slava") ||
+                         idLower.includes("katya") || idLower.includes("mira") ||
+                         idLower.includes("sonya") || idLower.includes("natalya") ||
+                         idLower.includes("nella") || idLower.includes("nadejda");
+
           db[newId].links.parents = isFemale ? [currentPerson.links.spouse, activeNodeId] : [activeNodeId, currentPerson.links.spouse];
-        } else db[newId].links.parents = [activeNodeId];
+        } else {
+          db[newId].links.parents = [activeNodeId];
+        }
       }
+
       document.getElementById("geni-add-menu").classList.add("hidden-block");
       drawTree();
       updatePersonCountBadge();
       showCustomSidePanel(newId);
     };
 
-    function getShortDisplayName(fullName) { if (!fullName) return fullName; let cleaned = fullName.replace(/\s*\([^)]*\)/g, "").trim(); let parts = cleaned.split(/\s+/).filter(Boolean); if (parts.length <= 2) return cleaned; return parts[0] + " " + parts[parts.length - 1]; }
+    function getShortDisplayName(fullName) {
+      if (!fullName) return fullName;
+      let cleaned = fullName.replace(/\s*\([^)]*\)/g, "").trim();
+      let parts = cleaned.split(/\s+/).filter(Boolean);
+      if (parts.length <= 2) return cleaned;
+      return parts[0] + " " + parts[parts.length - 1];
+    }
 
     function isPersonDeceased(person) {
       if (person.isDeceased === true) return true;
       if (person.isDeceased === false) return false;
+
       const years = person.years;
       if (!years || typeof years !== "string") return false;
+
       const clean = years.trim();
       if (/^\?\s*[–—-]\s*\?\s*$/.test(clean)) return true;
+
       const allYears = clean.match(/\d{4}/g) || [];
       if (allYears.length === 0) return false;
+
       const match = clean.match(/[–—-]\s*(.+)$/);
-      if (match) { const afterDash = match[1].trim(); if (afterDash === "?" || afterDash === "??" || afterDash === "—") return true; if (/\d{4}/.test(afterDash)) return true; }
-      if (allYears.length === 1) { const birthYear = parseInt(allYears[0], 10); const currentYear = new Date().getFullYear(); if (currentYear - birthYear > 100) return true; }
+      if (match) {
+        const afterDash = match[1].trim();
+        if (afterDash === "?" || afterDash === "??" || afterDash === "—") return true;
+        if (/\d{4}/.test(afterDash)) return true;
+      }
+
+      if (allYears.length === 1) {
+        const birthYear = parseInt(allYears[0], 10);
+        const currentYear = new Date().getFullYear();
+        if (currentYear - birthYear > 100) return true;
+      }
+
       return false;
     }
 
     function determineFemale(person, id) {
       if (person && person.gender) return person.gender === "female";
+
       const ruName = (person && person.name && person.name.ru) ? person.name.ru : "";
       const firstWord = ruName.trim().split(/\s+/)[0] || "";
       const MALE_EXCEPTIONS = ["никита", "илья", "лёва", "лева", "фома", "кузьма", "гоша"];
       const lower = firstWord.toLowerCase();
+
       if (MALE_EXCEPTIONS.includes(lower)) return false;
       if (/[ая]$/i.test(firstWord)) return true;
+
       const idLower = (id || "").toLowerCase();
-      return idLower.includes("alla") || idLower.includes("blyuma") || idLower.includes("haya") || idLower.includes("khaya") || idLower.includes("feyga") || idLower.includes("slava") || idLower.includes("katya") || idLower.includes("mira") || idLower.includes("sonya") || idLower.includes("natalya") || idLower.includes("nella") || idLower.includes("nadejda");
+      return idLower.includes("alla") || idLower.includes("blyuma") ||
+             idLower.includes("haya") || idLower.includes("khaya") ||
+             idLower.includes("feyga") || idLower.includes("slava") ||
+             idLower.includes("katya") || idLower.includes("mira") ||
+             idLower.includes("sonya") || idLower.includes("natalya") ||
+             idLower.includes("nella") || idLower.includes("nadejda");
     }
 
     function getTreeData() {
       normalizeDatabase();
       const treeData = [];
+
       Object.keys(db).forEach(id => {
         const person = db[id];
         let photoUrl = getPhotoUrl(id);
+
         let rawName = id;
         if (person.name) {
           if (typeof person.name === "object") {
-            if (person.name[currentLang] && person.name[currentLang].trim() !== "") rawName = person.name[currentLang];
-            else rawName = currentLang === 'en' ? `[EN?] ${person.name['ru'] || id}` : (person.name['ru'] || id);
-          } else rawName = person.name;
+            if (person.name[currentLang] && person.name[currentLang].trim() !== "") {
+              rawName = person.name[currentLang];
+            } else {
+              rawName = currentLang === 'en'
+                ? `[EN?] ${person.name['ru'] || id}`
+                : (person.name['ru'] || id);
+            }
+          } else {
+            rawName = person.name;
+          }
         }
-        const node = { id: id, name: getShortDisplayName(rawName), fullName: rawName, title: person.years || "", img: photoUrl };
+
+        const node = {
+          id: id,
+          name: getShortDisplayName(rawName),
+          fullName: rawName,
+          title: person.years || "",
+          img: photoUrl
+        };
+
         const isFemale = determineFemale(person, id);
         const deceased = isPersonDeceased(person);
+
         const nodeTags = [];
         nodeTags.push(isFemale ? "female" : "male");
         if (deceased) nodeTags.push("deceased");
         node.tags = nodeTags;
+
         if (person.links) {
-          if (person.links.spouse && String(person.links.spouse).trim()) node.pids = [person.links.spouse];
+          if (person.links.spouse && String(person.links.spouse).trim()) {
+            node.pids = [person.links.spouse];
+          }
           if (person.links.parents && Array.isArray(person.links.parents)) {
             if (person.links.parents[0] && String(person.links.parents[0]).trim()) node.fid = person.links.parents[0];
             if (person.links.parents[1] && String(person.links.parents[1]).trim()) node.mid = person.links.parents[1];
           }
         }
-        if (person.fid && (!person.links || !person.links.parents || !person.links.parents[0])) { if (!person.links) person.links = { parents: [], spouse: null }; person.links.parents[0] = person.fid; node.fid = person.fid; }
-        if (person.mid && (!person.links || !person.links.parents || !person.links.parents[1])) { if (!person.links) person.links = { parents: [], spouse: null }; person.links.parents[1] = person.mid; node.mid = person.mid; }
-        if (person.pid && (!person.links || !person.links.spouse)) { if (!person.links) person.links = { parents: [], spouse: null }; person.links.spouse = person.pid; node.pids = [person.pid]; }
+
+        if (person.fid && (!person.links || !person.links.parents || !person.links.parents[0])) {
+          if (!person.links) person.links = { parents: [], spouse: null };
+          person.links.parents[0] = person.fid;
+          node.fid = person.fid;
+        }
+        if (person.mid && (!person.links || !person.links.parents || !person.links.parents[1])) {
+          if (!person.links) person.links = { parents: [], spouse: null };
+          person.links.parents[1] = person.mid;
+          node.mid = person.mid;
+        }
+        if (person.pid && (!person.links || !person.links.spouse)) {
+          if (!person.links) person.links = { parents: [], spouse: null };
+          person.links.spouse = person.pid;
+          node.pids = [person.pid];
+        }
+
         treeData.push(node);
       });
       return treeData;
@@ -601,17 +1117,23 @@
       const container = document.getElementById("family-tree");
       if (!container) return;
       container.innerHTML = "";
+
       try {
         const isMobile = window.innerWidth <= 768;
         const isSmallMobile = window.innerWidth <= 480;
-        let cardWidth, cardHeight, circleSize, imageSize, levelSep, siblingSep, subtreeSep;
-        if (isSmallMobile) { cardWidth = 90; cardHeight = 72; circleSize = 26; imageSize = 26; levelSep = 45; siblingSep = 22; subtreeSep = 30; }
-        else if (isMobile) { cardWidth = 100; cardHeight = 80; circleSize = 30; imageSize = 30; levelSep = 52; siblingSep = 26; subtreeSep = 36; }
-        else { cardWidth = 112; cardHeight = 90; circleSize = 34; imageSize = 34; levelSep = 60; siblingSep = 30; subtreeSep = 40; }
 
-        const treeData = getTreeData();
-        diagLog('treeData.length: <b>' + treeData.length + '</b>');
-        diagLog('Ширина: ' + window.innerWidth + 'px');
+        let cardWidth, cardHeight, circleSize, imageSize, levelSep, siblingSep, subtreeSep;
+
+        if (isSmallMobile) {
+          cardWidth = 90; cardHeight = 72; circleSize = 26; imageSize = 26;
+          levelSep = 45; siblingSep = 22; subtreeSep = 30;
+        } else if (isMobile) {
+          cardWidth = 100; cardHeight = 80; circleSize = 30; imageSize = 30;
+          levelSep = 52; siblingSep = 26; subtreeSep = 36;
+        } else {
+          cardWidth = 112; cardHeight = 90; circleSize = 34; imageSize = 34;
+          levelSep = 60; siblingSep = 30; subtreeSep = 40;
+        }
 
         treeInstance = new FamilyTree(container, {
           mouseScroller: { zoom: true, scale: true },
@@ -634,57 +1156,36 @@
           return false;
         });
 
-                treeInstance.onInit(function () {
-          diagLog('onInit');
+        treeInstance.onInit(function () {
           try {
-            // НОВОЕ: на мобильных — только 2 уровня, на ПК — всё
+            // На мобильных — ограничиваем глубину раскрытия
             if (window.innerWidth <= 768) {
-              diagLog('мобильный режим');
-              // Раскрываем только 2 уровня от Вульфа
               if (db["person_vulf_1898"]) {
                 treeInstance.center("person_vulf_1898");
               }
-              // Пытаемся раскрыть 2 уровня
-              try {
-                treeInstance.maximize("person_vulf_1898", false, false, function () {
-                  diagLog('maximize от Вульфа');
-                  try {
-                    treeInstance.fit();
-                    diagLog('fit() моб.');
-                  } catch (e) { diagLog('❌ fit: ' + e.message); }
-                });
-              } catch (e) {
-                diagLog('❌ max: ' + e.message);
-                treeInstance.fit();
-              }
+              treeInstance.maximize("person_vulf_1898", false, false, function () {
+                try {
+                  treeInstance.fit();
+                } catch (e) {}
+              });
             } else {
-              // ПК — как было
               treeInstance.maximize(null, false, false, function () {
-                diagLog('maximize OK');
                 try {
                   const restored = restoreTreeCenterPerson();
                   if (!restored) {
                     if (db["person_vulf_1898"]) {
                       treeInstance.center("person_vulf_1898");
-                      diagLog('center Вульф');
                     } else {
                       treeInstance.fit();
                     }
                   }
-                } catch (e) { diagLog('❌ ' + e.message); }
+                } catch (e) {}
               });
             }
-          } catch (e) { diagLog('❌ max: ' + e.message); }
+          } catch (e) {}
         });
 
-        treeInstance.load(treeData);
-        diagLog('load() вызван');
-
-        // Считаем видимые карточки через 1 сек
-        setTimeout(function() {
-          const visibleNodes = document.querySelectorAll('.node');
-          diagLog('Видимых карточек: <b>' + visibleNodes.length + '</b>');
-        }, 1500);
+        treeInstance.load(getTreeData());
 
         if (!window._resizeHandler) {
           window._resizeHandler = true;
@@ -702,56 +1203,124 @@
             }, 300);
           });
         }
+
         window._lastIsMobile = isMobile;
         window._lastIsSmallMobile = isSmallMobile;
+
       } catch (e) {
-        diagLog('❌ фатал: ' + e.message);
+        console.error("Ошибка инициализации дерева:", e);
       }
     }
 
+    /* =============================================================
+       ПОИСК
+       ============================================================= */
     (function () {
       const input = document.getElementById("custom-search-input");
       const resultsBox = document.getElementById("custom-search-results");
       if (!input || !resultsBox) return;
-      function hideResults() { resultsBox.style.display = "none"; resultsBox.innerHTML = ""; }
+
+      function hideResults() {
+        resultsBox.style.display = "none";
+        resultsBox.innerHTML = "";
+      }
+
       input.addEventListener("input", function () {
         const value = input.value.trim();
-        if (!value || !treeInstance) { hideResults(); return; }
+        if (!value || !treeInstance) {
+          hideResults();
+          return;
+        }
         let matches = [];
-        try { matches = treeInstance.search(value, ["name", "fullName"]) || []; } catch (e) { matches = []; }
-        if (matches.length === 0) { hideResults(); return; }
+        try {
+          matches = treeInstance.search(value, ["name", "fullName"]) || [];
+        } catch (e) {
+          matches = [];
+        }
+        if (matches.length === 0) {
+          hideResults();
+          return;
+        }
         resultsBox.innerHTML = "";
         matches.slice(0, 15).forEach(function (m) {
           const row = document.createElement("div");
           row.textContent = m.fullName || m.name || m.id;
-          row.onclick = function () { hideResults(); input.value = ""; try { treeInstance.center(m.id); saveTreeCenterPerson(m.id); } catch (e) {} showCustomSidePanel(m.id); };
+          row.onclick = function () {
+            hideResults();
+            input.value = "";
+            try {
+              treeInstance.center(m.id);
+              saveTreeCenterPerson(m.id);
+            } catch (e) {}
+            showCustomSidePanel(m.id);
+          };
           resultsBox.appendChild(row);
         });
         resultsBox.style.display = "block";
       });
-      document.addEventListener("click", function (e) { if (e.target !== input) hideResults(); });
+
+      document.addEventListener("click", function (e) {
+        if (e.target !== input) hideResults();
+      });
     })();
 
+    /* =============================================================
+       ПЕРЕКЛЮЧЕНИЕ ЯЗЫКА
+       ============================================================= */
     function setLanguage(lang) {
       currentLang = lang;
+
       const btnRu = document.getElementById("btn-ru");
       const btnEn = document.getElementById("btn-en");
-      if (btnRu && btnEn) { if (lang === 'ru') { btnRu.classList.add('active'); btnEn.classList.remove('active'); } else { btnEn.classList.add('active'); btnRu.classList.remove('active'); } }
+
+      if (btnRu && btnEn) {
+        if (lang === 'ru') {
+          btnRu.classList.add('active');
+          btnEn.classList.remove('active');
+        } else {
+          btnEn.classList.add('active');
+          btnRu.classList.remove('active');
+        }
+      }
+
       const mainTitle = document.getElementById("main-title");
-      if (mainTitle) mainTitle.innerText = lang === 'ru' ? 'Летопись поколений рода Смагаринских' : 'The Smagarinsky Family Chronicle';
+      if (mainTitle) {
+        mainTitle.innerText = lang === 'ru' ? 'Летопись поколений рода Смагаринских' : 'The Smagarinsky Family Chronicle';
+      }
+
       const searchInput = document.getElementById("custom-search-input");
-      if (searchInput) searchInput.placeholder = lang === 'ru' ? 'Поиск персоны...' : 'Search person...';
-      if (typeof activeNodeId !== 'undefined' && activeNodeId) showCustomSidePanel(activeNodeId);
-      if (typeof drawTree === 'function') drawTree();
+      if (searchInput) {
+        searchInput.placeholder = lang === 'ru' ? 'Поиск персоны...' : 'Search person...';
+      }
+
+      if (typeof activeNodeId !== 'undefined' && activeNodeId) {
+        showCustomSidePanel(activeNodeId);
+      }
+
+      if (typeof drawTree === 'function') {
+        drawTree();
+      }
       updatePersonCountBadge();
+
       const tipElement = document.getElementById("tip-text");
-      if (tipElement) tipElement.innerHTML = labels[currentLang].tip;
+      if (tipElement) {
+        tipElement.innerHTML = labels[currentLang].tip;
+      }
+
       const surnamesBtn = document.getElementById("btn-surnames");
-      if (surnamesBtn) surnamesBtn.textContent = labels[currentLang].surnames;
+      if (surnamesBtn) {
+        surnamesBtn.textContent = labels[currentLang].surnames;
+      }
+
       const surnamesCloseBtn = document.getElementById("surnames-close-btn");
-      if (surnamesCloseBtn) surnamesCloseBtn.textContent = labels[currentLang].close;
+      if (surnamesCloseBtn) {
+        surnamesCloseBtn.textContent = labels[currentLang].close;
+      }
     }
 
+    /* =============================================================
+       СТАРТ
+       ============================================================= */
     setLanguage('ru');
     updateEditLockIcon();
     updatePersonCountBadge();
