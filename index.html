@@ -145,30 +145,23 @@
       overflow: hidden;
     }
 
-    /* ==== ОФОРМЛЕНИЕ КАРТОЧЕК В ДЕРЕВЕ ==== */
-
-    /* Умершие — серый фон + чёрная рамка */
+    /* ==== ОФОРМЛЕНИЕ КАРТОЧЕК ==== */
     .node.deceased > rect {
       fill: #d9d9d9 !important;
       stroke: #000000 !important;
       stroke-width: 3px !important;
     }
-
-    /* Живые мужчины — мягкий голубой */
     .node.male:not(.deceased) > rect {
       fill: #CDE3F2 !important;
       stroke: #7FAECB !important;
       stroke-width: 2px !important;
     }
-
-    /* Живые женщины — мягкий розовый */
     .node.female:not(.deceased) > rect {
       fill: #F4D3E0 !important;
       stroke: #C98EAB !important;
       stroke-width: 2px !important;
     }
 
-    /* Тёмный текст на всех карточках */
     .node text,
     .node tspan {
       fill: #1a1a1a !important;
@@ -176,11 +169,9 @@
       font-weight: 600 !important;
     }
 
-    /* Имя — крупнее, годы — мельче */
     .node text.field_0 { font-size: 18px !important; font-weight: bold !important; }
     .node text.field_1 { font-size: 12px !important; font-weight: normal !important; }
 
-    /* Подсветка при наведении (без transform — только тень и обводка) */
     .node.male:not(.deceased):hover > rect {
       stroke: #4A90C2 !important;
       stroke-width: 3px !important;
@@ -200,13 +191,11 @@
       cursor: pointer;
     }
 
-    /* Линии связей */
     [data-l-id] path {
       stroke: #8B0000 !important;
       stroke-width: 2.5px !important;
     }
 
-    /* Зелёная иконка "показать родителей супруга" */
     #base_up path,
     #base_up ellipse,
     #hugo_up path,
@@ -229,31 +218,10 @@
       gap: 10px;
       flex-wrap: wrap;
     }
-
-    .tip-text {
-      font-size: 15px;
-      color: #555;
-      letter-spacing: 0.3px;
-      line-height: 1.5;
-    }
-
-    .tip-text strong {
-      color: maroon;
-      font-weight: 600;
-    }
-
-    .tip-icon-inline {
-      display: inline-flex;
-      align-items: center;
-      vertical-align: middle;
-      margin: 0 3px;
-    }
-
-    .tip-icon-inline svg {
-      display: block;
-      width: 22px;
-      height: 22px;
-    }
+    .tip-text { font-size: 15px; color: #555; letter-spacing: 0.3px; line-height: 1.5; }
+    .tip-text strong { color: maroon; font-weight: 600; }
+    .tip-icon-inline { display: inline-flex; align-items: center; vertical-align: middle; margin: 0 3px; }
+    .tip-icon-inline svg { display: block; width: 22px; height: 22px; }
 
     @media (max-width: 600px) {
       .tip-text { font-size: 13px; }
@@ -261,10 +229,7 @@
       .tip-icon-inline svg { width: 20px; height: 20px; }
     }
 
-    /* ============================================================
-       АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ
-       ============================================================ */
-
+    /* ==== АДАПТИВНОСТЬ ==== */
     @media (max-width: 1024px) {
       body { margin: 10px; }
       h1 { font-size: 22px; }
@@ -274,7 +239,6 @@
       #main-wrapper { height: 640px; gap: 10px; }
       #custom-side-panel { width: 320px; min-width: 320px; }
     }
-
     @media (max-width: 768px) {
       body { margin: 6px; }
       h1 { font-size: 18px; margin-bottom: 8px; }
@@ -309,7 +273,6 @@
       .node text.field_0 { font-size: 14px !important; }
       .node text.field_1 { font-size: 10px !important; }
     }
-
     @media (max-width: 480px) {
       body { margin: 4px; }
       h1 { font-size: 16px; margin-bottom: 6px; }
@@ -377,55 +340,53 @@
     let treeInstance = null;
 
     const EDIT_PASSWORD = "kaluninA39";
-    const TREE_STATE_KEY = 'familyTree_viewState';
+    const TREE_CENTER_KEY = 'familyTree_centerPerson';
 
     /* =============================================================
-       СОХРАНЕНИЕ / ВОССТАНОВЛЕНИЕ ПОЗИЦИИ ДЕРЕВА
+       СОХРАНЕНИЕ / ВОССТАНОВЛЕНИЕ ЦЕНТРАЛЬНОЙ ПЕРСОНЫ
        ============================================================= */
-    function saveTreeState() {
-      if (!treeInstance) return;
+
+    // Сохраняем ID персоны, на которой центрировано дерево
+    function saveTreeCenterPerson(personId) {
+      if (!personId || !db[personId]) return;
       try {
-        const state = {
-          x: treeInstance._x || 0,
-          y: treeInstance._y || 0,
-          scale: treeInstance._scale || 1,
-          timestamp: Date.now()
-        };
-        localStorage.setItem(TREE_STATE_KEY, JSON.stringify(state));
-        console.log('💾 Состояние дерева сохранено:', state);
+        localStorage.setItem(TREE_CENTER_KEY, personId);
+        console.log('💾 Центральная персона сохранена:', personId);
       } catch (e) {
-        console.warn('⚠️ Не удалось сохранить состояние дерева:', e);
+        console.warn('⚠️ Не удалось сохранить центр:', e);
       }
     }
 
-    function restoreTreeState() {
+    // Восстанавливаем центр на сохранённой персоне
+    function restoreTreeCenterPerson() {
       try {
-        const saved = localStorage.getItem(TREE_STATE_KEY);
-        if (!saved) return false;
-
-        const state = JSON.parse(saved);
-        if (Date.now() - state.timestamp > 30 * 24 * 60 * 60 * 1000) {
-          localStorage.removeItem(TREE_STATE_KEY);
+        const savedId = localStorage.getItem(TREE_CENTER_KEY);
+        if (!savedId) return false;
+        if (!db[savedId]) {
+          // Персона удалена — сбрасываем
+          localStorage.removeItem(TREE_CENTER_KEY);
           return false;
         }
-
-        if (treeInstance && typeof treeInstance.zoom === 'function') {
-          if (state.scale && state.scale !== 1) {
-            try { treeInstance.zoom(state.scale); } catch (e) {}
+        if (treeInstance && typeof treeInstance.center === 'function') {
+          try {
+            treeInstance.center(savedId);
+            console.log('📂 Центр восстановлен на:', savedId);
+            return true;
+          } catch (e) {
+            console.warn('⚠️ Не удалось восстановить центр:', e);
           }
-          console.log('📂 Состояние дерева восстановлено:', state);
-          return true;
         }
         return false;
       } catch (e) {
-        console.warn('⚠️ Не удалось восстановить состояние дерева:', e);
+        console.warn('⚠️ Ошибка восстановления центра:', e);
         return false;
       }
     }
 
-    function resetTreeState() {
-      localStorage.removeItem(TREE_STATE_KEY);
-      console.log('🗑️ Состояние дерева сброшено');
+    // Сбрасываем сохранённый центр (при редактировании)
+    function resetTreeCenter() {
+      localStorage.removeItem(TREE_CENTER_KEY);
+      console.log('🗑️ Центр дерева сброшен');
     }
 
     /* =============================================================
@@ -547,7 +508,10 @@
         showCustomSidePanel(id);
       }
       if (treeInstance && typeof treeInstance.center === 'function') {
-        try { treeInstance.center(id); } catch (e) {}
+        try {
+          treeInstance.center(id);
+          saveTreeCenterPerson(id); // Сохраняем центр
+        } catch (e) {}
       }
     }
 
@@ -772,6 +736,7 @@
           if (typeof treeInstance.select === 'function') {
             treeInstance.select(personId);
           }
+          saveTreeCenterPerson(personId); // Сохраняем центр
           console.log("✅ Дерево центрировано на:", personId);
         } catch (e) {
           console.warn("⚠️ Ошибка центрирования:", e);
@@ -902,7 +867,7 @@
       if (!activeNodeId || !db[activeNodeId]) return;
       const person = db[activeNodeId];
 
-      resetTreeState(); // Сбрасываем сохранённую позицию при изменении данных
+      resetTreeCenter(); // Сбрасываем сохранённый центр при изменении данных
 
       if (typeof person.name !== "object") person.name = { ru: person.name || "", en: "" };
       person.name[currentLang] = document.getElementById("inp-name").value.trim();
@@ -955,7 +920,7 @@
         : `Are you sure you want to completely delete "${db[id].name[currentLang] || id}" from the tree?`;
 
       if (confirm(confirmMsg)) {
-        resetTreeState(); // Сбрасываем позицию при удалении
+        resetTreeCenter(); // Сбрасываем центр при удалении
         delete db[id];
 
         Object.keys(db).forEach(key => {
@@ -1020,7 +985,7 @@
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
 
-      resetTreeState(); // Сбрасываем позицию при добавлении
+      resetTreeCenter(); // Сбрасываем центр при добавлении
 
       let promptMsg = currentLang === 'ru'
         ? "Введите краткое имя на английском для ID карточки\n(например: ivan_1945 или mariya_1980):"
@@ -1248,7 +1213,6 @@
       container.innerHTML = "";
 
       try {
-        // Адаптивный размер карточек
         const isMobile = window.innerWidth <= 768;
         const isSmallMobile = window.innerWidth <= 480;
 
@@ -1284,6 +1248,7 @@
 
         treeInstance.on('click', function (sender, args) {
           showCustomSidePanel(args.node.id);
+          saveTreeCenterPerson(args.node.id); // Сохраняем центр при клике
           return false;
         });
 
@@ -1293,9 +1258,11 @@
             treeInstance.maximize(null, false, false, function () {
               console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён...");
               try {
-                const restored = restoreTreeState();
+                // Восстанавливаем сохранённый центр
+                const restored = restoreTreeCenterPerson();
 
                 if (!restored) {
+                  // Если центра нет — используем адаптивное поведение
                   if (window.innerWidth <= 768) {
                     treeInstance.fit();
                     console.log("[ADAPTIVE] Мобильный режим — дерево целиком");
@@ -1317,23 +1284,6 @@
         });
 
         treeInstance.load(getTreeData());
-
-        // Сохранение позиции при скролле / перетаскивании
-        const treeContainer = document.getElementById('family-tree');
-        if (treeContainer && !treeContainer._stateTracker) {
-          treeContainer._stateTracker = true;
-
-          let saveTimer;
-          const debouncedSave = function() {
-            clearTimeout(saveTimer);
-            saveTimer = setTimeout(saveTreeState, 800);
-          };
-
-          treeContainer.addEventListener('wheel', debouncedSave, { passive: true });
-          treeContainer.addEventListener('mouseup', debouncedSave);
-          treeContainer.addEventListener('touchend', debouncedSave);
-          window.addEventListener('beforeunload', saveTreeState);
-        }
 
         // Перерисовка при изменении размера окна
         if (!window._resizeHandler) {
@@ -1400,6 +1350,7 @@
             input.value = "";
             try {
               treeInstance.center(m.id);
+              saveTreeCenterPerson(m.id); // Сохраняем центр при поиске
             } catch (e) {}
             showCustomSidePanel(m.id);
           };
