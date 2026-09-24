@@ -634,24 +634,46 @@
           return false;
         });
 
-        treeInstance.onInit(function () {
+                treeInstance.onInit(function () {
           diagLog('onInit');
           try {
-            treeInstance.maximize(null, false, false, function () {
-              diagLog('maximize OK');
+            // НОВОЕ: на мобильных — только 2 уровня, на ПК — всё
+            if (window.innerWidth <= 768) {
+              diagLog('мобильный режим');
+              // Раскрываем только 2 уровня от Вульфа
+              if (db["person_vulf_1898"]) {
+                treeInstance.center("person_vulf_1898");
+              }
+              // Пытаемся раскрыть 2 уровня
               try {
-                const restored = restoreTreeCenterPerson();
-                if (!restored) {
-                  if (window.innerWidth <= 768) {
+                treeInstance.maximize("person_vulf_1898", false, false, function () {
+                  diagLog('maximize от Вульфа');
+                  try {
                     treeInstance.fit();
                     diagLog('fit() моб.');
-                  } else {
-                    if (db["person_vulf_1898"]) { treeInstance.center("person_vulf_1898"); diagLog('center Вульф'); }
-                    else { treeInstance.fit(); }
+                  } catch (e) { diagLog('❌ fit: ' + e.message); }
+                });
+              } catch (e) {
+                diagLog('❌ max: ' + e.message);
+                treeInstance.fit();
+              }
+            } else {
+              // ПК — как было
+              treeInstance.maximize(null, false, false, function () {
+                diagLog('maximize OK');
+                try {
+                  const restored = restoreTreeCenterPerson();
+                  if (!restored) {
+                    if (db["person_vulf_1898"]) {
+                      treeInstance.center("person_vulf_1898");
+                      diagLog('center Вульф');
+                    } else {
+                      treeInstance.fit();
+                    }
                   }
-                }
-              } catch (e) { diagLog('❌ ' + e.message); }
-            });
+                } catch (e) { diagLog('❌ ' + e.message); }
+              });
+            }
           } catch (e) { diagLog('❌ max: ' + e.message); }
         });
 
