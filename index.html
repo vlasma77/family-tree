@@ -293,13 +293,50 @@
       #surnames-overlay > div { padding: 16px !important; }
       #surnames-title { font-size: 18px !important; }
     }
+
+    /* ==== ДИАГНОСТИКА (временно) ==== */
+    #diag-block {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      max-width: 300px;
+      background: rgba(220, 20, 20, 0.95);
+      color: white;
+      font-family: monospace;
+      font-size: 11px;
+      padding: 10px 12px;
+      border-radius: 6px;
+      z-index: 99999;
+      line-height: 1.5;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      word-break: break-all;
+    }
+    #diag-block .diag-close {
+      position: absolute;
+      top: 2px;
+      right: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    #diag-block .diag-title {
+      font-weight: bold;
+      margin-bottom: 4px;
+      display: block;
+    }
   </style>
 </head>
 <body>
 
+  <!-- ДИАГНОСТИКА -->
+  <div id="diag-block">
+    <span class="diag-close" onclick="document.getElementById('diag-block').style.display='none'">×</span>
+    <span class="diag-title">🩺 ДИАГНОСТИКА</span>
+    <div id="diag-content">Загрузка...</div>
+  </div>
+
   <h1 id="main-title">Летопись поколений рода Смагаринских</h1>
 
-  <!-- ПОДСКАЗКА -->
   <div id="nav-tip" class="tip-container">
     <span id="tip-text" class="tip-text">
       Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> на карточке персоны
@@ -343,47 +380,59 @@
     const TREE_CENTER_KEY = 'familyTree_centerPerson';
 
     /* =============================================================
+       ДИАГНОСТИКА
+       ============================================================= */
+    function diagLog(msg) {
+      console.log('[DIAG]', msg);
+      const el = document.getElementById('diag-content');
+      if (el) {
+        el.innerHTML += msg + '<br>';
+      }
+    }
+
+    function diagClear() {
+      const el = document.getElementById('diag-content');
+      if (el) el.innerHTML = '';
+    }
+
+    /* =============================================================
        СОХРАНЕНИЕ / ВОССТАНОВЛЕНИЕ ЦЕНТРАЛЬНОЙ ПЕРСОНЫ
        ============================================================= */
-
-    // Сохраняем ID персоны, на которой центрировано дерево
     function saveTreeCenterPerson(personId) {
       if (!personId || !db[personId]) return;
       try {
         localStorage.setItem(TREE_CENTER_KEY, personId);
         console.log('💾 Центральная персона сохранена:', personId);
-      } catch (e) {
-        console.warn('⚠️ Не удалось сохранить центр:', e);
-      }
+      } catch (e) {}
     }
 
-    // Восстанавливаем центр на сохранённой персоне
     function restoreTreeCenterPerson() {
       try {
         const savedId = localStorage.getItem(TREE_CENTER_KEY);
-        if (!savedId) return false;
+        if (!savedId) {
+          diagLog('restore: нет сохранённого ID');
+          return false;
+        }
         if (!db[savedId]) {
-          // Персона удалена — сбрасываем
           localStorage.removeItem(TREE_CENTER_KEY);
+          diagLog('restore: ID не найден в базе → сброс');
           return false;
         }
         if (treeInstance && typeof treeInstance.center === 'function') {
           try {
             treeInstance.center(savedId);
-            console.log('📂 Центр восстановлен на:', savedId);
+            diagLog('restore: ✅ центр на ' + savedId);
             return true;
           } catch (e) {
-            console.warn('⚠️ Не удалось восстановить центр:', e);
+            diagLog('restore: ❌ ошибка center()');
           }
         }
         return false;
       } catch (e) {
-        console.warn('⚠️ Ошибка восстановления центра:', e);
         return false;
       }
     }
 
-    // Сбрасываем сохранённый центр (при редактировании)
     function resetTreeCenter() {
       localStorage.removeItem(TREE_CENTER_KEY);
       console.log('🗑️ Центр дерева сброшен');
@@ -420,11 +469,11 @@
       if (!btn) return;
       if (isEditModeOn()) {
         btn.textContent = "🔓";
-        btn.title = "Режим редактирования ВКЛЮЧЁН (нажмите, чтобы выключить)";
+        btn.title = "Режим редактирования ВКЛЮЧЁН";
         btn.style.borderColor = "#4CAF50";
       } else {
         btn.textContent = "🔒";
-        btn.title = "Режим редактирования выключен (нажмите, чтобы включить)";
+        btn.title = "Режим редактирования выключен";
         btn.style.borderColor = "#ccc";
       }
     }
@@ -510,7 +559,7 @@
       if (treeInstance && typeof treeInstance.center === 'function') {
         try {
           treeInstance.center(id);
-          saveTreeCenterPerson(id); // Сохраняем центр
+          saveTreeCenterPerson(id);
         } catch (e) {}
       }
     }
@@ -583,25 +632,16 @@
       }
     };
 
-    /* =============================================================
-       ЭКСПОРТ БАЗЫ
-       ============================================================= */
     window.copyDatabaseToClipboard = function() {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
       navigator.clipboard.writeText(fileContent).then(() => {
-        const successMsg = currentLang === 'ru'
-          ? "Код базы успешно скопирован в буфер обмена! Перейдите в VS Code, откройте database.js, выделите всё (Ctrl+A) и вставьте (Ctrl+V)."
-          : "Database code copied to clipboard! Open database.js in VS Code, select all (Ctrl+A), and paste (Ctrl+V).";
-        alert(successMsg);
+        alert(currentLang === 'ru' ? "Код базы скопирован!" : "Database code copied!");
       }).catch(err => {
-        alert("Ошибка при копировании: " + err);
+        alert("Ошибка: " + err);
       });
     };
 
-    /* =============================================================
-       ПРОВЕРКА БАЗЫ
-       ============================================================= */
     function normalizeDatabase() {
       let total = Object.keys(db).length;
       console.log(`[DATA AUDIT] Старт проверки базы данных. Анализируется записей: ${total}`);
@@ -611,14 +651,6 @@
         if (!person.name) person.name = { ru: "Неизвестно", en: "Unknown" };
         if (!person.links) person.links = { parents: [], spouse: null };
         if (!Array.isArray(person.links.parents)) person.links.parents = [];
-
-        if (person.familyText && person.familyText['ru']) {
-          person.familyText['ru'].forEach(line => {
-            if (line.toLowerCase().includes("дети:")) {
-              console.warn(`[AUDIT WARNING] Персона '${id}' содержит детей текстом в familyText.`);
-            }
-          });
-        }
 
         if (person.links.spouse && !db[person.links.spouse]) {
           console.error(`[DATA ERROR] Персона '${id}' ссылается на несуществующий ID супруга(и): '${person.links.spouse}'`);
@@ -632,9 +664,6 @@
       console.log("[DATA AUDIT] Проверка структуры данных завершена успешно.");
     }
 
-    /* =============================================================
-       СЕМЕЙНЫЙ КРУГ
-       ============================================================= */
     function buildAutomaticFamilyHtml(nodeId) {
       const person = db[nodeId];
       if (!person) return "";
@@ -717,9 +746,6 @@
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
 
-    /* =============================================================
-       БОКОВАЯ ПАНЕЛЬ
-       ============================================================= */
     function closePanel() {
       const panel = document.getElementById("custom-side-panel");
       panel.style.display = "none";
@@ -727,7 +753,6 @@
 
     function centerTreeOnPerson(personId) {
       if (!personId) return;
-      console.log("🎯 Центрирую дерево на персоне:", personId);
       closePanel();
 
       if (treeInstance && typeof treeInstance.center === 'function') {
@@ -736,13 +761,8 @@
           if (typeof treeInstance.select === 'function') {
             treeInstance.select(personId);
           }
-          saveTreeCenterPerson(personId); // Сохраняем центр
-          console.log("✅ Дерево центрировано на:", personId);
-        } catch (e) {
-          console.warn("⚠️ Ошибка центрирования:", e);
-        }
-      } else {
-        console.warn("⚠️ Дерево не инициализировано");
+          saveTreeCenterPerson(personId);
+        } catch (e) {}
       }
     }
 
@@ -859,15 +879,12 @@
       panel.style.display = "flex";
     }
 
-    /* =============================================================
-       СОХРАНЕНИЕ ПЕРСОНЫ
-       ============================================================= */
     window.saveCurrentPersonData = function() {
-      if (!isEditModeOn()) { alert("Режим редактирования выключен. Включите его через значок замка в шапке сайта."); return; }
+      if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
       const person = db[activeNodeId];
 
-      resetTreeCenter(); // Сбрасываем сохранённый центр при изменении данных
+      resetTreeCenter();
 
       if (typeof person.name !== "object") person.name = { ru: person.name || "", en: "" };
       person.name[currentLang] = document.getElementById("inp-name").value.trim();
@@ -899,28 +916,21 @@
       drawTree();
       showCustomSidePanel(activeNodeId);
 
-      const alertMsg = currentLang === 'ru'
-        ? "Изменения применены к плитке! Нажмите кнопку 'Скачать базу' внизу, чтобы обновить файл database.js."
-        : "Changes applied to the node! Click 'Download database' at the bottom to update your database.js file.";
-      alert(alertMsg);
+      alert(currentLang === 'ru'
+        ? "Изменения применены! Нажмите 'Скачать базу' внизу."
+        : "Changes applied! Click 'Download database' at the bottom.");
     };
 
-    /* =============================================================
-       УДАЛЕНИЕ ПЕРСОНЫ
-       ============================================================= */
     window.deletePerson = function(id) {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
-      if (!id || !db[id]) {
-        alert(currentLang === 'ru' ? "Ошибка: Карточка не найдена." : "Error: Person not found.");
-        return;
-      }
+      if (!id || !db[id]) return;
 
       const confirmMsg = currentLang === 'ru'
-        ? `Вы уверены, что хотите полностью удалить карточку "${db[id].name[currentLang] || db[id].name['ru']}" из древа?`
-        : `Are you sure you want to completely delete "${db[id].name[currentLang] || id}" from the tree?`;
+        ? `Удалить карточку "${db[id].name[currentLang] || db[id].name['ru']}"?`
+        : `Delete "${db[id].name[currentLang] || id}"?`;
 
       if (confirm(confirmMsg)) {
-        resetTreeCenter(); // Сбрасываем центр при удалении
+        resetTreeCenter();
         delete db[id];
 
         Object.keys(db).forEach(key => {
@@ -942,16 +952,12 @@
         updatePersonCountBadge();
         downloadDatabaseFile();
 
-        const alertMsg = currentLang === 'ru'
-          ? "Карточка удалена с экрана, и новый файл базы данных автоматически скачан! Замените им старый файл 'database.js' в папке проекта, чтобы сохранить изменения."
-          : "Deleted successfully! New database file downloaded automatically. Replace 'database.js' in your project folder to save permanent changes.";
-        alert(alertMsg);
+        alert(currentLang === 'ru'
+          ? "Карточка удалена! Новый файл скачан — замените им database.js."
+          : "Deleted! New file downloaded — replace database.js.");
       }
     };
 
-    /* =============================================================
-       СКАЧИВАНИЕ БАЗЫ
-       ============================================================= */
     window.downloadDatabaseFile = function() {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
@@ -965,9 +971,6 @@
       document.body.removeChild(link);
     };
 
-    /* =============================================================
-       МЕНЮ ДОБАВЛЕНИЯ
-       ============================================================= */
     window.toggleGeniMenu = function() {
       const geniMenu = document.getElementById("geni-add-menu");
       if (geniMenu) geniMenu.classList.toggle("hidden-block");
@@ -978,18 +981,15 @@
       if (bioEl) bioEl.classList.toggle("hidden-block");
     };
 
-    /* =============================================================
-       ДОБАВЛЕНИЕ РОДСТВЕННИКА
-       ============================================================= */
     window.addRelativeDirect = function(role) {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
 
-      resetTreeCenter(); // Сбрасываем центр при добавлении
+      resetTreeCenter();
 
       let promptMsg = currentLang === 'ru'
-        ? "Введите краткое имя на английском для ID карточки\n(например: ivan_1945 или mariya_1980):"
-        : "Enter a short English slug for the person ID\n(e.g., ivan_1945 or mariya_1980):";
+        ? "Введите краткое имя на английском для ID карточки:"
+        : "Enter a short English slug for the person ID:";
 
       let userSlug = prompt(promptMsg);
       let newId;
@@ -1025,26 +1025,16 @@
 
       if (role === 'father') {
         currentPerson.links.parents[0] = newId;
-        let note = askOptionalNote(
-          "Пометка к отцу (необязательно, например: «приёмный», «отчим»). Оставьте пустым, если не нужно:",
-          "Father note (optional, e.g. \"adoptive\", \"stepfather\"). Leave empty if not needed:"
-        );
+        let note = askOptionalNote("Пометка к отцу (необязательно):", "Father note (optional):");
         if (note) currentPerson.links.fatherNote = note;
       } else if (role === 'mother') {
         currentPerson.links.parents[1] = newId;
-        let note = askOptionalNote(
-          "Пометка к матери (необязательно, например: «приёмная», «мачеха»). Оставьте пустым, если не нужно:",
-          "Mother note (optional, e.g. \"adoptive\", \"stepmother\"). Leave empty if not needed:"
-        );
+        let note = askOptionalNote("Пометка к матери (необязательно):", "Mother note (optional):");
         if (note) currentPerson.links.motherNote = note;
       } else if (role === 'spouse') {
         db[newId].links.spouse = activeNodeId;
         currentPerson.links.spouse = newId;
-
-        let note = askOptionalNote(
-          "Пометка к браку (необязательно, например: «второй брак», «гражданский брак»). Оставьте пустым, если не нужно:",
-          "Marriage note (optional, e.g. \"second marriage\"). Leave empty if not needed:"
-        );
+        let note = askOptionalNote("Пометка к браку (необязательно):", "Marriage note (optional):");
         if (note) {
           currentPerson.links.spouseNote = note;
           db[newId].links.spouseNote = note;
@@ -1071,9 +1061,6 @@
       showCustomSidePanel(newId);
     };
 
-    /* =============================================================
-       УТИЛИТЫ
-       ============================================================= */
     function getShortDisplayName(fullName) {
       if (!fullName) return fullName;
       let cleaned = fullName.replace(/\s*\([^)]*\)/g, "").trim();
@@ -1131,9 +1118,6 @@
              idLower.includes("nella") || idLower.includes("nadejda");
     }
 
-    /* =============================================================
-       ДАННЫЕ ДЛЯ ДЕРЕВА
-       ============================================================= */
     function getTreeData() {
       normalizeDatabase();
       const treeData = [];
@@ -1204,9 +1188,6 @@
       return treeData;
     }
 
-    /* =============================================================
-       ОТРИСОВКА ДЕРЕВА
-       ============================================================= */
     function drawTree() {
       const container = document.getElementById("family-tree");
       if (!container) return;
@@ -1230,6 +1211,10 @@
         }
 
         console.log(`[ADAPTIVE] Ширина экрана: ${window.innerWidth}px, карточка: ${cardWidth}x${cardHeight}`);
+        diagLog(`Ширина: ${window.innerWidth}px`);
+        diagLog(`isMobile: ${isMobile}, isSmall: ${isSmallMobile}`);
+        diagLog(`Карточка: ${cardWidth}x${cardHeight}`);
+        diagLog(`Центр в LS: ${localStorage.getItem(TREE_CENTER_KEY) || '—'}`);
 
         treeInstance = new FamilyTree(container, {
           mouseScroller: { zoom: true, scale: true },
@@ -1248,27 +1233,29 @@
 
         treeInstance.on('click', function (sender, args) {
           showCustomSidePanel(args.node.id);
-          saveTreeCenterPerson(args.node.id); // Сохраняем центр при клике
+          saveTreeCenterPerson(args.node.id);
           return false;
         });
 
         treeInstance.onInit(function () {
           console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM...");
+          diagLog('onInit сработал');
           try {
             treeInstance.maximize(null, false, false, function () {
               console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён...");
+              diagLog('maximize завершён');
               try {
-                // Восстанавливаем сохранённый центр
                 const restored = restoreTreeCenterPerson();
+                diagLog(`restore: ${restored}`);
 
                 if (!restored) {
-                  // Если центра нет — используем адаптивное поведение
                   if (window.innerWidth <= 768) {
                     treeInstance.fit();
-                    console.log("[ADAPTIVE] Мобильный режим — дерево целиком");
+                    diagLog('выбран fit() — мобильный');
                   } else {
                     if (db["person_vulf_1898"]) {
                       treeInstance.center("person_vulf_1898");
+                      diagLog('центр на Вульфе (ПК)');
                     } else {
                       treeInstance.fit();
                     }
@@ -1276,16 +1263,17 @@
                 }
               } catch (e) {
                 console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка центрирования:", e);
+                diagLog('❌ ошибка: ' + e.message);
               }
             });
           } catch (e) {
             console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка maximize():", e);
+            diagLog('❌ maximize: ' + e.message);
           }
         });
 
         treeInstance.load(getTreeData());
 
-        // Перерисовка при изменении размера окна
         if (!window._resizeHandler) {
           window._resizeHandler = true;
           let resizeTimer;
@@ -1297,7 +1285,6 @@
               if (newIsMobile !== window._lastIsMobile || newIsSmallMobile !== window._lastIsSmallMobile) {
                 window._lastIsMobile = newIsMobile;
                 window._lastIsSmallMobile = newIsSmallMobile;
-                console.log('[ADAPTIVE] Изменение размера — перерисовка');
                 drawTree();
               }
             }, 300);
@@ -1309,12 +1296,10 @@
 
       } catch (e) {
         console.error("Ошибка инициализации графического графа:", e);
+        diagLog('❌ фатал: ' + e.message);
       }
     }
 
-    /* =============================================================
-       ПОИСК
-       ============================================================= */
     (function () {
       const input = document.getElementById("custom-search-input");
       const resultsBox = document.getElementById("custom-search-results");
@@ -1350,7 +1335,7 @@
             input.value = "";
             try {
               treeInstance.center(m.id);
-              saveTreeCenterPerson(m.id); // Сохраняем центр при поиске
+              saveTreeCenterPerson(m.id);
             } catch (e) {}
             showCustomSidePanel(m.id);
           };
@@ -1364,9 +1349,6 @@
       });
     })();
 
-    /* =============================================================
-       ПЕРЕКЛЮЧЕНИЕ ЯЗЫКА
-       ============================================================= */
     function setLanguage(lang) {
       currentLang = lang;
 
@@ -1418,9 +1400,6 @@
       }
     }
 
-    /* =============================================================
-       СТАРТ
-       ============================================================= */
     setLanguage('ru');
     updateEditLockIcon();
     updatePersonCountBadge();
