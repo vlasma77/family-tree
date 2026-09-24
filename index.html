@@ -440,7 +440,7 @@
     <div style="max-width:800px;margin:0 auto;padding:24px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
         <h2 id="surnames-title" style="margin:0;">Список фамилий</h2>
-        <button onclick="closeSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;">✕ Закрыть</button>
+<button id="surnames-close-btn" onclick="closeSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;">✕ Закрыть</button>
       </div>
       <div id="surnames-list-container"></div>
     </div>
@@ -619,7 +619,8 @@
         biologicalFather: "Биологический отец", biologicalMother: "Биологическая мать",
         add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь",
         tip: 'Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> на карточке персоны',
-        surnames: "Список фамилий"
+        surnames: "Список фамилий",
+        close: "✕ Закрыть"
       },
       en: {
         birth: "Birth Place", marriage: "Marriage", job: "Occupation", burial: "Burial Place",
@@ -632,7 +633,8 @@
         biologicalFather: "Biological father", biologicalMother: "Biological mother",
         add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter",
         tip: 'To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> on a person\'s card to expand nodes',
-        surnames: "Surnames List"
+        surnames: "Surnames List",
+        close: "✕ Close"
       }
     };
 
@@ -1307,14 +1309,15 @@
           return false;
         });
 
-                  treeInstance.onInit(function () {
+               treeInstance.onInit(function () {
           console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM, разворачиваю всё...");
           try {
             treeInstance.maximize(null, false, false, function () {
               console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, центрирую...");
               try {
-                // НОВОЕ: на мобильных НЕ центрируем и НЕ зумируем — показываем всё дерево
+                // НОВОЕ: на мобильных НЕ центрируем и НЕ зумируем — оставляем общий вид
                 if (window.innerWidth <= 768) {
+                  // Просто показываем всё дерево, но не приближаем
                   treeInstance.fit();
                   console.log("[ADAPTIVE] Мобильный режим — показываю дерево целиком");
                 } else {
@@ -1458,6 +1461,10 @@
       const surnamesBtn = document.getElementById("btn-surnames");
       if (surnamesBtn) {
         surnamesBtn.textContent = labels[currentLang].surnames;
+      }
+            const surnamesCloseBtn = document.getElementById("surnames-close-btn");
+      if (surnamesCloseBtn) {
+        surnamesCloseBtn.textContent = labels[currentLang].close;
       }
     }
 
