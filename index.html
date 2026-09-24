@@ -1307,16 +1307,23 @@
           return false;
         });
 
-        treeInstance.onInit(function () {
+                  treeInstance.onInit(function () {
           console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM, разворачиваю всё...");
           try {
             treeInstance.maximize(null, false, false, function () {
-              console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, центрирую на Вульфе...");
+              console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, центрирую...");
               try {
-                if (db["person_vulf_1898"]) {
-                  treeInstance.center("person_vulf_1898");
-                } else {
+                // НОВОЕ: на мобильных НЕ центрируем и НЕ зумируем — показываем всё дерево
+                if (window.innerWidth <= 768) {
                   treeInstance.fit();
+                  console.log("[ADAPTIVE] Мобильный режим — показываю дерево целиком");
+                } else {
+                  // На компьютере — центрируем на Вульфе
+                  if (db["person_vulf_1898"]) {
+                    treeInstance.center("person_vulf_1898");
+                  } else {
+                    treeInstance.fit();
+                  }
                 }
               } catch (e) {
                 console.warn("[ИНИЦИАЛИЗАЦИЯ] Ошибка центрирования:", e);
