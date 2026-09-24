@@ -1227,6 +1227,43 @@
       container.innerHTML = "";
 
       try {
+                // НОВОЕ: определяем размер карточек в зависимости от ширины экрана
+        const isMobile = window.innerWidth <= 768;
+        const isSmallMobile = window.innerWidth <= 480;
+        
+        let cardWidth, cardHeight, circleSize, imageSize, levelSep, siblingSep, subtreeSep;
+        
+        if (isSmallMobile) {
+          // Маленькие смартфоны
+          cardWidth = 90;
+          cardHeight = 72;
+          circleSize = 26;
+          imageSize = 26;
+          levelSep = 45;
+          siblingSep = 22;
+          subtreeSep = 30;
+        } else if (isMobile) {
+          // Смартфоны и планшеты
+          cardWidth = 100;
+          cardHeight = 80;
+          circleSize = 30;
+          imageSize = 30;
+          levelSep = 52;
+          siblingSep = 26;
+          subtreeSep = 36;
+        } else {
+          // Компьютеры
+          cardWidth = 112;
+          cardHeight = 90;
+          circleSize = 34;
+          imageSize = 34;
+          levelSep = 60;
+          siblingSep = 30;
+          subtreeSep = 40;
+        }
+        
+        console.log(`[ADAPTIVE] Ширина экрана: ${window.innerWidth}px, размер карточки: ${cardWidth}x${cardHeight}`);
+        
         treeInstance = new FamilyTree(container, {
           mouseScroller: { zoom: true, scale: true },
           editForm: false,
@@ -1234,13 +1271,13 @@
           lazyLoading: false,
           nodeBinding: { field_0: "name", field_1: "title", img_0: "img" },
 
-          nodeWidth: 112,
-          nodeHeight: 90,
-          nodeCircleSize: 34,
-          nodeImageSize: 34,
-          levelSeparation: 60,
-          siblingSeparation: 30,
-          subtreeSeparation: 40
+          nodeWidth: cardWidth,
+          nodeHeight: cardHeight,
+          nodeCircleSize: circleSize,
+          nodeImageSize: imageSize,
+          levelSeparation: levelSep,
+          siblingSeparation: siblingSep,
+          subtreeSeparation: subtreeSep
         });
 
         // НОВОЕ: встраиваем иконки «жив/умер» прямо в шаблон карточки
@@ -1291,6 +1328,33 @@
         });
 
         treeInstance.load(getTreeData());
+                // НОВОЕ: при изменении размера окна — перерисовываем дерево с новыми размерами
+        // (защита от многократного вызова)
+        if (!window._resizeHandler) {
+          window._resizeHandler = true;
+          let resizeTimer;
+          window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+              // Перерисовываем только если ширина действительно изменила категорию
+              const newIsMobile = window.innerWidth <= 768;
+              const newIsSmallMobile = window.innerWidth <= 480;
+              const currentIsMobile = window._lastIsMobile;
+              const currentIsSmallMobile = window._lastIsSmallMobile;
+              
+              if (newIsMobile !== currentIsMobile || newIsSmallMobile !== currentIsSmallMobile) {
+                window._lastIsMobile = newIsMobile;
+                window._lastIsSmallMobile = newIsSmallMobile;
+                console.log('[ADAPTIVE] Изменение размера экрана — перерисовываю дерево');
+                drawTree();
+              }
+            }, 300);
+          });
+        }
+        
+        // Запоминаем текущую категорию
+        window._lastIsMobile = isMobile;
+        window._lastIsSmallMobile = isSmallMobile;
       } catch (e) {
         console.error("Ошибка инициализации графического графа:", e);
       }
