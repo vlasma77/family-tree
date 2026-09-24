@@ -10025,5 +10025,141 @@ window.db = {
       "parents": [],
       "spouse": "person_nataly_chernov"
     }
+  },
+  "person_alik_strajnikov": {
+    "id": "person_alik_strajnikov",
+    "name": {
+      "ru": "Алик Борисович Стражников (Вексельман)",
+      "en": "Alik Borisovich Strazhnikov (Vekselman)"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_boris_vekselman",
+        "person_faina_vekselman"
+      ],
+      "spouse": null
+    }
+  },
+  "person_roman_korostishevsky": {
+    "id": "person_roman_korostishevsky",
+    "name": {
+      "ru": "Роман Борисович Коростишевский (Вексельман)",
+      "en": "Roman Borisovich Korostishevsky (Vekselman)"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_boris_vekselman",
+        "person_faina_vekselman"
+      ],
+      "spouse": null
+    }
+  },
+  "person_fima_vekselman": {
+    "id": "person_fima_vekselman",
+    "name": {
+      "ru": "Ефим Семёнович Вексельман",
+      "en": "Efim Semyonovich Vekselman"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_semen_vekselman",
+        "person_eva_vekselman"
+      ],
+      "spouse": null
+    }
+  },
+  "person_manya_vekselman": {
+    "id": "person_manya_vekselman",
+    "name": {
+      "ru": "Маня Семёновна Вексельман",
+      "en": "Manya Semyonovna Vekselman"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_semen_vekselman",
+        "person_eva_vekselman"
+      ],
+      "spouse": null
+    }
   }
 };

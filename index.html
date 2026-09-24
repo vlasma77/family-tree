@@ -261,6 +261,31 @@
       font-size: 12px !important;
       font-weight: normal !important;
     }
+          /* ПОДСВЕТКА ПРИ НАВЕДЕНИИ (без transform — только тень и обводка) */
+    
+    /* Обводка при наведении (для живых мужчин) */
+    .node.male:not(.deceased):hover > rect {
+      stroke: #4A90C2 !important;
+      stroke-width: 3px !important;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+      cursor: pointer;
+    }
+    
+    /* Обводка при наведении (для живых женщин) */
+    .node.female:not(.deceased):hover > rect {
+      stroke: #D96B9E !important;
+      stroke-width: 3px !important;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+      cursor: pointer;
+    }
+    
+    /* Обводка при наведении (для умерших) */
+    .node.deceased:hover > rect {
+      stroke: #000000 !important;
+      stroke-width: 4px !important;
+      filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
