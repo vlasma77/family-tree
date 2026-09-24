@@ -260,155 +260,74 @@
       .tip-container { padding: 8px 14px; margin: -5px 0 10px 0; }
       .tip-icon-inline svg { width: 20px; height: 20px; }
     }
-        /* ============================================================
+
+    /* ============================================================
        АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ
        ============================================================ */
-    
-    /* Планшеты (до 1024px) */
+
     @media (max-width: 1024px) {
       body { margin: 10px; }
-      
       h1 { font-size: 22px; }
-      
-      #header-bar {
-        gap: 8px;
-        padding-right: 5px;
-        flex-wrap: wrap;
-      }
-      
+      #header-bar { gap: 8px; padding-right: 5px; flex-wrap: wrap; }
       #custom-search-wrapper { width: 160px; }
-      
       #custom-search-input { font-size: 13px; padding: 5px 8px; }
-      
       #main-wrapper { height: 640px; gap: 10px; }
-      
-      #custom-side-panel {
-        width: 320px;
-        min-width: 320px;
-      }
+      #custom-side-panel { width: 320px; min-width: 320px; }
     }
-    
-    /* Смартфоны (до 768px) */
+
     @media (max-width: 768px) {
       body { margin: 6px; }
-      
       h1 { font-size: 18px; margin-bottom: 8px; }
-      
-      /* Шапка — компактнее */
-      #header-bar {
-        gap: 6px;
-        margin-bottom: 8px;
-        padding-right: 0;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      
+      #header-bar { gap: 6px; margin-bottom: 8px; padding-right: 0; justify-content: center; flex-wrap: wrap; }
       #custom-search-wrapper { width: 100%; max-width: 260px; }
-      
       #custom-search-input { font-size: 13px; padding: 5px 8px; }
-      
-      /* Кнопки в шапке — меньше */
-      #btn-surnames,
-      #btn-ru,
-      #btn-en,
-      #btn-edit-lock {
+      #btn-surnames, #btn-ru, #btn-en, #btn-edit-lock {
         padding: 4px 8px !important;
         font-size: 12px !important;
       }
-      
       #person-count-badge {
         height: 20px !important;
         min-width: 24px !important;
         font-size: 11px !important;
       }
-      
-      /* Подсказка — компактнее */
-      .tip-container {
-        padding: 6px 10px;
-        margin: -5px 0 8px 0;
-        gap: 6px;
-      }
-      
+      .tip-container { padding: 6px 10px; margin: -5px 0 8px 0; gap: 6px; }
       .tip-text { font-size: 12px; line-height: 1.4; }
-      
       .tip-icon-inline svg { width: 18px; height: 18px; }
-      
-      /* Дерево занимает всё доступное место */
       #main-wrapper {
         height: calc(100vh - 180px);
         min-height: 400px;
         gap: 0;
         flex-direction: column;
       }
-      
-      /* Боковая панель становится на всю ширину */
       #custom-side-panel {
         width: 100%;
         min-width: 100%;
         height: 50%;
         max-height: 500px;
       }
-      
-      /* Уменьшаем шрифт на карточках */
       .node text { font-size: 14px !important; }
       .node text.field_0 { font-size: 14px !important; }
       .node text.field_1 { font-size: 10px !important; }
     }
-    
-    /* Маленькие смартфоны (до 480px) */
+
     @media (max-width: 480px) {
       body { margin: 4px; }
-      
       h1 { font-size: 16px; margin-bottom: 6px; }
-      
-      /* Шапка — в две строки */
-      #header-bar {
-        gap: 4px;
-        margin-bottom: 6px;
-      }
-      
+      #header-bar { gap: 4px; margin-bottom: 6px; }
       #custom-search-wrapper { width: 100%; }
-      
-      /* Кнопки — минимальный размер */
-      #btn-surnames,
-      #btn-ru,
-      #btn-en,
-      #btn-edit-lock {
+      #btn-surnames, #btn-ru, #btn-en, #btn-edit-lock {
         padding: 3px 6px !important;
         font-size: 11px !important;
       }
-      
-      /* Подсказка — скрыть иконку, оставить текст */
-      .tip-container {
-        padding: 5px 8px;
-        font-size: 11px;
-      }
-      
+      .tip-container { padding: 5px 8px; font-size: 11px; }
       .tip-text { font-size: 11px; }
       .tip-icon-inline svg { width: 16px; height: 16px; }
-      
-      /* Дерево — максимум места */
-      #main-wrapper {
-        height: calc(100vh - 140px);
-        min-height: 350px;
-      }
-      
-      /* Боковая панель */
-      #custom-side-panel {
-        height: 60%;
-        max-height: 400px;
-      }
-      
-      /* Шрифты карточек */
+      #main-wrapper { height: calc(100vh - 140px); min-height: 350px; }
+      #custom-side-panel { height: 60%; max-height: 400px; }
       .node text { font-size: 12px !important; }
       .node text.field_0 { font-size: 12px !important; }
       .node text.field_1 { font-size: 9px !important; }
-      
-      /* Модальные окна — на всю ширину */
-      #surnames-overlay > div {
-        padding: 16px !important;
-      }
-      
+      #surnames-overlay > div { padding: 16px !important; }
       #surnames-title { font-size: 18px !important; }
     }
   </style>
@@ -440,7 +359,7 @@
     <div style="max-width:800px;margin:0 auto;padding:24px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
         <h2 id="surnames-title" style="margin:0;">Список фамилий</h2>
-<button id="surnames-close-btn" onclick="closeSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;">✕ Закрыть</button>
+        <button id="surnames-close-btn" onclick="closeSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;">✕ Закрыть</button>
       </div>
       <div id="surnames-list-container"></div>
     </div>
@@ -458,7 +377,60 @@
     let treeInstance = null;
 
     const EDIT_PASSWORD = "kaluninA39";
+    const TREE_STATE_KEY = 'familyTree_viewState';
 
+    /* =============================================================
+       СОХРАНЕНИЕ / ВОССТАНОВЛЕНИЕ ПОЗИЦИИ ДЕРЕВА
+       ============================================================= */
+    function saveTreeState() {
+      if (!treeInstance) return;
+      try {
+        const state = {
+          x: treeInstance._x || 0,
+          y: treeInstance._y || 0,
+          scale: treeInstance._scale || 1,
+          timestamp: Date.now()
+        };
+        localStorage.setItem(TREE_STATE_KEY, JSON.stringify(state));
+        console.log('💾 Состояние дерева сохранено:', state);
+      } catch (e) {
+        console.warn('⚠️ Не удалось сохранить состояние дерева:', e);
+      }
+    }
+
+    function restoreTreeState() {
+      try {
+        const saved = localStorage.getItem(TREE_STATE_KEY);
+        if (!saved) return false;
+
+        const state = JSON.parse(saved);
+        if (Date.now() - state.timestamp > 30 * 24 * 60 * 60 * 1000) {
+          localStorage.removeItem(TREE_STATE_KEY);
+          return false;
+        }
+
+        if (treeInstance && typeof treeInstance.zoom === 'function') {
+          if (state.scale && state.scale !== 1) {
+            try { treeInstance.zoom(state.scale); } catch (e) {}
+          }
+          console.log('📂 Состояние дерева восстановлено:', state);
+          return true;
+        }
+        return false;
+      } catch (e) {
+        console.warn('⚠️ Не удалось восстановить состояние дерева:', e);
+        return false;
+      }
+    }
+
+    function resetTreeState() {
+      localStorage.removeItem(TREE_STATE_KEY);
+      console.log('🗑️ Состояние дерева сброшено');
+    }
+
+    /* =============================================================
+       РЕЖИМ РЕДАКТИРОВАНИЯ
+       ============================================================= */
     function isEditModeOn() {
       return localStorage.getItem("familyTreeEditMode") === "true";
     }
@@ -504,6 +476,9 @@
       badge.title = (currentLang === 'en') ? `${count} people in the tree` : `Всего персон в дереве: ${count}`;
     }
 
+    /* =============================================================
+       СПИСОК ФАМИЛИЙ
+       ============================================================= */
     function extractSurname(fullName) {
       if (!fullName) return "";
       let name = fullName.replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
@@ -576,6 +551,9 @@
       }
     }
 
+    /* =============================================================
+       ФОТО
+       ============================================================= */
     function getPhotoUrl(id) {
       const person = db[id];
       if (person && person.mainPhoto && person.mainPhoto.trim() !== "") {
@@ -607,6 +585,9 @@
       return isFemale ? "photos/female.jpg" : "photos/male.jpg";
     }
 
+    /* =============================================================
+       ПЕРЕВОДЫ
+       ============================================================= */
     const labels = {
       ru: {
         birth: "Место рождения", marriage: "Брак", job: "Род занятий", burial: "Место упокоения",
@@ -638,6 +619,9 @@
       }
     };
 
+    /* =============================================================
+       ЭКСПОРТ БАЗЫ
+       ============================================================= */
     window.copyDatabaseToClipboard = function() {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
@@ -651,6 +635,9 @@
       });
     };
 
+    /* =============================================================
+       ПРОВЕРКА БАЗЫ
+       ============================================================= */
     function normalizeDatabase() {
       let total = Object.keys(db).length;
       console.log(`[DATA AUDIT] Старт проверки базы данных. Анализируется записей: ${total}`);
@@ -664,7 +651,7 @@
         if (person.familyText && person.familyText['ru']) {
           person.familyText['ru'].forEach(line => {
             if (line.toLowerCase().includes("дети:")) {
-              console.warn(`[AUDIT WARNING] Персона '${id}' содержит детей текстом в familyText. Требуется перевести на ID связи.`);
+              console.warn(`[AUDIT WARNING] Персона '${id}' содержит детей текстом в familyText.`);
             }
           });
         }
@@ -681,6 +668,9 @@
       console.log("[DATA AUDIT] Проверка структуры данных завершена успешно.");
     }
 
+    /* =============================================================
+       СЕМЕЙНЫЙ КРУГ
+       ============================================================= */
     function buildAutomaticFamilyHtml(nodeId) {
       const person = db[nodeId];
       if (!person) return "";
@@ -763,6 +753,9 @@
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
 
+    /* =============================================================
+       БОКОВАЯ ПАНЕЛЬ
+       ============================================================= */
     function closePanel() {
       const panel = document.getElementById("custom-side-panel");
       panel.style.display = "none";
@@ -901,10 +894,15 @@
       panel.style.display = "flex";
     }
 
+    /* =============================================================
+       СОХРАНЕНИЕ ПЕРСОНЫ
+       ============================================================= */
     window.saveCurrentPersonData = function() {
       if (!isEditModeOn()) { alert("Режим редактирования выключен. Включите его через значок замка в шапке сайта."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
       const person = db[activeNodeId];
+
+      resetTreeState(); // Сбрасываем сохранённую позицию при изменении данных
 
       if (typeof person.name !== "object") person.name = { ru: person.name || "", en: "" };
       person.name[currentLang] = document.getElementById("inp-name").value.trim();
@@ -942,6 +940,9 @@
       alert(alertMsg);
     };
 
+    /* =============================================================
+       УДАЛЕНИЕ ПЕРСОНЫ
+       ============================================================= */
     window.deletePerson = function(id) {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!id || !db[id]) {
@@ -954,6 +955,7 @@
         : `Are you sure you want to completely delete "${db[id].name[currentLang] || id}" from the tree?`;
 
       if (confirm(confirmMsg)) {
+        resetTreeState(); // Сбрасываем позицию при удалении
         delete db[id];
 
         Object.keys(db).forEach(key => {
@@ -982,6 +984,9 @@
       }
     };
 
+    /* =============================================================
+       СКАЧИВАНИЕ БАЗЫ
+       ============================================================= */
     window.downloadDatabaseFile = function() {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       const fileContent = "window.db = " + JSON.stringify(db, null, 2) + ";";
@@ -995,6 +1000,9 @@
       document.body.removeChild(link);
     };
 
+    /* =============================================================
+       МЕНЮ ДОБАВЛЕНИЯ
+       ============================================================= */
     window.toggleGeniMenu = function() {
       const geniMenu = document.getElementById("geni-add-menu");
       if (geniMenu) geniMenu.classList.toggle("hidden-block");
@@ -1005,9 +1013,14 @@
       if (bioEl) bioEl.classList.toggle("hidden-block");
     };
 
+    /* =============================================================
+       ДОБАВЛЕНИЕ РОДСТВЕННИКА
+       ============================================================= */
     window.addRelativeDirect = function(role) {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
+
+      resetTreeState(); // Сбрасываем позицию при добавлении
 
       let promptMsg = currentLang === 'ru'
         ? "Введите краткое имя на английском для ID карточки\n(например: ivan_1945 или mariya_1980):"
@@ -1093,6 +1106,9 @@
       showCustomSidePanel(newId);
     };
 
+    /* =============================================================
+       УТИЛИТЫ
+       ============================================================= */
     function getShortDisplayName(fullName) {
       if (!fullName) return fullName;
       let cleaned = fullName.replace(/\s*\([^)]*\)/g, "").trim();
@@ -1150,6 +1166,9 @@
              idLower.includes("nella") || idLower.includes("nadejda");
     }
 
+    /* =============================================================
+       ДАННЫЕ ДЛЯ ДЕРЕВА
+       ============================================================= */
     function getTreeData() {
       normalizeDatabase();
       const treeData = [];
@@ -1189,9 +1208,6 @@
         if (deceased) nodeTags.push("deceased");
         node.tags = nodeTags;
 
-        // Сохраняем статус, чтобы использовать его в шаблоне SVG-иконки
-        node._deceased = deceased;
-
         if (person.links) {
           if (person.links.spouse && String(person.links.spouse).trim()) {
             node.pids = [person.links.spouse];
@@ -1223,56 +1239,40 @@
       return treeData;
     }
 
+    /* =============================================================
+       ОТРИСОВКА ДЕРЕВА
+       ============================================================= */
     function drawTree() {
       const container = document.getElementById("family-tree");
       if (!container) return;
       container.innerHTML = "";
 
       try {
-                // НОВОЕ: определяем размер карточек в зависимости от ширины экрана
+        // Адаптивный размер карточек
         const isMobile = window.innerWidth <= 768;
         const isSmallMobile = window.innerWidth <= 480;
-        
+
         let cardWidth, cardHeight, circleSize, imageSize, levelSep, siblingSep, subtreeSep;
-        
+
         if (isSmallMobile) {
-          // Маленькие смартфоны
-          cardWidth = 90;
-          cardHeight = 72;
-          circleSize = 26;
-          imageSize = 26;
-          levelSep = 45;
-          siblingSep = 22;
-          subtreeSep = 30;
+          cardWidth = 90; cardHeight = 72; circleSize = 26; imageSize = 26;
+          levelSep = 45; siblingSep = 22; subtreeSep = 30;
         } else if (isMobile) {
-          // Смартфоны и планшеты
-          cardWidth = 100;
-          cardHeight = 80;
-          circleSize = 30;
-          imageSize = 30;
-          levelSep = 52;
-          siblingSep = 26;
-          subtreeSep = 36;
+          cardWidth = 100; cardHeight = 80; circleSize = 30; imageSize = 30;
+          levelSep = 52; siblingSep = 26; subtreeSep = 36;
         } else {
-          // Компьютеры
-          cardWidth = 112;
-          cardHeight = 90;
-          circleSize = 34;
-          imageSize = 34;
-          levelSep = 60;
-          siblingSep = 30;
-          subtreeSep = 40;
+          cardWidth = 112; cardHeight = 90; circleSize = 34; imageSize = 34;
+          levelSep = 60; siblingSep = 30; subtreeSep = 40;
         }
-        
-        console.log(`[ADAPTIVE] Ширина экрана: ${window.innerWidth}px, размер карточки: ${cardWidth}x${cardHeight}`);
-        
+
+        console.log(`[ADAPTIVE] Ширина экрана: ${window.innerWidth}px, карточка: ${cardWidth}x${cardHeight}`);
+
         treeInstance = new FamilyTree(container, {
           mouseScroller: { zoom: true, scale: true },
           editForm: false,
           enableSearch: false,
           lazyLoading: false,
           nodeBinding: { field_0: "name", field_1: "title", img_0: "img" },
-
           nodeWidth: cardWidth,
           nodeHeight: cardHeight,
           nodeCircleSize: circleSize,
@@ -1282,50 +1282,29 @@
           subtreeSeparation: subtreeSep
         });
 
-        // НОВОЕ: встраиваем иконки «жив/умер» прямо в шаблон карточки
-        // Это официальный способ Balkan FamilyTree JS —
-        // иконки не пропадают при зуме и перерисовке.
-        if (treeInstance.template && typeof treeInstance.template.insertSvg === 'function') {
-          // ничего не делаем — используем стандартный API ниже
-        }
-
-        // Пробуем установить расширение шаблона (может не поддерживаться версией)
-        try {
-          const originalTemplate = treeInstance.template;
-
-          // Используем postDrawNode, если доступен — это официальный хук
-          // для добавления SVG в каждый узел.
-          if (typeof treeInstance.on === 'function') {
-            treeInstance.on('redraw', function() {
-              // после полной перерисовки — тоже ничего не делаем
-            });
-          }
-        } catch (e) {
-          console.warn("Шаблонный хук не установлен:", e);
-        }
-
         treeInstance.on('click', function (sender, args) {
           showCustomSidePanel(args.node.id);
           return false;
         });
 
-               treeInstance.onInit(function () {
-          console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM, разворачиваю всё...");
+        treeInstance.onInit(function () {
+          console.log("[ИНИЦИАЛИЗАЦИЯ] Дерево создано в DOM...");
           try {
             treeInstance.maximize(null, false, false, function () {
-              console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён, центрирую...");
+              console.log("[ИНИЦИАЛИЗАЦИЯ] maximize() завершён...");
               try {
-                // НОВОЕ: на мобильных НЕ центрируем и НЕ зумируем — оставляем общий вид
-                if (window.innerWidth <= 768) {
-                  // Просто показываем всё дерево, но не приближаем
-                  treeInstance.fit();
-                  console.log("[ADAPTIVE] Мобильный режим — показываю дерево целиком");
-                } else {
-                  // На компьютере — центрируем на Вульфе
-                  if (db["person_vulf_1898"]) {
-                    treeInstance.center("person_vulf_1898");
-                  } else {
+                const restored = restoreTreeState();
+
+                if (!restored) {
+                  if (window.innerWidth <= 768) {
                     treeInstance.fit();
+                    console.log("[ADAPTIVE] Мобильный режим — дерево целиком");
+                  } else {
+                    if (db["person_vulf_1898"]) {
+                      treeInstance.center("person_vulf_1898");
+                    } else {
+                      treeInstance.fit();
+                    }
                   }
                 }
               } catch (e) {
@@ -1338,38 +1317,54 @@
         });
 
         treeInstance.load(getTreeData());
-                // НОВОЕ: при изменении размера окна — перерисовываем дерево с новыми размерами
-        // (защита от многократного вызова)
+
+        // Сохранение позиции при скролле / перетаскивании
+        const treeContainer = document.getElementById('family-tree');
+        if (treeContainer && !treeContainer._stateTracker) {
+          treeContainer._stateTracker = true;
+
+          let saveTimer;
+          const debouncedSave = function() {
+            clearTimeout(saveTimer);
+            saveTimer = setTimeout(saveTreeState, 800);
+          };
+
+          treeContainer.addEventListener('wheel', debouncedSave, { passive: true });
+          treeContainer.addEventListener('mouseup', debouncedSave);
+          treeContainer.addEventListener('touchend', debouncedSave);
+          window.addEventListener('beforeunload', saveTreeState);
+        }
+
+        // Перерисовка при изменении размера окна
         if (!window._resizeHandler) {
           window._resizeHandler = true;
           let resizeTimer;
           window.addEventListener('resize', function() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function() {
-              // Перерисовываем только если ширина действительно изменила категорию
               const newIsMobile = window.innerWidth <= 768;
               const newIsSmallMobile = window.innerWidth <= 480;
-              const currentIsMobile = window._lastIsMobile;
-              const currentIsSmallMobile = window._lastIsSmallMobile;
-              
-              if (newIsMobile !== currentIsMobile || newIsSmallMobile !== currentIsSmallMobile) {
+              if (newIsMobile !== window._lastIsMobile || newIsSmallMobile !== window._lastIsSmallMobile) {
                 window._lastIsMobile = newIsMobile;
                 window._lastIsSmallMobile = newIsSmallMobile;
-                console.log('[ADAPTIVE] Изменение размера экрана — перерисовываю дерево');
+                console.log('[ADAPTIVE] Изменение размера — перерисовка');
                 drawTree();
               }
             }, 300);
           });
         }
-        
-        // Запоминаем текущую категорию
+
         window._lastIsMobile = isMobile;
         window._lastIsSmallMobile = isSmallMobile;
+
       } catch (e) {
         console.error("Ошибка инициализации графического графа:", e);
       }
     }
 
+    /* =============================================================
+       ПОИСК
+       ============================================================= */
     (function () {
       const input = document.getElementById("custom-search-input");
       const resultsBox = document.getElementById("custom-search-results");
@@ -1418,6 +1413,9 @@
       });
     })();
 
+    /* =============================================================
+       ПЕРЕКЛЮЧЕНИЕ ЯЗЫКА
+       ============================================================= */
     function setLanguage(lang) {
       currentLang = lang;
 
@@ -1462,12 +1460,16 @@
       if (surnamesBtn) {
         surnamesBtn.textContent = labels[currentLang].surnames;
       }
-            const surnamesCloseBtn = document.getElementById("surnames-close-btn");
+
+      const surnamesCloseBtn = document.getElementById("surnames-close-btn");
       if (surnamesCloseBtn) {
         surnamesCloseBtn.textContent = labels[currentLang].close;
       }
     }
 
+    /* =============================================================
+       СТАРТ
+       ============================================================= */
     setLanguage('ru');
     updateEditLockIcon();
     updatePersonCountBadge();
