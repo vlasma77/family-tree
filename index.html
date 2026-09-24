@@ -244,6 +244,17 @@
       .tip-container { padding: 8px 14px; margin: -5px 0 10px 0; }
       .tip-icon-inline svg { width: 20px; height: 20px; }
     }
+         /* ШРИФТ НА КАРТОЧКАХ */
+    .node text,
+    .node tspan,
+    .node .field_0,
+    .node .field_1 {
+      font-size: 12px !important;
+    }
+    
+    .node .field_0 {
+      font-size: 13px !important;
+    }
   </style>
 </head>
 <body>
@@ -1067,12 +1078,21 @@
       container.innerHTML = "";
 
       try {
-        treeInstance = new FamilyTree(container, {
+                treeInstance = new FamilyTree(container, {
           mouseScroller: { zoom: true, scale: true },
           editForm: false,
           enableSearch: false,
           lazyLoading: false,
-          nodeBinding: { field_0: "name", field_1: "title", img_0: "img" }
+          nodeBinding: { field_0: "name", field_1: "title", img_0: "img" },
+          
+          // НОВОЕ: уменьшаем карточки на ~25–30%
+          nodeWidth: 140,
+          nodeHeight: 70,
+          nodeCircleSize: 34,
+          nodeImageSize: 34,
+          levelSeparation: 60,
+          siblingSeparation: 30,
+          subtreeSeparation: 40
         });
 
         treeInstance.on('click', function (sender, args) {
