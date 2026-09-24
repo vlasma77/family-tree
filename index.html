@@ -244,16 +244,22 @@
       .tip-container { padding: 8px 14px; margin: -5px 0 10px 0; }
       .tip-icon-inline svg { width: 20px; height: 20px; }
     }
-         /* ШРИФТ НА КАРТОЧКАХ */
+       /* ШРИФТ НА КАРТОЧКАХ */
     .node text,
     .node tspan,
-    .node .field_0,
     .node .field_1 {
       font-size: 12px !important;
     }
     
-    .node .field_0 {
-      font-size: 13px !important;
+         /* Имя и годы на карточке — крупнее */
+    .node text {
+      font-size: 18px !important;
+      font-weight: bold !important;
+    }
+     /* Годы жизни — второй текст на карточке */
+    .node text:not(:first-of-type) {
+      font-size: 12px !important;
+      font-weight: normal !important;
     }
   </style>
 </head>
@@ -1085,9 +1091,9 @@
           lazyLoading: false,
           nodeBinding: { field_0: "name", field_1: "title", img_0: "img" },
           
-          // НОВОЕ: уменьшаем карточки на ~25–30%
-          nodeWidth: 140,
-          nodeHeight: 70,
+          // Уменьшаем: ширина -20%, высота -10%
+          nodeWidth: 112,
+          nodeHeight: 90,
           nodeCircleSize: 34,
           nodeImageSize: 34,
           levelSeparation: 60,
