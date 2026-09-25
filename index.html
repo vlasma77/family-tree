@@ -229,7 +229,7 @@
       .tip-icon-inline svg { width: 20px; height: 20px; }
     }
 
-    /* ==== АДАПТИВНОСТЬ ==== */
+    /* ==== АДАПТИВНОСТЬ (шапка, подсказка, панели) ==== */
     @media (max-width: 1024px) {
       body { margin: 10px; }
       h1 { font-size: 22px; }
@@ -1158,30 +1158,18 @@
 
         treeInstance.onInit(function () {
           try {
-            // На мобильных — ограничиваем глубину раскрытия
-            if (window.innerWidth <= 768) {
-              if (db["person_vulf_1898"]) {
-                treeInstance.center("person_vulf_1898");
-              }
-              treeInstance.maximize("person_vulf_1898", false, false, function () {
-                try {
-                  treeInstance.fit();
-                } catch (e) {}
-              });
-            } else {
-              treeInstance.maximize(null, false, false, function () {
-                try {
-                  const restored = restoreTreeCenterPerson();
-                  if (!restored) {
-                    if (db["person_vulf_1898"]) {
-                      treeInstance.center("person_vulf_1898");
-                    } else {
-                      treeInstance.fit();
-                    }
+            treeInstance.maximize(null, false, false, function () {
+              try {
+                const restored = restoreTreeCenterPerson();
+                if (!restored) {
+                  if (db["person_vulf_1898"]) {
+                    treeInstance.center("person_vulf_1898");
+                  } else {
+                    treeInstance.fit();
                   }
-                } catch (e) {}
-              });
-            }
+                }
+              } catch (e) {}
+            });
           } catch (e) {}
         });
 
