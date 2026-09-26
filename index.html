@@ -21,6 +21,36 @@
       font-weight: bold;
     }
 
+    /* Кнопки режимов */
+    #view-modes {
+      display: inline-flex;
+      gap: 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+      background: white;
+    }
+    .view-mode-btn {
+      background: none;
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: bold;
+      transition: all 0.2s;
+      border-right: 1px solid #ccc;
+    }
+    .view-mode-btn:last-child {
+      border-right: none;
+    }
+    .view-mode-btn:hover {
+      background: #f0f0f0;
+    }
+    .view-mode-btn.active-mode {
+      background: maroon;
+      color: white;
+    }
+
     #header-bar {
       display: flex;
       justify-content: flex-end;
@@ -29,6 +59,7 @@
       margin-bottom: 15px;
       padding-right: 10px;
       position: relative;
+      flex-wrap: wrap;
     }
     #custom-search-wrapper { position: relative; width: 220px; }
     #custom-search-input {
@@ -229,7 +260,7 @@
       .tip-icon-inline svg { width: 20px; height: 20px; }
     }
 
-    /* ==== АДАПТИВНОСТЬ (шапка, подсказка, панели) ==== */
+    /* ==== АДАПТИВНОСТЬ ==== */
     @media (max-width: 1024px) {
       body { margin: 10px; }
       h1 { font-size: 22px; }
@@ -249,6 +280,10 @@
         padding: 4px 8px !important;
         font-size: 12px !important;
       }
+      .view-mode-btn {
+        padding: 4px 8px !important;
+        font-size: 11px !important;
+      }
       #person-count-badge {
         height: 20px !important;
         min-width: 24px !important;
@@ -263,7 +298,6 @@
         gap: 0;
         flex-direction: column;
       }
-            /* На мобильных — карточка персоны открывается на весь экран */
       #custom-side-panel {
         position: fixed !important;
         top: 0 !important;
@@ -291,11 +325,14 @@
         padding: 3px 6px !important;
         font-size: 11px !important;
       }
+      .view-mode-btn {
+        padding: 3px 6px !important;
+        font-size: 10px !important;
+      }
       .tip-container { padding: 5px 8px; font-size: 11px; }
       .tip-text { font-size: 11px; }
       .tip-icon-inline svg { width: 16px; height: 16px; }
       #main-wrapper { height: calc(100vh - 140px); min-height: 350px; }
-    
       .node text { font-size: 12px !important; }
       .node text.field_0 { font-size: 12px !important; }
       .node text.field_1 { font-size: 9px !important; }
@@ -318,6 +355,10 @@
     <div id="custom-search-wrapper">
       <input type="text" id="custom-search-input" placeholder="Поиск персоны...">
       <div id="custom-search-results"></div>
+    </div>
+    <div id="view-modes">
+      <button class="view-mode-btn" id="btn-mode-family" onclick="setViewMode('family')" title="Показать родителей, супругов, детей и братьев/сестёр">👨‍👩‍👧 Круг семьи</button>
+      <button class="view-mode-btn" id="btn-mode-pedigree" onclick="setViewMode('pedigree')" title="Показать только прямых предков">📜 Только предки</button>
     </div>
     <button id="btn-surnames" onclick="openSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">Список фамилий</button>
     <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
@@ -346,43 +387,102 @@
     const db = window.db || {};
     let activeNodeId = null;
     let treeInstance = null;
+    let viewMode = 'family'; // 'family' или 'pedigree'
 
     const EDIT_PASSWORD = "kaluninA39";
     const TREE_CENTER_KEY = 'familyTree_centerPerson';
+
+    /* =============================================================
+       РЕЖИМЫ ПРОСМОТРА
+       ============================================================= */
+    function setViewMode(mode) {
+      viewMode = mode;
+      updateViewModeButtons();
+      drawTree();
+    }
+    window.setViewMode = setViewMode;
+
+    function updateViewModeButtons() {
+      const btnFamily = document.getElementById('btn-mode-family');
+      const btnPedigree = document.getElementById('btn-mode-pedigree');
+      if (!btnFamily || !btnPedigree) return;
+
+      btnFamily.textContent = currentLang === 'ru' ? '👨‍👩‍👧 Круг семьи' : '👨‍👩‍👧 Family circle';
+      btnPedigree.textContent = currentLang === 'ru' ? '📜 Только предки' : '📜 Ancestors only';
+
+      btnFamily.classList.toggle('active-mode', viewMode === 'family');
+      btnPedigree.classList.toggle('active-mode', viewMode === 'pedigree');
+    }
+
+    /* Собираем прямых предков персоны (рекурсивно) */
+    function collectAncestors(personId, result) {
+      if (!personId || !db[personId]) return;
+      if (result.has(personId)) return;
+      result.add(personId);
+      const person = db[personId];
+      const parents = (person.links && person.links.parents) || [];
+      parents.forEach(pId => {
+        if (pId && db[pId]) collectAncestors(pId, result);
+      });
+    }
+
+    /* Собираем круг семьи: активная персона + родители + супруг(а) + дети + братья/сёстры */
+    function collectFamilyCircle(personId) {
+      const result = new Set();
+      if (!personId || !db[personId]) return result;
+
+      result.add(personId);
+      const person = db[personId];
+
+      // Родители
+      const parents = (person.links && person.links.parents) || [];
+      parents.forEach(pId => { if (pId && db[pId]) result.add(pId); });
+
+      // Супруг(а)
+      const spouse = person.links && person.links.spouse;
+      if (spouse && db[spouse]) result.add(spouse);
+
+      // Дети
+      Object.keys(db).forEach(id => {
+        const p = db[id];
+        if (p.links && Array.isArray(p.links.parents)) {
+          if (p.links.parents.includes(personId)) result.add(id);
+        }
+      });
+
+      // Братья и сёстры (у кого тот же родитель, что и у активной персоны)
+      if (parents.length > 0) {
+        Object.keys(db).forEach(id => {
+          if (id === personId) return;
+          const p = db[id];
+          if (p.links && Array.isArray(p.links.parents)) {
+            const sharedParent = p.links.parents.some(pId => parents.includes(pId));
+            if (sharedParent) result.add(id);
+          }
+        });
+      }
+
+      return result;
+    }
 
     /* =============================================================
        СОХРАНЕНИЕ / ВОССТАНОВЛЕНИЕ ЦЕНТРАЛЬНОЙ ПЕРСОНЫ
        ============================================================= */
     function saveTreeCenterPerson(personId) {
       if (!personId || !db[personId]) return;
-      try {
-        localStorage.setItem(TREE_CENTER_KEY, personId);
-      } catch (e) {}
+      try { localStorage.setItem(TREE_CENTER_KEY, personId); } catch (e) {}
     }
 
     function restoreTreeCenterPerson() {
       try {
         const savedId = localStorage.getItem(TREE_CENTER_KEY);
-        if (!savedId) return false;
-        if (!db[savedId]) {
-          localStorage.removeItem(TREE_CENTER_KEY);
-          return false;
-        }
-        if (treeInstance && typeof treeInstance.center === 'function') {
-          try {
-            treeInstance.center(savedId);
-            return true;
-          } catch (e) {}
-        }
-        return false;
-      } catch (e) {
-        return false;
-      }
+        if (!savedId) return null;
+        if (!db[savedId]) { localStorage.removeItem(TREE_CENTER_KEY); return null; }
+        return savedId;
+      } catch (e) { return null; }
     }
 
-    function resetTreeCenter() {
-      localStorage.removeItem(TREE_CENTER_KEY);
-    }
+    function resetTreeCenter() { localStorage.removeItem(TREE_CENTER_KEY); }
 
     /* =============================================================
        РЕЖИМ РЕДАКТИРОВАНИЯ
@@ -499,16 +599,14 @@
 
     function jumpToPersonFromSurnames(id) {
       closeSurnamesList();
+      activeNodeId = id;
       if (typeof showCustomSidePanel === 'function') {
         showCustomSidePanel(id);
       }
-      if (treeInstance && typeof treeInstance.center === 'function') {
-        try {
-          treeInstance.center(id);
-          saveTreeCenterPerson(id);
-        } catch (e) {}
-      }
+      saveTreeCenterPerson(id);
+      drawTree();
     }
+    window.jumpToPersonFromSurnames = jumpToPersonFromSurnames;
 
     /* =============================================================
        ФОТО
@@ -589,14 +687,12 @@
     };
 
     function normalizeDatabase() {
-      console.log(`[DATA AUDIT] Записей: ${Object.keys(db).length}`);
       Object.keys(db).forEach(id => {
         const person = db[id];
         if (!person.name) person.name = { ru: "Неизвестно", en: "Unknown" };
         if (!person.links) person.links = { parents: [], spouse: null };
         if (!Array.isArray(person.links.parents)) person.links.parents = [];
       });
-      console.log("[DATA AUDIT] OK");
     }
 
     function buildAutomaticFamilyHtml(nodeId) {
@@ -688,17 +784,10 @@
 
     function centerTreeOnPerson(personId) {
       if (!personId) return;
+      activeNodeId = personId;
+      saveTreeCenterPerson(personId);
       closePanel();
-
-      if (treeInstance && typeof treeInstance.center === 'function') {
-        try {
-          treeInstance.center(personId);
-          if (typeof treeInstance.select === 'function') {
-            treeInstance.select(personId);
-          }
-          saveTreeCenterPerson(personId);
-        } catch (e) {}
-      }
+      drawTree();
     }
 
     window.centerTreeOnPerson = centerTreeOnPerson;
@@ -776,7 +865,7 @@
 
           <div class="btn-row">
             ${archiveHtml}
-            <button class="action-btn" onclick="centerTreeOnPerson('${nodeId}')" title="${currentLang === 'ru' ? 'Показать в дереве' : 'Show in tree'}">🎯 ${currentLang === 'ru' ? 'В дереве' : 'In tree'}</button>
+            <button class="action-btn" onclick="centerTreeOnPerson('${nodeId}')" title="${currentLang === 'ru' ? 'Сделать эту персону центром дерева' : 'Make this person the center'}">🎯 ${currentLang === 'ru' ? 'В центр' : 'Center'}</button>
             <button class="action-btn" onclick="togglePureBio()">${bText.btn_more}</button>
             ${editMode ? `
             <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
@@ -1054,9 +1143,24 @@
 
     function getTreeData() {
       normalizeDatabase();
+
+      // Определяем, какие персоны показывать
+      let idsToShow = null;
+      const centerId = activeNodeId || restoreTreeCenterPerson();
+
+      if (viewMode === 'pedigree' && centerId && db[centerId]) {
+        const ancestors = new Set();
+        collectAncestors(centerId, ancestors);
+        idsToShow = ancestors;
+      } else if (viewMode === 'family' && centerId && db[centerId]) {
+        idsToShow = collectFamilyCircle(centerId);
+      }
+
       const treeData = [];
 
       Object.keys(db).forEach(id => {
+        if (idsToShow && !idsToShow.has(id)) return;
+
         const person = db[id];
         let photoUrl = getPhotoUrl(id);
 
@@ -1092,29 +1196,17 @@
         node.tags = nodeTags;
 
         if (person.links) {
-          if (person.links.spouse && String(person.links.spouse).trim()) {
+          if (person.links.spouse && String(person.links.spouse).trim() && (!idsToShow || idsToShow.has(person.links.spouse))) {
             node.pids = [person.links.spouse];
           }
           if (person.links.parents && Array.isArray(person.links.parents)) {
-            if (person.links.parents[0] && String(person.links.parents[0]).trim()) node.fid = person.links.parents[0];
-            if (person.links.parents[1] && String(person.links.parents[1]).trim()) node.mid = person.links.parents[1];
+            if (person.links.parents[0] && String(person.links.parents[0]).trim() && (!idsToShow || idsToShow.has(person.links.parents[0]))) {
+              node.fid = person.links.parents[0];
+            }
+            if (person.links.parents[1] && String(person.links.parents[1]).trim() && (!idsToShow || idsToShow.has(person.links.parents[1]))) {
+              node.mid = person.links.parents[1];
+            }
           }
-        }
-
-        if (person.fid && (!person.links || !person.links.parents || !person.links.parents[0])) {
-          if (!person.links) person.links = { parents: [], spouse: null };
-          person.links.parents[0] = person.fid;
-          node.fid = person.fid;
-        }
-        if (person.mid && (!person.links || !person.links.parents || !person.links.parents[1])) {
-          if (!person.links) person.links = { parents: [], spouse: null };
-          person.links.parents[1] = person.mid;
-          node.mid = person.mid;
-        }
-        if (person.pid && (!person.links || !person.links.spouse)) {
-          if (!person.links) person.links = { parents: [], spouse: null };
-          person.links.spouse = person.pid;
-          node.pids = [person.pid];
         }
 
         treeData.push(node);
@@ -1160,25 +1252,25 @@
         });
 
         treeInstance.on('click', function (sender, args) {
-          showCustomSidePanel(args.node.id);
+          // Клик по карточке — открываем панель и перерисовываем дерево с новым центром
+          activeNodeId = args.node.id;
           saveTreeCenterPerson(args.node.id);
+          showCustomSidePanel(args.node.id);
+          // Перерисовываем — теперь этот человек в центре своего круга
+          drawTree();
           return false;
         });
 
         treeInstance.onInit(function () {
           try {
-            treeInstance.maximize(null, false, false, function () {
-              try {
-                const restored = restoreTreeCenterPerson();
-                if (!restored) {
-                  if (db["person_vulf_1898"]) {
-                    treeInstance.center("person_vulf_1898");
-                  } else {
-                    treeInstance.fit();
-                  }
-                }
-              } catch (e) {}
-            });
+            // ВАЖНО: НЕ вызываем fit() — карточек мало, показываем крупно
+            // Центрируем на активной персоне
+            const centerId = activeNodeId || restoreTreeCenterPerson();
+            if (centerId && db[centerId]) {
+              treeInstance.center(centerId);
+            } else if (db["person_vulf_1898"]) {
+              treeInstance.center("person_vulf_1898");
+            }
           } catch (e) {}
         });
 
@@ -1245,11 +1337,10 @@
           row.onclick = function () {
             hideResults();
             input.value = "";
-            try {
-              treeInstance.center(m.id);
-              saveTreeCenterPerson(m.id);
-            } catch (e) {}
+            activeNodeId = m.id;
+            saveTreeCenterPerson(m.id);
             showCustomSidePanel(m.id);
+            drawTree();
           };
           resultsBox.appendChild(row);
         });
@@ -1298,6 +1389,7 @@
         drawTree();
       }
       updatePersonCountBadge();
+      updateViewModeButtons();
 
       const tipElement = document.getElementById("tip-text");
       if (tipElement) {
@@ -1321,6 +1413,7 @@
     setLanguage('ru');
     updateEditLockIcon();
     updatePersonCountBadge();
+    updateViewModeButtons();
   </script>
 </body>
 </html>
