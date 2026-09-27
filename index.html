@@ -777,9 +777,31 @@
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
 
-    function closePanel() {
+          function closePanel() {
       const panel = document.getElementById("custom-side-panel");
+      if (!panel) return;
       panel.style.display = "none";
+
+      // Сбрасываем inline-стили с контейнера дерева
+      // (библиотека FamilyTree.js жёстко прописывает width/height в SVG)
+      const tree = document.getElementById("family-tree");
+      if (tree) {
+        tree.style.width = "";
+        tree.style.height = "";
+        // Сбрасываем стили у вложенного SVG
+        const svg = tree.querySelector("svg");
+        if (svg) {
+          svg.style.width = "";
+          svg.style.height = "";
+        }
+      }
+
+      // Перерисовываем дерево заново — оно займёт всю ширину
+      setTimeout(function() {
+        if (typeof drawTree === "function") {
+          drawTree();
+        }
+      }, 50);
     }
 
     function centerTreeOnPerson(personId) {
