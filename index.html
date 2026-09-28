@@ -1176,22 +1176,21 @@
           return false;
         });
 
-                treeInstance.onInit(function () {
-          setTimeout(function () {
-            try {
-              treeInstance.maximize(null, false, false, function () {
-                try {
-                  const restored = restoreTreeCenterPerson();
-                  if (!restored) {
-                    if (db["person_vulf_1898"]) {
-                      treeInstance.center("person_vulf_1898");
-                    }
+                      treeInstance.onInit(function () {
+          try {
+            treeInstance.maximize(null, false, false, function () {
+              try {
+                const restored = restoreTreeCenterPerson();
+                if (!restored) {
+                  if (db["person_vulf_1898"]) {
+                    treeInstance.center("person_vulf_1898");
+                  } else {
+                    treeInstance.fit();
                   }
-                  treeInstance.fit(); // ← ДОБАВЛЕНО: подгоняет масштаб под контейнер
-                } catch (e) { console.error('fit error:', e); }
-              });
-            } catch (e) { console.error('maximize error:', e); }
-          }, 300); // ← ДОБАВЛЕНО: ждём 300 мс, пока контейнер получит финальные размеры
+                }
+              } catch (e) {}
+            });
+          } catch (e) {}
         });
 
         treeInstance.load(getTreeData());
