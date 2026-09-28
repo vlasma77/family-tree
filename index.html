@@ -390,6 +390,7 @@
     let viewMode = 'family'; // 'family' или 'pedigree'
 
     const EDIT_PASSWORD = "kaluninA39";
+    const TREE_CENTER_KEY = 'familyTree_centerPerson';
 
     /* =============================================================
        РЕЖИМЫ ПРОСМОТРА
@@ -463,6 +464,25 @@
 
       return result;
     }
+
+    /* =============================================================
+       СОХРАНЕНИЕ / ВОССТАНОВЛЕНИЕ ЦЕНТРАЛЬНОЙ ПЕРСОНЫ
+       ============================================================= */
+    function saveTreeCenterPerson(personId) {
+      if (!personId || !db[personId]) return;
+      try { localStorage.setItem(TREE_CENTER_KEY, personId); } catch (e) {}
+    }
+
+    function restoreTreeCenterPerson() {
+      try {
+        const savedId = localStorage.getItem(TREE_CENTER_KEY);
+        if (!savedId) return null;
+        if (!db[savedId]) { localStorage.removeItem(TREE_CENTER_KEY); return null; }
+        return savedId;
+      } catch (e) { return null; }
+    }
+
+    function resetTreeCenter() { localStorage.removeItem(TREE_CENTER_KEY); }
 
     /* =============================================================
        РЕЖИМ РЕДАКТИРОВАНИЯ
@@ -579,15 +599,14 @@
 
     function jumpToPersonFromSurnames(id) {
       closeSurnamesList();
+      activeNodeId = id;
       if (typeof showCustomSidePanel === 'function') {
         showCustomSidePanel(id);
       }
-      if (treeInstance && typeof treeInstance.center === 'function') {
-        try {
-          treeInstance.center(id);
-        } catch (e) {}
-      }
+      saveTreeCenterPerson(id);
+      drawTree();
     }
+    window.jumpToPersonFromSurnames = jumpToPersonFromSurnames;
 
     /* =============================================================
        ФОТО
@@ -758,7 +777,7 @@
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
 
-    function closePanel() {
+          function closePanel() {
       const panel = document.getElementById("custom-side-panel");
       if (!panel) return;
       panel.style.display = "none";
@@ -769,6 +788,7 @@
       if (tree) {
         tree.style.width = "";
         tree.style.height = "";
+        // Сбрасываем стили у вложенного SVG
         const svg = tree.querySelector("svg");
         if (svg) {
           svg.style.width = "";
@@ -787,6 +807,7 @@
     function centerTreeOnPerson(personId) {
       if (!personId) return;
       activeNodeId = personId;
+      saveTreeCenterPerson(personId);
       closePanel();
       drawTree();
     }
@@ -908,6 +929,8 @@
       if (!activeNodeId || !db[activeNodeId]) return;
       const person = db[activeNodeId];
 
+      resetTreeCenter();
+
       if (typeof person.name !== "object") person.name = { ru: person.name || "", en: "" };
       person.name[currentLang] = document.getElementById("inp-name").value.trim();
       person.years = document.getElementById("inp-years").value.trim();
@@ -952,6 +975,7 @@
         : `Delete "${db[id].name[currentLang] || id}"?`;
 
       if (confirm(confirmMsg)) {
+        resetTreeCenter();
         delete db[id];
 
         Object.keys(db).forEach(key => {
@@ -1005,6 +1029,8 @@
     window.addRelativeDirect = function(role) {
       if (!isEditModeOn()) { alert("Режим редактирования выключен."); return; }
       if (!activeNodeId || !db[activeNodeId]) return;
+
+      resetTreeCenter();
 
       let promptMsg = currentLang === 'ru'
         ? "Введите краткое имя на английском для ID карточки:"
@@ -1142,7 +1168,7 @@
 
       // Определяем, какие персоны показывать
       let idsToShow = null;
-      const centerId = activeNodeId;
+      const centerId = activeNodeId || restoreTreeCenterPerson();
 
       if (viewMode === 'pedigree' && centerId && db[centerId]) {
         const ancestors = new Set();
@@ -1248,16 +1274,22 @@
         });
 
         treeInstance.on('click', function (sender, args) {
+          // Клик по карточке — открываем панель и перерисовываем дерево с новым центром
+          activeNodeId = args.node.id;
+          saveTreeCenterPerson(args.node.id);
           showCustomSidePanel(args.node.id);
+          // Перерисовываем — теперь этот человек в центре своего круга
+          drawTree();
           return false;
         });
 
         treeInstance.onInit(function () {
           try {
             // ВАЖНО: НЕ вызываем fit() — карточек мало, показываем крупно
-            // Центрируем на активной персоне или Вульфе
-            if (activeNodeId && db[activeNodeId]) {
-              treeInstance.center(activeNodeId);
+            // Центрируем на активной персоне
+            const centerId = activeNodeId || restoreTreeCenterPerson();
+            if (centerId && db[centerId]) {
+              treeInstance.center(centerId);
             } else if (db["person_vulf_1898"]) {
               treeInstance.center("person_vulf_1898");
             }
@@ -1328,6 +1360,7 @@
             hideResults();
             input.value = "";
             activeNodeId = m.id;
+            saveTreeCenterPerson(m.id);
             showCustomSidePanel(m.id);
             drawTree();
           };
