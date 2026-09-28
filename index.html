@@ -70,19 +70,13 @@
       position: relative !important;
     }
 
-   #custom-side-panel {
-  width: 380px; min-width: 380px; height: 100%; background: #fff;
-  border: 1px solid #ccc; box-shadow: -2px 0 8px rgba(0,0,0,0.1);
-  box-sizing: border-box; display: none; flex-direction: column;
-  overflow: hidden;
-}
+    #custom-side-panel {
+      width: 380px; min-width: 380px; height: 100%; background: #fff;
+      border: 1px solid #ccc; box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+      box-sizing: border-box; display: none; flex-direction: column;
+    }
 
-   .panel-content-scroll {
-  flex-grow: 1;
-  overflow-y: auto;
-  padding: 20px;
-  -webkit-overflow-scrolling: touch;
-}
+    .panel-content-scroll { flex-grow: 1; overflow-y: auto; padding: 20px; }
     .panel-photo-container { text-align: center; margin-bottom: 15px; }
     .panel-avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid maroon; box-shadow: 0 2px 5px rgba(0,0,0,0.15); }
     .panel-input-name { font-size: 18px; font-weight: bold; text-align: center; width: 100%; box-sizing: border-box; border: 1px solid #ddd; padding: 6px; border-radius: 4px; color: #333; margin-bottom: 6px; }
@@ -270,7 +264,7 @@
         flex-direction: column;
       }
             /* На мобильных — карточка персоны открывается на весь экран */
-            #custom-side-panel {
+      #custom-side-panel {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
@@ -278,16 +272,11 @@
         bottom: 0 !important;
         width: 100% !important;
         min-width: 100% !important;
-        height: 100vh !important;   /* fallback для старых браузеров */
-        height: 100dvh !important;  /* современные браузеры: учитывает адресную строку */
+        height: 100vh !important;
         max-height: 100vh !important;
-        max-height: 100dvh !important;
         z-index: 9999 !important;
         box-shadow: none !important;
         border: none !important;
-        display: flex !important;
-        flex-direction: column !important;
-        overflow: hidden !important;
       }
       .node text { font-size: 14px !important; }
       .node text.field_0 { font-size: 14px !important; }
@@ -330,7 +319,7 @@
       <input type="text" id="custom-search-input" placeholder="Поиск персоны...">
       <div id="custom-search-results"></div>
     </div>
-    <<button id="btn-surnames" onclick="openSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">📋 Фамильный список персон</button>
+    <button id="btn-surnames" onclick="openSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">Список фамилий</button>
     <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
     <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
     <button id="btn-edit-lock" onclick="toggleEditModeUI()" title="Режим редактирования" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 8px;cursor:pointer;font-size:16px;">🔒</button>
@@ -340,7 +329,7 @@
   <div id="surnames-overlay" style="display:none;position:fixed;z-index:10002;top:0;left:0;width:100%;height:100%;background:#faf6ee;overflow-y:auto;">
     <div style="max-width:800px;margin:0 auto;padding:24px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-        <h2 id="surnames-title" style="margin:0;">📋 Фамильный список персон</h2>
+        <h2 id="surnames-title" style="margin:0;">Список фамилий</h2>
         <button id="surnames-close-btn" onclick="closeSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;">✕ Закрыть</button>
       </div>
       <div id="surnames-list-container"></div>
@@ -481,7 +470,7 @@
       const overlay = document.getElementById("surnames-overlay");
       const container = document.getElementById("surnames-list-container");
       const title = document.getElementById("surnames-title");
-      title.textContent = (currentLang === 'en') ? "📋 Surname list of persons" : "📋 Фамильный список персон";
+      title.textContent = (currentLang === 'en') ? "List of Surnames" : "Список фамилий";
 
       const index = buildSurnamesIndex();
       const sortedKeys = Object.keys(index).sort((a, b) => a.localeCompare(b, currentLang === 'en' ? 'en' : 'ru'));
@@ -570,7 +559,7 @@
         biologicalFather: "Биологический отец", biologicalMother: "Биологическая мать",
         add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь",
         tip: 'Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> на карточке персоны',
-       surnames: "📋 Фамильный список персон",
+        surnames: "Список фамилий",
         close: "✕ Закрыть"
       },
       en: {
@@ -584,7 +573,7 @@
         biologicalFather: "Biological father", biologicalMother: "Biological mother",
         add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter",
         tip: 'To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> on a person\'s card to expand nodes',
-        surnames: "📋 Surname list of persons",
+        surnames: "Surnames List",
         close: "✕ Close"
       }
     };
@@ -787,7 +776,7 @@
 
           <div class="btn-row">
             ${archiveHtml}
-           
+            <button class="action-btn" onclick="centerTreeOnPerson('${nodeId}')" title="${currentLang === 'ru' ? 'Показать в дереве' : 'Show in tree'}">🎯 ${currentLang === 'ru' ? 'В дереве' : 'In tree'}</button>
             <button class="action-btn" onclick="togglePureBio()">${bText.btn_more}</button>
             ${editMode ? `
             <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
@@ -1176,7 +1165,7 @@
           return false;
         });
 
-                      treeInstance.onInit(function () {
+        treeInstance.onInit(function () {
           try {
             treeInstance.maximize(null, false, false, function () {
               try {
