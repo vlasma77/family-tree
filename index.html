@@ -245,7 +245,7 @@
       #header-bar { gap: 6px; margin-bottom: 8px; padding-right: 0; justify-content: center; flex-wrap: wrap; }
       #custom-search-wrapper { width: 100%; max-width: 260px; }
       #custom-search-input { font-size: 13px; padding: 5px 8px; }
-      #btn-surnames, #btn-ru, #btn-en, #btn-edit-lock {
+      #btn-surnames, #btn-family, #btn-ru, #btn-en, #btn-edit-lock {
         padding: 4px 8px !important;
         font-size: 12px !important;
       }
@@ -287,7 +287,7 @@
       h1 { font-size: 16px; margin-bottom: 6px; }
       #header-bar { gap: 4px; margin-bottom: 6px; }
       #custom-search-wrapper { width: 100%; }
-      #btn-surnames, #btn-ru, #btn-en, #btn-edit-lock {
+      #btn-surnames, #btn-family, #btn-ru, #btn-en, #btn-edit-lock {
         padding: 3px 6px !important;
         font-size: 11px !important;
       }
@@ -299,8 +299,8 @@
       .node text { font-size: 12px !important; }
       .node text.field_0 { font-size: 12px !important; }
       .node text.field_1 { font-size: 9px !important; }
-      #surnames-overlay > div { padding: 16px !important; }
-      #surnames-title { font-size: 18px !important; }
+      #surnames-overlay > div, #family-overlay > div { padding: 16px !important; }
+      #surnames-title, #family-title { font-size: 18px !important; }
     }
   </style>
 </head>
@@ -319,7 +319,8 @@
       <input type="text" id="custom-search-input" placeholder="Поиск персоны...">
       <div id="custom-search-results"></div>
     </div>
-    <button id="btn-surnames" onclick="openSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">Список фамилий</button>
+    <button id="btn-surnames" onclick="openSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">📋 Фамильный список персон</button>
+    <button id="btn-family" onclick="openFamilyWindow()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">👨‍👩‍👧 Семья и предки</button>
     <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
     <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
     <button id="btn-edit-lock" onclick="toggleEditModeUI()" title="Режим редактирования" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 8px;cursor:pointer;font-size:16px;">🔒</button>
@@ -329,10 +330,20 @@
   <div id="surnames-overlay" style="display:none;position:fixed;z-index:10002;top:0;left:0;width:100%;height:100%;background:#faf6ee;overflow-y:auto;">
     <div style="max-width:800px;margin:0 auto;padding:24px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-        <h2 id="surnames-title" style="margin:0;">Список фамилий</h2>
+        <h2 id="surnames-title" style="margin:0;">📋 Фамильный список персон</h2>
         <button id="surnames-close-btn" onclick="closeSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;">✕ Закрыть</button>
       </div>
       <div id="surnames-list-container"></div>
+    </div>
+  </div>
+
+  <div id="family-overlay" style="display:none;position:fixed;z-index:10003;top:0;left:0;width:100%;height:100%;background:#faf6ee;overflow-y:auto;">
+    <div style="max-width:800px;margin:0 auto;padding:24px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h2 id="family-title" style="margin:0;">👨‍👩‍👧 Семья и предки</h2>
+        <button id="family-close-btn" onclick="closeFamilyWindow()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:6px 12px;cursor:pointer;font-size:14px;">✕ Закрыть</button>
+      </div>
+      <div id="family-content"></div>
     </div>
   </div>
 
@@ -383,7 +394,6 @@
     function resetTreeCenter() {
       localStorage.removeItem(TREE_CENTER_KEY);
     }
-
     /* =============================================================
        РЕЖИМ РЕДАКТИРОВАНИЯ
        ============================================================= */
@@ -470,7 +480,7 @@
       const overlay = document.getElementById("surnames-overlay");
       const container = document.getElementById("surnames-list-container");
       const title = document.getElementById("surnames-title");
-      title.textContent = (currentLang === 'en') ? "List of Surnames" : "Список фамилий";
+      title.textContent = labels[currentLang].surnames;
 
       const index = buildSurnamesIndex();
       const sortedKeys = Object.keys(index).sort((a, b) => a.localeCompare(b, currentLang === 'en' ? 'en' : 'ru'));
@@ -499,6 +509,48 @@
 
     function jumpToPersonFromSurnames(id) {
       closeSurnamesList();
+      if (typeof showCustomSidePanel === 'function') {
+        showCustomSidePanel(id);
+      }
+      if (treeInstance && typeof treeInstance.center === 'function') {
+        try {
+          treeInstance.center(id);
+          saveTreeCenterPerson(id);
+        } catch (e) {}
+      }
+    }
+
+    /* =============================================================
+       ОКНО "СЕМЬЯ И ПРЕДКИ"
+       ============================================================= */
+    function openFamilyWindow() {
+      const bText = labels[currentLang];
+      if (!activeNodeId || !db[activeNodeId]) {
+        alert(bText.family_no_person);
+        return;
+      }
+
+      const overlay = document.getElementById("family-overlay");
+      const container = document.getElementById("family-content");
+      const title = document.getElementById("family-title");
+
+      const person = db[activeNodeId];
+      const personName = person.name ? (person.name[currentLang] || person.name.ru || "") : "";
+
+      title.textContent = `${bText.family} — ${personName}`;
+
+      const html = buildAutomaticFamilyHtml(activeNodeId);
+      container.innerHTML = html || `<p>${bText.family_empty}</p>`;
+
+      overlay.style.display = "block";
+    }
+
+    function closeFamilyWindow() {
+      document.getElementById("family-overlay").style.display = "none";
+    }
+
+    function jumpToPersonFromFamily(id) {
+      closeFamilyWindow();
       if (typeof showCustomSidePanel === 'function') {
         showCustomSidePanel(id);
       }
@@ -559,7 +611,10 @@
         biologicalFather: "Биологический отец", biologicalMother: "Биологическая мать",
         add_father: "👨 Добавить отца", add_mother: "👩 Добавить мать", add_spouse: "💍 Добавить супруга(у)", add_son: "👦 Добавить сына", add_daughter: "👧 Добавить дочь",
         tip: 'Для просмотра всех ветвей используйте <strong>поиск</strong> или раскрывайте узлы кликом по <strong>зелёной иконке</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> на карточке персоны',
-        surnames: "Список фамилий",
+        surnames: "📋 Фамильный список персон",
+        family: "👨‍👩‍👧 Семья и предки",
+        family_no_person: "Сначала откройте карточку персоны.",
+        family_empty: "Связи в дереве не заданы.",
         close: "✕ Закрыть"
       },
       en: {
@@ -573,7 +628,10 @@
         biologicalFather: "Biological father", biologicalMother: "Biological mother",
         add_father: "👨 Add Father", add_mother: "👩 Add Mother", add_spouse: "💍 Add Spouse", add_son: "👦 Add Son", add_daughter: "👧 Add Daughter",
         tip: 'To view all branches, use the <strong>search</strong> or click the <strong>green icon</strong> <span class="tip-icon-inline"><svg viewBox="0 0 40 40" width="22" height="22"><circle cx="20" cy="20" r="18" fill="white" stroke="#b0b0b0" stroke-width="2"/><circle cx="20" cy="14" r="6" fill="#4CAF50"/><circle cx="13" cy="22" r="6" fill="#4CAF50"/><circle cx="27" cy="22" r="6" fill="#4CAF50"/><rect x="19" y="20" width="2" height="12" fill="#4CAF50"/><rect x="15" y="31" width="10" height="2" rx="1" fill="#4CAF50"/></svg></span> on a person\'s card to expand nodes',
-        surnames: "Surnames List",
+        surnames: "📋 Surname list of persons",
+        family: "👨‍👩‍👧 Family & Ancestors",
+        family_no_person: "Please open a person card first.",
+        family_empty: "No relationships defined.",
         close: "✕ Close"
       }
     };
@@ -612,7 +670,7 @@
         if (!targetStr) return null;
         if (db[targetStr]) {
           let name = db[targetStr].name[currentLang] || db[targetStr].name['ru'] || targetStr;
-          return `<span class="family-link" onclick="showCustomSidePanel('${targetStr}')">${name}</span>`;
+          return `<span class="family-link" onclick="jumpToPersonFromFamily('${targetStr}')">${name}</span>`;
         }
         return null;
       };
@@ -680,7 +738,6 @@
 
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
-
     function closePanel() {
       const panel = document.getElementById("custom-side-panel");
       panel.style.display = "none";
@@ -742,7 +799,6 @@
       };
 
       let bioContent = person.bio ? getLangValue(person.bio) : "";
-      let automaticFamilyContent = buildAutomaticFamilyHtml(nodeId);
 
       const editMode = isEditModeOn();
       const readonlyAttr = editMode ? "" : "readonly";
@@ -768,8 +824,6 @@
             <tr><td class="td-lbl">${bText.job}:</td><td><input type="text" id="inp-job" class="milestone-input" value="${getLangValue(ms.occupation)}" ${readonlyAttr}></td></tr>
             <tr><td class="td-lbl">${bText.burial}:</td><td><input type="text" id="inp-burial" class="milestone-input" value="${getLangValue(ms.burial)}" ${readonlyAttr}></td></tr>
           </table>
-
-          
 
           <div class="btn-row">
             ${archiveHtml}
@@ -1309,6 +1363,16 @@
       const surnamesCloseBtn = document.getElementById("surnames-close-btn");
       if (surnamesCloseBtn) {
         surnamesCloseBtn.textContent = labels[currentLang].close;
+      }
+
+      const familyBtn = document.getElementById("btn-family");
+      if (familyBtn) {
+        familyBtn.textContent = labels[currentLang].family;
+      }
+
+      const familyCloseBtn = document.getElementById("family-close-btn");
+      if (familyCloseBtn) {
+        familyCloseBtn.textContent = labels[currentLang].close;
       }
     }
 
