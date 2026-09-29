@@ -507,7 +507,7 @@
       document.getElementById("surnames-overlay").style.display = "none";
     }
 
-        function jumpToPersonFromSurnames(id) {
+          function jumpToPersonFromSurnames(id) {
       closeSurnamesList();
       
       const panel = document.getElementById("custom-side-panel");
@@ -532,9 +532,6 @@
             treeInstance.center(id);
             saveTreeCenterPerson(id);
           } catch (e) {}
-        }
-        if (treeInstance && typeof treeInstance.fit === 'function') {
-          try { treeInstance.fit(); } catch (e) {}
         }
       }, 50);
     }
@@ -568,7 +565,7 @@
       document.getElementById("family-overlay").style.display = "none";
     }
 
-        function jumpToPersonFromFamily(id) {
+          function jumpToPersonFromFamily(id) {
       closeFamilyWindow();
       
       const panel = document.getElementById("custom-side-panel");
@@ -593,9 +590,6 @@
             treeInstance.center(id);
             saveTreeCenterPerson(id);
           } catch (e) {}
-        }
-        if (treeInstance && typeof treeInstance.fit === 'function') {
-          try { treeInstance.fit(); } catch (e) {}
         }
       }, 50);
     }
@@ -776,26 +770,22 @@
 
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
-          function closePanel() {
+            function closePanel() {
       const panel = document.getElementById("custom-side-panel");
       if (!panel) return;
       panel.style.display = "none";
       
-      // Принудительно пересчитываем layout — так же, как это делает клик по дереву
+      // Пересчитываем layout, чтобы дерево растянулось на всю ширину
       const tree = document.getElementById("family-tree");
       if (tree) {
         void tree.offsetWidth;
         void tree.offsetHeight;
       }
       
-      // Событие resize — FamilyTree.js на него реагирует
+      // Заставляем FamilyTree.js пересчитать размеры контейнера
       try {
         window.dispatchEvent(new Event('resize'));
       } catch (e) {}
-      
-      if (treeInstance && typeof treeInstance.fit === 'function') {
-        try { treeInstance.fit(); } catch (e) {}
-      }
     }
 
     function centerTreeOnPerson(personId) {
