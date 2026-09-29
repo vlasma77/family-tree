@@ -738,9 +738,20 @@
 
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
-    function closePanel() {
+        function closePanel() {
       const panel = document.getElementById("custom-side-panel");
+      if (!panel) return;
       panel.style.display = "none";
+      
+      // Принудительный пересчёт layout, чтобы дерево растянулось на всю ширину
+      const tree = document.getElementById("family-tree");
+      if (tree) {
+        // Трюк: читаем offsetWidth, чтобы браузер пересчитал
+        void tree.offsetWidth;
+      }
+      if (treeInstance && typeof treeInstance.resize === 'function') {
+        try { treeInstance.resize(); } catch (e) {}
+      }
     }
 
     function centerTreeOnPerson(personId) {
