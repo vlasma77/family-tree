@@ -320,7 +320,7 @@
       <div id="custom-search-results"></div>
     </div>
     <button id="btn-surnames" onclick="openSurnamesList()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">📋 Фамильный список персон</button>
-    <button id="btn-family" onclick="openFamilyWindow()" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 10px;cursor:pointer;font-size:13px;font-weight:bold;">👨‍👩‍👧 Семья и предки</button>
+   
     <button id="btn-ru" class="lang-btn" onclick="setLanguage('ru')">RU</button>
     <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">EN</button>
     <button id="btn-edit-lock" onclick="toggleEditModeUI()" title="Режим редактирования" style="background:none;border:1px solid #ccc;border-radius:4px;padding:5px 8px;cursor:pointer;font-size:16px;">🔒</button>
@@ -825,9 +825,10 @@
             <tr><td class="td-lbl">${bText.burial}:</td><td><input type="text" id="inp-burial" class="milestone-input" value="${getLangValue(ms.burial)}" ${readonlyAttr}></td></tr>
           </table>
 
-          <div class="btn-row">
+                    <div class="btn-row">
             ${archiveHtml}
             
+            <button class="action-btn" onclick="openFamilyWindow()">${bText.family}</button>
             <button class="action-btn" onclick="togglePureBio()">${bText.btn_more}</button>
             ${editMode ? `
             <button class="action-btn" onclick="toggleGeniMenu()">${bText.btn_add}</button>
@@ -1365,11 +1366,7 @@
         surnamesCloseBtn.textContent = labels[currentLang].close;
       }
 
-      const familyBtn = document.getElementById("btn-family");
-      if (familyBtn) {
-        familyBtn.textContent = labels[currentLang].family;
-      }
-
+    
       const familyCloseBtn = document.getElementById("family-close-btn");
       if (familyCloseBtn) {
         familyCloseBtn.textContent = labels[currentLang].close;
