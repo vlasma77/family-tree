@@ -553,7 +553,29 @@ window.db = {
       ],
       "spouse": "person_slava_1822"
     },
-    "gender": "male"
+    "gender": "male",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Холмеч, Гомель, Беларусь",
+        "en": "Kholmech, Gomel Uzed, Belarus"
+      },
+      "marriage": {
+        "ru": "Слава Смагаринская",
+        "en": "Slava Smаgаrinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    }
   },
   "person_slava_1822": {
     "name": {
@@ -566,7 +588,29 @@ window.db = {
       "spouse": "person_shneur_1821",
       "parents": []
     },
-    "gender": "female"
+    "gender": "female",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Шнеур Залман Смагаринский",
+        "en": "Shneur Zalman Smagarinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    }
   },
   "person_volka_1792": {
     "name": {
@@ -586,17 +630,41 @@ window.db = {
   },
   "person_feyga_1794": {
     "name": {
-      "ru": "Рохл Смагаринская",
+      "ru": "Фейга-Рохл Ицкова Смагаринская",
       "en": "Rokhl Smagarinsky"
     },
     "years": "1794 — ?",
     "isDeceased": true,
     "links": {
       "spouse": "person_volka_1792",
-      "parents": [],
+      "parents": [
+        "person_itsko_"
+      ],
       "spouseNote": "первая жена Вольки Иоселева"
     },
-    "gender": "female"
+    "gender": "female",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Волька Иоселев Смагаринский",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    }
   },
   "person_iosel_1760": {
     "name": {
@@ -1501,16 +1569,28 @@ window.db = {
   },
   "person_feyga_1800": {
     "name": {
-      "ru": "Фейга Ицкова Смагаринская",
+      "ru": "Фейга-Рохл Ицкова Смагаринская",
       "en": "Feyga Itzkova Smagarinsky"
     },
-    "years": "1800 — ?",
+    "years": "1794 — ?",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
         "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+      },
+      "marriage": {
+        "ru": "Волька Иоселев Смагаринский",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
       }
     },
     "bio": {
@@ -2144,24 +2224,7 @@ window.db = {
     "years": "1873/1874 — ?",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {
-      "birthPlace": {
-        "ru": "",
-        "en": ""
-      },
-      "marriage": {
-        "ru": "",
-        "en": ""
-      },
-      "occupation": {
-        "ru": "",
-        "en": ""
-      },
-      "burial": {
-        "ru": "",
-        "en": ""
-      }
-    },
+    "milestones": {},
     "bio": {
       "ru": "В списке встречается с годами рождения 1873 и 1874 — вероятно, расхождение источников.",
       "en": ""
@@ -2849,13 +2912,30 @@ window.db = {
   },
   "person_hana_z_1874": {
     "name": {
-      "ru": "Хана Залманова Смагаринская",
-      "en": "Khana Zalmanovna Smagarinsky"
+      "ru": "Хана Залманова Лейкин (Смагаринская)",
+      "en": "Khana Zalmanovna Leykin (Smagarinsky)"
     },
     "years": "1874 — 1941",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Авраам Кальман Лейкин",
+        "en": "Avraham Kalman Leykin"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
     "bio": {
       "ru": "24.06.1894 зарегистрирован брак с Авраам Кальман Лейкин, сыном Волько, Чернигов.",
       "en": "On June 24, 1894, a marriage was registered with Abraham Kalman Leikin, son of Volko, Chernigov"
@@ -2869,20 +2949,37 @@ window.db = {
         "person_zalman_i_1841",
         null
       ],
-      "spouse": "person_leikin_avraam"
+      "spouse": "person_leykin_avraam"
     },
     "archive": "person_hana_z_1874",
     "gender": "female"
   },
-  "person_leikin_avraam": {
+  "person_leykin_avraam": {
     "name": {
       "ru": "Авраам Кальман Лейкин",
-      "en": "Avraam Kalman Leikin"
+      "en": "Avraam Kalman Leykin"
     },
     "years": "",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Хана Залманова Лейкин (Смагаринская)",
+        "en": "Khana Zalmanovna Leykin (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
     "bio": {
       "ru": "Сын Волько Лейкина. Муж Ханы Залмановой Смагаринской, брак 24.06.1894, Чернигов.",
       "en": "Son of Volko Leykin. Husband of Khana Zalmanova Smagarynsky, married June 24, 1894, Chernigov"
@@ -2895,7 +2992,7 @@ window.db = {
       "parents": [],
       "spouse": "person_hana_z_1874"
     },
-    "archive": "person_leikin_avraam",
+    "archive": "person_leykin_avraam",
     "gender": "male"
   },
   "person_slava_z": {
@@ -2932,8 +3029,8 @@ window.db = {
   },
   "person_sora_z_1838": {
     "name": {
-      "ru": "Сора Смагаринская",
-      "en": "Sora Smagarinsky"
+      "ru": "Сора Залманова Эпштейн (Смагаринская)",
+      "en": "Sora Zalmanova Epstein (Smagarinsky)"
     },
     "years": "1838 — ?",
     "isDeceased": true,
@@ -2942,6 +3039,18 @@ window.db = {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
         "en": "Kholmech, Rechitsa District, Minsk Province"
+      },
+      "marriage": {
+        "ru": "Эпштейн",
+        "en": "Epstein"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
       }
     },
     "bio": {
@@ -2957,7 +3066,7 @@ window.db = {
         "person_shneur_1821",
         "person_slava_1822"
       ],
-      "spouse": null
+      "spouse": "person_epstein_"
     },
     "archive": "person_sora_z_1838",
     "gender": "female"
@@ -3716,13 +3825,30 @@ window.db = {
       "ru": "Слава Шевелева Старобинская (Смагаринская)",
       "en": "Slava Shevelevna Starobinsky (Smagarinsky)"
     },
-    "years": "",
+    "years": "? - ?",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Берл Старобинский",
+        "en": "Berl Starobinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
     "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
-      "en": ""
+      "en": "Daughter of Shevel Zalmanov Smagarinsky and Khaia, sister of Vulf."
     },
     "familyText": {
       "ru": [],
@@ -7944,8 +8070,8 @@ window.db = {
   "person_alexandr_zalmanov_1919": {
     "id": "person_alexandr_zalmanov_1919",
     "name": {
-      "ru": "Александр (Шая) Залманович Смагаринский",
-      "en": "Alexander (Shaya) Zalmanovich Smagarinsky"
+      "ru": "Александр Залманович Смагаринский",
+      "en": "Alexander Zalmanovich Smagarinsky"
     },
     "years": "16.12.1919 - 31.01.2012",
     "isDeceased": true,
@@ -10179,18 +10305,17 @@ window.db = {
       "spouse": null
     }
   },
-  "person_pesya_malka_1902": {
-    "id": "person_pesya_malka_1902",
+  "person_itsko_": {
+    "id": "person_itsko_",
     "name": {
-      "ru": "Песя-Малка Шевелева Смагаринская",
-      "en": "Pesya-Malka Sheveleva Smagarinsky"
+      "ru": "Itsko ?",
+      "en": "New Person"
     },
-    "years": "1902 - 1908",
+    "years": "? - ?",
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "Прилуки, Черниговской губернии",
-        "en": "Pryluky, Chernihiv Governorate"
+        "ru": ""
       },
       "marriage": {
         "ru": ""
@@ -10199,8 +10324,70 @@ window.db = {
         "ru": ""
       },
       "burial": {
-        "ru": "Прилуки Черниговской губернии",
-        "en": "Pryluky, Chernihiv Governorate"
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": null
+    }
+  },
+  "person_epstein_": {
+    "id": "person_epstein_",
+    "name": {
+      "ru": "Эпштейн ?",
+      "en": "Epstein ?"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Сора Залманова Эпштейн (Смагаринская)",
+        "en": "Sora Zalmanova Epstein (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_sora_z_1838"
+    }
+  },
+  "person_simon_1931": {
+    "id": "person_simon_1931",
+    "name": {
+      "ru": "Симон Берлов Старобинский",
+      "en": "Simeon Berlov Starobinsky"
+    },
+    "years": "1931 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
       }
     },
     "bio": {
@@ -10209,8 +10396,8 @@ window.db = {
     },
     "links": {
       "parents": [
-        "person_shevel_1848",
-        "person_khaya_1860"
+        "person_berl_starobinsky",
+        "person_slava_sh_shevel"
       ],
       "spouse": null
     }

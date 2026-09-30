@@ -17,6 +17,7 @@
 Встреча с родственниками = Meeting with relatives
 Супружеский танец = Marital dance
 Семейная фотография = Family photo
+запись о браке дочери Залмана Смогаринского Ханы с Лейкин Аврам Калмон Вольков = Marriage record of Khana, daughter of Zalman Smogarinsky, and Leykin Avram Kalmon Volkov
 
 # ===================================================================
 # Вульф и Блюма (общие документы семьи)

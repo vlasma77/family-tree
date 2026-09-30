@@ -3265,6 +3265,26 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_hana_z_1874": [
+    {
+      "url": "запись о браке дочери Залмана Смогаринского Ханы с Лейкин Аврам Калмон Вольков.jpg",
+      "type": "image",
+      "title": {
+        "ru": "запись о браке дочери Залмана Смогаринского Ханы с Лейкин Аврам Калмон Вольков",
+        "en": "Marriage record of Khana, daughter of Zalman Smogarinsky, and Leykin Avram Kalmon Volkov"
+      }
+    }
+  ],
+  "person_leykin_avraam": [
+    {
+      "url": "запись о браке дочери Залмана Смогаринского Ханы с Лейкин Аврам Калмон Вольков.jpg",
+      "type": "image",
+      "title": {
+        "ru": "запись о браке дочери Залмана Смогаринского Ханы с Лейкин Аврам Калмон Вольков",
+        "en": "Marriage record of Khana, daughter of Zalman Smogarinsky, and Leykin Avram Kalmon Volkov"
+      }
+    }
+  ],
   "person_sima_sh_shevel": [
     {
       "url": "Запись рождения сына Моисея.jpg",
@@ -7349,24 +7369,6 @@ window.documentsIndex = {
       "title": {
         "ru": "Гуляем по Манхэттену, 01.2019",
         "en": "Walking around Manhattan, January 2019"
-      }
-    }
-  ],
-  "person_pesya_malka_1902": [
-    {
-      "url": "Архивная запись о смерти Песя Малка 1908 год- 6,5 лет.jpg",
-      "type": "image",
-      "title": {
-        "ru": "Архивная запись о смерти Песя Малка 1908 год- 6,5 лет",
-        "en": "Archival death record for Pesya Malka, 1908 — age 6.5 years."
-      }
-    },
-    {
-      "url": "запись о смерти Песя-Малка Смагаринской.jpg",
-      "type": "image",
-      "title": {
-        "ru": "запись о смерти Песя-Малка Смагаринской",
-        "en": "Death record of Pesya-Malka Smagarinsky"
       }
     }
   ]
