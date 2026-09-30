@@ -2144,7 +2144,24 @@ window.db = {
     "years": "1873/1874 — ?",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
     "bio": {
       "ru": "В списке встречается с годами рождения 1873 и 1874 — вероятно, расхождение источников.",
       "en": ""
@@ -7927,8 +7944,8 @@ window.db = {
   "person_alexandr_zalmanov_1919": {
     "id": "person_alexandr_zalmanov_1919",
     "name": {
-      "ru": "Александр Залманович Смагаринский",
-      "en": "Alexander Zalmanovich Smagarinsky"
+      "ru": "Александр (Шая) Залманович Смагаринский",
+      "en": "Alexander (Shaya) Zalmanovich Smagarinsky"
     },
     "years": "16.12.1919 - 31.01.2012",
     "isDeceased": true,
@@ -10158,6 +10175,42 @@ window.db = {
       "parents": [
         "person_semen_vekselman",
         "person_eva_vekselman"
+      ],
+      "spouse": null
+    }
+  },
+  "person_pesya_malka_1902": {
+    "id": "person_pesya_malka_1902",
+    "name": {
+      "ru": "Песя-Малка Шевелева Смагаринская",
+      "en": "Pesya-Malka Sheveleva Smagarinsky"
+    },
+    "years": "1902 - 1908",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Прилуки, Черниговской губернии",
+        "en": "Pryluky, Chernihiv Governorate"
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Прилуки Черниговской губернии",
+        "en": "Pryluky, Chernihiv Governorate"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_shevel_1848",
+        "person_khaya_1860"
       ],
       "spouse": null
     }

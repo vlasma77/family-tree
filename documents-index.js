@@ -6269,6 +6269,16 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_naum_katenberg": [
+    {
+      "url": "Формуляр переселения в Прилуки семьи Смагаринского Залмана Шевелевича 1925.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Формуляр переселения в Прилуки семьи Смагаринского Залмана Шевелевича 1925",
+        "en": "Archival Document"
+      }
+    }
+  ],
   "person_yakov_smagarinsky_1939": [
     {
       "type": "book",
@@ -7339,6 +7349,24 @@ window.documentsIndex = {
       "title": {
         "ru": "Гуляем по Манхэттену, 01.2019",
         "en": "Walking around Manhattan, January 2019"
+      }
+    }
+  ],
+  "person_pesya_malka_1902": [
+    {
+      "url": "Архивная запись о смерти Песя Малка 1908 год- 6,5 лет.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Архивная запись о смерти Песя Малка 1908 год- 6,5 лет",
+        "en": "Archival death record for Pesya Malka, 1908 — age 6.5 years."
+      }
+    },
+    {
+      "url": "запись о смерти Песя-Малка Смагаринской.jpg",
+      "type": "image",
+      "title": {
+        "ru": "запись о смерти Песя-Малка Смагаринской",
+        "en": "Death record of Pesya-Malka Smagarinsky"
       }
     }
   ]
