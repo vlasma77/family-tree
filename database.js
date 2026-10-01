@@ -3936,10 +3936,27 @@ window.db = {
       "ru": "Йоха Шевелева Рубин (Смагаринская)",
       "en": "Yokha Shevelevna Rubin (Smagarinsky)"
     },
-    "years": "",
+    "years": "? - ?",
     "isDeceased": true,
     "mainPhoto": "",
-    "milestones": {},
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
     "bio": {
       "ru": "Дочь Шевеля Залманова Смагаринского и Хаи, сестра Вульфа.",
       "en": ""
@@ -10398,6 +10415,312 @@ window.db = {
       "parents": [
         "person_berl_starobinsky",
         "person_slava_sh_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_yakov_starobinsky": {
+    "id": "person_yakov_starobinsky",
+    "name": {
+      "ru": "Яков Берлов Старобинский",
+      "en": "New Person"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_berl_starobinsky",
+        "person_slava_sh_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_rosa_starobinsky": {
+    "id": "person_rosa_starobinsky",
+    "name": {
+      "ru": "Роза Берлов Старобинская",
+      "en": "New Person"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_berl_starobinsky",
+        "person_slava_sh_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_zilya_starobinsky": {
+    "id": "person_zilya_starobinsky",
+    "name": {
+      "ru": "Циля Берлов Старобинская",
+      "en": "New Person"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_berl_starobinsky",
+        "person_slava_sh_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_efim_starobinsky": {
+    "id": "person_efim_starobinsky",
+    "name": {
+      "ru": "Ефим Берлов Старобинский",
+      "en": "Efim Berlov Starobinsky"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_berl_starobinsky",
+        "person_slava_sh_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_faina_rubin": {
+    "id": "person_faina_rubin",
+    "name": {
+      "ru": "Фаина Рубин",
+      "en": "Faina Rubin"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_eli_rubin",
+        "person_yoha_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_yankel_rubin": {
+    "id": "person_yankel_rubin",
+    "name": {
+      "ru": "Янкель Рубин",
+      "en": "New Person"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_eli_rubin",
+        "person_yoha_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_dora_rubin": {
+    "id": "person_dora_rubin",
+    "name": {
+      "ru": "Дора Рубин",
+      "en": "Dora Rubin"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_eli_rubin",
+        "person_yoha_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_rochel_rubin": {
+    "id": "person_rochel_rubin",
+    "name": {
+      "ru": "Рохл Рубин",
+      "en": "Rochel Rubin"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_eli_rubin",
+        "person_yoha_shevel"
+      ],
+      "spouse": null
+    }
+  },
+  "person_michael_rubin": {
+    "id": "person_michael_rubin",
+    "name": {
+      "ru": "Михаил Рубин",
+      "en": "New Person"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_eli_rubin",
+        "person_yoha_shevel"
       ],
       "spouse": null
     }
