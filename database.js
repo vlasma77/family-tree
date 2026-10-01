@@ -10724,5 +10724,38 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_ileya_rubin": {
+    "id": "person_ileya_rubin",
+    "name": {
+      "ru": "Илья Михайлович Рубин",
+      "en": "Ileya Michailovich Rubin"
+    },
+    "years": "? -",
+    "mainPhoto": "photos/ileya_rubin.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_michael_rubin"
+      ],
+      "spouse": null
+    }
   }
 };
