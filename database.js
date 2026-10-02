@@ -8126,8 +8126,8 @@ window.db = {
   "person_faina_1919": {
     "id": "person_faina_1919",
     "name": {
-      "ru": "Фаина Ефимовна Смагаринская (Межубовская)",
-      "en": "Faina Efimovna Smagarinsky (Mezhubovsky)"
+      "ru": "Фаина Смагаринская (Межубовская)",
+      "en": "Faina Smagarinsky (Mezhubovsky)"
     },
     "years": "08.08.1919 - 23.12.2007",
     "isDeceased": true,
@@ -8154,7 +8154,10 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": [],
+      "parents": [
+        "person_chaim_mezhubovsky",
+        "person_ida_mezhubovsky"
+      ],
       "spouse": "person_alexandr_zalmanov_1919"
     }
   },
@@ -10756,6 +10759,137 @@ window.db = {
         "person_michael_rubin"
       ],
       "spouse": null
+    }
+  },
+  "person_chaim_mezhubovsky": {
+    "id": "person_chaim_mezhubovsky",
+    "name": {
+      "ru": "Хаим Межубовский",
+      "en": "Chaim Mezhubovsky"
+    },
+    "years": "1891 - 1960",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Ида Межубовская (Сейфулин)",
+        "en": "Ida Mezhubovsky (Seiphulin)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_ida_mezhubovsky"
+    }
+  },
+  "person_ida_mezhubovsky": {
+    "id": "person_ida_mezhubovsky",
+    "name": {
+      "ru": "Ида Межубовская",
+      "en": "Ida Mezhubovsky"
+    },
+    "years": "1894 - 1961",
+    "mainPhoto": "photos/ida_mezhubovsky.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Хаим Межубовский",
+        "en": "Chaim Mezhubovsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_izrail_seiphulin",
+        "person_khaya_seiphulin"
+      ],
+      "spouse": "person_chaim_mezhubovsky"
+    }
+  },
+  "person_izrail_seiphulin": {
+    "id": "person_izrail_seiphulin",
+    "name": {
+      "ru": "Израиль Сейфулин",
+      "en": "Izrail Seiphulin"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Хая Сейфулин",
+        "en": "Khaya Seiphulin"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_khaya_seiphulin"
+    }
+  },
+  "person_khaya_seiphulin": {
+    "id": "person_khaya_seiphulin",
+    "name": {
+      "ru": "Хая Сейфулина",
+      "en": "Khaya Seiphulin"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Израиль Сейфулин",
+        "en": "Izrail Seiphulin"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_khaya_seiphulin"
     }
   }
 };

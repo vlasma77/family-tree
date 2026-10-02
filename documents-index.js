@@ -6842,6 +6842,14 @@ window.documentsIndex = {
         "ru": "Адам Смагаринский",
         "en": "Adam Smagarinsky"
       }
+    },
+    {
+      "url": "Вечер в уютном заведении.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Вечер в уютном заведении",
+        "en": "An evening at a cozy spot"
+      }
     }
   ],
   "person_jack_smagarinsky": [
