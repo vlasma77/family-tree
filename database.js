@@ -11536,5 +11536,107 @@ window.db = {
       "parents": [],
       "spouse": "person_michail_mezhubovsky_1922"
     }
+  },
+  "person_sergey_mezhubovsky": {
+    "id": "person_sergey_mezhubovsky",
+    "name": {
+      "ru": "Сергей Михайлович Межубовский",
+      "en": "Sergey Michailovich Mezhubovsky"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_michail_mezhubovsky_1922",
+        "person_raya_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_senya_mezhubovsky": {
+    "id": "person_senya_mezhubovsky",
+    "name": {
+      "ru": "Семен Михайлович Межубовский",
+      "en": "Semyon Michailovich Mezhubovsky"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_michail_mezhubovsky_1922",
+        "person_raya_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_vladimir_mezhubovsky": {
+    "id": "person_vladimir_mezhubovsky",
+    "name": {
+      "ru": "Владимир Михайлович Межубовский",
+      "en": "Vladimir Michailovich Mezhubovsky"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_michail_mezhubovsky_1922",
+        "person_raya_mezhubovsky"
+      ],
+      "spouse": null
+    }
   }
 };
