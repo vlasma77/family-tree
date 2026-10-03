@@ -10891,5 +10891,278 @@ window.db = {
       "parents": [],
       "spouse": "person_khaya_seiphulin"
     }
+  },
+  "person_leonid_mezhubovsky": {
+    "id": "person_leonid_mezhubovsky",
+    "name": {
+      "ru": "Леонид (Лейзер) Межубовский",
+      "en": "Leonid Mezhubovsky"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Мира Межубовская",
+        "en": "Mira Mezhubovsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_chaim_mezhubovsky",
+        "person_ida_mezhubovsky"
+      ],
+      "spouse": "person_mira_mezhubovsky"
+    }
+  },
+  "person_mira_mezhubovsky": {
+    "id": "person_mira_mezhubovsky",
+    "name": {
+      "ru": "Мира Межубовская",
+      "en": "Mira Mezhubovsky"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Леонид Межубовский",
+        "en": "Leonid Mezhubovsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_leonid_mezhubovsky"
+    }
+  },
+  "person_boris_mezhubovsky": {
+    "id": "person_boris_mezhubovsky",
+    "name": {
+      "ru": "Борис Леонидович Межубовский",
+      "en": "Boris Leonidovich Mezhubovsky"
+    },
+    "years": "? - ",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_leonid_mezhubovsky",
+        "person_mira_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_sima_mezhubovsky": {
+    "id": "person_sima_mezhubovsky",
+    "name": {
+      "ru": "Сима Леонидовна Межубовская",
+      "en": "Sima Leonidovna Mezhubovsky"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_leonid_mezhubovsky",
+        "person_mira_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_clara_chorny": {
+    "id": "person_clara_chorny",
+    "name": {
+      "ru": "Клара Черная (Межубовская)",
+      "en": "Clara Chorny"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Миша Черный",
+        "en": "Misha Chorny"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_chaim_mezhubovsky",
+        "person_ida_mezhubovsky"
+      ],
+      "spouse": "person_misha_chorny"
+    }
+  },
+  "person_leonid_chorny": {
+    "id": "person_leonid_chorny",
+    "name": {
+      "ru": "Леонид Черный",
+      "en": "Leonid Chorny"
+    },
+    "years": "? - ",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": ["person_misha_chorny",
+                         "person_clara_chorny"
+    ],
+      "spouse": ""
+    },
+      "gender": "male"
+  },
+ "person_sasha_chorny": {
+    "id": "person_sasha_chorny",
+    "name": {
+      "ru": "Саша Черный",
+      "en": "Sasha Chorny"
+    },
+    "years": "? - ",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": ["person_misha_chorny",
+                         "person_clara_chorny"
+],
+      "spouse": ""
+    },
+      "gender": "male"
+  },
+"person_misha_chorny": {
+    "id": "person_misha_chorny",
+    "name": {
+      "ru": "Миша Черный",
+      "en": "Misha Chorny"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Клара Чёрная",
+        "en": "Clara Chorny"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_clara_corny"
+    },
+      "gender": "male"
   }
 };
