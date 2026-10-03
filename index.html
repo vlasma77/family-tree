@@ -770,9 +770,13 @@
 
       return html ? `<ul class="family-list">${html}</ul>` : `<div style="color:#999; font-style:italic; font-size:13px;">${bText.no_relations}</div>`;
     }
-            function closePanel() {
+              function closePanel() {
       const panel = document.getElementById("custom-side-panel");
       if (!panel) return;
+      
+      // Запоминаем, на какой персоне мы были
+      const personToReturn = activeNodeId;
+      
       panel.style.display = "none";
       
       // Пересчитываем layout, чтобы дерево растянулось на всю ширину
@@ -786,6 +790,16 @@
       try {
         window.dispatchEvent(new Event('resize'));
       } catch (e) {}
+      
+      // Возвращаем вид к той же персоне, с которой закрыли панель
+      if (personToReturn && treeInstance && typeof treeInstance.center === 'function') {
+        setTimeout(function () {
+          try {
+            treeInstance.center(personToReturn);
+            saveTreeCenterPerson(personToReturn);
+          } catch (e) {}
+        }, 50);
+      }
     }
 
     function centerTreeOnPerson(personId) {
