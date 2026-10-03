@@ -11090,14 +11090,15 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": ["person_misha_chorny",
-                         "person_clara_chorny"
-    ],
+      "parents": [
+        "person_misha_chorny",
+        "person_clara_chorny"
+      ],
       "spouse": ""
     },
-      "gender": "male"
+    "gender": "male"
   },
- "person_sasha_chorny": {
+  "person_sasha_chorny": {
     "id": "person_sasha_chorny",
     "name": {
       "ru": "Саша Черный",
@@ -11125,14 +11126,15 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": ["person_misha_chorny",
-                         "person_clara_chorny"
-],
+      "parents": [
+        "person_misha_chorny",
+        "person_clara_chorny"
+      ],
       "spouse": ""
     },
-      "gender": "male"
+    "gender": "male"
   },
-"person_misha_chorny": {
+  "person_misha_chorny": {
     "id": "person_misha_chorny",
     "name": {
       "ru": "Миша Черный",
@@ -11163,6 +11165,73 @@ window.db = {
       "parents": [],
       "spouse": "person_clara_corny"
     },
-      "gender": "male"
+    "gender": "male"
+  },
+  "person_srulik_mezhubovsky": {
+    "id": "person_srulik_mezhubovsky",
+    "name": {
+      "ru": "Срулик (Израиль) Межубовский",
+      "en": "Srulik (Izrail) Mezhubovsky"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Анюта Межубовская (Сподикова)",
+        "en": "Anuta Mezhubovsky (Spodikova)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_chaim_mezhubovsky",
+        "person_ida_mezhubovsky"
+      ],
+      "spouse": "person_anuta_mezhubovsky"
+    }
+  },
+  "person_anuta_mezhubovsky": {
+    "id": "person_anuta_mezhubovsky",
+    "name": {
+      "ru": "Анюта Межубовская (Сподикова)",
+      "en": "Anuta Mezhubovsky (Spodikova)"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Срулик (Израиль) Межубовский",
+        "en": "Srulik (Izrail) Mezhubovsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_srulik_mezhubovsky"
+    }
   }
 };
