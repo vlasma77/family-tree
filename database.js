@@ -8546,7 +8546,7 @@ window.db = {
       "ru": "Рита Смагаринская (Коган)",
       "en": "Rita Smagarinsky (Kogan)"
     },
-    "years": "1950 - ",
+    "years": "1950 - ?",
     "mainPhoto": "photos/rita_smagarinsky.jpg",
     "milestones": {
       "birthPlace": {
@@ -11090,14 +11090,15 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": ["person_misha_chorny",
-                         "person_clara_chorny"
-    ],
+      "parents": [
+        "person_misha_chorny",
+        "person_clara_chorny"
+      ],
       "spouse": ""
     },
-      "gender": "male"
+    "gender": "male"
   },
- "person_sasha_chorny": {
+  "person_sasha_chorny": {
     "id": "person_sasha_chorny",
     "name": {
       "ru": "Саша Черный",
@@ -11125,14 +11126,15 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": ["person_misha_chorny",
-                         "person_clara_chorny"
-],
+      "parents": [
+        "person_misha_chorny",
+        "person_clara_chorny"
+      ],
       "spouse": ""
     },
-      "gender": "male"
+    "gender": "male"
   },
-"person_misha_chorny": {
+  "person_misha_chorny": {
     "id": "person_misha_chorny",
     "name": {
       "ru": "Миша Черный",
@@ -11163,6 +11165,477 @@ window.db = {
       "parents": [],
       "spouse": "person_clara_corny"
     },
-      "gender": "male"
+    "gender": "male"
+  },
+  "person_srulik_mezhubovsky": {
+    "id": "person_srulik_mezhubovsky",
+    "name": {
+      "ru": "Срулик (Израиль) Межубовский",
+      "en": "Srulik (Izrail) Mezhubovsky"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Анюта Межубовская (Сподикова)",
+        "en": "Anuta Mezhubovsky (Spodikova)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_chaim_mezhubovsky",
+        "person_ida_mezhubovsky"
+      ],
+      "spouse": "person_anuta_mezhubovsky"
+    }
+  },
+  "person_anuta_mezhubovsky": {
+    "id": "person_anuta_mezhubovsky",
+    "name": {
+      "ru": "Анюта Межубовская (Сподикова)",
+      "en": "Anuta Mezhubovsky (Spodikova)"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Срулик (Израиль) Межубовский",
+        "en": "Srulik (Izrail) Mezhubovsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_srulik_mezhubovsky"
+    }
+  },
+  "person_nikolay_mezhubovsky": {
+    "id": "person_nikolay_mezhubovsky",
+    "name": {
+      "ru": "Николай Межубовский",
+      "en": "New Person"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_srulik_mezhubovsky",
+        "person_anuta_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_yakov_mezhubovsky": {
+    "id": "person_yakov_mezhubovsky",
+    "name": {
+      "ru": "Яков Межубовский",
+      "en": "New Person"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_srulik_mezhubovsky",
+        "person_anuta_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_michail_mezhubovsky": {
+    "id": "person_michail_mezhubovsky",
+    "name": {
+      "ru": "Михаил Межубовский",
+      "en": "New Person"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_srulik_mezhubovsky",
+        "person_anuta_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_genia_razhberg": {
+    "id": "person_genia_razhberg",
+    "name": {
+      "ru": "Геня Ражберг (Межубовская)",
+      "en": "New Person"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Аарон Ражберг"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_srulik_mezhubovsky",
+        "person_anuta_mezhubovsky"
+      ],
+      "spouse": "person_aaron_razhberg"
+    }
+  },
+  "person_aaron_razhberg": {
+    "id": "person_aaron_razhberg",
+    "name": {
+      "ru": "Аарон Ражберг",
+      "en": "New Person"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Геня Ражберг (Межубовская)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_genia_razhberg"
+    }
+  },
+  "person_anatoly_razhberg": {
+    "id": "person_anatoly_razhberg",
+    "name": {
+      "ru": "Анатолий Ражберг",
+      "en": "New Person"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_aaron_razhberg",
+        "person_genia_razhberg"
+      ],
+      "spouse": null
+    }
+  },
+  "person_grigory_razhberg": {
+    "id": "person_grigory_razhberg",
+    "name": {
+      "ru": "Григорий Ражберг",
+      "en": "New Person"
+    },
+    "years": "? -",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_aaron_razhberg",
+        "person_genia_razhberg"
+      ],
+      "spouse": null
+    }
+  },
+  "person_misha_mezhubovsky": {
+    "id": "person_misha_mezhubovsky",
+    "name": {
+      "ru": "Михаил Межубовский",
+      "en": "Michail Mezhubovsky"
+    },
+    "years": "1922 - 2004",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Рая (Рухл) Межубовская",
+        "en": "Raya (Rukhl) Mezhubovsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_chaim_mezhubovsky",
+        "person_ida_mezhubovsky"
+      ],
+      "spouse": "person_raya_mezhubovsky"
+    }
+  },
+  "person_raya_mezhubovsky": {
+    "id": "person_raya_mezhubovsky",
+    "name": {
+      "ru": "Рая (Рухл) Межубовская",
+      "en": "Raya (Rukhl) Mezhubovsky"
+    },
+    "years": "? - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": "Михаил Межубовский",
+        "en": "Michail Mezhubovsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_misha_mezhubovsky"
+    }
+  },
+  "person_sergey_mezhubovsky": {
+    "id": "person_sergey_mezhubovsky",
+    "name": {
+      "ru": "Сергей Михайлович Межубовский",
+      "en": "Sergey Mikhailovich Mezhubovsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_misha_mezhubovsky",
+        "person_raya_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_semyon_mezhubovsky": {
+    "id": "person_semyon_mezhubovsky",
+    "name": {
+      "ru": "Семён Михайлович Межубовский",
+      "en": "Semyon Mikhailovich Mezhubovsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_misha_mezhubovsky",
+        "person_raya_mezhubovsky"
+      ],
+      "spouse": null
+    }
+  },
+  "person_vladimir_mezhubovsky": {
+    "id": "person_vladimir_mezhubovsky",
+    "name": {
+      "ru": "Владимир Михайлович Межубовский",
+      "en": "Vladimir Mikhailovich Mezhubovsky"
+    },
+    "years": "",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": ""
+      },
+      "marriage": {
+        "ru": ""
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_misha_mezhubovsky",
+        "person_raya_mezhubovsky"
+      ],
+      "spouse": null
+    }
   }
 };
