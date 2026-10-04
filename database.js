@@ -8546,7 +8546,7 @@ window.db = {
       "ru": "Рита Смагаринская (Коган)",
       "en": "Rita Smagarinsky (Kogan)"
     },
-    "years": "1950 - ?",
+    "years": "1950 -",
     "mainPhoto": "photos/rita_smagarinsky.jpg",
     "milestones": {
       "birthPlace": {
