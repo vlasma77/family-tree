@@ -626,7 +626,29 @@ window.db = {
       ],
       "spouse": "person_feyga_1794"
     },
-    "gender": "male"
+    "gender": "male",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Речица, Минск, Беларусь",
+        "en": "Rechitsa, Uzda District, Minsk Region, Belarus"
+      },
+      "marriage": {
+        "ru": "Фейга-Рохля Смагаринская",
+        "en": "Feyga Rokhlya Smagarinsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    }
   },
   "person_feyga_1794": {
     "name": {
@@ -671,13 +693,35 @@ window.db = {
       "ru": "Иосел Смагаринский",
       "en": "Iosel Smagarynsky"
     },
-    "years": "1792 — ?",
+    "years": "1760 — ?",
     "isDeceased": true,
     "links": {
       "parents": [],
       "spouse": null
     },
-    "gender": "male"
+    "gender": "male",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    }
   },
   "person_israil_aizik_1917": {
     "name": {
@@ -1707,20 +1751,70 @@ window.db = {
   },
   "person_iosel_v_1812": {
     "name": {
-      "ru": "Иосел Вольков Смагаринский",
-      "en": "Iosel Volkovich Smagarinsky"
+      "ru": "Иосел Смагаринский",
+      "en": "Iosel Smagarynsky"
     },
     "years": "1812 — ?",
+    "isDeceased": true,
+    "links": {
+      "parents": [],
+      "spouses": [
+        "person_dina_blyuma_1814",
+        "person_blyuma_1820"
+      ]
+    },
+    "gender": "male",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    }
+  },
+  "person_blyuma_1820": {
+    "name": {
+      "ru": "Блюма Смагаринская",
+      "en": "Blyuma Smagarinsky"
+    },
+    "years": "1820 — ?",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
         "ru": "г. Холмеч, Речицкий уезд, Минская губерния",
-        "en": "г. Холмеч, Речицкий уезд, Минская губерния"
+        "en": "Kholmech, Rechitsa District, Minsk Province"
+      },
+      "marriage": {
+        "ru": "Иосел Смагаринский",
+        "en": "Iosel Smagarynsky"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
       }
     },
     "bio": {
-      "ru": "Сын Вольки Иоселева Смагаринского. Точно неизвестно, от какой из двух жён Вольки Иоселева (Рохл или Фейги) рождён этот ребёнок.",
+      "ru": "",
       "en": ""
     },
     "familyText": {
@@ -1728,14 +1822,11 @@ window.db = {
       "en": []
     },
     "links": {
-      "parents": [
-        "person_volka_1792",
-        "person_feyga_1794"
-      ],
-      "spouse": "person_dina_blyuma_1814"
+      "parents": [],
+      "spouse": "person_iosel_v_1812"
     },
-    "archive": "person_iosel_v_1812",
-    "gender": "male"
+    "archive": "person_blyuma_1820",
+    "gender": "female"
   },
   "person_yankel_1851": {
     "name": {
@@ -2775,7 +2866,7 @@ window.db = {
     "links": {
       "parents": [
         "person_iosel_v_1812",
-        "person_dina_blyuma_1814"
+        "person_blyuma_1820"
       ],
       "spouse": null
     },
@@ -2807,7 +2898,7 @@ window.db = {
     "links": {
       "parents": [
         "person_iosel_v_1812",
-        "person_dina_blyuma_1814"
+        "person_blyuma_1820"
       ],
       "spouse": null
     },
@@ -2839,7 +2930,7 @@ window.db = {
     "links": {
       "parents": [
         "person_iosel_v_1812",
-        "person_dina_blyuma_1814"
+        "person_blyuma_1820"
       ],
       "spouse": null
     },
@@ -2871,7 +2962,7 @@ window.db = {
     "links": {
       "parents": [
         "person_iosel_v_1812",
-        "person_dina_blyuma_1814"
+        "person_blyuma_1820"
       ],
       "spouse": null
     },
@@ -2903,7 +2994,7 @@ window.db = {
     "links": {
       "parents": [
         "person_iosel_v_1812",
-        "person_dina_blyuma_1814"
+        "person_blyuma_1820"
       ],
       "spouse": null
     },

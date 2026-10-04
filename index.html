@@ -1202,8 +1202,12 @@
         if (deceased) nodeTags.push("deceased");
         node.tags = nodeTags;
 
-        if (person.links) {
-          if (person.links.spouse && String(person.links.spouse).trim()) {
+                if (person.links) {
+          // Поддержка одного супруга (spouse) и нескольких (spouses)
+          if (person.links.spouses && Array.isArray(person.links.spouses)) {
+            const validSpouses = person.links.spouses.filter(s => s && String(s).trim());
+            if (validSpouses.length > 0) node.pids = validSpouses;
+          } else if (person.links.spouse && String(person.links.spouse).trim()) {
             node.pids = [person.links.spouse];
           }
           if (person.links.parents && Array.isArray(person.links.parents)) {
