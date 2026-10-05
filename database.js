@@ -3255,13 +3255,30 @@ window.db = {
   },
   "person_natan_z": {
     "name": {
-      "ru": "Натан Смагаринский",
-      "en": "Natan Smagarinsky"
+      "ru": "Натан Нахмон Смагаринский",
+      "en": "Nathan Nakhmon Smagarinsky "
     },
-    "years": "",
+    "years": "1878 - 1954",
     "isDeceased": true,
-    "mainPhoto": "",
-    "milestones": {},
+    "mainPhoto": "photos/nathan_nakhmon_1878.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Холмеч, Гомель, Беларусь",
+        "en": "Kholmech, Gomel Uzed, Belarus"
+      },
+      "marriage": {
+        "ru": "Дина Смагаринская (Азаров)",
+        "en": "Dynya Smagarinsky (Azaroff)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "Нью Йорк, США",
+        "en": "New York, NY, United States"
+      }
+    },
     "bio": {
       "ru": "",
       "en": ""
@@ -3275,7 +3292,7 @@ window.db = {
         "person_shneur_1821",
         "person_slava_1822"
       ],
-      "spouse": null
+      "spouse": "person_dynya_smagarinsky_1881"
     },
     "archive": "person_natan_z",
     "gender": "male"

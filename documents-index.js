@@ -3285,6 +3285,24 @@ window.documentsIndex = {
       }
     }
   ],
+  "person_natan_z": [
+    {
+      "url": "50 летний юбилей брака Натана и Дины Смагаринских.jpg",
+      "type": "image",
+      "title": {
+        "ru": "50 летний юбилей брака Натана и Дины Смагаринских",
+        "en": "Nathan and Dina Smagarinsky’s 50th Wedding Anniversary"
+      }
+    },
+    {
+      "url": "брак Натана и Дины.pdf",
+      "type": "document",
+      "title": {
+        "ru": "брак Натана и Дины",
+        "en": "Nathan and Dina's marriage"
+      }
+    }
+  ],
   "person_sima_sh_shevel": [
     {
       "url": "Запись рождения сына Моисея.jpg",
