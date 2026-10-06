@@ -11936,5 +11936,53 @@ window.db = {
     },
     "archive": "person_blyuma_rosen",
     "gender": "female"
+  },
+  "person_samuel_smagarinsky_1903": {
+    "id": "person_samuel_smagarinsky_1903",
+    "name": {
+      "ru": "Самуил Натанович Смагаринский",
+      "en": "Samuel Natanovich Smagarinsky"
+    },
+    "years": "05.12.1903 - 13.01.1961",
+    "isDeceased": true,
+    "mainPhoto": "photos/samuel_smagarinsky_1903.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Гомель, Беларусь",
+        "en": "Gomel, Belarus"
+      },
+      "marriage": {
+        "ru": "Фрэнсис - в разводе, Эстер Смагаринская (Гринберг)",
+        "en": "Francis-divorced, Esther Smagarinsky (Greenberg)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_natan_z",
+        "person_dynya_smagarinsky_1881"
+      ],
+      "spouses": [
+        "person_francis_smagarinsky",
+        "person_esther_smagarinsky"
+      ]
+    },
+    "archive": "person_samuel_smagarinsky_1903",
+    "gender": "male"
   }
 };

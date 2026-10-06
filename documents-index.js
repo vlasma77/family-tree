@@ -7423,5 +7423,31 @@ window.documentsIndex = {
         "en": "Dina with her sons"
       }
     }
+  ],
+  "person_samuel_smagarinsky_1903": [
+    {
+      "url": "50 летний юбилей брака Натана и Дины Смагаринских.jpg",
+      "type": "image",
+      "title": {
+        "ru": "50 летний юбилей брака Натана и Дины Смагаринских",
+        "en": "Nathan and Dina Smagarinsky’s 50th Wedding Anniversary"
+      }
+    },
+    {
+      "url": "Дина и сын Самуель, Гомель.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дина и сын Самуель, Гомель",
+        "en": "Dina and son Samuel, Gomel"
+      }
+    },
+    {
+      "url": "Дина с сыновьями.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дина с сыновьями",
+        "en": "Dina with her sons"
+      }
+    }
   ]
 };
