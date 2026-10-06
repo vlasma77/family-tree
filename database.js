@@ -11981,7 +11981,7 @@ window.db = {
         "person_francis_smagarinsky",
         "person_esther_smagarinsky"
       ],
-      "spouse": "person_francis_smagarinsky"
+      "spouse": "person_esther_smagarinsky_1911"
     },
     "archive": "person_samuel_smagarinsky_1903",
     "gender": "male"
@@ -11992,7 +11992,7 @@ window.db = {
       "ru": "Фрэнсис Смагаринская",
       "en": "Francis Smagarinsky"
     },
-    "years": "? - ?",
+    "years": "1911 - 1950",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
@@ -12027,5 +12027,92 @@ window.db = {
     },
     "archive": "person_francis_smagarinsky",
     "gender": "female"
+  },
+  "person_esther_smagarinsky_1911": {
+    "id": "person_esther_smagarinsky_1911",
+    "name": {
+      "ru": "Эстер Смагаринская (Гринберг)",
+      "en": "Esther Smagarinsky (Greenberg)"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_samuel_smagarinsky_1903"
+    },
+    "archive": "person_esther_smagarinsky_1911",
+    "gender": "female"
+  },
+  "person_joseph_gorin_smagarinsky": {
+    "id": "person_joseph_gorin_smagarinsky",
+    "name": {
+      "ru": "Джозеф Горин (Смагаринский)",
+      "en": "Joseph Gorin (Smagarinsky)"
+    },
+    "years": "",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Вида Швингер",
+        "en": "Vida Schwinger"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_samuel_smagarinsky_1903",
+        "person_frencis_smagarinsky"
+      ],
+      "spouse": "person_vida_schwinger"
+    },
+    "archive": "person_joseph_gorin_smagarinsky",
+    "gender": "male"
   }
 };
