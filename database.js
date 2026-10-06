@@ -12465,5 +12465,140 @@ window.db = {
     },
     "archive": "person_linda_gorin",
     "gender": "female"
+  },
+  "person_ariel_gorin_1983": {
+    "id": "person_ariel_gorin_1983",
+    "name": {
+      "ru": "Ариель Горин",
+      "en": "Ariel Gorin"
+    },
+    "years": "30.10.1983 -",
+    "isDeceased": false,
+    "mainPhoto": "photos/ariel_gorin.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_neil_gorin",
+        "person_linda_gorin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_ariel_gorin_1983",
+    "gender": "female"
+  },
+  "person_michael_gorin_1985": {
+    "id": "person_michael_gorin_1985",
+    "name": {
+      "ru": "Майкл Адам Горин",
+      "en": "Michael Adam Gorin"
+    },
+    "years": "03.01.1985 -",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_neil_gorin",
+        "person_linda_gorin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_michael_gorin_1985",
+    "gender": "male"
+  },
+  "person_samantha_gorin": {
+    "id": "person_samantha_gorin",
+    "name": {
+      "ru": "Саманта Горин",
+      "en": "Samantha Gorin"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_neil_gorin",
+        "person_linda_gorin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_samantha_gorin",
+    "gender": "female"
   }
 };
