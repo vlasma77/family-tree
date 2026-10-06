@@ -3290,8 +3290,8 @@ window.documentsIndex = {
       "url": "50 летний юбилей брака Натана и Дины Смагаринских.jpg",
       "type": "image",
       "title": {
-        "ru": "50 летний юбилей брака Натана и Дины Смагаринских",
-        "en": "Nathan and Dina Smagarinsky’s 50th Wedding Anniversary"
+        "ru": "летний юбилей брака Натана и Дины Смагаринских",
+        "en": "Archival Document"
       }
     },
     {
@@ -7395,6 +7395,32 @@ window.documentsIndex = {
       "title": {
         "ru": "Гуляем по Манхэттену, 01.2019",
         "en": "Walking around Manhattan, January 2019"
+      }
+    }
+  ],
+  "person_dynya_smagarinsky_1881": [
+    {
+      "url": "50 летний юбилей брака Натана и Дины Смагаринских.jpg",
+      "type": "image",
+      "title": {
+        "ru": "летний юбилей брака Натана и Дины Смагаринских",
+        "en": "Archival Document"
+      }
+    },
+    {
+      "url": "Дина и сын Самуель, Гомель.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дина и сын Самуель, Гомель",
+        "en": "Dina and son Samuel, Gomel"
+      }
+    },
+    {
+      "url": "Дина с сыновьями.jpg",
+      "type": "image",
+      "title": {
+        "ru": "Дина с сыновьями",
+        "en": "Dina with her sons"
       }
     }
   ]

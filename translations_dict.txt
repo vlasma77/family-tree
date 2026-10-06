@@ -622,6 +622,8 @@ raskaz_01 = Сборник рассказов Якова Смагаринско�
 Вечер в уютном заведении = An evening at a cozy spot
 50 летний юбилей брака Натана и Дины Смагаринских = Nathan and Dina Smagarinsky’s 50th Wedding Anniversary
 брак Натана и Дины = Nathan and Dina's marriage
+Дина с сыновьями = Dina with her sons
+Дина и сын Самуель, Гомель = Dina and son Samuel, Gomel 
 
 
 

@@ -11745,5 +11745,109 @@ window.db = {
       ],
       "spouse": null
     }
+  },
+  "person_dynya_smagarinsky_1881": {
+    "id": "person_dynya_smagarinsky_1881",
+    "name": {
+      "ru": "Дина Смагаринская (Азаров)",
+      "en": "Dynya Smagarinsky (Azarov)"
+    },
+    "years": "06.12.1881 - 18.06.1963",
+    "mainPhoto": "photos/dynya_smagarinsky_1881.jpg",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Ветка, Гомель, Беларусь",
+        "en": "Vetka, Gomel Province, Belarus"
+      },
+      "marriage": {
+        "ru": "Натан Нахмон Смагаринский",
+        "en": "Nathan Nakhmon Smagarinsky"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "Нью Йорк, США",
+        "en": "New York, US"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [
+        "person_yitzchok_jacob_azaroff",
+        "person_rony_azaroff"
+      ],
+      "spouse": "person_natan_z"
+    }
+  },
+  "person_yitzchok_jacob_azaroff": {
+    "id": "person_yitzchok_jacob_azaroff",
+    "name": {
+      "ru": "Ицхок (Яков) Азаров",
+      "en": "Yitzchok Jacob Azaroff"
+    },
+    "years": "1839 - ?",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Гомель, Беларусь",
+        "en": "Gomel, Belarus"
+      },
+      "marriage": {
+        "ru": "Рони Розен Азаров (Шмидт)",
+        "en": "Rony Rosen Azaroff (Schmidt)"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_rony_azaroff"
+    }
+  },
+  "person_rony_azaroff": {
+    "id": "person_rony_azaroff",
+    "name": {
+      "ru": "Рони Розен Азаров (Шмидт)",
+      "en": "Roni Rosen Azaroff (Schmidt)"
+    },
+    "years": "1834 - 25.03.1910",
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Гомель, Беларусь",
+        "en": "Gomel, Belarus"
+      },
+      "marriage": {
+        "ru": "Ицхок Яков Азаров",
+        "en": "Yitzchok Jacob Azaroff"
+      },
+      "occupation": {
+        "ru": ""
+      },
+      "burial": {
+        "ru": "США"
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_yitzchok_jacob_azaroff"
+    },
+    "gender": "female"
   }
 };
