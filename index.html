@@ -709,11 +709,19 @@
 
       let fatherId = (person.links && person.links.parents && person.links.parents[0]) ? person.links.parents[0] : (person.fid || person.father);
       let motherId = (person.links && person.links.parents && person.links.parents[1]) ? person.links.parents[1] : (person.mid || person.mother);
-      let spouseId = (person.links && person.links.spouse) ? person.links.spouse : (person.pid || person.spouse);
+            // Поддержка одного супруга и массива супругов
+      let spouseIds = [];
+      if (person.links && Array.isArray(person.links.spouses)) {
+        spouseIds = person.links.spouses.filter(s => s && String(s).trim());
+      } else if (person.links && person.links.spouse) {
+        spouseIds = [person.links.spouse];
+      } else if (person.pid) {
+        spouseIds = [person.pid];
+      }
 
       let fatherHtml = getLinkOrText(fatherId);
       let motherHtml = getLinkOrText(motherId);
-      let spouseHtml = getLinkOrText(spouseId);
+      let spouseHtmlList = spouseIds.map(id => getLinkOrText(id)).filter(Boolean);
 
       let fatherNote = (person.links && person.links.fatherNote) ? ` (${person.links.fatherNote})` : "";
       let motherNote = (person.links && person.links.motherNote) ? ` (${person.links.motherNote})` : "";
@@ -727,7 +735,13 @@
       if (bioFatherText) html += `<li><strong>${bText.biologicalFather}:</strong> ${bioFatherText}</li>`;
       if (bioMotherText) html += `<li><strong>${bText.biologicalMother}:</strong> ${bioMotherText}</li>`;
 
-      if (spouseHtml) html += `<li><strong>${bText.spouse}:</strong> ${spouseHtml}${spouseNote}</li>`;
+            if (spouseHtmlList.length > 0) {
+        if (spouseHtmlList.length === 1) {
+          html += `<li><strong>${bText.spouse}:</strong> ${spouseHtmlList[0]}${spouseNote}</li>`;
+        } else {
+          html += `<li><strong>${bText.spouse}:</strong> ${spouseHtmlList.join(", ")}</li>`;
+        }
+      }
 
       const getBirthYear = (id) => {
         let y = db[id] && db[id].years;
@@ -1090,12 +1104,41 @@
         currentPerson.links.parents[1] = newId;
         let note = askOptionalNote("Пометка к матери (необязательно):", "Mother note (optional):");
         if (note) currentPerson.links.motherNote = note;
-      } else if (role === 'spouse') {
+            } else if (role === 'spouse') {
+        // Новый супруг ссылается на текущую персону
         db[newId].links.spouse = activeNodeId;
-        currentPerson.links.spouse = newId;
+
+        // Если у текущей персоны УЖЕ был супруг — переводим на массив spouses
+        if (currentPerson.links.spouse && currentPerson.links.spouse !== newId) {
+          const oldSpouseId = currentPerson.links.spouse;
+
+          // Собираем массив супругов, если его ещё нет
+          if (!Array.isArray(currentPerson.links.spouses)) {
+            currentPerson.links.spouses = [oldSpouseId];
+          }
+          // Добавляем нового
+          if (!currentPerson.links.spouses.includes(newId)) {
+            currentPerson.links.spouses.push(newId);
+          }
+          // Удаляем одиночное поле spouse (заменено массивом)
+          delete currentPerson.links.spouse;
+          delete currentPerson.links.spouseNote;
+        } else if (Array.isArray(currentPerson.links.spouses)) {
+          // Уже был массив — просто добавляем нового
+          if (!currentPerson.links.spouses.includes(newId)) {
+            currentPerson.links.spouses.push(newId);
+          }
+        } else {
+          // Супруга не было — одиночная ссылка (как раньше)
+          currentPerson.links.spouse = newId;
+        }
+
         let note = askOptionalNote("Пометка к браку (необязательно):", "Marriage note (optional):");
         if (note) {
-          currentPerson.links.spouseNote = note;
+          // Пометку ставим только к новой связи. Если есть spouse — туда, если spouses — оставляем текст в bio или игнорируем.
+          if (currentPerson.links.spouse) {
+            currentPerson.links.spouseNote = note;
+          }
           db[newId].links.spouseNote = note;
         }
       } else if (role === 'son' || role === 'daughter') {
