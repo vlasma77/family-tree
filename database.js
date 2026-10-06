@@ -12243,5 +12243,227 @@ window.db = {
     },
     "archive": "person_les_schachter",
     "gender": "male"
+  },
+  "person_carrie_schachter": {
+    "id": "person_carrie_schachter",
+    "name": {
+      "ru": "Кэрри Шехтер",
+      "en": "Carrie Schachter"
+    },
+    "years": "04.10.1976 -",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_les_schachter",
+        "person_beth_gorin_1952"
+      ],
+      "spouse": null
+    },
+    "archive": "person_carrie_schachter",
+    "gender": "female"
+  },
+  "person_aaron_schachter": {
+    "id": "person_aaron_schachter",
+    "name": {
+      "ru": "Аарон Шехтер",
+      "en": "Aaron Schachter"
+    },
+    "years": "22.11.1979 -",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_les_schachter",
+        "person_beth_gorin_1952"
+      ],
+      "spouse": null
+    },
+    "archive": "person_aaron_schachter",
+    "gender": "male"
+  },
+  "person_emily_schiffman_schachter": {
+    "id": "person_emily_schiffman_schachter",
+    "name": {
+      "ru": "Эмили Шифман (Шехтер)",
+      "en": "Emily Schiffman (Schachter)"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_les_schachter",
+        "person_beth_gorin_1952"
+      ],
+      "spouse": null
+    },
+    "archive": "person_emily_schiffman_schachter",
+    "gender": "female"
+  },
+  "person_neil_gorin": {
+    "id": "person_neil_gorin",
+    "name": {
+      "ru": "Нил Горин",
+      "en": "Neil Gorin"
+    },
+    "years": "08.02.1955 -",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Линда Горин (Денни)",
+        "en": "Linda Gorin (Denny)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_joseph_gorin_smagarinsky",
+        "person_vida_schwinger"
+      ],
+      "spouse": "person_linda_gorin"
+    },
+    "archive": "person_neil_gorin",
+    "gender": "male"
+  },
+  "person_linda_gorin": {
+    "id": "person_linda_gorin",
+    "name": {
+      "ru": "Линда Горин (Денни)",
+      "en": "Linda Gorin (Denny)"
+    },
+    "years": "? -",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Нил Горин",
+        "en": "Neil Gorin"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_neil_gorin"
+    },
+    "archive": "person_linda_gorin",
+    "gender": "female"
   }
 };
