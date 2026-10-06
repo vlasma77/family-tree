@@ -12076,13 +12076,13 @@ window.db = {
       "ru": "Джозеф Горин (Смагаринский)",
       "en": "Joseph Gorin (Smagarinsky)"
     },
-    "years": "",
+    "years": "11.11.1927 - ?",
     "isDeceased": true,
     "mainPhoto": "",
     "milestones": {
       "birthPlace": {
-        "ru": "",
-        "en": ""
+        "ru": "Нью Йорк, США",
+        "en": "New York, NY"
       },
       "marriage": {
         "ru": "Вида Швингер",
@@ -12108,11 +12108,140 @@ window.db = {
     "links": {
       "parents": [
         "person_samuel_smagarinsky_1903",
-        "person_frencis_smagarinsky"
+        "person_francis_smagarinsky"
       ],
       "spouse": "person_vida_schwinger"
     },
     "archive": "person_joseph_gorin_smagarinsky",
+    "gender": "male"
+  },
+  "person_vida_schwinger": {
+    "id": "person_vida_schwinger",
+    "name": {
+      "ru": "Вида Швингер",
+      "en": "Vida Schwinger"
+    },
+    "years": "07.04.1928 - ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Джозеф Горин (Смагаринский)",
+        "en": "Joseph Gorin (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_joseph_gorin_smagarinsky"
+    },
+    "archive": "person_vida_schwinger",
+    "gender": "female"
+  },
+  "person_beth_gorin_1952": {
+    "id": "person_beth_gorin_1952",
+    "name": {
+      "ru": "Бет Горин",
+      "en": "Beth Gorin"
+    },
+    "years": "16.05.1952 -",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "Нью Йорк, США",
+        "en": "New York, NY"
+      },
+      "marriage": {
+        "ru": "Лес Шехтер",
+        "en": "Les Schachter"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_joseph_gorin_smagarinsky",
+        "person_vida_schwinger"
+      ],
+      "spouse": "person_les_schachter"
+    },
+    "archive": "person_beth_gorin_1952",
+    "gender": "female"
+  },
+  "person_les_schachter": {
+    "id": "person_les_schachter",
+    "name": {
+      "ru": "Лес Шехтер",
+      "en": "Les Schachter"
+    },
+    "years": "? -",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Бет Горин",
+        "en": "Beth Gorin"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_beth_gorin_1952"
+    },
+    "archive": "person_les_schachter",
     "gender": "male"
   }
 };
