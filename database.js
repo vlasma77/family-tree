@@ -11845,9 +11845,96 @@ window.db = {
       "en": ""
     },
     "links": {
-      "parents": [],
+      "parents": [
+        "person_israel_rosen",
+        "person_blyuma_rosen"
+      ],
       "spouse": "person_yitzchok_jacob_azaroff"
     },
+    "gender": "female"
+  },
+  "person_israel_rosen": {
+    "id": "person_israel_rosen",
+    "name": {
+      "ru": "Израиль Розен",
+      "en": "Israel Rosen"
+    },
+    "years": "? - ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Блюма Розен",
+        "en": "Blyuma Rosen"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_blyuma_rosen"
+    },
+    "archive": "person_israel_rosen",
+    "gender": "male"
+  },
+  "person_blyuma_rosen": {
+    "id": "person_blyuma_rosen",
+    "name": {
+      "ru": "Блюма Розен",
+      "en": "IBlyuma Rosen"
+    },
+    "years": "? - ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Израиль Розен",
+        "en": "Israel Rosen"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_israel_rosen"
+    },
+    "archive": "person_blyuma_rosen",
     "gender": "female"
   }
 };
