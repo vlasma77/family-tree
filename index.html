@@ -1049,14 +1049,28 @@
         newId = newId + "_" + Math.floor(Math.random() * 1000);
       }
 
+            // Определяем пол по роли
+      let newGender = "male";
+      if (role === 'mother' || role === 'daughter') newGender = "female";
+
+      // Определяем пустой шаблон для milestones и bio (для ru и en)
       db[newId] = {
         id: newId,
         name: { ru: "Новая персона", en: "New Person" },
         years: "",
+        isDeceased: false,
         mainPhoto: "",
-        milestones: { birthPlace: { ru: "" }, marriage: { ru: "" }, occupation: { ru: "" }, burial: { ru: "" } },
+        milestones: {
+          birthPlace: { ru: "", en: "" },
+          marriage:   { ru: "", en: "" },
+          occupation: { ru: "", en: "" },
+          burial:     { ru: "", en: "" }
+        },
         bio: { ru: "", en: "" },
-        links: { parents: [], spouse: null }
+        familyText: { ru: [], en: [] },
+        links: { parents: [], spouse: null },
+        archive: newId,
+        gender: newGender
       };
 
       const currentPerson = db[activeNodeId];
