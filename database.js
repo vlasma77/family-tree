@@ -11980,9 +11980,52 @@ window.db = {
       "spouses": [
         "person_francis_smagarinsky",
         "person_esther_smagarinsky"
-      ]
+      ],
+      "spouse": "person_francis_smagarinsky"
     },
     "archive": "person_samuel_smagarinsky_1903",
     "gender": "male"
+  },
+  "person_francis_smagarinsky": {
+    "id": "person_francis_smagarinsky",
+    "name": {
+      "ru": "Фрэнсис Смагаринская",
+      "en": "Francis Smagarinsky"
+    },
+    "years": "? - ?",
+    "isDeceased": true,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Самуил Натанович Смагаринский в разводе",
+        "en": "Samuel Natanovich Smagarinsky divorced"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_samuel_smagarinsky_1903"
+    },
+    "archive": "person_francis_smagarinsky",
+    "gender": "female"
   }
 };

@@ -7429,8 +7429,8 @@ window.documentsIndex = {
       "url": "50 летний юбилей брака Натана и Дины Смагаринских.jpg",
       "type": "image",
       "title": {
-        "ru": "50 летний юбилей брака Натана и Дины Смагаринских",
-        "en": "Nathan and Dina Smagarinsky’s 50th Wedding Anniversary"
+        "ru": "летний юбилей брака Натана и Дины Смагаринских",
+        "en": "Archival Document"
       }
     },
     {
