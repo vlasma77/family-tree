@@ -12600,5 +12600,50 @@ window.db = {
     },
     "archive": "person_samantha_gorin",
     "gender": "female"
+  },
+  "person_murray_gorin_smagarinsky": {
+    "id": "person_murray_gorin_smagarinsky",
+    "name": {
+      "ru": "Мюрей Горин (Смагаринский)",
+      "en": "Murray (Smagorinsky) Gorin"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_samuel_smagarinsky_1903",
+        "person_francis_smagarinsky"
+      ],
+      "spouse": null
+    },
+    "archive": "person_murray_gorin_smagarinsky",
+    "gender": "male"
   }
 };
