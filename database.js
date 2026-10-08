@@ -12616,8 +12616,8 @@ window.db = {
         "en": ""
       },
       "marriage": {
-        "ru": "",
-        "en": ""
+        "ru": "Сандра Лешин",
+        "en": "Sandra Leshin"
       },
       "occupation": {
         "ru": "",
@@ -12641,9 +12641,51 @@ window.db = {
         "person_samuel_smagarinsky_1903",
         "person_francis_smagarinsky"
       ],
-      "spouse": null
+      "spouse": "person_sandra_leshin"
     },
     "archive": "person_murray_gorin_smagarinsky",
     "gender": "male"
+  },
+  "person_sandra_leshin": {
+    "id": "person_sandra_leshin",
+    "name": {
+      "ru": "Сандра Лешин",
+      "en": "Sandra Leshin"
+    },
+    "years": "",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "Мюрей Горин (Смагаринский)",
+        "en": " Murray Gorin (Smagarinsky)"
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [],
+      "spouse": "person_murray_gorin_smagarinsky"
+    },
+    "archive": "person_sandra_leshin",
+    "gender": "female"
   }
 };
