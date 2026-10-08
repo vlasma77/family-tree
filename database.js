@@ -12687,5 +12687,50 @@ window.db = {
     },
     "archive": "person_sandra_leshin",
     "gender": "female"
+  },
+  "person_elena_gorin": {
+    "id": "person_elena_gorin",
+    "name": {
+      "ru": "Елена Горин",
+      "en": "Elena Gorin"
+    },
+    "years": "21.07.1969 -",
+    "isDeceased": false,
+    "mainPhoto": "",
+    "milestones": {
+      "birthPlace": {
+        "ru": "",
+        "en": ""
+      },
+      "marriage": {
+        "ru": "",
+        "en": ""
+      },
+      "occupation": {
+        "ru": "",
+        "en": ""
+      },
+      "burial": {
+        "ru": "",
+        "en": ""
+      }
+    },
+    "bio": {
+      "ru": "",
+      "en": ""
+    },
+    "familyText": {
+      "ru": [],
+      "en": []
+    },
+    "links": {
+      "parents": [
+        "person_murray_gorin_smagarinsky",
+        "person_sandra_leshin"
+      ],
+      "spouse": null
+    },
+    "archive": "person_elena_gorin",
+    "gender": "female"
   }
 };
